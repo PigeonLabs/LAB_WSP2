@@ -1,0 +1,475 @@
+{
+  "id": "F5",
+  "title": "뉴런 이식과 선택적 보간 병합",
+  "status": "MEASURED",
+  "question": "D2에서 고정한 이식 정책이 D4 목표 과제와 부수 과제를 보존·개선하는가?",
+  "verdict": "INCONCLUSIVE",
+  "rationale": "등록한 방향성 모델 쌍 5개의 D2 정책과 D4 평가를 완료했다. 1개 쌍에서 이식 정책을 선택했고 나머지는 미수정 모델을 유지했다. 선택 정책의 목표 과제 평균 변화는 +0.1042 percentage points(95% wrapper CI [0.0000, 0.3125], p=1.0000)였다. 주요 비교는 관측 모델들을 wrapper 안에서 함께 평균한 선택 정책 대 원래 모델의 차이이며, F6의 전역 다중검정 전에는 확증적 개선으로 판정하지 않는다. 선택하지 않은 대조군을 포함한 쌍당24개 조건을 모두 공개한다. Naive 전체 파라미터 평균 alpha=0.5의 comparison 정확도 변화는 -45.31–-41.15 percentage points였다. Alpha=1은 donor 전체 교체이며 병합 성공으로 해석하지 않는다.",
+  "metrics": [
+    {
+      "name": "Selected policy target-task gain",
+      "value": 0.005208333333333333,
+      "source": "results/followup-v2/transfers/summary.json",
+      "model_pair": "seed101_to_seed211",
+      "task": "arithmetic",
+      "unit": "accuracy difference",
+      "ci": [
+        0.0,
+        0.015625
+      ],
+      "n_clusters": 24
+    },
+    {
+      "name": "Selected policy target-task gain",
+      "value": 0.0,
+      "source": "results/followup-v2/transfers/summary.json",
+      "model_pair": "seed211_to_seed307",
+      "task": "negation",
+      "unit": "accuracy difference",
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "n_clusters": 24
+    },
+    {
+      "name": "Selected policy target-task gain",
+      "value": 0.0,
+      "source": "results/followup-v2/transfers/summary.json",
+      "model_pair": "seed307_to_seed401",
+      "task": "comparison",
+      "unit": "accuracy difference",
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "n_clusters": 24
+    },
+    {
+      "name": "Selected policy target-task gain",
+      "value": 0.0,
+      "source": "results/followup-v2/transfers/summary.json",
+      "model_pair": "seed401_to_seed503",
+      "task": "arithmetic",
+      "unit": "accuracy difference",
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "n_clusters": 24
+    },
+    {
+      "name": "Selected policy target-task gain",
+      "value": 0.0,
+      "source": "results/followup-v2/transfers/summary.json",
+      "model_pair": "seed503_to_seed101",
+      "task": "arithmetic",
+      "unit": "accuracy difference",
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "n_clusters": 24
+    }
+  ],
+  "comparisons": [
+    {
+      "name": "D2-selected policy minus untouched target, aggregate target-task accuracy",
+      "estimate": 0.0010416666666666667,
+      "ci": [
+        0.0,
+        0.0031250000000000006
+      ],
+      "pvalue": 1.0,
+      "qvalue": null,
+      "correction_scope": "One predeclared aggregate test; global BH pending F6; directed pairs not independent",
+      "source": "results/followup-v2/transfers/summary.json"
+    }
+  ],
+  "figures": [
+    {
+      "id": "selected_policy_gain",
+      "kind": "interval",
+      "title": "D4 selected-policy gain by directed model pair",
+      "rows": [
+        {
+          "label": "seed101_to_seed211",
+          "value": 0.005208333333333333,
+          "ci": [
+            0.0,
+            0.015625
+          ]
+        },
+        {
+          "label": "seed211_to_seed307",
+          "value": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "label": "seed307_to_seed401",
+          "value": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "label": "seed401_to_seed503",
+          "value": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "label": "seed503_to_seed101",
+          "value": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "xlabel": "Target-task accuracy difference",
+      "source": "results/followup-v2/transfers/summary.json",
+      "note": "Pair intervals are descriptive; five pairs reuse models. The registered primary test averages pairs within wrappers."
+    },
+    {
+      "id": "target_and_collateral_accuracy",
+      "kind": "heatmap",
+      "title": "D4 target and collateral-task accuracy",
+      "rows": [
+        {
+          "model": "seed101_to_seed211 / untouched",
+          "task": "arithmetic",
+          "value": 0.5625
+        },
+        {
+          "model": "seed101_to_seed211 / untouched",
+          "task": "comparison",
+          "value": 0.9322916666666666
+        },
+        {
+          "model": "seed101_to_seed211 / untouched",
+          "task": "negation",
+          "value": 0.734375
+        },
+        {
+          "model": "seed101_to_seed211 / untouched",
+          "task": "syntax",
+          "value": 0.84375
+        },
+        {
+          "model": "seed101_to_seed211 / D2-selected",
+          "task": "arithmetic",
+          "value": 0.5677083333333334
+        },
+        {
+          "model": "seed101_to_seed211 / D2-selected",
+          "task": "comparison",
+          "value": 0.9322916666666666
+        },
+        {
+          "model": "seed101_to_seed211 / D2-selected",
+          "task": "negation",
+          "value": 0.734375
+        },
+        {
+          "model": "seed101_to_seed211 / D2-selected",
+          "task": "syntax",
+          "value": 0.84375
+        },
+        {
+          "model": "seed211_to_seed307 / untouched",
+          "task": "arithmetic",
+          "value": 0.5885416666666666
+        },
+        {
+          "model": "seed211_to_seed307 / untouched",
+          "task": "comparison",
+          "value": 0.9375
+        },
+        {
+          "model": "seed211_to_seed307 / untouched",
+          "task": "negation",
+          "value": 0.7552083333333334
+        },
+        {
+          "model": "seed211_to_seed307 / untouched",
+          "task": "syntax",
+          "value": 0.890625
+        },
+        {
+          "model": "seed211_to_seed307 / D2-selected",
+          "task": "arithmetic",
+          "value": 0.5885416666666666
+        },
+        {
+          "model": "seed211_to_seed307 / D2-selected",
+          "task": "comparison",
+          "value": 0.9375
+        },
+        {
+          "model": "seed211_to_seed307 / D2-selected",
+          "task": "negation",
+          "value": 0.7552083333333334
+        },
+        {
+          "model": "seed211_to_seed307 / D2-selected",
+          "task": "syntax",
+          "value": 0.890625
+        },
+        {
+          "model": "seed307_to_seed401 / untouched",
+          "task": "arithmetic",
+          "value": 0.71875
+        },
+        {
+          "model": "seed307_to_seed401 / untouched",
+          "task": "comparison",
+          "value": 0.953125
+        },
+        {
+          "model": "seed307_to_seed401 / untouched",
+          "task": "negation",
+          "value": 0.7916666666666666
+        },
+        {
+          "model": "seed307_to_seed401 / untouched",
+          "task": "syntax",
+          "value": 0.9010416666666666
+        },
+        {
+          "model": "seed307_to_seed401 / D2-selected",
+          "task": "arithmetic",
+          "value": 0.71875
+        },
+        {
+          "model": "seed307_to_seed401 / D2-selected",
+          "task": "comparison",
+          "value": 0.953125
+        },
+        {
+          "model": "seed307_to_seed401 / D2-selected",
+          "task": "negation",
+          "value": 0.7916666666666666
+        },
+        {
+          "model": "seed307_to_seed401 / D2-selected",
+          "task": "syntax",
+          "value": 0.9010416666666666
+        },
+        {
+          "model": "seed401_to_seed503 / untouched",
+          "task": "arithmetic",
+          "value": 0.546875
+        },
+        {
+          "model": "seed401_to_seed503 / untouched",
+          "task": "comparison",
+          "value": 0.9114583333333334
+        },
+        {
+          "model": "seed401_to_seed503 / untouched",
+          "task": "negation",
+          "value": 0.6822916666666666
+        },
+        {
+          "model": "seed401_to_seed503 / untouched",
+          "task": "syntax",
+          "value": 0.8958333333333334
+        },
+        {
+          "model": "seed401_to_seed503 / D2-selected",
+          "task": "arithmetic",
+          "value": 0.546875
+        },
+        {
+          "model": "seed401_to_seed503 / D2-selected",
+          "task": "comparison",
+          "value": 0.9114583333333334
+        },
+        {
+          "model": "seed401_to_seed503 / D2-selected",
+          "task": "negation",
+          "value": 0.6822916666666666
+        },
+        {
+          "model": "seed401_to_seed503 / D2-selected",
+          "task": "syntax",
+          "value": 0.8958333333333334
+        },
+        {
+          "model": "seed503_to_seed101 / untouched",
+          "task": "arithmetic",
+          "value": 0.5885416666666666
+        },
+        {
+          "model": "seed503_to_seed101 / untouched",
+          "task": "comparison",
+          "value": 0.9322916666666666
+        },
+        {
+          "model": "seed503_to_seed101 / untouched",
+          "task": "negation",
+          "value": 0.7447916666666666
+        },
+        {
+          "model": "seed503_to_seed101 / untouched",
+          "task": "syntax",
+          "value": 0.8854166666666666
+        },
+        {
+          "model": "seed503_to_seed101 / D2-selected",
+          "task": "arithmetic",
+          "value": 0.5885416666666666
+        },
+        {
+          "model": "seed503_to_seed101 / D2-selected",
+          "task": "comparison",
+          "value": 0.9322916666666666
+        },
+        {
+          "model": "seed503_to_seed101 / D2-selected",
+          "task": "negation",
+          "value": 0.7447916666666666
+        },
+        {
+          "model": "seed503_to_seed101 / D2-selected",
+          "task": "syntax",
+          "value": 0.8854166666666666
+        }
+      ],
+      "row": "model",
+      "column": "task",
+      "value": "value",
+      "vmin": 0,
+      "vmax": 1,
+      "percent": true,
+      "source": "results/followup-v2/transfers/summary.json",
+      "unit": "Accuracy",
+      "figsize": [
+        11,
+        7
+      ],
+      "note": "Only the D2-selected policy and untouched target are contrasted here; D4 does not choose a policy."
+    },
+    {
+      "id": "naive_half_comparison_retention",
+      "kind": "bar",
+      "title": "Naive full-parameter averaging at alpha=0.5",
+      "rows": [
+        {
+          "label": "seed101_to_seed211",
+          "value": -43.229166666666664,
+          "baseline_accuracy": 0.9322916666666666,
+          "condition_accuracy": 0.5,
+          "n": 192
+        },
+        {
+          "label": "seed211_to_seed307",
+          "value": -42.1875,
+          "baseline_accuracy": 0.9375,
+          "condition_accuracy": 0.515625,
+          "n": 192
+        },
+        {
+          "label": "seed307_to_seed401",
+          "value": -45.3125,
+          "baseline_accuracy": 0.953125,
+          "condition_accuracy": 0.5,
+          "n": 192
+        },
+        {
+          "label": "seed401_to_seed503",
+          "value": -41.145833333333336,
+          "baseline_accuracy": 0.9114583333333334,
+          "condition_accuracy": 0.5,
+          "n": 192
+        },
+        {
+          "label": "seed503_to_seed101",
+          "value": -43.229166666666664,
+          "baseline_accuracy": 0.9322916666666666,
+          "condition_accuracy": 0.5,
+          "n": 192
+        }
+      ],
+      "xlabel": "Comparison accuracy change (percentage points)",
+      "source": [
+        "results/followup-v2/transfers/summary.json",
+        "results/followup-v2/transfers/seed101_to_seed211/summary.json",
+        "results/followup-v2/transfers/seed101_to_seed211/D4_margins.npz",
+        "results/followup-v2/transfers/seed211_to_seed307/summary.json",
+        "results/followup-v2/transfers/seed211_to_seed307/D4_margins.npz",
+        "results/followup-v2/transfers/seed307_to_seed401/summary.json",
+        "results/followup-v2/transfers/seed307_to_seed401/D4_margins.npz",
+        "results/followup-v2/transfers/seed401_to_seed503/summary.json",
+        "results/followup-v2/transfers/seed401_to_seed503/D4_margins.npz",
+        "results/followup-v2/transfers/seed503_to_seed101/summary.json",
+        "results/followup-v2/transfers/seed503_to_seed101/D4_margins.npz"
+      ],
+      "note": "Descriptive unselected control; D2 policy is unchanged. Every pair has192 comparison rows. Alpha=1 is full donor replacement, not merging success. All24 conditions per pair are reported in F5_ALL_CONDITIONS.md."
+    }
+  ],
+  "artifacts": [
+    {
+      "label": "seed101_to_seed211 frozen policy",
+      "path": "results/followup-v2/transfers/seed101_to_seed211/policy.json"
+    },
+    {
+      "label": "seed101_to_seed211 summary",
+      "path": "results/followup-v2/transfers/seed101_to_seed211/summary.json"
+    },
+    {
+      "label": "seed211_to_seed307 frozen policy",
+      "path": "results/followup-v2/transfers/seed211_to_seed307/policy.json"
+    },
+    {
+      "label": "seed211_to_seed307 summary",
+      "path": "results/followup-v2/transfers/seed211_to_seed307/summary.json"
+    },
+    {
+      "label": "seed307_to_seed401 frozen policy",
+      "path": "results/followup-v2/transfers/seed307_to_seed401/policy.json"
+    },
+    {
+      "label": "seed307_to_seed401 summary",
+      "path": "results/followup-v2/transfers/seed307_to_seed401/summary.json"
+    },
+    {
+      "label": "seed401_to_seed503 frozen policy",
+      "path": "results/followup-v2/transfers/seed401_to_seed503/policy.json"
+    },
+    {
+      "label": "seed401_to_seed503 summary",
+      "path": "results/followup-v2/transfers/seed401_to_seed503/summary.json"
+    },
+    {
+      "label": "seed503_to_seed101 frozen policy",
+      "path": "results/followup-v2/transfers/seed503_to_seed101/policy.json"
+    },
+    {
+      "label": "seed503_to_seed101 summary",
+      "path": "results/followup-v2/transfers/seed503_to_seed101/summary.json"
+    },
+    {
+      "label": "Aggregate transfer evidence",
+      "path": "results/followup-v2/transfers/summary.json"
+    },
+    {
+      "label": "All120 D4 condition evaluations and controls",
+      "path": "reports/followup-v2/F5_ALL_CONDITIONS.md"
+    }
+  ],
+  "limitations": [
+    "D2 jointly selects task, mapping, and interpolation weight; its gains are in-sample.",
+    "Random donors preserve target units/group size but not donor activation magnitude.",
+    "Native parameter interpolation does not establish circuit-preserving model merging.",
+    "Naive alpha=1 replaces the target with the full donor; it is not evidence of successful model merging. The alpha0.5 failure is a descriptive observed control, not a universal impossibility result.",
+    "Directed pairs reuse seeds; pair tests are descriptive and not five independent replications."
+  ]
+}

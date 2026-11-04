@@ -1,5 +1,5 @@
 {
-  "generated_kst": "2026-11-04 14:46 KST",
+  "generated_kst": "2026-11-04 14:54 KST",
   "stages": [
     {
       "id": "F0",
@@ -634,10 +634,91 @@
     },
     {
       "id": "F5",
-      "status": "PENDING",
+      "status": "MEASURED",
       "verdict": "INCONCLUSIVE",
-      "sources": [],
-      "figures": []
+      "sources": [
+        {
+          "path": "results/followup-v2/stages/F5.json",
+          "sha256": "dd61cb90ae6d21a3238811e881c61158017cf20c3cc062f9b7cb5e2d715fdccb"
+        },
+        {
+          "path": "results/followup-v2/transfers/summary.json",
+          "sha256": "f77473e264c0d6f5f33b76283a2ae86bba2ecd45a084bb9693f48113691607e4"
+        },
+        {
+          "path": "results/followup-v2/transfers/seed101_to_seed211/policy.json",
+          "sha256": "2eeaba7a467a2e9c7d668b04cf856c3f780dcca1b7b2e9ff9ef4babb504f6f74"
+        },
+        {
+          "path": "results/followup-v2/transfers/seed101_to_seed211/summary.json",
+          "sha256": "9735fa047bf8731504ac37115c24f5b568730f642014dda2fe6150bea82ce0f2"
+        },
+        {
+          "path": "results/followup-v2/transfers/seed211_to_seed307/policy.json",
+          "sha256": "195736cb6dfba180f64a2987367187846c2079f878e8d484568a79c73959dd28"
+        },
+        {
+          "path": "results/followup-v2/transfers/seed211_to_seed307/summary.json",
+          "sha256": "11c57ef4dcf846d4a8191d66d2c74cb3e1df99691390b427ce65b7bae416ca38"
+        },
+        {
+          "path": "results/followup-v2/transfers/seed307_to_seed401/policy.json",
+          "sha256": "afd2e12c44e90870c04a489c6936bd12af8b7d92658573bdb32d6e20a4cbd7a0"
+        },
+        {
+          "path": "results/followup-v2/transfers/seed307_to_seed401/summary.json",
+          "sha256": "4eb4f8962c09c36f549619627b07a24444cab36ba682bc638fca86c7300f5397"
+        },
+        {
+          "path": "results/followup-v2/transfers/seed401_to_seed503/policy.json",
+          "sha256": "a658054accdbea8709cec08468432e7bc5e2b722463f62dbc648476b0c9563c2"
+        },
+        {
+          "path": "results/followup-v2/transfers/seed401_to_seed503/summary.json",
+          "sha256": "991f6bcbeb80eb039364415379f598b234cd35adc8dc71fff1b100e07387eb32"
+        },
+        {
+          "path": "results/followup-v2/transfers/seed503_to_seed101/policy.json",
+          "sha256": "da6352cec7608dcba917e140e0509463fdc709f2585620c457616e46a32a734b"
+        },
+        {
+          "path": "results/followup-v2/transfers/seed503_to_seed101/summary.json",
+          "sha256": "74bd6eff20b86d1a1a3e39835aa3e6d031a717e2e57232710e9e689c539f00ba"
+        },
+        {
+          "path": "reports/followup-v2/F5_ALL_CONDITIONS.md",
+          "sha256": "9966b4578e6aa20348d659552d995c1c561ba571e40b77910030d3d4fa774982"
+        }
+      ],
+      "figures": [
+        {
+          "id": "f5_selected_policy_gain",
+          "title": "D4 selected-policy gain by directed model pair",
+          "path": "artifacts/followup-v2/figures/f5_selected_policy_gain.svg",
+          "png": "artifacts/followup-v2/figures/f5_selected_policy_gain.png",
+          "receipt": "artifacts/followup-v2/figures/f5_selected_policy_gain.json",
+          "note": "Pair intervals are descriptive; five pairs reuse models. The registered primary test averages pairs within wrappers.",
+          "show_in_readme": true
+        },
+        {
+          "id": "f5_target_and_collateral_accuracy",
+          "title": "D4 target and collateral-task accuracy",
+          "path": "artifacts/followup-v2/figures/f5_target_and_collateral_accuracy.svg",
+          "png": "artifacts/followup-v2/figures/f5_target_and_collateral_accuracy.png",
+          "receipt": "artifacts/followup-v2/figures/f5_target_and_collateral_accuracy.json",
+          "note": "Only the D2-selected policy and untouched target are contrasted here; D4 does not choose a policy.",
+          "show_in_readme": true
+        },
+        {
+          "id": "f5_naive_half_comparison_retention",
+          "title": "Naive full-parameter averaging at alpha=0.5",
+          "path": "artifacts/followup-v2/figures/f5_naive_half_comparison_retention.svg",
+          "png": "artifacts/followup-v2/figures/f5_naive_half_comparison_retention.png",
+          "receipt": "artifacts/followup-v2/figures/f5_naive_half_comparison_retention.json",
+          "note": "Descriptive unselected control; D2 policy is unchanged. Every pair has192 comparison rows. Alpha=1 is full donor replacement, not merging success. All24 conditions per pair are reported in F5_ALL_CONDITIONS.md.",
+          "show_in_readme": true
+        }
+      ]
     },
     {
       "id": "F6",

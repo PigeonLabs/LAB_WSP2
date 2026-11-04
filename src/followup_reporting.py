@@ -173,7 +173,8 @@ def _figure(root,out,plt,stage,spec,stage_path):
             else:ax.plot(val,i,'o',color=color,markersize=6)
             if ci is not None:
                 _interval(ci);ax.plot(ci,[i,i],lw=1.6,color=color)
-            ax.annotate(_value(val,3),(val,i),xytext=(6,5),textcoords='offset points',fontsize=9)
+            ax.annotate(_value(val,3),(val,i),xytext=(6,5),textcoords='offset points',fontsize=9,
+                        color='white' if kind=='bar' and val<0 else '#26323D')
         ax.set_yticks(range(len(rr)),[str(r.get(labelkey,r.get('name',i))) for i,r in enumerate(rr)]);ax.set_ylim(len(rr)-.5,-.75);ax.set_xlabel(spec.get('xlabel',spec.get('unit','Value')));ax.axvline(0,lw=.8,color='#65717B');ax.grid(axis='x')
         if 'reference' in spec:ax.axvline(spec['reference'],lw=1,linestyle=':',color='#26323D')
         if spec.get('xlim'):ax.set_xlim(spec['xlim'])

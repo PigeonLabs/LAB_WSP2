@@ -1,0 +1,230 @@
+{
+  "schema": "followup-figure-v1",
+  "title": "D4 target and collateral-task accuracy",
+  "encoding": {
+    "id": "target_and_collateral_accuracy",
+    "kind": "heatmap",
+    "title": "D4 target and collateral-task accuracy",
+    "row": "model",
+    "column": "task",
+    "value": "value",
+    "vmin": 0,
+    "vmax": 1,
+    "percent": true,
+    "source": "results/followup-v2/transfers/summary.json",
+    "unit": "Accuracy",
+    "figsize": [
+      11,
+      7
+    ],
+    "note": "Only the D2-selected policy and untouched target are contrasted here; D4 does not choose a policy."
+  },
+  "sources": [
+    {
+      "path": "results/followup-v2/transfers/summary.json",
+      "sha256": "f77473e264c0d6f5f33b76283a2ae86bba2ecd45a084bb9693f48113691607e4"
+    }
+  ],
+  "rows": [
+    {
+      "model": "seed101_to_seed211 / untouched",
+      "task": "arithmetic",
+      "value": 0.5625
+    },
+    {
+      "model": "seed101_to_seed211 / untouched",
+      "task": "comparison",
+      "value": 0.9322916666666666
+    },
+    {
+      "model": "seed101_to_seed211 / untouched",
+      "task": "negation",
+      "value": 0.734375
+    },
+    {
+      "model": "seed101_to_seed211 / untouched",
+      "task": "syntax",
+      "value": 0.84375
+    },
+    {
+      "model": "seed101_to_seed211 / D2-selected",
+      "task": "arithmetic",
+      "value": 0.5677083333333334
+    },
+    {
+      "model": "seed101_to_seed211 / D2-selected",
+      "task": "comparison",
+      "value": 0.9322916666666666
+    },
+    {
+      "model": "seed101_to_seed211 / D2-selected",
+      "task": "negation",
+      "value": 0.734375
+    },
+    {
+      "model": "seed101_to_seed211 / D2-selected",
+      "task": "syntax",
+      "value": 0.84375
+    },
+    {
+      "model": "seed211_to_seed307 / untouched",
+      "task": "arithmetic",
+      "value": 0.5885416666666666
+    },
+    {
+      "model": "seed211_to_seed307 / untouched",
+      "task": "comparison",
+      "value": 0.9375
+    },
+    {
+      "model": "seed211_to_seed307 / untouched",
+      "task": "negation",
+      "value": 0.7552083333333334
+    },
+    {
+      "model": "seed211_to_seed307 / untouched",
+      "task": "syntax",
+      "value": 0.890625
+    },
+    {
+      "model": "seed211_to_seed307 / D2-selected",
+      "task": "arithmetic",
+      "value": 0.5885416666666666
+    },
+    {
+      "model": "seed211_to_seed307 / D2-selected",
+      "task": "comparison",
+      "value": 0.9375
+    },
+    {
+      "model": "seed211_to_seed307 / D2-selected",
+      "task": "negation",
+      "value": 0.7552083333333334
+    },
+    {
+      "model": "seed211_to_seed307 / D2-selected",
+      "task": "syntax",
+      "value": 0.890625
+    },
+    {
+      "model": "seed307_to_seed401 / untouched",
+      "task": "arithmetic",
+      "value": 0.71875
+    },
+    {
+      "model": "seed307_to_seed401 / untouched",
+      "task": "comparison",
+      "value": 0.953125
+    },
+    {
+      "model": "seed307_to_seed401 / untouched",
+      "task": "negation",
+      "value": 0.7916666666666666
+    },
+    {
+      "model": "seed307_to_seed401 / untouched",
+      "task": "syntax",
+      "value": 0.9010416666666666
+    },
+    {
+      "model": "seed307_to_seed401 / D2-selected",
+      "task": "arithmetic",
+      "value": 0.71875
+    },
+    {
+      "model": "seed307_to_seed401 / D2-selected",
+      "task": "comparison",
+      "value": 0.953125
+    },
+    {
+      "model": "seed307_to_seed401 / D2-selected",
+      "task": "negation",
+      "value": 0.7916666666666666
+    },
+    {
+      "model": "seed307_to_seed401 / D2-selected",
+      "task": "syntax",
+      "value": 0.9010416666666666
+    },
+    {
+      "model": "seed401_to_seed503 / untouched",
+      "task": "arithmetic",
+      "value": 0.546875
+    },
+    {
+      "model": "seed401_to_seed503 / untouched",
+      "task": "comparison",
+      "value": 0.9114583333333334
+    },
+    {
+      "model": "seed401_to_seed503 / untouched",
+      "task": "negation",
+      "value": 0.6822916666666666
+    },
+    {
+      "model": "seed401_to_seed503 / untouched",
+      "task": "syntax",
+      "value": 0.8958333333333334
+    },
+    {
+      "model": "seed401_to_seed503 / D2-selected",
+      "task": "arithmetic",
+      "value": 0.546875
+    },
+    {
+      "model": "seed401_to_seed503 / D2-selected",
+      "task": "comparison",
+      "value": 0.9114583333333334
+    },
+    {
+      "model": "seed401_to_seed503 / D2-selected",
+      "task": "negation",
+      "value": 0.6822916666666666
+    },
+    {
+      "model": "seed401_to_seed503 / D2-selected",
+      "task": "syntax",
+      "value": 0.8958333333333334
+    },
+    {
+      "model": "seed503_to_seed101 / untouched",
+      "task": "arithmetic",
+      "value": 0.5885416666666666
+    },
+    {
+      "model": "seed503_to_seed101 / untouched",
+      "task": "comparison",
+      "value": 0.9322916666666666
+    },
+    {
+      "model": "seed503_to_seed101 / untouched",
+      "task": "negation",
+      "value": 0.7447916666666666
+    },
+    {
+      "model": "seed503_to_seed101 / untouched",
+      "task": "syntax",
+      "value": 0.8854166666666666
+    },
+    {
+      "model": "seed503_to_seed101 / D2-selected",
+      "task": "arithmetic",
+      "value": 0.5885416666666666
+    },
+    {
+      "model": "seed503_to_seed101 / D2-selected",
+      "task": "comparison",
+      "value": 0.9322916666666666
+    },
+    {
+      "model": "seed503_to_seed101 / D2-selected",
+      "task": "negation",
+      "value": 0.7447916666666666
+    },
+    {
+      "model": "seed503_to_seed101 / D2-selected",
+      "task": "syntax",
+      "value": 0.8854166666666666
+    }
+  ]
+}

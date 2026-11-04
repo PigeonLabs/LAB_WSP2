@@ -1,0 +1,107 @@
+{
+  "schema": "followup-figure-v1",
+  "title": "Naive full-parameter averaging at alpha=0.5",
+  "encoding": {
+    "id": "naive_half_comparison_retention",
+    "kind": "bar",
+    "title": "Naive full-parameter averaging at alpha=0.5",
+    "xlabel": "Comparison accuracy change (percentage points)",
+    "source": [
+      "results/followup-v2/transfers/summary.json",
+      "results/followup-v2/transfers/seed101_to_seed211/summary.json",
+      "results/followup-v2/transfers/seed101_to_seed211/D4_margins.npz",
+      "results/followup-v2/transfers/seed211_to_seed307/summary.json",
+      "results/followup-v2/transfers/seed211_to_seed307/D4_margins.npz",
+      "results/followup-v2/transfers/seed307_to_seed401/summary.json",
+      "results/followup-v2/transfers/seed307_to_seed401/D4_margins.npz",
+      "results/followup-v2/transfers/seed401_to_seed503/summary.json",
+      "results/followup-v2/transfers/seed401_to_seed503/D4_margins.npz",
+      "results/followup-v2/transfers/seed503_to_seed101/summary.json",
+      "results/followup-v2/transfers/seed503_to_seed101/D4_margins.npz"
+    ],
+    "note": "Descriptive unselected control; D2 policy is unchanged. Every pair has192 comparison rows. Alpha=1 is full donor replacement, not merging success. All24 conditions per pair are reported in F5_ALL_CONDITIONS.md."
+  },
+  "sources": [
+    {
+      "path": "results/followup-v2/transfers/summary.json",
+      "sha256": "f77473e264c0d6f5f33b76283a2ae86bba2ecd45a084bb9693f48113691607e4"
+    },
+    {
+      "path": "results/followup-v2/transfers/seed101_to_seed211/summary.json",
+      "sha256": "9735fa047bf8731504ac37115c24f5b568730f642014dda2fe6150bea82ce0f2"
+    },
+    {
+      "path": "results/followup-v2/transfers/seed101_to_seed211/D4_margins.npz",
+      "sha256": "5e7da4b2b0671002fa1b91ef9d33a845b22fa0e0f3e38a25becbbfe82296e1ea"
+    },
+    {
+      "path": "results/followup-v2/transfers/seed211_to_seed307/summary.json",
+      "sha256": "11c57ef4dcf846d4a8191d66d2c74cb3e1df99691390b427ce65b7bae416ca38"
+    },
+    {
+      "path": "results/followup-v2/transfers/seed211_to_seed307/D4_margins.npz",
+      "sha256": "25a7cd79994a3a1d39203276e51716ee69c6c1af363dcfed3ec5727ef9eaf2c5"
+    },
+    {
+      "path": "results/followup-v2/transfers/seed307_to_seed401/summary.json",
+      "sha256": "4eb4f8962c09c36f549619627b07a24444cab36ba682bc638fca86c7300f5397"
+    },
+    {
+      "path": "results/followup-v2/transfers/seed307_to_seed401/D4_margins.npz",
+      "sha256": "5a9ec8d83220849f4bf4d6f81eee0ca884b17821916847ef457110880473110d"
+    },
+    {
+      "path": "results/followup-v2/transfers/seed401_to_seed503/summary.json",
+      "sha256": "991f6bcbeb80eb039364415379f598b234cd35adc8dc71fff1b100e07387eb32"
+    },
+    {
+      "path": "results/followup-v2/transfers/seed401_to_seed503/D4_margins.npz",
+      "sha256": "8ec6e4d7b44f4ac6356e428b94931937543ecfc71758238c9e142b6403b38599"
+    },
+    {
+      "path": "results/followup-v2/transfers/seed503_to_seed101/summary.json",
+      "sha256": "74bd6eff20b86d1a1a3e39835aa3e6d031a717e2e57232710e9e689c539f00ba"
+    },
+    {
+      "path": "results/followup-v2/transfers/seed503_to_seed101/D4_margins.npz",
+      "sha256": "5a4cb2f70498503ed2d0de75de3cb5a8b6ec376d98e0d6e322bd89119e8a4141"
+    }
+  ],
+  "rows": [
+    {
+      "label": "seed101_to_seed211",
+      "value": -43.229166666666664,
+      "baseline_accuracy": 0.9322916666666666,
+      "condition_accuracy": 0.5,
+      "n": 192
+    },
+    {
+      "label": "seed211_to_seed307",
+      "value": -42.1875,
+      "baseline_accuracy": 0.9375,
+      "condition_accuracy": 0.515625,
+      "n": 192
+    },
+    {
+      "label": "seed307_to_seed401",
+      "value": -45.3125,
+      "baseline_accuracy": 0.953125,
+      "condition_accuracy": 0.5,
+      "n": 192
+    },
+    {
+      "label": "seed401_to_seed503",
+      "value": -41.145833333333336,
+      "baseline_accuracy": 0.9114583333333334,
+      "condition_accuracy": 0.5,
+      "n": 192
+    },
+    {
+      "label": "seed503_to_seed101",
+      "value": -43.229166666666664,
+      "baseline_accuracy": 0.9322916666666666,
+      "condition_accuracy": 0.5,
+      "n": 192
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "followup-figure-v1",
+  "title": "D4 selected-policy gain by directed model pair",
+  "encoding": {
+    "id": "selected_policy_gain",
+    "kind": "interval",
+    "title": "D4 selected-policy gain by directed model pair",
+    "xlabel": "Target-task accuracy difference",
+    "source": "results/followup-v2/transfers/summary.json",
+    "note": "Pair intervals are descriptive; five pairs reuse models. The registered primary test averages pairs within wrappers."
+  },
+  "sources": [
+    {
+      "path": "results/followup-v2/transfers/summary.json",
+      "sha256": "f77473e264c0d6f5f33b76283a2ae86bba2ecd45a084bb9693f48113691607e4"
+    }
+  ],
+  "rows": [
+    {
+      "label": "seed101_to_seed211",
+      "value": 0.005208333333333333,
+      "ci": [
+        0.0,
+        0.015625
+      ]
+    },
+    {
+      "label": "seed211_to_seed307",
+      "value": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "seed307_to_seed401",
+      "value": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "seed401_to_seed503",
+      "value": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "label": "seed503_to_seed101",
+      "value": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}

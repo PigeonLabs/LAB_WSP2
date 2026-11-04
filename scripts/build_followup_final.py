@@ -96,7 +96,7 @@ def build():
             and not replay.get('errors') and replay.get('exit_code', 0) == 0,
             'Primary replay has not passed completely')
     tests = audit.get('tests', {})
-    require(isinstance(tests.get('passed'), int) and tests['passed'] > 0 and not tests.get('failed', 0),
+    require(isinstance(tests.get('passed'), int) and tests['passed'] > 0 and not tests.get('failed', 0) and not tests.get('errors', 0),
             'Full pytest result count absent or failing')
     for stage in range(6):
         snap = read(RUN/'stages'/f'F{stage}.json')
@@ -204,8 +204,9 @@ def build():
     # Matched proxy ablation: samev2 candidates/metric; no confirmatory tests.
     proxy_rows = []
     for cohort, result in proxy['cohorts'].items():
-        estimate = result.get('effect', result.get('mean'))
-        ci = (result.get('bootstrap') or {}).get('ci', result.get('ci'))
+        contrast=result['expanded_minus_old']
+        estimate = contrast['mean']
+        ci = contrast['ci']
         proxy_rows.append({'label': cohort, 'value': estimate, 'ci': ci})
         p['metrics'].append(metric('Exploratory expanded minus four-dimensional proxy', estimate, proxy_path,
                                   model_pair=cohort, unit='Pearson difference', ci=ci))

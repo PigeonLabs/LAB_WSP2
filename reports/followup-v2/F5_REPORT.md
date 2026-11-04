@@ -1,14 +1,65 @@
-# F5 — Transplantation and selective merging
+# F5 — 뉴런 이식과 선택적 보간 병합
 
-갱신: 2026-11-04 14:46 KST. 실행 상태: **PENDING**. 가설 판정: **INCONCLUSIVE**.
+갱신: 2026-11-04 14:54 KST. 실행 상태: **MEASURED**. 가설 판정: **INCONCLUSIVE**.
 
-판정 근거가 아직 보고되지 않았습니다.
+연구 질문: D2에서 고정한 이식 정책이 D4 목표 과제와 부수 과제를 보존·개선하는가?
+
+등록한 방향성 모델 쌍 5개의 D2 정책과 D4 평가를 완료했다. 1개 쌍에서 이식 정책을 선택했고 나머지는 미수정 모델을 유지했다. 선택 정책의 목표 과제 평균 변화는 +0.1042 percentage points(95% wrapper CI [0.0000, 0.3125], p=1.0000)였다. 주요 비교는 관측 모델들을 wrapper 안에서 함께 평균한 선택 정책 대 원래 모델의 차이이며, F6의 전역 다중검정 전에는 확증적 개선으로 판정하지 않는다. 선택하지 않은 대조군을 포함한 쌍당24개 조건을 모두 공개한다. Naive 전체 파라미터 평균 alpha=0.5의 comparison 정확도 변화는 -45.31–-41.15 percentage points였다. Alpha=1은 donor 전체 교체이며 병합 성공으로 해석하지 않는다.
 
 ## 실제 측정
 
-이 단계의 수치 측정은 아직 보고되지 않았습니다.
+| 지표 | 조건·방법 | 측정값 | CI | 단위 | n / 군집 |
+|---|---|---:|---|---|---|
+| Selected policy target-task gain | seed101_to_seed211 / arithmetic | 0.0052 | [0, 0.0156] | accuracy difference | 24 |
+| Selected policy target-task gain | seed211_to_seed307 / negation | 0 | [0, 0] | accuracy difference | 24 |
+| Selected policy target-task gain | seed307_to_seed401 / comparison | 0 | [0, 0] | accuracy difference | 24 |
+| Selected policy target-task gain | seed401_to_seed503 / arithmetic | 0 | [0, 0] | accuracy difference | 24 |
+| Selected policy target-task gain | seed503_to_seed101 / arithmetic | 0 | [0, 0] | accuracy difference | 24 |
 
 ## 비교와 불확실성
 
-대응 차이에 대한 확인 검정은 아직 보고되지 않았습니다.
+| 비교 | Δ | CI | p | q | 보정 범위 |
+|---|---:|---|---:|---:|---|
+| D2-selected policy minus untouched target, aggregate target-task accuracy | 0.001 | [0, 0.0031] | 1 | 미측정 | One predeclared aggregate test; global BH pending F6; directed pairs not independent |
 
+![D4 selected-policy gain by directed model pair](../../artifacts/followup-v2/figures/f5_selected_policy_gain.svg)
+
+Pair intervals are descriptive; five pairs reuse models. The registered primary test averages pairs within wrappers.
+
+[그림 수치와 출처](../../artifacts/followup-v2/figures/f5_selected_policy_gain.json)
+
+![D4 target and collateral-task accuracy](../../artifacts/followup-v2/figures/f5_target_and_collateral_accuracy.svg)
+
+Only the D2-selected policy and untouched target are contrasted here; D4 does not choose a policy.
+
+[그림 수치와 출처](../../artifacts/followup-v2/figures/f5_target_and_collateral_accuracy.json)
+
+![Naive full-parameter averaging at alpha=0.5](../../artifacts/followup-v2/figures/f5_naive_half_comparison_retention.svg)
+
+Descriptive unselected control; D2 policy is unchanged. Every pair has192 comparison rows. Alpha=1 is full donor replacement, not merging success. All24 conditions per pair are reported in F5_ALL_CONDITIONS.md.
+
+[그림 수치와 출처](../../artifacts/followup-v2/figures/f5_naive_half_comparison_retention.json)
+
+## 해석 한계
+
+- D2 jointly selects task, mapping, and interpolation weight; its gains are in-sample.
+- Random donors preserve target units/group size but not donor activation magnitude.
+- Native parameter interpolation does not establish circuit-preserving model merging.
+- Naive alpha=1 replaces the target with the full donor; it is not evidence of successful model merging. The alpha0.5 failure is a descriptive observed control, not a universal impossibility result.
+- Directed pairs reuse seeds; pair tests are descriptive and not five independent replications.
+
+## 원본과 재현
+
+- [results/followup-v2/stages/F5.json](../../results/followup-v2/stages/F5.json)
+- [results/followup-v2/transfers/summary.json](../../results/followup-v2/transfers/summary.json)
+- [results/followup-v2/transfers/seed101_to_seed211/policy.json](../../results/followup-v2/transfers/seed101_to_seed211/policy.json)
+- [results/followup-v2/transfers/seed101_to_seed211/summary.json](../../results/followup-v2/transfers/seed101_to_seed211/summary.json)
+- [results/followup-v2/transfers/seed211_to_seed307/policy.json](../../results/followup-v2/transfers/seed211_to_seed307/policy.json)
+- [results/followup-v2/transfers/seed211_to_seed307/summary.json](../../results/followup-v2/transfers/seed211_to_seed307/summary.json)
+- [results/followup-v2/transfers/seed307_to_seed401/policy.json](../../results/followup-v2/transfers/seed307_to_seed401/policy.json)
+- [results/followup-v2/transfers/seed307_to_seed401/summary.json](../../results/followup-v2/transfers/seed307_to_seed401/summary.json)
+- [results/followup-v2/transfers/seed401_to_seed503/policy.json](../../results/followup-v2/transfers/seed401_to_seed503/policy.json)
+- [results/followup-v2/transfers/seed401_to_seed503/summary.json](../../results/followup-v2/transfers/seed401_to_seed503/summary.json)
+- [results/followup-v2/transfers/seed503_to_seed101/policy.json](../../results/followup-v2/transfers/seed503_to_seed101/policy.json)
+- [results/followup-v2/transfers/seed503_to_seed101/summary.json](../../results/followup-v2/transfers/seed503_to_seed101/summary.json)
+- [reports/followup-v2/F5_ALL_CONDITIONS.md](../../reports/followup-v2/F5_ALL_CONDITIONS.md)

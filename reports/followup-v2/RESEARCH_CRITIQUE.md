@@ -70,6 +70,18 @@
 
 [측정과 원본](F4_REPORT.md)
 
+## F5 — 뉴런 이식과 선택적 보간 병합
+
+상태: MEASURED; 판정: INCONCLUSIVE.
+
+- D2 jointly selects task, mapping, and interpolation weight; its gains are in-sample.
+- Random donors preserve target units/group size but not donor activation magnitude.
+- Native parameter interpolation does not establish circuit-preserving model merging.
+- Naive alpha=1 replaces the target with the full donor; it is not evidence of successful model merging. The alpha0.5 failure is a descriptive observed control, not a universal impossibility result.
+- Directed pairs reuse seeds; pair tests are descriptive and not five independent replications.
+
+[측정과 원본](F5_REPORT.md)
+
 ## 새 hard syntax 보충 검증
 
 - Post-hoc motivated by D3 local-cue weakness; fresh outcomes do not make it preregistered primary evidence.

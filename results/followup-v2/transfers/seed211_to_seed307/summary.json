@@ -1,0 +1,462 @@
+{
+  "signature": "006e57ebccda7724497bcec9e949faed79f43e1e09dfb15c4f3995b33476e273",
+  "pair": "seed211_to_seed307",
+  "target_task": "negation",
+  "policy": {
+    "selected": null,
+    "selected_none": true,
+    "reason": "no aligned transfer has positive D2 gain and required retention",
+    "target_task": "negation",
+    "retention_tolerance": 0.02,
+    "eligible_methods": [
+      "activation",
+      "semantic"
+    ],
+    "considered": [
+      {
+        "condition": "activation__alpha_0",
+        "target_gain": 0.0,
+        "other_task_changes": {
+          "arithmetic": 0.0,
+          "comparison": 0.0,
+          "syntax": 0.0
+        },
+        "retention_satisfied": true
+      },
+      {
+        "condition": "activation__alpha_0.25",
+        "target_gain": 0.0,
+        "other_task_changes": {
+          "arithmetic": 0.0,
+          "comparison": 0.0,
+          "syntax": 0.0
+        },
+        "retention_satisfied": true
+      },
+      {
+        "condition": "activation__alpha_0.5",
+        "target_gain": 0.0,
+        "other_task_changes": {
+          "arithmetic": 0.0,
+          "comparison": 0.0,
+          "syntax": 0.0
+        },
+        "retention_satisfied": true
+      },
+      {
+        "condition": "activation__alpha_1",
+        "target_gain": 0.0,
+        "other_task_changes": {
+          "arithmetic": 0.0,
+          "comparison": 0.0,
+          "syntax": 0.0
+        },
+        "retention_satisfied": true
+      },
+      {
+        "condition": "semantic__alpha_0",
+        "target_gain": 0.0,
+        "other_task_changes": {
+          "arithmetic": 0.0,
+          "comparison": 0.0,
+          "syntax": 0.0
+        },
+        "retention_satisfied": true
+      },
+      {
+        "condition": "semantic__alpha_0.25",
+        "target_gain": 0.0,
+        "other_task_changes": {
+          "arithmetic": 0.0,
+          "comparison": 0.0,
+          "syntax": 0.0
+        },
+        "retention_satisfied": true
+      },
+      {
+        "condition": "semantic__alpha_0.5",
+        "target_gain": 0.0,
+        "other_task_changes": {
+          "arithmetic": 0.0,
+          "comparison": 0.0,
+          "syntax": 0.0
+        },
+        "retention_satisfied": true
+      },
+      {
+        "condition": "semantic__alpha_1",
+        "target_gain": 0.0,
+        "other_task_changes": {
+          "arithmetic": 0.0,
+          "comparison": 0.0,
+          "syntax": 0.0
+        },
+        "retention_satisfied": true
+      }
+    ],
+    "selection_scope": "all D2, in-sample fitting; no additional independent validation fold"
+  },
+  "task_choice": {
+    "target_task": "negation",
+    "donor_accuracy": {
+      "arithmetic": 0.5833333333333334,
+      "comparison": 0.9427083333333334,
+      "negation": 0.7239583333333334,
+      "syntax": 0.8697916666666666
+    },
+    "target_accuracy": {
+      "arithmetic": 0.65625,
+      "comparison": 0.9427083333333334,
+      "negation": 0.6458333333333334,
+      "syntax": 0.8802083333333334
+    },
+    "competence_gap": {
+      "arithmetic": -0.07291666666666663,
+      "comparison": 0.0,
+      "negation": 0.078125,
+      "syntax": -0.01041666666666674
+    },
+    "positive_donor_gap": true,
+    "selection_split": "D2"
+  },
+  "d4_baseline_accuracy": {
+    "arithmetic": 0.5885416666666666,
+    "comparison": 0.9375,
+    "negation": 0.7552083333333334,
+    "syntax": 0.890625
+  },
+  "d4_conditions": {
+    "activation__alpha_0": {
+      "method": "activation",
+      "alpha": 0.0,
+      "accuracy": {
+        "arithmetic": 0.5885416666666666,
+        "comparison": 0.9375,
+        "negation": 0.7552083333333334,
+        "syntax": 0.890625
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "activation__alpha_0.25": {
+      "method": "activation",
+      "alpha": 0.25,
+      "accuracy": {
+        "arithmetic": 0.5885416666666666,
+        "comparison": 0.9375,
+        "negation": 0.7552083333333334,
+        "syntax": 0.890625
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "activation__alpha_0.5": {
+      "method": "activation",
+      "alpha": 0.5,
+      "accuracy": {
+        "arithmetic": 0.5885416666666666,
+        "comparison": 0.9375,
+        "negation": 0.7552083333333334,
+        "syntax": 0.890625
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "activation__alpha_1": {
+      "method": "activation",
+      "alpha": 1.0,
+      "accuracy": {
+        "arithmetic": 0.5885416666666666,
+        "comparison": 0.9375,
+        "negation": 0.7552083333333334,
+        "syntax": 0.890625
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "semantic__alpha_0": {
+      "method": "semantic",
+      "alpha": 0.0,
+      "accuracy": {
+        "arithmetic": 0.5885416666666666,
+        "comparison": 0.9375,
+        "negation": 0.7552083333333334,
+        "syntax": 0.890625
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "semantic__alpha_0.25": {
+      "method": "semantic",
+      "alpha": 0.25,
+      "accuracy": {
+        "arithmetic": 0.5885416666666666,
+        "comparison": 0.9375,
+        "negation": 0.7604166666666666,
+        "syntax": 0.890625
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "semantic__alpha_0.5": {
+      "method": "semantic",
+      "alpha": 0.5,
+      "accuracy": {
+        "arithmetic": 0.5885416666666666,
+        "comparison": 0.9375,
+        "negation": 0.7604166666666666,
+        "syntax": 0.890625
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "semantic__alpha_1": {
+      "method": "semantic",
+      "alpha": 1.0,
+      "accuracy": {
+        "arithmetic": 0.5885416666666666,
+        "comparison": 0.9375,
+        "negation": 0.7604166666666666,
+        "syntax": 0.890625
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "random_seed17__alpha_0": {
+      "method": "random_seed17",
+      "alpha": 0.0,
+      "accuracy": {
+        "arithmetic": 0.5885416666666666,
+        "comparison": 0.9375,
+        "negation": 0.7552083333333334,
+        "syntax": 0.890625
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "random_seed17__alpha_0.25": {
+      "method": "random_seed17",
+      "alpha": 0.25,
+      "accuracy": {
+        "arithmetic": 0.5885416666666666,
+        "comparison": 0.9375,
+        "negation": 0.7552083333333334,
+        "syntax": 0.890625
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "random_seed17__alpha_0.5": {
+      "method": "random_seed17",
+      "alpha": 0.5,
+      "accuracy": {
+        "arithmetic": 0.5885416666666666,
+        "comparison": 0.9375,
+        "negation": 0.7552083333333334,
+        "syntax": 0.890625
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "random_seed17__alpha_1": {
+      "method": "random_seed17",
+      "alpha": 1.0,
+      "accuracy": {
+        "arithmetic": 0.5885416666666666,
+        "comparison": 0.9375,
+        "negation": 0.7552083333333334,
+        "syntax": 0.890625
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "random_seed31__alpha_0": {
+      "method": "random_seed31",
+      "alpha": 0.0,
+      "accuracy": {
+        "arithmetic": 0.5885416666666666,
+        "comparison": 0.9375,
+        "negation": 0.7552083333333334,
+        "syntax": 0.890625
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "random_seed31__alpha_0.25": {
+      "method": "random_seed31",
+      "alpha": 0.25,
+      "accuracy": {
+        "arithmetic": 0.5885416666666666,
+        "comparison": 0.9375,
+        "negation": 0.7552083333333334,
+        "syntax": 0.890625
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "random_seed31__alpha_0.5": {
+      "method": "random_seed31",
+      "alpha": 0.5,
+      "accuracy": {
+        "arithmetic": 0.5885416666666666,
+        "comparison": 0.9375,
+        "negation": 0.7552083333333334,
+        "syntax": 0.890625
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "random_seed31__alpha_1": {
+      "method": "random_seed31",
+      "alpha": 1.0,
+      "accuracy": {
+        "arithmetic": 0.5885416666666666,
+        "comparison": 0.9375,
+        "negation": 0.7552083333333334,
+        "syntax": 0.890625
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "random_seed47__alpha_0": {
+      "method": "random_seed47",
+      "alpha": 0.0,
+      "accuracy": {
+        "arithmetic": 0.5885416666666666,
+        "comparison": 0.9375,
+        "negation": 0.7552083333333334,
+        "syntax": 0.890625
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "random_seed47__alpha_0.25": {
+      "method": "random_seed47",
+      "alpha": 0.25,
+      "accuracy": {
+        "arithmetic": 0.5885416666666666,
+        "comparison": 0.9375,
+        "negation": 0.7552083333333334,
+        "syntax": 0.890625
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "random_seed47__alpha_0.5": {
+      "method": "random_seed47",
+      "alpha": 0.5,
+      "accuracy": {
+        "arithmetic": 0.5885416666666666,
+        "comparison": 0.9375,
+        "negation": 0.7552083333333334,
+        "syntax": 0.890625
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "random_seed47__alpha_1": {
+      "method": "random_seed47",
+      "alpha": 1.0,
+      "accuracy": {
+        "arithmetic": 0.5885416666666666,
+        "comparison": 0.9375,
+        "negation": 0.7552083333333334,
+        "syntax": 0.890625
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "naive_average__alpha_0": {
+      "method": "naive_average",
+      "alpha": 0.0,
+      "accuracy": {
+        "arithmetic": 0.5885416666666666,
+        "comparison": 0.9375,
+        "negation": 0.7552083333333334,
+        "syntax": 0.890625
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "naive_average__alpha_0.25": {
+      "method": "naive_average",
+      "alpha": 0.25,
+      "accuracy": {
+        "arithmetic": 0.6041666666666666,
+        "comparison": 0.9427083333333334,
+        "negation": 0.7708333333333334,
+        "syntax": 0.8697916666666666
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "naive_average__alpha_0.5": {
+      "method": "naive_average",
+      "alpha": 0.5,
+      "accuracy": {
+        "arithmetic": 0.5,
+        "comparison": 0.515625,
+        "negation": 0.5,
+        "syntax": 0.5
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "naive_average__alpha_1": {
+      "method": "naive_average",
+      "alpha": 1.0,
+      "accuracy": {
+        "arithmetic": 0.5625,
+        "comparison": 0.9322916666666666,
+        "negation": 0.734375,
+        "syntax": 0.84375
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    }
+  },
+  "selected_minus_baseline": {
+    "effect": 0.0,
+    "pvalue": 1.0,
+    "n_clusters": 24,
+    "method": "monte_carlo",
+    "standardized_effect": null,
+    "status": "OK",
+    "bootstrap": {
+      "mean": 0.0,
+      "median": 0.0,
+      "std": 0.0,
+      "n_observations": 192,
+      "n_clusters": 24,
+      "estimand": "equal-cluster-weighted mean",
+      "confidence": 0.95,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "status": "OK"
+    },
+    "wrapper_effects": {
+      "D4:wrapper:t00": 0.0,
+      "D4:wrapper:t01": 0.0,
+      "D4:wrapper:t02": 0.0,
+      "D4:wrapper:t03": 0.0,
+      "D4:wrapper:t04": 0.0,
+      "D4:wrapper:t05": 0.0,
+      "D4:wrapper:t06": 0.0,
+      "D4:wrapper:t07": 0.0,
+      "D4:wrapper:t08": 0.0,
+      "D4:wrapper:t09": 0.0,
+      "D4:wrapper:t10": 0.0,
+      "D4:wrapper:t11": 0.0,
+      "D4:wrapper:t12": 0.0,
+      "D4:wrapper:t13": 0.0,
+      "D4:wrapper:t14": 0.0,
+      "D4:wrapper:t15": 0.0,
+      "D4:wrapper:t16": 0.0,
+      "D4:wrapper:t17": 0.0,
+      "D4:wrapper:t18": 0.0,
+      "D4:wrapper:t19": 0.0,
+      "D4:wrapper:t20": 0.0,
+      "D4:wrapper:t21": 0.0,
+      "D4:wrapper:t22": 0.0,
+      "D4:wrapper:t23": 0.0
+    },
+    "hypothesis": "D2-selected aligned transplant improves D4 target-task accuracy versus untouched target",
+    "global_bh_pending": true,
+    "selected_none": true,
+    "selection_is_positive_control": false
+  },
+  "original_parameter_hashes": {
+    "donor_before": "fde88986eff0d835794c682b589d1e37c29b707b3dfcac04054a37b1c31c3599",
+    "donor_after": "fde88986eff0d835794c682b589d1e37c29b707b3dfcac04054a37b1c31c3599",
+    "target_before": "562df278232efdcc762825aae02c0a23062708a6343ed8866699cbc3a92b07eb",
+    "target_after": "562df278232efdcc762825aae02c0a23062708a6343ed8866699cbc3a92b07eb"
+  },
+  "elapsed_seconds": 15.009431999002118,
+  "conditions_evaluated": 24,
+  "limitations": [
+    "Native gate/up rows and down columns are copied in existing residual coordinates. Independent models need not share that basis; functional conservation does not guarantee transplant or merging compatibility.",
+    "All D2 examples fit mappings, group choice, target task, and alpha; D2 gains are in-sample.",
+    "Random donors preserve target units/group size but not donor activation magnitude.",
+    "Five directed pairs reuse models; they are not independent seed replicates.",
+    "D4 results for unselected methods and weights are descriptive and cannot change the policy.",
+    "Native parameter transfer is not evidence of circuit-preserving model merging."
+  ]
+}

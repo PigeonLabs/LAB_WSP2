@@ -404,12 +404,42 @@ def f5():
     effect=m['aggregate_selected_minus_baseline']
     p['comparisons']=[comparison('D2-selected policy minus untouched target, aggregate target-task accuracy',effect,path,
                                  'One predeclared aggregate test; global BH pending F6; directed pairs not independent')]
-    delta=[];accuracy=[];selected_count=0
+    delta=[];accuracy=[];selected_count=0;naive_rows=[];control_sources=[rel(path)]
+    detail=['# F5 — all24 frozen transfer conditions per directed pair','',
+        'All120 D4 condition evaluations are shown, including unselected activation/semantic transfers, all three random maps, and naive full-parameter averaging. D2 alone selects the deployed policy. Unselected D4 conditions are descriptive and cannot change that policy or create new tests. Accuracy changes below are percentage points relative to the untouched target.', '',
+        'For naive full-parameter averaging, alpha=1 is full donor replacement. It is not successful merging. Sparse aligned transfer modifies only the registered native units; it is not whole-circuit preservation.', '']
     for pair,r in m['pairs'].items():
         policy_path=path.parent/pair/'policy.json';policy=read(policy_path)
         if not policy.get('frozen_before_D4_scoring'):raise ValueError('F5 policy must be persisted before D4 scoring')
         selected=r['policy']['selected'];selected_count+=int(selected is not None)
         baseline=r['d4_baseline_accuracy'];chosen=r['d4_conditions'][selected]['accuracy'] if selected else baseline
+        if r.get('conditions_evaluated')!=24 or len(r['d4_conditions'])!=24:raise NotReady('F5 requires all24 conditions for each directed pair')
+        individual_path=path.parent/pair/'summary.json'
+        if read(individual_path)!=r:raise ValueError('F5 aggregate and individual pair summary disagree')
+        raw_path=path.parent/pair/'D4_margins.npz'
+        if not raw_path.exists():raise NotReady('F5 per-condition margins missing')
+        with np.load(raw_path,allow_pickle=False) as raw:
+            concepts=raw['concepts'];tasks=sorted(baseline)
+            counts={task:int(np.sum(concepts==task)) for task in tasks}
+            for condition,values in [('baseline',baseline)]+[(key,value['accuracy']) for key,value in r['d4_conditions'].items()]:
+                if condition not in raw:raise ValueError('Missing raw F5 condition: '+condition)
+                for task,value in values.items():
+                    reproduced=float(np.mean(raw[condition][concepts==task]>0))
+                    if abs(reproduced-value)>1e-12:raise ValueError('F5 per-condition accuracy replay mismatch')
+        control_sources += [rel(individual_path),rel(raw_path)]
+        detail += [f'## {pair}', '',
+            f"D2 target task: **{r['target_task']}**. Frozen selected policy: **{selected or 'NONE (untouched target)'}**. Task row counts: "+', '.join(f'{task}={counts[task]}' for task in tasks)+'.', '',
+            f"[Frozen D2 policy](../../{rel(policy_path)}) · [Pair summary](../../{rel(individual_path)}) · [All raw D4 margins](../../{rel(raw_path)})", '',
+            '| Condition | Alpha | D2 selected | '+' | '.join(tasks)+' | Target change (pp) | Comparison change (pp) |',
+            '|---|---:|---|'+''.join('---:|' for _ in tasks)+'---:|---:|',
+            '| Untouched target | — | '+('YES' if selected is None else 'NO')+' | '+' | '.join(f'{baseline[t]:.2%}' for t in tasks)+' |0.0000|0.0000|']
+        for condition,values in r['d4_conditions'].items():
+            acc=values['accuracy'];target_delta=100*(acc[r['target_task']]-baseline[r['target_task']]);comparison_delta=100*(acc['comparison']-baseline['comparison'])
+            label=values['method']+(' (full donor replacement)' if values['method']=='naive_average' and values['alpha']==1 else '')
+            detail.append('| '+label+f" | {values['alpha']:g} | "+('YES' if condition==selected else 'NO')+' | '+' | '.join(f'{acc[t]:.2%}' for t in tasks)+f' | {target_delta:+.4f} | {comparison_delta:+.4f} |')
+            if values['method']=='naive_average' and values['alpha']==.5:
+                naive_rows.append({'label':pair,'value':comparison_delta,'baseline_accuracy':baseline['comparison'],'condition_accuracy':acc['comparison'],'n':counts['comparison']})
+        detail += ['', 'The original donor/target before-and-after parameter hashes are recorded in the pair summary. These descriptive conditions do not choose a new policy from D4.', '']
         stats=r['selected_minus_baseline'];delta.append({'label':pair,'value':stats['effect'],'ci':stats['bootstrap']['ci']})
         p['metrics'].append(metric('Selected policy target-task gain',stats['effect'],path,model_pair=pair,
                                   task=r['target_task'],unit='accuracy difference',ci=stats['bootstrap']['ci'],n_clusters=stats['n_clusters']))
@@ -420,17 +450,29 @@ def f5():
                 accuracy.append({'model':pair+' / '+condition,'task':task,'value':value})
         p['artifacts'] += [{'label':pair+' frozen policy','path':rel(policy_path)},
                            {'label':pair+' summary','path':rel(policy_path.parent/'summary.json')}]
-    p['rationale']=f"등록한 방향성 모델 쌍 {len(m['pairs'])}개의 D2 정책과 D4 평가를 완료했다. {selected_count}개 쌍에서 이식 정책을 선택했고 나머지는 미수정 모델을 유지했다. 주요 비교는 관측 모델들을 wrapper 안에서 함께 평균한 선택 정책 대 원래 모델의 차이이며, F6의 전역 다중검정 전에는 확증적 개선으로 판정하지 않는다."
+    if len(naive_rows)!=5:raise ValueError('F5 naive alpha0.5 control coverage incomplete')
+    low=min(r['value'] for r in naive_rows);high=max(r['value'] for r in naive_rows)
+    ci=effect['bootstrap']['ci']
+    p['rationale']=f"등록한 방향성 모델 쌍 {len(m['pairs'])}개의 D2 정책과 D4 평가를 완료했다. {selected_count}개 쌍에서 이식 정책을 선택했고 나머지는 미수정 모델을 유지했다. 선택 정책의 목표 과제 평균 변화는 {100*effect['effect']:+.4f} percentage points(95% wrapper CI [{100*ci[0]:.4f}, {100*ci[1]:.4f}], p={effect['pvalue']:.4f})였다. 주요 비교는 관측 모델들을 wrapper 안에서 함께 평균한 선택 정책 대 원래 모델의 차이이며, F6의 전역 다중검정 전에는 확증적 개선으로 판정하지 않는다. 선택하지 않은 대조군을 포함한 쌍당24개 조건을 모두 공개한다. Naive 전체 파라미터 평균 alpha=0.5의 comparison 정확도 변화는 {low:.2f}–{high:.2f} percentage points였다. Alpha=1은 donor 전체 교체이며 병합 성공으로 해석하지 않는다."
     p['figures']=[{'id':'selected_policy_gain','kind':'interval','title':'D4 selected-policy gain by directed model pair',
                   'rows':delta,'xlabel':'Target-task accuracy difference','source':rel(path),
                   'note':'Pair intervals are descriptive; five pairs reuse models. The registered primary test averages pairs within wrappers.'},
                  {'id':'target_and_collateral_accuracy','kind':'heatmap','title':'D4 target and collateral-task accuracy',
                   'rows':accuracy,'row':'model','column':'task','value':'value','vmin':0,'vmax':1,'percent':True,
-                  'source':rel(path),'unit':'Accuracy','note':'Only the D2-selected policy and untouched target are contrasted here; D4 does not choose a policy.'}]
+                  'source':rel(path),'unit':'Accuracy','figsize':[11,7],
+                  'note':'Only the D2-selected policy and untouched target are contrasted here; D4 does not choose a policy.'}]
     p['artifacts'].append({'label':'Aggregate transfer evidence','path':rel(path)})
+    detail_path=ROOT/'reports/followup-v2/F5_ALL_CONDITIONS.md'
+    detail_path.parent.mkdir(parents=True,exist_ok=True);detail_path.write_text('\n'.join(detail)+'\n')
+    p['artifacts'].append({'label':'All120 D4 condition evaluations and controls','path':rel(detail_path)})
+    p['figures'].append({'id':'naive_half_comparison_retention','kind':'bar',
+        'title':'Naive full-parameter averaging at alpha=0.5','rows':naive_rows,
+        'xlabel':'Comparison accuracy change (percentage points)','source':control_sources,
+        'note':'Descriptive unselected control; D2 policy is unchanged. Every pair has192 comparison rows. Alpha=1 is full donor replacement, not merging success. All24 conditions per pair are reported in F5_ALL_CONDITIONS.md.'})
     p['limitations']=['D2 jointly selects task, mapping, and interpolation weight; its gains are in-sample.',
                      'Random donors preserve target units/group size but not donor activation magnitude.',
                      'Native parameter interpolation does not establish circuit-preserving model merging.',
+                     'Naive alpha=1 replaces the target with the full donor; it is not evidence of successful model merging. The alpha0.5 failure is a descriptive observed control, not a universal impossibility result.',
                      'Directed pairs reuse seeds; pair tests are descriptive and not five independent replications.']
     return p
 

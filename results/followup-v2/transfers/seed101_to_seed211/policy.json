@@ -1,0 +1,1106 @@
+{
+  "signature": "3237d513e176fab5eac3fecafae31ffe7fcc5c49edb0a72d5ae8383d2d9069e8",
+  "plan": {
+    "version": "followup-v2-native-transfer-v1",
+    "donor": "seed101",
+    "target": "seed211",
+    "settings": {
+      "directed_pairs": [
+        [
+          101,
+          211
+        ],
+        [
+          211,
+          307
+        ],
+        [
+          307,
+          401
+        ],
+        [
+          401,
+          503
+        ],
+        [
+          503,
+          101
+        ]
+      ],
+      "interpolation_weights": [
+        0,
+        0.25,
+        0.5,
+        1
+      ],
+      "selection_split": "D2",
+      "test_split": "D4",
+      "retention_tolerance": 0.02
+    },
+    "group_size": 4,
+    "random_seeds": [
+      17,
+      31,
+      47
+    ],
+    "d2_sha256": "249b2dc0af83626aba074a6771145e211e4933c216f4372a32cbc7ca0f27bff1",
+    "d4_sha256": "120762a293c2db6c25f7b37f549ceb85bbb6e14405636e726bf2ec38c0c5a4b4",
+    "source_checkpoint_sha256": "f80d57cdd58292a92bdfc68f3450d698f2c66594c33a3cf675cf264c868540da",
+    "target_checkpoint_sha256": "32997a9acdcd978a737e6f0ba2670ed2b64f060c3846ab05dbeae2705d4ade16",
+    "donor_collection_sha256": "2281a34a8135e47e8c937ba39a19b0fc603c9927f3a73e2fa9e235045ed7883b",
+    "target_collection_sha256": "8dbd526710f179426fef897b856ff48821d5a0e5ae073ca34ab974bf98f662ae",
+    "fit_sha256": "75780d45059da6d1855f43ca10ce4ec20423fbb7125eb591673f37882d1839cf",
+    "fit_inverted": false
+  },
+  "task_choice": {
+    "target_task": "arithmetic",
+    "donor_accuracy": {
+      "arithmetic": 0.6145833333333334,
+      "comparison": 0.9375,
+      "negation": 0.6979166666666666,
+      "syntax": 0.8958333333333334
+    },
+    "target_accuracy": {
+      "arithmetic": 0.5833333333333334,
+      "comparison": 0.9427083333333334,
+      "negation": 0.7239583333333334,
+      "syntax": 0.8697916666666666
+    },
+    "competence_gap": {
+      "arithmetic": 0.03125,
+      "comparison": -0.00520833333333337,
+      "negation": -0.02604166666666674,
+      "syntax": 0.02604166666666674
+    },
+    "positive_donor_gap": true,
+    "selection_split": "D2"
+  },
+  "mappings": {
+    "activation": [
+      {
+        "source_layer": 1,
+        "source_neuron": 549,
+        "target_layer": 1,
+        "target_neuron": 260,
+        "source_column": 7,
+        "target_column": 5,
+        "d2_truth_contrast_abs": 0.2213577647926286
+      },
+      {
+        "source_layer": 1,
+        "source_neuron": 1176,
+        "target_layer": 1,
+        "target_neuron": 24,
+        "source_column": 6,
+        "target_column": 0,
+        "d2_truth_contrast_abs": 0.14829053285454089
+      },
+      {
+        "source_layer": 1,
+        "source_neuron": 58,
+        "target_layer": 1,
+        "target_neuron": 48,
+        "source_column": 2,
+        "target_column": 4,
+        "d2_truth_contrast_abs": 0.09114864344398181
+      },
+      {
+        "source_layer": 1,
+        "source_neuron": 47,
+        "target_layer": 1,
+        "target_neuron": 1051,
+        "source_column": 4,
+        "target_column": 2,
+        "d2_truth_contrast_abs": 0.07068473478041899
+      },
+      {
+        "source_layer": 2,
+        "source_neuron": 71,
+        "target_layer": 2,
+        "target_neuron": 797,
+        "source_column": 9,
+        "target_column": 12,
+        "d2_truth_contrast_abs": 0.23326178007603934
+      },
+      {
+        "source_layer": 2,
+        "source_neuron": 799,
+        "target_layer": 2,
+        "target_neuron": 735,
+        "source_column": 12,
+        "target_column": 15,
+        "d2_truth_contrast_abs": 0.1926185832126066
+      },
+      {
+        "source_layer": 2,
+        "source_neuron": 584,
+        "target_layer": 2,
+        "target_neuron": 866,
+        "source_column": 8,
+        "target_column": 8,
+        "d2_truth_contrast_abs": 0.07109171363238904
+      },
+      {
+        "source_layer": 2,
+        "source_neuron": 885,
+        "target_layer": 2,
+        "target_neuron": 178,
+        "source_column": 14,
+        "target_column": 10,
+        "d2_truth_contrast_abs": 0.04414976733581474
+      },
+      {
+        "source_layer": 3,
+        "source_neuron": 141,
+        "target_layer": 3,
+        "target_neuron": 882,
+        "source_column": 16,
+        "target_column": 21,
+        "d2_truth_contrast_abs": 0.26524531034131843
+      },
+      {
+        "source_layer": 3,
+        "source_neuron": 231,
+        "target_layer": 3,
+        "target_neuron": 524,
+        "source_column": 20,
+        "target_column": 18,
+        "d2_truth_contrast_abs": 0.21418406550462046
+      },
+      {
+        "source_layer": 3,
+        "source_neuron": 881,
+        "target_layer": 3,
+        "target_neuron": 1407,
+        "source_column": 21,
+        "target_column": 22,
+        "d2_truth_contrast_abs": 0.15275077455832312
+      },
+      {
+        "source_layer": 3,
+        "source_neuron": 1135,
+        "target_layer": 3,
+        "target_neuron": 230,
+        "source_column": 19,
+        "target_column": 20,
+        "d2_truth_contrast_abs": 0.151988786412403
+      },
+      {
+        "source_layer": 4,
+        "source_neuron": 1181,
+        "target_layer": 4,
+        "target_neuron": 841,
+        "source_column": 24,
+        "target_column": 25,
+        "d2_truth_contrast_abs": 0.4376649260132884
+      },
+      {
+        "source_layer": 4,
+        "source_neuron": 916,
+        "target_layer": 4,
+        "target_neuron": 248,
+        "source_column": 31,
+        "target_column": 28,
+        "d2_truth_contrast_abs": 0.40987161236504716
+      },
+      {
+        "source_layer": 4,
+        "source_neuron": 1480,
+        "target_layer": 4,
+        "target_neuron": 917,
+        "source_column": 25,
+        "target_column": 31,
+        "d2_truth_contrast_abs": 0.2950159041211009
+      },
+      {
+        "source_layer": 4,
+        "source_neuron": 81,
+        "target_layer": 4,
+        "target_neuron": 314,
+        "source_column": 30,
+        "target_column": 26,
+        "d2_truth_contrast_abs": 0.26410175072184455
+      }
+    ],
+    "semantic": [
+      {
+        "source_layer": 1,
+        "source_neuron": 549,
+        "target_layer": 1,
+        "target_neuron": 249,
+        "source_column": 7,
+        "target_column": 1,
+        "d2_truth_contrast_abs": 0.2213577647926286
+      },
+      {
+        "source_layer": 1,
+        "source_neuron": 1176,
+        "target_layer": 1,
+        "target_neuron": 548,
+        "source_column": 6,
+        "target_column": 7,
+        "d2_truth_contrast_abs": 0.14829053285454089
+      },
+      {
+        "source_layer": 1,
+        "source_neuron": 58,
+        "target_layer": 1,
+        "target_neuron": 1176,
+        "source_column": 2,
+        "target_column": 6,
+        "d2_truth_contrast_abs": 0.09114864344398181
+      },
+      {
+        "source_layer": 1,
+        "source_neuron": 47,
+        "target_layer": 1,
+        "target_neuron": 260,
+        "source_column": 4,
+        "target_column": 5,
+        "d2_truth_contrast_abs": 0.07068473478041899
+      },
+      {
+        "source_layer": 2,
+        "source_neuron": 71,
+        "target_layer": 2,
+        "target_neuron": 735,
+        "source_column": 9,
+        "target_column": 15,
+        "d2_truth_contrast_abs": 0.23326178007603934
+      },
+      {
+        "source_layer": 2,
+        "source_neuron": 799,
+        "target_layer": 2,
+        "target_neuron": 1254,
+        "source_column": 12,
+        "target_column": 11,
+        "d2_truth_contrast_abs": 0.1926185832126066
+      },
+      {
+        "source_layer": 2,
+        "source_neuron": 584,
+        "target_layer": 2,
+        "target_neuron": 1246,
+        "source_column": 8,
+        "target_column": 13,
+        "d2_truth_contrast_abs": 0.07109171363238904
+      },
+      {
+        "source_layer": 2,
+        "source_neuron": 885,
+        "target_layer": 2,
+        "target_neuron": 884,
+        "source_column": 14,
+        "target_column": 14,
+        "d2_truth_contrast_abs": 0.04414976733581474
+      },
+      {
+        "source_layer": 3,
+        "source_neuron": 141,
+        "target_layer": 3,
+        "target_neuron": 1301,
+        "source_column": 16,
+        "target_column": 19,
+        "d2_truth_contrast_abs": 0.26524531034131843
+      },
+      {
+        "source_layer": 3,
+        "source_neuron": 231,
+        "target_layer": 3,
+        "target_neuron": 524,
+        "source_column": 20,
+        "target_column": 18,
+        "d2_truth_contrast_abs": 0.21418406550462046
+      },
+      {
+        "source_layer": 3,
+        "source_neuron": 881,
+        "target_layer": 3,
+        "target_neuron": 539,
+        "source_column": 21,
+        "target_column": 16,
+        "d2_truth_contrast_abs": 0.15275077455832312
+      },
+      {
+        "source_layer": 3,
+        "source_neuron": 1135,
+        "target_layer": 3,
+        "target_neuron": 230,
+        "source_column": 19,
+        "target_column": 20,
+        "d2_truth_contrast_abs": 0.151988786412403
+      },
+      {
+        "source_layer": 4,
+        "source_neuron": 1181,
+        "target_layer": 4,
+        "target_neuron": 841,
+        "source_column": 24,
+        "target_column": 25,
+        "d2_truth_contrast_abs": 0.4376649260132884
+      },
+      {
+        "source_layer": 4,
+        "source_neuron": 916,
+        "target_layer": 4,
+        "target_neuron": 248,
+        "source_column": 31,
+        "target_column": 28,
+        "d2_truth_contrast_abs": 0.40987161236504716
+      },
+      {
+        "source_layer": 4,
+        "source_neuron": 1480,
+        "target_layer": 4,
+        "target_neuron": 314,
+        "source_column": 25,
+        "target_column": 26,
+        "d2_truth_contrast_abs": 0.2950159041211009
+      },
+      {
+        "source_layer": 4,
+        "source_neuron": 81,
+        "target_layer": 4,
+        "target_neuron": 917,
+        "source_column": 30,
+        "target_column": 31,
+        "d2_truth_contrast_abs": 0.26410175072184455
+      }
+    ],
+    "random_seed17": [
+      {
+        "source_layer": 1,
+        "source_neuron": 1135,
+        "target_layer": 1,
+        "target_neuron": 260
+      },
+      {
+        "source_layer": 1,
+        "source_neuron": 164,
+        "target_layer": 1,
+        "target_neuron": 24
+      },
+      {
+        "source_layer": 1,
+        "source_neuron": 247,
+        "target_layer": 1,
+        "target_neuron": 48
+      },
+      {
+        "source_layer": 1,
+        "source_neuron": 1296,
+        "target_layer": 1,
+        "target_neuron": 1051
+      },
+      {
+        "source_layer": 2,
+        "source_neuron": 700,
+        "target_layer": 2,
+        "target_neuron": 797
+      },
+      {
+        "source_layer": 2,
+        "source_neuron": 564,
+        "target_layer": 2,
+        "target_neuron": 735
+      },
+      {
+        "source_layer": 2,
+        "source_neuron": 329,
+        "target_layer": 2,
+        "target_neuron": 866
+      },
+      {
+        "source_layer": 2,
+        "source_neuron": 54,
+        "target_layer": 2,
+        "target_neuron": 178
+      },
+      {
+        "source_layer": 3,
+        "source_neuron": 139,
+        "target_layer": 3,
+        "target_neuron": 882
+      },
+      {
+        "source_layer": 3,
+        "source_neuron": 937,
+        "target_layer": 3,
+        "target_neuron": 524
+      },
+      {
+        "source_layer": 3,
+        "source_neuron": 1131,
+        "target_layer": 3,
+        "target_neuron": 1407
+      },
+      {
+        "source_layer": 3,
+        "source_neuron": 978,
+        "target_layer": 3,
+        "target_neuron": 230
+      },
+      {
+        "source_layer": 4,
+        "source_neuron": 240,
+        "target_layer": 4,
+        "target_neuron": 841
+      },
+      {
+        "source_layer": 4,
+        "source_neuron": 561,
+        "target_layer": 4,
+        "target_neuron": 248
+      },
+      {
+        "source_layer": 4,
+        "source_neuron": 927,
+        "target_layer": 4,
+        "target_neuron": 917
+      },
+      {
+        "source_layer": 4,
+        "source_neuron": 389,
+        "target_layer": 4,
+        "target_neuron": 314
+      }
+    ],
+    "random_seed31": [
+      {
+        "source_layer": 1,
+        "source_neuron": 1385,
+        "target_layer": 1,
+        "target_neuron": 260
+      },
+      {
+        "source_layer": 1,
+        "source_neuron": 840,
+        "target_layer": 1,
+        "target_neuron": 24
+      },
+      {
+        "source_layer": 1,
+        "source_neuron": 103,
+        "target_layer": 1,
+        "target_neuron": 48
+      },
+      {
+        "source_layer": 1,
+        "source_neuron": 757,
+        "target_layer": 1,
+        "target_neuron": 1051
+      },
+      {
+        "source_layer": 2,
+        "source_neuron": 543,
+        "target_layer": 2,
+        "target_neuron": 797
+      },
+      {
+        "source_layer": 2,
+        "source_neuron": 1039,
+        "target_layer": 2,
+        "target_neuron": 735
+      },
+      {
+        "source_layer": 2,
+        "source_neuron": 1071,
+        "target_layer": 2,
+        "target_neuron": 866
+      },
+      {
+        "source_layer": 2,
+        "source_neuron": 724,
+        "target_layer": 2,
+        "target_neuron": 178
+      },
+      {
+        "source_layer": 3,
+        "source_neuron": 270,
+        "target_layer": 3,
+        "target_neuron": 882
+      },
+      {
+        "source_layer": 3,
+        "source_neuron": 1503,
+        "target_layer": 3,
+        "target_neuron": 524
+      },
+      {
+        "source_layer": 3,
+        "source_neuron": 1170,
+        "target_layer": 3,
+        "target_neuron": 1407
+      },
+      {
+        "source_layer": 3,
+        "source_neuron": 1365,
+        "target_layer": 3,
+        "target_neuron": 230
+      },
+      {
+        "source_layer": 4,
+        "source_neuron": 1257,
+        "target_layer": 4,
+        "target_neuron": 841
+      },
+      {
+        "source_layer": 4,
+        "source_neuron": 99,
+        "target_layer": 4,
+        "target_neuron": 248
+      },
+      {
+        "source_layer": 4,
+        "source_neuron": 904,
+        "target_layer": 4,
+        "target_neuron": 917
+      },
+      {
+        "source_layer": 4,
+        "source_neuron": 1510,
+        "target_layer": 4,
+        "target_neuron": 314
+      }
+    ],
+    "random_seed47": [
+      {
+        "source_layer": 1,
+        "source_neuron": 834,
+        "target_layer": 1,
+        "target_neuron": 260
+      },
+      {
+        "source_layer": 1,
+        "source_neuron": 149,
+        "target_layer": 1,
+        "target_neuron": 24
+      },
+      {
+        "source_layer": 1,
+        "source_neuron": 1157,
+        "target_layer": 1,
+        "target_neuron": 48
+      },
+      {
+        "source_layer": 1,
+        "source_neuron": 1137,
+        "target_layer": 1,
+        "target_neuron": 1051
+      },
+      {
+        "source_layer": 2,
+        "source_neuron": 549,
+        "target_layer": 2,
+        "target_neuron": 797
+      },
+      {
+        "source_layer": 2,
+        "source_neuron": 159,
+        "target_layer": 2,
+        "target_neuron": 735
+      },
+      {
+        "source_layer": 2,
+        "source_neuron": 1484,
+        "target_layer": 2,
+        "target_neuron": 866
+      },
+      {
+        "source_layer": 2,
+        "source_neuron": 120,
+        "target_layer": 2,
+        "target_neuron": 178
+      },
+      {
+        "source_layer": 3,
+        "source_neuron": 788,
+        "target_layer": 3,
+        "target_neuron": 882
+      },
+      {
+        "source_layer": 3,
+        "source_neuron": 207,
+        "target_layer": 3,
+        "target_neuron": 524
+      },
+      {
+        "source_layer": 3,
+        "source_neuron": 655,
+        "target_layer": 3,
+        "target_neuron": 1407
+      },
+      {
+        "source_layer": 3,
+        "source_neuron": 1315,
+        "target_layer": 3,
+        "target_neuron": 230
+      },
+      {
+        "source_layer": 4,
+        "source_neuron": 1150,
+        "target_layer": 4,
+        "target_neuron": 841
+      },
+      {
+        "source_layer": 4,
+        "source_neuron": 1290,
+        "target_layer": 4,
+        "target_neuron": 248
+      },
+      {
+        "source_layer": 4,
+        "source_neuron": 1452,
+        "target_layer": 4,
+        "target_neuron": 917
+      },
+      {
+        "source_layer": 4,
+        "source_neuron": 1217,
+        "target_layer": 4,
+        "target_neuron": 314
+      }
+    ]
+  },
+  "conditions": [
+    {
+      "method": "activation",
+      "alpha": 0.0
+    },
+    {
+      "method": "activation",
+      "alpha": 0.25
+    },
+    {
+      "method": "activation",
+      "alpha": 0.5
+    },
+    {
+      "method": "activation",
+      "alpha": 1.0
+    },
+    {
+      "method": "semantic",
+      "alpha": 0.0
+    },
+    {
+      "method": "semantic",
+      "alpha": 0.25
+    },
+    {
+      "method": "semantic",
+      "alpha": 0.5
+    },
+    {
+      "method": "semantic",
+      "alpha": 1.0
+    },
+    {
+      "method": "random_seed17",
+      "alpha": 0.0
+    },
+    {
+      "method": "random_seed17",
+      "alpha": 0.25
+    },
+    {
+      "method": "random_seed17",
+      "alpha": 0.5
+    },
+    {
+      "method": "random_seed17",
+      "alpha": 1.0
+    },
+    {
+      "method": "random_seed31",
+      "alpha": 0.0
+    },
+    {
+      "method": "random_seed31",
+      "alpha": 0.25
+    },
+    {
+      "method": "random_seed31",
+      "alpha": 0.5
+    },
+    {
+      "method": "random_seed31",
+      "alpha": 1.0
+    },
+    {
+      "method": "random_seed47",
+      "alpha": 0.0
+    },
+    {
+      "method": "random_seed47",
+      "alpha": 0.25
+    },
+    {
+      "method": "random_seed47",
+      "alpha": 0.5
+    },
+    {
+      "method": "random_seed47",
+      "alpha": 1.0
+    },
+    {
+      "method": "naive_average",
+      "alpha": 0.0
+    },
+    {
+      "method": "naive_average",
+      "alpha": 0.25
+    },
+    {
+      "method": "naive_average",
+      "alpha": 0.5
+    },
+    {
+      "method": "naive_average",
+      "alpha": 1.0
+    }
+  ],
+  "d2_results": {
+    "activation__alpha_0": {
+      "method": "activation",
+      "alpha": 0.0,
+      "accuracy": {
+        "arithmetic": 0.5833333333333334,
+        "comparison": 0.9427083333333334,
+        "negation": 0.7239583333333334,
+        "syntax": 0.8697916666666666
+      }
+    },
+    "activation__alpha_0.25": {
+      "method": "activation",
+      "alpha": 0.25,
+      "accuracy": {
+        "arithmetic": 0.5833333333333334,
+        "comparison": 0.9427083333333334,
+        "negation": 0.7239583333333334,
+        "syntax": 0.8697916666666666
+      }
+    },
+    "activation__alpha_0.5": {
+      "method": "activation",
+      "alpha": 0.5,
+      "accuracy": {
+        "arithmetic": 0.5833333333333334,
+        "comparison": 0.9427083333333334,
+        "negation": 0.7239583333333334,
+        "syntax": 0.8697916666666666
+      }
+    },
+    "activation__alpha_1": {
+      "method": "activation",
+      "alpha": 1.0,
+      "accuracy": {
+        "arithmetic": 0.5833333333333334,
+        "comparison": 0.9427083333333334,
+        "negation": 0.7239583333333334,
+        "syntax": 0.8697916666666666
+      }
+    },
+    "semantic__alpha_0": {
+      "method": "semantic",
+      "alpha": 0.0,
+      "accuracy": {
+        "arithmetic": 0.5833333333333334,
+        "comparison": 0.9427083333333334,
+        "negation": 0.7239583333333334,
+        "syntax": 0.8697916666666666
+      }
+    },
+    "semantic__alpha_0.25": {
+      "method": "semantic",
+      "alpha": 0.25,
+      "accuracy": {
+        "arithmetic": 0.5885416666666666,
+        "comparison": 0.9427083333333334,
+        "negation": 0.7239583333333334,
+        "syntax": 0.8697916666666666
+      }
+    },
+    "semantic__alpha_0.5": {
+      "method": "semantic",
+      "alpha": 0.5,
+      "accuracy": {
+        "arithmetic": 0.5885416666666666,
+        "comparison": 0.9427083333333334,
+        "negation": 0.7239583333333334,
+        "syntax": 0.8697916666666666
+      }
+    },
+    "semantic__alpha_1": {
+      "method": "semantic",
+      "alpha": 1.0,
+      "accuracy": {
+        "arithmetic": 0.5885416666666666,
+        "comparison": 0.9427083333333334,
+        "negation": 0.7239583333333334,
+        "syntax": 0.8697916666666666
+      }
+    },
+    "random_seed17__alpha_0": {
+      "method": "random_seed17",
+      "alpha": 0.0,
+      "accuracy": {
+        "arithmetic": 0.5833333333333334,
+        "comparison": 0.9427083333333334,
+        "negation": 0.7239583333333334,
+        "syntax": 0.8697916666666666
+      }
+    },
+    "random_seed17__alpha_0.25": {
+      "method": "random_seed17",
+      "alpha": 0.25,
+      "accuracy": {
+        "arithmetic": 0.5833333333333334,
+        "comparison": 0.9427083333333334,
+        "negation": 0.7239583333333334,
+        "syntax": 0.8697916666666666
+      }
+    },
+    "random_seed17__alpha_0.5": {
+      "method": "random_seed17",
+      "alpha": 0.5,
+      "accuracy": {
+        "arithmetic": 0.5833333333333334,
+        "comparison": 0.9427083333333334,
+        "negation": 0.7239583333333334,
+        "syntax": 0.8697916666666666
+      }
+    },
+    "random_seed17__alpha_1": {
+      "method": "random_seed17",
+      "alpha": 1.0,
+      "accuracy": {
+        "arithmetic": 0.5833333333333334,
+        "comparison": 0.9427083333333334,
+        "negation": 0.7239583333333334,
+        "syntax": 0.8697916666666666
+      }
+    },
+    "random_seed31__alpha_0": {
+      "method": "random_seed31",
+      "alpha": 0.0,
+      "accuracy": {
+        "arithmetic": 0.5833333333333334,
+        "comparison": 0.9427083333333334,
+        "negation": 0.7239583333333334,
+        "syntax": 0.8697916666666666
+      }
+    },
+    "random_seed31__alpha_0.25": {
+      "method": "random_seed31",
+      "alpha": 0.25,
+      "accuracy": {
+        "arithmetic": 0.5833333333333334,
+        "comparison": 0.9427083333333334,
+        "negation": 0.7239583333333334,
+        "syntax": 0.8697916666666666
+      }
+    },
+    "random_seed31__alpha_0.5": {
+      "method": "random_seed31",
+      "alpha": 0.5,
+      "accuracy": {
+        "arithmetic": 0.5833333333333334,
+        "comparison": 0.9427083333333334,
+        "negation": 0.7239583333333334,
+        "syntax": 0.8697916666666666
+      }
+    },
+    "random_seed31__alpha_1": {
+      "method": "random_seed31",
+      "alpha": 1.0,
+      "accuracy": {
+        "arithmetic": 0.5833333333333334,
+        "comparison": 0.9427083333333334,
+        "negation": 0.7239583333333334,
+        "syntax": 0.8697916666666666
+      }
+    },
+    "random_seed47__alpha_0": {
+      "method": "random_seed47",
+      "alpha": 0.0,
+      "accuracy": {
+        "arithmetic": 0.5833333333333334,
+        "comparison": 0.9427083333333334,
+        "negation": 0.7239583333333334,
+        "syntax": 0.8697916666666666
+      }
+    },
+    "random_seed47__alpha_0.25": {
+      "method": "random_seed47",
+      "alpha": 0.25,
+      "accuracy": {
+        "arithmetic": 0.5833333333333334,
+        "comparison": 0.9427083333333334,
+        "negation": 0.7239583333333334,
+        "syntax": 0.8697916666666666
+      }
+    },
+    "random_seed47__alpha_0.5": {
+      "method": "random_seed47",
+      "alpha": 0.5,
+      "accuracy": {
+        "arithmetic": 0.5833333333333334,
+        "comparison": 0.9427083333333334,
+        "negation": 0.7239583333333334,
+        "syntax": 0.8697916666666666
+      }
+    },
+    "random_seed47__alpha_1": {
+      "method": "random_seed47",
+      "alpha": 1.0,
+      "accuracy": {
+        "arithmetic": 0.5833333333333334,
+        "comparison": 0.9427083333333334,
+        "negation": 0.7239583333333334,
+        "syntax": 0.8697916666666666
+      }
+    },
+    "naive_average__alpha_0": {
+      "method": "naive_average",
+      "alpha": 0.0,
+      "accuracy": {
+        "arithmetic": 0.5833333333333334,
+        "comparison": 0.9427083333333334,
+        "negation": 0.7239583333333334,
+        "syntax": 0.8697916666666666
+      }
+    },
+    "naive_average__alpha_0.25": {
+      "method": "naive_average",
+      "alpha": 0.25,
+      "accuracy": {
+        "arithmetic": 0.578125,
+        "comparison": 0.953125,
+        "negation": 0.6666666666666666,
+        "syntax": 0.859375
+      }
+    },
+    "naive_average__alpha_0.5": {
+      "method": "naive_average",
+      "alpha": 0.5,
+      "accuracy": {
+        "arithmetic": 0.5,
+        "comparison": 0.5,
+        "negation": 0.5,
+        "syntax": 0.5
+      }
+    },
+    "naive_average__alpha_1": {
+      "method": "naive_average",
+      "alpha": 1.0,
+      "accuracy": {
+        "arithmetic": 0.6145833333333334,
+        "comparison": 0.9375,
+        "negation": 0.6979166666666666,
+        "syntax": 0.8958333333333334
+      }
+    }
+  },
+  "policy": {
+    "selected": "semantic__alpha_0.25",
+    "selected_none": false,
+    "reason": "positive D2 target gain with per-task retention",
+    "target_task": "arithmetic",
+    "retention_tolerance": 0.02,
+    "eligible_methods": [
+      "activation",
+      "semantic"
+    ],
+    "considered": [
+      {
+        "condition": "activation__alpha_0",
+        "target_gain": 0.0,
+        "other_task_changes": {
+          "comparison": 0.0,
+          "negation": 0.0,
+          "syntax": 0.0
+        },
+        "retention_satisfied": true
+      },
+      {
+        "condition": "activation__alpha_0.25",
+        "target_gain": 0.0,
+        "other_task_changes": {
+          "comparison": 0.0,
+          "negation": 0.0,
+          "syntax": 0.0
+        },
+        "retention_satisfied": true
+      },
+      {
+        "condition": "activation__alpha_0.5",
+        "target_gain": 0.0,
+        "other_task_changes": {
+          "comparison": 0.0,
+          "negation": 0.0,
+          "syntax": 0.0
+        },
+        "retention_satisfied": true
+      },
+      {
+        "condition": "activation__alpha_1",
+        "target_gain": 0.0,
+        "other_task_changes": {
+          "comparison": 0.0,
+          "negation": 0.0,
+          "syntax": 0.0
+        },
+        "retention_satisfied": true
+      },
+      {
+        "condition": "semantic__alpha_0",
+        "target_gain": 0.0,
+        "other_task_changes": {
+          "comparison": 0.0,
+          "negation": 0.0,
+          "syntax": 0.0
+        },
+        "retention_satisfied": true
+      },
+      {
+        "condition": "semantic__alpha_0.25",
+        "target_gain": 0.005208333333333259,
+        "other_task_changes": {
+          "comparison": 0.0,
+          "negation": 0.0,
+          "syntax": 0.0
+        },
+        "retention_satisfied": true
+      },
+      {
+        "condition": "semantic__alpha_0.5",
+        "target_gain": 0.005208333333333259,
+        "other_task_changes": {
+          "comparison": 0.0,
+          "negation": 0.0,
+          "syntax": 0.0
+        },
+        "retention_satisfied": true
+      },
+      {
+        "condition": "semantic__alpha_1",
+        "target_gain": 0.005208333333333259,
+        "other_task_changes": {
+          "comparison": 0.0,
+          "negation": 0.0,
+          "syntax": 0.0
+        },
+        "retention_satisfied": true
+      }
+    ],
+    "selection_scope": "all D2, in-sample fitting; no additional independent validation fold"
+  },
+  "frozen_before_D4_scoring": true,
+  "limitations": [
+    "Native gate/up rows and down columns are copied in existing residual coordinates. Independent models need not share that basis; functional conservation does not guarantee transplant or merging compatibility.",
+    "All D2 examples fit mappings, group choice, target task, and alpha; D2 gains are in-sample.",
+    "Random donors preserve target units/group size but not donor activation magnitude."
+  ]
+}

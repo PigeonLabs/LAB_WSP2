@@ -1,0 +1,462 @@
+{
+  "signature": "a1fb256f53f79166a4c5326120e0373a5e5fa364a753228fa53ee4b9491fb2dd",
+  "pair": "seed401_to_seed503",
+  "target_task": "arithmetic",
+  "policy": {
+    "selected": null,
+    "selected_none": true,
+    "reason": "no aligned transfer has positive D2 gain and required retention",
+    "target_task": "arithmetic",
+    "retention_tolerance": 0.02,
+    "eligible_methods": [
+      "activation",
+      "semantic"
+    ],
+    "considered": [
+      {
+        "condition": "activation__alpha_0",
+        "target_gain": 0.0,
+        "other_task_changes": {
+          "comparison": 0.0,
+          "negation": 0.0,
+          "syntax": 0.0
+        },
+        "retention_satisfied": true
+      },
+      {
+        "condition": "activation__alpha_0.25",
+        "target_gain": 0.0,
+        "other_task_changes": {
+          "comparison": 0.0,
+          "negation": 0.0,
+          "syntax": 0.0
+        },
+        "retention_satisfied": true
+      },
+      {
+        "condition": "activation__alpha_0.5",
+        "target_gain": 0.0,
+        "other_task_changes": {
+          "comparison": 0.0,
+          "negation": 0.0,
+          "syntax": 0.0
+        },
+        "retention_satisfied": true
+      },
+      {
+        "condition": "activation__alpha_1",
+        "target_gain": 0.0,
+        "other_task_changes": {
+          "comparison": 0.0,
+          "negation": 0.0,
+          "syntax": 0.0
+        },
+        "retention_satisfied": true
+      },
+      {
+        "condition": "semantic__alpha_0",
+        "target_gain": 0.0,
+        "other_task_changes": {
+          "comparison": 0.0,
+          "negation": 0.0,
+          "syntax": 0.0
+        },
+        "retention_satisfied": true
+      },
+      {
+        "condition": "semantic__alpha_0.25",
+        "target_gain": 0.0,
+        "other_task_changes": {
+          "comparison": 0.0,
+          "negation": -0.00520833333333337,
+          "syntax": 0.0
+        },
+        "retention_satisfied": true
+      },
+      {
+        "condition": "semantic__alpha_0.5",
+        "target_gain": 0.0,
+        "other_task_changes": {
+          "comparison": 0.0,
+          "negation": -0.00520833333333337,
+          "syntax": 0.0
+        },
+        "retention_satisfied": true
+      },
+      {
+        "condition": "semantic__alpha_1",
+        "target_gain": 0.0,
+        "other_task_changes": {
+          "comparison": 0.0,
+          "negation": -0.00520833333333337,
+          "syntax": 0.0
+        },
+        "retention_satisfied": true
+      }
+    ],
+    "selection_scope": "all D2, in-sample fitting; no additional independent validation fold"
+  },
+  "task_choice": {
+    "target_task": "arithmetic",
+    "donor_accuracy": {
+      "arithmetic": 0.734375,
+      "comparison": 0.9583333333333334,
+      "negation": 0.7604166666666666,
+      "syntax": 0.9114583333333334
+    },
+    "target_accuracy": {
+      "arithmetic": 0.625,
+      "comparison": 0.9322916666666666,
+      "negation": 0.6875,
+      "syntax": 0.90625
+    },
+    "competence_gap": {
+      "arithmetic": 0.109375,
+      "comparison": 0.02604166666666674,
+      "negation": 0.07291666666666663,
+      "syntax": 0.00520833333333337
+    },
+    "positive_donor_gap": true,
+    "selection_split": "D2"
+  },
+  "d4_baseline_accuracy": {
+    "arithmetic": 0.546875,
+    "comparison": 0.9114583333333334,
+    "negation": 0.6822916666666666,
+    "syntax": 0.8958333333333334
+  },
+  "d4_conditions": {
+    "activation__alpha_0": {
+      "method": "activation",
+      "alpha": 0.0,
+      "accuracy": {
+        "arithmetic": 0.546875,
+        "comparison": 0.9114583333333334,
+        "negation": 0.6822916666666666,
+        "syntax": 0.8958333333333334
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "activation__alpha_0.25": {
+      "method": "activation",
+      "alpha": 0.25,
+      "accuracy": {
+        "arithmetic": 0.5520833333333334,
+        "comparison": 0.9114583333333334,
+        "negation": 0.6822916666666666,
+        "syntax": 0.8958333333333334
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "activation__alpha_0.5": {
+      "method": "activation",
+      "alpha": 0.5,
+      "accuracy": {
+        "arithmetic": 0.5572916666666666,
+        "comparison": 0.9114583333333334,
+        "negation": 0.6822916666666666,
+        "syntax": 0.8958333333333334
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "activation__alpha_1": {
+      "method": "activation",
+      "alpha": 1.0,
+      "accuracy": {
+        "arithmetic": 0.5572916666666666,
+        "comparison": 0.9114583333333334,
+        "negation": 0.6822916666666666,
+        "syntax": 0.8958333333333334
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "semantic__alpha_0": {
+      "method": "semantic",
+      "alpha": 0.0,
+      "accuracy": {
+        "arithmetic": 0.546875,
+        "comparison": 0.9114583333333334,
+        "negation": 0.6822916666666666,
+        "syntax": 0.8958333333333334
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "semantic__alpha_0.25": {
+      "method": "semantic",
+      "alpha": 0.25,
+      "accuracy": {
+        "arithmetic": 0.5520833333333334,
+        "comparison": 0.9114583333333334,
+        "negation": 0.6822916666666666,
+        "syntax": 0.8958333333333334
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "semantic__alpha_0.5": {
+      "method": "semantic",
+      "alpha": 0.5,
+      "accuracy": {
+        "arithmetic": 0.5520833333333334,
+        "comparison": 0.9114583333333334,
+        "negation": 0.6822916666666666,
+        "syntax": 0.8958333333333334
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "semantic__alpha_1": {
+      "method": "semantic",
+      "alpha": 1.0,
+      "accuracy": {
+        "arithmetic": 0.5520833333333334,
+        "comparison": 0.9114583333333334,
+        "negation": 0.6822916666666666,
+        "syntax": 0.8958333333333334
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "random_seed17__alpha_0": {
+      "method": "random_seed17",
+      "alpha": 0.0,
+      "accuracy": {
+        "arithmetic": 0.546875,
+        "comparison": 0.9114583333333334,
+        "negation": 0.6822916666666666,
+        "syntax": 0.8958333333333334
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "random_seed17__alpha_0.25": {
+      "method": "random_seed17",
+      "alpha": 0.25,
+      "accuracy": {
+        "arithmetic": 0.5520833333333334,
+        "comparison": 0.9114583333333334,
+        "negation": 0.6822916666666666,
+        "syntax": 0.8958333333333334
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "random_seed17__alpha_0.5": {
+      "method": "random_seed17",
+      "alpha": 0.5,
+      "accuracy": {
+        "arithmetic": 0.5572916666666666,
+        "comparison": 0.9114583333333334,
+        "negation": 0.6822916666666666,
+        "syntax": 0.8958333333333334
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "random_seed17__alpha_1": {
+      "method": "random_seed17",
+      "alpha": 1.0,
+      "accuracy": {
+        "arithmetic": 0.5572916666666666,
+        "comparison": 0.9114583333333334,
+        "negation": 0.6770833333333334,
+        "syntax": 0.8958333333333334
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "random_seed31__alpha_0": {
+      "method": "random_seed31",
+      "alpha": 0.0,
+      "accuracy": {
+        "arithmetic": 0.546875,
+        "comparison": 0.9114583333333334,
+        "negation": 0.6822916666666666,
+        "syntax": 0.8958333333333334
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "random_seed31__alpha_0.25": {
+      "method": "random_seed31",
+      "alpha": 0.25,
+      "accuracy": {
+        "arithmetic": 0.5520833333333334,
+        "comparison": 0.9114583333333334,
+        "negation": 0.6822916666666666,
+        "syntax": 0.8958333333333334
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "random_seed31__alpha_0.5": {
+      "method": "random_seed31",
+      "alpha": 0.5,
+      "accuracy": {
+        "arithmetic": 0.5572916666666666,
+        "comparison": 0.9114583333333334,
+        "negation": 0.6822916666666666,
+        "syntax": 0.8958333333333334
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "random_seed31__alpha_1": {
+      "method": "random_seed31",
+      "alpha": 1.0,
+      "accuracy": {
+        "arithmetic": 0.5572916666666666,
+        "comparison": 0.9114583333333334,
+        "negation": 0.6822916666666666,
+        "syntax": 0.8958333333333334
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "random_seed47__alpha_0": {
+      "method": "random_seed47",
+      "alpha": 0.0,
+      "accuracy": {
+        "arithmetic": 0.546875,
+        "comparison": 0.9114583333333334,
+        "negation": 0.6822916666666666,
+        "syntax": 0.8958333333333334
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "random_seed47__alpha_0.25": {
+      "method": "random_seed47",
+      "alpha": 0.25,
+      "accuracy": {
+        "arithmetic": 0.5520833333333334,
+        "comparison": 0.9114583333333334,
+        "negation": 0.6822916666666666,
+        "syntax": 0.8958333333333334
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "random_seed47__alpha_0.5": {
+      "method": "random_seed47",
+      "alpha": 0.5,
+      "accuracy": {
+        "arithmetic": 0.5572916666666666,
+        "comparison": 0.9114583333333334,
+        "negation": 0.6822916666666666,
+        "syntax": 0.8958333333333334
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "random_seed47__alpha_1": {
+      "method": "random_seed47",
+      "alpha": 1.0,
+      "accuracy": {
+        "arithmetic": 0.5572916666666666,
+        "comparison": 0.9114583333333334,
+        "negation": 0.6822916666666666,
+        "syntax": 0.8958333333333334
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "naive_average__alpha_0": {
+      "method": "naive_average",
+      "alpha": 0.0,
+      "accuracy": {
+        "arithmetic": 0.546875,
+        "comparison": 0.9114583333333334,
+        "negation": 0.6822916666666666,
+        "syntax": 0.8958333333333334
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "naive_average__alpha_0.25": {
+      "method": "naive_average",
+      "alpha": 0.25,
+      "accuracy": {
+        "arithmetic": 0.5833333333333334,
+        "comparison": 0.9114583333333334,
+        "negation": 0.71875,
+        "syntax": 0.9010416666666666
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "naive_average__alpha_0.5": {
+      "method": "naive_average",
+      "alpha": 0.5,
+      "accuracy": {
+        "arithmetic": 0.5,
+        "comparison": 0.5,
+        "negation": 0.5,
+        "syntax": 0.5
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    },
+    "naive_average__alpha_1": {
+      "method": "naive_average",
+      "alpha": 1.0,
+      "accuracy": {
+        "arithmetic": 0.71875,
+        "comparison": 0.953125,
+        "negation": 0.7916666666666666,
+        "syntax": 0.9010416666666666
+      },
+      "status": "DESCRIPTIVE_ONLY_NO_D4_SELECTION"
+    }
+  },
+  "selected_minus_baseline": {
+    "effect": 0.0,
+    "pvalue": 1.0,
+    "n_clusters": 24,
+    "method": "monte_carlo",
+    "standardized_effect": null,
+    "status": "OK",
+    "bootstrap": {
+      "mean": 0.0,
+      "median": 0.0,
+      "std": 0.0,
+      "n_observations": 192,
+      "n_clusters": 24,
+      "estimand": "equal-cluster-weighted mean",
+      "confidence": 0.95,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "status": "OK"
+    },
+    "wrapper_effects": {
+      "D4:wrapper:t00": 0.0,
+      "D4:wrapper:t01": 0.0,
+      "D4:wrapper:t02": 0.0,
+      "D4:wrapper:t03": 0.0,
+      "D4:wrapper:t04": 0.0,
+      "D4:wrapper:t05": 0.0,
+      "D4:wrapper:t06": 0.0,
+      "D4:wrapper:t07": 0.0,
+      "D4:wrapper:t08": 0.0,
+      "D4:wrapper:t09": 0.0,
+      "D4:wrapper:t10": 0.0,
+      "D4:wrapper:t11": 0.0,
+      "D4:wrapper:t12": 0.0,
+      "D4:wrapper:t13": 0.0,
+      "D4:wrapper:t14": 0.0,
+      "D4:wrapper:t15": 0.0,
+      "D4:wrapper:t16": 0.0,
+      "D4:wrapper:t17": 0.0,
+      "D4:wrapper:t18": 0.0,
+      "D4:wrapper:t19": 0.0,
+      "D4:wrapper:t20": 0.0,
+      "D4:wrapper:t21": 0.0,
+      "D4:wrapper:t22": 0.0,
+      "D4:wrapper:t23": 0.0
+    },
+    "hypothesis": "D2-selected aligned transplant improves D4 target-task accuracy versus untouched target",
+    "global_bh_pending": true,
+    "selected_none": true,
+    "selection_is_positive_control": false
+  },
+  "original_parameter_hashes": {
+    "donor_before": "1fbfc215e6645bed39e29db0296308b4fb35c32f7bad15b800da01dd2f5c6a51",
+    "donor_after": "1fbfc215e6645bed39e29db0296308b4fb35c32f7bad15b800da01dd2f5c6a51",
+    "target_before": "ef9d3ee65728610025f9b30c647e47b4b3997e7b7afd535ba1140de44df0909d",
+    "target_after": "ef9d3ee65728610025f9b30c647e47b4b3997e7b7afd535ba1140de44df0909d"
+  },
+  "elapsed_seconds": 15.00090904798708,
+  "conditions_evaluated": 24,
+  "limitations": [
+    "Native gate/up rows and down columns are copied in existing residual coordinates. Independent models need not share that basis; functional conservation does not guarantee transplant or merging compatibility.",
+    "All D2 examples fit mappings, group choice, target task, and alpha; D2 gains are in-sample.",
+    "Random donors preserve target units/group size but not donor activation magnitude.",
+    "Five directed pairs reuse models; they are not independent seed replicates.",
+    "D4 results for unselected methods and weights are descriptive and cannot change the policy.",
+    "Native parameter transfer is not evidence of circuit-preserving model merging."
+  ]
+}
