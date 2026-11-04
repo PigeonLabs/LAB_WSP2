@@ -104,7 +104,7 @@ def _save(root,out,fig,name,rows,sources,spec):
     receipt={'schema':'followup-figure-v1','title':spec.get('title',name),'encoding':{k:v for k,v in spec.items() if k not in ('rows','records')},'sources':[{'path':p,'sha256':_digest(_inside(root,p))} for p in sources],'rows':rows}
     paths['json'].write_text(json.dumps(receipt,indent=2,ensure_ascii=False,allow_nan=False)+'\n')
     plt.close(fig)
-    return {'id':name,'title':spec.get('title',name),'path':paths['svg'].relative_to(root).as_posix(),'png':paths['png'].relative_to(root).as_posix(),'receipt':paths['json'].relative_to(root).as_posix(),'note':spec.get('note','')}
+    return {'id':name,'title':spec.get('title',name),'path':paths['svg'].relative_to(root).as_posix(),'png':paths['png'].relative_to(root).as_posix(),'receipt':paths['json'].relative_to(root).as_posix(),'note':spec.get('note',''),'show_in_readme':spec.get('show_in_readme',True)}
 
 
 def _figure(root,out,plt,stage,spec,stage_path):
@@ -150,6 +150,7 @@ def _figure(root,out,plt,stage,spec,stage_path):
         ax.set_xlabel(spec.get('xlabel',xkey));ax.set_ylabel(spec.get('ylabel',ykey));ax.grid(axis='y')
         if spec.get('yscale'):ax.set_yscale(spec['yscale'])
         if spec.get('xlim'):ax.set_xlim(spec['xlim'])
+        if spec.get('xticks') is not None:ax.set_xticks(spec['xticks'],spec.get('xticklabels'))
         if spec.get('ylim'):ax.set_ylim(spec['ylim'])
         if 'reference' in spec:ax.axhline(spec['reference'],color='#65717B',linestyle=':',lw=1)
         if serieskey:ax.legend(frameon=False,ncol=min(3,len(names)),fontsize=9)
@@ -259,7 +260,8 @@ def render_followup_reports(root=None,max_stage=None):
         p=s['payload']
         if s['status'] in ('PENDING','PLANNED'):continue
         section+=f"### {s['id']} — {s['title']}\n\n**{s['status']} · {s['verdict']}**. "+p.get('rationale','판정 근거 미보고.')+'\n\n'
-        for f in s['figures']:section+=f"![{f['title']}]({f['path']})\n\n{f['note']}\n\n[그림 데이터]({f['receipt']})\n\n"
+        for f in s['figures']:
+            if f['show_in_readme']:section+=f"![{f['title']}]({f['path']})\n\n{f['note']}\n\n[그림 데이터]({f['receipt']})\n\n"
         section+=f"[{s['id']} 측정값·불확실성·원본](reports/followup-v2/{s['id']}_REPORT.md)\n\n"
     (reports/'README_SECTION.md').write_text(section)
     full=section.replace('](reports/','](../../reports/').replace('](artifacts/','](../../artifacts/')

@@ -1,5 +1,5 @@
 {
-  "generated_kst": "2026-11-04 12:02 KST",
+  "generated_kst": "2026-11-04 12:14 KST",
   "stages": [
     {
       "id": "F0",
@@ -30,16 +30,134 @@
           "path": "artifacts/followup-v2/figures/f0_f0_dataset.svg",
           "png": "artifacts/followup-v2/figures/f0_f0_dataset.png",
           "receipt": "artifacts/followup-v2/figures/f0_f0_dataset.json",
-          "note": ""
+          "note": "",
+          "show_in_readme": true
         }
       ]
     },
     {
       "id": "F1",
-      "status": "PENDING",
+      "status": "MEASURED",
       "verdict": "INCONCLUSIVE",
-      "sources": [],
-      "figures": []
+      "sources": [
+        {
+          "path": "results/followup-v2/stages/F1.json",
+          "sha256": "8485285e7ad09190e53cbf0b1364e3366689a5748c79b7b3e9b72ce69178bef3"
+        },
+        {
+          "path": "results/followup-v2/training/seed_101/manifest.json",
+          "sha256": "20e4d5072cd229d8c793554ab988c8db0e3013f42c5313676a0b2372a8067383"
+        },
+        {
+          "path": "results/followup-v2/training/seed_211/manifest.json",
+          "sha256": "e9239acab43d9f82816108864bb78a03653d1bb163c4a520acee87970ad97129"
+        },
+        {
+          "path": "results/followup-v2/training/seed_307/manifest.json",
+          "sha256": "4bf8b58a804c546fc8d40ea84699fc8dbafc8c17efb0c5e7c2b78711c09332d9"
+        },
+        {
+          "path": "results/followup-v2/training/seed_401/manifest.json",
+          "sha256": "ed83ca3db709917b0356ecf8578bad949aa674c11f64276990925747d797e91e"
+        },
+        {
+          "path": "results/followup-v2/training/seed_503/manifest.json",
+          "sha256": "70b138327543159b1dac294cb3563a35e3ff99b3c6db5c4da8d0c9af2922af7f"
+        },
+        {
+          "path": "results/followup-v2/calibration/seed101/summary.json",
+          "sha256": "65e0327fb652e7a0e93e31678364335256e70c401c6387c9a2579a5a75cc9ebb"
+        },
+        {
+          "path": "results/followup-v2/calibration/seed211/summary.json",
+          "sha256": "64782adc5cc86f9845a1aa6137cf37f9454abe6f22c4b2a0365d9d9f4693da0e"
+        },
+        {
+          "path": "results/followup-v2/calibration/seed307/summary.json",
+          "sha256": "2be3d80878468c3d2a22934ada8a5ca9b6c3c81387fe5e0c90ed1c3417227456"
+        },
+        {
+          "path": "results/followup-v2/calibration/seed401/summary.json",
+          "sha256": "224d344dac597b53aa351a7fc76b55253d46c7fb075eb90595f8312e8df48ea6"
+        },
+        {
+          "path": "results/followup-v2/calibration/seed503/summary.json",
+          "sha256": "393c4622943da832f47c21a8bb2e4f6623fe3d2aaa8c65c272253d91dd16cb23"
+        },
+        {
+          "path": "results/followup-v2/calibration/qwen/summary.json",
+          "sha256": "4f397c174e8a17d708bc5633970f7ff7e887ea42759d015467b02f058ae8bb56"
+        },
+        {
+          "path": "results/followup-v2/calibration/smol/summary.json",
+          "sha256": "a7cba3ffb6f40757470261788a5984e3c201e7e441e0c77804017da9305b28fc"
+        },
+        {
+          "path": "results/followup-v2/calibration/olmo/summary.json",
+          "sha256": "21847dcd8c1137cb03d1de808907d6f072d1ae60508a975597bf0574c910ca1a"
+        },
+        {
+          "path": "results/followup-v2/calibration/seed101/lock.json",
+          "sha256": "8cf994cdf7f1f8976dcc8001b363b2ca907b1199e048928a07b2de825a47e091"
+        },
+        {
+          "path": "results/followup-v2/calibration/seed211/lock.json",
+          "sha256": "307f2a8322be4ea93366b228d0e1ca76dcd63c00425adfe82225c36b46912669"
+        },
+        {
+          "path": "results/followup-v2/calibration/seed307/lock.json",
+          "sha256": "0f3a16ec5c9ce6a98b13bc5110c142ad6eb4c1129ec440d00fd016ff15879f85"
+        },
+        {
+          "path": "results/followup-v2/calibration/seed401/lock.json",
+          "sha256": "0cecdff3fa8927acb3c9201fd0cdce248f80120bb1e4a09e930c2657d4dd2e9c"
+        },
+        {
+          "path": "results/followup-v2/calibration/seed503/lock.json",
+          "sha256": "df6d5848311b09acaa114114057c14b1eddbd39ea00f3ef85328d2942b4e23d4"
+        },
+        {
+          "path": "results/followup-v2/calibration/qwen/lock.json",
+          "sha256": "ad566f66308637a956732ad290e91edd1a84ca8c4876c7978f5b36f16280176e"
+        },
+        {
+          "path": "results/followup-v2/calibration/smol/lock.json",
+          "sha256": "40f60de7d91d9f844e029ca6c8eadc97d801be19148e80d1a420a5be0aa55094"
+        },
+        {
+          "path": "results/followup-v2/calibration/olmo/lock.json",
+          "sha256": "3fcb48ad4ddd09784d2e2f0bf8a97fe2a648faff974cf288b444e8f91106a48e"
+        }
+      ],
+      "figures": [
+        {
+          "id": "f1_five_seed_training",
+          "title": "Five independent seeds: training objective",
+          "path": "artifacts/followup-v2/figures/f1_five_seed_training.svg",
+          "png": "artifacts/followup-v2/figures/f1_five_seed_training.png",
+          "receipt": "artifacts/followup-v2/figures/f1_five_seed_training.json",
+          "note": "Training loss is not held-out competence. No D3/D4 outcomes are used in this figure.",
+          "show_in_readme": true
+        },
+        {
+          "id": "f1_selected_calibration_accuracy",
+          "title": "Calibration accuracy under frozen selected formats",
+          "path": "artifacts/followup-v2/figures/f1_selected_calibration_accuracy.svg",
+          "png": "artifacts/followup-v2/figures/f1_selected_calibration_accuracy.png",
+          "receipt": "artifacts/followup-v2/figures/f1_selected_calibration_accuracy.json",
+          "note": "Selected on calibration itself; this is an in-sample readiness diagnostic, not final test accuracy.",
+          "show_in_readme": true
+        },
+        {
+          "id": "f1_calibration_variant_comparison",
+          "title": "Calibration format comparison",
+          "path": "artifacts/followup-v2/figures/f1_calibration_variant_comparison.svg",
+          "png": "artifacts/followup-v2/figures/f1_calibration_variant_comparison.png",
+          "receipt": "artifacts/followup-v2/figures/f1_calibration_variant_comparison.json",
+          "note": "Byte-tokenizer models use default only; unevaluated formats are N/A. One format is frozen per model.",
+          "show_in_readme": true
+        }
+      ]
     },
     {
       "id": "F2",

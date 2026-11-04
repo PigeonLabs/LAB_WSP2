@@ -20,6 +20,15 @@ if data.exists():
 files=[]
 for f in sorted(set(paths)):
     if not f.is_file():continue
+    relative=f.relative_to(ROOT)
+    if relative.parts[:2]==('results','followup-v2'):
+        level=int(args.stage[1:]);parts=relative.parts[2:]
+        required={'training':1,'training.log':1,'calibration':1,'calibration.log':1,'collections':2,'positive_control':2,'discover.log':2,'positive.log':2,'alignment':3,'heldout.log':3,'alignment_fit.log':3,'alignment_evaluate.log':3,'causal':4,'causal_alignment':4,'causal-fit.log':4,'causal-test.log':4,'causal_alignment_fit.log':4,'causal_alignment_evaluate.log':4,'transfers':5,'transfers.log':5,'statistics':6,'final_audit.json':6}
+        if parts and required.get(parts[0],0)>level:continue
+        if parts and parts[0]=='stages' and int(f.stem[1:])>level:continue
+        if parts and parts[0]=='runtime':
+            runtime_level=4 if f.name.startswith('causal-') else 3 if f.name.startswith('heldout_') else 2
+            if runtime_level>level:continue
     b=f.read_bytes();rel=str(f.relative_to(ROOT));binary=f.suffix in ('.npz','.npy','.parquet','.png','.gz')
     row={'path':rel,'sha256':hashlib.sha256(b).hexdigest(),'bytes':len(b),'binary':binary}
     if not binary and len(b)<150000:row['content']=b.decode()

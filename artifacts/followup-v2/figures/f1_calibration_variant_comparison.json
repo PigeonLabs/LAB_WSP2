@@ -1,0 +1,178 @@
+{
+  "schema": "followup-figure-v1",
+  "title": "Calibration format comparison",
+  "encoding": {
+    "id": "calibration_variant_comparison",
+    "kind": "heatmap",
+    "title": "Calibration format comparison",
+    "row": "model",
+    "column": "format",
+    "value": "value",
+    "column_order": [
+      "default",
+      "explicit",
+      "fourshot"
+    ],
+    "vmin": 0,
+    "vmax": 1,
+    "percent": true,
+    "unit": "Macro accuracy",
+    "source": [
+      "results/followup-v2/calibration/seed101/summary.json",
+      "results/followup-v2/calibration/seed101/lock.json",
+      "results/followup-v2/calibration/seed211/summary.json",
+      "results/followup-v2/calibration/seed211/lock.json",
+      "results/followup-v2/calibration/seed307/summary.json",
+      "results/followup-v2/calibration/seed307/lock.json",
+      "results/followup-v2/calibration/seed401/summary.json",
+      "results/followup-v2/calibration/seed401/lock.json",
+      "results/followup-v2/calibration/seed503/summary.json",
+      "results/followup-v2/calibration/seed503/lock.json",
+      "results/followup-v2/calibration/qwen/summary.json",
+      "results/followup-v2/calibration/qwen/lock.json",
+      "results/followup-v2/calibration/smol/summary.json",
+      "results/followup-v2/calibration/smol/lock.json",
+      "results/followup-v2/calibration/olmo/summary.json",
+      "results/followup-v2/calibration/olmo/lock.json"
+    ],
+    "note": "Byte-tokenizer models use default only; unevaluated formats are N/A. One format is frozen per model."
+  },
+  "sources": [
+    {
+      "path": "results/followup-v2/calibration/seed101/summary.json",
+      "sha256": "65e0327fb652e7a0e93e31678364335256e70c401c6387c9a2579a5a75cc9ebb"
+    },
+    {
+      "path": "results/followup-v2/calibration/seed101/lock.json",
+      "sha256": "8cf994cdf7f1f8976dcc8001b363b2ca907b1199e048928a07b2de825a47e091"
+    },
+    {
+      "path": "results/followup-v2/calibration/seed211/summary.json",
+      "sha256": "64782adc5cc86f9845a1aa6137cf37f9454abe6f22c4b2a0365d9d9f4693da0e"
+    },
+    {
+      "path": "results/followup-v2/calibration/seed211/lock.json",
+      "sha256": "307f2a8322be4ea93366b228d0e1ca76dcd63c00425adfe82225c36b46912669"
+    },
+    {
+      "path": "results/followup-v2/calibration/seed307/summary.json",
+      "sha256": "2be3d80878468c3d2a22934ada8a5ca9b6c3c81387fe5e0c90ed1c3417227456"
+    },
+    {
+      "path": "results/followup-v2/calibration/seed307/lock.json",
+      "sha256": "0f3a16ec5c9ce6a98b13bc5110c142ad6eb4c1129ec440d00fd016ff15879f85"
+    },
+    {
+      "path": "results/followup-v2/calibration/seed401/summary.json",
+      "sha256": "224d344dac597b53aa351a7fc76b55253d46c7fb075eb90595f8312e8df48ea6"
+    },
+    {
+      "path": "results/followup-v2/calibration/seed401/lock.json",
+      "sha256": "0cecdff3fa8927acb3c9201fd0cdce248f80120bb1e4a09e930c2657d4dd2e9c"
+    },
+    {
+      "path": "results/followup-v2/calibration/seed503/summary.json",
+      "sha256": "393c4622943da832f47c21a8bb2e4f6623fe3d2aaa8c65c272253d91dd16cb23"
+    },
+    {
+      "path": "results/followup-v2/calibration/seed503/lock.json",
+      "sha256": "df6d5848311b09acaa114114057c14b1eddbd39ea00f3ef85328d2942b4e23d4"
+    },
+    {
+      "path": "results/followup-v2/calibration/qwen/summary.json",
+      "sha256": "4f397c174e8a17d708bc5633970f7ff7e887ea42759d015467b02f058ae8bb56"
+    },
+    {
+      "path": "results/followup-v2/calibration/qwen/lock.json",
+      "sha256": "ad566f66308637a956732ad290e91edd1a84ca8c4876c7978f5b36f16280176e"
+    },
+    {
+      "path": "results/followup-v2/calibration/smol/summary.json",
+      "sha256": "a7cba3ffb6f40757470261788a5984e3c201e7e441e0c77804017da9305b28fc"
+    },
+    {
+      "path": "results/followup-v2/calibration/smol/lock.json",
+      "sha256": "40f60de7d91d9f844e029ca6c8eadc97d801be19148e80d1a420a5be0aa55094"
+    },
+    {
+      "path": "results/followup-v2/calibration/olmo/summary.json",
+      "sha256": "21847dcd8c1137cb03d1de808907d6f072d1ae60508a975597bf0574c910ca1a"
+    },
+    {
+      "path": "results/followup-v2/calibration/olmo/lock.json",
+      "sha256": "3fcb48ad4ddd09784d2e2f0bf8a97fe2a648faff974cf288b444e8f91106a48e"
+    }
+  ],
+  "rows": [
+    {
+      "model": "seed101",
+      "format": "default",
+      "value": 0.7721354166666666
+    },
+    {
+      "model": "seed211",
+      "format": "default",
+      "value": 0.796875
+    },
+    {
+      "model": "seed307",
+      "format": "default",
+      "value": 0.7981770833333334
+    },
+    {
+      "model": "seed401",
+      "format": "default",
+      "value": 0.8463541666666666
+    },
+    {
+      "model": "seed503",
+      "format": "default",
+      "value": 0.77734375
+    },
+    {
+      "model": "qwen",
+      "format": "default",
+      "value": 0.5169270833333334
+    },
+    {
+      "model": "qwen",
+      "format": "explicit",
+      "value": 0.5182291666666666
+    },
+    {
+      "model": "qwen",
+      "format": "fourshot",
+      "value": 0.5651041666666667
+    },
+    {
+      "model": "smol",
+      "format": "default",
+      "value": 0.5
+    },
+    {
+      "model": "smol",
+      "format": "explicit",
+      "value": 0.49609375
+    },
+    {
+      "model": "smol",
+      "format": "fourshot",
+      "value": 0.5
+    },
+    {
+      "model": "olmo",
+      "format": "default",
+      "value": 0.5065104166666666
+    },
+    {
+      "model": "olmo",
+      "format": "explicit",
+      "value": 0.5104166666666667
+    },
+    {
+      "model": "olmo",
+      "format": "fourshot",
+      "value": 0.5078125
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "calibration_signature": "8373cdd0326d06e0b6ad33065833a456570c7cf551353f9bc39fe90425539fa5",
+  "competence_gate": {
+    "D4_reported_separately": true,
+    "accuracy_min": 0.7,
+    "both_models_required": true,
+    "wilson95_lower_strictly_above": 0.5
+  },
+  "correction": "none; raw sequence margins preserved for competence and causal effects",
+  "evidence_file_sha256": "ba2680a2c4ef02f2c7281594e94b3a95ec4d812b91d75e7f367a2a4a64904ad1",
+  "evidence_sha256": "6878b1483507b64a6d6135703fb4683891d5dd523e8b8bf4ae2306dbbbb1b646",
+  "fixed_for_all_checkpoints": false,
+  "held_out_status": {
+    "D3": "PENDING_UNTIL_F3_MAPS_FROZEN",
+    "D4": "PENDING_UNTIL_F4_MAPS_FROZEN"
+  },
+  "locked_before": [
+    "D1",
+    "D2",
+    "D3",
+    "D4"
+  ],
+  "metrics": {
+    "default": {
+      "accuracy": 0.5065104166666666,
+      "macro_accuracy": 0.5065104166666666,
+      "margin_type": "uncorrected_sequence_log_likelihood",
+      "n": 768,
+      "per_task": {
+        "arithmetic": {
+          "accuracy": 0.5,
+          "competent": false,
+          "correct": 96,
+          "n": 192,
+          "tie_rate": 0.0,
+          "true_label_rate": 0.5,
+          "wilson95": [
+            0.42997295867531937,
+            0.5700270413246806
+          ],
+          "yes_rate": 0.5416666666666666
+        },
+        "comparison": {
+          "accuracy": 0.5208333333333334,
+          "competent": false,
+          "correct": 100,
+          "n": 192,
+          "tie_rate": 0.0,
+          "true_label_rate": 0.5,
+          "wilson95": [
+            0.4504572635216634,
+            0.590392105392222
+          ],
+          "yes_rate": 0.5104166666666666
+        },
+        "negation": {
+          "accuracy": 0.5104166666666666,
+          "competent": false,
+          "correct": 98,
+          "n": 192,
+          "tie_rate": 0.0,
+          "true_label_rate": 0.5,
+          "wilson95": [
+            0.4402002012413536,
+            0.5802244832155888
+          ],
+          "yes_rate": 0.17708333333333334
+        },
+        "syntax": {
+          "accuracy": 0.4947916666666667,
+          "competent": false,
+          "correct": 95,
+          "n": 192,
+          "tie_rate": 0.0,
+          "true_label_rate": 0.5,
+          "wilson95": [
+            0.4248705123482253,
+            0.5649171454233036
+          ],
+          "yes_rate": 0.5364583333333334
+        }
+      },
+      "prediction_threshold": 0.0,
+      "records_sha256": "92b21a955159d7d42a7ace40b3af71994bceb3bef5e56d9fb00e104cccd0077e",
+      "row_ids_sha256": "877b6c292493503ceb915dcd4cc3034ecdbe501f63e27e3d981d682583ea6bed",
+      "split": "calibration",
+      "tie_rate": 0.0,
+      "yes_rate": 0.44140625
+    },
+    "explicit": {
+      "accuracy": 0.5104166666666666,
+      "macro_accuracy": 0.5104166666666667,
+      "margin_type": "uncorrected_sequence_log_likelihood",
+      "n": 768,
+      "per_task": {
+        "arithmetic": {
+          "accuracy": 0.515625,
+          "competent": false,
+          "correct": 99,
+          "n": 192,
+          "tie_rate": 0.0,
+          "true_label_rate": 0.5,
+          "wilson95": [
+            0.44532500223818083,
+            0.5853120244472331
+          ],
+          "yes_rate": 0.859375
+        },
+        "comparison": {
+          "accuracy": 0.4947916666666667,
+          "competent": false,
+          "correct": 95,
+          "n": 192,
+          "tie_rate": 0.0,
+          "true_label_rate": 0.5,
+          "wilson95": [
+            0.4248705123482253,
+            0.5649171454233036
+          ],
+          "yes_rate": 0.5677083333333334
+        },
+        "negation": {
+          "accuracy": 0.53125,
+          "competent": false,
+          "correct": 102,
+          "n": 192,
+          "tie_rate": 0.0,
+          "true_label_rate": 0.5,
+          "wilson95": [
+            0.46074420275554173,
+            0.6005298506152861
+          ],
+          "yes_rate": 0.34375
+        },
+        "syntax": {
+          "accuracy": 0.5,
+          "competent": false,
+          "correct": 96,
+          "n": 192,
+          "tie_rate": 0.0,
+          "true_label_rate": 0.5,
+          "wilson95": [
+            0.42997295867531937,
+            0.5700270413246806
+          ],
+          "yes_rate": 0.8020833333333334
+        }
+      },
+      "prediction_threshold": 0.0,
+      "records_sha256": "e7858761916b4c1204df19eef9d0fd5f113b5a7a1ee3fa1a670fc0e81ed5a513",
+      "row_ids_sha256": "877b6c292493503ceb915dcd4cc3034ecdbe501f63e27e3d981d682583ea6bed",
+      "split": "calibration",
+      "tie_rate": 0.0,
+      "yes_rate": 0.6432291666666666
+    },
+    "fourshot": {
+      "accuracy": 0.5078125,
+      "macro_accuracy": 0.5078125,
+      "margin_type": "uncorrected_sequence_log_likelihood",
+      "n": 768,
+      "per_task": {
+        "arithmetic": {
+          "accuracy": 0.5052083333333334,
+          "competent": false,
+          "correct": 97,
+          "n": 192,
+          "tie_rate": 0.0,
+          "true_label_rate": 0.5,
+          "wilson95": [
+            0.4350828545766966,
+            0.5751294876517749
+          ],
+          "yes_rate": 0.921875
+        },
+        "comparison": {
+          "accuracy": 0.5260416666666666,
+          "competent": false,
+          "correct": 101,
+          "n": 192,
+          "tie_rate": 0.0,
+          "true_label_rate": 0.5,
+          "wilson95": [
+            0.45559699344140986,
+            0.5954647177009467
+          ],
+          "yes_rate": 0.7864583333333334
+        },
+        "negation": {
+          "accuracy": 0.5052083333333334,
+          "competent": false,
+          "correct": 97,
+          "n": 192,
+          "tie_rate": 0.0,
+          "true_label_rate": 0.5,
+          "wilson95": [
+            0.4350828545766966,
+            0.5751294876517749
+          ],
+          "yes_rate": 0.4010416666666667
+        },
+        "syntax": {
+          "accuracy": 0.4947916666666667,
+          "competent": false,
+          "correct": 95,
+          "n": 192,
+          "tie_rate": 0.0,
+          "true_label_rate": 0.5,
+          "wilson95": [
+            0.4248705123482253,
+            0.5649171454233036
+          ],
+          "yes_rate": 0.9010416666666666
+        }
+      },
+      "prediction_threshold": 0.0,
+      "records_sha256": "b9a977c516994e3a1fd4fea6e79a894819fa62fff695b4394f3473422738e09c",
+      "row_ids_sha256": "877b6c292493503ceb915dcd4cc3034ecdbe501f63e27e3d981d682583ea6bed",
+      "split": "calibration",
+      "tie_rate": 0.0,
+      "yes_rate": 0.7526041666666666
+    }
+  },
+  "model_info": {
+    "cached_file_manifest_sha256": "4121aeecd90ddaa9e22eca9f60c95ee76b57c5de0ec5ec2cded9c5af829db73b",
+    "family": "public_pretrained",
+    "id": "olmo",
+    "license": "apache-2.0",
+    "model_id": "allenai/OLMo-2-0425-1B",
+    "model_type": "olmo2",
+    "revision": "a1847dff35000b4271fa70afc5db10fd29fedbdf"
+  },
+  "protocol_version": "followup-v2-format-calibration-v1",
+  "selected_metrics": {
+    "accuracy": 0.5104166666666666,
+    "macro_accuracy": 0.5104166666666667,
+    "margin_type": "uncorrected_sequence_log_likelihood",
+    "n": 768,
+    "per_task": {
+      "arithmetic": {
+        "accuracy": 0.515625,
+        "competent": false,
+        "correct": 99,
+        "n": 192,
+        "tie_rate": 0.0,
+        "true_label_rate": 0.5,
+        "wilson95": [
+          0.44532500223818083,
+          0.5853120244472331
+        ],
+        "yes_rate": 0.859375
+      },
+      "comparison": {
+        "accuracy": 0.4947916666666667,
+        "competent": false,
+        "correct": 95,
+        "n": 192,
+        "tie_rate": 0.0,
+        "true_label_rate": 0.5,
+        "wilson95": [
+          0.4248705123482253,
+          0.5649171454233036
+        ],
+        "yes_rate": 0.5677083333333334
+      },
+      "negation": {
+        "accuracy": 0.53125,
+        "competent": false,
+        "correct": 102,
+        "n": 192,
+        "tie_rate": 0.0,
+        "true_label_rate": 0.5,
+        "wilson95": [
+          0.46074420275554173,
+          0.6005298506152861
+        ],
+        "yes_rate": 0.34375
+      },
+      "syntax": {
+        "accuracy": 0.5,
+        "competent": false,
+        "correct": 96,
+        "n": 192,
+        "tie_rate": 0.0,
+        "true_label_rate": 0.5,
+        "wilson95": [
+          0.42997295867531937,
+          0.5700270413246806
+        ],
+        "yes_rate": 0.8020833333333334
+      }
+    },
+    "prediction_threshold": 0.0,
+    "records_sha256": "e7858761916b4c1204df19eef9d0fd5f113b5a7a1ee3fa1a670fc0e81ed5a513",
+    "row_ids_sha256": "877b6c292493503ceb915dcd4cc3034ecdbe501f63e27e3d981d682583ea6bed",
+    "split": "calibration",
+    "tie_rate": 0.0,
+    "yes_rate": 0.6432291666666666
+  },
+  "selection_mode": "calibration_only_format_selection",
+  "selection_rule": "max macro_accuracy; then min abs(yes_rate-0.5); then default, explicit, fourshot",
+  "source_split": "calibration",
+  "training_records_sha256": "369357eb45d8e17e051d669d6bf101be18dc850f7effa367f2918b109b52e72c",
+  "variant": "explicit",
+  "variants_evaluated": [
+    "default",
+    "explicit",
+    "fourshot"
+  ]
+}

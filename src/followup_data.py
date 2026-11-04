@@ -112,6 +112,15 @@ def oracle(record):
  raise ValueError(f'Unsupported concept {c}')
 
 
+def _semantic_statement(concept, m):
+ if concept=='arithmetic': return f'{m["a"]} plus {m["b"]} equals {m["claimed_sum"]}.'
+ if concept=='comparison': return f'{m["a"]} is {m["relation"]} than {m["b"]}.'
+ if concept=='negation':
+  return ', '.join(f'{v}={"T" if m["assignment"][v] else "F"}' for v in m['variable_order'])+f'. Claim: {_print_ast(m["ast"])} evaluates to T.'
+ if concept=='syntax': return f'The bracket sequence {m["brackets"]} is well-formed.'
+ raise ValueError('Unknown concept')
+
+
 def _make_pair(concept, rng, seen, split):
  for attempt in range(100000):
   if concept=='arithmetic':
@@ -218,6 +227,7 @@ def validate_dataset(dataset):
    if row['id'] in ids or row['split']!=split: raise ValueError('Duplicate ID or wrong split')
    ids.add(row['id']);concept=row['concept'];label=row['label']
    if label not in (0,1) or oracle(row)!=bool(label): raise ValueError('Semantic oracle disagrees with truth label')
+   if row['statement']!=_semantic_statement(concept,row['semantic']): raise ValueError('Statement disagrees with semantic metadata')
    if row['correct']!=(' yes' if label else ' no') or row['foil']!=(' no' if label else ' yes'): raise ValueError('Wrong continuations')
    start,end=row['span']
    if row['prompt'][start:end]!=row['statement']: raise ValueError('Wrong statement span')

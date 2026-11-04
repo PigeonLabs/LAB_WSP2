@@ -1,0 +1,175 @@
+{
+  "calibration_signature": "923901e5667f05c558a46792b61d2f2d3398180b72fc63d464e1f0e77ed9c46e",
+  "competence_gate": {
+    "D4_reported_separately": true,
+    "accuracy_min": 0.7,
+    "both_models_required": true,
+    "wilson95_lower_strictly_above": 0.5
+  },
+  "correction": "none; raw sequence margins preserved for competence and causal effects",
+  "evidence_file_sha256": "5576c7e0028014b2ceeec95b996c50d502c5520d2be342d5dc813d52a3df03de",
+  "fixed_for_all_checkpoints": true,
+  "held_out_status": {
+    "D3": "PENDING_UNTIL_F3_MAPS_FROZEN",
+    "D4": "PENDING_UNTIL_F4_MAPS_FROZEN"
+  },
+  "locked_before": [
+    "D1",
+    "D2",
+    "D3",
+    "D4"
+  ],
+  "metrics": {
+    "default": {
+      "accuracy": 0.8463541666666666,
+      "macro_accuracy": 0.8463541666666666,
+      "margin_type": "uncorrected_sequence_log_likelihood",
+      "n": 768,
+      "per_task": {
+        "arithmetic": {
+          "accuracy": 0.78125,
+          "competent": true,
+          "correct": 150,
+          "n": 192,
+          "tie_rate": 0.0,
+          "true_label_rate": 0.5,
+          "wilson95": [
+            0.7175728373745691,
+            0.8338936429628818
+          ],
+          "yes_rate": 0.5520833333333334
+        },
+        "comparison": {
+          "accuracy": 0.9479166666666666,
+          "competent": true,
+          "correct": 182,
+          "n": 192,
+          "tie_rate": 0.0,
+          "true_label_rate": 0.5,
+          "wilson95": [
+            0.9067948899639535,
+            0.9714665416845791
+          ],
+          "yes_rate": 0.4895833333333333
+        },
+        "negation": {
+          "accuracy": 0.7552083333333334,
+          "competent": true,
+          "correct": 145,
+          "n": 192,
+          "tie_rate": 0.0,
+          "true_label_rate": 0.5,
+          "wilson95": [
+            0.6897765109520487,
+            0.8106282582430456
+          ],
+          "yes_rate": 0.546875
+        },
+        "syntax": {
+          "accuracy": 0.9010416666666666,
+          "competent": true,
+          "correct": 173,
+          "n": 192,
+          "tie_rate": 0.0,
+          "true_label_rate": 0.5,
+          "wilson95": [
+            0.8506207684360072,
+            0.9357295831562837
+          ],
+          "yes_rate": 0.5989583333333334
+        }
+      },
+      "prediction_threshold": 0.0,
+      "records_sha256": "92b21a955159d7d42a7ace40b3af71994bceb3bef5e56d9fb00e104cccd0077e",
+      "row_ids_sha256": "877b6c292493503ceb915dcd4cc3034ecdbe501f63e27e3d981d682583ea6bed",
+      "split": "calibration",
+      "tie_rate": 0.0,
+      "yes_rate": 0.546875
+    }
+  },
+  "model_info": {
+    "checkpoint": "results/followup-v2/training/seed_401/final.pt",
+    "checkpoint_kind": "final",
+    "checkpoint_sha256": "112da4056e998b35c30c34ce9578bdf8ded63694b09ea09986999b13794ef527",
+    "family": "independent_tiny",
+    "id": "seed401",
+    "seed": 401,
+    "sha256": "112da4056e998b35c30c34ce9578bdf8ded63694b09ea09986999b13794ef527",
+    "source_run": "results/followup-v2"
+  },
+  "protocol_version": "followup-v2-format-calibration-v1",
+  "selected_metrics": {
+    "accuracy": 0.8463541666666666,
+    "macro_accuracy": 0.8463541666666666,
+    "margin_type": "uncorrected_sequence_log_likelihood",
+    "n": 768,
+    "per_task": {
+      "arithmetic": {
+        "accuracy": 0.78125,
+        "competent": true,
+        "correct": 150,
+        "n": 192,
+        "tie_rate": 0.0,
+        "true_label_rate": 0.5,
+        "wilson95": [
+          0.7175728373745691,
+          0.8338936429628818
+        ],
+        "yes_rate": 0.5520833333333334
+      },
+      "comparison": {
+        "accuracy": 0.9479166666666666,
+        "competent": true,
+        "correct": 182,
+        "n": 192,
+        "tie_rate": 0.0,
+        "true_label_rate": 0.5,
+        "wilson95": [
+          0.9067948899639535,
+          0.9714665416845791
+        ],
+        "yes_rate": 0.4895833333333333
+      },
+      "negation": {
+        "accuracy": 0.7552083333333334,
+        "competent": true,
+        "correct": 145,
+        "n": 192,
+        "tie_rate": 0.0,
+        "true_label_rate": 0.5,
+        "wilson95": [
+          0.6897765109520487,
+          0.8106282582430456
+        ],
+        "yes_rate": 0.546875
+      },
+      "syntax": {
+        "accuracy": 0.9010416666666666,
+        "competent": true,
+        "correct": 173,
+        "n": 192,
+        "tie_rate": 0.0,
+        "true_label_rate": 0.5,
+        "wilson95": [
+          0.8506207684360072,
+          0.9357295831562837
+        ],
+        "yes_rate": 0.5989583333333334
+      }
+    },
+    "prediction_threshold": 0.0,
+    "records_sha256": "92b21a955159d7d42a7ace40b3af71994bceb3bef5e56d9fb00e104cccd0077e",
+    "row_ids_sha256": "877b6c292493503ceb915dcd4cc3034ecdbe501f63e27e3d981d682583ea6bed",
+    "split": "calibration",
+    "tie_rate": 0.0,
+    "yes_rate": 0.546875
+  },
+  "selection_mode": "fixed_default_no_format_selection",
+  "selection_rule": "E1 byte models use default at every checkpoint; calibration measures competence only",
+  "source_split": "calibration",
+  "training_records_sha256": "369357eb45d8e17e051d669d6bf101be18dc850f7effa367f2918b109b52e72c",
+  "variant": "default",
+  "variants_evaluated": [
+    "default"
+  ]
+}

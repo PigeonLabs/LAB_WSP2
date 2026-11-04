@@ -1,0 +1,11 @@
+# Followup protocol clarification before held-out measurements
+
+All changes below were made after the F0 freeze but before any followup D3/D4 model measurements or F4 causal measurements. Original pilot and F0 configuration files remain unchanged.
+
+1. **Final evaluation order.** F1 reports training and calibration competence only. D3 is measured after all F3 mappings are saved; D4 is measured after all F4 mappings are saved. The final report includes both competence sets. The initial protocol's F1 row describes the eventual competence reporting, not permission to tune mappings using test scores.
+2. **Expanded semantic categories.** Input-derived subtypes are ones-column carry/no-carry, greater/less comparison, Boolean AST root operator, and presence/absence of curly brackets. These are fixed before activation fitting, use no model outcomes, and remain finite task proxies. Unsupported subtype contrasts remain absent/UNKNOWN.
+3. **Causal scoring modes.** All eight registered intervention conditions are executed and saved. Primary causal fitting, mixture validation and held-out comparison use `zero`, `mean`, and `patch` equally. Dose conditions are reported separately. `scale_0` duplicates zero mathematically and `scale_1` is a no-op; counting either as additional independent evidence would distort weighting or promote numerical noise into a signal.
+4. **Checkpoint trajectory.** Freeze final-D1 candidates and final-D2 mappings, then apply exactly those coordinates and mappings to initial/middle/final D3 measurements. This measures formation within a final-selected population; it is not unbiased discovery of all emerging functions and does not fit new mappings on the test set.
+5. **Global family enumeration.** The final correction includes 110 tests: 52 final F3 pair/position contrasts, 52 F4 pair/location/unit-kind contrasts, five directed F5 selected-minus-target tests, and the F5 shared-wrapper aggregate. Including the five descriptive transfer-pair tests in the correction is conservative and avoids selecting a convenient pair-level significance result. Checkpoint, dose, per-task, cohort and unselected-transfer summaries remain descriptive.
+
+Any future adjustment after held-out observations must use a separately named analysis/version and cannot rewrite these primary results.

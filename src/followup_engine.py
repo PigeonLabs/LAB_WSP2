@@ -20,7 +20,10 @@ VERSION='followup-measurement-v2'
 
 
 def _digest(value):
-    return hashlib.sha256(json.dumps(value,sort_keys=True,ensure_ascii=False).encode()).hexdigest()
+    # Canonicalize integer dictionary keys as JSON strings before sorting, so
+    # a persisted plan hashes identically after loading at any filesystem root.
+    canonical=json.loads(json.dumps(value,ensure_ascii=False,allow_nan=False))
+    return hashlib.sha256(json.dumps(canonical,sort_keys=True,ensure_ascii=False,allow_nan=False).encode()).hexdigest()
 
 
 def _write(path,value):
@@ -119,6 +122,7 @@ def collect(model,tokenizer,records,output_dir,model_info,selection=None,per_lay
     if (out/'manifest.json').exists():
         old=json.loads((out/'manifest.json').read_text())
         if old['signature']!=signature:raise ValueError('Collection inputs changed; use a new output directory')
+        if hashlib.sha256((out/'measurements.npz').read_bytes()).hexdigest()!=old['measurements_sha256']:raise ValueError('Collection array checksum mismatch')
         return old
     if (out/'measurements.npz').exists():raise ValueError('Partial collection exists; preserve it and use a new directory')
     if selection is None and split!='D1':raise ValueError('Candidate selection is restricted to D1')
@@ -134,7 +138,7 @@ def collect(model,tokenizer,records,output_dir,model_info,selection=None,per_lay
     competence={c:{'n':int(np.sum(arrays['concepts']==c)),'accuracy':float(np.mean(arrays['margins'][arrays['concepts']==c]>0))} for c in sorted(set(arrays['concepts']))}
     manifest={'signature':signature,'plan':plan,'selection':selection,'n':len(records),'neurons':len(arrays['neuron_ids']),'competence':competence,'elapsed_seconds':time.monotonic()-start,'device':str(device),'measurements_sha256':hashlib.sha256((out/'measurements.npz').read_bytes()).hexdigest()}
     _write(out/'manifest.json',manifest)
-    return manifest
+    return json.loads((out/'manifest.json').read_text())
 
 
 def intervention_units(selection,group_per_layer=4,singles_per_layer=2):
@@ -214,7 +218,7 @@ def collect_causal(model,tokenizer,records,d1_dir,output_dir,model_info,units=No
     groups frozen from D2. D3 is never accepted for causal fitting/evaluation.
     """
     split=_records(records,{'D2','D4'});out=Path(output_dir);out.mkdir(parents=True,exist_ok=True)
-    d1_dir=Path(d1_dir);d1_manifest=json.loads((d1_dir/'manifest.json').read_text())
+    d1_dir=Path(d1_dir);d1_manifest,d1_arrays=load_collection(d1_dir)
     if d1_manifest['plan']['split']!='D1':raise ValueError('Mean references must come from D1')
     if d1_manifest['plan']['model_info']!=model_info:raise ValueError('Causal model differs from discovery model')
     selection=_selection(d1_manifest['selection']);units=intervention_units(selection) if units is None else units
@@ -229,8 +233,12 @@ def collect_causal(model,tokenizer,records,d1_dir,output_dir,model_info,units=No
         old=json.loads((out/'plan.json').read_text())
         if old['signature']!=signature:raise ValueError('Causal inputs changed; choose a new output directory')
     else:_write(out/'plan.json',{'signature':signature,'plan':plan})
-    if (out/'manifest.json').exists():return json.loads((out/'manifest.json').read_text())
-    start=time.monotonic();d1=np.load(d1_dir/'measurements.npz');references=out/'references'
+    if (out/'manifest.json').exists():
+        old=json.loads((out/'manifest.json').read_text())
+        if old['signature']!=signature:raise ValueError('Completed causal signature mismatch')
+        if hashlib.sha256((out/'effects.npz').read_bytes()).hexdigest()!=old['effects_sha256']:raise ValueError('Causal array checksum mismatch')
+        return old
+    start=time.monotonic();d1=d1_arrays;references=out/'references'
     collect(model,tokenizer,rows,references,model_info,selection=selection,device=device,batch_size=batch_size)
     measured=np.load(references/'measurements.npz');baseline=measured['margins'];donors=[]
     for row in rows:
@@ -264,7 +272,7 @@ def collect_causal(model,tokenizer,records,d1_dir,output_dir,model_info,units=No
                 if max_seconds is not None and time.monotonic()-start>max_seconds:raise TimeoutError('Causal time budget reached; checkpointed chunks can resume')
     _save(out/'effects.npz',effects=effects,margins=baseline,row_ids=measured['row_ids'],groups=measured['groups'],concepts=measured['concepts'],labels=measured['labels'],unit_ids=np.asarray([u['id'] for u in units]),unit_kinds=np.asarray([u['kind'] for u in units]),locations=np.asarray(locations),modes=np.asarray(modes),answer_token_counts=measured['answer_token_counts'])
     manifest={'signature':signature,'plan':plan,'n':len(rows),'num_units':len(units),'elapsed_seconds_this_call':time.monotonic()-start,'intervention_seconds_total':sum(runtimes),'effects_sha256':hashlib.sha256((out/'effects.npz').read_bytes()).hexdigest(),'device':str(device)}
-    _write(out/'manifest.json',manifest);return manifest
+    _write(out/'manifest.json',manifest);return json.loads((out/'manifest.json').read_text())
 
 
 def load_collection(directory):
