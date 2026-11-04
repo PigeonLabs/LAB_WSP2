@@ -34,6 +34,64 @@ python scripts/finalize_followup_statistics.py
 python scripts/validate_followup_results.py --require-complete --output results/followup-v2/replay_audit.json
 ```
 
+The supplementary analyses below are outside the 110-test primary family. The larger hard-stress set was motivated by the small post-hoc D3 split, then frozen and published before model measurement. It reuses training-length bracket strings and D3 wrapper styles while excluding all original bracket strings and adjacent mismatch cues:
+
+```bash
+python -m src.followup_stress --split D3
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m src.followup_proxy_ablation
+python -m src.followup_hard_stress freeze
+python -m src.followup_hard_stress evaluate --batch-size 16
+# Only after complete primary D4 measurements and the map freeze:
+python -m src.followup_stress --split D4
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m src.followup_causal_diagnostics
+```
+
+Run GPU commands serially. Hard-stress uses original checkpoints and calibration locks without retraining. Neither its outcomes nor supplementary diagnostics change a primary mapping, threshold, or selected transplant policy.
+
+After all primary and supplementary measurements finish, perform the final CPU checks and reporting. These commands use the already installed project environment (for example, `.venv/bin/python` in place of `python`). The dependence sensitivity retains the same 110 original p-values and primary BH results; BY is a post-hoc robustness check, not another hypothesis family or a repair for invalid sign-flip assumptions or construct confounds. [SciPy documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.false_discovery_control.html)
+
+```bash
+python scripts/finalize_followup_statistics.py
+python scripts/followup_dependence_sensitivity.py
+python -m pytest -q --junitxml=results/followup-v2/tests_final.xml
+python scripts/validate_followup_results.py --require-complete --output results/followup-v2/replay_audit.json
+```
+
+Create `results/followup-v2/final_audit.json` from those actual test/replay outputs, rather than entering an assumed test count. For example:
+
+```bash
+python - <<'PY'
+import json
+from pathlib import Path
+import xml.etree.ElementTree as ET
+run = Path('results/followup-v2')
+cases = list(ET.parse(run/'tests_final.xml').getroot().iter('testcase'))
+failed = sum(case.find('failure') is not None for case in cases)
+errors = sum(case.find('error') is not None for case in cases)
+skipped = sum(case.find('skipped') is not None for case in cases)
+passed = len(cases) - failed - errors - skipped
+replay = json.loads((run/'replay_audit.json').read_text())
+assert passed > 0 and failed == errors == 0
+assert replay['status'] in ('COMPLETE', 'PASS_COMPLETE') and replay['complete']
+assert not replay['errors'] and replay['exit_code'] == 0
+audit = {'status': 'PASS_COMPLETE',
+         'tests': {'passed': passed, 'failed': failed, 'errors': errors, 'skipped': skipped,
+                   'source': 'results/followup-v2/tests_final.xml'},
+         'replay': replay, 'limitations': []}
+(run/'final_audit.json').write_text(json.dumps(audit, indent=2) + '\n')
+PY
+```
+
+A separately executed portable-archive audit can be attached as `archive_replay`; a local pass does not imply that excluded weights, legacy PNGs or intervention restart chunks were checked in the published archive. Keep its explicit preservation and fallback coverage.
+
+The final adapter also requires a completed `results/followup-v2/scientific_review.json`: `status: "REVIEWED"`, `overall_verdict`, and exactly four `questions` with `id`, `question`, `verdict`, `rationale`, `evidence` (existing repository paths), and `scope`. Write these answers after reviewing the actual results. Do not derive scientific verdicts from the number of significant tests or blindly carry them into a new reproduction. Accepted verdicts are `SUPPORTED`, `NOT SUPPORTED`, `INCONCLUSIVE`, and `NOT_APPLICABLE`.
+
+```bash
+python scripts/build_followup_final.py --render
+```
+
+This command refuses to write F6 until all F0–F5 measured snapshots, 110-test correction, dependence sensitivity, complete audit/replay, 18 hard-stress evaluations, 26 causal-orientation diagnostics, matched proxy ablation, five transfer pairs, and the scientific review are present. It generates `report_inputs/F6.json`, the F6 snapshot and reports. Final displays add validated global q-values to F3/F4/F5 without modifying their saved primary measurements or historical stage snapshots. Recorded GPU-bearing stage wall intervals are summed once from saved runtime receipts; they are not GPU utilization or active-kernel time.
+
 D2 causal collection can overlap CPU-only F3 fitting in wall time, but only one GPU process is active. D3 model measurements begin after the complete F3 freeze; D4 measurements begin after the complete F4 freeze. The eight measured interventions remain in raw arrays; primary F4 scoring uses only zero/mean/patch. Identical no-op and duplicate-dose controls are retained as diagnostics.
 
 `scripts/build_followup_stages.py` reads measured files to generate stage snapshots. `src.followup_reporting` creates tables, SVG/PNG figures and exact source/value JSON. The root README is composed from `reports/followup-v2/README_SECTION.md` followed by the byte-preserved original `reports/pilot-v1-README.md`. Current-session uploads use the connected GitHub tool after each stage. Standalone publication is:

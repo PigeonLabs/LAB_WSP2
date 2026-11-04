@@ -11,6 +11,7 @@ import hashlib
 import json
 from pathlib import Path
 import sys
+import tarfile
 from collections import Counter
 import numpy as np
 
@@ -34,6 +35,36 @@ def json_hash(value,compact=False):
 
 def read_json(path):
     return json.loads(Path(path).read_text())
+
+
+def portable_bytes(root,relative):
+    """Read a raw file or its exact regular tar member, without extracting."""
+    root=Path(root).resolve();relative=Path(relative)
+    if relative.is_absolute() or '..' in relative.parts:raise ValueError('Archive-relative path required')
+    path=root/relative
+    if path.is_file():return path.read_bytes(),{'storage':'file','path':str(relative)}
+    if len(relative.parts)>=3 and relative.parts[0]=='data' and relative.suffix=='.jsonl':
+        archive=root/'data'/f'{relative.parts[1]}.tar.gz'
+        if archive.is_file():
+            with tarfile.open(archive,'r:*') as tar:
+                matches=[m for m in tar.getmembers() if m.name==relative.as_posix()]
+                if len(matches)!=1 or not matches[0].isfile():raise ValueError(f'Need one regular archive member: {relative}')
+                stream=tar.extractfile(matches[0])
+                if stream is None:raise ValueError(f'Unreadable archive member: {relative}')
+                return stream.read(),{'storage':'tar_member','archive':str(archive.relative_to(root)),'member':relative.as_posix()}
+    raise FileNotFoundError(str(relative))
+
+
+def load_portable_followup(root):
+    from src.followup_data import SPLITS,validate_dataset
+    root=Path(root);directory=root/'data/followup-v2';manifest=read_json(directory/'manifest.json');dataset={};storage=[]
+    for split in SPLITS:
+        name=f'{split}.jsonl';raw,source=portable_bytes(root,Path('data/followup-v2')/name)
+        if hashlib.sha256(raw).hexdigest()!=manifest['file_sha256'][name]:raise ValueError(f'Frozen data hash mismatch: {name}')
+        dataset[split]=[json.loads(line) for line in raw.decode().splitlines()];storage.append(source)
+    checked=validate_dataset(dataset)
+    equal(json.loads(json.dumps(checked['splits'])),manifest['splits'],'portable data manifest')
+    return dataset,storage
 
 
 def load_npz(path):
@@ -138,15 +169,74 @@ def validate_causal(directory,rows,atol=5e-5):
     if 'scale_1' in modes and np.max(np.abs(effects[:,:,:,modes.index('scale_1')]))>atol:raise ValueError('scale1 changed baseline')
     ref_manifest,reference,_=validate_collection(directory/'references',ordered,atol)
     equal(arrays['margins'],reference['margins'],'causal baseline',atol)
-    for ui in range(u):
-        for li in range(l):
-            for mi in range(m):
-                path=directory/'chunks'/f'unit{ui:03d}_location{li}_mode{mi}.npz'
-                if not path.is_file():raise ValueError(f'Missing intervention replay chunk {path.name}')
-                chunk=load_npz(path)
-                if str(chunk['signature'])!=manifest['signature']:raise ValueError('Causal chunk signature mismatch')
-                equal(effects[:,ui,li,mi],arrays['margins']-chunk['margin_intervened'],'chunk effect',atol)
+    chunk_dir=directory/'chunks'
+    if chunk_dir.exists():
+        if not chunk_dir.is_dir():raise ValueError('Causal chunks path is not a directory')
+        for ui in range(u):
+            for li in range(l):
+                for mi in range(m):
+                    path=chunk_dir/f'unit{ui:03d}_location{li}_mode{mi}.npz'
+                    if not path.is_file():raise ValueError(f'Partial chunk directory: missing {path.name}')
+                    chunk=load_npz(path)
+                    if str(chunk['signature'])!=manifest['signature']:raise ValueError('Causal chunk signature mismatch')
+                    equal(effects[:,ui,li,mi],arrays['margins']-chunk['margin_intervened'],'chunk effect',atol)
     return manifest,arrays,competence(arrays['margins'],ordered)
+
+
+def fast_evaluate_pair(a,b,records,fitted,split='D3'):
+    """Independent vectorized replay of the published equal-source/task estimand.
+
+    Reuses only the within-task correlation definition, not stored score values.
+    Random assignment controls have one target per source; batching them avoids
+    millions of repeated tiny Python/NumPy loops during archive verification.
+    """
+    from src.followup_analysis import within_task_correlation_matrices
+    if fitted.get('fit_split')!='D2':raise ValueError('Need frozen D2 fit')
+    matrices=within_task_correlation_matrices(a,b,records,split=split)
+    def mapped(cells,mapping):
+        rows=np.asarray(mapping['source'],int);cols=np.asarray(mapping['target'],int)
+        if not len(rows):return None
+        _,inverse=np.unique(rows,return_inverse=True);tasks=[]
+        for matrix in cells.values():
+            values=matrix[rows,cols];valid=np.isfinite(values)
+            counts=np.bincount(inverse,weights=valid,minlength=inverse.max()+1)
+            sums=np.bincount(inverse,weights=np.where(valid,values,0),minlength=len(counts))
+            if np.any(counts):tasks.append(float(np.mean(sums[counts>0]/counts[counts>0])))
+        return float(np.mean(tasks)) if tasks else None
+    scores={name:{group:mapped(cells,mapping) for group,cells in matrices.items()} for name,mapping in fitted['mappings'].items()}
+    controls={}
+    for scope,maps in fitted['random_mappings'].items():
+        if len(maps)<100:raise ValueError('Missing repeated random controls')
+        simple=all(len(m['source'])==len(set(m['source'])) for m in maps) and len({len(m['source']) for m in maps})==1
+        draws=[{} for _ in maps]
+        if simple and len(maps[0]['source']):
+            sources=np.asarray([m['source'] for m in maps],int);targets=np.asarray([m['target'] for m in maps],int)
+            for group,cells in matrices.items():
+                task_values=[]
+                for matrix in cells.values():
+                    values=matrix[sources,targets];valid=np.isfinite(values);counts=valid.sum(1)
+                    means=np.divide(np.where(valid,values,0).sum(1),counts,out=np.full(len(maps),np.nan),where=counts>0)
+                    task_values.append(means)
+                task_values=np.asarray(task_values);valid=np.isfinite(task_values);counts=valid.sum(0)
+                means=np.divide(np.where(valid,task_values,0).sum(0),counts,out=np.full(len(maps),np.nan),where=counts>0)
+                for i,value in enumerate(means):draws[i][group]=float(value) if np.isfinite(value) else None
+        else:
+            draws=[{group:mapped(cells,mapping) for group,cells in matrices.items()} for mapping in maps]
+        means=[]
+        for draw in draws:
+            finite=[v for v in draw.values() if v is not None];means.append(float(np.mean(finite)) if finite else None)
+        controls[scope]={'wrapper_scores':draws,'means':means,'n_draws':len(draws)}
+        scores['random__'+scope]={}
+        for group in matrices:
+            finite=[draw[group] for draw in draws if draw[group] is not None]
+            scores['random__'+scope][group]=float(np.mean(finite)) if finite else None
+    descriptives={}
+    for name,values in scores.items():
+        finite=[v for v in values.values() if v is not None]
+        descriptives[name]={'mean':float(np.mean(finite)) if finite else None,'n_valid_wrappers':len(finite),'n_wrappers':len(values)}
+    return dict(evaluation_split=split,fit_split='D2',wrapper_scores=scores,descriptive=descriptives,random_controls=controls,
+        metric='within-task wrapper-equal native-neuron Pearson correlation',
+        limitations=['Pair estimates are descriptive; shared model seeds are dependent.','One-to-many averages targets within each source neuron.','Invalid constant-neuron correlations are excluded and coverage must be reported.'])
 
 
 def replay_global_bh(payload):
@@ -161,6 +251,7 @@ class Audit:
     def __init__(self,root,atol=5e-5):
         self.root=Path(root).resolve();self.run=self.root/'results/followup-v2';self.atol=atol
         self.errors=[];self.pending=[];self.checked=[];self.competence={};self.cache={}
+        self.archive_fallbacks=[];self.preservation_detail=None;self.data_storage=[];self.hard_stress_coverage=None
     def check(self,label,fn):
         try:
             result=fn();self.checked.append(label);return result
@@ -169,14 +260,28 @@ class Audit:
         if path.is_file():return True
         self.pending.append(str(path.relative_to(self.root)));return False
     def preservation(self):
-        snap=read_json(self.run/'preservation_before.json');verified=0
+        snap=read_json(self.run/'preservation_before.json');verified=[];omitted=[]
         for name,digest in snap['files'].items():
-            if name=='README.md':continue
+            if name=='README.md':
+                saved='reports/pilot-v1-README.md';path=self.root/saved
+                if not path.is_file() or sha_file(path)!=digest:raise ValueError('Saved original README differs from pre-followup snapshot')
+                verified.append({'original_path':name,'storage':'saved_copy','path':saved});continue
             path=(self.root/name).resolve()
             if not path.is_relative_to(self.root):raise ValueError('Preservation path escapes archive root')
-            if not path.is_file() or sha_file(path)!=digest:raise ValueError(f'Preserved pilot artifact changed: {name}')
-            verified+=1
-        return verified
+            try:raw,source=portable_bytes(self.root,name)
+            except FileNotFoundError:
+                suffix=Path(name).suffix
+                if suffix=='.pt':omitted.append({'path':name,'reason':'Model weights intentionally excluded from portable weights-free archive; hash not independently verified here'})
+                elif suffix=='.png' and Path(name).parts[:2]==('artifacts','figures'):omitted.append({'path':name,'reason':'Legacy PNG intentionally omitted; published SVG/data remain required and verified'})
+                else:raise ValueError(f'Unexpected missing preserved pilot artifact: {name}')
+                continue
+            if hashlib.sha256(raw).hexdigest()!=digest:raise ValueError(f'Preserved pilot artifact changed: {name}')
+            verified.append({'original_path':name,**source})
+        detail={'snapshot_entries':len(snap['files']),'verified_count':len(verified),'verified':verified,
+                'optional_omitted_count':len(omitted),'optional_omitted':omitted,
+                'claim':'Only listed present files, archived member bytes, and saved README were verified; omitted weights/PNGs were not verified.'}
+        self.preservation_detail=detail
+        return detail
     def training(self):
         initials=[]
         for seed in self.cfg['training']['seeds']:
@@ -246,6 +351,7 @@ class Audit:
         path=self.run/'causal'/name/split;plan=read_json(path/'manifest.json')['plan']
         rows=stratified_pairs(self.prepared(name,split),plan['pairs_per_task_wrapper'])
         value=validate_causal(path,rows,self.atol);manifest,arrays,summary=value
+        if not (path/'chunks').exists():self.archive_fallbacks.append({'path':str(path.relative_to(self.root)),'check':'individual intervention chunk cross-check','status':'SKIPPED_CHUNKS_NOT_PUBLISHED','retained_checks':'effects byte hash, finite axes, row labels/pairs, source identity, baseline references, zero=scale0 and scale1=baseline; maps/statistics replay remains mandatory','limitation':'Intervened margins are algebraically baseline minus effects; no independent chunk-level comparison in this archive'})
         d1=read_json(self.run/'collections'/name/'final/D1/manifest.json')
         equal(plan['d1_signature'],d1['signature'],'causal D1 signature');equal(plan['d1_measurements_sha256'],d1['measurements_sha256'],'causal D1 checksum')
         for unit in plan['units']:
@@ -253,9 +359,10 @@ class Audit:
                 if not set(neurons)<=set(d1['selection'][str(layer)]):raise ValueError('Causal neuron outside frozen D1 selection')
         self.cache[name,'causal',split]=value;self.competence[f'{name}/causal/{split}']=summary
     def run_checks(self,require_complete=False):
-        from src.followup_data import load_dataset
-        self.check('pilot preservation except root README',self.preservation)
-        self.dataset=self.check('frozen data semantic and byte hashes',lambda:load_dataset(self.root/'data/followup-v2'))
+        self.check('pilot preservation with explicit archive coverage',self.preservation)
+        loaded=self.check('frozen data semantic and byte hashes',lambda:load_portable_followup(self.root))
+        self.dataset=loaded[0] if loaded is not None else None
+        if loaded is not None:self.data_storage=loaded[1]
         if self.dataset is None:return self.result(require_complete)
         cfg=read_json(self.root/'configs/followup_v2.json');self.cfg=cfg
         tiny=[f'seed{s}' for s in cfg['training']['seeds']];names=tiny+['qwen','smol','olmo'];self.names=names
@@ -278,9 +385,11 @@ class Audit:
                 if self.available(path):self.check(f'causal/{name}/{split}',lambda name=name,split=split:self.causal(name,split))
         self.check('analysis replay',self.replay_analyses)
         self.check('transfers replay',self.replay_transfers)
+        if (self.run/'hard_stress').exists():self.check('optional hard-stress replay',self.replay_hard_stress)
         return self.result(require_complete)
     def replay_analyses(self):
-        from src.followup_analysis import evaluate_pair,json_ready,aggregate_pairs
+        from src.followup_analysis import json_ready,aggregate_pairs
+        evaluate_pair=fast_evaluate_pair
         from src.followup_alignment_runner import PAIRS,POSITIONS,annotate_subtype,wilson_gate,_compact_eval,_primary_contrasts
         cohort_inputs={};confirmatory={}
         for left,right in PAIRS:
@@ -441,6 +550,43 @@ class Audit:
             for key,value in expected.items():equal(summary['aggregate_selected_minus_baseline'][key],value,'aggregate transfer '+key)
             equal(summary['aggregate_selected_minus_baseline']['bootstrap'],cluster_bootstrap(joint,groups),'aggregate transfer CI')
             equal(summary['aggregate_selected_minus_baseline']['wrapper_effects'],dict(zip(groups,joint.tolist())),'aggregate transfer wrapper effects')
+    def replay_hard_stress(self):
+        from src.followup_hard_stress import validate_dataset,summarize
+        from src.followup_calibration import transform_records
+        manifest=read_json(self.root/'data/followup-v2-hard-stress/manifest.json')
+        raw,storage=portable_bytes(self.root,'data/followup-v2-hard-stress/hard_stress.jsonl')
+        if hashlib.sha256(raw).hexdigest()!=manifest['file_sha256']:raise ValueError('Hard-stress dataset byte checksum')
+        equal(manifest['original_manifest_sha256'],sha_file(self.root/'data/followup-v2/manifest.json'),'hard-stress exclusion source')
+        rows=[json.loads(line) for line in raw.decode().splitlines()]
+        checked=validate_dataset(rows,self.dataset)
+        for key,value in checked.items():equal(manifest[key],json.loads(json.dumps(value)),'hard-stress manifest '+key)
+        results={}
+        for path in sorted((self.run/'hard_stress').glob('*/*/summary.json')):
+            summary=read_json(path);name,checkpoint=path.parent.parent.name,path.parent.name
+            equal(summary['name'],name,'hard-stress model');equal(summary['checkpoint'],checkpoint,'hard-stress checkpoint')
+            arrays=load_npz(path.parent/'measurements.npz')
+            equal(summary['measurements_sha256'],sha_file(path.parent/'measurements.npz'),'hard-stress measurements checksum')
+            ordered=validate_rows(arrays,rows)
+            equal([r['id'] for r in ordered],[r['id'] for r in rows],'hard-stress frozen row order')
+            equal(arrays['bracket_pairs'],[r['bracket_pairs'] for r in rows],'hard-stress bracket lengths')
+            equal(arrays['valid_max_stack_depth'],[r['valid_max_stack_depth'] for r in rows],'hard-stress depths')
+            if arrays['answer_token_counts'].shape!=(len(rows),2):raise ValueError('Hard-stress answer-count axes')
+            equal(summary['metrics'],summarize(arrays['margins'],rows),'hard-stress statistics replay')
+            lockpath=self.run/'calibration'/name/'lock.json';lock=read_json(lockpath)
+            equal(summary['lock_sha256'],sha_file(lockpath),'hard-stress calibration lock')
+            equal(summary['data_sha256'],manifest['file_sha256'],'hard-stress frozen source hash')
+            prepared=transform_records(rows,lock['variant'],self.dataset['train'])
+            equal(summary['records_sha256'],json_hash(prepared,compact=True),'hard-stress transformed records hash')
+            equal(summary['prompt_variant'],lock['variant'],'hard-stress unchanged format')
+            if summary['primary_family_membership'] or not summary['no_retraining_or_primary_refitting']:raise ValueError('Hard-stress must remain exploratory')
+            source=self.cache.get((name,checkpoint,'D3'))
+            if source:equal(summary['model_info'],source[0]['plan']['model_info'],'hard-stress existing model identity')
+            results[f'{name}/{checkpoint}']=summary;self.checked.append(str(path.relative_to(self.root)))
+        final=self.run/'hard_stress/summary.json'
+        if final.exists():
+            aggregate=read_json(final);equal(aggregate['evaluations'],results,'hard-stress aggregate')
+            if aggregate['n_evaluations']!=18 or len(results)!=18 or not aggregate['no_primary_family_change']:raise ValueError('Incomplete hard-stress aggregate')
+        self.hard_stress_coverage={'verified_evaluations':len(results),'expected_full_sweep':18,'complete_exploratory_sweep':len(results)==18,'data_storage':storage,'required_for_primary_completion':False}
     def result(self,require_complete):
         complete=not self.pending and not self.errors
         return {'status':'FAILED' if self.errors else 'COMPLETE' if complete else 'PARTIAL',
@@ -449,6 +595,7 @@ class Audit:
                 'checks_passed':len(self.checked),'checked':self.checked,'errors':self.errors,
                 'pending':self.pending,'competence_recomputed':self.competence,
                 'model_weights_required':False,'causal_numerical_atol':self.atol,
+                'preservation_coverage':self.preservation_detail,'data_storage':self.data_storage,'archive_fallbacks':self.archive_fallbacks,'hard_stress_coverage':self.hard_stress_coverage,
                 'scope':'Replay of saved data, measurements, maps and reported statistics; does not establish historical execution chronology.'}
 
 
@@ -457,7 +604,7 @@ def main():
     result=Audit(args.root,args.atol).run_checks(args.require_complete)
     text=json.dumps(result,indent=2,ensure_ascii=False,allow_nan=False)+'\n'
     if args.output:args.output.parent.mkdir(parents=True,exist_ok=True);args.output.write_text(text)
-    print(json.dumps({k:v for k,v in result.items() if k not in ('checked','competence_recomputed','pending')},ensure_ascii=False,allow_nan=False));print(f'Pending artifacts: {len(result["pending"])}')
+    print(json.dumps({k:v for k,v in result.items() if k not in ('checked','competence_recomputed','pending','preservation_coverage','data_storage','archive_fallbacks')},ensure_ascii=False,allow_nan=False));print(f'Pending artifacts: {len(result["pending"])}')
     return result['exit_code']
 
 

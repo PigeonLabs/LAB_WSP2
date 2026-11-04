@@ -1,0 +1,206 @@
+{
+  "schema": "followup-figure-v1",
+  "title": "Hard syntax cases across five frozen training trajectories",
+  "encoding": {
+    "id": "hard_checkpoint_trajectory",
+    "kind": "line",
+    "title": "Hard syntax cases across five frozen training trajectories",
+    "x": "checkpoint",
+    "y": "value",
+    "series": "model",
+    "xticks": [
+      0,
+      1,
+      2
+    ],
+    "xticklabels": [
+      "Initial",
+      "Middle",
+      "Final"
+    ],
+    "xlabel": "Saved checkpoint",
+    "ylabel": "Accuracy; chance =0.5",
+    "ylim": [
+      0,
+      1
+    ],
+    "reference": 0.5,
+    "source": [
+      "results/followup-v2/hard_stress/summary.json",
+      "results/followup-v2/hard_stress/seed101/initial/summary.json",
+      "results/followup-v2/hard_stress/seed101/middle/summary.json",
+      "results/followup-v2/hard_stress/seed101/final/summary.json",
+      "results/followup-v2/hard_stress/seed211/initial/summary.json",
+      "results/followup-v2/hard_stress/seed211/middle/summary.json",
+      "results/followup-v2/hard_stress/seed211/final/summary.json",
+      "results/followup-v2/hard_stress/seed307/initial/summary.json",
+      "results/followup-v2/hard_stress/seed307/middle/summary.json",
+      "results/followup-v2/hard_stress/seed307/final/summary.json",
+      "results/followup-v2/hard_stress/seed401/initial/summary.json",
+      "results/followup-v2/hard_stress/seed401/middle/summary.json",
+      "results/followup-v2/hard_stress/seed401/final/summary.json",
+      "results/followup-v2/hard_stress/seed503/initial/summary.json",
+      "results/followup-v2/hard_stress/seed503/middle/summary.json",
+      "results/followup-v2/hard_stress/seed503/final/summary.json",
+      "results/followup-v2/hard_stress/qwen/final/summary.json",
+      "results/followup-v2/hard_stress/smol/final/summary.json",
+      "results/followup-v2/hard_stress/olmo/final/summary.json"
+    ],
+    "note": "Five separately initialized models; each line reuses one model across checkpoints. No retraining or checkpoint selection. This is not independent replication at each point."
+  },
+  "sources": [
+    {
+      "path": "results/followup-v2/hard_stress/summary.json",
+      "sha256": "988f3e642e2c58e1aacdc157b79d0be1fbab0d2ad8e02e8cadaf10de39a54080"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed101/initial/summary.json",
+      "sha256": "78e1158351a98bb5e9bde4773a396717e9cbe19e7f7d520462387ca397c5c1a7"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed101/middle/summary.json",
+      "sha256": "2d039f6e261b2ef5d8de18d39bd18d580abfd996334e95836c38a1affcc0de09"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed101/final/summary.json",
+      "sha256": "f8b7d9198b3ef574f7c007dade9434234840a474219b32a8a7c4fdf1e933cb66"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed211/initial/summary.json",
+      "sha256": "d160f1037549d7e9688247957f67de3996f035507e5ec9066fb7bcca4ff94610"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed211/middle/summary.json",
+      "sha256": "dfb96cd95623e4efd3789f0e5fcb01342f6925a497e34bd21702d6df4415d289"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed211/final/summary.json",
+      "sha256": "e2e03ff4479fb48ad2c40521a6dc1366988d3073cb72d6c862c4139449269ebc"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed307/initial/summary.json",
+      "sha256": "ddc77993ec3c33e0625c2a908071209f92b1a8dc4a9080a4721455f7ea13d442"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed307/middle/summary.json",
+      "sha256": "3ec079fca7c813cd98943ae4bde8d668734122ba0c687fb98465c370ce437df3"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed307/final/summary.json",
+      "sha256": "85e3ea2626cb0daf5d810ce3579e0d1d1bb6816990b7a462a57af690ed4f2c95"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed401/initial/summary.json",
+      "sha256": "d1a7782a6a27b0e904e6cc841f1a94bd2f283f43b39cff36afa2518f7380ee75"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed401/middle/summary.json",
+      "sha256": "15ddebfeb0572238ad50a048a3a3db159b98a6c1ee94803be1fb76febd3f14ac"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed401/final/summary.json",
+      "sha256": "fe916b26b917ca781d8e72f5b8436c74d1266daa85dbb94f691950d335d0aa59"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed503/initial/summary.json",
+      "sha256": "45b48d96e1dd0b06986269a6118a7352880872061d68192b6c1cf78caf876668"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed503/middle/summary.json",
+      "sha256": "1c26e6cdef9c7f9ce5be4f6bc7fac52a1d4bf3465a5438b951b0b017874e7769"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed503/final/summary.json",
+      "sha256": "4a6447304bb4ad686957a2ba6bb81544ab92f42d4ef25e43b820801f7cb74735"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/qwen/final/summary.json",
+      "sha256": "1735392951274907802a318eac7a175e782ba581e63023096820b6ba54b6d2d5"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/smol/final/summary.json",
+      "sha256": "1e25d8c8e695effab2be1fe4d4e23573b81399963fc4347a028820832cb9ed50"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/olmo/final/summary.json",
+      "sha256": "c65cd80242c244e4f974a996e933de74e2b4020c70c62a0543e34e19d5bb4b74"
+    }
+  ],
+  "rows": [
+    {
+      "model": "seed101",
+      "checkpoint": 0,
+      "value": 0.5
+    },
+    {
+      "model": "seed101",
+      "checkpoint": 1,
+      "value": 0.5364583333333334
+    },
+    {
+      "model": "seed101",
+      "checkpoint": 2,
+      "value": 0.5247395833333334
+    },
+    {
+      "model": "seed211",
+      "checkpoint": 0,
+      "value": 0.5
+    },
+    {
+      "model": "seed211",
+      "checkpoint": 1,
+      "value": 0.5208333333333334
+    },
+    {
+      "model": "seed211",
+      "checkpoint": 2,
+      "value": 0.5611979166666666
+    },
+    {
+      "model": "seed307",
+      "checkpoint": 0,
+      "value": 0.5
+    },
+    {
+      "model": "seed307",
+      "checkpoint": 1,
+      "value": 0.5546875
+    },
+    {
+      "model": "seed307",
+      "checkpoint": 2,
+      "value": 0.5026041666666666
+    },
+    {
+      "model": "seed401",
+      "checkpoint": 0,
+      "value": 0.5
+    },
+    {
+      "model": "seed401",
+      "checkpoint": 1,
+      "value": 0.5286458333333334
+    },
+    {
+      "model": "seed401",
+      "checkpoint": 2,
+      "value": 0.5403645833333334
+    },
+    {
+      "model": "seed503",
+      "checkpoint": 0,
+      "value": 0.5
+    },
+    {
+      "model": "seed503",
+      "checkpoint": 1,
+      "value": 0.5143229166666666
+    },
+    {
+      "model": "seed503",
+      "checkpoint": 2,
+      "value": 0.5052083333333334
+    }
+  ]
+}

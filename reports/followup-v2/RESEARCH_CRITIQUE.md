@@ -53,3 +53,17 @@
 
 [측정과 원본](F3_REPORT.md)
 
+## 새 hard syntax 보충 검증
+
+- Post-hoc motivated by D3 local-cue weakness; fresh outcomes do not make it preregistered primary evidence.
+- Valid strings need suitable closing runs, so their structural distribution differs from the original syntax corpus.
+- Equal5..8pair length range prevents longer strings being the sole explanation; depth distribution can still differ.
+- Removing adjacent type mismatches does not remove every finite-state/local cue or prove recursive parsing.
+- Wrappers were already inspected in D3; only content/outcomes are new.
+- All18 confidence intervals are descriptive wrapper-cluster bootstrap intervals conditional on fixed models; no global claims are inferred from overlap or individual exploratory p-values.
+- Balanced true/false pairs make chance accuracy50%; yes preference and true/false accuracy can still be highly asymmetric. Ties count as incorrect.
+- Different calibration-selected prefix contexts remain for Qwen, Smol and OLMo; matched target content does not mean identical full prompts.
+- Original D3 and the hard set differ in content and structural distribution. Their difference is not a controlled causal effect or proof of recursive parsing.
+
+[전체 측정과 출처](HARD_STRESS_REPORT.md)
+

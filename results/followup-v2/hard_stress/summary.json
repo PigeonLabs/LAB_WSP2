@@ -1,0 +1,2453 @@
+{
+  "evaluations": {
+    "olmo/final": {
+      "checkpoint": "final",
+      "context": {
+        "context_limit": 4096,
+        "max_tokens": 62,
+        "min_tokens": 52,
+        "n": 768,
+        "truncated": false,
+        "variant": "explicit"
+      },
+      "data_sha256": "ee19a2dbcbd6b18f69940666873aa73a4c7d6c1034da4fd96939033a3fdf8602",
+      "device": "cuda",
+      "elapsed_seconds": 7.2075435840233695,
+      "limitations": [
+        "Post-hoc motivated by D3 local-cue weakness; fresh outcomes do not make it preregistered primary evidence.",
+        "Valid strings need suitable closing runs, so their structural distribution differs from the original syntax corpus.",
+        "Equal5..8pair length range prevents longer strings being the sole explanation; depth distribution can still differ.",
+        "Removing adjacent type mismatches does not remove every finite-state/local cue or prove recursive parsing.",
+        "Wrappers were already inspected in D3; only content/outcomes are new."
+      ],
+      "lock_sha256": "3fcb48ad4ddd09784d2e2f0bf8a97fe2a648faff974cf288b444e8f91106a48e",
+      "measurements_sha256": "ecb227e7e49a4d848a198268f19406b54a91629616a2b22fe9822528bbe1a896",
+      "metrics": {
+        "accuracy": 0.5013020833333334,
+        "accuracy_cluster_bootstrap95": {
+          "ci": [
+            0.4947916666666667,
+            0.5091145833333334
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.5013020833333334,
+          "median": 0.5,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.017188529284068353
+        },
+        "accuracy_false": 0.13541666666666666,
+        "accuracy_minus_half_cluster_bootstrap95": {
+          "ci": [
+            -0.005208333333333333,
+            0.009114583333333334
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.0013020833333333333,
+          "median": 0.0,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.017188529284068357
+        },
+        "accuracy_true": 0.8671875,
+        "by_bracket_pairs": {
+          "5": {
+            "accuracy": 0.5104166666666666,
+            "n": 192
+          },
+          "6": {
+            "accuracy": 0.5,
+            "n": 192
+          },
+          "7": {
+            "accuracy": 0.4947916666666667,
+            "n": 192
+          },
+          "8": {
+            "accuracy": 0.5,
+            "n": 192
+          }
+        },
+        "by_valid_depth": {
+          "2": {
+            "accuracy": 0.4891304347826087,
+            "n": 92
+          },
+          "3": {
+            "accuracy": 0.5,
+            "n": 238
+          },
+          "4": {
+            "accuracy": 0.5039370078740157,
+            "n": 254
+          },
+          "5": {
+            "accuracy": 0.5078125,
+            "n": 128
+          },
+          "6": {
+            "accuracy": 0.5,
+            "n": 46
+          },
+          "7": {
+            "accuracy": 0.5,
+            "n": 8
+          },
+          "8": {
+            "accuracy": 0.5,
+            "n": 2
+          }
+        },
+        "correct": 385,
+        "interpretation": "Descriptive post-hoc robustness evidence; no support verdict or inclusion in primary110 BH family.",
+        "n": 768,
+        "n_wrappers": 24,
+        "tie_rate": 0.0,
+        "unadjusted_exploratory_signflip_vs_half": {
+          "effect": 0.0013020833333333333,
+          "method": "monte_carlo",
+          "n_clusters": 24,
+          "pvalue": 1.0,
+          "standardized_effect": 0.0757530392399659,
+          "status": "OK"
+        },
+        "yes_rate": 0.8658854166666666
+      },
+      "model_info": {
+        "cached_file_manifest_sha256": "4121aeecd90ddaa9e22eca9f60c95ee76b57c5de0ec5ec2cded9c5af829db73b",
+        "family": "public_pretrained",
+        "id": "olmo",
+        "license": "apache-2.0",
+        "model_id": "allenai/OLMo-2-0425-1B",
+        "model_type": "olmo2",
+        "revision": "a1847dff35000b4271fa70afc5db10fd29fedbdf"
+      },
+      "name": "olmo",
+      "no_retraining_or_primary_refitting": true,
+      "precision": "float32",
+      "primary_family_membership": false,
+      "prompt_variant": "explicit",
+      "records_sha256": "12a2836043d80d2e9f8174950b970cb6c22a6d60ab1d8222c64b6b9c228bbd8d",
+      "status": "MEASURED_EXPLORATORY",
+      "version": "followup-v2-hard-stress-v1"
+    },
+    "qwen/final": {
+      "checkpoint": "final",
+      "context": {
+        "context_limit": 32768,
+        "max_tokens": 158,
+        "min_tokens": 148,
+        "n": 768,
+        "truncated": false,
+        "variant": "fourshot"
+      },
+      "data_sha256": "ee19a2dbcbd6b18f69940666873aa73a4c7d6c1034da4fd96939033a3fdf8602",
+      "device": "cuda",
+      "elapsed_seconds": 9.652913232013816,
+      "limitations": [
+        "Post-hoc motivated by D3 local-cue weakness; fresh outcomes do not make it preregistered primary evidence.",
+        "Valid strings need suitable closing runs, so their structural distribution differs from the original syntax corpus.",
+        "Equal5..8pair length range prevents longer strings being the sole explanation; depth distribution can still differ.",
+        "Removing adjacent type mismatches does not remove every finite-state/local cue or prove recursive parsing.",
+        "Wrappers were already inspected in D3; only content/outcomes are new."
+      ],
+      "lock_sha256": "ad566f66308637a956732ad290e91edd1a84ca8c4876c7978f5b36f16280176e",
+      "measurements_sha256": "46ffe036af50199eae146a0e413d034c1e3c13ec7673220d79b52e54d4a0425f",
+      "metrics": {
+        "accuracy": 0.5182291666666666,
+        "accuracy_cluster_bootstrap95": {
+          "ci": [
+            0.50390625,
+            0.5325520833333334
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.5182291666666666,
+          "median": 0.5,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.03676437286720448
+        },
+        "accuracy_false": 0.22916666666666666,
+        "accuracy_minus_half_cluster_bootstrap95": {
+          "ci": [
+            0.00390625,
+            0.032552083333333336
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.018229166666666668,
+          "median": 0.0,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.03676437286720447
+        },
+        "accuracy_true": 0.8072916666666666,
+        "by_bracket_pairs": {
+          "5": {
+            "accuracy": 0.5416666666666666,
+            "n": 192
+          },
+          "6": {
+            "accuracy": 0.5104166666666666,
+            "n": 192
+          },
+          "7": {
+            "accuracy": 0.4947916666666667,
+            "n": 192
+          },
+          "8": {
+            "accuracy": 0.5260416666666666,
+            "n": 192
+          }
+        },
+        "by_valid_depth": {
+          "2": {
+            "accuracy": 0.5,
+            "n": 92
+          },
+          "3": {
+            "accuracy": 0.5336134453781513,
+            "n": 238
+          },
+          "4": {
+            "accuracy": 0.5236220472440944,
+            "n": 254
+          },
+          "5": {
+            "accuracy": 0.5,
+            "n": 128
+          },
+          "6": {
+            "accuracy": 0.5,
+            "n": 46
+          },
+          "7": {
+            "accuracy": 0.5,
+            "n": 8
+          },
+          "8": {
+            "accuracy": 0.5,
+            "n": 2
+          }
+        },
+        "correct": 398,
+        "interpretation": "Descriptive post-hoc robustness evidence; no support verdict or inclusion in primary110 BH family.",
+        "n": 768,
+        "n_wrappers": 24,
+        "tie_rate": 0.0,
+        "unadjusted_exploratory_signflip_vs_half": {
+          "effect": 0.018229166666666668,
+          "method": "monte_carlo",
+          "n_clusters": 24,
+          "pvalue": 0.036392721455708855,
+          "standardized_effect": 0.49583782463831805,
+          "status": "OK"
+        },
+        "yes_rate": 0.7890625
+      },
+      "model_info": {
+        "cached_file_manifest_sha256": "f7393c390776b582fa06a19522efe8ba9183873c66c63643b44ddc768242ca1e",
+        "family": "public_pretrained",
+        "id": "qwen",
+        "license": "apache-2.0",
+        "model_id": "Qwen/Qwen3-0.6B-Base",
+        "model_type": "qwen3",
+        "revision": "da87bfb608c14b7cf20ba1ce41287e8de496c0cd"
+      },
+      "name": "qwen",
+      "no_retraining_or_primary_refitting": true,
+      "precision": "float32",
+      "primary_family_membership": false,
+      "prompt_variant": "fourshot",
+      "records_sha256": "468741e656f40f6e7e303d2316bb522457a95ea14359c41be04b048e83518b8a",
+      "status": "MEASURED_EXPLORATORY",
+      "version": "followup-v2-hard-stress-v1"
+    },
+    "seed101/final": {
+      "checkpoint": "final",
+      "context": {
+        "context_limit": 256,
+        "max_tokens": 112,
+        "min_tokens": 77,
+        "n": 768,
+        "truncated": false,
+        "variant": "default"
+      },
+      "data_sha256": "ee19a2dbcbd6b18f69940666873aa73a4c7d6c1034da4fd96939033a3fdf8602",
+      "device": "cuda",
+      "elapsed_seconds": 0.6307814600004349,
+      "limitations": [
+        "Post-hoc motivated by D3 local-cue weakness; fresh outcomes do not make it preregistered primary evidence.",
+        "Valid strings need suitable closing runs, so their structural distribution differs from the original syntax corpus.",
+        "Equal5..8pair length range prevents longer strings being the sole explanation; depth distribution can still differ.",
+        "Removing adjacent type mismatches does not remove every finite-state/local cue or prove recursive parsing.",
+        "Wrappers were already inspected in D3; only content/outcomes are new."
+      ],
+      "lock_sha256": "8cf994cdf7f1f8976dcc8001b363b2ca907b1199e048928a07b2de825a47e091",
+      "measurements_sha256": "ebf114e4c5bfa331b558d9d183da8259316b37889c6d9f6b76ac7e2b47c03b33",
+      "metrics": {
+        "accuracy": 0.5247395833333334,
+        "accuracy_cluster_bootstrap95": {
+          "ci": [
+            0.515625,
+            0.53515625
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.5247395833333334,
+          "median": 0.53125,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.024344613631403535
+        },
+        "accuracy_false": 0.057291666666666664,
+        "accuracy_minus_half_cluster_bootstrap95": {
+          "ci": [
+            0.015625,
+            0.03515625
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.024739583333333332,
+          "median": 0.03125,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.024344613631403535
+        },
+        "accuracy_true": 0.9921875,
+        "by_bracket_pairs": {
+          "5": {
+            "accuracy": 0.5104166666666666,
+            "n": 192
+          },
+          "6": {
+            "accuracy": 0.515625,
+            "n": 192
+          },
+          "7": {
+            "accuracy": 0.5364583333333334,
+            "n": 192
+          },
+          "8": {
+            "accuracy": 0.5364583333333334,
+            "n": 192
+          }
+        },
+        "by_valid_depth": {
+          "2": {
+            "accuracy": 0.5978260869565217,
+            "n": 92
+          },
+          "3": {
+            "accuracy": 0.5294117647058824,
+            "n": 238
+          },
+          "4": {
+            "accuracy": 0.5078740157480315,
+            "n": 254
+          },
+          "5": {
+            "accuracy": 0.5,
+            "n": 128
+          },
+          "6": {
+            "accuracy": 0.5217391304347826,
+            "n": 46
+          },
+          "7": {
+            "accuracy": 0.5,
+            "n": 8
+          },
+          "8": {
+            "accuracy": 0.5,
+            "n": 2
+          }
+        },
+        "correct": 403,
+        "interpretation": "Descriptive post-hoc robustness evidence; no support verdict or inclusion in primary110 BH family.",
+        "n": 768,
+        "n_wrappers": 24,
+        "tie_rate": 0.0,
+        "unadjusted_exploratory_signflip_vs_half": {
+          "effect": 0.024739583333333332,
+          "method": "monte_carlo",
+          "n_clusters": 24,
+          "pvalue": 0.0001999600079984003,
+          "standardized_effect": 1.0162241105120806,
+          "status": "OK"
+        },
+        "yes_rate": 0.9674479166666666
+      },
+      "model_info": {
+        "checkpoint": "results/followup-v2/training/seed_101/final.pt",
+        "checkpoint_kind": "final",
+        "checkpoint_sha256": "f80d57cdd58292a92bdfc68f3450d698f2c66594c33a3cf675cf264c868540da",
+        "family": "independent_tiny",
+        "id": "seed101",
+        "seed": 101,
+        "sha256": "f80d57cdd58292a92bdfc68f3450d698f2c66594c33a3cf675cf264c868540da",
+        "source_run": "results/followup-v2"
+      },
+      "name": "seed101",
+      "no_retraining_or_primary_refitting": true,
+      "precision": "float32",
+      "primary_family_membership": false,
+      "prompt_variant": "default",
+      "records_sha256": "b0b6e913384a40d9ae2f8410dc22d04e752519a43057f93bcb1ea1d36f1b4f2f",
+      "status": "MEASURED_EXPLORATORY",
+      "version": "followup-v2-hard-stress-v1"
+    },
+    "seed101/initial": {
+      "checkpoint": "initial",
+      "context": {
+        "context_limit": 256,
+        "max_tokens": 112,
+        "min_tokens": 77,
+        "n": 768,
+        "truncated": false,
+        "variant": "default"
+      },
+      "data_sha256": "ee19a2dbcbd6b18f69940666873aa73a4c7d6c1034da4fd96939033a3fdf8602",
+      "device": "cuda",
+      "elapsed_seconds": 0.37691145899589173,
+      "limitations": [
+        "Post-hoc motivated by D3 local-cue weakness; fresh outcomes do not make it preregistered primary evidence.",
+        "Valid strings need suitable closing runs, so their structural distribution differs from the original syntax corpus.",
+        "Equal5..8pair length range prevents longer strings being the sole explanation; depth distribution can still differ.",
+        "Removing adjacent type mismatches does not remove every finite-state/local cue or prove recursive parsing.",
+        "Wrappers were already inspected in D3; only content/outcomes are new."
+      ],
+      "lock_sha256": "8cf994cdf7f1f8976dcc8001b363b2ca907b1199e048928a07b2de825a47e091",
+      "measurements_sha256": "2fc2c4c91510417606dae160ff1b5bf20497f48dd96287be8e03b67649f2f068",
+      "metrics": {
+        "accuracy": 0.5,
+        "accuracy_cluster_bootstrap95": {
+          "ci": [
+            0.5,
+            0.5
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.5,
+          "median": 0.5,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.0
+        },
+        "accuracy_false": 1.0,
+        "accuracy_minus_half_cluster_bootstrap95": {
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.0,
+          "median": 0.0,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.0
+        },
+        "accuracy_true": 0.0,
+        "by_bracket_pairs": {
+          "5": {
+            "accuracy": 0.5,
+            "n": 192
+          },
+          "6": {
+            "accuracy": 0.5,
+            "n": 192
+          },
+          "7": {
+            "accuracy": 0.5,
+            "n": 192
+          },
+          "8": {
+            "accuracy": 0.5,
+            "n": 192
+          }
+        },
+        "by_valid_depth": {
+          "2": {
+            "accuracy": 0.5,
+            "n": 92
+          },
+          "3": {
+            "accuracy": 0.5,
+            "n": 238
+          },
+          "4": {
+            "accuracy": 0.5,
+            "n": 254
+          },
+          "5": {
+            "accuracy": 0.5,
+            "n": 128
+          },
+          "6": {
+            "accuracy": 0.5,
+            "n": 46
+          },
+          "7": {
+            "accuracy": 0.5,
+            "n": 8
+          },
+          "8": {
+            "accuracy": 0.5,
+            "n": 2
+          }
+        },
+        "correct": 384,
+        "interpretation": "Descriptive post-hoc robustness evidence; no support verdict or inclusion in primary110 BH family.",
+        "n": 768,
+        "n_wrappers": 24,
+        "tie_rate": 0.0,
+        "unadjusted_exploratory_signflip_vs_half": {
+          "effect": 0.0,
+          "method": "monte_carlo",
+          "n_clusters": 24,
+          "pvalue": 1.0,
+          "standardized_effect": null,
+          "status": "OK"
+        },
+        "yes_rate": 0.0
+      },
+      "model_info": {
+        "checkpoint": "results/followup-v2/training/seed_101/initial.pt",
+        "checkpoint_kind": "initial",
+        "checkpoint_sha256": "924e18070d2dd0a4a36e6eabdeb054d0bacb8a457f7c59f1036d3e21bd4fee80",
+        "family": "independent_tiny",
+        "id": "seed101",
+        "seed": 101,
+        "sha256": "924e18070d2dd0a4a36e6eabdeb054d0bacb8a457f7c59f1036d3e21bd4fee80",
+        "source_run": "results/followup-v2"
+      },
+      "name": "seed101",
+      "no_retraining_or_primary_refitting": true,
+      "precision": "float32",
+      "primary_family_membership": false,
+      "prompt_variant": "default",
+      "records_sha256": "b0b6e913384a40d9ae2f8410dc22d04e752519a43057f93bcb1ea1d36f1b4f2f",
+      "status": "MEASURED_EXPLORATORY",
+      "version": "followup-v2-hard-stress-v1"
+    },
+    "seed101/middle": {
+      "checkpoint": "middle",
+      "context": {
+        "context_limit": 256,
+        "max_tokens": 112,
+        "min_tokens": 77,
+        "n": 768,
+        "truncated": false,
+        "variant": "default"
+      },
+      "data_sha256": "ee19a2dbcbd6b18f69940666873aa73a4c7d6c1034da4fd96939033a3fdf8602",
+      "device": "cuda",
+      "elapsed_seconds": 0.3778502880013548,
+      "limitations": [
+        "Post-hoc motivated by D3 local-cue weakness; fresh outcomes do not make it preregistered primary evidence.",
+        "Valid strings need suitable closing runs, so their structural distribution differs from the original syntax corpus.",
+        "Equal5..8pair length range prevents longer strings being the sole explanation; depth distribution can still differ.",
+        "Removing adjacent type mismatches does not remove every finite-state/local cue or prove recursive parsing.",
+        "Wrappers were already inspected in D3; only content/outcomes are new."
+      ],
+      "lock_sha256": "8cf994cdf7f1f8976dcc8001b363b2ca907b1199e048928a07b2de825a47e091",
+      "measurements_sha256": "5c64d7f483ed01173b1a7a94bbedee4c57204a3e54b59a83a3aadf30eef1475d",
+      "metrics": {
+        "accuracy": 0.5364583333333334,
+        "accuracy_cluster_bootstrap95": {
+          "ci": [
+            0.5182291666666666,
+            0.5546875
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.5364583333333334,
+          "median": 0.53125,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.04483009389729827
+        },
+        "accuracy_false": 0.20572916666666666,
+        "accuracy_minus_half_cluster_bootstrap95": {
+          "ci": [
+            0.018229166666666668,
+            0.0546875
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.036458333333333336,
+          "median": 0.03125,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.04483009389729827
+        },
+        "accuracy_true": 0.8671875,
+        "by_bracket_pairs": {
+          "5": {
+            "accuracy": 0.5208333333333334,
+            "n": 192
+          },
+          "6": {
+            "accuracy": 0.53125,
+            "n": 192
+          },
+          "7": {
+            "accuracy": 0.5572916666666666,
+            "n": 192
+          },
+          "8": {
+            "accuracy": 0.5364583333333334,
+            "n": 192
+          }
+        },
+        "by_valid_depth": {
+          "2": {
+            "accuracy": 0.5652173913043478,
+            "n": 92
+          },
+          "3": {
+            "accuracy": 0.5462184873949579,
+            "n": 238
+          },
+          "4": {
+            "accuracy": 0.531496062992126,
+            "n": 254
+          },
+          "5": {
+            "accuracy": 0.5,
+            "n": 128
+          },
+          "6": {
+            "accuracy": 0.5869565217391305,
+            "n": 46
+          },
+          "7": {
+            "accuracy": 0.375,
+            "n": 8
+          },
+          "8": {
+            "accuracy": 0.5,
+            "n": 2
+          }
+        },
+        "correct": 412,
+        "interpretation": "Descriptive post-hoc robustness evidence; no support verdict or inclusion in primary110 BH family.",
+        "n": 768,
+        "n_wrappers": 24,
+        "tie_rate": 0.0,
+        "unadjusted_exploratory_signflip_vs_half": {
+          "effect": 0.036458333333333336,
+          "method": "monte_carlo",
+          "n_clusters": 24,
+          "pvalue": 0.0007998400319936012,
+          "standardized_effect": 0.8132557878833828,
+          "status": "OK"
+        },
+        "yes_rate": 0.8307291666666666
+      },
+      "model_info": {
+        "checkpoint": "results/followup-v2/training/seed_101/middle.pt",
+        "checkpoint_kind": "middle",
+        "checkpoint_sha256": "7971894e15fbd7f10254c23dcbea4d0cfbff8b7b45208954c7f4de98c3487218",
+        "family": "independent_tiny",
+        "id": "seed101",
+        "seed": 101,
+        "sha256": "7971894e15fbd7f10254c23dcbea4d0cfbff8b7b45208954c7f4de98c3487218",
+        "source_run": "results/followup-v2"
+      },
+      "name": "seed101",
+      "no_retraining_or_primary_refitting": true,
+      "precision": "float32",
+      "primary_family_membership": false,
+      "prompt_variant": "default",
+      "records_sha256": "b0b6e913384a40d9ae2f8410dc22d04e752519a43057f93bcb1ea1d36f1b4f2f",
+      "status": "MEASURED_EXPLORATORY",
+      "version": "followup-v2-hard-stress-v1"
+    },
+    "seed211/final": {
+      "checkpoint": "final",
+      "context": {
+        "context_limit": 256,
+        "max_tokens": 112,
+        "min_tokens": 77,
+        "n": 768,
+        "truncated": false,
+        "variant": "default"
+      },
+      "data_sha256": "ee19a2dbcbd6b18f69940666873aa73a4c7d6c1034da4fd96939033a3fdf8602",
+      "device": "cuda",
+      "elapsed_seconds": 0.3821655119827483,
+      "limitations": [
+        "Post-hoc motivated by D3 local-cue weakness; fresh outcomes do not make it preregistered primary evidence.",
+        "Valid strings need suitable closing runs, so their structural distribution differs from the original syntax corpus.",
+        "Equal5..8pair length range prevents longer strings being the sole explanation; depth distribution can still differ.",
+        "Removing adjacent type mismatches does not remove every finite-state/local cue or prove recursive parsing.",
+        "Wrappers were already inspected in D3; only content/outcomes are new."
+      ],
+      "lock_sha256": "307f2a8322be4ea93366b228d0e1ca76dcd63c00425adfe82225c36b46912669",
+      "measurements_sha256": "5b53a1caa77a1753b9f0d4f1b4ca5a5304476776f91690141b325479f87a8bc8",
+      "metrics": {
+        "accuracy": 0.5611979166666666,
+        "accuracy_cluster_bootstrap95": {
+          "ci": [
+            0.5403320312500001,
+            0.58203125
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.5611979166666666,
+          "median": 0.5625,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.05331978888532251
+        },
+        "accuracy_false": 0.2994791666666667,
+        "accuracy_minus_half_cluster_bootstrap95": {
+          "ci": [
+            0.04033203125000006,
+            0.08203125
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.061197916666666664,
+          "median": 0.0625,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.05331978888532252
+        },
+        "accuracy_true": 0.8229166666666666,
+        "by_bracket_pairs": {
+          "5": {
+            "accuracy": 0.5833333333333334,
+            "n": 192
+          },
+          "6": {
+            "accuracy": 0.53125,
+            "n": 192
+          },
+          "7": {
+            "accuracy": 0.5677083333333334,
+            "n": 192
+          },
+          "8": {
+            "accuracy": 0.5625,
+            "n": 192
+          }
+        },
+        "by_valid_depth": {
+          "2": {
+            "accuracy": 0.7282608695652174,
+            "n": 92
+          },
+          "3": {
+            "accuracy": 0.5546218487394958,
+            "n": 238
+          },
+          "4": {
+            "accuracy": 0.5433070866141733,
+            "n": 254
+          },
+          "5": {
+            "accuracy": 0.5234375,
+            "n": 128
+          },
+          "6": {
+            "accuracy": 0.5,
+            "n": 46
+          },
+          "7": {
+            "accuracy": 0.375,
+            "n": 8
+          },
+          "8": {
+            "accuracy": 0.5,
+            "n": 2
+          }
+        },
+        "correct": 431,
+        "interpretation": "Descriptive post-hoc robustness evidence; no support verdict or inclusion in primary110 BH family.",
+        "n": 768,
+        "n_wrappers": 24,
+        "tie_rate": 0.0,
+        "unadjusted_exploratory_signflip_vs_half": {
+          "effect": 0.061197916666666664,
+          "method": "monte_carlo",
+          "n_clusters": 24,
+          "pvalue": 0.0001999600079984003,
+          "standardized_effect": 1.1477524188681245,
+          "status": "OK"
+        },
+        "yes_rate": 0.76171875
+      },
+      "model_info": {
+        "checkpoint": "results/followup-v2/training/seed_211/final.pt",
+        "checkpoint_kind": "final",
+        "checkpoint_sha256": "32997a9acdcd978a737e6f0ba2670ed2b64f060c3846ab05dbeae2705d4ade16",
+        "family": "independent_tiny",
+        "id": "seed211",
+        "seed": 211,
+        "sha256": "32997a9acdcd978a737e6f0ba2670ed2b64f060c3846ab05dbeae2705d4ade16",
+        "source_run": "results/followup-v2"
+      },
+      "name": "seed211",
+      "no_retraining_or_primary_refitting": true,
+      "precision": "float32",
+      "primary_family_membership": false,
+      "prompt_variant": "default",
+      "records_sha256": "b0b6e913384a40d9ae2f8410dc22d04e752519a43057f93bcb1ea1d36f1b4f2f",
+      "status": "MEASURED_EXPLORATORY",
+      "version": "followup-v2-hard-stress-v1"
+    },
+    "seed211/initial": {
+      "checkpoint": "initial",
+      "context": {
+        "context_limit": 256,
+        "max_tokens": 112,
+        "min_tokens": 77,
+        "n": 768,
+        "truncated": false,
+        "variant": "default"
+      },
+      "data_sha256": "ee19a2dbcbd6b18f69940666873aa73a4c7d6c1034da4fd96939033a3fdf8602",
+      "device": "cuda",
+      "elapsed_seconds": 0.37768187999608926,
+      "limitations": [
+        "Post-hoc motivated by D3 local-cue weakness; fresh outcomes do not make it preregistered primary evidence.",
+        "Valid strings need suitable closing runs, so their structural distribution differs from the original syntax corpus.",
+        "Equal5..8pair length range prevents longer strings being the sole explanation; depth distribution can still differ.",
+        "Removing adjacent type mismatches does not remove every finite-state/local cue or prove recursive parsing.",
+        "Wrappers were already inspected in D3; only content/outcomes are new."
+      ],
+      "lock_sha256": "307f2a8322be4ea93366b228d0e1ca76dcd63c00425adfe82225c36b46912669",
+      "measurements_sha256": "ebf81a5af6fb125238d44782714cd395292a4e6d053bbf634b3dadf55e249cd4",
+      "metrics": {
+        "accuracy": 0.5,
+        "accuracy_cluster_bootstrap95": {
+          "ci": [
+            0.5,
+            0.5
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.5,
+          "median": 0.5,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.0
+        },
+        "accuracy_false": 1.0,
+        "accuracy_minus_half_cluster_bootstrap95": {
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.0,
+          "median": 0.0,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.0
+        },
+        "accuracy_true": 0.0,
+        "by_bracket_pairs": {
+          "5": {
+            "accuracy": 0.5,
+            "n": 192
+          },
+          "6": {
+            "accuracy": 0.5,
+            "n": 192
+          },
+          "7": {
+            "accuracy": 0.5,
+            "n": 192
+          },
+          "8": {
+            "accuracy": 0.5,
+            "n": 192
+          }
+        },
+        "by_valid_depth": {
+          "2": {
+            "accuracy": 0.5,
+            "n": 92
+          },
+          "3": {
+            "accuracy": 0.5,
+            "n": 238
+          },
+          "4": {
+            "accuracy": 0.5,
+            "n": 254
+          },
+          "5": {
+            "accuracy": 0.5,
+            "n": 128
+          },
+          "6": {
+            "accuracy": 0.5,
+            "n": 46
+          },
+          "7": {
+            "accuracy": 0.5,
+            "n": 8
+          },
+          "8": {
+            "accuracy": 0.5,
+            "n": 2
+          }
+        },
+        "correct": 384,
+        "interpretation": "Descriptive post-hoc robustness evidence; no support verdict or inclusion in primary110 BH family.",
+        "n": 768,
+        "n_wrappers": 24,
+        "tie_rate": 0.0,
+        "unadjusted_exploratory_signflip_vs_half": {
+          "effect": 0.0,
+          "method": "monte_carlo",
+          "n_clusters": 24,
+          "pvalue": 1.0,
+          "standardized_effect": null,
+          "status": "OK"
+        },
+        "yes_rate": 0.0
+      },
+      "model_info": {
+        "checkpoint": "results/followup-v2/training/seed_211/initial.pt",
+        "checkpoint_kind": "initial",
+        "checkpoint_sha256": "34114df3de034d50b80a8dca65e216197257ef68c2e6242cd599221b2932826b",
+        "family": "independent_tiny",
+        "id": "seed211",
+        "seed": 211,
+        "sha256": "34114df3de034d50b80a8dca65e216197257ef68c2e6242cd599221b2932826b",
+        "source_run": "results/followup-v2"
+      },
+      "name": "seed211",
+      "no_retraining_or_primary_refitting": true,
+      "precision": "float32",
+      "primary_family_membership": false,
+      "prompt_variant": "default",
+      "records_sha256": "b0b6e913384a40d9ae2f8410dc22d04e752519a43057f93bcb1ea1d36f1b4f2f",
+      "status": "MEASURED_EXPLORATORY",
+      "version": "followup-v2-hard-stress-v1"
+    },
+    "seed211/middle": {
+      "checkpoint": "middle",
+      "context": {
+        "context_limit": 256,
+        "max_tokens": 112,
+        "min_tokens": 77,
+        "n": 768,
+        "truncated": false,
+        "variant": "default"
+      },
+      "data_sha256": "ee19a2dbcbd6b18f69940666873aa73a4c7d6c1034da4fd96939033a3fdf8602",
+      "device": "cuda",
+      "elapsed_seconds": 0.3785455389879644,
+      "limitations": [
+        "Post-hoc motivated by D3 local-cue weakness; fresh outcomes do not make it preregistered primary evidence.",
+        "Valid strings need suitable closing runs, so their structural distribution differs from the original syntax corpus.",
+        "Equal5..8pair length range prevents longer strings being the sole explanation; depth distribution can still differ.",
+        "Removing adjacent type mismatches does not remove every finite-state/local cue or prove recursive parsing.",
+        "Wrappers were already inspected in D3; only content/outcomes are new."
+      ],
+      "lock_sha256": "307f2a8322be4ea93366b228d0e1ca76dcd63c00425adfe82225c36b46912669",
+      "measurements_sha256": "6f1ffad819db8f48f671905feb870883ba7cbae412d1893493392fc524f42eff",
+      "metrics": {
+        "accuracy": 0.5208333333333334,
+        "accuracy_cluster_bootstrap95": {
+          "ci": [
+            0.5078125,
+            0.5338541666666666
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.5208333333333334,
+          "median": 0.53125,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.03406688327733966
+        },
+        "accuracy_false": 0.059895833333333336,
+        "accuracy_minus_half_cluster_bootstrap95": {
+          "ci": [
+            0.0078125,
+            0.033854166666666664
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.020833333333333332,
+          "median": 0.03125,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.03406688327733965
+        },
+        "accuracy_true": 0.9817708333333334,
+        "by_bracket_pairs": {
+          "5": {
+            "accuracy": 0.5052083333333334,
+            "n": 192
+          },
+          "6": {
+            "accuracy": 0.515625,
+            "n": 192
+          },
+          "7": {
+            "accuracy": 0.53125,
+            "n": 192
+          },
+          "8": {
+            "accuracy": 0.53125,
+            "n": 192
+          }
+        },
+        "by_valid_depth": {
+          "2": {
+            "accuracy": 0.6086956521739131,
+            "n": 92
+          },
+          "3": {
+            "accuracy": 0.5126050420168067,
+            "n": 238
+          },
+          "4": {
+            "accuracy": 0.5118110236220472,
+            "n": 254
+          },
+          "5": {
+            "accuracy": 0.5,
+            "n": 128
+          },
+          "6": {
+            "accuracy": 0.5,
+            "n": 46
+          },
+          "7": {
+            "accuracy": 0.5,
+            "n": 8
+          },
+          "8": {
+            "accuracy": 0.5,
+            "n": 2
+          }
+        },
+        "correct": 400,
+        "interpretation": "Descriptive post-hoc robustness evidence; no support verdict or inclusion in primary110 BH family.",
+        "n": 768,
+        "n_wrappers": 24,
+        "tie_rate": 0.0,
+        "unadjusted_exploratory_signflip_vs_half": {
+          "effect": 0.020833333333333332,
+          "method": "monte_carlo",
+          "n_clusters": 24,
+          "pvalue": 0.008598280343931213,
+          "standardized_effect": 0.6115420998078532,
+          "status": "OK"
+        },
+        "yes_rate": 0.9609375
+      },
+      "model_info": {
+        "checkpoint": "results/followup-v2/training/seed_211/middle.pt",
+        "checkpoint_kind": "middle",
+        "checkpoint_sha256": "bb88d2a6f1be10d6993b32e9cfcb6abe2dd1e839a94f7d9f0f397142009c2db9",
+        "family": "independent_tiny",
+        "id": "seed211",
+        "seed": 211,
+        "sha256": "bb88d2a6f1be10d6993b32e9cfcb6abe2dd1e839a94f7d9f0f397142009c2db9",
+        "source_run": "results/followup-v2"
+      },
+      "name": "seed211",
+      "no_retraining_or_primary_refitting": true,
+      "precision": "float32",
+      "primary_family_membership": false,
+      "prompt_variant": "default",
+      "records_sha256": "b0b6e913384a40d9ae2f8410dc22d04e752519a43057f93bcb1ea1d36f1b4f2f",
+      "status": "MEASURED_EXPLORATORY",
+      "version": "followup-v2-hard-stress-v1"
+    },
+    "seed307/final": {
+      "checkpoint": "final",
+      "context": {
+        "context_limit": 256,
+        "max_tokens": 112,
+        "min_tokens": 77,
+        "n": 768,
+        "truncated": false,
+        "variant": "default"
+      },
+      "data_sha256": "ee19a2dbcbd6b18f69940666873aa73a4c7d6c1034da4fd96939033a3fdf8602",
+      "device": "cuda",
+      "elapsed_seconds": 0.3846382519986946,
+      "limitations": [
+        "Post-hoc motivated by D3 local-cue weakness; fresh outcomes do not make it preregistered primary evidence.",
+        "Valid strings need suitable closing runs, so their structural distribution differs from the original syntax corpus.",
+        "Equal5..8pair length range prevents longer strings being the sole explanation; depth distribution can still differ.",
+        "Removing adjacent type mismatches does not remove every finite-state/local cue or prove recursive parsing.",
+        "Wrappers were already inspected in D3; only content/outcomes are new."
+      ],
+      "lock_sha256": "0f3a16ec5c9ce6a98b13bc5110c142ad6eb4c1129ec440d00fd016ff15879f85",
+      "measurements_sha256": "c012e83997c5187591e61192bd9c1ab0de98e4a582bd5984c6c3d00186c4a549",
+      "metrics": {
+        "accuracy": 0.5026041666666666,
+        "accuracy_cluster_bootstrap95": {
+          "ci": [
+            0.4908854166666667,
+            0.5130208333333334
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.5026041666666666,
+          "median": 0.5,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.02751708132220337
+        },
+        "accuracy_false": 0.07291666666666667,
+        "accuracy_minus_half_cluster_bootstrap95": {
+          "ci": [
+            -0.009114583333333334,
+            0.013020833333333334
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.0026041666666666665,
+          "median": 0.0,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.02751708132220337
+        },
+        "accuracy_true": 0.9322916666666666,
+        "by_bracket_pairs": {
+          "5": {
+            "accuracy": 0.5104166666666666,
+            "n": 192
+          },
+          "6": {
+            "accuracy": 0.5104166666666666,
+            "n": 192
+          },
+          "7": {
+            "accuracy": 0.5,
+            "n": 192
+          },
+          "8": {
+            "accuracy": 0.4895833333333333,
+            "n": 192
+          }
+        },
+        "by_valid_depth": {
+          "2": {
+            "accuracy": 0.5,
+            "n": 92
+          },
+          "3": {
+            "accuracy": 0.5042016806722689,
+            "n": 238
+          },
+          "4": {
+            "accuracy": 0.5,
+            "n": 254
+          },
+          "5": {
+            "accuracy": 0.5,
+            "n": 128
+          },
+          "6": {
+            "accuracy": 0.5217391304347826,
+            "n": 46
+          },
+          "7": {
+            "accuracy": 0.5,
+            "n": 8
+          },
+          "8": {
+            "accuracy": 0.5,
+            "n": 2
+          }
+        },
+        "correct": 386,
+        "interpretation": "Descriptive post-hoc robustness evidence; no support verdict or inclusion in primary110 BH family.",
+        "n": 768,
+        "n_wrappers": 24,
+        "tie_rate": 0.0,
+        "unadjusted_exploratory_signflip_vs_half": {
+          "effect": 0.0026041666666666665,
+          "method": "monte_carlo",
+          "n_clusters": 24,
+          "pvalue": 0.8430313937212558,
+          "standardized_effect": 0.09463818622963402,
+          "status": "OK"
+        },
+        "yes_rate": 0.9296875
+      },
+      "model_info": {
+        "checkpoint": "results/followup-v2/training/seed_307/final.pt",
+        "checkpoint_kind": "final",
+        "checkpoint_sha256": "ae97e1e30ef77670351874107b80571d66c2ef00852f6ed79ad8174699849654",
+        "family": "independent_tiny",
+        "id": "seed307",
+        "seed": 307,
+        "sha256": "ae97e1e30ef77670351874107b80571d66c2ef00852f6ed79ad8174699849654",
+        "source_run": "results/followup-v2"
+      },
+      "name": "seed307",
+      "no_retraining_or_primary_refitting": true,
+      "precision": "float32",
+      "primary_family_membership": false,
+      "prompt_variant": "default",
+      "records_sha256": "b0b6e913384a40d9ae2f8410dc22d04e752519a43057f93bcb1ea1d36f1b4f2f",
+      "status": "MEASURED_EXPLORATORY",
+      "version": "followup-v2-hard-stress-v1"
+    },
+    "seed307/initial": {
+      "checkpoint": "initial",
+      "context": {
+        "context_limit": 256,
+        "max_tokens": 112,
+        "min_tokens": 77,
+        "n": 768,
+        "truncated": false,
+        "variant": "default"
+      },
+      "data_sha256": "ee19a2dbcbd6b18f69940666873aa73a4c7d6c1034da4fd96939033a3fdf8602",
+      "device": "cuda",
+      "elapsed_seconds": 0.37868524200166576,
+      "limitations": [
+        "Post-hoc motivated by D3 local-cue weakness; fresh outcomes do not make it preregistered primary evidence.",
+        "Valid strings need suitable closing runs, so their structural distribution differs from the original syntax corpus.",
+        "Equal5..8pair length range prevents longer strings being the sole explanation; depth distribution can still differ.",
+        "Removing adjacent type mismatches does not remove every finite-state/local cue or prove recursive parsing.",
+        "Wrappers were already inspected in D3; only content/outcomes are new."
+      ],
+      "lock_sha256": "0f3a16ec5c9ce6a98b13bc5110c142ad6eb4c1129ec440d00fd016ff15879f85",
+      "measurements_sha256": "1b7f1c3bf4f8d647b8de8c805675a3f48b4501a59d8ff507397bd56c25d7eaa9",
+      "metrics": {
+        "accuracy": 0.5,
+        "accuracy_cluster_bootstrap95": {
+          "ci": [
+            0.5,
+            0.5
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.5,
+          "median": 0.5,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.0
+        },
+        "accuracy_false": 1.0,
+        "accuracy_minus_half_cluster_bootstrap95": {
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.0,
+          "median": 0.0,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.0
+        },
+        "accuracy_true": 0.0,
+        "by_bracket_pairs": {
+          "5": {
+            "accuracy": 0.5,
+            "n": 192
+          },
+          "6": {
+            "accuracy": 0.5,
+            "n": 192
+          },
+          "7": {
+            "accuracy": 0.5,
+            "n": 192
+          },
+          "8": {
+            "accuracy": 0.5,
+            "n": 192
+          }
+        },
+        "by_valid_depth": {
+          "2": {
+            "accuracy": 0.5,
+            "n": 92
+          },
+          "3": {
+            "accuracy": 0.5,
+            "n": 238
+          },
+          "4": {
+            "accuracy": 0.5,
+            "n": 254
+          },
+          "5": {
+            "accuracy": 0.5,
+            "n": 128
+          },
+          "6": {
+            "accuracy": 0.5,
+            "n": 46
+          },
+          "7": {
+            "accuracy": 0.5,
+            "n": 8
+          },
+          "8": {
+            "accuracy": 0.5,
+            "n": 2
+          }
+        },
+        "correct": 384,
+        "interpretation": "Descriptive post-hoc robustness evidence; no support verdict or inclusion in primary110 BH family.",
+        "n": 768,
+        "n_wrappers": 24,
+        "tie_rate": 0.0,
+        "unadjusted_exploratory_signflip_vs_half": {
+          "effect": 0.0,
+          "method": "monte_carlo",
+          "n_clusters": 24,
+          "pvalue": 1.0,
+          "standardized_effect": null,
+          "status": "OK"
+        },
+        "yes_rate": 0.0
+      },
+      "model_info": {
+        "checkpoint": "results/followup-v2/training/seed_307/initial.pt",
+        "checkpoint_kind": "initial",
+        "checkpoint_sha256": "0e6df2305a46e58def0b8251078d458d52708c6c3f6fce0dd35c96ebc7d1dec8",
+        "family": "independent_tiny",
+        "id": "seed307",
+        "seed": 307,
+        "sha256": "0e6df2305a46e58def0b8251078d458d52708c6c3f6fce0dd35c96ebc7d1dec8",
+        "source_run": "results/followup-v2"
+      },
+      "name": "seed307",
+      "no_retraining_or_primary_refitting": true,
+      "precision": "float32",
+      "primary_family_membership": false,
+      "prompt_variant": "default",
+      "records_sha256": "b0b6e913384a40d9ae2f8410dc22d04e752519a43057f93bcb1ea1d36f1b4f2f",
+      "status": "MEASURED_EXPLORATORY",
+      "version": "followup-v2-hard-stress-v1"
+    },
+    "seed307/middle": {
+      "checkpoint": "middle",
+      "context": {
+        "context_limit": 256,
+        "max_tokens": 112,
+        "min_tokens": 77,
+        "n": 768,
+        "truncated": false,
+        "variant": "default"
+      },
+      "data_sha256": "ee19a2dbcbd6b18f69940666873aa73a4c7d6c1034da4fd96939033a3fdf8602",
+      "device": "cuda",
+      "elapsed_seconds": 0.37913618198945187,
+      "limitations": [
+        "Post-hoc motivated by D3 local-cue weakness; fresh outcomes do not make it preregistered primary evidence.",
+        "Valid strings need suitable closing runs, so their structural distribution differs from the original syntax corpus.",
+        "Equal5..8pair length range prevents longer strings being the sole explanation; depth distribution can still differ.",
+        "Removing adjacent type mismatches does not remove every finite-state/local cue or prove recursive parsing.",
+        "Wrappers were already inspected in D3; only content/outcomes are new."
+      ],
+      "lock_sha256": "0f3a16ec5c9ce6a98b13bc5110c142ad6eb4c1129ec440d00fd016ff15879f85",
+      "measurements_sha256": "0fe605f0f752cc70b095ec202a61071ecc35bd10687fe7da6e6c9ab32756753c",
+      "metrics": {
+        "accuracy": 0.5546875,
+        "accuracy_cluster_bootstrap95": {
+          "ci": [
+            0.5390625,
+            0.5703125
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.5546875,
+          "median": 0.5625,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.04146805016856482
+        },
+        "accuracy_false": 0.14583333333333334,
+        "accuracy_minus_half_cluster_bootstrap95": {
+          "ci": [
+            0.0390625,
+            0.0703125
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.0546875,
+          "median": 0.0625,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.04146805016856482
+        },
+        "accuracy_true": 0.9635416666666666,
+        "by_bracket_pairs": {
+          "5": {
+            "accuracy": 0.5416666666666666,
+            "n": 192
+          },
+          "6": {
+            "accuracy": 0.5572916666666666,
+            "n": 192
+          },
+          "7": {
+            "accuracy": 0.5625,
+            "n": 192
+          },
+          "8": {
+            "accuracy": 0.5572916666666666,
+            "n": 192
+          }
+        },
+        "by_valid_depth": {
+          "2": {
+            "accuracy": 0.6086956521739131,
+            "n": 92
+          },
+          "3": {
+            "accuracy": 0.5630252100840336,
+            "n": 238
+          },
+          "4": {
+            "accuracy": 0.5393700787401575,
+            "n": 254
+          },
+          "5": {
+            "accuracy": 0.515625,
+            "n": 128
+          },
+          "6": {
+            "accuracy": 0.5869565217391305,
+            "n": 46
+          },
+          "7": {
+            "accuracy": 0.625,
+            "n": 8
+          },
+          "8": {
+            "accuracy": 0.5,
+            "n": 2
+          }
+        },
+        "correct": 426,
+        "interpretation": "Descriptive post-hoc robustness evidence; no support verdict or inclusion in primary110 BH family.",
+        "n": 768,
+        "n_wrappers": 24,
+        "tie_rate": 0.0,
+        "unadjusted_exploratory_signflip_vs_half": {
+          "effect": 0.0546875,
+          "method": "monte_carlo",
+          "n_clusters": 24,
+          "pvalue": 0.0001999600079984003,
+          "standardized_effect": 1.318786385607691,
+          "status": "OK"
+        },
+        "yes_rate": 0.9088541666666666
+      },
+      "model_info": {
+        "checkpoint": "results/followup-v2/training/seed_307/middle.pt",
+        "checkpoint_kind": "middle",
+        "checkpoint_sha256": "fead5568bc97bb29c3c6bfe33b9035fca1d1340200e888937b562f0403a88bf8",
+        "family": "independent_tiny",
+        "id": "seed307",
+        "seed": 307,
+        "sha256": "fead5568bc97bb29c3c6bfe33b9035fca1d1340200e888937b562f0403a88bf8",
+        "source_run": "results/followup-v2"
+      },
+      "name": "seed307",
+      "no_retraining_or_primary_refitting": true,
+      "precision": "float32",
+      "primary_family_membership": false,
+      "prompt_variant": "default",
+      "records_sha256": "b0b6e913384a40d9ae2f8410dc22d04e752519a43057f93bcb1ea1d36f1b4f2f",
+      "status": "MEASURED_EXPLORATORY",
+      "version": "followup-v2-hard-stress-v1"
+    },
+    "seed401/final": {
+      "checkpoint": "final",
+      "context": {
+        "context_limit": 256,
+        "max_tokens": 112,
+        "min_tokens": 77,
+        "n": 768,
+        "truncated": false,
+        "variant": "default"
+      },
+      "data_sha256": "ee19a2dbcbd6b18f69940666873aa73a4c7d6c1034da4fd96939033a3fdf8602",
+      "device": "cuda",
+      "elapsed_seconds": 0.3788781960029155,
+      "limitations": [
+        "Post-hoc motivated by D3 local-cue weakness; fresh outcomes do not make it preregistered primary evidence.",
+        "Valid strings need suitable closing runs, so their structural distribution differs from the original syntax corpus.",
+        "Equal5..8pair length range prevents longer strings being the sole explanation; depth distribution can still differ.",
+        "Removing adjacent type mismatches does not remove every finite-state/local cue or prove recursive parsing.",
+        "Wrappers were already inspected in D3; only content/outcomes are new."
+      ],
+      "lock_sha256": "0cecdff3fa8927acb3c9201fd0cdce248f80120bb1e4a09e930c2657d4dd2e9c",
+      "measurements_sha256": "c7d79f167fcb451defd55ed2f0bcb3704621374bb73790da0557baa9426b7876",
+      "metrics": {
+        "accuracy": 0.5403645833333334,
+        "accuracy_cluster_bootstrap95": {
+          "ci": [
+            0.5260416666666666,
+            0.5560221354166666
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.5403645833333334,
+          "median": 0.53125,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.03740836479105415
+        },
+        "accuracy_false": 0.08072916666666667,
+        "accuracy_minus_half_cluster_bootstrap95": {
+          "ci": [
+            0.026041666666666668,
+            0.056022135416666494
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.040364583333333336,
+          "median": 0.03125,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.037408364791054145
+        },
+        "accuracy_true": 1.0,
+        "by_bracket_pairs": {
+          "5": {
+            "accuracy": 0.5364583333333334,
+            "n": 192
+          },
+          "6": {
+            "accuracy": 0.5260416666666666,
+            "n": 192
+          },
+          "7": {
+            "accuracy": 0.5520833333333334,
+            "n": 192
+          },
+          "8": {
+            "accuracy": 0.546875,
+            "n": 192
+          }
+        },
+        "by_valid_depth": {
+          "2": {
+            "accuracy": 0.6413043478260869,
+            "n": 92
+          },
+          "3": {
+            "accuracy": 0.5168067226890757,
+            "n": 238
+          },
+          "4": {
+            "accuracy": 0.547244094488189,
+            "n": 254
+          },
+          "5": {
+            "accuracy": 0.515625,
+            "n": 128
+          },
+          "6": {
+            "accuracy": 0.5,
+            "n": 46
+          },
+          "7": {
+            "accuracy": 0.5,
+            "n": 8
+          },
+          "8": {
+            "accuracy": 0.5,
+            "n": 2
+          }
+        },
+        "correct": 415,
+        "interpretation": "Descriptive post-hoc robustness evidence; no support verdict or inclusion in primary110 BH family.",
+        "n": 768,
+        "n_wrappers": 24,
+        "tie_rate": 0.0,
+        "unadjusted_exploratory_signflip_vs_half": {
+          "effect": 0.040364583333333336,
+          "method": "monte_carlo",
+          "n_clusters": 24,
+          "pvalue": 0.0001999600079984003,
+          "standardized_effect": 1.0790256018618098,
+          "status": "OK"
+        },
+        "yes_rate": 0.9596354166666666
+      },
+      "model_info": {
+        "checkpoint": "results/followup-v2/training/seed_401/final.pt",
+        "checkpoint_kind": "final",
+        "checkpoint_sha256": "112da4056e998b35c30c34ce9578bdf8ded63694b09ea09986999b13794ef527",
+        "family": "independent_tiny",
+        "id": "seed401",
+        "seed": 401,
+        "sha256": "112da4056e998b35c30c34ce9578bdf8ded63694b09ea09986999b13794ef527",
+        "source_run": "results/followup-v2"
+      },
+      "name": "seed401",
+      "no_retraining_or_primary_refitting": true,
+      "precision": "float32",
+      "primary_family_membership": false,
+      "prompt_variant": "default",
+      "records_sha256": "b0b6e913384a40d9ae2f8410dc22d04e752519a43057f93bcb1ea1d36f1b4f2f",
+      "status": "MEASURED_EXPLORATORY",
+      "version": "followup-v2-hard-stress-v1"
+    },
+    "seed401/initial": {
+      "checkpoint": "initial",
+      "context": {
+        "context_limit": 256,
+        "max_tokens": 112,
+        "min_tokens": 77,
+        "n": 768,
+        "truncated": false,
+        "variant": "default"
+      },
+      "data_sha256": "ee19a2dbcbd6b18f69940666873aa73a4c7d6c1034da4fd96939033a3fdf8602",
+      "device": "cuda",
+      "elapsed_seconds": 0.3783818400115706,
+      "limitations": [
+        "Post-hoc motivated by D3 local-cue weakness; fresh outcomes do not make it preregistered primary evidence.",
+        "Valid strings need suitable closing runs, so their structural distribution differs from the original syntax corpus.",
+        "Equal5..8pair length range prevents longer strings being the sole explanation; depth distribution can still differ.",
+        "Removing adjacent type mismatches does not remove every finite-state/local cue or prove recursive parsing.",
+        "Wrappers were already inspected in D3; only content/outcomes are new."
+      ],
+      "lock_sha256": "0cecdff3fa8927acb3c9201fd0cdce248f80120bb1e4a09e930c2657d4dd2e9c",
+      "measurements_sha256": "115ff44e51acd5eed6936370c56dce72aeb95d9a02c90d91be9174462e752282",
+      "metrics": {
+        "accuracy": 0.5,
+        "accuracy_cluster_bootstrap95": {
+          "ci": [
+            0.5,
+            0.5
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.5,
+          "median": 0.5,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.0
+        },
+        "accuracy_false": 1.0,
+        "accuracy_minus_half_cluster_bootstrap95": {
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.0,
+          "median": 0.0,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.0
+        },
+        "accuracy_true": 0.0,
+        "by_bracket_pairs": {
+          "5": {
+            "accuracy": 0.5,
+            "n": 192
+          },
+          "6": {
+            "accuracy": 0.5,
+            "n": 192
+          },
+          "7": {
+            "accuracy": 0.5,
+            "n": 192
+          },
+          "8": {
+            "accuracy": 0.5,
+            "n": 192
+          }
+        },
+        "by_valid_depth": {
+          "2": {
+            "accuracy": 0.5,
+            "n": 92
+          },
+          "3": {
+            "accuracy": 0.5,
+            "n": 238
+          },
+          "4": {
+            "accuracy": 0.5,
+            "n": 254
+          },
+          "5": {
+            "accuracy": 0.5,
+            "n": 128
+          },
+          "6": {
+            "accuracy": 0.5,
+            "n": 46
+          },
+          "7": {
+            "accuracy": 0.5,
+            "n": 8
+          },
+          "8": {
+            "accuracy": 0.5,
+            "n": 2
+          }
+        },
+        "correct": 384,
+        "interpretation": "Descriptive post-hoc robustness evidence; no support verdict or inclusion in primary110 BH family.",
+        "n": 768,
+        "n_wrappers": 24,
+        "tie_rate": 0.0,
+        "unadjusted_exploratory_signflip_vs_half": {
+          "effect": 0.0,
+          "method": "monte_carlo",
+          "n_clusters": 24,
+          "pvalue": 1.0,
+          "standardized_effect": null,
+          "status": "OK"
+        },
+        "yes_rate": 0.0
+      },
+      "model_info": {
+        "checkpoint": "results/followup-v2/training/seed_401/initial.pt",
+        "checkpoint_kind": "initial",
+        "checkpoint_sha256": "c927aaa1b70757dacce58fadaebb9511c87c341aae1e4ec8c0c94c6871eccb0c",
+        "family": "independent_tiny",
+        "id": "seed401",
+        "seed": 401,
+        "sha256": "c927aaa1b70757dacce58fadaebb9511c87c341aae1e4ec8c0c94c6871eccb0c",
+        "source_run": "results/followup-v2"
+      },
+      "name": "seed401",
+      "no_retraining_or_primary_refitting": true,
+      "precision": "float32",
+      "primary_family_membership": false,
+      "prompt_variant": "default",
+      "records_sha256": "b0b6e913384a40d9ae2f8410dc22d04e752519a43057f93bcb1ea1d36f1b4f2f",
+      "status": "MEASURED_EXPLORATORY",
+      "version": "followup-v2-hard-stress-v1"
+    },
+    "seed401/middle": {
+      "checkpoint": "middle",
+      "context": {
+        "context_limit": 256,
+        "max_tokens": 112,
+        "min_tokens": 77,
+        "n": 768,
+        "truncated": false,
+        "variant": "default"
+      },
+      "data_sha256": "ee19a2dbcbd6b18f69940666873aa73a4c7d6c1034da4fd96939033a3fdf8602",
+      "device": "cuda",
+      "elapsed_seconds": 0.37895239499630406,
+      "limitations": [
+        "Post-hoc motivated by D3 local-cue weakness; fresh outcomes do not make it preregistered primary evidence.",
+        "Valid strings need suitable closing runs, so their structural distribution differs from the original syntax corpus.",
+        "Equal5..8pair length range prevents longer strings being the sole explanation; depth distribution can still differ.",
+        "Removing adjacent type mismatches does not remove every finite-state/local cue or prove recursive parsing.",
+        "Wrappers were already inspected in D3; only content/outcomes are new."
+      ],
+      "lock_sha256": "0cecdff3fa8927acb3c9201fd0cdce248f80120bb1e4a09e930c2657d4dd2e9c",
+      "measurements_sha256": "c2a0afb219ac777c6ee078bf368aa59486ab3037a9e77f8df7a145f43cc27bf4",
+      "metrics": {
+        "accuracy": 0.5286458333333334,
+        "accuracy_cluster_bootstrap95": {
+          "ci": [
+            0.5182291666666666,
+            0.5403645833333334
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.5286458333333334,
+          "median": 0.53125,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.029019101342971032
+        },
+        "accuracy_false": 0.057291666666666664,
+        "accuracy_minus_half_cluster_bootstrap95": {
+          "ci": [
+            0.018229166666666668,
+            0.040364583333333336
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.028645833333333332,
+          "median": 0.03125,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.029019101342971032
+        },
+        "accuracy_true": 1.0,
+        "by_bracket_pairs": {
+          "5": {
+            "accuracy": 0.515625,
+            "n": 192
+          },
+          "6": {
+            "accuracy": 0.5104166666666666,
+            "n": 192
+          },
+          "7": {
+            "accuracy": 0.546875,
+            "n": 192
+          },
+          "8": {
+            "accuracy": 0.5416666666666666,
+            "n": 192
+          }
+        },
+        "by_valid_depth": {
+          "2": {
+            "accuracy": 0.6304347826086957,
+            "n": 92
+          },
+          "3": {
+            "accuracy": 0.5126050420168067,
+            "n": 238
+          },
+          "4": {
+            "accuracy": 0.5275590551181102,
+            "n": 254
+          },
+          "5": {
+            "accuracy": 0.5,
+            "n": 128
+          },
+          "6": {
+            "accuracy": 0.5,
+            "n": 46
+          },
+          "7": {
+            "accuracy": 0.5,
+            "n": 8
+          },
+          "8": {
+            "accuracy": 0.5,
+            "n": 2
+          }
+        },
+        "correct": 406,
+        "interpretation": "Descriptive post-hoc robustness evidence; no support verdict or inclusion in primary110 BH family.",
+        "n": 768,
+        "n_wrappers": 24,
+        "tie_rate": 0.0,
+        "unadjusted_exploratory_signflip_vs_half": {
+          "effect": 0.028645833333333332,
+          "method": "monte_carlo",
+          "n_clusters": 24,
+          "pvalue": 0.0007998400319936012,
+          "standardized_effect": 0.9871371616499726,
+          "status": "OK"
+        },
+        "yes_rate": 0.9713541666666666
+      },
+      "model_info": {
+        "checkpoint": "results/followup-v2/training/seed_401/middle.pt",
+        "checkpoint_kind": "middle",
+        "checkpoint_sha256": "aafe7ccb2d13c6b6b9d2e0516dc98bf38750a5c2327714ede173192d3283d34c",
+        "family": "independent_tiny",
+        "id": "seed401",
+        "seed": 401,
+        "sha256": "aafe7ccb2d13c6b6b9d2e0516dc98bf38750a5c2327714ede173192d3283d34c",
+        "source_run": "results/followup-v2"
+      },
+      "name": "seed401",
+      "no_retraining_or_primary_refitting": true,
+      "precision": "float32",
+      "primary_family_membership": false,
+      "prompt_variant": "default",
+      "records_sha256": "b0b6e913384a40d9ae2f8410dc22d04e752519a43057f93bcb1ea1d36f1b4f2f",
+      "status": "MEASURED_EXPLORATORY",
+      "version": "followup-v2-hard-stress-v1"
+    },
+    "seed503/final": {
+      "checkpoint": "final",
+      "context": {
+        "context_limit": 256,
+        "max_tokens": 112,
+        "min_tokens": 77,
+        "n": 768,
+        "truncated": false,
+        "variant": "default"
+      },
+      "data_sha256": "ee19a2dbcbd6b18f69940666873aa73a4c7d6c1034da4fd96939033a3fdf8602",
+      "device": "cuda",
+      "elapsed_seconds": 0.37894547198084183,
+      "limitations": [
+        "Post-hoc motivated by D3 local-cue weakness; fresh outcomes do not make it preregistered primary evidence.",
+        "Valid strings need suitable closing runs, so their structural distribution differs from the original syntax corpus.",
+        "Equal5..8pair length range prevents longer strings being the sole explanation; depth distribution can still differ.",
+        "Removing adjacent type mismatches does not remove every finite-state/local cue or prove recursive parsing.",
+        "Wrappers were already inspected in D3; only content/outcomes are new."
+      ],
+      "lock_sha256": "df6d5848311b09acaa114114057c14b1eddbd39ea00f3ef85328d2942b4e23d4",
+      "measurements_sha256": "cd472a00dc96ba6f3c3aabddebec80b39647969512b79c98c130149a2b223ed7",
+      "metrics": {
+        "accuracy": 0.5052083333333334,
+        "accuracy_cluster_bootstrap95": {
+          "ci": [
+            0.5013020833333334,
+            0.5104166666666666
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.5052083333333334,
+          "median": 0.5,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.011896671681670015
+        },
+        "accuracy_false": 0.013020833333333334,
+        "accuracy_minus_half_cluster_bootstrap95": {
+          "ci": [
+            0.0013020833333333333,
+            0.010416666666666666
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.005208333333333333,
+          "median": 0.0,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.011896671681670017
+        },
+        "accuracy_true": 0.9973958333333334,
+        "by_bracket_pairs": {
+          "5": {
+            "accuracy": 0.5104166666666666,
+            "n": 192
+          },
+          "6": {
+            "accuracy": 0.515625,
+            "n": 192
+          },
+          "7": {
+            "accuracy": 0.4947916666666667,
+            "n": 192
+          },
+          "8": {
+            "accuracy": 0.5,
+            "n": 192
+          }
+        },
+        "by_valid_depth": {
+          "2": {
+            "accuracy": 0.5,
+            "n": 92
+          },
+          "3": {
+            "accuracy": 0.5,
+            "n": 238
+          },
+          "4": {
+            "accuracy": 0.5118110236220472,
+            "n": 254
+          },
+          "5": {
+            "accuracy": 0.5078125,
+            "n": 128
+          },
+          "6": {
+            "accuracy": 0.5,
+            "n": 46
+          },
+          "7": {
+            "accuracy": 0.5,
+            "n": 8
+          },
+          "8": {
+            "accuracy": 0.5,
+            "n": 2
+          }
+        },
+        "correct": 388,
+        "interpretation": "Descriptive post-hoc robustness evidence; no support verdict or inclusion in primary110 BH family.",
+        "n": 768,
+        "n_wrappers": 24,
+        "tie_rate": 0.0,
+        "unadjusted_exploratory_signflip_vs_half": {
+          "effect": 0.005208333333333333,
+          "method": "monte_carlo",
+          "n_clusters": 24,
+          "pvalue": 0.11997600479904019,
+          "standardized_effect": 0.4377975178854565,
+          "status": "OK"
+        },
+        "yes_rate": 0.9921875
+      },
+      "model_info": {
+        "checkpoint": "results/followup-v2/training/seed_503/final.pt",
+        "checkpoint_kind": "final",
+        "checkpoint_sha256": "774115156a59b5a1f0b823adfcd210c1323e3071c2203f67093ade131359cab0",
+        "family": "independent_tiny",
+        "id": "seed503",
+        "seed": 503,
+        "sha256": "774115156a59b5a1f0b823adfcd210c1323e3071c2203f67093ade131359cab0",
+        "source_run": "results/followup-v2"
+      },
+      "name": "seed503",
+      "no_retraining_or_primary_refitting": true,
+      "precision": "float32",
+      "primary_family_membership": false,
+      "prompt_variant": "default",
+      "records_sha256": "b0b6e913384a40d9ae2f8410dc22d04e752519a43057f93bcb1ea1d36f1b4f2f",
+      "status": "MEASURED_EXPLORATORY",
+      "version": "followup-v2-hard-stress-v1"
+    },
+    "seed503/initial": {
+      "checkpoint": "initial",
+      "context": {
+        "context_limit": 256,
+        "max_tokens": 112,
+        "min_tokens": 77,
+        "n": 768,
+        "truncated": false,
+        "variant": "default"
+      },
+      "data_sha256": "ee19a2dbcbd6b18f69940666873aa73a4c7d6c1034da4fd96939033a3fdf8602",
+      "device": "cuda",
+      "elapsed_seconds": 0.3817316440108698,
+      "limitations": [
+        "Post-hoc motivated by D3 local-cue weakness; fresh outcomes do not make it preregistered primary evidence.",
+        "Valid strings need suitable closing runs, so their structural distribution differs from the original syntax corpus.",
+        "Equal5..8pair length range prevents longer strings being the sole explanation; depth distribution can still differ.",
+        "Removing adjacent type mismatches does not remove every finite-state/local cue or prove recursive parsing.",
+        "Wrappers were already inspected in D3; only content/outcomes are new."
+      ],
+      "lock_sha256": "df6d5848311b09acaa114114057c14b1eddbd39ea00f3ef85328d2942b4e23d4",
+      "measurements_sha256": "b9d2e97ca69d619b4857eb9e5bc5ab295e92ca12e7bfa5a1b796d3ee39834d0f",
+      "metrics": {
+        "accuracy": 0.5,
+        "accuracy_cluster_bootstrap95": {
+          "ci": [
+            0.5,
+            0.5
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.5,
+          "median": 0.5,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.0
+        },
+        "accuracy_false": 1.0,
+        "accuracy_minus_half_cluster_bootstrap95": {
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.0,
+          "median": 0.0,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.0
+        },
+        "accuracy_true": 0.0,
+        "by_bracket_pairs": {
+          "5": {
+            "accuracy": 0.5,
+            "n": 192
+          },
+          "6": {
+            "accuracy": 0.5,
+            "n": 192
+          },
+          "7": {
+            "accuracy": 0.5,
+            "n": 192
+          },
+          "8": {
+            "accuracy": 0.5,
+            "n": 192
+          }
+        },
+        "by_valid_depth": {
+          "2": {
+            "accuracy": 0.5,
+            "n": 92
+          },
+          "3": {
+            "accuracy": 0.5,
+            "n": 238
+          },
+          "4": {
+            "accuracy": 0.5,
+            "n": 254
+          },
+          "5": {
+            "accuracy": 0.5,
+            "n": 128
+          },
+          "6": {
+            "accuracy": 0.5,
+            "n": 46
+          },
+          "7": {
+            "accuracy": 0.5,
+            "n": 8
+          },
+          "8": {
+            "accuracy": 0.5,
+            "n": 2
+          }
+        },
+        "correct": 384,
+        "interpretation": "Descriptive post-hoc robustness evidence; no support verdict or inclusion in primary110 BH family.",
+        "n": 768,
+        "n_wrappers": 24,
+        "tie_rate": 0.0,
+        "unadjusted_exploratory_signflip_vs_half": {
+          "effect": 0.0,
+          "method": "monte_carlo",
+          "n_clusters": 24,
+          "pvalue": 1.0,
+          "standardized_effect": null,
+          "status": "OK"
+        },
+        "yes_rate": 0.0
+      },
+      "model_info": {
+        "checkpoint": "results/followup-v2/training/seed_503/initial.pt",
+        "checkpoint_kind": "initial",
+        "checkpoint_sha256": "cfa14cf987f9caf70c020cca4081e156c0fe9a37352fde8c441f31ea9559dcbf",
+        "family": "independent_tiny",
+        "id": "seed503",
+        "seed": 503,
+        "sha256": "cfa14cf987f9caf70c020cca4081e156c0fe9a37352fde8c441f31ea9559dcbf",
+        "source_run": "results/followup-v2"
+      },
+      "name": "seed503",
+      "no_retraining_or_primary_refitting": true,
+      "precision": "float32",
+      "primary_family_membership": false,
+      "prompt_variant": "default",
+      "records_sha256": "b0b6e913384a40d9ae2f8410dc22d04e752519a43057f93bcb1ea1d36f1b4f2f",
+      "status": "MEASURED_EXPLORATORY",
+      "version": "followup-v2-hard-stress-v1"
+    },
+    "seed503/middle": {
+      "checkpoint": "middle",
+      "context": {
+        "context_limit": 256,
+        "max_tokens": 112,
+        "min_tokens": 77,
+        "n": 768,
+        "truncated": false,
+        "variant": "default"
+      },
+      "data_sha256": "ee19a2dbcbd6b18f69940666873aa73a4c7d6c1034da4fd96939033a3fdf8602",
+      "device": "cuda",
+      "elapsed_seconds": 0.37895272599416785,
+      "limitations": [
+        "Post-hoc motivated by D3 local-cue weakness; fresh outcomes do not make it preregistered primary evidence.",
+        "Valid strings need suitable closing runs, so their structural distribution differs from the original syntax corpus.",
+        "Equal5..8pair length range prevents longer strings being the sole explanation; depth distribution can still differ.",
+        "Removing adjacent type mismatches does not remove every finite-state/local cue or prove recursive parsing.",
+        "Wrappers were already inspected in D3; only content/outcomes are new."
+      ],
+      "lock_sha256": "df6d5848311b09acaa114114057c14b1eddbd39ea00f3ef85328d2942b4e23d4",
+      "measurements_sha256": "bff608adb4d88373a006d081a289bce1c3aea892024c0ce28dec699941874923",
+      "metrics": {
+        "accuracy": 0.5143229166666666,
+        "accuracy_cluster_bootstrap95": {
+          "ci": [
+            0.5065104166666666,
+            0.5221354166666666
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.5143229166666666,
+          "median": 0.5,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.020562666566877448
+        },
+        "accuracy_false": 0.03125,
+        "accuracy_minus_half_cluster_bootstrap95": {
+          "ci": [
+            0.006510416666666667,
+            0.022135416666666668
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.014322916666666666,
+          "median": 0.0,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.02056266656687745
+        },
+        "accuracy_true": 0.9973958333333334,
+        "by_bracket_pairs": {
+          "5": {
+            "accuracy": 0.5104166666666666,
+            "n": 192
+          },
+          "6": {
+            "accuracy": 0.5104166666666666,
+            "n": 192
+          },
+          "7": {
+            "accuracy": 0.515625,
+            "n": 192
+          },
+          "8": {
+            "accuracy": 0.5208333333333334,
+            "n": 192
+          }
+        },
+        "by_valid_depth": {
+          "2": {
+            "accuracy": 0.5543478260869565,
+            "n": 92
+          },
+          "3": {
+            "accuracy": 0.5168067226890757,
+            "n": 238
+          },
+          "4": {
+            "accuracy": 0.5078740157480315,
+            "n": 254
+          },
+          "5": {
+            "accuracy": 0.5078125,
+            "n": 128
+          },
+          "6": {
+            "accuracy": 0.4782608695652174,
+            "n": 46
+          },
+          "7": {
+            "accuracy": 0.5,
+            "n": 8
+          },
+          "8": {
+            "accuracy": 0.5,
+            "n": 2
+          }
+        },
+        "correct": 395,
+        "interpretation": "Descriptive post-hoc robustness evidence; no support verdict or inclusion in primary110 BH family.",
+        "n": 768,
+        "n_wrappers": 24,
+        "tie_rate": 0.0,
+        "unadjusted_exploratory_signflip_vs_half": {
+          "effect": 0.014322916666666666,
+          "method": "monte_carlo",
+          "n_clusters": 24,
+          "pvalue": 0.002599480103979204,
+          "standardized_effect": 0.6965495754202504,
+          "status": "OK"
+        },
+        "yes_rate": 0.9830729166666666
+      },
+      "model_info": {
+        "checkpoint": "results/followup-v2/training/seed_503/middle.pt",
+        "checkpoint_kind": "middle",
+        "checkpoint_sha256": "666ab22773ffba839606ce7116c2e392fa7ed42f1d46a4f37f3508f7fd4302bb",
+        "family": "independent_tiny",
+        "id": "seed503",
+        "seed": 503,
+        "sha256": "666ab22773ffba839606ce7116c2e392fa7ed42f1d46a4f37f3508f7fd4302bb",
+        "source_run": "results/followup-v2"
+      },
+      "name": "seed503",
+      "no_retraining_or_primary_refitting": true,
+      "precision": "float32",
+      "primary_family_membership": false,
+      "prompt_variant": "default",
+      "records_sha256": "b0b6e913384a40d9ae2f8410dc22d04e752519a43057f93bcb1ea1d36f1b4f2f",
+      "status": "MEASURED_EXPLORATORY",
+      "version": "followup-v2-hard-stress-v1"
+    },
+    "smol/final": {
+      "checkpoint": "final",
+      "context": {
+        "context_limit": 8192,
+        "max_tokens": 31,
+        "min_tokens": 19,
+        "n": 768,
+        "truncated": false,
+        "variant": "default"
+      },
+      "data_sha256": "ee19a2dbcbd6b18f69940666873aa73a4c7d6c1034da4fd96939033a3fdf8602",
+      "device": "cuda",
+      "elapsed_seconds": 1.6014308970188722,
+      "limitations": [
+        "Post-hoc motivated by D3 local-cue weakness; fresh outcomes do not make it preregistered primary evidence.",
+        "Valid strings need suitable closing runs, so their structural distribution differs from the original syntax corpus.",
+        "Equal5..8pair length range prevents longer strings being the sole explanation; depth distribution can still differ.",
+        "Removing adjacent type mismatches does not remove every finite-state/local cue or prove recursive parsing.",
+        "Wrappers were already inspected in D3; only content/outcomes are new."
+      ],
+      "lock_sha256": "40f60de7d91d9f844e029ca6c8eadc97d801be19148e80d1a420a5be0aa55094",
+      "measurements_sha256": "96179ed8d77cdaffbf5db5123c28a3399dd668f397200bf1353bc9982b6c512f",
+      "metrics": {
+        "accuracy": 0.5091145833333334,
+        "accuracy_cluster_bootstrap95": {
+          "ci": [
+            0.5026041666666666,
+            0.5182291666666666
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.5091145833333334,
+          "median": 0.5,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.021570407865198434
+        },
+        "accuracy_false": 0.5494791666666666,
+        "accuracy_minus_half_cluster_bootstrap95": {
+          "ci": [
+            0.0026041666666666665,
+            0.018229166666666668
+          ],
+          "confidence": 0.95,
+          "estimand": "equal-cluster-weighted mean",
+          "mean": 0.009114583333333334,
+          "median": 0.0,
+          "n_clusters": 24,
+          "n_observations": 768,
+          "status": "OK",
+          "std": 0.021570407865198437
+        },
+        "accuracy_true": 0.46875,
+        "by_bracket_pairs": {
+          "5": {
+            "accuracy": 0.5208333333333334,
+            "n": 192
+          },
+          "6": {
+            "accuracy": 0.5208333333333334,
+            "n": 192
+          },
+          "7": {
+            "accuracy": 0.5,
+            "n": 192
+          },
+          "8": {
+            "accuracy": 0.4947916666666667,
+            "n": 192
+          }
+        },
+        "by_valid_depth": {
+          "2": {
+            "accuracy": 0.5543478260869565,
+            "n": 92
+          },
+          "3": {
+            "accuracy": 0.5084033613445378,
+            "n": 238
+          },
+          "4": {
+            "accuracy": 0.5039370078740157,
+            "n": 254
+          },
+          "5": {
+            "accuracy": 0.4921875,
+            "n": 128
+          },
+          "6": {
+            "accuracy": 0.5,
+            "n": 46
+          },
+          "7": {
+            "accuracy": 0.5,
+            "n": 8
+          },
+          "8": {
+            "accuracy": 0.5,
+            "n": 2
+          }
+        },
+        "correct": 391,
+        "interpretation": "Descriptive post-hoc robustness evidence; no support verdict or inclusion in primary110 BH family.",
+        "n": 768,
+        "n_wrappers": 24,
+        "tie_rate": 0.0,
+        "unadjusted_exploratory_signflip_vs_half": {
+          "effect": 0.009114583333333334,
+          "method": "monte_carlo",
+          "n_clusters": 24,
+          "pvalue": 0.11897620475904819,
+          "standardized_effect": 0.42255034723004686,
+          "status": "OK"
+        },
+        "yes_rate": 0.4596354166666667
+      },
+      "model_info": {
+        "cached_file_manifest_sha256": "72111eda12d08d2177fee43649de901a91a7370b583b7fb1129cb9286828ff09",
+        "family": "public_pretrained",
+        "id": "smol",
+        "license": "apache-2.0",
+        "model_id": "HuggingFaceTB/SmolLM2-360M",
+        "model_type": "llama",
+        "revision": "f8027fd0eaeea54caa13c31d31b9fdc459c38b49"
+      },
+      "name": "smol",
+      "no_retraining_or_primary_refitting": true,
+      "precision": "float32",
+      "primary_family_membership": false,
+      "prompt_variant": "default",
+      "records_sha256": "b0b6e913384a40d9ae2f8410dc22d04e752519a43057f93bcb1ea1d36f1b4f2f",
+      "status": "MEASURED_EXPLORATORY",
+      "version": "followup-v2-hard-stress-v1"
+    }
+  },
+  "n_evaluations": 18,
+  "no_primary_family_change": true,
+  "status": "COMPLETE_EXPLORATORY",
+  "version": "followup-v2-hard-stress-v1"
+}

@@ -1,6 +1,6 @@
 ## 후속 연구 — followup-v2
 
-갱신: **2026-11-04 12:37 KST**. 이 절은 새 단계별 측정 파일에서 생성되었습니다.
+갱신: **2026-11-04 13:33 KST**. 이 절은 새 단계별 측정 파일에서 생성되었습니다.
 
 | 단계 | 실험 | 실행 상태 | 가설 판정 |
 |---|---|---|---|
@@ -115,6 +115,24 @@ Exploratory cuts chosen after D3; both true/false pair members retained. N count
 [그림 데이터](artifacts/followup-v2/figures/f3_posthoc_syntax_local_cue.json)
 
 [F3 측정값·불확실성·원본](reports/followup-v2/F3_REPORT.md)
+
+### 보충 검증 — 새 hard syntax 문항
+
+사후 D3 진단에서 동기를 얻어 새 hard syntax768문항(참·거짓 각384,24wrappers)을 구성·동결한 뒤18개 모델/체크포인트 측정을 완료했다. 학습 완료5개 모델의 정확도는 50.26%–56.12%였고, 원래 D3 괄호 정확도는 88.54%–94.79%였다. 새 문항에서 이 모델들의 yes 응답률은 76.17%–99.22%로, 균형 정확도와 함께 응답 편향을 확인해야 한다. 두 집합은 내용·구조 분포가 달라 점수 차이가 shortcut 사용의 인과적 증거는 아니다. 이 결과는 전체 정확도 gate만으로 재귀 이해를 입증할 수 없음을 강조하며, 새로운 독립 확증 검정이나 원래 주 분석의 변경으로 취급하지 않는다.
+
+![Final models on new hard syntax cases](artifacts/followup-v2/figures/supplement_hard_final_accuracy.svg)
+
+768 balanced rows in24 wrappers; dotted line marks chance50%. These are posthoc-motivated new cases, frozen before inference, outside the110 primary tests.
+
+[그림 데이터](artifacts/followup-v2/figures/supplement_hard_final_accuracy.json)
+
+![Hard syntax cases across five frozen training trajectories](artifacts/followup-v2/figures/supplement_hard_checkpoint_trajectory.svg)
+
+Five separately initialized models; each line reuses one model across checkpoints. No retraining or checkpoint selection. This is not independent replication at each point.
+
+[그림 데이터](artifacts/followup-v2/figures/supplement_hard_checkpoint_trajectory.json)
+
+[18개 전체 측정·신뢰구간·응답 편향·출처](reports/followup-v2/HARD_STRESS_REPORT.md)
 
 [연구 해석 한계와 비판](reports/followup-v2/RESEARCH_CRITIQUE.md)
 

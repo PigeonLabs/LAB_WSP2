@@ -8,7 +8,7 @@ paths=[ROOT/'README.md',ROOT/'reports/pilot-v1-README.md',ROOT/'configs/followup
 for folder in ('src','scripts','tests','configs'):
     paths += list((ROOT/folder).glob('*followup*'))
 for folder in ('results/followup-v2','reports/followup-v2','artifacts/followup-v2/figures'):
-    paths += [x for x in (ROOT/folder).rglob('*') if x.is_file() and 'chunks' not in x.parts and x.suffix in ('.py','.json','.jsonl','.md','.csv','.npz','.npy','.parquet','.svg','.png','.log')]
+    paths += [x for x in (ROOT/folder).rglob('*') if x.is_file() and 'chunks' not in x.parts and x.suffix in ('.py','.json','.jsonl','.md','.csv','.npz','.npy','.parquet','.svg','.png','.log','.xml')]
 for data_name in ('followup-v2','followup-v2-hard-stress'):
  data=ROOT/'data'/data_name
  if data.exists():

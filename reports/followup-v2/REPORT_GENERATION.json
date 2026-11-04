@@ -1,5 +1,5 @@
 {
-  "generated_kst": "2026-11-04 12:37 KST",
+  "generated_kst": "2026-11-04 13:33 KST",
   "stages": [
     {
       "id": "F0",
@@ -422,6 +422,43 @@
       "verdict": "INCONCLUSIVE",
       "sources": [],
       "figures": []
+    }
+  ],
+  "supplements": [
+    {
+      "section": "### 보충 검증 — 새 hard syntax 문항\n\n사후 D3 진단에서 동기를 얻어 새 hard syntax768문항(참·거짓 각384,24wrappers)을 구성·동결한 뒤18개 모델/체크포인트 측정을 완료했다. 학습 완료5개 모델의 정확도는 50.26%–56.12%였고, 원래 D3 괄호 정확도는 88.54%–94.79%였다. 새 문항에서 이 모델들의 yes 응답률은 76.17%–99.22%로, 균형 정확도와 함께 응답 편향을 확인해야 한다. 두 집합은 내용·구조 분포가 달라 점수 차이가 shortcut 사용의 인과적 증거는 아니다. 이 결과는 전체 정확도 gate만으로 재귀 이해를 입증할 수 없음을 강조하며, 새로운 독립 확증 검정이나 원래 주 분석의 변경으로 취급하지 않는다.\n\n![Final models on new hard syntax cases](artifacts/followup-v2/figures/supplement_hard_final_accuracy.svg)\n\n768 balanced rows in24 wrappers; dotted line marks chance50%. These are posthoc-motivated new cases, frozen before inference, outside the110 primary tests.\n\n[그림 데이터](artifacts/followup-v2/figures/supplement_hard_final_accuracy.json)\n\n![Hard syntax cases across five frozen training trajectories](artifacts/followup-v2/figures/supplement_hard_checkpoint_trajectory.svg)\n\nFive separately initialized models; each line reuses one model across checkpoints. No retraining or checkpoint selection. This is not independent replication at each point.\n\n[그림 데이터](artifacts/followup-v2/figures/supplement_hard_checkpoint_trajectory.json)\n\n[18개 전체 측정·신뢰구간·응답 편향·출처](reports/followup-v2/HARD_STRESS_REPORT.md)\n\n",
+      "figures": [
+        {
+          "id": "supplement_hard_final_accuracy",
+          "title": "Final models on new hard syntax cases",
+          "path": "artifacts/followup-v2/figures/supplement_hard_final_accuracy.svg",
+          "png": "artifacts/followup-v2/figures/supplement_hard_final_accuracy.png",
+          "receipt": "artifacts/followup-v2/figures/supplement_hard_final_accuracy.json",
+          "note": "768 balanced rows in24 wrappers; dotted line marks chance50%. These are posthoc-motivated new cases, frozen before inference, outside the110 primary tests.",
+          "show_in_readme": true
+        },
+        {
+          "id": "supplement_hard_checkpoint_trajectory",
+          "title": "Hard syntax cases across five frozen training trajectories",
+          "path": "artifacts/followup-v2/figures/supplement_hard_checkpoint_trajectory.svg",
+          "png": "artifacts/followup-v2/figures/supplement_hard_checkpoint_trajectory.png",
+          "receipt": "artifacts/followup-v2/figures/supplement_hard_checkpoint_trajectory.json",
+          "note": "Five separately initialized models; each line reuses one model across checkpoints. No retraining or checkpoint selection. This is not independent replication at each point.",
+          "show_in_readme": true
+        }
+      ],
+      "limitations": [
+        "Post-hoc motivated by D3 local-cue weakness; fresh outcomes do not make it preregistered primary evidence.",
+        "Valid strings need suitable closing runs, so their structural distribution differs from the original syntax corpus.",
+        "Equal5..8pair length range prevents longer strings being the sole explanation; depth distribution can still differ.",
+        "Removing adjacent type mismatches does not remove every finite-state/local cue or prove recursive parsing.",
+        "Wrappers were already inspected in D3; only content/outcomes are new.",
+        "All18 confidence intervals are descriptive wrapper-cluster bootstrap intervals conditional on fixed models; no global claims are inferred from overlap or individual exploratory p-values.",
+        "Balanced true/false pairs make chance accuracy50%; yes preference and true/false accuracy can still be highly asymmetric. Ties count as incorrect.",
+        "Different calibration-selected prefix contexts remain for Qwen, Smol and OLMo; matched target content does not mean identical full prompts.",
+        "Original D3 and the hard set differ in content and structural distribution. Their difference is not a controlled causal effect or proof of recursive parsing."
+      ],
+      "report": "reports/followup-v2/HARD_STRESS_REPORT.md"
     }
   ],
   "root_readme_edited": false,

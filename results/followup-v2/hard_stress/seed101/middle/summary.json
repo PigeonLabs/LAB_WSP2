@@ -1,0 +1,136 @@
+{
+  "checkpoint": "middle",
+  "context": {
+    "context_limit": 256,
+    "max_tokens": 112,
+    "min_tokens": 77,
+    "n": 768,
+    "truncated": false,
+    "variant": "default"
+  },
+  "data_sha256": "ee19a2dbcbd6b18f69940666873aa73a4c7d6c1034da4fd96939033a3fdf8602",
+  "device": "cuda",
+  "elapsed_seconds": 0.3778502880013548,
+  "limitations": [
+    "Post-hoc motivated by D3 local-cue weakness; fresh outcomes do not make it preregistered primary evidence.",
+    "Valid strings need suitable closing runs, so their structural distribution differs from the original syntax corpus.",
+    "Equal5..8pair length range prevents longer strings being the sole explanation; depth distribution can still differ.",
+    "Removing adjacent type mismatches does not remove every finite-state/local cue or prove recursive parsing.",
+    "Wrappers were already inspected in D3; only content/outcomes are new."
+  ],
+  "lock_sha256": "8cf994cdf7f1f8976dcc8001b363b2ca907b1199e048928a07b2de825a47e091",
+  "measurements_sha256": "5c64d7f483ed01173b1a7a94bbedee4c57204a3e54b59a83a3aadf30eef1475d",
+  "metrics": {
+    "accuracy": 0.5364583333333334,
+    "accuracy_cluster_bootstrap95": {
+      "ci": [
+        0.5182291666666666,
+        0.5546875
+      ],
+      "confidence": 0.95,
+      "estimand": "equal-cluster-weighted mean",
+      "mean": 0.5364583333333334,
+      "median": 0.53125,
+      "n_clusters": 24,
+      "n_observations": 768,
+      "status": "OK",
+      "std": 0.04483009389729827
+    },
+    "accuracy_false": 0.20572916666666666,
+    "accuracy_minus_half_cluster_bootstrap95": {
+      "ci": [
+        0.018229166666666668,
+        0.0546875
+      ],
+      "confidence": 0.95,
+      "estimand": "equal-cluster-weighted mean",
+      "mean": 0.036458333333333336,
+      "median": 0.03125,
+      "n_clusters": 24,
+      "n_observations": 768,
+      "status": "OK",
+      "std": 0.04483009389729827
+    },
+    "accuracy_true": 0.8671875,
+    "by_bracket_pairs": {
+      "5": {
+        "accuracy": 0.5208333333333334,
+        "n": 192
+      },
+      "6": {
+        "accuracy": 0.53125,
+        "n": 192
+      },
+      "7": {
+        "accuracy": 0.5572916666666666,
+        "n": 192
+      },
+      "8": {
+        "accuracy": 0.5364583333333334,
+        "n": 192
+      }
+    },
+    "by_valid_depth": {
+      "2": {
+        "accuracy": 0.5652173913043478,
+        "n": 92
+      },
+      "3": {
+        "accuracy": 0.5462184873949579,
+        "n": 238
+      },
+      "4": {
+        "accuracy": 0.531496062992126,
+        "n": 254
+      },
+      "5": {
+        "accuracy": 0.5,
+        "n": 128
+      },
+      "6": {
+        "accuracy": 0.5869565217391305,
+        "n": 46
+      },
+      "7": {
+        "accuracy": 0.375,
+        "n": 8
+      },
+      "8": {
+        "accuracy": 0.5,
+        "n": 2
+      }
+    },
+    "correct": 412,
+    "interpretation": "Descriptive post-hoc robustness evidence; no support verdict or inclusion in primary110 BH family.",
+    "n": 768,
+    "n_wrappers": 24,
+    "tie_rate": 0.0,
+    "unadjusted_exploratory_signflip_vs_half": {
+      "effect": 0.036458333333333336,
+      "method": "monte_carlo",
+      "n_clusters": 24,
+      "pvalue": 0.0007998400319936012,
+      "standardized_effect": 0.8132557878833828,
+      "status": "OK"
+    },
+    "yes_rate": 0.8307291666666666
+  },
+  "model_info": {
+    "checkpoint": "results/followup-v2/training/seed_101/middle.pt",
+    "checkpoint_kind": "middle",
+    "checkpoint_sha256": "7971894e15fbd7f10254c23dcbea4d0cfbff8b7b45208954c7f4de98c3487218",
+    "family": "independent_tiny",
+    "id": "seed101",
+    "seed": 101,
+    "sha256": "7971894e15fbd7f10254c23dcbea4d0cfbff8b7b45208954c7f4de98c3487218",
+    "source_run": "results/followup-v2"
+  },
+  "name": "seed101",
+  "no_retraining_or_primary_refitting": true,
+  "precision": "float32",
+  "primary_family_membership": false,
+  "prompt_variant": "default",
+  "records_sha256": "b0b6e913384a40d9ae2f8410dc22d04e752519a43057f93bcb1ea1d36f1b4f2f",
+  "status": "MEASURED_EXPLORATORY",
+  "version": "followup-v2-hard-stress-v1"
+}
