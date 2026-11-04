@@ -14,15 +14,22 @@ models:
 e1: train
 	$(PYTHON) -m src.runner e1 --resume
 	$(MAKE) report
+	$(PYTHON) scripts/publish_github.py E1
 e2: models
 	$(PYTHON) -m src.runner e2 --resume
 	$(MAKE) report
+	$(PYTHON) scripts/publish_github.py E2
 e3:
 	$(PYTHON) -m src.runner e3 --resume
 	$(MAKE) report
+	$(PYTHON) scripts/publish_github.py E3
 e4:
 	$(PYTHON) -m src.runner e4 --resume
+	$(PYTHON) scripts/run_diagnostics.py
+	$(PYTHON) scripts/validate_results.py --require-complete
+	$(PYTHON) scripts/package_results.py
 	$(MAKE) report
+	$(PYTHON) scripts/publish_github.py E4
 pilot:
 	$(MAKE) smoke
 	$(MAKE) e1

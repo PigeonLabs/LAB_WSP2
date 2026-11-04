@@ -1,0 +1,56 @@
+{
+  "signature": "849e0b3b2454bf1c5231cc67923e2aa26ae78c3398bd9302d054ce7dac3e281d",
+  "splits": {
+    "D2": {
+      "n": 512,
+      "competence": {
+        "arithmetic": {
+          "accuracy": 0.484375,
+          "n": 128
+        },
+        "comparison": {
+          "accuracy": 0.640625,
+          "n": 128
+        },
+        "negation": {
+          "accuracy": 0.5390625,
+          "n": 128
+        },
+        "syntax": {
+          "accuracy": 1.0,
+          "n": 128
+        }
+      }
+    },
+    "D4": {
+      "n": 512,
+      "competence": {
+        "arithmetic": {
+          "accuracy": 0.5234375,
+          "n": 128
+        },
+        "comparison": {
+          "accuracy": 0.5546875,
+          "n": 128
+        },
+        "negation": {
+          "accuracy": 0.5,
+          "n": 128
+        },
+        "syntax": {
+          "accuracy": 0.96875,
+          "n": 128
+        }
+      }
+    }
+  },
+  "interventions": [
+    "zero",
+    "mean",
+    "patch"
+  ],
+  "num_candidates": 8,
+  "mean_reference": "D1",
+  "patch_reference": "matched opposite-label prompt, same model",
+  "effect": "original logP(correct)/P(foil) margin minus intervened margin"
+}

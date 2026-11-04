@@ -1,0 +1,7 @@
+{
+  "command": "OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=cache/matplotlib .venv/bin/python -m pytest -q tests",
+  "result": ".........................................................                [100%]\n57 passed in 13.75s",
+  "scope": "Unit and integration CPU tests; distinct from main GPU evidence",
+  "status": "PASS",
+  "test_count": 57
+}

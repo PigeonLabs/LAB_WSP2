@@ -1,0 +1,131 @@
+{
+  "sources": [
+    "results/pilot-v1/causal/olmo/manifest.json",
+    "results/pilot-v1/causal/qwen/manifest.json",
+    "results/pilot-v1/causal/seed11/manifest.json",
+    "results/pilot-v1/causal/seed29/manifest.json",
+    "results/pilot-v1/causal/smol/manifest.json"
+  ],
+  "rows": [
+    {
+      "model": "olmo",
+      "concept": "arithmetic",
+      "accuracy": 0.5,
+      "n": 128
+    },
+    {
+      "model": "olmo",
+      "concept": "comparison",
+      "accuracy": 0.5078125,
+      "n": 128
+    },
+    {
+      "model": "olmo",
+      "concept": "negation",
+      "accuracy": 0.5,
+      "n": 128
+    },
+    {
+      "model": "olmo",
+      "concept": "syntax",
+      "accuracy": 0.5234375,
+      "n": 128
+    },
+    {
+      "model": "qwen",
+      "concept": "arithmetic",
+      "accuracy": 0.5,
+      "n": 128
+    },
+    {
+      "model": "qwen",
+      "concept": "comparison",
+      "accuracy": 0.515625,
+      "n": 128
+    },
+    {
+      "model": "qwen",
+      "concept": "negation",
+      "accuracy": 0.5,
+      "n": 128
+    },
+    {
+      "model": "qwen",
+      "concept": "syntax",
+      "accuracy": 0.5,
+      "n": 128
+    },
+    {
+      "model": "seed11",
+      "concept": "arithmetic",
+      "accuracy": 0.5078125,
+      "n": 128
+    },
+    {
+      "model": "seed11",
+      "concept": "comparison",
+      "accuracy": 0.5234375,
+      "n": 128
+    },
+    {
+      "model": "seed11",
+      "concept": "negation",
+      "accuracy": 0.625,
+      "n": 128
+    },
+    {
+      "model": "seed11",
+      "concept": "syntax",
+      "accuracy": 0.7578125,
+      "n": 128
+    },
+    {
+      "model": "seed29",
+      "concept": "arithmetic",
+      "accuracy": 0.5234375,
+      "n": 128
+    },
+    {
+      "model": "seed29",
+      "concept": "comparison",
+      "accuracy": 0.5546875,
+      "n": 128
+    },
+    {
+      "model": "seed29",
+      "concept": "negation",
+      "accuracy": 0.5,
+      "n": 128
+    },
+    {
+      "model": "seed29",
+      "concept": "syntax",
+      "accuracy": 0.96875,
+      "n": 128
+    },
+    {
+      "model": "smol",
+      "concept": "arithmetic",
+      "accuracy": 0.4765625,
+      "n": 128
+    },
+    {
+      "model": "smol",
+      "concept": "comparison",
+      "accuracy": 0.546875,
+      "n": 128
+    },
+    {
+      "model": "smol",
+      "concept": "negation",
+      "accuracy": 0.4921875,
+      "n": 128
+    },
+    {
+      "model": "smol",
+      "concept": "syntax",
+      "accuracy": 0.6171875,
+      "n": 128
+    }
+  ]
+}

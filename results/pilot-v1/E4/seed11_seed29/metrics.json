@@ -1,0 +1,247 @@
+{
+  "pair": "seed11_seed29",
+  "metric": "D4 within-wrapper Pearson of signed per-example effects across three interventions",
+  "causal_weight": 0.0,
+  "results": {
+    "random": {
+      "mean": -0.030185286479561906,
+      "median": -0.010144909298394135,
+      "std": 0.07212181474597869,
+      "n_observations": 6,
+      "n_clusters": 6,
+      "estimand": "equal-cluster-weighted mean",
+      "confidence": 0.95,
+      "ci": [
+        -0.08291641287540188,
+        0.020088544995260974
+      ],
+      "status": "EXPLORATORY_FEW_CLUSTERS",
+      "pearson_pooled_mean": -0.05510200740332664,
+      "spearman_pooled_mean": -0.008830299412277543,
+      "causal_sign_agreement": 0.5010931718802556,
+      "nonzero_effect_fraction": 0.9677734375,
+      "invalid_constant_pair_clusters": 0,
+      "coverage": 1.0
+    },
+    "activation": {
+      "mean": 0.028088722594597427,
+      "median": 0.03139994316525935,
+      "std": 0.03981388010560577,
+      "n_observations": 6,
+      "n_clusters": 6,
+      "estimand": "equal-cluster-weighted mean",
+      "confidence": 0.95,
+      "ci": [
+        -0.004483733165289452,
+        0.05626557315671961
+      ],
+      "status": "EXPLORATORY_FEW_CLUSTERS",
+      "pearson_pooled_mean": -0.00030866862607070895,
+      "spearman_pooled_mean": -0.002962163142476118,
+      "causal_sign_agreement": 0.4987801800286027,
+      "nonzero_effect_fraction": 0.9673665364583334,
+      "invalid_constant_pair_clusters": 0,
+      "coverage": 1.0
+    },
+    "semantic": {
+      "mean": 0.008763792043694658,
+      "median": -0.008146272313912364,
+      "std": 0.056365087580186775,
+      "n_observations": 6,
+      "n_clusters": 6,
+      "estimand": "equal-cluster-weighted mean",
+      "confidence": 0.95,
+      "ci": [
+        -0.02590343818628815,
+        0.05364898828217538
+      ],
+      "status": "EXPLORATORY_FEW_CLUSTERS",
+      "pearson_pooled_mean": -0.010835512309824586,
+      "spearman_pooled_mean": 0.012954163658964474,
+      "causal_sign_agreement": 0.4964252670535789,
+      "nonzero_effect_fraction": 0.967529296875,
+      "invalid_constant_pair_clusters": 0,
+      "coverage": 1.0
+    },
+    "sign_semantic": {
+      "mean": 0.02982374021556276,
+      "median": 0.036634136650605845,
+      "std": 0.0571532994286253,
+      "n_observations": 6,
+      "n_clusters": 6,
+      "estimand": "equal-cluster-weighted mean",
+      "confidence": 0.95,
+      "ci": [
+        -0.010624382354921594,
+        0.07118270622729417
+      ],
+      "status": "EXPLORATORY_FEW_CLUSTERS",
+      "pearson_pooled_mean": 0.0017196366523646728,
+      "spearman_pooled_mean": 0.06292218691790266,
+      "causal_sign_agreement": 0.5237253912165573,
+      "nonzero_effect_fraction": 0.96728515625,
+      "invalid_constant_pair_clusters": 0,
+      "coverage": 1.0
+    },
+    "causal": {
+      "mean": 0.04377239388118373,
+      "median": 0.0375318244212037,
+      "std": 0.06110650734712129,
+      "n_observations": 6,
+      "n_clusters": 6,
+      "estimand": "equal-cluster-weighted mean",
+      "confidence": 0.95,
+      "ci": [
+        0.005459252826995584,
+        0.09367087781470441
+      ],
+      "status": "EXPLORATORY_FEW_CLUSTERS",
+      "pearson_pooled_mean": 0.007427464555308157,
+      "spearman_pooled_mean": 0.060705087992861104,
+      "causal_sign_agreement": 0.5185465556396669,
+      "nonzero_effect_fraction": 0.967529296875,
+      "invalid_constant_pair_clusters": 0,
+      "coverage": 1.0
+    },
+    "semantic_causal": {
+      "mean": 0.008763792043694658,
+      "median": -0.008146272313912364,
+      "std": 0.056365087580186775,
+      "n_observations": 6,
+      "n_clusters": 6,
+      "estimand": "equal-cluster-weighted mean",
+      "confidence": 0.95,
+      "ci": [
+        -0.02590343818628815,
+        0.05364898828217538
+      ],
+      "status": "EXPLORATORY_FEW_CLUSTERS",
+      "pearson_pooled_mean": -0.010835512309824586,
+      "spearman_pooled_mean": 0.012954163658964474,
+      "causal_sign_agreement": 0.4964252670535789,
+      "nonzero_effect_fraction": 0.967529296875,
+      "invalid_constant_pair_clusters": 0,
+      "coverage": 1.0
+    }
+  },
+  "comparisons": {
+    "causal_minus_semantic": {
+      "effect": 0.03500860183748907,
+      "pvalue": 0.4375,
+      "n_clusters": 6,
+      "method": "exact",
+      "standardized_effect": 0.3421893541687085,
+      "status": "EXPLORATORY_FEW_CLUSTERS",
+      "bootstrap": {
+        "mean": 0.03500860183748907,
+        "median": 0.03886818647085452,
+        "std": 0.10230768845084788,
+        "n_observations": 6,
+        "n_clusters": 6,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          -0.040780800426362764,
+          0.11106506831240706
+        ],
+        "status": "EXPLORATORY_FEW_CLUSTERS"
+      },
+      "qvalue": 0.875
+    },
+    "semantic_causal_minus_semantic": {
+      "effect": 0.0,
+      "pvalue": 1.0,
+      "n_clusters": 6,
+      "method": "exact",
+      "standardized_effect": null,
+      "status": "EXPLORATORY_FEW_CLUSTERS",
+      "bootstrap": {
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "n_observations": 6,
+        "n_clusters": 6,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "status": "EXPLORATORY_FEW_CLUSTERS"
+      },
+      "qvalue": 1.0
+    },
+    "semantic_causal_minus_activation": {
+      "effect": -0.019324930550902772,
+      "pvalue": 0.65625,
+      "n_clusters": 6,
+      "method": "exact",
+      "standardized_effect": -0.22100073367826228,
+      "status": "EXPLORATORY_FEW_CLUSTERS",
+      "bootstrap": {
+        "mean": -0.019324930550902772,
+        "median": -0.05120264568098993,
+        "std": 0.08744283437102263,
+        "n_observations": 6,
+        "n_clusters": 6,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          -0.06725404827392499,
+          0.05433698665800513
+        ],
+        "status": "EXPLORATORY_FEW_CLUSTERS"
+      },
+      "qvalue": 0.875
+    },
+    "semantic_minus_random": {
+      "effect": 0.03894907852325657,
+      "pvalue": 0.46875,
+      "n_clusters": 6,
+      "method": "exact",
+      "standardized_effect": 0.3494851377433476,
+      "status": "EXPLORATORY_FEW_CLUSTERS",
+      "bootstrap": {
+        "mean": 0.03894907852325657,
+        "median": -0.011872267373036788,
+        "std": 0.11144702397004279,
+        "n_observations": 6,
+        "n_clusters": 6,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          -0.033993179419657314,
+          0.12830833062772531
+        ],
+        "status": "EXPLORATORY_FEW_CLUSTERS"
+      },
+      "qvalue": 0.875
+    }
+  },
+  "mismatched_task_control": {
+    "mean": 0.02022561588162208,
+    "median": 0.0060254785920159275,
+    "std": 0.03953348874465437,
+    "n_observations": 6,
+    "n_clusters": 6,
+    "estimand": "equal-cluster-weighted mean",
+    "confidence": 0.95,
+    "ci": [
+      -0.006784191582516437,
+      0.05135145964347592
+    ],
+    "status": "EXPLORATORY_FEW_CLUSTERS"
+  },
+  "normalization": {
+    "a": 2.83735879756486,
+    "b": 2.4314711836286684
+  },
+  "limitations": [
+    "Six held-out wrapper clusters; exploratory inference only.",
+    "Zero/mean/patch effects refer only to final prompt position.",
+    "Candidate semantic fingerprints are truth contrasts, not verified unique meanings.",
+    "Low-competence tasks are retained as controls and limit causal interpretation.",
+    "Selected causal neurons are small D1 functional/random subsets.",
+    "Cross-task generalization to entirely new task families was not tested."
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "mapping_fit": "D2 first three wrapper clusters; semantic D2",
+  "weight_validation": "D2 last three wrapper clusters",
+  "causal_weight": 1.0,
+  "normalization": {
+    "a": 0.7742324506540751,
+    "b": 0.6671863462195803,
+    "basis": "D2 fit margin std"
+  },
+  "candidates": [
+    {
+      "weight": 0.0,
+      "validation_score": 0.0502520444530184
+    },
+    {
+      "weight": 0.25,
+      "validation_score": 0.022886618241934564
+    },
+    {
+      "weight": 0.5,
+      "validation_score": -0.02292928276774955
+    },
+    {
+      "weight": 0.75,
+      "validation_score": 0.04306642412261256
+    },
+    {
+      "weight": 1.0,
+      "validation_score": 0.16852792718971196
+    }
+  ],
+  "maps": {
+    "random": {
+      "source": [
+        2,
+        1,
+        0,
+        5,
+        4,
+        6,
+        7,
+        3
+      ],
+      "target": [
+        6,
+        7,
+        4,
+        5,
+        3,
+        1,
+        0,
+        2
+      ],
+      "similarity": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "coverage": 1.0,
+      "target_coverage": 1.0,
+      "unmatched_source_fraction": 0.0,
+      "unmatched_target_fraction": 0.0,
+      "mode": "random",
+      "threshold": null,
+      "method": "random",
+      "fit_split": "D2"
+    },
+    "activation": {
+      "source": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "target": [
+        2,
+        6,
+        4,
+        7,
+        5,
+        3,
+        0,
+        1
+      ],
+      "similarity": [
+        0.40198540359447504,
+        0.3504686135631928,
+        0.31922350334611127,
+        0.2637696246251685,
+        0.2907033307115662,
+        0.5655015353510269,
+        0.09514289041054926,
+        0.4443019154445205
+      ],
+      "coverage": 1.0,
+      "target_coverage": 1.0,
+      "unmatched_source_fraction": 0.0,
+      "unmatched_target_fraction": 0.0,
+      "mode": "hungarian",
+      "threshold": null,
+      "method": "activation",
+      "fit_split": "D2"
+    },
+    "semantic": {
+      "source": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "target": [
+        2,
+        3,
+        7,
+        4,
+        1,
+        5,
+        6,
+        0
+      ],
+      "similarity": [
+        0.9969307474209385,
+        0.2760438503508249,
+        0.9612967648309363,
+        0.9843835491115351,
+        0.9746441134699807,
+        -0.25047470396689797,
+        0.6653238656870951,
+        0.9902269511710783
+      ],
+      "coverage": 1.0,
+      "target_coverage": 1.0,
+      "unmatched_source_fraction": 0.0,
+      "unmatched_target_fraction": 0.0,
+      "mode": "hungarian",
+      "threshold": null,
+      "method": "semantic",
+      "fit_split": "D2"
+    },
+    "sign_semantic": {
+      "source": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "target": [
+        2,
+        7,
+        4,
+        1,
+        0,
+        3,
+        6,
+        5
+      ],
+      "similarity": [
+        0.9590471357334746,
+        0.5196985566587109,
+        0.9693774882618132,
+        0.8548816717222758,
+        0.2551406413330436,
+        0.9115869453703968,
+        0.5196896660718384,
+        0.8091534667965891
+      ],
+      "coverage": 1.0,
+      "target_coverage": 1.0,
+      "unmatched_source_fraction": 0.0,
+      "unmatched_target_fraction": 0.0,
+      "mode": "hungarian",
+      "threshold": null,
+      "method": "sign_semantic",
+      "fit_split": "D2"
+    },
+    "causal": {
+      "source": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "target": [
+        5,
+        1,
+        4,
+        2,
+        0,
+        3,
+        7,
+        6
+      ],
+      "similarity": [
+        0.27526249810914766,
+        0.44440869282580764,
+        0.9067395619072381,
+        0.9793628932859779,
+        0.9827679161654237,
+        0.32570854620753564,
+        0.970002099413372,
+        0.8570423340986852
+      ],
+      "coverage": 1.0,
+      "target_coverage": 1.0,
+      "unmatched_source_fraction": 0.0,
+      "unmatched_target_fraction": 0.0,
+      "mode": "hungarian",
+      "threshold": null
+    },
+    "semantic_causal": {
+      "source": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "target": [
+        5,
+        1,
+        4,
+        2,
+        0,
+        3,
+        7,
+        6
+      ],
+      "similarity": [
+        0.27526249810914766,
+        0.44440869282580764,
+        0.9067395619072381,
+        0.9793628932859779,
+        0.9827679161654237,
+        0.32570854620753564,
+        0.970002099413372,
+        0.8570423340986852
+      ],
+      "coverage": 1.0,
+      "target_coverage": 1.0,
+      "unmatched_source_fraction": 0.0,
+      "unmatched_target_fraction": 0.0,
+      "mode": "hungarian",
+      "threshold": null
+    }
+  }
+}

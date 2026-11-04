@@ -47,9 +47,7 @@ def load(name):
 
 def collect(name,ds,causal=False):
     out=RUN/('causal' if causal else 'collections')/name
-    if (out/'manifest.json').exists():
-        print(f'Resume completed {out}',flush=True)
-        return
+    already_complete=(out/'manifest.json').exists()
     model,tok,info=load(name)
     torch.cuda.reset_peak_memory_stats()
     start=time.monotonic()
@@ -58,7 +56,8 @@ def collect(name,ds,causal=False):
     else:
         collect_model(model,tok,ds,out,info,per_layer=16,batch_size=16)
     runtime={'seconds':time.monotonic()-start,'peak_allocated_bytes':torch.cuda.max_memory_allocated(),'precision':'float32','model':info}
-    (out/'runtime.json').write_text(json.dumps(runtime,indent=2))
+    if not already_complete:
+        (out/'runtime.json').write_text(json.dumps(runtime,indent=2))
     print(json.dumps(runtime),flush=True)
     del model
     torch.cuda.empty_cache()
@@ -103,7 +102,8 @@ def execute(stage):
     else: raise ValueError(stage)
     status_path=RUN/'stage_status.json'
     status=json.loads(status_path.read_text()) if status_path.exists() else {}
-    status[stage.upper()]={'status':'MEASURED','seconds':time.monotonic()-start,'not_a_hypothesis_verdict':True}
+    if stage.upper() not in status:
+        status[stage.upper()]={'status':'MEASURED','seconds':time.monotonic()-start,'not_a_hypothesis_verdict':True}
     status_path.write_text(json.dumps(status,indent=2))
     print(json.dumps(status[stage.upper()]),flush=True)
 

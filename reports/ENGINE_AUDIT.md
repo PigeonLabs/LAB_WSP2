@@ -57,3 +57,12 @@ Recommended infrastructure correction: validate current source/config signatures
 - [Trained frozen mappings](../results/pilot-v1/E1/trained/frozen_mappings.json), [trained matched-neuron rows](../results/pilot-v1/E1/trained/matches.csv).
 - [Seed11 collection manifest](../results/pilot-v1/collections/seed11/manifest.json), [seed29 collection manifest](../results/pilot-v1/collections/seed29/manifest.json).
 - [Experiment implementation](../src/experiment.py), [training implementation](../src/training.py), [runner](../src/runner.py), [integration tests](../tests/test_experiment.py).
+
+
+## Post-audit addendum — 2026-11-04 11:10 KST
+
+The numbered omissions above describe the engine at the initial E1 audit. Subsequent supplementary execution collected a natural-language atlas and D1 character-span versus answer-boundary measurements for seed11, seed29, Qwen, SmolLM2, and OLMo. These measurements use the original frozen neuron selection and do not refit E1–E4. The corpus is 30 paragraphs from one public-domain book; it remains a narrow qualitative reference, not representative language coverage. For example, see [Qwen natural atlas](../results/pilot-v1/diagnostics/qwen/natural_top_activations.json) and [span summaries](../results/pilot-v1/diagnostics/qwen/span_boundary_summary.json).
+
+The final validator now checks these supplementary arrays, source/model/selection hashes, every stored top-context value and character trace, and span-summary calculations. See the dynamically generated [FINAL_VALIDATION.md](FINAL_VALIDATION.md) for executed coverage. Thus “natural-language atlas missing” and “span comparison absent” above are historical findings, not the final project state.
+
+Analysis resume protection was also repaired without changing observed maps or metrics. Content signatures cover source NPZ files, the dataset, and any weight-similarity input; existing historical analyses receive a signature only after exact replay from their frozen maps succeeds. Missing or changed signatures reject silent reuse. Regression tests exercise valid reuse, changes to each D2/D3 source, changed dataset metadata, changed weight input, and missing historical provenance. The label-shuffled fitting-order issue is separately documented in [REPRODUCIBILITY_CORRECTION.md](REPRODUCIBILITY_CORRECTION.md); original outcomes are preserved.

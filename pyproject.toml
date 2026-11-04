@@ -7,3 +7,10 @@ dependencies = ["torch>=2.6", "transformers>=5.0", "numpy>=2", "scipy>=1.13", "p
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["."]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["src"]

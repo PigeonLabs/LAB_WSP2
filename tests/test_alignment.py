@@ -1,4 +1,9 @@
 import itertools
+import os
+from pathlib import Path
+import subprocess
+import sys
+import textwrap
 import numpy as np
 import pytest
 
@@ -111,3 +116,38 @@ def test_label_shuffle_destroys_known_concept_feature_correspondence():
     null = fit_alignment(a,a,rs,method='label_shuffled',seed=7)
     assert true['similarity'].mean() > .99
     assert null['similarity'].mean() < .8
+
+
+def test_label_shuffled_alignment_is_stable_across_python_hash_seeds():
+    """A fixed NumPy seed must control the entire negative-control realization.
+
+    Running fresh interpreters is necessary: changing PYTHONHASHSEED after
+    interpreter startup does not change string/set hashing in that process.
+    Compare the complete fitted similarity matrix and chosen correspondence,
+    not merely an aggregate that could hide a changed control realization.
+    """
+    program = textwrap.dedent('''
+        import json
+        import numpy as np
+        from src.alignment import similarity_for_method, match_neurons
+        rng = np.random.default_rng(58013)
+        concepts = ['arithmetic', 'comparison', 'negation', 'syntax']
+        records = [dict(concept=concepts[i % 4], label=(i // 4) % 2,
+                        split='D2') for i in range(256)]
+        a = rng.normal(size=(256, 11))
+        b = rng.normal(size=(256, 13))
+        scores = similarity_for_method(a, b, records, 'label_shuffled', seed=1729)
+        matching = match_neurons(scores)
+        print(json.dumps({'similarity': scores.tolist(),
+                          'source': matching['source'].tolist(),
+                          'target': matching['target'].tolist()}, sort_keys=True))
+    ''')
+    outputs = []
+    for hash_seed in ('0', '1', '2', '13'):
+        env = dict(os.environ, PYTHONHASHSEED=hash_seed, OPENBLAS_NUM_THREADS='1',
+                   OMP_NUM_THREADS='1', MKL_NUM_THREADS='1')
+        completed = subprocess.run([sys.executable, '-c', program], env=env,
+                                   cwd=Path(__file__).resolve().parents[1],
+                                   check=True, capture_output=True, text=True)
+        outputs.append(completed.stdout)
+    assert all(output == outputs[0] for output in outputs[1:])

@@ -1,6 +1,6 @@
 # Final Research Report — Native Neuron Conservation
 
-갱신: 2026-11-04 11:01 KST. 결과 파일이 확인된 단계: **E1, E2, E3**. 미완료 단계의 가설 판단은 `INCONCLUSIVE`이며 구현 완료를 실제 실행 완료로 해석하지 않습니다.
+갱신: 2026-11-04 11:13 KST. 결과 파일이 확인된 단계: **E1, E2, E3, E4**. 미완료 단계의 가설 판단은 `INCONCLUSIVE`이며 구현 완료를 실제 실행 완료로 해석하지 않습니다.
 
 ## 연구 배경
 
@@ -12,8 +12,8 @@ Goodfire의 [Neural Networks Are Already Clean](https://already-clean.goodfire.c
 |---|---|---|---:|---:|---:|---|---|
 | E1 | 독립 초기화 모델의 기능 대응 | D3 response agreement | -0.077 | 0.289 | 0.366 | [0.296, 0.443] | INCONCLUSIVE |
 | E2 | 이종 Base 모델의 기능 대응 | D3 response agreement | 모델 쌍별 | 모델 쌍별 | 모델 쌍별 | 상세 표 참조 | INCONCLUSIVE |
-| E3 | 의미 정렬의 독립 입력 일반화 | D3 response agreement | 모델 쌍별 | 모델 쌍별 | 모델 쌍별 | 상세 표 참조 | INCONCLUSIVE |
-| E4 | 독립 인과 효과 일치 | D4 causal effect agreement | 미측정 | 미측정 | 미측정 | 미측정 | INCONCLUSIVE |
+| E3 | 의미 정렬의 독립 입력 일반화 | D3 response agreement | 모델 쌍별 | 모델 쌍별 | 모델 쌍별 | 상세 표 참조 | NOT SUPPORTED |
+| E4 | 독립 인과 효과 일치 | D4 causal effect agreement | 모델 쌍별 | 모델 쌍별 | 모델 쌍별 | 상세 표 참조 | INCONCLUSIVE |
 
 ## 모델·데이터·방법
 
@@ -138,7 +138,38 @@ Goodfire의 [Neural Networks Are Already Clean](https://already-clean.goodfire.c
 
 [E4 보고서](E4_report.md)
 
-정렬 평가가 아직 완료되지 않아 측정값을 제시하지 않습니다.
+| 모델 쌍 | 방법 | 독립 평가 평균 | 95% CI | 후보 coverage |
+|---|---|---:|---|---:|
+| qwen_olmo | Random | -0.012 | [-0.137, 0.100] | 1.000 |
+| qwen_olmo | Activation | 0.070 | [-0.035, 0.173] | 1.000 |
+| qwen_olmo | Semantic | 0.036 | [-0.063, 0.131] | 1.000 |
+| qwen_olmo | Sign-aware semantic | 0.069 | [-0.033, 0.185] | 1.000 |
+| qwen_olmo | Causal only | -0.001 | [-0.051, 0.040] | 1.000 |
+| qwen_olmo | Semantic + causal | 0.010 | [-0.121, 0.125] | 1.000 |
+| qwen_smol | Random | 0.044 | [-0.041, 0.114] | 1.000 |
+| qwen_smol | Activation | 0.002 | [-0.094, 0.108] | 1.000 |
+| qwen_smol | Semantic | -0.020 | [-0.099, 0.065] | 1.000 |
+| qwen_smol | Sign-aware semantic | -0.024 | [-0.095, 0.042] | 1.000 |
+| qwen_smol | Causal only | -0.054 | [-0.139, 0.032] | 1.000 |
+| qwen_smol | Semantic + causal | 0.078 | [0.035, 0.117] | 1.000 |
+| seed11_seed29 | Random | -0.030 | [-0.083, 0.020] | 1.000 |
+| seed11_seed29 | Activation | 0.028 | [-0.004, 0.056] | 1.000 |
+| seed11_seed29 | Semantic | 0.009 | [-0.026, 0.054] | 1.000 |
+| seed11_seed29 | Sign-aware semantic | 0.030 | [-0.011, 0.071] | 1.000 |
+| seed11_seed29 | Causal only | 0.044 | [0.005, 0.094] | 1.000 |
+| seed11_seed29 | Semantic + causal | 0.009 | [-0.026, 0.054] | 1.000 |
+| smol_olmo | Random | -0.086 | [-0.147, -0.024] | 1.000 |
+| smol_olmo | Activation | 0.014 | [-0.067, 0.106] | 1.000 |
+| smol_olmo | Semantic | 0.014 | [-0.039, 0.065] | 1.000 |
+| smol_olmo | Sign-aware semantic | 0.061 | [0.003, 0.122] | 1.000 |
+| smol_olmo | Causal only | 0.030 | [-0.013, 0.083] | 1.000 |
+| smol_olmo | Semantic + causal | 0.030 | [-0.013, 0.083] | 1.000 |
+
+![E4](../artifacts/figures/d4_competence.svg)
+
+![E4](../artifacts/figures/e4_methods.svg)
+
+![E4](../artifacts/figures/e4_causal_scatter.svg)
 
 ## 해석과 한계
 
@@ -198,7 +229,7 @@ Goodfire의 [Neural Networks Are Already Clean](https://already-clean.goodfire.c
 - **qwen_smol**: semantic_minus_activation Δ=-0.052, Δ 95% CI [-0.090, -0.021], q=0.0312. 제안 방법의 양의 개선이 관찰되지 않음; BH 보정 후 유의 기준 q<0.05 충족.
 - **seed11_seed29**: semantic_minus_activation Δ=-0.070, Δ 95% CI [-0.099, -0.040], q=0.0391. 제안 방법의 양의 개선이 관찰되지 않음; BH 보정 후 유의 기준 q<0.05 충족.
 - **smol_olmo**: semantic_minus_activation Δ=-0.037, Δ 95% CI [-0.093, 0.018], q=0.3906. 제안 방법의 양의 개선이 관찰되지 않음; BH 보정 후 유의 기준 q<0.05 미충족.
-주기능이라고 부르는 값은 네 합성 과제의 참·거짓 선택성 proxy입니다. 독립 반응 지표의 개선과 보편적 의미 해석의 개선은 별개입니다.
+주기능이라고 부르는 값은 네 합성 과제의 참·거짓 선택성 proxy입니다. 이 특정 proxy·benchmark에서 의미 정렬의 우위를 지지하지 않는다는 판단이며, Goodfire 가설 일반에 대한 반증이 아닙니다. 독립 반응 지표의 개선과 보편적 의미 해석의 개선은 별개입니다.
 
 | 모델 쌍 | 방법 차이 | Δ | Δ 95% CI | p | BH q |
 |---|---|---:|---|---:|---:|
@@ -225,9 +256,73 @@ Goodfire의 [Neural Networks Are Already Clean](https://already-clean.goodfire.c
 
 ### E4
 
-이 단계의 최종 정렬 평가가 아직 완료되지 않았습니다.
+- **qwen_olmo**: semantic_causal_minus_semantic Δ=-0.026, Δ 95% CI [-0.076, 0.014], q=0.5417. 제안 방법의 양의 개선이 관찰되지 않음; BH 보정 후 유의 기준 q<0.05 미충족.
+- **qwen_smol**: semantic_causal_minus_semantic Δ=0.098, Δ 95% CI [0.003, 0.174], q=0.2917. 양의 차이가 관찰됨; BH 보정 후 유의 기준 q<0.05 미충족.
+- **seed11_seed29**: semantic_causal_minus_semantic Δ=0.000, Δ 95% CI [0.000, 0.000], q=1.0000. 제안 방법의 양의 개선이 관찰되지 않음; BH 보정 후 유의 기준 q<0.05 미충족.
+- **smol_olmo**: semantic_causal_minus_semantic Δ=0.016, Δ 95% CI [-0.063, 0.108], q=0.7812. 양의 차이가 관찰됨; BH 보정 후 유의 기준 q<0.05 미충족.
+각 모델 내부 개입의 D4 효과를 비교했습니다. 일부 모델 쌍의 개선만으로 모든 모델 계열에 일반화하지 않으며, 낮은 과제 능력과 적은 wrapper 수가 해석을 제한합니다.
 
-대응 차이 검정은 아직 미측정입니다.
+| 모델 쌍 | 방법 차이 | Δ | Δ 95% CI | p | BH q |
+|---|---|---:|---|---:|---:|
+| qwen_olmo | causal_minus_semantic | -0.037 | [-0.172, 0.098] | 0.6562 | 0.6562 |
+| qwen_olmo | semantic_causal_minus_semantic | -0.026 | [-0.076, 0.014] | 0.2812 | 0.5417 |
+| qwen_olmo | semantic_causal_minus_activation | -0.060 | [-0.146, 0.053] | 0.3438 | 0.5417 |
+| qwen_olmo | semantic_minus_random | 0.048 | [-0.074, 0.146] | 0.4062 | 0.5417 |
+| qwen_smol | causal_minus_semantic | -0.034 | [-0.153, 0.057] | 0.7188 | 0.7188 |
+| qwen_smol | semantic_causal_minus_semantic | 0.098 | [0.003, 0.174] | 0.1250 | 0.2917 |
+| qwen_smol | semantic_causal_minus_activation | 0.076 | [-0.024, 0.176] | 0.2188 | 0.2917 |
+| qwen_smol | semantic_minus_random | -0.064 | [-0.134, -0.000] | 0.1562 | 0.2917 |
+| seed11_seed29 | causal_minus_semantic | 0.035 | [-0.041, 0.111] | 0.4375 | 0.8750 |
+| seed11_seed29 | semantic_causal_minus_semantic | 0.000 | [0.000, 0.000] | 1.0000 | 1.0000 |
+| seed11_seed29 | semantic_causal_minus_activation | -0.019 | [-0.067, 0.054] | 0.6562 | 0.8750 |
+| seed11_seed29 | semantic_minus_random | 0.039 | [-0.034, 0.128] | 0.4688 | 0.8750 |
+| smol_olmo | causal_minus_semantic | 0.016 | [-0.063, 0.108] | 0.7812 | 0.7812 |
+| smol_olmo | semantic_causal_minus_semantic | 0.016 | [-0.063, 0.108] | 0.7812 | 0.7812 |
+| smol_olmo | semantic_causal_minus_activation | 0.016 | [-0.028, 0.061] | 0.5625 | 0.7812 |
+| smol_olmo | semantic_minus_random | 0.100 | [0.024, 0.171] | 0.1250 | 0.5000 |
+
+## 가설 판정의 적용 범위
+
+- **E1: INCONCLUSIVE** — 학습 전 모델도 유의한 활성 대응을 보이며, 학습 모델의 일부 과제 능력과 시드 반복 수가 부족합니다. 활성 상관만으로 학습된 기능 보존을 확정할 수 없습니다.
+- **E2: INCONCLUSIVE** — 이종 모델 간 반응 대응은 관찰되지만 여러 과제에서 정답률이 우연 수준에 가깝습니다. 의미 기능의 보존과 입력·답변 형식의 공통 반응을 구분할 근거가 부족합니다.
+- **E3: NOT SUPPORTED** — 이 파일럿의 네 모델 쌍 모두에서 참·거짓 대비 기반 의미 proxy의 평균 D3 점수가 활성 정렬보다 낮았습니다. 이 특정 방법의 우월성은 지지되지 않으며 Goodfire 가설 전체의 반증을 뜻하지 않습니다.
+- **E4: INCONCLUSIVE** — 모델 쌍별 독립 인과 효과 결과를 보고하되, 낮은 과제 능력·공통 yes/no 출력·적은 템플릿 수와 개입 후보 수 때문에 보편적인 기능적 인과 보존을 확정하지 않습니다.
+
+## 재현성 수정 공개
+
+레이블 셔플 대조군에서 Python 해시 순서에 따른 재현성 오류를 최종 감사 중 발견했습니다. 정렬 효과의 원래 수치와 저장 매핑은 보존했으며, 기존 결과를 새 대조군으로 덮어쓰지 않았습니다. E1/E3의 같은 주요 효과·보정 전 p에도 대조군 실현값의 차이 때문에 BH q가 달라질 수 있습니다. 두 결과를 독립 재현으로 세지 않습니다. [오류 범위·보존 원칙·회귀 검증](REPRODUCIBILITY_CORRECTION.md)을 참조하십시오.
+
+## 보충 문자 span·자연어 진단
+
+합성 과제에서 이미 고정한 뉴런에 대해 D1 문장 span과 답변 경계의 반응, 별도 자연어 문헌의 top activation을 보충 측정했습니다. 이 탐색적 진단은 H1–H4의 후보 선택·매칭·가설 판정을 재학습하지 않습니다. 한 저자의 한 책에 한정되며 자연어 의미 보존의 독립 검증이 아닙니다.
+
+| 모델 | D1 문항 | 자연어 문단 | 측정 토큰 | 잘린 문단 | 원본 |
+|---|---:|---:|---:|---:|---|
+| olmo | 48 | 30 | 2743 | 0 | [manifest](../results/pilot-v1/diagnostics/olmo/manifest.json) |
+| qwen | 48 | 30 | 2746 | 0 | [manifest](../results/pilot-v1/diagnostics/qwen/manifest.json) |
+| seed11 | 48 | 30 | 7518 | 25 | [manifest](../results/pilot-v1/diagnostics/seed11/manifest.json) |
+| seed29 | 48 | 30 | 7518 | 25 | [manifest](../results/pilot-v1/diagnostics/seed29/manifest.json) |
+| smol | 48 | 30 | 2806 | 0 | [manifest](../results/pilot-v1/diagnostics/smol/manifest.json) |
+
+
+## 인과 평가 입력 D4의 실제 능력
+
+D4는 E4의 실제 인과 평가 입력입니다. D3 정확도로 D4의 능력을 대체하지 않습니다. 우연 수준에 가까운 과제의 효과 대응은 학습된 기능의 인과 보존을 입증하지 못합니다.
+
+| 모델 | 산술 | 수 비교 | 부정 | 괄호 | 문항 수 |
+|---|---:|---:|---:|---:|---:|
+| olmo | 50.0% | 50.8% | 50.0% | 52.3% | 512 |
+| qwen | 50.0% | 51.6% | 50.0% | 50.0% | 512 |
+| seed11 | 50.8% | 52.3% | 62.5% | 75.8% | 512 |
+| seed29 | 52.3% | 55.5% | 50.0% | 96.9% | 512 |
+| smol | 47.7% | 54.7% | 49.2% | 61.7% | 512 |
+
+
+## 최종 검증·프로토콜 변경 기록
+
+[최종 검증](FINAL_VALIDATION.md), [프로토콜 변경](PROTOCOL_AMENDMENTS.md), [고정 매핑 사후 진단](../results/pilot-v1/diagnostics/posthoc_competence.json)을 함께 제공합니다. 사후 진단은 재학습·재매칭 없이 보존된 효과를 과제·개입별로 기술한 분석입니다.
+
+[결과물 manifest](../results/pilot-v1/deliverables/manifest.json)는 MASTER 지정 결과물의 실제 파일과 해시를 연결합니다.
 
 ## 실행 환경과 재현성
 

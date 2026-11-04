@@ -28,7 +28,7 @@ paths=[root/p for p in ['MASTER.md','README.md','literature_review.md','Makefile
 for folder in ['src','tests','scripts','configs','reports','artifacts/figures']:
     paths += [p for p in (root/folder).rglob('*') if p.is_file() and p.suffix in ('.py','.md','.json','.svg')]
 for p in (root/'results').rglob('*'):
-    if not p.is_file() or p.suffix not in ('.json','.jsonl','.csv','.npz','.parquet','.log'): continue
+    if not p.is_file() or p.suffix not in ('.json','.jsonl','.csv','.npz','.npy','.parquet','.log'): continue
     rel=p.relative_to(root).parts
     if any(x in ('E1','E2','E3','E4') and int(x[1])>level for x in rel): continue
     if level==1 and any(x in ('qwen','smol','olmo') for x in rel): continue
@@ -52,7 +52,7 @@ text=[];binary=[]
 for p in sorted(set(paths)):
     content=p.read_bytes();rel=str(p.relative_to(root))
     item={'path':rel,'sha256':hashlib.sha256(content).hexdigest(),'bytes':len(content)}
-    if p.suffix in ('.npz','.parquet','.gz'):binary.append(item)
+    if p.suffix in ('.npz','.npy','.parquet','.gz'):binary.append(item)
     else:
         item['content']=content.decode();text.append(item)
 print(json.dumps({'stage':args.stage,'text':text,'binary':binary}))

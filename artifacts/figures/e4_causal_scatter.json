@@ -1,0 +1,3090 @@
+{
+  "sources": [
+    "results/pilot-v1/causal/qwen/D4_causal.npz",
+    "results/pilot-v1/causal/olmo/D4_causal.npz",
+    "results/pilot-v1/E4/qwen_olmo/frozen_mappings.json",
+    "results/pilot-v1/causal/qwen/D4_causal.npz",
+    "results/pilot-v1/causal/smol/D4_causal.npz",
+    "results/pilot-v1/E4/qwen_smol/frozen_mappings.json",
+    "results/pilot-v1/causal/seed11/D4_causal.npz",
+    "results/pilot-v1/causal/seed29/D4_causal.npz",
+    "results/pilot-v1/E4/seed11_seed29/frozen_mappings.json",
+    "results/pilot-v1/causal/smol/D4_causal.npz",
+    "results/pilot-v1/causal/olmo/D4_causal.npz",
+    "results/pilot-v1/E4/smol_olmo/frozen_mappings.json"
+  ],
+  "rows": [
+    {
+      "pair": "qwen_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 0,
+      "intervention": "zero",
+      "a_effect": -8.417555320977783e-05,
+      "b_effect": 8.409155082067703e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 0,
+      "intervention": "mean",
+      "a_effect": -4.2741306675033326e-05,
+      "b_effect": 7.198634301355059e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 0,
+      "intervention": "patch",
+      "a_effect": 5.19259346642008e-05,
+      "b_effect": 6.325222340455726e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 1,
+      "intervention": "zero",
+      "a_effect": 4.5782311917254087e-05,
+      "b_effect": -1.7505928402810507e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 1,
+      "intervention": "mean",
+      "a_effect": 6.83279991182627e-05,
+      "b_effect": -1.6778666725283653e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 1,
+      "intervention": "patch",
+      "a_effect": -2.5230221495877887e-05,
+      "b_effect": -1.9245214487644405e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 2,
+      "intervention": "zero",
+      "a_effect": 6.425278804113329e-05,
+      "b_effect": -2.1253908449182106e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 2,
+      "intervention": "mean",
+      "a_effect": 9.473325447763255e-05,
+      "b_effect": -4.02715919321492e-06
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 2,
+      "intervention": "patch",
+      "a_effect": -0.00010579705647320852,
+      "b_effect": -1.545814936071474e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 3,
+      "intervention": "zero",
+      "a_effect": 9.0482008364774e-06,
+      "b_effect": -1.3209361332891783e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 3,
+      "intervention": "mean",
+      "a_effect": 9.061403464157085e-06,
+      "b_effect": -1.7839547483288278e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 3,
+      "intervention": "patch",
+      "a_effect": 8.379267700706697e-06,
+      "b_effect": -6.613753988718299e-06
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 4,
+      "intervention": "zero",
+      "a_effect": 7.271127150791809e-05,
+      "b_effect": -1.4379121958165301e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 4,
+      "intervention": "mean",
+      "a_effect": 8.52097590446865e-05,
+      "b_effect": -3.0458444920606436e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 4,
+      "intervention": "patch",
+      "a_effect": 0.00010598629413661734,
+      "b_effect": -1.9404346601345097e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 5,
+      "intervention": "zero",
+      "a_effect": 1.8615705028355741e-06,
+      "b_effect": -0.00019289743561565914
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 5,
+      "intervention": "mean",
+      "a_effect": -1.050489075713597e-05,
+      "b_effect": -0.00011406282813004187
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 5,
+      "intervention": "patch",
+      "a_effect": -2.7369047179986844e-05,
+      "b_effect": 0.0002609990008008849
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 6,
+      "intervention": "zero",
+      "a_effect": -6.777348875571593e-07,
+      "b_effect": 4.9386791076583666e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 6,
+      "intervention": "mean",
+      "a_effect": -2.376472982343286e-07,
+      "b_effect": -1.4783931721088119e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 6,
+      "intervention": "patch",
+      "a_effect": -5.2854519477671975e-06,
+      "b_effect": 4.316667968491446e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 7,
+      "intervention": "zero",
+      "a_effect": 1.8087599921168343e-06,
+      "b_effect": -7.036710396185932e-06
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 7,
+      "intervention": "mean",
+      "a_effect": 1.7339451019319531e-06,
+      "b_effect": -3.01276176315971e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 7,
+      "intervention": "patch",
+      "a_effect": 1.6635310876403002e-06,
+      "b_effect": -7.201705271970336e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "comparison",
+      "matched_pair": 0,
+      "intervention": "zero",
+      "a_effect": -9.574545593307505e-05,
+      "b_effect": 0.0002251970670096973
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "comparison",
+      "matched_pair": 0,
+      "intervention": "mean",
+      "a_effect": -0.0001064791922366589,
+      "b_effect": 0.00015948387942571615
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "comparison",
+      "matched_pair": 0,
+      "intervention": "patch",
+      "a_effect": -1.6723328394267568e-05,
+      "b_effect": 0.00011304382424406374
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "comparison",
+      "matched_pair": 1,
+      "intervention": "zero",
+      "a_effect": -0.0003912906774187153,
+      "b_effect": -1.2468140698022762e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "comparison",
+      "matched_pair": 1,
+      "intervention": "mean",
+      "a_effect": -0.0009912048765559184,
+      "b_effect": 3.0430527005922104e-06
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "comparison",
+      "matched_pair": 1,
+      "intervention": "patch",
+      "a_effect": 2.9129397537278166e-05,
+      "b_effect": 4.980835158831708e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "comparison",
+      "matched_pair": 2,
+      "intervention": "zero",
+      "a_effect": 0.0022425631306641353,
+      "b_effect": 0.00015632496737918395
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "comparison",
+      "matched_pair": 2,
+      "intervention": "mean",
+      "a_effect": -0.0016048278041005278,
+      "b_effect": 0.00011063450820680587
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "comparison",
+      "matched_pair": 2,
+      "intervention": "patch",
+      "a_effect": 7.533419354028217e-05,
+      "b_effect": 0.00013409532781178445
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "comparison",
+      "matched_pair": 3,
+      "intervention": "zero",
+      "a_effect": 0.0004381820100610629,
+      "b_effect": 6.880509663527093e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "comparison",
+      "matched_pair": 3,
+      "intervention": "mean",
+      "a_effect": 0.0003917307650080381,
+      "b_effect": 8.143097355126017e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "comparison",
+      "matched_pair": 3,
+      "intervention": "patch",
+      "a_effect": -6.913776028261671e-06,
+      "b_effect": 4.8577171550738034e-06
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "comparison",
+      "matched_pair": 4,
+      "intervention": "zero",
+      "a_effect": 0.0005610720685035701,
+      "b_effect": -0.0001702615903896026
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "comparison",
+      "matched_pair": 4,
+      "intervention": "mean",
+      "a_effect": 0.0006588683326028896,
+      "b_effect": -0.00023859906195391095
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "comparison",
+      "matched_pair": 4,
+      "intervention": "patch",
+      "a_effect": 0.0010672520119909036,
+      "b_effect": -0.00024256200994335193
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "comparison",
+      "matched_pair": 5,
+      "intervention": "zero",
+      "a_effect": 0.0012020992502353122,
+      "b_effect": 0.0013496287701060007
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "comparison",
+      "matched_pair": 5,
+      "intervention": "mean",
+      "a_effect": -0.00017381699427894523,
+      "b_effect": 0.001582359486393265
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "comparison",
+      "matched_pair": 5,
+      "intervention": "patch",
+      "a_effect": 3.1813931832147436e-05,
+      "b_effect": -0.0005202964047017598
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "comparison",
+      "matched_pair": 6,
+      "intervention": "zero",
+      "a_effect": 5.373469465631764e-06,
+      "b_effect": -3.5499024416862616e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "comparison",
+      "matched_pair": 6,
+      "intervention": "mean",
+      "a_effect": 1.7511085179155435e-05,
+      "b_effect": 4.86078812568908e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "comparison",
+      "matched_pair": 6,
+      "intervention": "patch",
+      "a_effect": 1.5095004313773094e-06,
+      "b_effect": -0.00012097809559735095
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "comparison",
+      "matched_pair": 7,
+      "intervention": "zero",
+      "a_effect": 3.913698931847934e-05,
+      "b_effect": 1.3122815797370352e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "comparison",
+      "matched_pair": 7,
+      "intervention": "mean",
+      "a_effect": 9.809552366005898e-06,
+      "b_effect": -4.422197685998221e-06
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "comparison",
+      "matched_pair": 7,
+      "intervention": "patch",
+      "a_effect": -1.16755237447347e-05,
+      "b_effect": 9.334354774706472e-06
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "negation",
+      "matched_pair": 0,
+      "intervention": "zero",
+      "a_effect": -0.0004317699338846293,
+      "b_effect": 2.9368250352183263e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "negation",
+      "matched_pair": 0,
+      "intervention": "mean",
+      "a_effect": -0.0002923237803317971,
+      "b_effect": -0.0001742957290614886
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "negation",
+      "matched_pair": 0,
+      "intervention": "patch",
+      "a_effect": 6.279169724458149e-05,
+      "b_effect": 0.00013372820723368548
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "negation",
+      "matched_pair": 1,
+      "intervention": "zero",
+      "a_effect": -0.00029712073505541595,
+      "b_effect": -5.0277372555013864e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "negation",
+      "matched_pair": 1,
+      "intervention": "mean",
+      "a_effect": -0.00013735133662765549,
+      "b_effect": -6.108579322505308e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "negation",
+      "matched_pair": 1,
+      "intervention": "patch",
+      "a_effect": -2.706538674335409e-05,
+      "b_effect": -6.291441663687684e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "negation",
+      "matched_pair": 2,
+      "intervention": "zero",
+      "a_effect": 0.0003406365958876575,
+      "b_effect": 8.556980440321242e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "negation",
+      "matched_pair": 2,
+      "intervention": "mean",
+      "a_effect": 1.8994180355173377e-05,
+      "b_effect": 1.5867146810840207e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "negation",
+      "matched_pair": 2,
+      "intervention": "patch",
+      "a_effect": -6.693732233600256e-05,
+      "b_effect": 7.703529788421207e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "negation",
+      "matched_pair": 3,
+      "intervention": "zero",
+      "a_effect": 9.25944287935236e-06,
+      "b_effect": -8.946295760594256e-06
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "negation",
+      "matched_pair": 3,
+      "intervention": "mean",
+      "a_effect": 4.03120231819713e-05,
+      "b_effect": 1.739844443127583e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "negation",
+      "matched_pair": 3,
+      "intervention": "patch",
+      "a_effect": 6.294132702495126e-05,
+      "b_effect": 6.812669130844166e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "negation",
+      "matched_pair": 4,
+      "intervention": "zero",
+      "a_effect": -0.0006064230945832878,
+      "b_effect": -0.0001677001217173151
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "negation",
+      "matched_pair": 4,
+      "intervention": "mean",
+      "a_effect": -0.0008033710925570411,
+      "b_effect": -0.0001575812735399789
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "negation",
+      "matched_pair": 4,
+      "intervention": "patch",
+      "a_effect": -0.0011338240616277683,
+      "b_effect": -0.00022729509829822486
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "negation",
+      "matched_pair": 5,
+      "intervention": "zero",
+      "a_effect": -0.0003279708750669464,
+      "b_effect": 0.0025561838110377357
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "negation",
+      "matched_pair": 5,
+      "intervention": "mean",
+      "a_effect": -8.848401070924835e-05,
+      "b_effect": 0.0008197928139566046
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "negation",
+      "matched_pair": 5,
+      "intervention": "patch",
+      "a_effect": -0.00031255900768886085,
+      "b_effect": -0.0017780891944536496
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "negation",
+      "matched_pair": 6,
+      "intervention": "zero",
+      "a_effect": -8.678527261446222e-06,
+      "b_effect": -0.00013468439581162386
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "negation",
+      "matched_pair": 6,
+      "intervention": "mean",
+      "a_effect": -2.4310438434193172e-05,
+      "b_effect": -0.00032725798361694474
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "negation",
+      "matched_pair": 6,
+      "intervention": "patch",
+      "a_effect": -1.1926373670648713e-05,
+      "b_effect": -0.0004664204129439355
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "negation",
+      "matched_pair": 7,
+      "intervention": "zero",
+      "a_effect": 0.0001828739968672091,
+      "b_effect": 0.0003062120636321609
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "negation",
+      "matched_pair": 7,
+      "intervention": "mean",
+      "a_effect": 8.483128371786886e-05,
+      "b_effect": 0.00012099345045042734
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "negation",
+      "matched_pair": 7,
+      "intervention": "patch",
+      "a_effect": -2.1317842826797922e-05,
+      "b_effect": 0.00013268128543302303
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "syntax",
+      "matched_pair": 0,
+      "intervention": "zero",
+      "a_effect": -0.002630592759045968,
+      "b_effect": 0.001034576498789046
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "syntax",
+      "matched_pair": 0,
+      "intervention": "mean",
+      "a_effect": -0.0022769031652589956,
+      "b_effect": 0.0007954902692238934
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "syntax",
+      "matched_pair": 0,
+      "intervention": "patch",
+      "a_effect": -0.006400594291228212,
+      "b_effect": 0.0020559087388518447
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "syntax",
+      "matched_pair": 1,
+      "intervention": "zero",
+      "a_effect": 0.00017120727487426085,
+      "b_effect": -1.9232651426036457e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "syntax",
+      "matched_pair": 1,
+      "intervention": "mean",
+      "a_effect": 0.00023723801677625838,
+      "b_effect": -1.7283980981070068e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "syntax",
+      "matched_pair": 1,
+      "intervention": "patch",
+      "a_effect": 0.00010624154493842457,
+      "b_effect": -5.121820627987586e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "syntax",
+      "matched_pair": 2,
+      "intervention": "zero",
+      "a_effect": -0.0027363238023807783,
+      "b_effect": -0.0020564280120649735
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "syntax",
+      "matched_pair": 2,
+      "intervention": "mean",
+      "a_effect": -0.0005625683663072678,
+      "b_effect": -0.001760285940259451
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "syntax",
+      "matched_pair": 2,
+      "intervention": "patch",
+      "a_effect": -0.0036369630539299517,
+      "b_effect": -0.003211967251598294
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "syntax",
+      "matched_pair": 3,
+      "intervention": "zero",
+      "a_effect": 9.929256190301707e-05,
+      "b_effect": 0.00010918138074748638
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "syntax",
+      "matched_pair": 3,
+      "intervention": "mean",
+      "a_effect": 5.117778576235199e-05,
+      "b_effect": 0.00010887149189449029
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "syntax",
+      "matched_pair": 3,
+      "intervention": "patch",
+      "a_effect": -1.1253039658984783e-05,
+      "b_effect": -0.000151421185664881
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "syntax",
+      "matched_pair": 4,
+      "intervention": "zero",
+      "a_effect": 0.019444002681972026,
+      "b_effect": -1.8400697568443357e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "syntax",
+      "matched_pair": 4,
+      "intervention": "mean",
+      "a_effect": 0.019294139655179923,
+      "b_effect": -3.824754311753512e-07
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "syntax",
+      "matched_pair": 4,
+      "intervention": "patch",
+      "a_effect": 0.038275949148217435,
+      "b_effect": 0.00031954845147686643
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "syntax",
+      "matched_pair": 5,
+      "intervention": "zero",
+      "a_effect": 0.0006869943304365117,
+      "b_effect": -0.0033038618595732415
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "syntax",
+      "matched_pair": 5,
+      "intervention": "mean",
+      "a_effect": 6.144502922125362e-05,
+      "b_effect": -0.0051162202943019095
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "syntax",
+      "matched_pair": 5,
+      "intervention": "patch",
+      "a_effect": 0.00016826748977758434,
+      "b_effect": -0.002439400382121706
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "syntax",
+      "matched_pair": 6,
+      "intervention": "zero",
+      "a_effect": 0.00025788692646728557,
+      "b_effect": 0.004747374389075449
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "syntax",
+      "matched_pair": 6,
+      "intervention": "mean",
+      "a_effect": 0.00023631823371457366,
+      "b_effect": 0.0032696400797531874
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "syntax",
+      "matched_pair": 6,
+      "intervention": "patch",
+      "a_effect": 0.0006086763430406208,
+      "b_effect": 0.0034366590043522047
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "syntax",
+      "matched_pair": 7,
+      "intervention": "zero",
+      "a_effect": 5.325499918395575e-05,
+      "b_effect": 5.412446119851484e-05
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "syntax",
+      "matched_pair": 7,
+      "intervention": "mean",
+      "a_effect": -1.9539888965933686e-05,
+      "b_effect": 0.00013329687545181253
+    },
+    {
+      "pair": "qwen_olmo",
+      "concept": "syntax",
+      "matched_pair": 7,
+      "intervention": "patch",
+      "a_effect": -0.00019609422805046692,
+      "b_effect": 0.0006474471512358166
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "arithmetic",
+      "matched_pair": 0,
+      "intervention": "zero",
+      "a_effect": -8.417555320977783e-05,
+      "b_effect": 6.312808081672346e-06
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "arithmetic",
+      "matched_pair": 0,
+      "intervention": "mean",
+      "a_effect": -4.2741306675033326e-05,
+      "b_effect": 7.121155457984049e-06
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "arithmetic",
+      "matched_pair": 0,
+      "intervention": "patch",
+      "a_effect": 5.19259346642008e-05,
+      "b_effect": 7.409850949523943e-07
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "arithmetic",
+      "matched_pair": 1,
+      "intervention": "zero",
+      "a_effect": 4.5782311917254087e-05,
+      "b_effect": -1.557031017705161e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "arithmetic",
+      "matched_pair": 1,
+      "intervention": "mean",
+      "a_effect": 6.83279991182627e-05,
+      "b_effect": -1.4473267309200013e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "arithmetic",
+      "matched_pair": 1,
+      "intervention": "patch",
+      "a_effect": -2.5230221495877887e-05,
+      "b_effect": -1.8072337770397358e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "arithmetic",
+      "matched_pair": 2,
+      "intervention": "zero",
+      "a_effect": 6.425278804113329e-05,
+      "b_effect": 1.5002542377023153e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "arithmetic",
+      "matched_pair": 2,
+      "intervention": "mean",
+      "a_effect": 9.473325447763255e-05,
+      "b_effect": 1.0758718651386712e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "arithmetic",
+      "matched_pair": 2,
+      "intervention": "patch",
+      "a_effect": -0.00010579705647320852,
+      "b_effect": 1.985262663489337e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "arithmetic",
+      "matched_pair": 3,
+      "intervention": "zero",
+      "a_effect": 9.0482008364774e-06,
+      "b_effect": -3.0890417594768647e-06
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "arithmetic",
+      "matched_pair": 3,
+      "intervention": "mean",
+      "a_effect": 9.061403464157085e-06,
+      "b_effect": -2.6175057899617048e-06
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "arithmetic",
+      "matched_pair": 3,
+      "intervention": "patch",
+      "a_effect": 8.379267700706697e-06,
+      "b_effect": -7.101909091881389e-06
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "arithmetic",
+      "matched_pair": 4,
+      "intervention": "zero",
+      "a_effect": 7.271127150791809e-05,
+      "b_effect": -1.5782020204180865e-06
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "arithmetic",
+      "matched_pair": 4,
+      "intervention": "mean",
+      "a_effect": 8.52097590446865e-05,
+      "b_effect": 1.9246366102659592e-07
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "arithmetic",
+      "matched_pair": 4,
+      "intervention": "patch",
+      "a_effect": 0.00010598629413661734,
+      "b_effect": -1.4819701899047887e-06
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "arithmetic",
+      "matched_pair": 5,
+      "intervention": "zero",
+      "a_effect": 1.8615705028355741e-06,
+      "b_effect": -1.5397092882127674e-07
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "arithmetic",
+      "matched_pair": 5,
+      "intervention": "mean",
+      "a_effect": -1.050489075713597e-05,
+      "b_effect": 9.91187854286969e-07
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "arithmetic",
+      "matched_pair": 5,
+      "intervention": "patch",
+      "a_effect": -2.7369047179986844e-05,
+      "b_effect": -8.266314241092295e-06
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "arithmetic",
+      "matched_pair": 6,
+      "intervention": "zero",
+      "a_effect": -6.777348875571593e-07,
+      "b_effect": -0.00010138023344575941
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "arithmetic",
+      "matched_pair": 6,
+      "intervention": "mean",
+      "a_effect": -2.376472982343286e-07,
+      "b_effect": -1.941958339758353e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "arithmetic",
+      "matched_pair": 6,
+      "intervention": "patch",
+      "a_effect": -5.2854519477671975e-06,
+      "b_effect": -2.0911176770539646e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "arithmetic",
+      "matched_pair": 7,
+      "intervention": "zero",
+      "a_effect": 1.8087599921168343e-06,
+      "b_effect": -9.883008993715701e-06
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "arithmetic",
+      "matched_pair": 7,
+      "intervention": "mean",
+      "a_effect": 1.7339451019319531e-06,
+      "b_effect": -9.045792068250009e-06
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "arithmetic",
+      "matched_pair": 7,
+      "intervention": "patch",
+      "a_effect": 1.6635310876403002e-06,
+      "b_effect": 3.4835922645813864e-06
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "comparison",
+      "matched_pair": 0,
+      "intervention": "zero",
+      "a_effect": -9.574545593307505e-05,
+      "b_effect": -3.4123807100015454e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "comparison",
+      "matched_pair": 0,
+      "intervention": "mean",
+      "a_effect": -0.0001064791922366589,
+      "b_effect": -3.315186561183115e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "comparison",
+      "matched_pair": 0,
+      "intervention": "patch",
+      "a_effect": -1.6723328394267568e-05,
+      "b_effect": -5.863886592327811e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "comparison",
+      "matched_pair": 1,
+      "intervention": "zero",
+      "a_effect": -0.0003912906774187153,
+      "b_effect": -4.085041205289498e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "comparison",
+      "matched_pair": 1,
+      "intervention": "mean",
+      "a_effect": -0.0009912048765559184,
+      "b_effect": -3.9455050510452165e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "comparison",
+      "matched_pair": 1,
+      "intervention": "patch",
+      "a_effect": 2.9129397537278166e-05,
+      "b_effect": -3.0154244091341916e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "comparison",
+      "matched_pair": 2,
+      "intervention": "zero",
+      "a_effect": 0.0022425631306641353,
+      "b_effect": 2.293685680284457e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "comparison",
+      "matched_pair": 2,
+      "intervention": "mean",
+      "a_effect": -0.0016048278041005278,
+      "b_effect": 1.4232687732916768e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "comparison",
+      "matched_pair": 2,
+      "intervention": "patch",
+      "a_effect": 7.533419354028217e-05,
+      "b_effect": 1.963610501623845e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "comparison",
+      "matched_pair": 3,
+      "intervention": "zero",
+      "a_effect": 0.0004381820100610629,
+      "b_effect": -1.488225258888153e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "comparison",
+      "matched_pair": 3,
+      "intervention": "mean",
+      "a_effect": 0.0003917307650080381,
+      "b_effect": -1.180764560398166e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "comparison",
+      "matched_pair": 3,
+      "intervention": "patch",
+      "a_effect": -6.913776028261671e-06,
+      "b_effect": 1.6624048721172223e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "comparison",
+      "matched_pair": 4,
+      "intervention": "zero",
+      "a_effect": 0.0005610720685035701,
+      "b_effect": 8.218198325835646e-06
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "comparison",
+      "matched_pair": 4,
+      "intervention": "mean",
+      "a_effect": 0.0006588683326028896,
+      "b_effect": 8.112343312271018e-06
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "comparison",
+      "matched_pair": 4,
+      "intervention": "patch",
+      "a_effect": 0.0010672520119909036,
+      "b_effect": 1.711483105679004e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "comparison",
+      "matched_pair": 5,
+      "intervention": "zero",
+      "a_effect": 0.0012020992502353122,
+      "b_effect": -0.00015241197316696132
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "comparison",
+      "matched_pair": 5,
+      "intervention": "mean",
+      "a_effect": -0.00017381699427894523,
+      "b_effect": 5.7051040719808696e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "comparison",
+      "matched_pair": 5,
+      "intervention": "patch",
+      "a_effect": 3.1813931832147436e-05,
+      "b_effect": -3.4681951716992584e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "comparison",
+      "matched_pair": 6,
+      "intervention": "zero",
+      "a_effect": 5.373469465631764e-06,
+      "b_effect": -7.003752624757825e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "comparison",
+      "matched_pair": 6,
+      "intervention": "mean",
+      "a_effect": 1.7511085179155435e-05,
+      "b_effect": -5.484252020952851e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "comparison",
+      "matched_pair": 6,
+      "intervention": "patch",
+      "a_effect": 1.5095004313773094e-06,
+      "b_effect": -0.00013372375168127886
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "comparison",
+      "matched_pair": 7,
+      "intervention": "zero",
+      "a_effect": 3.913698931847934e-05,
+      "b_effect": 7.145213415612373e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "comparison",
+      "matched_pair": 7,
+      "intervention": "mean",
+      "a_effect": 9.809552366005898e-06,
+      "b_effect": 6.971996120688438e-06
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "comparison",
+      "matched_pair": 7,
+      "intervention": "patch",
+      "a_effect": -1.16755237447347e-05,
+      "b_effect": 5.599249058416242e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "negation",
+      "matched_pair": 0,
+      "intervention": "zero",
+      "a_effect": -0.0004317699338846293,
+      "b_effect": -4.984808820588835e-06
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "negation",
+      "matched_pair": 0,
+      "intervention": "mean",
+      "a_effect": -0.0002923237803317971,
+      "b_effect": -4.955939271434845e-06
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "negation",
+      "matched_pair": 0,
+      "intervention": "patch",
+      "a_effect": 6.279169724458149e-05,
+      "b_effect": 3.488403856107051e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "negation",
+      "matched_pair": 1,
+      "intervention": "zero",
+      "a_effect": -0.00029712073505541595,
+      "b_effect": 1.9039467667056003e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "negation",
+      "matched_pair": 1,
+      "intervention": "mean",
+      "a_effect": -0.00013735133662765549,
+      "b_effect": 1.7273613577136984e-06
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "negation",
+      "matched_pair": 1,
+      "intervention": "patch",
+      "a_effect": -2.706538674335409e-05,
+      "b_effect": -2.8903230294669044e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "negation",
+      "matched_pair": 2,
+      "intervention": "zero",
+      "a_effect": 0.0003406365958876575,
+      "b_effect": 7.912662263955924e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "negation",
+      "matched_pair": 2,
+      "intervention": "mean",
+      "a_effect": 1.8994180355173377e-05,
+      "b_effect": 8.144580975492973e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "negation",
+      "matched_pair": 2,
+      "intervention": "patch",
+      "a_effect": -6.693732233600256e-05,
+      "b_effect": 0.0001446027601208072
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "negation",
+      "matched_pair": 3,
+      "intervention": "zero",
+      "a_effect": 9.25944287935236e-06,
+      "b_effect": 3.656809559505323e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "negation",
+      "matched_pair": 3,
+      "intervention": "mean",
+      "a_effect": 4.03120231819713e-05,
+      "b_effect": 2.5121319355496433e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "negation",
+      "matched_pair": 3,
+      "intervention": "patch",
+      "a_effect": 6.294132702495126e-05,
+      "b_effect": -2.327366820964111e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "negation",
+      "matched_pair": 4,
+      "intervention": "zero",
+      "a_effect": -0.0006064230945832878,
+      "b_effect": 2.916786782858061e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "negation",
+      "matched_pair": 4,
+      "intervention": "mean",
+      "a_effect": -0.0008033710925570411,
+      "b_effect": 3.34742422440507e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "negation",
+      "matched_pair": 4,
+      "intervention": "patch",
+      "a_effect": -0.0011338240616277683,
+      "b_effect": 1.488225258888153e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "negation",
+      "matched_pair": 5,
+      "intervention": "zero",
+      "a_effect": -0.0003279708750669464,
+      "b_effect": 0.00020420394434921829
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "negation",
+      "matched_pair": 5,
+      "intervention": "mean",
+      "a_effect": -8.848401070924835e-05,
+      "b_effect": 5.875434411989407e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "negation",
+      "matched_pair": 5,
+      "intervention": "patch",
+      "a_effect": -0.00031255900768886085,
+      "b_effect": 2.6718767742017178e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "negation",
+      "matched_pair": 6,
+      "intervention": "zero",
+      "a_effect": -8.678527261446222e-06,
+      "b_effect": 0.0009216411103750086
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "negation",
+      "matched_pair": 6,
+      "intervention": "mean",
+      "a_effect": -2.4310438434193172e-05,
+      "b_effect": 0.00019721751345395285
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "negation",
+      "matched_pair": 6,
+      "intervention": "patch",
+      "a_effect": -1.1926373670648713e-05,
+      "b_effect": 0.00014271661624274654
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "negation",
+      "matched_pair": 7,
+      "intervention": "zero",
+      "a_effect": 0.0001828739968672091,
+      "b_effect": 8.774418306202508e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "negation",
+      "matched_pair": 7,
+      "intervention": "mean",
+      "a_effect": 8.483128371786886e-05,
+      "b_effect": -2.985111382522503e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "negation",
+      "matched_pair": 7,
+      "intervention": "patch",
+      "a_effect": -2.1317842826797922e-05,
+      "b_effect": 5.918738735720391e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "syntax",
+      "matched_pair": 0,
+      "intervention": "zero",
+      "a_effect": -0.002630592759045968,
+      "b_effect": -0.0013514076538558716
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "syntax",
+      "matched_pair": 0,
+      "intervention": "mean",
+      "a_effect": -0.0022769031652589956,
+      "b_effect": -0.0013509264947033051
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "syntax",
+      "matched_pair": 0,
+      "intervention": "patch",
+      "a_effect": -0.006400594291228212,
+      "b_effect": -0.0025086002273698054
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "syntax",
+      "matched_pair": 1,
+      "intervention": "zero",
+      "a_effect": 0.00017120727487426085,
+      "b_effect": 0.00036854866449982854
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "syntax",
+      "matched_pair": 1,
+      "intervention": "mean",
+      "a_effect": 0.00023723801677625838,
+      "b_effect": 0.00030747513326456397
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "syntax",
+      "matched_pair": 1,
+      "intervention": "patch",
+      "a_effect": 0.00010624154493842457,
+      "b_effect": -5.638704108926694e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "syntax",
+      "matched_pair": 2,
+      "intervention": "zero",
+      "a_effect": -0.0027363238023807783,
+      "b_effect": -0.00021968283428728226
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "syntax",
+      "matched_pair": 2,
+      "intervention": "mean",
+      "a_effect": -0.0005625683663072678,
+      "b_effect": -0.0005914263955601523
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "syntax",
+      "matched_pair": 2,
+      "intervention": "patch",
+      "a_effect": -0.0036369630539299517,
+      "b_effect": -0.0010424120576691975
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "syntax",
+      "matched_pair": 3,
+      "intervention": "zero",
+      "a_effect": 9.929256190301707e-05,
+      "b_effect": 4.191377378006693e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "syntax",
+      "matched_pair": 3,
+      "intervention": "mean",
+      "a_effect": 5.117778576235199e-05,
+      "b_effect": 4.7042930346425706e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "syntax",
+      "matched_pair": 3,
+      "intervention": "patch",
+      "a_effect": -1.1253039658984783e-05,
+      "b_effect": 4.3689251053037274e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "syntax",
+      "matched_pair": 4,
+      "intervention": "zero",
+      "a_effect": 0.019444002681972026,
+      "b_effect": -9.556301929123054e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "syntax",
+      "matched_pair": 4,
+      "intervention": "mean",
+      "a_effect": 0.019294139655179923,
+      "b_effect": -0.00010232330538478972
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "syntax",
+      "matched_pair": 4,
+      "intervention": "patch",
+      "a_effect": 0.038275949148217435,
+      "b_effect": -0.00018190221762776147
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "syntax",
+      "matched_pair": 5,
+      "intervention": "zero",
+      "a_effect": 0.0006869943304365117,
+      "b_effect": 0.001143084987160684
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "syntax",
+      "matched_pair": 5,
+      "intervention": "mean",
+      "a_effect": 6.144502922125362e-05,
+      "b_effect": 0.000425301386545046
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "syntax",
+      "matched_pair": 5,
+      "intervention": "patch",
+      "a_effect": 0.00016826748977758434,
+      "b_effect": 4.5820786098906826e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "syntax",
+      "matched_pair": 6,
+      "intervention": "zero",
+      "a_effect": 0.00025788692646728557,
+      "b_effect": -0.003576797604025041
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "syntax",
+      "matched_pair": 6,
+      "intervention": "mean",
+      "a_effect": 0.00023631823371457366,
+      "b_effect": -0.003954204408523619
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "syntax",
+      "matched_pair": 6,
+      "intervention": "patch",
+      "a_effect": 0.0006086763430406208,
+      "b_effect": -0.007730740799962061
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "syntax",
+      "matched_pair": 7,
+      "intervention": "zero",
+      "a_effect": 5.325499918395575e-05,
+      "b_effect": 0.0002611010141402057
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "syntax",
+      "matched_pair": 7,
+      "intervention": "mean",
+      "a_effect": -1.9539888965933686e-05,
+      "b_effect": -1.4829325082099216e-05
+    },
+    {
+      "pair": "qwen_smol",
+      "concept": "syntax",
+      "matched_pair": 7,
+      "intervention": "patch",
+      "a_effect": -0.00019609422805046692,
+      "b_effect": -0.0004204464906956501
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "arithmetic",
+      "matched_pair": 0,
+      "intervention": "zero",
+      "a_effect": -0.00013563636395044074,
+      "b_effect": 2.6652075288620116e-06
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "arithmetic",
+      "matched_pair": 0,
+      "intervention": "mean",
+      "a_effect": -8.712513149879245e-05,
+      "b_effect": 2.934284996476076e-06
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "arithmetic",
+      "matched_pair": 0,
+      "intervention": "patch",
+      "a_effect": 2.2720067873330544e-06,
+      "b_effect": 1.234787880741409e-06
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "arithmetic",
+      "matched_pair": 1,
+      "intervention": "zero",
+      "a_effect": 7.016519062995288e-05,
+      "b_effect": 1.7116295410537778e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "arithmetic",
+      "matched_pair": 1,
+      "intervention": "mean",
+      "a_effect": 0.00010750713514140202,
+      "b_effect": 1.8026562459341797e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "arithmetic",
+      "matched_pair": 1,
+      "intervention": "patch",
+      "a_effect": -6.317963650641403e-06,
+      "b_effect": 1.1342907980862629e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "arithmetic",
+      "matched_pair": 2,
+      "intervention": "zero",
+      "a_effect": 2.7709784558259385e-05,
+      "b_effect": -2.133468319730019e-07
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "arithmetic",
+      "matched_pair": 2,
+      "intervention": "mean",
+      "a_effect": -2.252476760592277e-06,
+      "b_effect": 1.156774566554513e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "arithmetic",
+      "matched_pair": 2,
+      "intervention": "patch",
+      "a_effect": 2.0503943221335594e-05,
+      "b_effect": 6.545285460435637e-06
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "arithmetic",
+      "matched_pair": 3,
+      "intervention": "zero",
+      "a_effect": -3.771838987982441e-07,
+      "b_effect": -9.303760410456402e-07
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "arithmetic",
+      "matched_pair": 3,
+      "intervention": "mean",
+      "a_effect": -1.495277929707735e-06,
+      "b_effect": -3.364904701764491e-07
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "arithmetic",
+      "matched_pair": 3,
+      "intervention": "patch",
+      "a_effect": 3.1731369917609708e-06,
+      "b_effect": 2.5461814462128006e-07
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "arithmetic",
+      "matched_pair": 4,
+      "intervention": "zero",
+      "a_effect": -7.091328091895412e-06,
+      "b_effect": 1.132940622892897e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "arithmetic",
+      "matched_pair": 4,
+      "intervention": "mean",
+      "a_effect": -6.971357927630638e-06,
+      "b_effect": 1.371596057958567e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "arithmetic",
+      "matched_pair": 4,
+      "intervention": "patch",
+      "a_effect": -3.461697239802747e-05,
+      "b_effect": 2.0051537978072977e-07
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "arithmetic",
+      "matched_pair": 5,
+      "intervention": "zero",
+      "a_effect": 1.451692325912089e-05,
+      "b_effect": 2.0051537978072977e-07
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "arithmetic",
+      "matched_pair": 5,
+      "intervention": "mean",
+      "a_effect": 1.528314857295285e-05,
+      "b_effect": 2.9497018905279846e-06
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "arithmetic",
+      "matched_pair": 5,
+      "intervention": "patch",
+      "a_effect": 1.6624689086278878e-05,
+      "b_effect": -6.987396018433549e-07
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "arithmetic",
+      "matched_pair": 6,
+      "intervention": "zero",
+      "a_effect": 5.309336240203326e-06,
+      "b_effect": -4.911381962251018e-07
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "arithmetic",
+      "matched_pair": 6,
+      "intervention": "mean",
+      "a_effect": -1.028108201817322e-05,
+      "b_effect": 7.937306509085335e-07
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "arithmetic",
+      "matched_pair": 6,
+      "intervention": "patch",
+      "a_effect": -2.241460348449633e-05,
+      "b_effect": -5.458155037011269e-07
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "arithmetic",
+      "matched_pair": 7,
+      "intervention": "zero",
+      "a_effect": 8.257590718169761e-07,
+      "b_effect": -1.0118078839136119e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "arithmetic",
+      "matched_pair": 7,
+      "intervention": "mean",
+      "a_effect": 3.843230262202929e-07,
+      "b_effect": -1.4601235023746532e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "arithmetic",
+      "matched_pair": 7,
+      "intervention": "patch",
+      "a_effect": -4.13433433725716e-06,
+      "b_effect": -7.220085785800872e-08
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "comparison",
+      "matched_pair": 0,
+      "intervention": "zero",
+      "a_effect": 0.0001460050131105709,
+      "b_effect": -7.729064727821291e-06
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "comparison",
+      "matched_pair": 0,
+      "intervention": "mean",
+      "a_effect": 0.00010775978050111423,
+      "b_effect": -5.825760581790154e-06
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "comparison",
+      "matched_pair": 0,
+      "intervention": "patch",
+      "a_effect": -0.00015936667476950961,
+      "b_effect": 7.479719208844318e-06
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "comparison",
+      "matched_pair": 1,
+      "intervention": "zero",
+      "a_effect": 0.0001352674301801262,
+      "b_effect": -4.289665187030276e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "comparison",
+      "matched_pair": 1,
+      "intervention": "mean",
+      "a_effect": -7.345063873826749e-05,
+      "b_effect": -3.0165319717081274e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "comparison",
+      "matched_pair": 1,
+      "intervention": "patch",
+      "a_effect": 3.1111017184023163e-06,
+      "b_effect": 6.2019160391632e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "comparison",
+      "matched_pair": 2,
+      "intervention": "zero",
+      "a_effect": -1.2356892941743564e-05,
+      "b_effect": -0.00011705481489725813
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "comparison",
+      "matched_pair": 2,
+      "intervention": "mean",
+      "a_effect": 0.00010664948206911388,
+      "b_effect": -4.4660150641701684e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "comparison",
+      "matched_pair": 2,
+      "intervention": "patch",
+      "a_effect": 1.0055594319726527e-05,
+      "b_effect": -1.8115317326884426e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "comparison",
+      "matched_pair": 3,
+      "intervention": "zero",
+      "a_effect": 2.198948626868846e-05,
+      "b_effect": -4.28989919345785e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "comparison",
+      "matched_pair": 3,
+      "intervention": "mean",
+      "a_effect": 5.426971314873805e-05,
+      "b_effect": -4.08508431962165e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "comparison",
+      "matched_pair": 3,
+      "intervention": "patch",
+      "a_effect": -4.146020683681057e-06,
+      "b_effect": -4.1973391779190246e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "comparison",
+      "matched_pair": 4,
+      "intervention": "zero",
+      "a_effect": 0.00017066805708175064,
+      "b_effect": -6.0747063148499436e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "comparison",
+      "matched_pair": 4,
+      "intervention": "mean",
+      "a_effect": 0.00017019925694537784,
+      "b_effect": -7.228776940126253e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "comparison",
+      "matched_pair": 4,
+      "intervention": "patch",
+      "a_effect": 0.00025315667663474166,
+      "b_effect": -5.0363551596593046e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "comparison",
+      "matched_pair": 5,
+      "intervention": "zero",
+      "a_effect": 4.4109564846240826e-05,
+      "b_effect": -7.285302359746389e-06
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "comparison",
+      "matched_pair": 5,
+      "intervention": "mean",
+      "a_effect": 6.042887480804856e-05,
+      "b_effect": -5.755720243634296e-06
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "comparison",
+      "matched_pair": 5,
+      "intervention": "patch",
+      "a_effect": 2.63172418519387e-05,
+      "b_effect": -3.0527221729239245e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "comparison",
+      "matched_pair": 6,
+      "intervention": "zero",
+      "a_effect": 5.0332354876219955e-05,
+      "b_effect": 1.783823217128843e-06
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "comparison",
+      "matched_pair": 6,
+      "intervention": "mean",
+      "a_effect": 1.2030016940412133e-05,
+      "b_effect": 1.1910615952902996e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "comparison",
+      "matched_pair": 6,
+      "intervention": "patch",
+      "a_effect": 4.3928685795729514e-05,
+      "b_effect": 1.1360748726657948e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "comparison",
+      "matched_pair": 7,
+      "intervention": "zero",
+      "a_effect": -1.1983137567860292e-05,
+      "b_effect": -0.00011050152773365969
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "comparison",
+      "matched_pair": 7,
+      "intervention": "mean",
+      "a_effect": -1.2396699859758765e-05,
+      "b_effect": -9.860325846260028e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "comparison",
+      "matched_pair": 7,
+      "intervention": "patch",
+      "a_effect": -8.926644148033543e-06,
+      "b_effect": -0.00020464947737501273
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "negation",
+      "matched_pair": 0,
+      "intervention": "zero",
+      "a_effect": 6.628195855976203e-05,
+      "b_effect": 6.540689119351838e-07
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "negation",
+      "matched_pair": 0,
+      "intervention": "mean",
+      "a_effect": -6.977676337476743e-05,
+      "b_effect": 1.2800331132850551e-06
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "negation",
+      "matched_pair": 0,
+      "intervention": "patch",
+      "a_effect": 3.2125637461122636e-06,
+      "b_effect": 1.5233997979616188e-06
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "negation",
+      "matched_pair": 1,
+      "intervention": "zero",
+      "a_effect": -0.00011394057238305584,
+      "b_effect": 3.208080895483977e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "negation",
+      "matched_pair": 1,
+      "intervention": "mean",
+      "a_effect": -0.0002997325394672461,
+      "b_effect": 3.3211101893754194e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "negation",
+      "matched_pair": 1,
+      "intervention": "patch",
+      "a_effect": -4.766971357654322e-05,
+      "b_effect": 3.793985111575364e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "negation",
+      "matched_pair": 2,
+      "intervention": "zero",
+      "a_effect": -4.51483213489431e-05,
+      "b_effect": -7.340524285762292e-06
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "negation",
+      "matched_pair": 2,
+      "intervention": "mean",
+      "a_effect": 0.00016293723216296075,
+      "b_effect": 8.95865180074783e-06
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "negation",
+      "matched_pair": 2,
+      "intervention": "patch",
+      "a_effect": 3.5551615984739425e-05,
+      "b_effect": 2.4184725879849762e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "negation",
+      "matched_pair": 3,
+      "intervention": "zero",
+      "a_effect": 0.0002316082148347996,
+      "b_effect": -1.119599264111641e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "negation",
+      "matched_pair": 3,
+      "intervention": "mean",
+      "a_effect": 0.00016518951018706766,
+      "b_effect": -1.0041975879212176e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "negation",
+      "matched_pair": 3,
+      "intervention": "patch",
+      "a_effect": 0.0001866884289044688,
+      "b_effect": -7.947384944482623e-06
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "negation",
+      "matched_pair": 4,
+      "intervention": "zero",
+      "a_effect": -1.695600652751512e-05,
+      "b_effect": -1.1451831688838073e-06
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "negation",
+      "matched_pair": 4,
+      "intervention": "mean",
+      "a_effect": -2.2131282827727935e-05,
+      "b_effect": -6.384605036714498e-07
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "negation",
+      "matched_pair": 4,
+      "intervention": "patch",
+      "a_effect": 4.117887033946848e-05,
+      "b_effect": 1.306869042217027e-06
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "negation",
+      "matched_pair": 5,
+      "intervention": "zero",
+      "a_effect": 9.964197333371301e-06,
+      "b_effect": 1.9054969837565336e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "negation",
+      "matched_pair": 5,
+      "intervention": "mean",
+      "a_effect": 5.6627012506898966e-06,
+      "b_effect": 1.3282348464737489e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "negation",
+      "matched_pair": 5,
+      "intervention": "patch",
+      "a_effect": 2.645194928822018e-05,
+      "b_effect": 1.810979932365622e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "negation",
+      "matched_pair": 6,
+      "intervention": "zero",
+      "a_effect": -2.312881625468554e-05,
+      "b_effect": -1.9612731040229046e-06
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "negation",
+      "matched_pair": 6,
+      "intervention": "mean",
+      "a_effect": -6.295215439117406e-05,
+      "b_effect": 4.356014687235121e-06
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "negation",
+      "matched_pair": 6,
+      "intervention": "patch",
+      "a_effect": 8.422222740461155e-06,
+      "b_effect": 3.839452979390256e-06
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "negation",
+      "matched_pair": 7,
+      "intervention": "zero",
+      "a_effect": -3.1313537355618e-05,
+      "b_effect": 1.0808415754935654e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "negation",
+      "matched_pair": 7,
+      "intervention": "mean",
+      "a_effect": -3.5236301959257186e-05,
+      "b_effect": 2.692409728724099e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "negation",
+      "matched_pair": 7,
+      "intervention": "patch",
+      "a_effect": 2.2944057996197325e-05,
+      "b_effect": 1.1261705955048848e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "syntax",
+      "matched_pair": 0,
+      "intervention": "zero",
+      "a_effect": 9.576078824932122e-05,
+      "b_effect": -8.13204571550309e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "syntax",
+      "matched_pair": 0,
+      "intervention": "mean",
+      "a_effect": 0.00015912523622431472,
+      "b_effect": -7.828449382222596e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "syntax",
+      "matched_pair": 0,
+      "intervention": "patch",
+      "a_effect": 0.00042470445615493563,
+      "b_effect": -0.00013667720767985327
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "syntax",
+      "matched_pair": 1,
+      "intervention": "zero",
+      "a_effect": -0.0012227848636240015,
+      "b_effect": 0.00010496520871464018
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "syntax",
+      "matched_pair": 1,
+      "intervention": "mean",
+      "a_effect": -0.0010537659565162819,
+      "b_effect": 8.301363579798011e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "syntax",
+      "matched_pair": 1,
+      "intervention": "patch",
+      "a_effect": -0.0013502708564722885,
+      "b_effect": 0.00027005714135829994
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "syntax",
+      "matched_pair": 2,
+      "intervention": "zero",
+      "a_effect": 0.00014100824160095493,
+      "b_effect": -1.0761093790157531e-06
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "syntax",
+      "matched_pair": 2,
+      "intervention": "mean",
+      "a_effect": 5.76174798901743e-06,
+      "b_effect": 9.265917052579312e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "syntax",
+      "matched_pair": 2,
+      "intervention": "patch",
+      "a_effect": 3.8501236295228545e-05,
+      "b_effect": 1.1635867121070788e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "syntax",
+      "matched_pair": 3,
+      "intervention": "zero",
+      "a_effect": 0.00014425650643340365,
+      "b_effect": 3.161963001502465e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "syntax",
+      "matched_pair": 3,
+      "intervention": "mean",
+      "a_effect": 0.00011943580673165367,
+      "b_effect": 4.156137064741816e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "syntax",
+      "matched_pair": 3,
+      "intervention": "patch",
+      "a_effect": 0.00014716904924712393,
+      "b_effect": 3.0065344061791916e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "syntax",
+      "matched_pair": 4,
+      "intervention": "zero",
+      "a_effect": 4.623932182713073e-05,
+      "b_effect": 2.65040437801081e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "syntax",
+      "matched_pair": 4,
+      "intervention": "mean",
+      "a_effect": 5.5259479825631173e-05,
+      "b_effect": 3.624116269870249e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "syntax",
+      "matched_pair": 4,
+      "intervention": "patch",
+      "a_effect": 0.0004799942458589241,
+      "b_effect": 0.00013461833115321952
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "syntax",
+      "matched_pair": 5,
+      "intervention": "zero",
+      "a_effect": -2.94752447397977e-05,
+      "b_effect": 0.0003150183486004785
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "syntax",
+      "matched_pair": 5,
+      "intervention": "mean",
+      "a_effect": 1.2560806191992141e-06,
+      "b_effect": 0.00033869738868502834
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "syntax",
+      "matched_pair": 5,
+      "intervention": "patch",
+      "a_effect": -6.182334333502081e-06,
+      "b_effect": 0.0007444873482281675
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "syntax",
+      "matched_pair": 6,
+      "intervention": "zero",
+      "a_effect": -5.290672640430123e-05,
+      "b_effect": 0.00011989890193668138
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "syntax",
+      "matched_pair": 6,
+      "intervention": "mean",
+      "a_effect": 8.003345850293215e-05,
+      "b_effect": 0.00016198380511001388
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "syntax",
+      "matched_pair": 6,
+      "intervention": "patch",
+      "a_effect": 0.00026544159363234656,
+      "b_effect": 8.095257780477728e-05
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "syntax",
+      "matched_pair": 7,
+      "intervention": "zero",
+      "a_effect": 2.7656495613512352e-05,
+      "b_effect": -0.0005878485521573006
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "syntax",
+      "matched_pair": 7,
+      "intervention": "mean",
+      "a_effect": 3.07280186403149e-05,
+      "b_effect": -0.0005040290260521659
+    },
+    {
+      "pair": "seed11_seed29",
+      "concept": "syntax",
+      "matched_pair": 7,
+      "intervention": "patch",
+      "a_effect": 7.72306890690647e-05,
+      "b_effect": -0.0011051612859762465
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 0,
+      "intervention": "zero",
+      "a_effect": -1.5397092882127674e-07,
+      "b_effect": -1.4379121958165301e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 0,
+      "intervention": "mean",
+      "a_effect": 9.91187854286969e-07,
+      "b_effect": -3.0458444920606436e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 0,
+      "intervention": "patch",
+      "a_effect": -8.266314241092295e-06,
+      "b_effect": -1.9404346601345097e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 1,
+      "intervention": "zero",
+      "a_effect": -9.883008993715701e-06,
+      "b_effect": -1.3209361332891783e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 1,
+      "intervention": "mean",
+      "a_effect": -9.045792068250009e-06,
+      "b_effect": -1.7839547483288278e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 1,
+      "intervention": "patch",
+      "a_effect": 3.4835922645813864e-06,
+      "b_effect": -6.613753988718299e-06
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 2,
+      "intervention": "zero",
+      "a_effect": -0.00010138023344575941,
+      "b_effect": 8.409155082067703e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 2,
+      "intervention": "mean",
+      "a_effect": -1.941958339758353e-05,
+      "b_effect": 7.198634301355059e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 2,
+      "intervention": "patch",
+      "a_effect": -2.0911176770539646e-05,
+      "b_effect": 6.325222340455726e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 3,
+      "intervention": "zero",
+      "a_effect": -1.557031017705161e-05,
+      "b_effect": 4.9386791076583666e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 3,
+      "intervention": "mean",
+      "a_effect": -1.4473267309200013e-05,
+      "b_effect": -1.4783931721088119e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 3,
+      "intervention": "patch",
+      "a_effect": -1.8072337770397358e-05,
+      "b_effect": 4.316667968491446e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 4,
+      "intervention": "zero",
+      "a_effect": 6.312808081672346e-06,
+      "b_effect": -7.036710396185932e-06
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 4,
+      "intervention": "mean",
+      "a_effect": 7.121155457984049e-06,
+      "b_effect": -3.01276176315971e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 4,
+      "intervention": "patch",
+      "a_effect": 7.409850949523943e-07,
+      "b_effect": -7.201705271970336e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 5,
+      "intervention": "zero",
+      "a_effect": -3.0890417594768647e-06,
+      "b_effect": -0.00019289743561565914
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 5,
+      "intervention": "mean",
+      "a_effect": -2.6175057899617048e-06,
+      "b_effect": -0.00011406282813004187
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 5,
+      "intervention": "patch",
+      "a_effect": -7.101909091881389e-06,
+      "b_effect": 0.0002609990008008849
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 6,
+      "intervention": "zero",
+      "a_effect": -1.5782020204180865e-06,
+      "b_effect": -1.7505928402810507e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 6,
+      "intervention": "mean",
+      "a_effect": 1.9246366102659592e-07,
+      "b_effect": -1.6778666725283653e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 6,
+      "intervention": "patch",
+      "a_effect": -1.4819701899047887e-06,
+      "b_effect": -1.9245214487644405e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 7,
+      "intervention": "zero",
+      "a_effect": 1.5002542377023153e-05,
+      "b_effect": -2.1253908449182106e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 7,
+      "intervention": "mean",
+      "a_effect": 1.0758718651386712e-05,
+      "b_effect": -4.02715919321492e-06
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "arithmetic",
+      "matched_pair": 7,
+      "intervention": "patch",
+      "a_effect": 1.985262663489337e-05,
+      "b_effect": -1.545814936071474e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "comparison",
+      "matched_pair": 0,
+      "intervention": "zero",
+      "a_effect": -0.00015241197316696132,
+      "b_effect": -0.0001702615903896026
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "comparison",
+      "matched_pair": 0,
+      "intervention": "mean",
+      "a_effect": 5.7051040719808696e-05,
+      "b_effect": -0.00023859906195391095
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "comparison",
+      "matched_pair": 0,
+      "intervention": "patch",
+      "a_effect": -3.4681951716992584e-05,
+      "b_effect": -0.00024256200994335193
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "comparison",
+      "matched_pair": 1,
+      "intervention": "zero",
+      "a_effect": 7.145213415612373e-05,
+      "b_effect": 6.880509663527093e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "comparison",
+      "matched_pair": 1,
+      "intervention": "mean",
+      "a_effect": 6.971996120688438e-06,
+      "b_effect": 8.143097355126017e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "comparison",
+      "matched_pair": 1,
+      "intervention": "patch",
+      "a_effect": 5.599249058416242e-05,
+      "b_effect": 4.8577171550738034e-06
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "comparison",
+      "matched_pair": 2,
+      "intervention": "zero",
+      "a_effect": -7.003752624757825e-05,
+      "b_effect": 0.0002251970670096973
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "comparison",
+      "matched_pair": 2,
+      "intervention": "mean",
+      "a_effect": -5.484252020952851e-05,
+      "b_effect": 0.00015948387942571615
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "comparison",
+      "matched_pair": 2,
+      "intervention": "patch",
+      "a_effect": -0.00013372375168127886,
+      "b_effect": 0.00011304382424406374
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "comparison",
+      "matched_pair": 3,
+      "intervention": "zero",
+      "a_effect": -4.085041205289498e-05,
+      "b_effect": -3.5499024416862616e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "comparison",
+      "matched_pair": 3,
+      "intervention": "mean",
+      "a_effect": -3.9455050510452165e-05,
+      "b_effect": 4.86078812568908e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "comparison",
+      "matched_pair": 3,
+      "intervention": "patch",
+      "a_effect": -3.0154244091341916e-05,
+      "b_effect": -0.00012097809559735095
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "comparison",
+      "matched_pair": 4,
+      "intervention": "zero",
+      "a_effect": -3.4123807100015454e-05,
+      "b_effect": 1.3122815797370352e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "comparison",
+      "matched_pair": 4,
+      "intervention": "mean",
+      "a_effect": -3.315186561183115e-05,
+      "b_effect": -4.422197685998221e-06
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "comparison",
+      "matched_pair": 4,
+      "intervention": "patch",
+      "a_effect": -5.863886592327811e-05,
+      "b_effect": 9.334354774706472e-06
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "comparison",
+      "matched_pair": 5,
+      "intervention": "zero",
+      "a_effect": -1.488225258888153e-05,
+      "b_effect": 0.0013496287701060007
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "comparison",
+      "matched_pair": 5,
+      "intervention": "mean",
+      "a_effect": -1.180764560398166e-05,
+      "b_effect": 0.001582359486393265
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "comparison",
+      "matched_pair": 5,
+      "intervention": "patch",
+      "a_effect": 1.6624048721172223e-05,
+      "b_effect": -0.0005202964047017598
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "comparison",
+      "matched_pair": 6,
+      "intervention": "zero",
+      "a_effect": 8.218198325835646e-06,
+      "b_effect": -1.2468140698022762e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "comparison",
+      "matched_pair": 6,
+      "intervention": "mean",
+      "a_effect": 8.112343312271018e-06,
+      "b_effect": 3.0430527005922104e-06
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "comparison",
+      "matched_pair": 6,
+      "intervention": "patch",
+      "a_effect": 1.711483105679004e-05,
+      "b_effect": 4.980835158831708e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "comparison",
+      "matched_pair": 7,
+      "intervention": "zero",
+      "a_effect": 2.293685680284457e-05,
+      "b_effect": 0.00015632496737918395
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "comparison",
+      "matched_pair": 7,
+      "intervention": "mean",
+      "a_effect": 1.4232687732916768e-05,
+      "b_effect": 0.00011063450820680587
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "comparison",
+      "matched_pair": 7,
+      "intervention": "patch",
+      "a_effect": 1.963610501623845e-05,
+      "b_effect": 0.00013409532781178445
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "negation",
+      "matched_pair": 0,
+      "intervention": "zero",
+      "a_effect": 0.00020420394434921829,
+      "b_effect": -0.0001677001217173151
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "negation",
+      "matched_pair": 0,
+      "intervention": "mean",
+      "a_effect": 5.875434411989407e-05,
+      "b_effect": -0.0001575812735399789
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "negation",
+      "matched_pair": 0,
+      "intervention": "patch",
+      "a_effect": 2.6718767742017178e-05,
+      "b_effect": -0.00022729509829822486
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "negation",
+      "matched_pair": 1,
+      "intervention": "zero",
+      "a_effect": 8.774418306202508e-05,
+      "b_effect": -8.946295760594256e-06
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "negation",
+      "matched_pair": 1,
+      "intervention": "mean",
+      "a_effect": -2.985111382522503e-05,
+      "b_effect": 1.739844443127583e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "negation",
+      "matched_pair": 1,
+      "intervention": "patch",
+      "a_effect": 5.918738735720391e-05,
+      "b_effect": 6.812669130844166e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "negation",
+      "matched_pair": 2,
+      "intervention": "zero",
+      "a_effect": 0.0009216411103750086,
+      "b_effect": 2.9368250352183263e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "negation",
+      "matched_pair": 2,
+      "intervention": "mean",
+      "a_effect": 0.00019721751345395285,
+      "b_effect": -0.0001742957290614886
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "negation",
+      "matched_pair": 2,
+      "intervention": "patch",
+      "a_effect": 0.00014271661624274654,
+      "b_effect": 0.00013372820723368548
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "negation",
+      "matched_pair": 3,
+      "intervention": "zero",
+      "a_effect": 1.9039467667056003e-05,
+      "b_effect": -0.00013468439581162386
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "negation",
+      "matched_pair": 3,
+      "intervention": "mean",
+      "a_effect": 1.7273613577136984e-06,
+      "b_effect": -0.00032725798361694474
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "negation",
+      "matched_pair": 3,
+      "intervention": "patch",
+      "a_effect": -2.8903230294669044e-05,
+      "b_effect": -0.0004664204129439355
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "negation",
+      "matched_pair": 4,
+      "intervention": "zero",
+      "a_effect": -4.984808820588835e-06,
+      "b_effect": 0.0003062120636321609
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "negation",
+      "matched_pair": 4,
+      "intervention": "mean",
+      "a_effect": -4.955939271434845e-06,
+      "b_effect": 0.00012099345045042734
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "negation",
+      "matched_pair": 4,
+      "intervention": "patch",
+      "a_effect": 3.488403856107051e-05,
+      "b_effect": 0.00013268128543302303
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "negation",
+      "matched_pair": 5,
+      "intervention": "zero",
+      "a_effect": 3.656809559505323e-05,
+      "b_effect": 0.0025561838110377357
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "negation",
+      "matched_pair": 5,
+      "intervention": "mean",
+      "a_effect": 2.5121319355496433e-05,
+      "b_effect": 0.0008197928139566046
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "negation",
+      "matched_pair": 5,
+      "intervention": "patch",
+      "a_effect": -2.327366820964111e-05,
+      "b_effect": -0.0017780891944536496
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "negation",
+      "matched_pair": 6,
+      "intervention": "zero",
+      "a_effect": 2.916786782858061e-05,
+      "b_effect": -5.0277372555013864e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "negation",
+      "matched_pair": 6,
+      "intervention": "mean",
+      "a_effect": 3.34742422440507e-05,
+      "b_effect": -6.108579322505308e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "negation",
+      "matched_pair": 6,
+      "intervention": "patch",
+      "a_effect": 1.488225258888153e-05,
+      "b_effect": -6.291441663687684e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "negation",
+      "matched_pair": 7,
+      "intervention": "zero",
+      "a_effect": 7.912662263955924e-05,
+      "b_effect": 8.556980440321242e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "negation",
+      "matched_pair": 7,
+      "intervention": "mean",
+      "a_effect": 8.144580975492973e-05,
+      "b_effect": 1.5867146810840207e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "negation",
+      "matched_pair": 7,
+      "intervention": "patch",
+      "a_effect": 0.0001446027601208072,
+      "b_effect": 7.703529788421207e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "syntax",
+      "matched_pair": 0,
+      "intervention": "zero",
+      "a_effect": 0.001143084987160684,
+      "b_effect": -1.8400697568443357e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "syntax",
+      "matched_pair": 0,
+      "intervention": "mean",
+      "a_effect": 0.000425301386545046,
+      "b_effect": -3.824754311753512e-07
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "syntax",
+      "matched_pair": 0,
+      "intervention": "patch",
+      "a_effect": 4.5820786098906826e-05,
+      "b_effect": 0.00031954845147686643
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "syntax",
+      "matched_pair": 1,
+      "intervention": "zero",
+      "a_effect": 0.0002611010141402057,
+      "b_effect": 0.00010918138074748638
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "syntax",
+      "matched_pair": 1,
+      "intervention": "mean",
+      "a_effect": -1.4829325082099216e-05,
+      "b_effect": 0.00010887149189449029
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "syntax",
+      "matched_pair": 1,
+      "intervention": "patch",
+      "a_effect": -0.0004204464906956501,
+      "b_effect": -0.000151421185664881
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "syntax",
+      "matched_pair": 2,
+      "intervention": "zero",
+      "a_effect": -0.003576797604025041,
+      "b_effect": 0.001034576498789046
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "syntax",
+      "matched_pair": 2,
+      "intervention": "mean",
+      "a_effect": -0.003954204408523619,
+      "b_effect": 0.0007954902692238934
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "syntax",
+      "matched_pair": 2,
+      "intervention": "patch",
+      "a_effect": -0.007730740799962061,
+      "b_effect": 0.0020559087388518447
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "syntax",
+      "matched_pair": 3,
+      "intervention": "zero",
+      "a_effect": 0.00036854866449982854,
+      "b_effect": 0.004747374389075449
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "syntax",
+      "matched_pair": 3,
+      "intervention": "mean",
+      "a_effect": 0.00030747513326456397,
+      "b_effect": 0.0032696400797531874
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "syntax",
+      "matched_pair": 3,
+      "intervention": "patch",
+      "a_effect": -5.638704108926694e-05,
+      "b_effect": 0.0034366590043522047
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "syntax",
+      "matched_pair": 4,
+      "intervention": "zero",
+      "a_effect": -0.0013514076538558716,
+      "b_effect": 5.412446119851484e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "syntax",
+      "matched_pair": 4,
+      "intervention": "mean",
+      "a_effect": -0.0013509264947033051,
+      "b_effect": 0.00013329687545181253
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "syntax",
+      "matched_pair": 4,
+      "intervention": "patch",
+      "a_effect": -0.0025086002273698054,
+      "b_effect": 0.0006474471512358166
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "syntax",
+      "matched_pair": 5,
+      "intervention": "zero",
+      "a_effect": 4.191377378006693e-05,
+      "b_effect": -0.0033038618595732415
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "syntax",
+      "matched_pair": 5,
+      "intervention": "mean",
+      "a_effect": 4.7042930346425706e-05,
+      "b_effect": -0.0051162202943019095
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "syntax",
+      "matched_pair": 5,
+      "intervention": "patch",
+      "a_effect": 4.3689251053037274e-05,
+      "b_effect": -0.002439400382121706
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "syntax",
+      "matched_pair": 6,
+      "intervention": "zero",
+      "a_effect": -9.556301929123054e-05,
+      "b_effect": -1.9232651426036457e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "syntax",
+      "matched_pair": 6,
+      "intervention": "mean",
+      "a_effect": -0.00010232330538478972,
+      "b_effect": -1.7283980981070068e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "syntax",
+      "matched_pair": 6,
+      "intervention": "patch",
+      "a_effect": -0.00018190221762776147,
+      "b_effect": -5.121820627987586e-05
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "syntax",
+      "matched_pair": 7,
+      "intervention": "zero",
+      "a_effect": -0.00021968283428728226,
+      "b_effect": -0.0020564280120649735
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "syntax",
+      "matched_pair": 7,
+      "intervention": "mean",
+      "a_effect": -0.0005914263955601523,
+      "b_effect": -0.001760285940259451
+    },
+    {
+      "pair": "smol_olmo",
+      "concept": "syntax",
+      "matched_pair": 7,
+      "intervention": "patch",
+      "a_effect": -0.0010424120576691975,
+      "b_effect": -0.003211967251598294
+    }
+  ]
+}

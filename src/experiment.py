@@ -280,14 +280,39 @@ def _cluster_scores(a,b,groups,source,target):
     return np.asarray(out),invalid
 
 
+
+def analysis_input_signature(paths,dataset,weight_similarity=None):
+    """Content-addressed analysis inputs; independent of dictionary/set hash order."""
+    signature={"version":"frozen-replay-inputs-v1", "dataset_sha256":hashlib.sha256(json.dumps(dataset,sort_keys=True).encode()).hexdigest(),
+        "files":{str(i)+":"+Path(p).name:hashlib.sha256(Path(p).read_bytes()).hexdigest() for i,p in enumerate(paths)}}
+    if weight_similarity is not None:
+        weight=np.ascontiguousarray(weight_similarity,dtype=np.float64)
+        signature["weight_similarity_sha256"]=hashlib.sha256(weight.tobytes()).hexdigest()
+        signature["weight_similarity_shape"]=list(weight.shape)
+    return signature
+
+
+def _resume_analysis(out,signature):
+    sidecar=out/"input_signature.json"
+    if (out/"metrics.json").exists():
+        if not sidecar.exists():
+            raise ValueError("Historical analysis lacks verified input signature; run scripts/validate_results.py to replay frozen maps and backfill safely")
+        saved=json.loads(sidecar.read_text())
+        if saved.get("inputs")!=signature:raise ValueError("Analysis inputs changed; preserve existing results and use a new run directory")
+        return json.loads((out/"metrics.json").read_text())
+    return None
+
+
 def analyze_pair(collection_a,collection_b,dataset,output_dir,pair_name="pair",weight_similarity=None):
     """Frozen D2 maps evaluated on D3; E1/E2/E3 share these measurements."""
     from .alignment import fit_alignment,calibration_threshold,match_neurons,semantic_fingerprint
     from .statistics import cluster_bootstrap,paired_randomization_test,fdr_bh
     import pandas as pd
     out=Path(output_dir);out.mkdir(parents=True,exist_ok=True)
-    if (out/"metrics.json").exists():return json.loads((out/"metrics.json").read_text())
     ca,cb=Path(collection_a),Path(collection_b)
+    input_signature=analysis_input_signature([ca/"D2.npz",cb/"D2.npz",ca/"D3.npz",cb/"D3.npz"],dataset,weight_similarity)
+    resumed=_resume_analysis(out,input_signature)
+    if resumed is not None:return resumed
     a2,b2=np.load(ca/"D2.npz"),np.load(cb/"D2.npz")
     methods=["random","activation","rank","semantic","sign_semantic","label_shuffled"]
     maps={}
@@ -329,6 +354,7 @@ def analyze_pair(collection_a,collection_b,dataset,output_dir,pair_name="pair",w
     np.savez_compressed(out/"cluster_scores.npz",groups=unique,**cluster)
     metrics={"pair":pair_name,"metric":"mean within-wrapper held-out matched-neuron Pearson, equal wrapper weight","mapping_split":"D2","evaluation_split":"D3","partial_threshold":float(threshold),"results":results,"comparisons":comparisons,"semantic_profile_cross_split_sign_consistency":{"a":float(np.mean(np.sign(f2a)==np.sign(f3a))),"b":float(np.mean(np.sign(f2b)==np.sign(f3b)))},"limitations":["Six wrapper clusters: exploratory intervals and low-powered tests.","Activation response generalization is not a causal correspondence claim.","Synthetic truth contrasts have surface shortcuts.","Partial mapping is selected using shuffled D2 row-maximum null; zero coverage is allowed.","Constant response pairs contribute zero and are explicitly counted."]}
     _json(out/"metrics.json",metrics)
+    _json(out/"input_signature.json",{"inputs":input_signature,"validation":"written at initial analysis completion"})
     return metrics
 
 
@@ -339,7 +365,9 @@ def analyze_causal_pair(causal_a,causal_b,collection_a,collection_b,dataset,outp
     import pandas as pd
     from scipy.stats import rankdata
     out=Path(output_dir);out.mkdir(parents=True,exist_ok=True)
-    if (out/"metrics.json").exists():return json.loads((out/"metrics.json").read_text())
+    input_signature=analysis_input_signature([Path(causal_a)/"D2_causal.npz",Path(causal_b)/"D2_causal.npz",Path(causal_a)/"D4_causal.npz",Path(causal_b)/"D4_causal.npz",Path(collection_a)/"D2.npz",Path(collection_b)/"D2.npz"],dataset)
+    resumed=_resume_analysis(out,input_signature)
+    if resumed is not None:return resumed
     a,b=np.load(Path(causal_a)/"D2_causal.npz"),np.load(Path(causal_b)/"D2_causal.npz")
     if not np.array_equal(a["row_ids"],b["row_ids"]):raise ValueError("Causal calibration row mismatch")
     # No D4 value contributes to matching, normalization, threshold, or weight.
@@ -392,4 +420,5 @@ def analyze_causal_pair(causal_a,causal_b,collection_a,collection_b,dataset,outp
     np.savez_compressed(out/"cluster_scores.npz",groups=ug,**scores)
     metrics={"pair":pair_name,"metric":"D4 within-wrapper Pearson of signed per-example effects across three interventions","causal_weight":best_weight,"results":results,"comparisons":comparisons,"mismatched_task_control":cluster_bootstrap(wrong,ug),"normalization":{"a":scale_a,"b":scale_b},"limitations":["Six held-out wrapper clusters; exploratory inference only.","Zero/mean/patch effects refer only to final prompt position.","Candidate semantic fingerprints are truth contrasts, not verified unique meanings.","Low-competence tasks are retained as controls and limit causal interpretation.","Selected causal neurons are small D1 functional/random subsets.","Cross-task generalization to entirely new task families was not tested."]}
     _json(out/"metrics.json",metrics)
+    _json(out/"input_signature.json",{"inputs":input_signature,"validation":"written at initial analysis completion"})
     return metrics

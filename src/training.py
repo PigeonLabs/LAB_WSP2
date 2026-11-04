@@ -50,6 +50,8 @@ def train_independent(config, train_records, output_dir, device="cuda"):
             if m.get("signature") != signature:
                 raise ValueError("Refusing to reuse training with different config or data")
             if m.get("completed"):
+                if not (out / "final.pt").exists():
+                    raise ValueError("Archived manifest has no model weights. Use scripts/new_run.py for a fresh reproduction; do not overwrite archived evidence.")
                 manifests.append(m)
                 continue
         elif (out / "initial.pt").exists():

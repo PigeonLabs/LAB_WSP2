@@ -218,7 +218,9 @@ def similarity_for_method(a, b, records, method, signs_a=None, signs_b=None, see
             # Shuffle truth labels within each concept, preserving category sizes.
             labels = np.array([r['label'] for r in records])
             names = np.array([r['concept'] for r in records])
-            for name in set(names):
+            # Canonical order is essential: hash-randomized set iteration would
+            # assign different RNG draws to concepts across Python processes.
+            for name in sorted(set(names)):
                 ids = np.flatnonzero(names == name)
                 labels[ids] = rng.permutation(labels[ids])
             records_b = [dict(r, label=int(label)) for r, label in zip(records, labels)]

@@ -1,0 +1,23 @@
+{
+  "execution_status": "E1_E2_E3_E4_MEASURED",
+  "training_seeds": 2,
+  "pretrained_model_families": 3,
+  "untrained_controls": 2,
+  "neurons_per_model": 64,
+  "causal_neurons_per_model": 8,
+  "D4_examples_per_model": 512,
+  "D4_effects_total": 61440,
+  "all_causal_effects_total": 122880,
+  "gpu_active_process_wall_seconds": 387.26956511099706,
+  "gpu_time_scope": "Sum of measured training/collection/causal wall intervals, includes within-process CPU overhead; diagnostics and loading partly excluded; not a hardware utilization integral. All GPU work sequential and total session well below8hours.",
+  "max_torch_allocated_bytes": 6956420096,
+  "natural_diagnostics_models": 5,
+  "natural_paragraphs_per_model": 30,
+  "budgets": {
+    "gpu_hours": 8,
+    "extra_disk_gb": 60
+  },
+  "source_hypotheses": "configs/verdicts.json",
+  "measured_wall_gpu_hours": 0.10757487919749918,
+  "project_bytes_excluding_borrowed_environment": 8786533559
+}
