@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "criteria": {
+    "token_ids_exact": true,
+    "fp32_reference_rmse_max": 0.001,
+    "fp32_reference_max_abs_max": 0.01,
+    "top1_exact": true,
+    "scope": "eight preselected engineering fixtures; fixed before either forward output"
+  },
+  "scope": "8 engineering fixtures; official pinned graph with recorded CPU analytic FP32 GELU patch; shared dequantizer; no original-map or arbitrary-context equality claim",
+  "reference_patch": "results/followup-v3-gemma-map/reference_gelu_patch.json",
+  "original_failed_reference": "results/followup-v3-gemma-map/engineering_engine/forward_parity.json",
+  "rows": [
+    {
+      "id": "E-negation-00-s0-l0-c0-en",
+      "token_ids_exact": true,
+      "top1_exact": true,
+      "rmse": 1.3193836228033588e-05,
+      "max_abs": 4.673004150390625e-05,
+      "passed": true
+    },
+    {
+      "id": "E-negation-00-s0-l0-c0-ko",
+      "token_ids_exact": true,
+      "top1_exact": true,
+      "rmse": 3.230773828563665e-05,
+      "max_abs": 6.783008575439453e-05,
+      "passed": true
+    },
+    {
+      "id": "E-numeric_comparison-00-s1-l0-c1-en",
+      "token_ids_exact": true,
+      "top1_exact": true,
+      "rmse": 6.201936728116309e-06,
+      "max_abs": 3.0517578125e-05,
+      "passed": true
+    },
+    {
+      "id": "E-numeric_comparison-00-s1-l0-c1-ko",
+      "token_ids_exact": true,
+      "top1_exact": true,
+      "rmse": 1.4951875735405567e-05,
+      "max_abs": 6.008148193359375e-05,
+      "passed": true
+    },
+    {
+      "id": "E-ownership_coreference-00-s0-l0-c0-en",
+      "token_ids_exact": true,
+      "top1_exact": true,
+      "rmse": 4.4783483176939066e-05,
+      "max_abs": 7.915496826171875e-05,
+      "passed": true
+    },
+    {
+      "id": "E-ownership_coreference-00-s0-l0-c0-ko",
+      "token_ids_exact": true,
+      "top1_exact": true,
+      "rmse": 1.1148700937445595e-05,
+      "max_abs": 6.437301635742188e-05,
+      "passed": true
+    },
+    {
+      "id": "E-temporal_order-00-s1-l0-c1-en",
+      "token_ids_exact": true,
+      "top1_exact": true,
+      "rmse": 4.259839197127851e-05,
+      "max_abs": 8.535385131835938e-05,
+      "passed": true
+    },
+    {
+      "id": "E-temporal_order-00-s1-l0-c1-ko",
+      "token_ids_exact": true,
+      "top1_exact": true,
+      "rmse": 8.907038528515662e-06,
+      "max_abs": 5.6743621826171875e-05,
+      "passed": true
+    }
+  ]
+}

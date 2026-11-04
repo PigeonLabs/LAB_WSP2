@@ -1,0 +1,9 @@
+{
+  "id": "common_fourshot_v1",
+  "prefix": {
+    "en": "Judge each statement using only the supplied record. Follow that example's letter mapping. Give the letter and the same truth sentence as in these examples.\n\nRecord: The card is blue.\nStatement: The card is blue.\nUse A for a true statement and B for a false statement.\nAnswer: A. The statement is true.\n\nRecord: The card is green.\nStatement: The card is red.\nUse B for a true statement and A for a false statement.\nAnswer: A. The statement is false.\n\nRecord: The box is closed.\nStatement: The box is closed.\nUse B for a true statement and A for a false statement.\nAnswer: B. The statement is true.\n\nRecord: The door is open.\nStatement: The door is closed.\nUse A for a true statement and B for a false statement.\nAnswer: B. The statement is false.",
+    "ko": "제시된 기록만으로 각 진술을 판단하십시오. 문항마다 주어진 글자 대응을 따르십시오. 예시처럼 글자와 참·거짓 문장을 함께 답하십시오.\n\n기록: 이 카드는 파란색이다.\n진술: 이 카드는 파란색이다.\n진술이 참이면 A, 거짓이면 B로 답하십시오.\n답: A. 이 진술은 참이다.\n\n기록: 이 카드는 초록색이다.\n진술: 이 카드는 빨간색이다.\n진술이 참이면 B, 거짓이면 A로 답하십시오.\n답: A. 이 진술은 거짓이다.\n\n기록: 이 상자는 닫혀 있다.\n진술: 이 상자는 닫혀 있다.\n진술이 참이면 B, 거짓이면 A로 답하십시오.\n답: B. 이 진술은 참이다.\n\n기록: 이 문은 열려 있다.\n진술: 이 문은 닫혀 있다.\n진술이 참이면 A, 거짓이면 B로 답하십시오.\n답: B. 이 진술은 거짓이다."
+  },
+  "selection_rule": "Among raw and this shared four-shot candidate, maximize minimum of the two models engineering macro accuracy; ties choose raw. Freeze before any readiness inference.",
+  "scope": "E-only adaptive calibration, not held-out accuracy."
+}

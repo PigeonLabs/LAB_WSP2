@@ -1,0 +1,20 @@
+{
+  "scope": "CPU operation-only synthetic million-input probe; not full-model proof",
+  "input_domain": [
+    -12,
+    12
+  ],
+  "input_count": 1000001,
+  "llama_vec_h_sha256": "d969d24adcf494eaac83a865ae1c46aab744ce71d2fd8028286071c4c651a6be",
+  "fp32_direct_algebra_vs_torch_gelu_tanh": {
+    "rmse": 1.4577914994986883e-08,
+    "max_abs": 4.76837158203125e-07,
+    "max_input": 4.056503772735596
+  },
+  "emulated_llama_fp16_lut_vs_torch_gelu_tanh": {
+    "rmse": 0.0008334459450331732,
+    "max_abs": 0.00390625,
+    "max_input": 8.15234375
+  },
+  "actual_full_model_attribution": "PENDING_SEPARATE_REFERENCE_REBUILD"
+}

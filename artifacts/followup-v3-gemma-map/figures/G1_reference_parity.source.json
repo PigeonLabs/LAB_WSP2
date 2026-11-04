@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "stage": "G1",
+  "figure": {
+    "id": "reference_parity",
+    "kind": "bar",
+    "title": "Independent reference error before and after FP32 GELU",
+    "x": "reference",
+    "y": "max_logit_error",
+    "rows": [
+      {
+        "reference": "Default CPU FP16 GELU LUT",
+        "max_logit_error": 0.029277324676513672
+      },
+      {
+        "reference": "Analytic FP32 GELU",
+        "max_logit_error": 8.535385131835938e-05
+      }
+    ],
+    "sources": [
+      "results/followup-v3-gemma-map/engineering_engine/forward_parity.json",
+      "results/followup-v3-gemma-map/engineering_engine/forward_parity_fp32_gelu.json"
+    ],
+    "reference": 0.01,
+    "xlabel": "Reference arithmetic",
+    "ylabel": "Maximum absolute logit error",
+    "caption": "Maximum across8 engineering fixtures and262144 vocabulary logits; frozen limit .01. Original failure and patched independent graph are both retained."
+  },
+  "sources": [
+    {
+      "path": "results/followup-v3-gemma-map/stages/G1.json",
+      "sha256": "67bb66d42b6e2bf22a4e7c4633b7ef711354dd7f3e3b828a8b65591b44a2693e"
+    },
+    {
+      "path": "results/followup-v3-gemma-map/engineering_engine/forward_parity.json",
+      "sha256": "2bc5c32bffd2503a35ce86578be05aff471efe08a2a96ad7eb6071b67412418f"
+    },
+    {
+      "path": "results/followup-v3-gemma-map/engineering_engine/forward_parity_fp32_gelu.json",
+      "sha256": "d877216af30db7bdd083553023a6132c6326b596bc6dc987789dc4bbfce4187d"
+    }
+  ],
+  "missing_policy": "null remains missing; no statistical inference by renderer"
+}

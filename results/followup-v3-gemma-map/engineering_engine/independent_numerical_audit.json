@@ -1,0 +1,273 @@
+{
+  "status": "PASS_SCOPED_BASELINE_REPLAY_NOT_FULL_INTERVENTION_GATE",
+  "audited_at_utc": "2026-11-04T07:25:19.419162+00:00",
+  "method": "Independent CPU replay of stored float32 arrays; no model inference and no artifact mutation.",
+  "claim": "On eight preselected raw engineering prompts (39–59 tokens), the unchanged Transformers FP32 engine agrees within frozen tolerances with the pinned llama.cpp CPU graph using a documented analytic-FP32 GELU patch, at the last prompt position over all262144 vocabulary logits. Token IDs and first next-token argmax agree on all eight.",
+  "criteria_unchanged": {
+    "token_ids_exact": true,
+    "fp32_reference_rmse_max": 0.001,
+    "fp32_reference_max_abs_max": 0.01,
+    "top1_exact": true,
+    "scope": "eight preselected engineering fixtures; fixed before either forward output"
+  },
+  "original_reference_failure_retained": true,
+  "patch_attribution": "Only the GGML_GELU_FP16 define was removed; selected compiler/backend build settings are identical. Large original discrepancies disappear with this change. Default reference F32 weights/cache alone did not imply F32 GELU arithmetic.",
+  "scope": {
+    "fixtures": 8,
+    "concepts": 4,
+    "languages": [
+      "en",
+      "ko"
+    ],
+    "token_length_min": 39,
+    "token_length_max": 59,
+    "position": "last_prompt_token",
+    "batch_size": 1,
+    "original_map_engine_reproduced": false
+  },
+  "rows": [
+    {
+      "id": "E-negation-00-s0-l0-c0-en",
+      "tokens": 39,
+      "vocabulary_logits": 262144,
+      "default_fp16_gelu": {
+        "rmse": 0.0031396027693952793,
+        "max_abs": 0.00949859619140625,
+        "token_ids_exact": true,
+        "top1_exact": true,
+        "passed": false
+      },
+      "analytic_fp32_gelu": {
+        "rmse": 1.3193836228033588e-05,
+        "max_abs": 4.673004150390625e-05,
+        "token_ids_exact": true,
+        "top1_exact": true,
+        "passed": true
+      }
+    },
+    {
+      "id": "E-negation-00-s0-l0-c0-ko",
+      "tokens": 52,
+      "vocabulary_logits": 262144,
+      "default_fp16_gelu": {
+        "rmse": 0.0021772926134058304,
+        "max_abs": 0.009639501571655273,
+        "token_ids_exact": true,
+        "top1_exact": true,
+        "passed": false
+      },
+      "analytic_fp32_gelu": {
+        "rmse": 3.230773828563665e-05,
+        "max_abs": 6.783008575439453e-05,
+        "token_ids_exact": true,
+        "top1_exact": true,
+        "passed": true
+      }
+    },
+    {
+      "id": "E-numeric_comparison-00-s1-l0-c1-en",
+      "tokens": 45,
+      "vocabulary_logits": 262144,
+      "default_fp16_gelu": {
+        "rmse": 0.008739125625908954,
+        "max_abs": 0.017615795135498047,
+        "token_ids_exact": true,
+        "top1_exact": true,
+        "passed": false
+      },
+      "analytic_fp32_gelu": {
+        "rmse": 6.201936728116309e-06,
+        "max_abs": 3.0517578125e-05,
+        "token_ids_exact": true,
+        "top1_exact": true,
+        "passed": true
+      }
+    },
+    {
+      "id": "E-numeric_comparison-00-s1-l0-c1-ko",
+      "tokens": 59,
+      "vocabulary_logits": 262144,
+      "default_fp16_gelu": {
+        "rmse": 0.009060936698476987,
+        "max_abs": 0.015574455261230469,
+        "token_ids_exact": true,
+        "top1_exact": true,
+        "passed": false
+      },
+      "analytic_fp32_gelu": {
+        "rmse": 1.4951875735405567e-05,
+        "max_abs": 6.008148193359375e-05,
+        "token_ids_exact": true,
+        "top1_exact": true,
+        "passed": true
+      }
+    },
+    {
+      "id": "E-ownership_coreference-00-s0-l0-c0-en",
+      "tokens": 44,
+      "vocabulary_logits": 262144,
+      "default_fp16_gelu": {
+        "rmse": 0.006276979669667825,
+        "max_abs": 0.015184402465820312,
+        "token_ids_exact": true,
+        "top1_exact": true,
+        "passed": false
+      },
+      "analytic_fp32_gelu": {
+        "rmse": 4.4783483176939066e-05,
+        "max_abs": 7.915496826171875e-05,
+        "token_ids_exact": true,
+        "top1_exact": true,
+        "passed": true
+      }
+    },
+    {
+      "id": "E-ownership_coreference-00-s0-l0-c0-ko",
+      "tokens": 56,
+      "vocabulary_logits": 262144,
+      "default_fp16_gelu": {
+        "rmse": 0.013712116034055161,
+        "max_abs": 0.029277324676513672,
+        "token_ids_exact": true,
+        "top1_exact": true,
+        "passed": false
+      },
+      "analytic_fp32_gelu": {
+        "rmse": 1.1148700937445595e-05,
+        "max_abs": 6.437301635742188e-05,
+        "token_ids_exact": true,
+        "top1_exact": true,
+        "passed": true
+      }
+    },
+    {
+      "id": "E-temporal_order-00-s1-l0-c1-en",
+      "tokens": 39,
+      "vocabulary_logits": 262144,
+      "default_fp16_gelu": {
+        "rmse": 0.0047314037146037845,
+        "max_abs": 0.011509895324707031,
+        "token_ids_exact": true,
+        "top1_exact": true,
+        "passed": false
+      },
+      "analytic_fp32_gelu": {
+        "rmse": 4.259839197127851e-05,
+        "max_abs": 8.535385131835938e-05,
+        "token_ids_exact": true,
+        "top1_exact": true,
+        "passed": true
+      }
+    },
+    {
+      "id": "E-temporal_order-00-s1-l0-c1-ko",
+      "tokens": 53,
+      "vocabulary_logits": 262144,
+      "default_fp16_gelu": {
+        "rmse": 0.0022076789484794974,
+        "max_abs": 0.012835502624511719,
+        "token_ids_exact": true,
+        "top1_exact": true,
+        "passed": false
+      },
+      "analytic_fp32_gelu": {
+        "rmse": 8.907038528515662e-06,
+        "max_abs": 5.6743621826171875e-05,
+        "token_ids_exact": true,
+        "top1_exact": true,
+        "passed": true
+      }
+    }
+  ],
+  "real_hook_coverage": {
+    "checks": 16,
+    "fixtures": 2,
+    "fixture_concept": "negation",
+    "languages": [
+      "en",
+      "ko"
+    ],
+    "source_scenario_families": 1,
+    "layers_zero_based": [
+      5,
+      27
+    ],
+    "neurons": {
+      "5": 277,
+      "27": 2890
+    },
+    "selection": "largest absolute baseline product at last prompt token for each tested layer",
+    "modes": [
+      "capture_only",
+      "scale_1",
+      "self_patch",
+      "zero"
+    ],
+    "identity_checks": 12,
+    "identity_max_logit_error": 0,
+    "zero_checks": 4,
+    "zero_min_maxabs_logit_change": 0.3580513000488281,
+    "zero_max_maxabs_logit_change": 3.2973899841308594,
+    "meaning": "Capture/identity operations preserve logits exactly on these cases; ablating the selected coordinate has a nonzero effect. Zero effect magnitude alone does not validate the full intervention calculation against an independent implementation."
+  },
+  "not_established": [
+    "Independent cross-engine intervention delta-logit parity or activation parity.",
+    "Multi-token greedy continuation equivalence; only the first next-token argmax was compared.",
+    "Chunked/cached versus full forward equivalence, padded-batch scoring parity, or longer-context numerical parity.",
+    "Real pretrained-model native coordinate replacement versus additive W_down-column injection equivalence.",
+    "Counterfactual donor patches, conditional means, multi-neuron groups, statement spans, or nonidentity dose response.",
+    "Original unpublished neuron-map engine reproduction, source checkpoint FP32 equivalence before GGUF quantization, or independent dequantizer correctness.",
+    "Semantic/causal mapping validity, readiness capability, template generalization, or any final test claim."
+  ],
+  "source_sha256": {
+    "results/followup-v3-gemma-map/engineering_engine/validation.json": "159c91587838ca219895aaaf0233f0c9217752fb27e4f6921d9b76fd3b0257c8",
+    "results/followup-v3-gemma-map/engineering_engine/fixtures.json": "e619f34dd6155b4af943839f48575b7d12cdc6776aaf0439282684bd00c5acae",
+    "results/followup-v3-gemma-map/engineering_engine/frozen_numeric_criteria.json": "e3b6cee2771063f1df33417841a97053eb3df3f125e68d9c3b02fcc69bfe3df9",
+    "results/followup-v3-gemma-map/engineering_engine/forward_parity.json": "2bc5c32bffd2503a35ce86578be05aff471efe08a2a96ad7eb6071b67412418f",
+    "results/followup-v3-gemma-map/engineering_engine/forward_parity_fp32_gelu.json": "d877216af30db7bdd083553023a6132c6326b596bc6dc987789dc4bbfce4187d",
+    "results/followup-v3-gemma-map/reference_gelu_patch.json": "17fa1006495e80a771d29854434ed3f5e546884a6bfda39dffa8ff488380e212",
+    "src/gemma_v3_engine.py": "5e759df00d871202e2e1282a50609064548dfdd7e578e06b191794585864368a",
+    "scripts/run_gemma_v3_engineering.py": "d8f993618cff741859073978a4e06fa617d8e9e00b4224d307e1f51bda4df94a",
+    "scripts/gemma_v3_reference.cpp": "585ebbcbfa52af4b56f04347e7b6469880ccfa84f9f7d7beaa993e0ce39a59e5",
+    "results/followup-v3-gemma-map/engineering_engine/fixture_0.npy": "42ec66f6373960a75d582f79f011cf63655e11fbe29dbbaff65697e22d2fa35b",
+    "results/followup-v3-gemma-map/engineering_engine/llama_reference/fixture_0.f32": "6e807e5b8e34aa9cdde51198e696b1d4fb5f73259f634f428d50f8938db35f18",
+    "results/followup-v3-gemma-map/engineering_engine/llama_reference_fp32_gelu/fixture_0.f32": "b763ff0330938b404f53290be524b6e1ca78ec9b083b35011f91289373c61dc4",
+    "results/followup-v3-gemma-map/engineering_engine/fixture_1.npy": "bfd0281bc2c39dd7cb2627f2b6efe7e70305ec43047f962236abc8e0023ef410",
+    "results/followup-v3-gemma-map/engineering_engine/llama_reference/fixture_1.f32": "f60eb3d22345ce51628006f56bd7bd54769c5b613e77ef304bdccbc1f27f39fc",
+    "results/followup-v3-gemma-map/engineering_engine/llama_reference_fp32_gelu/fixture_1.f32": "ae3708aa3818bd4a371ea3758fe76da0d46c1340a1d99afa2bb1b17477d5eac6",
+    "results/followup-v3-gemma-map/engineering_engine/fixture_2.npy": "d56bfc0bda4c3c0440dbb99be86087dbc2645dd707b149bad138a2f521caa733",
+    "results/followup-v3-gemma-map/engineering_engine/llama_reference/fixture_2.f32": "04f8b4af255bf5ede37946072dc63078fbabec8195a66194f1d3200ff2ecb005",
+    "results/followup-v3-gemma-map/engineering_engine/llama_reference_fp32_gelu/fixture_2.f32": "7420415bcba14c2dcdac9f4227d2ad901f17aeb0318a927cf61a10771fd3932d",
+    "results/followup-v3-gemma-map/engineering_engine/fixture_3.npy": "eec4e4ad06821b7e1f897e6dd00852409fd2d40029a72ffe8f847bcfbbfe158c",
+    "results/followup-v3-gemma-map/engineering_engine/llama_reference/fixture_3.f32": "3be1dfec6bd5d625727b8f71fbb6f00112a692999788e80e8d8f1dd5758984c6",
+    "results/followup-v3-gemma-map/engineering_engine/llama_reference_fp32_gelu/fixture_3.f32": "aca720b8ae91094cc397258061516342cd18d9cff9cdc20522f72fed9fefbca1",
+    "results/followup-v3-gemma-map/engineering_engine/fixture_4.npy": "28c9cf20a8f3c7be046dd5d80d3bb433240335e91a024408bc8e6d14f2125a24",
+    "results/followup-v3-gemma-map/engineering_engine/llama_reference/fixture_4.f32": "d3b308676157b2b3b0abd38064671f7c98b777562fe1def13b929a066e8f0d5c",
+    "results/followup-v3-gemma-map/engineering_engine/llama_reference_fp32_gelu/fixture_4.f32": "818841031beac69122fddb474d4d52c9de2aaa77da3b8c308387b87d3f6092ef",
+    "results/followup-v3-gemma-map/engineering_engine/fixture_5.npy": "66270d43b1f501417a6bbccf3d1faab04657d927bf3dca7b98113e2c17ca29b9",
+    "results/followup-v3-gemma-map/engineering_engine/llama_reference/fixture_5.f32": "4ba6dce6d5dd860d9820cc9e6488a6f6532e8e4abe85af84fb11df8ac90f666b",
+    "results/followup-v3-gemma-map/engineering_engine/llama_reference_fp32_gelu/fixture_5.f32": "97f9c2aaa6b9c765e8fa556cfb94ece74bd4610e7b9667a9681af0a38411f3d7",
+    "results/followup-v3-gemma-map/engineering_engine/fixture_6.npy": "f5da2fb18c1840e485b7fb764bba9666ecc33fd5674b1b1cd9aaf35c2941cb2f",
+    "results/followup-v3-gemma-map/engineering_engine/llama_reference/fixture_6.f32": "a820d47c3686d6b6f973e4e9543eba2a0a8205e6376f306a7af9ec6a00024899",
+    "results/followup-v3-gemma-map/engineering_engine/llama_reference_fp32_gelu/fixture_6.f32": "7c2d0679687e6002dd1f0605492509af449b108c4dacfb17a53b266ff4469b3d",
+    "results/followup-v3-gemma-map/engineering_engine/fixture_7.npy": "97870a2444cfa7da7306569d3cff1a9663411c8e59dc03b18f499c30619fb204",
+    "results/followup-v3-gemma-map/engineering_engine/llama_reference/fixture_7.f32": "dbe3527934ca80db0cf2dfb0eb4f1cf5b3a5872477e4f2ee1160c79c9f2e66f9",
+    "results/followup-v3-gemma-map/engineering_engine/llama_reference_fp32_gelu/fixture_7.f32": "70c620d3e96ddaa740c06e106399e2a77495ad93e896b7eb32127f70eb428bfc",
+    "results/followup-v3-gemma-map/engineering_engine/llama_reference/reference.json": "5b950c42600043096f8bed72561b2a61b94ad28069c862af77e2ebc9746f95d9",
+    "results/followup-v3-gemma-map/engineering_engine/llama_reference_fp32_gelu/reference.json": "5cc347b7e08a6d56314d8e07dfefaa843e6a63966dccec50b74fabe10983e9d4"
+  },
+  "binary_sha256_observed_at_audit": {
+    "cache/gemma-v3/reference": "b9308e7699688a54af1262490d497c6811b5a003e24fa9f8001494ecb4189074",
+    "cache/gemma-v3/reference-fp32-gelu": "91a3d53f4c0a34644ed39065c4abdc1a5a3c712b0632a37ce4c5afd07dae6b97",
+    "cache/gemma-v3/llama.cpp/build/bin/libllama.so.0": "bd077287880eed92a6c405c3a07168c7f957a36925c2f353dfcd932a96b3a854",
+    "cache/gemma-v3/llama.cpp/build/bin/libggml.so.0": "86239515b09af68f95bec027f68dfe5aed0c5676548218c6811cb49235173bb9",
+    "cache/gemma-v3/llama.cpp/build/bin/libggml-base.so.0": "8a965e9cf60b279ed4115158bc9f6d95b20b1c4281777dcbf22bebb102ab76d6",
+    "cache/gemma-v3/llama.cpp/build/bin/libggml-cpu.so.0": "131789bbccbf3fe7cbec829c167deffd09cdba842748063877d252b8b90a8d52",
+    "cache/gemma-v3/llama.cpp/build-fp32-gelu/bin/libllama.so.0": "5f2ad8117d55f57eb196fff547f9461efe862e0a3f6da392dd643a4c01dfb655",
+    "cache/gemma-v3/llama.cpp/build-fp32-gelu/bin/libggml.so.0": "efa649c8d649feab442f1c48e58ef40110af628a11fd93140540a25ae2843525",
+    "cache/gemma-v3/llama.cpp/build-fp32-gelu/bin/libggml-base.so.0": "974d10766d728438d833c75b12f596b08680327f96b06fd526a5d3b8f018f13f",
+    "cache/gemma-v3/llama.cpp/build-fp32-gelu/bin/libggml-cpu.so.0": "67276936fa95db9e6d897647e1ec5163880120f5573c3226e3c7ca78823cdc4f"
+  },
+  "binary_provenance_note": "Auditor observed separate dynamic-library directories via ldd. These hashes identify binaries present at audit time; the C++ reference.json itself does not record binary or model-file hashes.",
+  "recommended_followup": "Keep G1 RUNNING until applicable remaining checks or explicit scoped stop; append an execution manifest binding model/reference hashes, command, libraries and output hashes for future runs."
+}

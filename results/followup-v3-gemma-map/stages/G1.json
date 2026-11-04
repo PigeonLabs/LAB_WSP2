@@ -1,0 +1,777 @@
+{
+  "schema_version": 1,
+  "stage": "G1",
+  "status": "MEASURED",
+  "title": "Independent engine parity and readiness diagnostics",
+  "summary": "정확한 GGUF의 FP32 엔진과 별도 reference를 E 8개·R 8개 입력에서 검증했다. GELU lookup 수치 실패는 원본을 보존하고 별도 빌드에서 수정했다. 고정 프롬프트 R1024 정확도는 Gemma 61.72%, Qwen 49.90%이며 공동 능력 적격 축은 없다.",
+  "scope": "G1 engineering and conditional readiness measurements completed; strict template/generalization gate failed. No G2–G5 confirmatory effects measured.",
+  "verdict": "NUMERICAL_CHECKS_PASS; NO_JOINT_CAPABILITY_AXIS; STRICT_TEMPLATE_GATE_FAILED",
+  "sources": [
+    "results/followup-v3-gemma-map/engineering_engine/validation.json",
+    "results/followup-v3-gemma-map/engineering_engine/forward_parity.json",
+    "results/followup-v3-gemma-map/engineering_engine/forward_parity_fp32_gelu.json",
+    "results/followup-v3-gemma-map/reference_gelu_patch.json",
+    "results/followup-v3-gemma-map/prompt_calibration.json",
+    "configs/gemma_v3_prompt_lock.json",
+    "data/followup-v3-gemma-map/engineering_manifest.json",
+    "results/followup-v3-gemma-map/engineering_scores/gemma.json",
+    "results/followup-v3-gemma-map/engineering_scores/qwen.json",
+    "results/followup-v3-gemma-map/readiness_summary.json",
+    "results/followup-v3-gemma-map/readiness_replay_audit.json",
+    "results/followup-v3-gemma-map/readiness_conditional_amendment.json",
+    "results/followup-v3-gemma-map/readiness_scores/gemma.json",
+    "results/followup-v3-gemma-map/readiness_scores/qwen.json",
+    "results/followup-v3-gemma-map/readiness_engine/forward_parity_fp32_gelu.json",
+    "results/followup-v3-gemma-map/engineering_extended_validation/summary.json",
+    "reports/followup-v3-gemma-map/RUN_AMENDMENTS.md",
+    "results/followup-v3-gemma-map/engineering_extended_validation/independent_audit.json"
+  ],
+  "metrics": [
+    {
+      "name": "Independent FP32 reference fixtures passed",
+      "value": 8,
+      "unit": "of8",
+      "source": "results/followup-v3-gemma-map/engineering_engine/forward_parity_fp32_gelu.json"
+    },
+    {
+      "name": "Maximum FP32 logit difference",
+      "value": 8.535385131835938e-05,
+      "unit": "logit",
+      "source": "results/followup-v3-gemma-map/engineering_engine/forward_parity_fp32_gelu.json"
+    },
+    {
+      "name": "Real model native-hook checks passed",
+      "value": 16,
+      "unit": "of16",
+      "source": "results/followup-v3-gemma-map/engineering_engine/validation.json"
+    },
+    {
+      "name": "Readiness FP32 reference fixtures passed",
+      "value": 8,
+      "unit": "of8",
+      "source": "results/followup-v3-gemma-map/readiness_engine/forward_parity_fp32_gelu.json"
+    },
+    {
+      "name": "Readiness maximum logit difference",
+      "value": 0.000213623046875,
+      "unit": "logit",
+      "source": "results/followup-v3-gemma-map/readiness_engine/forward_parity_fp32_gelu.json"
+    },
+    {
+      "name": "Joint conditional capability cells",
+      "value": 0,
+      "unit": "of8",
+      "source": "results/followup-v3-gemma-map/readiness_summary.json"
+    },
+    {
+      "name": "Same-engine arithmetic comparisons passed",
+      "value": 111,
+      "unit": "checks, not independent samples",
+      "source": "results/followup-v3-gemma-map/engineering_extended_validation/independent_audit.json"
+    }
+  ],
+  "figures": [
+    {
+      "id": "reference_parity",
+      "kind": "bar",
+      "title": "Independent reference error before and after FP32 GELU",
+      "x": "reference",
+      "y": "max_logit_error",
+      "rows": [
+        {
+          "reference": "Default CPU FP16 GELU LUT",
+          "max_logit_error": 0.029277324676513672
+        },
+        {
+          "reference": "Analytic FP32 GELU",
+          "max_logit_error": 8.535385131835938e-05
+        }
+      ],
+      "sources": [
+        "results/followup-v3-gemma-map/engineering_engine/forward_parity.json",
+        "results/followup-v3-gemma-map/engineering_engine/forward_parity_fp32_gelu.json"
+      ],
+      "reference": 0.01,
+      "xlabel": "Reference arithmetic",
+      "ylabel": "Maximum absolute logit error",
+      "caption": "Maximum across8 engineering fixtures and262144 vocabulary logits; frozen limit .01. Original failure and patched independent graph are both retained."
+    },
+    {
+      "id": "engineering_accuracy",
+      "kind": "heatmap",
+      "title": "Engineering diagnostic accuracy under common raw prompt",
+      "x": "language",
+      "y": "model_concept",
+      "value": "accuracy",
+      "rows": [
+        {
+          "model_concept": "gemma / negation",
+          "language": "en",
+          "accuracy": 0.9375,
+          "n_variants": 64,
+          "n_scenarios": 8,
+          "renderer_lineages": 1
+        },
+        {
+          "model_concept": "gemma / negation",
+          "language": "ko",
+          "accuracy": 0.9375,
+          "n_variants": 64,
+          "n_scenarios": 8,
+          "renderer_lineages": 1
+        },
+        {
+          "model_concept": "gemma / numeric_comparison",
+          "language": "en",
+          "accuracy": 0.796875,
+          "n_variants": 64,
+          "n_scenarios": 8,
+          "renderer_lineages": 1
+        },
+        {
+          "model_concept": "gemma / numeric_comparison",
+          "language": "ko",
+          "accuracy": 0.703125,
+          "n_variants": 64,
+          "n_scenarios": 8,
+          "renderer_lineages": 1
+        },
+        {
+          "model_concept": "gemma / ownership_coreference",
+          "language": "en",
+          "accuracy": 0.703125,
+          "n_variants": 64,
+          "n_scenarios": 8,
+          "renderer_lineages": 1
+        },
+        {
+          "model_concept": "gemma / ownership_coreference",
+          "language": "ko",
+          "accuracy": 0.53125,
+          "n_variants": 64,
+          "n_scenarios": 8,
+          "renderer_lineages": 1
+        },
+        {
+          "model_concept": "gemma / temporal_order",
+          "language": "en",
+          "accuracy": 0.8125,
+          "n_variants": 64,
+          "n_scenarios": 8,
+          "renderer_lineages": 1
+        },
+        {
+          "model_concept": "gemma / temporal_order",
+          "language": "ko",
+          "accuracy": 0.71875,
+          "n_variants": 64,
+          "n_scenarios": 8,
+          "renderer_lineages": 1
+        },
+        {
+          "model_concept": "qwen / negation",
+          "language": "en",
+          "accuracy": 0.703125,
+          "n_variants": 64,
+          "n_scenarios": 8,
+          "renderer_lineages": 1
+        },
+        {
+          "model_concept": "qwen / negation",
+          "language": "ko",
+          "accuracy": 0.5,
+          "n_variants": 64,
+          "n_scenarios": 8,
+          "renderer_lineages": 1
+        },
+        {
+          "model_concept": "qwen / numeric_comparison",
+          "language": "en",
+          "accuracy": 0.5,
+          "n_variants": 64,
+          "n_scenarios": 8,
+          "renderer_lineages": 1
+        },
+        {
+          "model_concept": "qwen / numeric_comparison",
+          "language": "ko",
+          "accuracy": 0.5,
+          "n_variants": 64,
+          "n_scenarios": 8,
+          "renderer_lineages": 1
+        },
+        {
+          "model_concept": "qwen / ownership_coreference",
+          "language": "en",
+          "accuracy": 0.578125,
+          "n_variants": 64,
+          "n_scenarios": 8,
+          "renderer_lineages": 1
+        },
+        {
+          "model_concept": "qwen / ownership_coreference",
+          "language": "ko",
+          "accuracy": 0.5,
+          "n_variants": 64,
+          "n_scenarios": 8,
+          "renderer_lineages": 1
+        },
+        {
+          "model_concept": "qwen / temporal_order",
+          "language": "en",
+          "accuracy": 0.453125,
+          "n_variants": 64,
+          "n_scenarios": 8,
+          "renderer_lineages": 1
+        },
+        {
+          "model_concept": "qwen / temporal_order",
+          "language": "ko",
+          "accuracy": 0.5,
+          "n_variants": 64,
+          "n_scenarios": 8,
+          "renderer_lineages": 1
+        }
+      ],
+      "unit": "fraction",
+      "vmin": 0,
+      "vmax": 1,
+      "sources": [
+        "results/followup-v3-gemma-map/engineering_scores/gemma.json",
+        "results/followup-v3-gemma-map/engineering_scores/qwen.json"
+      ],
+      "caption": "64 variants per model/concept/language cell,8 scenarios,1 shared renderer lineage. E-only: neither independent readiness nor final test.",
+      "value_label": "Accuracy"
+    },
+    {
+      "id": "readiness_conditional_accuracy",
+      "kind": "interval",
+      "title": "Conditional readiness accuracy — source-cluster bootstrap 95% CI",
+      "x": "cell",
+      "y": "accuracy",
+      "rows": [
+        {
+          "cell": "gemma / negation / en",
+          "accuracy": 0.640625,
+          "low": 0.6015625,
+          "high": 0.6796875,
+          "n_variants": 128,
+          "n_source_clusters": 16
+        },
+        {
+          "cell": "gemma / negation / ko",
+          "accuracy": 0.546875,
+          "low": 0.515625,
+          "high": 0.578125,
+          "n_variants": 128,
+          "n_source_clusters": 16
+        },
+        {
+          "cell": "gemma / ownership_coreference / en",
+          "accuracy": 0.828125,
+          "low": 0.796875,
+          "high": 0.859375,
+          "n_variants": 128,
+          "n_source_clusters": 16
+        },
+        {
+          "cell": "gemma / ownership_coreference / ko",
+          "accuracy": 0.6796875,
+          "low": 0.6328125,
+          "high": 0.71875,
+          "n_variants": 128,
+          "n_source_clusters": 16
+        },
+        {
+          "cell": "gemma / temporal_order / en",
+          "accuracy": 0.6328125,
+          "low": 0.625,
+          "high": 0.6484375,
+          "n_variants": 128,
+          "n_source_clusters": 16
+        },
+        {
+          "cell": "gemma / temporal_order / ko",
+          "accuracy": 0.5,
+          "low": 0.4765625,
+          "high": 0.5234375,
+          "n_variants": 128,
+          "n_source_clusters": 16
+        },
+        {
+          "cell": "gemma / numeric_comparison / en",
+          "accuracy": 0.59375,
+          "low": 0.5625,
+          "high": 0.625,
+          "n_variants": 128,
+          "n_source_clusters": 16
+        },
+        {
+          "cell": "gemma / numeric_comparison / ko",
+          "accuracy": 0.515625,
+          "low": 0.5,
+          "high": 0.5390625,
+          "n_variants": 128,
+          "n_source_clusters": 16
+        },
+        {
+          "cell": "qwen / negation / en",
+          "accuracy": 0.5,
+          "low": 0.5,
+          "high": 0.5,
+          "n_variants": 128,
+          "n_source_clusters": 16
+        },
+        {
+          "cell": "qwen / negation / ko",
+          "accuracy": 0.5,
+          "low": 0.5,
+          "high": 0.5,
+          "n_variants": 128,
+          "n_source_clusters": 16
+        },
+        {
+          "cell": "qwen / ownership_coreference / en",
+          "accuracy": 0.5,
+          "low": 0.5,
+          "high": 0.5,
+          "n_variants": 128,
+          "n_source_clusters": 16
+        },
+        {
+          "cell": "qwen / ownership_coreference / ko",
+          "accuracy": 0.5,
+          "low": 0.5,
+          "high": 0.5,
+          "n_variants": 128,
+          "n_source_clusters": 16
+        },
+        {
+          "cell": "qwen / temporal_order / en",
+          "accuracy": 0.5,
+          "low": 0.5,
+          "high": 0.5,
+          "n_variants": 128,
+          "n_source_clusters": 16
+        },
+        {
+          "cell": "qwen / temporal_order / ko",
+          "accuracy": 0.5,
+          "low": 0.5,
+          "high": 0.5,
+          "n_variants": 128,
+          "n_source_clusters": 16
+        },
+        {
+          "cell": "qwen / numeric_comparison / en",
+          "accuracy": 0.5,
+          "low": 0.4765625,
+          "high": 0.5234375,
+          "n_variants": 128,
+          "n_source_clusters": 16
+        },
+        {
+          "cell": "qwen / numeric_comparison / ko",
+          "accuracy": 0.4921875,
+          "low": 0.4765625,
+          "high": 0.5,
+          "n_variants": 128,
+          "n_source_clusters": 16
+        }
+      ],
+      "unit": "fraction",
+      "reference": 0.75,
+      "xlim": [
+        0,
+        1
+      ],
+      "ylabel": "Accuracy (conditional diagnostic)",
+      "sources": [
+        "results/followup-v3-gemma-map/readiness_summary.json",
+        "results/followup-v3-gemma-map/readiness_replay_audit.json",
+        "results/followup-v3-gemma-map/readiness_conditional_amendment.json",
+        "results/followup-v3-gemma-map/readiness_scores/gemma.json",
+        "results/followup-v3-gemma-map/readiness_scores/qwen.json"
+      ],
+      "caption": "16 model/concept/language cells; dashed line: accuracy threshold .75 only. The separate lower-CI criterion is >.50. 고정 renderer·편의표집 source에 조건부인 진단이다. Source cluster 95% bootstrap CI는 독립 template 모집단 CI가 아니다. 같은 source의 변형을 함께 재표집하며, 공유 reference로 묶은 민감도 CI도 별도로 공개한다. 표의 조건부 기준(.75 정확도 및 CI 하한>.50)은 원래 strict renderer gate 또는 H1–H4의 적격성 통과를 뜻하지 않는다."
+    }
+  ],
+  "limitations": [
+    "Engineering32 scenarios are only4 generating grammar lineages; no independent-template inference.",
+    "GGUF identity and numeric parity do not establish original map engine reproduction.",
+    "Readiness-source diagnostic uses64 real records but four shared new renderers; cannot replace strict template-generalization gate.",
+    "Native hook16checks cover2fixtures ×2layers ×4modes; eight-fixture parity is a separate check.",
+    "고정 renderer·편의표집 source에 조건부인 진단이다. Source cluster 95% bootstrap CI는 독립 template 모집단 CI가 아니다. 같은 source의 변형을 함께 재표집하며, 공유 reference로 묶은 민감도 CI도 별도로 공개한다. 표의 조건부 기준(.75 정확도 및 CI 하한>.50)은 원래 strict renderer gate 또는 H1–H4의 적격성 통과를 뜻하지 않는다.",
+    "Same-engine native-delta equivalence, cached/full and four-step greedy checks cover two short E negation inputs only; independent cross-engine intervention effects remain unvalidated.",
+    "Qwen intervals such as [50%,50%] reflect repeated .5 family scores under the fixed renderer; they do not establish zero population uncertainty.",
+    "Both greedy paths reached EOG on decision2; decisions3–4 were forced arithmetic checks, not normal output generation."
+  ],
+  "tables": [
+    {
+      "title": "조건부 readiness: 정확도·분모·cluster 민감도",
+      "columns": [
+        {
+          "key": "model",
+          "label": "모델"
+        },
+        {
+          "key": "concept",
+          "label": "개념"
+        },
+        {
+          "key": "language",
+          "label": "언어"
+        },
+        {
+          "key": "accuracy",
+          "label": "정확도",
+          "format": "percent"
+        },
+        {
+          "key": "n_variants",
+          "label": "변형 수"
+        },
+        {
+          "key": "n_sources",
+          "label": "source clusters"
+        },
+        {
+          "key": "source_ci",
+          "label": "source 95% CI",
+          "format": "percent_ci"
+        },
+        {
+          "key": "n_shared",
+          "label": "shared-reference clusters"
+        },
+        {
+          "key": "shared_ci",
+          "label": "민감도 95% CI",
+          "format": "percent_ci"
+        },
+        {
+          "key": "conditional_flag",
+          "label": "조건부 기준"
+        },
+        {
+          "key": "shared_flag",
+          "label": "민감도 기준"
+        }
+      ],
+      "rows": [
+        {
+          "model": "gemma",
+          "concept": "negation",
+          "language": "en",
+          "accuracy": 0.640625,
+          "n_variants": 128,
+          "n_sources": 16,
+          "source_ci": [
+            0.6015625,
+            0.6796875
+          ],
+          "n_shared": 16,
+          "shared_ci": [
+            0.6015625,
+            0.6796875
+          ],
+          "conditional_flag": "False",
+          "shared_flag": "False"
+        },
+        {
+          "model": "gemma",
+          "concept": "negation",
+          "language": "ko",
+          "accuracy": 0.546875,
+          "n_variants": 128,
+          "n_sources": 16,
+          "source_ci": [
+            0.515625,
+            0.578125
+          ],
+          "n_shared": 16,
+          "shared_ci": [
+            0.515625,
+            0.578125
+          ],
+          "conditional_flag": "False",
+          "shared_flag": "False"
+        },
+        {
+          "model": "gemma",
+          "concept": "ownership_coreference",
+          "language": "en",
+          "accuracy": 0.828125,
+          "n_variants": 128,
+          "n_sources": 16,
+          "source_ci": [
+            0.796875,
+            0.859375
+          ],
+          "n_shared": 14,
+          "shared_ci": [
+            0.8,
+            0.8571428571428571
+          ],
+          "conditional_flag": "True",
+          "shared_flag": "True"
+        },
+        {
+          "model": "gemma",
+          "concept": "ownership_coreference",
+          "language": "ko",
+          "accuracy": 0.6796875,
+          "n_variants": 128,
+          "n_sources": 16,
+          "source_ci": [
+            0.6328125,
+            0.71875
+          ],
+          "n_shared": 14,
+          "shared_ci": [
+            0.6428571428571429,
+            0.7142857142857143
+          ],
+          "conditional_flag": "False",
+          "shared_flag": "False"
+        },
+        {
+          "model": "gemma",
+          "concept": "temporal_order",
+          "language": "en",
+          "accuracy": 0.6328125,
+          "n_variants": 128,
+          "n_sources": 16,
+          "source_ci": [
+            0.625,
+            0.6484375
+          ],
+          "n_shared": 4,
+          "shared_ci": [
+            0.625,
+            0.634375
+          ],
+          "conditional_flag": "False",
+          "shared_flag": "False"
+        },
+        {
+          "model": "gemma",
+          "concept": "temporal_order",
+          "language": "ko",
+          "accuracy": 0.5,
+          "n_variants": 128,
+          "n_sources": 16,
+          "source_ci": [
+            0.4765625,
+            0.5234375
+          ],
+          "n_shared": 4,
+          "shared_ci": [
+            0.490625,
+            0.59375
+          ],
+          "conditional_flag": "False",
+          "shared_flag": "False"
+        },
+        {
+          "model": "gemma",
+          "concept": "numeric_comparison",
+          "language": "en",
+          "accuracy": 0.59375,
+          "n_variants": 128,
+          "n_sources": 16,
+          "source_ci": [
+            0.5625,
+            0.625
+          ],
+          "n_shared": 16,
+          "shared_ci": [
+            0.5625,
+            0.625
+          ],
+          "conditional_flag": "False",
+          "shared_flag": "False"
+        },
+        {
+          "model": "gemma",
+          "concept": "numeric_comparison",
+          "language": "ko",
+          "accuracy": 0.515625,
+          "n_variants": 128,
+          "n_sources": 16,
+          "source_ci": [
+            0.5,
+            0.5390625
+          ],
+          "n_shared": 16,
+          "shared_ci": [
+            0.5,
+            0.5390625
+          ],
+          "conditional_flag": "False",
+          "shared_flag": "False"
+        },
+        {
+          "model": "qwen",
+          "concept": "negation",
+          "language": "en",
+          "accuracy": 0.5,
+          "n_variants": 128,
+          "n_sources": 16,
+          "source_ci": [
+            0.5,
+            0.5
+          ],
+          "n_shared": 16,
+          "shared_ci": [
+            0.5,
+            0.5
+          ],
+          "conditional_flag": "False",
+          "shared_flag": "False"
+        },
+        {
+          "model": "qwen",
+          "concept": "negation",
+          "language": "ko",
+          "accuracy": 0.5,
+          "n_variants": 128,
+          "n_sources": 16,
+          "source_ci": [
+            0.5,
+            0.5
+          ],
+          "n_shared": 16,
+          "shared_ci": [
+            0.5,
+            0.5
+          ],
+          "conditional_flag": "False",
+          "shared_flag": "False"
+        },
+        {
+          "model": "qwen",
+          "concept": "ownership_coreference",
+          "language": "en",
+          "accuracy": 0.5,
+          "n_variants": 128,
+          "n_sources": 16,
+          "source_ci": [
+            0.5,
+            0.5
+          ],
+          "n_shared": 14,
+          "shared_ci": [
+            0.5,
+            0.5
+          ],
+          "conditional_flag": "False",
+          "shared_flag": "False"
+        },
+        {
+          "model": "qwen",
+          "concept": "ownership_coreference",
+          "language": "ko",
+          "accuracy": 0.5,
+          "n_variants": 128,
+          "n_sources": 16,
+          "source_ci": [
+            0.5,
+            0.5
+          ],
+          "n_shared": 14,
+          "shared_ci": [
+            0.5,
+            0.5
+          ],
+          "conditional_flag": "False",
+          "shared_flag": "False"
+        },
+        {
+          "model": "qwen",
+          "concept": "temporal_order",
+          "language": "en",
+          "accuracy": 0.5,
+          "n_variants": 128,
+          "n_sources": 16,
+          "source_ci": [
+            0.5,
+            0.5
+          ],
+          "n_shared": 4,
+          "shared_ci": [
+            0.5,
+            0.5
+          ],
+          "conditional_flag": "False",
+          "shared_flag": "False"
+        },
+        {
+          "model": "qwen",
+          "concept": "temporal_order",
+          "language": "ko",
+          "accuracy": 0.5,
+          "n_variants": 128,
+          "n_sources": 16,
+          "source_ci": [
+            0.5,
+            0.5
+          ],
+          "n_shared": 4,
+          "shared_ci": [
+            0.5,
+            0.5
+          ],
+          "conditional_flag": "False",
+          "shared_flag": "False"
+        },
+        {
+          "model": "qwen",
+          "concept": "numeric_comparison",
+          "language": "en",
+          "accuracy": 0.5,
+          "n_variants": 128,
+          "n_sources": 16,
+          "source_ci": [
+            0.4765625,
+            0.5234375
+          ],
+          "n_shared": 16,
+          "shared_ci": [
+            0.4765625,
+            0.5234375
+          ],
+          "conditional_flag": "False",
+          "shared_flag": "False"
+        },
+        {
+          "model": "qwen",
+          "concept": "numeric_comparison",
+          "language": "ko",
+          "accuracy": 0.4921875,
+          "n_variants": 128,
+          "n_sources": 16,
+          "source_ci": [
+            0.4765625,
+            0.5
+          ],
+          "n_shared": 16,
+          "shared_ci": [
+            0.4765625,
+            0.5
+          ],
+          "conditional_flag": "False",
+          "shared_flag": "False"
+        }
+      ],
+      "sources": [
+        "results/followup-v3-gemma-map/readiness_summary.json",
+        "results/followup-v3-gemma-map/readiness_replay_audit.json",
+        "results/followup-v3-gemma-map/readiness_conditional_amendment.json",
+        "results/followup-v3-gemma-map/readiness_scores/gemma.json",
+        "results/followup-v3-gemma-map/readiness_scores/qwen.json"
+      ],
+      "caption": "고정 renderer·편의표집 source에 조건부인 진단이다. Source cluster 95% bootstrap CI는 독립 template 모집단 CI가 아니다. 같은 source의 변형을 함께 재표집하며, 공유 reference로 묶은 민감도 CI도 별도로 공개한다. 표의 조건부 기준(.75 정확도 및 CI 하한>.50)은 원래 strict renderer gate 또는 H1–H4의 적격성 통과를 뜻하지 않는다."
+    }
+  ]
+}

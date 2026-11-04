@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "scope": "tiny randomly initialized real Gemma4 CPU only, not full pretrained inference",
+  "checks": {
+    "capture_exact_logits": true,
+    "scale_noop_exact": true,
+    "patch_noop_exact": true,
+    "mean_noop_exact": true,
+    "only_selected_channels_positions": true,
+    "raw_down_effect_correct": true,
+    "zero_changes_logits": true,
+    "hook_removed": true,
+    "no_added_hooks": true
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "status": "PASS_SCOPED_READINESS_BASELINE_REPLAY",
+  "audit_time_utc": "2026-11-04T07:30:51.237381+00:00",
+  "provenance_timing": "Post-execution independent audit snapshot; NOT a pre-execution manifest. Present hashes cannot retroactively prove which binary was run.",
+  "method": "CPU array replay only; no inference, no source or measurement changes.",
+  "claim": "Eight first-in-file R scenarios selected by fixed concept/language order (63–124tokens), same frozen E thresholds: exact token IDs and next-token argmax, all262144 last-position logits within tolerance. This is numerical agreement, not capability or source-template generalization.",
+  "selection_verified_against_input_data": true,
+  "hf_engine_and_readiness_script_hashes_match_recorded_provenance": true,
+  "criteria_unchanged": true,
+  "rows": [
+    {
+      "id": "R-met-436602-s0-l0-c0-en",
+      "tokens": 63,
+      "rmse": 3.111506238379382e-05,
+      "max_abs": 6.4849853515625e-05,
+      "passed": true
+    },
+    {
+      "id": "R-met-436602-s0-l0-c0-ko",
+      "tokens": 78,
+      "rmse": 7.87239557915817e-06,
+      "max_abs": 3.62396240234375e-05,
+      "passed": true
+    },
+    {
+      "id": "R-met-436046-s0-l0-c0-en",
+      "tokens": 104,
+      "rmse": 9.276354205775866e-05,
+      "max_abs": 0.000213623046875,
+      "passed": true
+    },
+    {
+      "id": "R-met-436046-s0-l0-c0-ko",
+      "tokens": 120,
+      "rmse": 6.205181760685378e-05,
+      "max_abs": 0.00013875961303710938,
+      "passed": true
+    },
+    {
+      "id": "R-ownership-Q247282-s0-l0-c0-en",
+      "tokens": 99,
+      "rmse": 8.586848139973882e-05,
+      "max_abs": 0.0001373291015625,
+      "passed": true
+    },
+    {
+      "id": "R-ownership-Q247282-s0-l0-c0-ko",
+      "tokens": 124,
+      "rmse": 2.769829410772275e-05,
+      "max_abs": 6.4849853515625e-05,
+      "passed": true
+    },
+    {
+      "id": "R-v3-source-temporal-01-s0-l0-c0-en",
+      "tokens": 90,
+      "rmse": 3.93031830471875e-05,
+      "max_abs": 6.771087646484375e-05,
+      "passed": true
+    },
+    {
+      "id": "R-v3-source-temporal-01-s0-l0-c0-ko",
+      "tokens": 116,
+      "rmse": 2.9057749972720516e-05,
+      "max_abs": 7.867813110351562e-05,
+      "passed": true
+    }
+  ],
+  "batch_single_scoring_checks_separate": {
+    "count": 8,
+    "all_passed": true,
+    "max_absolute_continuation_logp_error": 0.000110626220703125,
+    "scope": "Only first scoring batch (8continuations), same HF engine; not independent full-continuation parity."
+  },
+  "limits": [
+    "Shared dequantizer, patched pinned llama graph, no original-map engine comparison.",
+    "No independent activation/intervention delta parity.",
+    "Only last-position baseline logits, batch1,63–124tokens; not arbitrary long context or all continuations.",
+    "No readiness capability, causal mapping, or H1–H4 claim follows from numerical parity."
+  ],
+  "source_sha256": {
+    "results/followup-v3-gemma-map/readiness_engine/gpu_logits.json": "456940e00807d42eb0b0f2e38068a21a2e5a617b1a28bd458f3f59bf657d860a",
+    "results/followup-v3-gemma-map/readiness_engine/fixtures.json": "4aaf14994ca77872db6506c6c608071aafc49fa03457d5442349b325add95d31",
+    "results/followup-v3-gemma-map/readiness_engine/forward_parity_fp32_gelu.json": "9fdcff942f5d60f70a3c059a462e06058a0ec8e1be5aa07abcf0bae543b5debc",
+    "results/followup-v3-gemma-map/readiness_engine/llama_reference_fp32_gelu/reference.json": "f0208eeab17c277de170d095e9bdcd8f6ef89691f783c1aa25b58f37e04363b6",
+    "results/followup-v3-gemma-map/readiness_scores/gemma.json": "549dadf9076736f05c71cb1c39e1a31298e6384dbc8bfbfaa1b2c9aa6a7d99d4",
+    "results/followup-v3-gemma-map/runtime/gemma_readiness_conditional.json": "99755bf6dc0abf0620407b2c34ee58fc3728f8b8eff325c8f41b3d3a41e8422a",
+    "results/followup-v3-gemma-map/engineering_engine/frozen_numeric_criteria.json": "e3b6cee2771063f1df33417841a97053eb3df3f125e68d9c3b02fcc69bfe3df9",
+    "data/followup-v3-gemma-map/readiness.jsonl": "04e469fb29bd4f6acaf722bdd3be42519f6366ed2ab4cc003f06de060bf42e5d",
+    "src/gemma_v3_engine.py": "5e759df00d871202e2e1282a50609064548dfdd7e578e06b191794585864368a",
+    "scripts/run_gemma_v3_readiness.py": "b67f6b6c68ebca5ba0aae81566ced349d135749803e23be00c59b1b1fb84c820",
+    "configs/gemma_v3_prompt_lock.json": "f26cee1e30467fd076ce396fe2db722993661d2e6668bb30486238075508af89",
+    "results/followup-v3-gemma-map/reference_gelu_patch.json": "17fa1006495e80a771d29854434ed3f5e546884a6bfda39dffa8ff488380e212",
+    "results/followup-v3-gemma-map/reference_weight_conversion.json": "7e60bcdb7960bef7fa50e5adc88609bae63d40d13133d572f575a18fb28bb003",
+    "results/followup-v3-gemma-map/readiness_engine/fixture_0.npy": "271c0379ec18123254f38eafc198e5226db7c1899410a9cd6c9e6990a81fb053",
+    "results/followup-v3-gemma-map/readiness_engine/llama_reference_fp32_gelu/fixture_0.f32": "a99dd5e330911fe6d55b1ac60b85f5fc78f26bfe8a84d3b993bd918a31cd7175",
+    "results/followup-v3-gemma-map/readiness_engine/fixture_1.npy": "36329859a6b34fec8a120646d74a60338e7bc55979b46b449abc4045a0d111ca",
+    "results/followup-v3-gemma-map/readiness_engine/llama_reference_fp32_gelu/fixture_1.f32": "c3e40bea1a33e2d29a2f9aad6b21a9361fca11fc6f38f82de012ade20cf1e11d",
+    "results/followup-v3-gemma-map/readiness_engine/fixture_2.npy": "8818a0e485968d9c85ca249492d2b42202ee9f6390d8eff8678c0c0e1946d36d",
+    "results/followup-v3-gemma-map/readiness_engine/llama_reference_fp32_gelu/fixture_2.f32": "454eae8148f23a4946ad80f946d8399f564b7a7520a3c044c40f53925ca9c0aa",
+    "results/followup-v3-gemma-map/readiness_engine/fixture_3.npy": "d000d29617b6e1bb4398619be7292166ba43268f853e49ad41ace3919d67c3d1",
+    "results/followup-v3-gemma-map/readiness_engine/llama_reference_fp32_gelu/fixture_3.f32": "f82f4f7be1e8ef7ccce08f44db4b4b1459bcc35cb06441cd57c32754767d01ae",
+    "results/followup-v3-gemma-map/readiness_engine/fixture_4.npy": "80368ff7b868e96181eb5ead27d7cbaf30bd6b7651fc2d3c8df8d785f2f44a51",
+    "results/followup-v3-gemma-map/readiness_engine/llama_reference_fp32_gelu/fixture_4.f32": "1f475331ae05106cbf7aad6bab3945e186fbbbc3fd5797e9f29153a3116b4667",
+    "results/followup-v3-gemma-map/readiness_engine/fixture_5.npy": "21ebd0a33d3946ca33f00331c38db26d74e1df579459af0a8e806d39edc5e887",
+    "results/followup-v3-gemma-map/readiness_engine/llama_reference_fp32_gelu/fixture_5.f32": "f5b8f40903ef5c26acb1b5e3846b607b206c74acc879dc1495fb41709d87668e",
+    "results/followup-v3-gemma-map/readiness_engine/fixture_6.npy": "721818e241da0defc400686ac6ecdcbaafc70fa1ffa783dc99cbb309aa560ce8",
+    "results/followup-v3-gemma-map/readiness_engine/llama_reference_fp32_gelu/fixture_6.f32": "7cda57106129e6a3301756da2cedfb546b8655abf13664727e82a6567c7958cb",
+    "results/followup-v3-gemma-map/readiness_engine/fixture_7.npy": "b2af0c43d6890470aae4cf7f24ae93e84bf2d3b3a1cc9352a47d437f71ca72e2",
+    "results/followup-v3-gemma-map/readiness_engine/llama_reference_fp32_gelu/fixture_7.f32": "529e9c82f812b897039726866dd0751c330b8b05895c192c93a2ca4b1b93568c"
+  },
+  "binary_sha256_observed_at_audit": {
+    "cache/gemma-v3/reference-fp32-gelu": "91a3d53f4c0a34644ed39065c4abdc1a5a3c712b0632a37ce4c5afd07dae6b97",
+    "cache/gemma-v3/llama.cpp/build-fp32-gelu/bin/libllama.so.0": "5f2ad8117d55f57eb196fff547f9461efe862e0a3f6da392dd643a4c01dfb655",
+    "cache/gemma-v3/llama.cpp/build-fp32-gelu/bin/libggml.so.0": "efa649c8d649feab442f1c48e58ef40110af628a11fd93140540a25ae2843525",
+    "cache/gemma-v3/llama.cpp/build-fp32-gelu/bin/libggml-base.so.0": "974d10766d728438d833c75b12f596b08680327f96b06fd526a5d3b8f018f13f",
+    "cache/gemma-v3/llama.cpp/build-fp32-gelu/bin/libggml-cpu.so.0": "67276936fa95db9e6d897647e1ec5163880120f5573c3226e3c7ca78823cdc4f"
+  }
+}

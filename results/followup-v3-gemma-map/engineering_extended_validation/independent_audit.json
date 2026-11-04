@@ -1,0 +1,97 @@
+{
+  "status": "PASS_SAME_ENGINE_RAW_ARRAY_REPLAY",
+  "audit_time_utc": "2026-11-04T07:33:28.680188+00:00",
+  "method": "CPU-only independent replay of saved NPZ signed errors, effect maxima, dimensions, counts and source hashes; no new inference or modifications to measurements.",
+  "criteria_and_script_hashes_match_start_and_current": true,
+  "counts": {
+    "capture_projection_layout_controls": 4,
+    "native_replacement_vs_additive_cases": 8,
+    "cache_prompt_position_comparisons": 91,
+    "greedy_decision_comparisons": 8,
+    "raw_mlp_subchecks_within_native_cases": 8,
+    "npz_arrays": 48
+  },
+  "total_comparison_cases_including_capture_controls": 111,
+  "counting_note": "111 comparison cases =4capture/layout controls +8native cases +91prompt positions +8greedy decisions. The8raw-MLP checks are subchecks of the8native cases, not additional cases. Two greedy step0 comparisons duplicate the two last prompt/cache comparisons. These are not111 independent experimental samples.",
+  "maxima": {
+    "capture": {
+      "comparisons": 4,
+      "maximum_rmse": 7.96667075762215e-06,
+      "maximum_absolute_error": 3.814697265625e-05
+    },
+    "native_logits": {
+      "comparisons": 8,
+      "maximum_rmse": 2.553784819825051e-05,
+      "maximum_absolute_error": 5.340576171875e-05
+    },
+    "native_raw_mlp": {
+      "comparisons": 8,
+      "maximum_rmse": 1.6292889518863477e-07,
+      "maximum_absolute_error": 5.245208740234375e-06
+    },
+    "cache": {
+      "comparisons": 91,
+      "maximum_rmse": 4.388970607414194e-05,
+      "maximum_absolute_error": 0.00011014938354492188
+    },
+    "greedy": {
+      "comparisons": 8,
+      "maximum_rmse": 3.0330607096171775e-05,
+      "maximum_absolute_error": 6.771087646484375e-05
+    }
+  },
+  "fixtures": [
+    {
+      "id": "E-negation-00-s0-l0-c0-en",
+      "prompt_tokens": 39,
+      "native_cases": 4,
+      "cache_positions": 39,
+      "greedy_decisions": 4,
+      "greedy_token_ids": [
+        603,
+        106,
+        106,
+        106
+      ],
+      "first_eog_generated_step_zero_based": 1,
+      "forced_decisions_after_first_eog": 2
+    },
+    {
+      "id": "E-negation-00-s0-l0-c0-ko",
+      "prompt_tokens": 52,
+      "native_cases": 4,
+      "cache_positions": 52,
+      "greedy_decisions": 4,
+      "greedy_token_ids": [
+        603,
+        106,
+        106,
+        106
+      ],
+      "first_eog_generated_step_zero_based": 1,
+      "forced_decisions_after_first_eog": 2
+    }
+  ],
+  "raw_mlp_absolute_bound_alone_passes": true,
+  "capture_control_interpretation": "Extended capture controls compare all-position output-head projection (logits_to_keep=0) with last-only projection (logits_to_keep=1), so their small nonzero errors do not contradict the earlier exact-zero same-layout hook identity checks.",
+  "greedy_interpretation": "Both streams agree on four forced decisions [603,106,106,106]. Token106 is EOG at the second generated token; final two decisions deliberately continue beyond EOG. This is not four ordinary generated content tokens or a normal stopping-policy test.",
+  "claim": "For two short raw E negation prompts and fixed singleton units at L5/L27, direct native replacement and additive raw-down column updates agree within frozen bounds; token-by-token cached/full prompt logits and four forced greedy decisions agree within bounds in the same HF engine.",
+  "remaining_limits": [
+    "No independent cross-engine intervention or activation parity.",
+    "Only two prompts39/52tokens and fixed singleton neurons277/2890; no long-context, group, span, counterfactual-donor, conditional-mean or broad dose coverage.",
+    "Same-engine cache arithmetic agreement does not validate external map reproduction, readiness capability, semantic mapping or H1–H4.",
+    "Error vectors allow numerical error and effect-max replay. Cached/full argmax identity is recorded in summary; the absolute cached/full logits needed to recompute every argmax were not retained in these NPZs."
+  ],
+  "elapsed_seconds_including_load": 64.62093977601035,
+  "source_sha256": {
+    "results/followup-v3-gemma-map/engineering_extended_validation/start.json": "dd168a2cf43e25ad85cdd73ed17babd641ce1b53921a562dafca62477446f51f",
+    "results/followup-v3-gemma-map/engineering_extended_validation/summary.json": "3035959664e7c596e29a27f5e5ff3b3675007ab4c9c1811c768e9efc98e87629",
+    "configs/gemma_v3_extended_numeric_criteria.json": "0d7a069ebe1486e9ccb87bf2e27dac69a0d2329df6197e8a23969cdc475353ea",
+    "scripts/validate_gemma_v3_extended.py": "0c1ab01b26ff66d1cb5f302a188e695b1aa43ba2bc770eb8528ffc32b19b08d0",
+    "src/gemma_v3_engine.py": "5e759df00d871202e2e1282a50609064548dfdd7e578e06b191794585864368a",
+    "results/followup-v3-gemma-map/engineering_extended_validation/fixture_0_raw_errors.npz": "2bc8756581493bf12bc442f31c4d3889e1ead6850da2a24f4b84b3c501f20a5b",
+    "results/followup-v3-gemma-map/engineering_extended_validation/fixture_0.json": "6ec10bac6d7a42e93f2e282e95da25bed6ab1e602847c9e4cc74450c3a0838e2",
+    "results/followup-v3-gemma-map/engineering_extended_validation/fixture_1_raw_errors.npz": "9b96109bb430f9ffeff9677022a7f1130f1963f9a6f7a6042256cb337485df1a",
+    "results/followup-v3-gemma-map/engineering_extended_validation/fixture_1.json": "41e494e9aa7e6225d54dbe5623b1a6ee0b6cd004c17001c61684c602d1a76ed1"
+  }
+}

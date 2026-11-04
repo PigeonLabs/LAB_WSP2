@@ -1,0 +1,79 @@
+{
+  "status": "FAIL",
+  "criteria": {
+    "token_ids_exact": true,
+    "fp32_reference_rmse_max": 0.001,
+    "fp32_reference_max_abs_max": 0.01,
+    "top1_exact": true,
+    "scope": "eight preselected engineering fixtures; fixed before either forward output"
+  },
+  "scope": "8 preselected engineering prompts, independent HF GPU vs llama.cpp CPU forward; shared gguf dequantizer, no arbitrary length equivalence claim",
+  "llama_cpp_commit": "bee23322f1baa3d2dd16b8339bed6aff4a8eb663",
+  "reference_weight_sha256": "2595ede13bf7caf7c6d315d09a00989faac0b76aaeab16e8a7b3542864b95835",
+  "rows": [
+    {
+      "id": "E-negation-00-s0-l0-c0-en",
+      "token_ids_exact": true,
+      "top1_exact": true,
+      "rmse": 0.0031396027693952793,
+      "max_abs": 0.00949859619140625,
+      "passed": false
+    },
+    {
+      "id": "E-negation-00-s0-l0-c0-ko",
+      "token_ids_exact": true,
+      "top1_exact": true,
+      "rmse": 0.0021772926134058304,
+      "max_abs": 0.009639501571655273,
+      "passed": false
+    },
+    {
+      "id": "E-numeric_comparison-00-s1-l0-c1-en",
+      "token_ids_exact": true,
+      "top1_exact": true,
+      "rmse": 0.008739125625908954,
+      "max_abs": 0.017615795135498047,
+      "passed": false
+    },
+    {
+      "id": "E-numeric_comparison-00-s1-l0-c1-ko",
+      "token_ids_exact": true,
+      "top1_exact": true,
+      "rmse": 0.009060936698476987,
+      "max_abs": 0.015574455261230469,
+      "passed": false
+    },
+    {
+      "id": "E-ownership_coreference-00-s0-l0-c0-en",
+      "token_ids_exact": true,
+      "top1_exact": true,
+      "rmse": 0.006276979669667825,
+      "max_abs": 0.015184402465820312,
+      "passed": false
+    },
+    {
+      "id": "E-ownership_coreference-00-s0-l0-c0-ko",
+      "token_ids_exact": true,
+      "top1_exact": true,
+      "rmse": 0.013712116034055161,
+      "max_abs": 0.029277324676513672,
+      "passed": false
+    },
+    {
+      "id": "E-temporal_order-00-s1-l0-c1-en",
+      "token_ids_exact": true,
+      "top1_exact": true,
+      "rmse": 0.0047314037146037845,
+      "max_abs": 0.011509895324707031,
+      "passed": false
+    },
+    {
+      "id": "E-temporal_order-00-s1-l0-c1-ko",
+      "token_ids_exact": true,
+      "top1_exact": true,
+      "rmse": 0.0022076789484794974,
+      "max_abs": 0.012835502624511719,
+      "passed": false
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "scope": "Engineering-only adaptive calibration, 512 variants/32 scenarios/4 generating lineages; not an independent capability gate",
+  "candidates": {
+    "raw": {
+      "accuracy": {
+        "gemma": 0.767578125,
+        "qwen": 0.529296875
+      },
+      "selection_score": 0.529296875
+    },
+    "common_fourshot_v1": {
+      "accuracy": {
+        "gemma": 0.6328125,
+        "qwen": 0.521484375
+      },
+      "selection_score": 0.521484375
+    }
+  },
+  "selection_rule": "maximize minimum of Gemma and Qwen engineering macro accuracy; ties choose raw",
+  "selected": "raw"
+}

@@ -1,0 +1,1784 @@
+{
+  "status": "SOURCE_FACT_BANK_ONLY",
+  "requested": 32,
+  "actual": 32,
+  "sampling": "120 evenly spaced department11 catalogue records; retain first32 with unique artist, exact Overall height/width and displayed cm units; no model outputs used",
+  "records": [
+    {
+      "record_id": "met-436046",
+      "concept": "numeric_comparison",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436046",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436046",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "71.128",
+      "source_creator": "Lucas Cranach the Elder",
+      "source_document_lineage": "met-accession:71.128",
+      "underlying_entity_or_event": "met-object:436046",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.123161+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436046.json",
+      "raw_snapshot_sha256": "fe159ffb2909196513422a76ff8203ad42c265e28c2e7cc39f4b6549b5771f7a",
+      "source_field_paths": [
+        "measurements[elementName=Overall].elementMeasurements",
+        "dimensions"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436046:overall",
+          "predicate": "height_cm",
+          "value": 21.0
+        },
+        {
+          "subject": "met:436046:overall",
+          "predicate": "width_cm",
+          "value": 14.9
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "For catalogue object 436046, the overall height is 21 cm and the overall width is 14.9 cm.",
+        "ko": "도록 객체 436046의 전체 높이는 21 cm이고 전체 너비는 14.9 cm이다."
+      },
+      "oracle_spec": {
+        "operation": "decimal_compare_same_object_same_element_same_dimension",
+        "fields": [
+          "height_cm",
+          "width_cm"
+        ],
+        "unit": "cm",
+        "note": "Compare recorded dimensions, not current object measurements; image/frame/glazing measures excluded."
+      },
+      "renderer_family": "new-catalogue-dimension-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19911924"
+    },
+    {
+      "record_id": "met-436068",
+      "concept": "numeric_comparison",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436068",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436068",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "1974.217",
+      "source_creator": "Bernardo Daddi",
+      "source_document_lineage": "met-accession:1974.217",
+      "underlying_entity_or_event": "met-object:436068",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.123327+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436068.json",
+      "raw_snapshot_sha256": "2f0fc8fe9013f6ae6db252fe2d96c040b7f710209363d0e6d91b8b8a010aaa5a",
+      "source_field_paths": [
+        "measurements[elementName=Overall].elementMeasurements",
+        "dimensions"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436068:overall",
+          "predicate": "height_cm",
+          "value": 19.1
+        },
+        {
+          "subject": "met:436068:overall",
+          "predicate": "width_cm",
+          "value": 22.9
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "For catalogue object 436068, the overall height is 19.1 cm and the overall width is 22.9 cm.",
+        "ko": "도록 객체 436068의 전체 높이는 19.1 cm이고 전체 너비는 22.9 cm이다."
+      },
+      "oracle_spec": {
+        "operation": "decimal_compare_same_object_same_element_same_dimension",
+        "fields": [
+          "height_cm",
+          "width_cm"
+        ],
+        "unit": "cm",
+        "note": "Compare recorded dimensions, not current object measurements; image/frame/glazing measures excluded."
+      },
+      "renderer_family": "new-catalogue-dimension-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19911968"
+    },
+    {
+      "record_id": "met-436092",
+      "concept": "numeric_comparison",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436092",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436092",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "09.198",
+      "source_creator": "Honoré Daumier",
+      "source_document_lineage": "met-accession:09.198",
+      "underlying_entity_or_event": "met-object:436092",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.123449+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436092.json",
+      "raw_snapshot_sha256": "81fbf4431fd70bf146b1d39fb66d102de7a2d00ce2ad8ecc8ff9ea05dab0ed71",
+      "source_field_paths": [
+        "measurements[elementName=Overall].elementMeasurements",
+        "dimensions"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436092:overall",
+          "predicate": "height_cm",
+          "value": 24.8
+        },
+        {
+          "subject": "met:436092:overall",
+          "predicate": "width_cm",
+          "value": 46.0
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "For catalogue object 436092, the overall height is 24.8 cm and the overall width is 46 cm.",
+        "ko": "도록 객체 436092의 전체 높이는 24.8 cm이고 전체 너비는 46 cm이다."
+      },
+      "oracle_spec": {
+        "operation": "decimal_compare_same_object_same_element_same_dimension",
+        "fields": [
+          "height_cm",
+          "width_cm"
+        ],
+        "unit": "cm",
+        "note": "Compare recorded dimensions, not current object measurements; image/frame/glazing measures excluded."
+      },
+      "renderer_family": "new-catalogue-dimension-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19911727"
+    },
+    {
+      "record_id": "met-436119",
+      "concept": "numeric_comparison",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436119",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436119",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "71.105",
+      "source_creator": "Léonard Defrance",
+      "source_document_lineage": "met-accession:71.105",
+      "underlying_entity_or_event": "met-object:436119",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.123558+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436119.json",
+      "raw_snapshot_sha256": "23691535c2713757d6044bc45cff213ae1d069f983ddbdde6b8dee1c03cdb0d5",
+      "source_field_paths": [
+        "measurements[elementName=Overall].elementMeasurements",
+        "dimensions"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436119:overall",
+          "predicate": "height_cm",
+          "value": 50.5
+        },
+        {
+          "subject": "met:436119:overall",
+          "predicate": "width_cm",
+          "value": 72.7
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "For catalogue object 436119, the overall height is 50.5 cm and the overall width is 72.7 cm.",
+        "ko": "도록 객체 436119의 전체 높이는 50.5 cm이고 전체 너비는 72.7 cm이다."
+      },
+      "oracle_spec": {
+        "operation": "decimal_compare_same_object_same_element_same_dimension",
+        "fields": [
+          "height_cm",
+          "width_cm"
+        ],
+        "unit": "cm",
+        "note": "Compare recorded dimensions, not current object measurements; image/frame/glazing measures excluded."
+      },
+      "renderer_family": "new-catalogue-dimension-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19913209"
+    },
+    {
+      "record_id": "met-436145",
+      "concept": "numeric_comparison",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436145",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436145",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "29.100.181",
+      "source_creator": "Edgar Degas",
+      "source_document_lineage": "met-accession:29.100.181",
+      "underlying_entity_or_event": "met-object:436145",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.123666+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436145.json",
+      "raw_snapshot_sha256": "71f387b390f90cf8fabf03e7811e9ee8d889594882e22c967d8eccf35bab4ada",
+      "source_field_paths": [
+        "measurements[elementName=Overall].elementMeasurements",
+        "dimensions"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436145:overall",
+          "predicate": "height_cm",
+          "value": 27.0
+        },
+        {
+          "subject": "met:436145:overall",
+          "predicate": "width_cm",
+          "value": 21.6
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "For catalogue object 436145, the overall height is 27 cm and the overall width is 21.6 cm.",
+        "ko": "도록 객체 436145의 전체 높이는 27 cm이고 전체 너비는 21.6 cm이다."
+      },
+      "oracle_spec": {
+        "operation": "decimal_compare_same_object_same_element_same_dimension",
+        "fields": [
+          "height_cm",
+          "width_cm"
+        ],
+        "unit": "cm",
+        "note": "Compare recorded dimensions, not current object measurements; image/frame/glazing measures excluded."
+      },
+      "renderer_family": "new-catalogue-dimension-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19912324"
+    },
+    {
+      "record_id": "met-436198",
+      "concept": "numeric_comparison",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436198",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436198",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "29.100.14",
+      "source_creator": "Abraham van Diepenbeeck",
+      "source_document_lineage": "met-accession:29.100.14",
+      "underlying_entity_or_event": "met-object:436198",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.123772+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436198.json",
+      "raw_snapshot_sha256": "cc62ee85ae09b7f78ea10e7c2598572fac950717e730d16ae4f6bf502647e7e7",
+      "source_field_paths": [
+        "measurements[elementName=Overall].elementMeasurements",
+        "dimensions"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436198:overall",
+          "predicate": "height_cm",
+          "value": 121.6
+        },
+        {
+          "subject": "met:436198:overall",
+          "predicate": "width_cm",
+          "value": 103.5
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "For catalogue object 436198, the overall height is 121.6 cm and the overall width is 103.5 cm.",
+        "ko": "도록 객체 436198의 전체 높이는 121.6 cm이고 전체 너비는 103.5 cm이다."
+      },
+      "oracle_spec": {
+        "operation": "decimal_compare_same_object_same_element_same_dimension",
+        "fields": [
+          "height_cm",
+          "width_cm"
+        ],
+        "unit": "cm",
+        "note": "Compare recorded dimensions, not current object measurements; image/frame/glazing measures excluded."
+      },
+      "renderer_family": "new-catalogue-dimension-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19912204"
+    },
+    {
+      "record_id": "met-436222",
+      "concept": "numeric_comparison",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436222",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436222",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "67.55.1",
+      "source_creator": "Rose Adélaïde Ducreux",
+      "source_document_lineage": "met-accession:67.55.1",
+      "underlying_entity_or_event": "met-object:436222",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.123875+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436222.json",
+      "raw_snapshot_sha256": "6a9211d7d512d8943a5ea542d6fdc467b3a46517d6afe9e7262fca659e62b2a6",
+      "source_field_paths": [
+        "measurements[elementName=Overall].elementMeasurements",
+        "dimensions"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436222:overall",
+          "predicate": "height_cm",
+          "value": 193.0
+        },
+        {
+          "subject": "met:436222:overall",
+          "predicate": "width_cm",
+          "value": 128.9
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "For catalogue object 436222, the overall height is 193 cm and the overall width is 128.9 cm.",
+        "ko": "도록 객체 436222의 전체 높이는 193 cm이고 전체 너비는 128.9 cm이다."
+      },
+      "oracle_spec": {
+        "operation": "decimal_compare_same_object_same_element_same_dimension",
+        "fields": [
+          "height_cm",
+          "width_cm"
+        ],
+        "unit": "cm",
+        "note": "Compare recorded dimensions, not current object measurements; image/frame/glazing measures excluded."
+      },
+      "renderer_family": "new-catalogue-dimension-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19912484"
+    },
+    {
+      "record_id": "met-436252",
+      "concept": "numeric_comparison",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436252",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436252",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "89.15.16",
+      "source_creator": "Anthony van Dyck",
+      "source_document_lineage": "met-accession:89.15.16",
+      "underlying_entity_or_event": "met-object:436252",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.123977+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436252.json",
+      "raw_snapshot_sha256": "0932247f336b436dc68d95c94e5558f68c497c33f0eb2eb76cc55c3bf099cb9e",
+      "source_field_paths": [
+        "measurements[elementName=Overall].elementMeasurements",
+        "dimensions"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436252:overall",
+          "predicate": "height_cm",
+          "value": 215.9
+        },
+        {
+          "subject": "met:436252:overall",
+          "predicate": "width_cm",
+          "value": 127.6
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "For catalogue object 436252, the overall height is 215.9 cm and the overall width is 127.6 cm.",
+        "ko": "도록 객체 436252의 전체 높이는 215.9 cm이고 전체 너비는 127.6 cm이다."
+      },
+      "oracle_spec": {
+        "operation": "decimal_compare_same_object_same_element_same_dimension",
+        "fields": [
+          "height_cm",
+          "width_cm"
+        ],
+        "unit": "cm",
+        "note": "Compare recorded dimensions, not current object measurements; image/frame/glazing measures excluded."
+      },
+      "renderer_family": "new-catalogue-dimension-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q3937577"
+    },
+    {
+      "record_id": "met-436324",
+      "concept": "numeric_comparison",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436324",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436324",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "49.7.51",
+      "source_creator": "Jean Honoré Fragonard",
+      "source_document_lineage": "met-accession:49.7.51",
+      "underlying_entity_or_event": "met-object:436324",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.124078+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436324.json",
+      "raw_snapshot_sha256": "c62a973c6884d1c2fe32e38724178457854cc71acf53ab7cf09afb1effe8237b",
+      "source_field_paths": [
+        "measurements[elementName=Overall].elementMeasurements",
+        "dimensions"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436324:overall",
+          "predicate": "height_cm",
+          "value": 29.2
+        },
+        {
+          "subject": "met:436324:overall",
+          "predicate": "width_cm",
+          "value": 24.1
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "For catalogue object 436324, the overall height is 29.2 cm and the overall width is 24.1 cm.",
+        "ko": "도록 객체 436324의 전체 높이는 29.2 cm이고 전체 너비는 24.1 cm이다."
+      },
+      "oracle_spec": {
+        "operation": "decimal_compare_same_object_same_element_same_dimension",
+        "fields": [
+          "height_cm",
+          "width_cm"
+        ],
+        "unit": "cm",
+        "note": "Compare recorded dimensions, not current object measurements; image/frame/glazing measures excluded."
+      },
+      "renderer_family": "new-catalogue-dimension-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19911874"
+    },
+    {
+      "record_id": "met-436428",
+      "concept": "numeric_comparison",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436428",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436428",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "41.100.33",
+      "source_creator": "Agnolo Gaddi",
+      "source_document_lineage": "met-accession:41.100.33",
+      "underlying_entity_or_event": "met-object:436428",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.124178+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436428.json",
+      "raw_snapshot_sha256": "bab5f991cd49f71c47871580dcb0650dd8d555d1dd96cb238a15b52b5170da98",
+      "source_field_paths": [
+        "measurements[elementName=Overall].elementMeasurements",
+        "dimensions"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436428:overall",
+          "predicate": "height_cm",
+          "value": 135.9
+        },
+        {
+          "subject": "met:436428:overall",
+          "predicate": "width_cm",
+          "value": 73.0
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "For catalogue object 436428, the overall height is 135.9 cm and the overall width is 73 cm.",
+        "ko": "도록 객체 436428의 전체 높이는 135.9 cm이고 전체 너비는 73 cm이다."
+      },
+      "oracle_spec": {
+        "operation": "decimal_compare_same_object_same_element_same_dimension",
+        "fields": [
+          "height_cm",
+          "width_cm"
+        ],
+        "unit": "cm",
+        "note": "Compare recorded dimensions, not current object measurements; image/frame/glazing measures excluded."
+      },
+      "renderer_family": "new-catalogue-dimension-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19912089"
+    },
+    {
+      "record_id": "met-436453",
+      "concept": "numeric_comparison",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436453",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436453",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "69.281",
+      "source_creator": "Artemisia Gentileschi",
+      "source_document_lineage": "met-accession:69.281",
+      "underlying_entity_or_event": "met-object:436453",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.124291+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436453.json",
+      "raw_snapshot_sha256": "177678f31a5bad6bae214527db9aa9f010e218d2ddb6b8441c6d293129df95d9",
+      "source_field_paths": [
+        "measurements[elementName=Overall].elementMeasurements",
+        "dimensions"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436453:overall",
+          "predicate": "height_cm",
+          "value": 208.3
+        },
+        {
+          "subject": "met:436453:overall",
+          "predicate": "width_cm",
+          "value": 273.7
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "For catalogue object 436453, the overall height is 208.3 cm and the overall width is 273.7 cm.",
+        "ko": "도록 객체 436453의 전체 높이는 208.3 cm이고 전체 너비는 273.7 cm이다."
+      },
+      "oracle_spec": {
+        "operation": "decimal_compare_same_object_same_element_same_dimension",
+        "fields": [
+          "height_cm",
+          "width_cm"
+        ],
+        "unit": "cm",
+        "note": "Compare recorded dimensions, not current object measurements; image/frame/glazing measures excluded."
+      },
+      "renderer_family": "new-catalogue-dimension-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q3733425"
+    },
+    {
+      "record_id": "met-436485",
+      "concept": "numeric_comparison",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436485",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436485",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "1974.1",
+      "source_creator": "Jacques de Gheyn II",
+      "source_document_lineage": "met-accession:1974.1",
+      "underlying_entity_or_event": "met-object:436485",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.124415+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436485.json",
+      "raw_snapshot_sha256": "465858c47628cbfdfb9aeb637ebd34888b5e7645388aece50ac9668d7dd57ae3",
+      "source_field_paths": [
+        "measurements[elementName=Overall].elementMeasurements",
+        "dimensions"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436485:overall",
+          "predicate": "height_cm",
+          "value": 82.6
+        },
+        {
+          "subject": "met:436485:overall",
+          "predicate": "width_cm",
+          "value": 54.0
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "For catalogue object 436485, the overall height is 82.6 cm and the overall width is 54 cm.",
+        "ko": "도록 객체 436485의 전체 높이는 82.6 cm이고 전체 너비는 54 cm이다."
+      },
+      "oracle_spec": {
+        "operation": "decimal_compare_same_object_same_element_same_dimension",
+        "fields": [
+          "height_cm",
+          "width_cm"
+        ],
+        "unit": "cm",
+        "note": "Compare recorded dimensions, not current object measurements; image/frame/glazing measures excluded."
+      },
+      "renderer_family": "new-catalogue-dimension-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19911453"
+    },
+    {
+      "record_id": "met-436509",
+      "concept": "numeric_comparison",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436509",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436509",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "1982.60.4",
+      "source_creator": "Giovanni di Paolo (Giovanni di Paolo di Grazia)",
+      "source_document_lineage": "met-accession:1982.60.4",
+      "underlying_entity_or_event": "met-object:436509",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.124518+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436509.json",
+      "raw_snapshot_sha256": "32bb25c1500bd36b031abc917ea4a129a0f714afa0022b5e3efba976db5e0446",
+      "source_field_paths": [
+        "measurements[elementName=Overall].elementMeasurements",
+        "dimensions"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436509:overall",
+          "predicate": "height_cm",
+          "value": 27.0
+        },
+        {
+          "subject": "met:436509:overall",
+          "predicate": "width_cm",
+          "value": 23.2
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "For catalogue object 436509, the overall height is 27 cm and the overall width is 23.2 cm.",
+        "ko": "도록 객체 436509의 전체 높이는 27 cm이고 전체 너비는 23.2 cm이다."
+      },
+      "oracle_spec": {
+        "operation": "decimal_compare_same_object_same_element_same_dimension",
+        "fields": [
+          "height_cm",
+          "width_cm"
+        ],
+        "unit": "cm",
+        "note": "Compare recorded dimensions, not current object measurements; image/frame/glazing measures excluded."
+      },
+      "renderer_family": "new-catalogue-dimension-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19912102"
+    },
+    {
+      "record_id": "met-436531",
+      "concept": "numeric_comparison",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436531",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436531",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "1984.393",
+      "source_creator": "Vincent van Gogh",
+      "source_document_lineage": "met-accession:1984.393",
+      "underlying_entity_or_event": "met-object:436531",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.124623+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436531.json",
+      "raw_snapshot_sha256": "d1987e17352baeefa3f88e24c353fe2f451bccc5f970dc14f5660273b8137f67",
+      "source_field_paths": [
+        "measurements[elementName=Overall].elementMeasurements",
+        "dimensions"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436531:overall",
+          "predicate": "height_cm",
+          "value": 44.1
+        },
+        {
+          "subject": "met:436531:overall",
+          "predicate": "width_cm",
+          "value": 38.1
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "For catalogue object 436531, the overall height is 44.1 cm and the overall width is 38.1 cm.",
+        "ko": "도록 객체 436531의 전체 높이는 44.1 cm이고 전체 너비는 38.1 cm이다."
+      },
+      "oracle_spec": {
+        "operation": "decimal_compare_same_object_same_element_same_dimension",
+        "fields": [
+          "height_cm",
+          "width_cm"
+        ],
+        "unit": "cm",
+        "note": "Compare recorded dimensions, not current object measurements; image/frame/glazing measures excluded."
+      },
+      "renderer_family": "new-catalogue-dimension-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19906011"
+    },
+    {
+      "record_id": "met-436554",
+      "concept": "numeric_comparison",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436554",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436554",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "22.181",
+      "source_creator": "Goya (Francisco de Goya y Lucientes)",
+      "source_document_lineage": "met-accession:22.181",
+      "underlying_entity_or_event": "met-object:436554",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.124723+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436554.json",
+      "raw_snapshot_sha256": "fd8f9d2c47dc24961f87e0e0edcbb6d70c3b78b013e5c0bd12729d2de3f01764",
+      "source_field_paths": [
+        "measurements[elementName=Overall].elementMeasurements",
+        "dimensions"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436554:overall",
+          "predicate": "height_cm",
+          "value": 98.4
+        },
+        {
+          "subject": "met:436554:overall",
+          "predicate": "width_cm",
+          "value": 126.4
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "For catalogue object 436554, the overall height is 98.4 cm and the overall width is 126.4 cm.",
+        "ko": "도록 객체 436554의 전체 높이는 98.4 cm이고 전체 너비는 126.4 cm이다."
+      },
+      "oracle_spec": {
+        "operation": "decimal_compare_same_object_same_element_same_dimension",
+        "fields": [
+          "height_cm",
+          "width_cm"
+        ],
+        "unit": "cm",
+        "note": "Compare recorded dimensions, not current object measurements; image/frame/glazing measures excluded."
+      },
+      "renderer_family": "new-catalogue-dimension-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q17176660"
+    },
+    {
+      "record_id": "met-436578",
+      "concept": "numeric_comparison",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436578",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436578",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "31.67.9",
+      "source_creator": "Greek Painter",
+      "source_document_lineage": "met-accession:31.67.9",
+      "underlying_entity_or_event": "met-object:436578",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.124830+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436578.json",
+      "raw_snapshot_sha256": "71faba889777931704d1572765a25c62e651003f152463a2bce585601642bf7a",
+      "source_field_paths": [
+        "measurements[elementName=Overall].elementMeasurements",
+        "dimensions"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436578:overall",
+          "predicate": "height_cm",
+          "value": 31.8
+        },
+        {
+          "subject": "met:436578:overall",
+          "predicate": "width_cm",
+          "value": 21.0
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "For catalogue object 436578, the overall height is 31.8 cm and the overall width is 21 cm.",
+        "ko": "도록 객체 436578의 전체 높이는 31.8 cm이고 전체 너비는 21 cm이다."
+      },
+      "oracle_spec": {
+        "operation": "decimal_compare_same_object_same_element_same_dimension",
+        "fields": [
+          "height_cm",
+          "width_cm"
+        ],
+        "unit": "cm",
+        "note": "Compare recorded dimensions, not current object measurements; image/frame/glazing measures excluded."
+      },
+      "renderer_family": "new-catalogue-dimension-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19913449"
+    },
+    {
+      "record_id": "met-436602",
+      "concept": "negation",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436602",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436602",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "88.3.86",
+      "source_creator": "Guariento di Arpo",
+      "source_document_lineage": "met-accession:88.3.86",
+      "underlying_entity_or_event": "met-object:436602",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.124932+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436602.json",
+      "raw_snapshot_sha256": "ec6acc7fd651c490542ca5a1bb68981b754f0cfac2fcb905b05b87cfbc6af1ee",
+      "source_field_paths": [
+        "objectName",
+        "title"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436602",
+          "predicate": "catalogue_object_type",
+          "value": "Painting"
+        },
+        {
+          "subject": "met:436602",
+          "predicate": "catalogue_title",
+          "value": "Madonna and Child"
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "The catalogue assigns object 436602 the type label \"Painting\" and the title \"Madonna and Child\".",
+        "ko": "도록은 객체 436602의 유형 표기를 \"Painting\", 제목 표기를 \"Madonna and Child\"로 제시한다."
+      },
+      "oracle_spec": {
+        "operation": "explicit_fact_polarity",
+        "predicate": "catalogue_object_type",
+        "polarity_scope": "Negate the explicitly stated exact-label predicate; no closed-world inference from missing properties.",
+        "note": "Affirmative evidence bank only. Later opposite-state fictional context must be marked hypothetical; no R pair or answer generated here."
+      },
+      "renderer_family": "new-catalogue-exact-label-polarity-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q20167027"
+    },
+    {
+      "record_id": "met-436626",
+      "concept": "negation",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436626",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436626",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "14.40.604",
+      "source_creator": "Frans Hals",
+      "source_document_lineage": "met-accession:14.40.604",
+      "underlying_entity_or_event": "met-object:436626",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.125031+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436626.json",
+      "raw_snapshot_sha256": "aad569a66d3b3d74f3e7e38545cb3d9834cfe087dbccb051548cc845bc0b2557",
+      "source_field_paths": [
+        "objectName",
+        "title"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436626",
+          "predicate": "catalogue_object_type",
+          "value": "Painting"
+        },
+        {
+          "subject": "met:436626",
+          "predicate": "catalogue_title",
+          "value": "Boy with a Lute"
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "The catalogue assigns object 436626 the type label \"Painting\" and the title \"Boy with a Lute\".",
+        "ko": "도록은 객체 436626의 유형 표기를 \"Painting\", 제목 표기를 \"Boy with a Lute\"로 제시한다."
+      },
+      "oracle_spec": {
+        "operation": "explicit_fact_polarity",
+        "predicate": "catalogue_object_type",
+        "polarity_scope": "Negate the explicitly stated exact-label predicate; no closed-world inference from missing properties.",
+        "note": "Affirmative evidence bank only. Later opposite-state fictional context must be marked hypothetical; no R pair or answer generated here."
+      },
+      "renderer_family": "new-catalogue-exact-label-polarity-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q17609277"
+    },
+    {
+      "record_id": "met-436658",
+      "concept": "negation",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436658",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436658",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "50.135.4",
+      "source_creator": "Hans Holbein the Younger",
+      "source_document_lineage": "met-accession:50.135.4",
+      "underlying_entity_or_event": "met-object:436658",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.125144+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436658.json",
+      "raw_snapshot_sha256": "53fdb143c39d452d04d1825b83c180818ff9ce4f58e75a0433af4d5bf6c955ae",
+      "source_field_paths": [
+        "objectName",
+        "title"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436658",
+          "predicate": "catalogue_object_type",
+          "value": "Painting"
+        },
+        {
+          "subject": "met:436658",
+          "predicate": "catalogue_title",
+          "value": "Hermann von Wedigh III (died 1560)"
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "The catalogue assigns object 436658 the type label \"Painting\" and the title \"Hermann von Wedigh III (died 1560)\".",
+        "ko": "도록은 객체 436658의 유형 표기를 \"Painting\", 제목 표기를 \"Hermann von Wedigh III (died 1560)\"로 제시한다."
+      },
+      "oracle_spec": {
+        "operation": "explicit_fact_polarity",
+        "predicate": "catalogue_object_type",
+        "polarity_scope": "Negate the explicitly stated exact-label predicate; no closed-world inference from missing properties.",
+        "note": "Affirmative evidence bank only. Later opposite-state fictional context must be marked hypothetical; no R pair or answer generated here."
+      },
+      "renderer_family": "new-catalogue-exact-label-polarity-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19911428"
+    },
+    {
+      "record_id": "met-436683",
+      "concept": "negation",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436683",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436683",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "59.189.3",
+      "source_creator": "John Hoppner",
+      "source_document_lineage": "met-accession:59.189.3",
+      "underlying_entity_or_event": "met-object:436683",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.125254+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436683.json",
+      "raw_snapshot_sha256": "16b9dc24bdc260ed42a83cb0ba19a4e846816063fde522d849f710776be62f3a",
+      "source_field_paths": [
+        "objectName",
+        "title"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436683",
+          "predicate": "catalogue_object_type",
+          "value": "Painting"
+        },
+        {
+          "subject": "met:436683",
+          "predicate": "catalogue_title",
+          "value": "Lady Hester King (died 1873)"
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "The catalogue assigns object 436683 the type label \"Painting\" and the title \"Lady Hester King (died 1873)\".",
+        "ko": "도록은 객체 436683의 유형 표기를 \"Painting\", 제목 표기를 \"Lady Hester King (died 1873)\"로 제시한다."
+      },
+      "oracle_spec": {
+        "operation": "explicit_fact_polarity",
+        "predicate": "catalogue_object_type",
+        "polarity_scope": "Negate the explicitly stated exact-label predicate; no closed-world inference from missing properties.",
+        "note": "Affirmative evidence bank only. Later opposite-state fictional context must be marked hypothetical; no R pair or answer generated here."
+      },
+      "renderer_family": "new-catalogue-exact-label-polarity-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19914234"
+    },
+    {
+      "record_id": "met-436709",
+      "concept": "negation",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436709",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436709",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "43.85.1",
+      "source_creator": "Laurence-Augustine Jubé Héquet (Madame Héquet)",
+      "source_document_lineage": "met-accession:43.85.1",
+      "underlying_entity_or_event": "met-object:436709",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.125360+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436709.json",
+      "raw_snapshot_sha256": "ed59aabebc057920ed7d8b106a08bbee7be0033fb2e1b55e1b033ecc94f3b92c",
+      "source_field_paths": [
+        "objectName",
+        "title"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436709",
+          "predicate": "catalogue_object_type",
+          "value": "Painting"
+        },
+        {
+          "subject": "met:436709",
+          "predicate": "catalogue_title",
+          "value": "Ingres (1780–1867) as a Young Man"
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "The catalogue assigns object 436709 the type label \"Painting\" and the title \"Ingres (1780–1867) as a Young Man\".",
+        "ko": "도록은 객체 436709의 유형 표기를 \"Painting\", 제목 표기를 \"Ingres (1780–1867) as a Young Man\"로 제시한다."
+      },
+      "oracle_spec": {
+        "operation": "explicit_fact_polarity",
+        "predicate": "catalogue_object_type",
+        "polarity_scope": "Negate the explicitly stated exact-label predicate; no closed-world inference from missing properties.",
+        "note": "Affirmative evidence bank only. Later opposite-state fictional context must be marked hypothetical; no R pair or answer generated here."
+      },
+      "renderer_family": "new-catalogue-exact-label-polarity-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19911837"
+    },
+    {
+      "record_id": "met-436741",
+      "concept": "negation",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436741",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436741",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "91.26.2",
+      "source_creator": "Italian (Lombard) Painter",
+      "source_document_lineage": "met-accession:91.26.2",
+      "underlying_entity_or_event": "met-object:436741",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.125459+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436741.json",
+      "raw_snapshot_sha256": "7dfc2a488db60864b051a3204ff537319f14dab6ca0cf98e61c54298274dc00f",
+      "source_field_paths": [
+        "objectName",
+        "title"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436741",
+          "predicate": "catalogue_object_type",
+          "value": "Painting"
+        },
+        {
+          "subject": "met:436741",
+          "predicate": "catalogue_title",
+          "value": "Portrait of a Man in a Fur-Trimmed Coat"
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "The catalogue assigns object 436741 the type label \"Painting\" and the title \"Portrait of a Man in a Fur-Trimmed Coat\".",
+        "ko": "도록은 객체 436741의 유형 표기를 \"Painting\", 제목 표기를 \"Portrait of a Man in a Fur-Trimmed Coat\"로 제시한다."
+      },
+      "oracle_spec": {
+        "operation": "explicit_fact_polarity",
+        "predicate": "catalogue_object_type",
+        "polarity_scope": "Negate the explicitly stated exact-label predicate; no closed-world inference from missing properties.",
+        "note": "Affirmative evidence bank only. Later opposite-state fictional context must be marked hypothetical; no R pair or answer generated here."
+      },
+      "renderer_family": "new-catalogue-exact-label-polarity-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19912638"
+    },
+    {
+      "record_id": "met-436803",
+      "concept": "negation",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436803",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436803",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "41.190.21",
+      "source_creator": "Joos van Wassenhove",
+      "source_document_lineage": "met-accession:41.190.21",
+      "underlying_entity_or_event": "met-object:436803",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.125557+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436803.json",
+      "raw_snapshot_sha256": "2856e9e0fab8f5db3c45fb0f37f5a05468990cb6c78bd393ae12e56d7361c6d3",
+      "source_field_paths": [
+        "objectName",
+        "title"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436803",
+          "predicate": "catalogue_object_type",
+          "value": "Painting"
+        },
+        {
+          "subject": "met:436803",
+          "predicate": "catalogue_title",
+          "value": "The Adoration of the Magi"
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "The catalogue assigns object 436803 the type label \"Painting\" and the title \"The Adoration of the Magi\".",
+        "ko": "도록은 객체 436803의 유형 표기를 \"Painting\", 제목 표기를 \"The Adoration of the Magi\"로 제시한다."
+      },
+      "oracle_spec": {
+        "operation": "explicit_fact_polarity",
+        "predicate": "catalogue_object_type",
+        "polarity_scope": "Negate the explicitly stated exact-label predicate; no closed-world inference from missing properties.",
+        "note": "Affirmative evidence bank only. Later opposite-state fictional context must be marked hypothetical; no R pair or answer generated here."
+      },
+      "renderer_family": "new-catalogue-exact-label-polarity-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19911482"
+    },
+    {
+      "record_id": "met-436832",
+      "concept": "negation",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436832",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436832",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "63.43.2",
+      "source_creator": "Philips Koninck",
+      "source_document_lineage": "met-accession:63.43.2",
+      "underlying_entity_or_event": "met-object:436832",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.125654+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436832.json",
+      "raw_snapshot_sha256": "931e89bc6ffbe35b894e74c9fc47e365489a28c0ac135b651a0c073e82232475",
+      "source_field_paths": [
+        "objectName",
+        "title"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436832",
+          "predicate": "catalogue_object_type",
+          "value": "Painting"
+        },
+        {
+          "subject": "met:436832",
+          "predicate": "catalogue_title",
+          "value": "Wide River Landscape"
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "The catalogue assigns object 436832 the type label \"Painting\" and the title \"Wide River Landscape\".",
+        "ko": "도록은 객체 436832의 유형 표기를 \"Painting\", 제목 표기를 \"Wide River Landscape\"로 제시한다."
+      },
+      "oracle_spec": {
+        "operation": "explicit_fact_polarity",
+        "predicate": "catalogue_object_type",
+        "polarity_scope": "Negate the explicitly stated exact-label predicate; no closed-world inference from missing properties.",
+        "note": "Affirmative evidence bank only. Later opposite-state fictional context must be marked hypothetical; no R pair or answer generated here."
+      },
+      "renderer_family": "new-catalogue-exact-label-polarity-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19912296"
+    },
+    {
+      "record_id": "met-436859",
+      "concept": "negation",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436859",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436859",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "61.233",
+      "source_creator": "Edward Lear",
+      "source_document_lineage": "met-accession:61.233",
+      "underlying_entity_or_event": "met-object:436859",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.125761+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436859.json",
+      "raw_snapshot_sha256": "445f4fd3a3e40bb12c5f05a9bb39c8a1326820d138b342bf590f10b40b84bc67",
+      "source_field_paths": [
+        "objectName",
+        "title"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436859",
+          "predicate": "catalogue_object_type",
+          "value": "Drawing"
+        },
+        {
+          "subject": "met:436859",
+          "predicate": "catalogue_title",
+          "value": "Catania and Mount Etna"
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "The catalogue assigns object 436859 the type label \"Drawing\" and the title \"Catania and Mount Etna\".",
+        "ko": "도록은 객체 436859의 유형 표기를 \"Drawing\", 제목 표기를 \"Catania and Mount Etna\"로 제시한다."
+      },
+      "oracle_spec": {
+        "operation": "explicit_fact_polarity",
+        "predicate": "catalogue_object_type",
+        "polarity_scope": "Negate the explicitly stated exact-label predicate; no closed-world inference from missing properties.",
+        "note": "Affirmative evidence bank only. Later opposite-state fictional context must be marked hypothetical; no R pair or answer generated here."
+      },
+      "renderer_family": "new-catalogue-exact-label-polarity-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19913070"
+    },
+    {
+      "record_id": "met-436884",
+      "concept": "negation",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436884",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436884",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "43.98.8",
+      "source_creator": "Liberale da Verona",
+      "source_document_lineage": "met-accession:43.98.8",
+      "underlying_entity_or_event": "met-object:436884",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.125860+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436884.json",
+      "raw_snapshot_sha256": "11fc00eb8008d11400fca56f90ac1e235c9c422e62de40e9c48f1ca09029cb48",
+      "source_field_paths": [
+        "objectName",
+        "title"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436884",
+          "predicate": "catalogue_object_type",
+          "value": "Painting, cassone panel"
+        },
+        {
+          "subject": "met:436884",
+          "predicate": "catalogue_title",
+          "value": "The Chess Players"
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "The catalogue assigns object 436884 the type label \"Painting, cassone panel\" and the title \"The Chess Players\".",
+        "ko": "도록은 객체 436884의 유형 표기를 \"Painting, cassone panel\", 제목 표기를 \"The Chess Players\"로 제시한다."
+      },
+      "oracle_spec": {
+        "operation": "explicit_fact_polarity",
+        "predicate": "catalogue_object_type",
+        "polarity_scope": "Negate the explicitly stated exact-label predicate; no closed-world inference from missing properties.",
+        "note": "Affirmative evidence bank only. Later opposite-state fictional context must be marked hypothetical; no R pair or answer generated here."
+      },
+      "renderer_family": "new-catalogue-exact-label-polarity-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19911685"
+    },
+    {
+      "record_id": "met-436906",
+      "concept": "negation",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436906",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436906",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "17.190.12",
+      "source_creator": "Pietro Longhi (Pietro Falca)",
+      "source_document_lineage": "met-accession:17.190.12",
+      "underlying_entity_or_event": "met-object:436906",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.125959+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436906.json",
+      "raw_snapshot_sha256": "85fc29736b92d1f8593864310497918b5cc004bb5282671ff15f4b87fe412c04",
+      "source_field_paths": [
+        "objectName",
+        "title"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436906",
+          "predicate": "catalogue_object_type",
+          "value": "Painting"
+        },
+        {
+          "subject": "met:436906",
+          "predicate": "catalogue_title",
+          "value": "The Temptation"
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "The catalogue assigns object 436906 the type label \"Painting\" and the title \"The Temptation\".",
+        "ko": "도록은 객체 436906의 유형 표기를 \"Painting\", 제목 표기를 \"The Temptation\"로 제시한다."
+      },
+      "oracle_spec": {
+        "operation": "explicit_fact_polarity",
+        "predicate": "catalogue_object_type",
+        "polarity_scope": "Negate the explicitly stated exact-label predicate; no closed-world inference from missing properties.",
+        "note": "Affirmative evidence bank only. Later opposite-state fictional context must be marked hypothetical; no R pair or answer generated here."
+      },
+      "renderer_family": "new-catalogue-exact-label-polarity-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19911524"
+    },
+    {
+      "record_id": "met-436930",
+      "concept": "negation",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436930",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436930",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "11.149.3",
+      "source_creator": "Nicolaes Maes",
+      "source_document_lineage": "met-accession:11.149.3",
+      "underlying_entity_or_event": "met-object:436930",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.126072+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436930.json",
+      "raw_snapshot_sha256": "c370cfd60da06aa7f0f4937dd5f10bd367ad3abbff523f73ad1e3ea8f1833f88",
+      "source_field_paths": [
+        "objectName",
+        "title"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436930",
+          "predicate": "catalogue_object_type",
+          "value": "Painting"
+        },
+        {
+          "subject": "met:436930",
+          "predicate": "catalogue_title",
+          "value": "Ingena Rotterdam (died 1704), Betrothed of Admiral Jacob Binkes"
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "The catalogue assigns object 436930 the type label \"Painting\" and the title \"Ingena Rotterdam (died 1704), Betrothed of Admiral Jacob Binkes\".",
+        "ko": "도록은 객체 436930의 유형 표기를 \"Painting\", 제목 표기를 \"Ingena Rotterdam (died 1704), Betrothed of Admiral Jacob Binkes\"로 제시한다."
+      },
+      "oracle_spec": {
+        "operation": "explicit_fact_polarity",
+        "predicate": "catalogue_object_type",
+        "polarity_scope": "Negate the explicitly stated exact-label predicate; no closed-world inference from missing properties.",
+        "note": "Affirmative evidence bank only. Later opposite-state fictional context must be marked hypothetical; no R pair or answer generated here."
+      },
+      "renderer_family": "new-catalogue-exact-label-polarity-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19912947"
+    },
+    {
+      "record_id": "met-436953",
+      "concept": "negation",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436953",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436953",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "29.100.55",
+      "source_creator": "Edouard Manet",
+      "source_document_lineage": "met-accession:29.100.55",
+      "underlying_entity_or_event": "met-object:436953",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.126175+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_436953.json",
+      "raw_snapshot_sha256": "91b8751661eae485faace9cb4b6f8a38bb022ae716326b8b7d35ca8e94a00343",
+      "source_field_paths": [
+        "objectName",
+        "title"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:436953",
+          "predicate": "catalogue_object_type",
+          "value": "Drawing"
+        },
+        {
+          "subject": "met:436953",
+          "predicate": "catalogue_title",
+          "value": "George Moore (1852–1933)"
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "The catalogue assigns object 436953 the type label \"Drawing\" and the title \"George Moore (1852–1933)\".",
+        "ko": "도록은 객체 436953의 유형 표기를 \"Drawing\", 제목 표기를 \"George Moore (1852–1933)\"로 제시한다."
+      },
+      "oracle_spec": {
+        "operation": "explicit_fact_polarity",
+        "predicate": "catalogue_object_type",
+        "polarity_scope": "Negate the explicitly stated exact-label predicate; no closed-world inference from missing properties.",
+        "note": "Affirmative evidence bank only. Later opposite-state fictional context must be marked hypothetical; no R pair or answer generated here."
+      },
+      "renderer_family": "new-catalogue-exact-label-polarity-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19912891"
+    },
+    {
+      "record_id": "met-437004",
+      "concept": "negation",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/437004",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/437004",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "44.147.1",
+      "source_creator": "Master of Eggenburg",
+      "source_document_lineage": "met-accession:44.147.1",
+      "underlying_entity_or_event": "met-object:437004",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.126293+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_437004.json",
+      "raw_snapshot_sha256": "7458b14343310ca68a1d1c4a4eae1e28aac85e9304575726e80e3c8badb6b37f",
+      "source_field_paths": [
+        "objectName",
+        "title"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:437004",
+          "predicate": "catalogue_object_type",
+          "value": "Painting, part of an altarpiece"
+        },
+        {
+          "subject": "met:437004",
+          "predicate": "catalogue_title",
+          "value": "Saint Adalbert and Saint Procopius"
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "The catalogue assigns object 437004 the type label \"Painting, part of an altarpiece\" and the title \"Saint Adalbert and Saint Procopius\".",
+        "ko": "도록은 객체 437004의 유형 표기를 \"Painting, part of an altarpiece\", 제목 표기를 \"Saint Adalbert and Saint Procopius\"로 제시한다."
+      },
+      "oracle_spec": {
+        "operation": "explicit_fact_polarity",
+        "predicate": "catalogue_object_type",
+        "polarity_scope": "Negate the explicitly stated exact-label predicate; no closed-world inference from missing properties.",
+        "note": "Affirmative evidence bank only. Later opposite-state fictional context must be marked hypothetical; no R pair or answer generated here."
+      },
+      "renderer_family": "new-catalogue-exact-label-polarity-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19911522"
+    },
+    {
+      "record_id": "met-437030",
+      "concept": "negation",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/437030",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/437030",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "50.145.27",
+      "source_creator": "Master of the View of Saint Gudula",
+      "source_document_lineage": "met-accession:50.145.27",
+      "underlying_entity_or_event": "met-object:437030",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.126398+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_437030.json",
+      "raw_snapshot_sha256": "a2dfaa34221dd9ea158e60f487661ad0ae2cc3ff3ebba79c370a804c92c6d9af",
+      "source_field_paths": [
+        "objectName",
+        "title"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:437030",
+          "predicate": "catalogue_object_type",
+          "value": "Painting"
+        },
+        {
+          "subject": "met:437030",
+          "predicate": "catalogue_title",
+          "value": "Young Man Holding a Book"
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "The catalogue assigns object 437030 the type label \"Painting\" and the title \"Young Man Holding a Book\".",
+        "ko": "도록은 객체 437030의 유형 표기를 \"Painting\", 제목 표기를 \"Young Man Holding a Book\"로 제시한다."
+      },
+      "oracle_spec": {
+        "operation": "explicit_fact_polarity",
+        "predicate": "catalogue_object_type",
+        "polarity_scope": "Negate the explicitly stated exact-label predicate; no closed-world inference from missing properties.",
+        "note": "Affirmative evidence bank only. Later opposite-state fictional context must be marked hypothetical; no R pair or answer generated here."
+      },
+      "renderer_family": "new-catalogue-exact-label-polarity-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19912121"
+    },
+    {
+      "record_id": "met-437054",
+      "concept": "negation",
+      "status": "FACT_BANK_CANDIDATE_NOT_R_APPROVED",
+      "source_url": "https://www.metmuseum.org/art/collection/search/437054",
+      "api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/437054",
+      "source_institution": "Metropolitan Museum of Art",
+      "source_record_id": "14.40.634",
+      "source_creator": "Hans Memling",
+      "source_document_lineage": "met-accession:14.40.634",
+      "underlying_entity_or_event": "met-object:437054",
+      "derivation_parent": null,
+      "shared_dependencies": [
+        "Met collection metadata production/API schema",
+        "European Paintings department sampling frame"
+      ],
+      "independence_status": "Distinct accession and artist in this 32-record sample; statistical independence not guaranteed. Institution/schema recorded as dependence axes, not forced into one source-document lineage.",
+      "license": "CC0-1.0 basic collection metadata",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "api_license_url": "https://metmuseum.github.io/",
+      "retrieved_utc": "2026-11-04T07:07:02.126500+00:00",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/met_437054.json",
+      "raw_snapshot_sha256": "b4b3221ba38840ef2dbbdb9b6ff693e4e514b36eeaa56ecefcb707f0eb571709",
+      "source_field_paths": [
+        "objectName",
+        "title"
+      ],
+      "canonical_facts": [
+        {
+          "subject": "met:437054",
+          "predicate": "catalogue_object_type",
+          "value": "Painting"
+        },
+        {
+          "subject": "met:437054",
+          "predicate": "catalogue_title",
+          "value": "Virgin and Child with Saints Catherine of Alexandria and Barbara"
+        }
+      ],
+      "controlled_paraphrase": {
+        "en": "The catalogue assigns object 437054 the type label \"Painting\" and the title \"Virgin and Child with Saints Catherine of Alexandria and Barbara\".",
+        "ko": "도록은 객체 437054의 유형 표기를 \"Painting\", 제목 표기를 \"Virgin and Child with Saints Catherine of Alexandria and Barbara\"로 제시한다."
+      },
+      "oracle_spec": {
+        "operation": "explicit_fact_polarity",
+        "predicate": "catalogue_object_type",
+        "polarity_scope": "Negate the explicitly stated exact-label predicate; no closed-world inference from missing properties.",
+        "note": "Affirmative evidence bank only. Later opposite-state fictional context must be marked hypothetical; no R pair or answer generated here."
+      },
+      "renderer_family": "new-catalogue-exact-label-polarity-v1",
+      "renderer_oracle_status": "NEW_RENDERER_AND_INDEPENDENT_TEXT_PARSER_REQUIRED; not supported by four existing engineering grammars",
+      "R_assignment": null,
+      "external_entity_id": "Q19894606"
+    }
+  ]
+}

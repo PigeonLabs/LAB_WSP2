@@ -1,0 +1,9 @@
+{
+  "commit": "bee23322f1baa3d2dd16b8339bed6aff4a8eb663",
+  "path": "ggml/src/ggml-cpu/vec.h",
+  "before_sha256": "d969d24adcf494eaac83a865ae1c46aab744ce71d2fd8028286071c4c651a6be",
+  "after_sha256": "aad379ad54b00bd8d3a87c3c95cf9fc6135dc6669649616deac41018569c455c",
+  "reason": "Default CPU GELU uses an FP16 lookup even for F32 input; strict reference requires analytic FP32 arithmetic. Original binary and failed measurements retained; frozen tolerances unchanged.",
+  "old_build": "cache/gemma-v3/llama.cpp/build",
+  "new_build": "cache/gemma-v3/llama.cpp/build-fp32-gelu"
+}

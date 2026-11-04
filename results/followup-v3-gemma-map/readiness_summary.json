@@ -1,0 +1,2768 @@
+{
+  "status": "MEASURED_CONDITIONAL_READINESS_SUMMARY",
+  "models": {
+    "gemma": {
+      "accuracy": 0.6171875,
+      "correct": 632,
+      "n_rows": 1024,
+      "source_ci95": [
+        0.60546875,
+        0.62890625
+      ],
+      "shared_reference_ci95": [
+        0.6072048611111112,
+        0.6316964285714286
+      ],
+      "conditional_cells_meeting_threshold": 1,
+      "n_cells": 8,
+      "score_margin_diagnostic": {
+        "exact_ties": 0,
+        "absolute_margin_below_0_002": 0,
+        "note": "Margin diagnostic only; no rows dropped or labels changed. Eight batch checks do not establish a universal error bound."
+      }
+    },
+    "qwen": {
+      "accuracy": 0.4990234375,
+      "correct": 511,
+      "n_rows": 1024,
+      "source_ci95": [
+        0.49609375,
+        0.501953125
+      ],
+      "shared_reference_ci95": [
+        0.49609375,
+        0.501953125
+      ],
+      "conditional_cells_meeting_threshold": 0,
+      "n_cells": 8,
+      "score_margin_diagnostic": {
+        "exact_ties": 0,
+        "absolute_margin_below_0_002": 1,
+        "note": "Margin diagnostic only; no rows dropped or labels changed. Eight batch checks do not establish a universal error bound."
+      }
+    }
+  },
+  "rows": [
+    {
+      "model": "gemma",
+      "concept": "negation",
+      "language": "en",
+      "accuracy": 0.640625,
+      "correct": 82,
+      "n_rows": 128,
+      "n_families": 16,
+      "source_cluster_bootstrap": {
+        "ci95": [
+          0.6015625,
+          0.6796875
+        ],
+        "n_clusters": 16,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "shared_reference_cluster_sensitivity": {
+        "ci95": [
+          0.6015625,
+          0.6796875
+        ],
+        "n_clusters": 16,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "caution": "Conditional descriptive sensitivity"
+      },
+      "conditional_threshold_met": false,
+      "shared_reference_threshold_met": false,
+      "original_confirmatory_scientific_eligibility": false
+    },
+    {
+      "model": "gemma",
+      "concept": "negation",
+      "language": "ko",
+      "accuracy": 0.546875,
+      "correct": 70,
+      "n_rows": 128,
+      "n_families": 16,
+      "source_cluster_bootstrap": {
+        "ci95": [
+          0.515625,
+          0.578125
+        ],
+        "n_clusters": 16,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "shared_reference_cluster_sensitivity": {
+        "ci95": [
+          0.515625,
+          0.578125
+        ],
+        "n_clusters": 16,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "caution": "Conditional descriptive sensitivity"
+      },
+      "conditional_threshold_met": false,
+      "shared_reference_threshold_met": false,
+      "original_confirmatory_scientific_eligibility": false
+    },
+    {
+      "model": "gemma",
+      "concept": "ownership_coreference",
+      "language": "en",
+      "accuracy": 0.828125,
+      "correct": 106,
+      "n_rows": 128,
+      "n_families": 16,
+      "source_cluster_bootstrap": {
+        "ci95": [
+          0.796875,
+          0.859375
+        ],
+        "n_clusters": 16,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "shared_reference_cluster_sensitivity": {
+        "ci95": [
+          0.8,
+          0.8571428571428571
+        ],
+        "n_clusters": 14,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "caution": "Conditional descriptive sensitivity"
+      },
+      "conditional_threshold_met": true,
+      "shared_reference_threshold_met": true,
+      "original_confirmatory_scientific_eligibility": false
+    },
+    {
+      "model": "gemma",
+      "concept": "ownership_coreference",
+      "language": "ko",
+      "accuracy": 0.6796875,
+      "correct": 87,
+      "n_rows": 128,
+      "n_families": 16,
+      "source_cluster_bootstrap": {
+        "ci95": [
+          0.6328125,
+          0.71875
+        ],
+        "n_clusters": 16,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "shared_reference_cluster_sensitivity": {
+        "ci95": [
+          0.6428571428571429,
+          0.7142857142857143
+        ],
+        "n_clusters": 14,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "caution": "Conditional descriptive sensitivity"
+      },
+      "conditional_threshold_met": false,
+      "shared_reference_threshold_met": false,
+      "original_confirmatory_scientific_eligibility": false
+    },
+    {
+      "model": "gemma",
+      "concept": "temporal_order",
+      "language": "en",
+      "accuracy": 0.6328125,
+      "correct": 81,
+      "n_rows": 128,
+      "n_families": 16,
+      "source_cluster_bootstrap": {
+        "ci95": [
+          0.625,
+          0.6484375
+        ],
+        "n_clusters": 16,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "shared_reference_cluster_sensitivity": {
+        "ci95": [
+          0.625,
+          0.634375
+        ],
+        "n_clusters": 4,
+        "families_per_cluster": [
+          13,
+          1,
+          1,
+          1
+        ],
+        "caution": "Very few clusters; interval is descriptive and potentially unstable"
+      },
+      "conditional_threshold_met": false,
+      "shared_reference_threshold_met": false,
+      "original_confirmatory_scientific_eligibility": false
+    },
+    {
+      "model": "gemma",
+      "concept": "temporal_order",
+      "language": "ko",
+      "accuracy": 0.5,
+      "correct": 64,
+      "n_rows": 128,
+      "n_families": 16,
+      "source_cluster_bootstrap": {
+        "ci95": [
+          0.4765625,
+          0.5234375
+        ],
+        "n_clusters": 16,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "shared_reference_cluster_sensitivity": {
+        "ci95": [
+          0.490625,
+          0.59375
+        ],
+        "n_clusters": 4,
+        "families_per_cluster": [
+          13,
+          1,
+          1,
+          1
+        ],
+        "caution": "Very few clusters; interval is descriptive and potentially unstable"
+      },
+      "conditional_threshold_met": false,
+      "shared_reference_threshold_met": false,
+      "original_confirmatory_scientific_eligibility": false
+    },
+    {
+      "model": "gemma",
+      "concept": "numeric_comparison",
+      "language": "en",
+      "accuracy": 0.59375,
+      "correct": 76,
+      "n_rows": 128,
+      "n_families": 16,
+      "source_cluster_bootstrap": {
+        "ci95": [
+          0.5625,
+          0.625
+        ],
+        "n_clusters": 16,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "shared_reference_cluster_sensitivity": {
+        "ci95": [
+          0.5625,
+          0.625
+        ],
+        "n_clusters": 16,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "caution": "Conditional descriptive sensitivity"
+      },
+      "conditional_threshold_met": false,
+      "shared_reference_threshold_met": false,
+      "original_confirmatory_scientific_eligibility": false
+    },
+    {
+      "model": "gemma",
+      "concept": "numeric_comparison",
+      "language": "ko",
+      "accuracy": 0.515625,
+      "correct": 66,
+      "n_rows": 128,
+      "n_families": 16,
+      "source_cluster_bootstrap": {
+        "ci95": [
+          0.5,
+          0.5390625
+        ],
+        "n_clusters": 16,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "shared_reference_cluster_sensitivity": {
+        "ci95": [
+          0.5,
+          0.5390625
+        ],
+        "n_clusters": 16,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "caution": "Conditional descriptive sensitivity"
+      },
+      "conditional_threshold_met": false,
+      "shared_reference_threshold_met": false,
+      "original_confirmatory_scientific_eligibility": false
+    },
+    {
+      "model": "qwen",
+      "concept": "negation",
+      "language": "en",
+      "accuracy": 0.5,
+      "correct": 64,
+      "n_rows": 128,
+      "n_families": 16,
+      "source_cluster_bootstrap": {
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "n_clusters": 16,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "shared_reference_cluster_sensitivity": {
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "n_clusters": 16,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "caution": "Conditional descriptive sensitivity"
+      },
+      "conditional_threshold_met": false,
+      "shared_reference_threshold_met": false,
+      "original_confirmatory_scientific_eligibility": false
+    },
+    {
+      "model": "qwen",
+      "concept": "negation",
+      "language": "ko",
+      "accuracy": 0.5,
+      "correct": 64,
+      "n_rows": 128,
+      "n_families": 16,
+      "source_cluster_bootstrap": {
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "n_clusters": 16,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "shared_reference_cluster_sensitivity": {
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "n_clusters": 16,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "caution": "Conditional descriptive sensitivity"
+      },
+      "conditional_threshold_met": false,
+      "shared_reference_threshold_met": false,
+      "original_confirmatory_scientific_eligibility": false
+    },
+    {
+      "model": "qwen",
+      "concept": "ownership_coreference",
+      "language": "en",
+      "accuracy": 0.5,
+      "correct": 64,
+      "n_rows": 128,
+      "n_families": 16,
+      "source_cluster_bootstrap": {
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "n_clusters": 16,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "shared_reference_cluster_sensitivity": {
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "n_clusters": 14,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "caution": "Conditional descriptive sensitivity"
+      },
+      "conditional_threshold_met": false,
+      "shared_reference_threshold_met": false,
+      "original_confirmatory_scientific_eligibility": false
+    },
+    {
+      "model": "qwen",
+      "concept": "ownership_coreference",
+      "language": "ko",
+      "accuracy": 0.5,
+      "correct": 64,
+      "n_rows": 128,
+      "n_families": 16,
+      "source_cluster_bootstrap": {
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "n_clusters": 16,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "shared_reference_cluster_sensitivity": {
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "n_clusters": 14,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "caution": "Conditional descriptive sensitivity"
+      },
+      "conditional_threshold_met": false,
+      "shared_reference_threshold_met": false,
+      "original_confirmatory_scientific_eligibility": false
+    },
+    {
+      "model": "qwen",
+      "concept": "temporal_order",
+      "language": "en",
+      "accuracy": 0.5,
+      "correct": 64,
+      "n_rows": 128,
+      "n_families": 16,
+      "source_cluster_bootstrap": {
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "n_clusters": 16,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "shared_reference_cluster_sensitivity": {
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "n_clusters": 4,
+        "families_per_cluster": [
+          13,
+          1,
+          1,
+          1
+        ],
+        "caution": "Very few clusters; interval is descriptive and potentially unstable"
+      },
+      "conditional_threshold_met": false,
+      "shared_reference_threshold_met": false,
+      "original_confirmatory_scientific_eligibility": false
+    },
+    {
+      "model": "qwen",
+      "concept": "temporal_order",
+      "language": "ko",
+      "accuracy": 0.5,
+      "correct": 64,
+      "n_rows": 128,
+      "n_families": 16,
+      "source_cluster_bootstrap": {
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "n_clusters": 16,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "shared_reference_cluster_sensitivity": {
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "n_clusters": 4,
+        "families_per_cluster": [
+          13,
+          1,
+          1,
+          1
+        ],
+        "caution": "Very few clusters; interval is descriptive and potentially unstable"
+      },
+      "conditional_threshold_met": false,
+      "shared_reference_threshold_met": false,
+      "original_confirmatory_scientific_eligibility": false
+    },
+    {
+      "model": "qwen",
+      "concept": "numeric_comparison",
+      "language": "en",
+      "accuracy": 0.5,
+      "correct": 64,
+      "n_rows": 128,
+      "n_families": 16,
+      "source_cluster_bootstrap": {
+        "ci95": [
+          0.4765625,
+          0.5234375
+        ],
+        "n_clusters": 16,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "shared_reference_cluster_sensitivity": {
+        "ci95": [
+          0.4765625,
+          0.5234375
+        ],
+        "n_clusters": 16,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "caution": "Conditional descriptive sensitivity"
+      },
+      "conditional_threshold_met": false,
+      "shared_reference_threshold_met": false,
+      "original_confirmatory_scientific_eligibility": false
+    },
+    {
+      "model": "qwen",
+      "concept": "numeric_comparison",
+      "language": "ko",
+      "accuracy": 0.4921875,
+      "correct": 63,
+      "n_rows": 128,
+      "n_families": 16,
+      "source_cluster_bootstrap": {
+        "ci95": [
+          0.4765625,
+          0.5
+        ],
+        "n_clusters": 16,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "shared_reference_cluster_sensitivity": {
+        "ci95": [
+          0.4765625,
+          0.5
+        ],
+        "n_clusters": 16,
+        "families_per_cluster": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "caution": "Conditional descriptive sensitivity"
+      },
+      "conditional_threshold_met": false,
+      "shared_reference_threshold_met": false,
+      "original_confirmatory_scientific_eligibility": false
+    }
+  ],
+  "paired_cells": [
+    {
+      "concept": "negation",
+      "language": "en",
+      "both_models_conditional_threshold_met": false,
+      "both_models_shared_reference_threshold_met": false,
+      "original_confirmatory_scientific_eligibility": false
+    },
+    {
+      "concept": "negation",
+      "language": "ko",
+      "both_models_conditional_threshold_met": false,
+      "both_models_shared_reference_threshold_met": false,
+      "original_confirmatory_scientific_eligibility": false
+    },
+    {
+      "concept": "ownership_coreference",
+      "language": "en",
+      "both_models_conditional_threshold_met": false,
+      "both_models_shared_reference_threshold_met": false,
+      "original_confirmatory_scientific_eligibility": false
+    },
+    {
+      "concept": "ownership_coreference",
+      "language": "ko",
+      "both_models_conditional_threshold_met": false,
+      "both_models_shared_reference_threshold_met": false,
+      "original_confirmatory_scientific_eligibility": false
+    },
+    {
+      "concept": "temporal_order",
+      "language": "en",
+      "both_models_conditional_threshold_met": false,
+      "both_models_shared_reference_threshold_met": false,
+      "original_confirmatory_scientific_eligibility": false
+    },
+    {
+      "concept": "temporal_order",
+      "language": "ko",
+      "both_models_conditional_threshold_met": false,
+      "both_models_shared_reference_threshold_met": false,
+      "original_confirmatory_scientific_eligibility": false
+    },
+    {
+      "concept": "numeric_comparison",
+      "language": "en",
+      "both_models_conditional_threshold_met": false,
+      "both_models_shared_reference_threshold_met": false,
+      "original_confirmatory_scientific_eligibility": false
+    },
+    {
+      "concept": "numeric_comparison",
+      "language": "ko",
+      "both_models_conditional_threshold_met": false,
+      "both_models_shared_reference_threshold_met": false,
+      "original_confirmatory_scientific_eligibility": false
+    }
+  ],
+  "paired_cells_meeting_conditional_threshold": 0,
+  "bootstrap": {
+    "replicates": 10000,
+    "base_seed": 20261104,
+    "seed_derivation": "SHA256(base_seed/concept/axis), first8bytes little-endian",
+    "primary_axis": "source_cluster_id",
+    "secondary_axis": "source_reference_cluster_id",
+    "scheme": "Stratify by concept; resample whole clusters with replacement, retaining all families/variants/languages/models jointly.",
+    "point_estimand": "Equal family mean inside concept/language; overall equal concept/language mean.",
+    "unequal_cluster_rule": "Sum resampled cluster family totals / sum resampled family counts, not unweighted cluster means.",
+    "interval": "Descriptive percentile95%; conditional fixed renderer/source frame/model collection; not a simultaneous CI."
+  },
+  "thresholds": {
+    "accuracy_min": 0.75,
+    "ci_lower_strictly_greater_than": 0.5
+  },
+  "source_paths": {
+    "data": "data/followup-v3-gemma-map/readiness.jsonl",
+    "manifest": "data/followup-v3-gemma-map/readiness_manifest.json",
+    "source_catalog": "reports/v3/Rsourcecatalogv2.json",
+    "prompt_lock": "configs/gemma_v3_prompt_lock.json",
+    "amendment": "results/followup-v3-gemma-map/readiness_conditional_amendment.json",
+    "gemma": "results/followup-v3-gemma-map/readiness_scores/gemma.json",
+    "qwen": "results/followup-v3-gemma-map/readiness_scores/qwen.json"
+  },
+  "source_sha256": {
+    "data": "04e469fb29bd4f6acaf722bdd3be42519f6366ed2ab4cc003f06de060bf42e5d",
+    "manifest": "a670a63a3d609f9e487c7347accc80fd51db00e61e32c7f565d8e3033d00568b",
+    "source_catalog": "9110fe7ea1883380dcf3346113e98c98671a60fedaccc18ba66ccf71b64930dc",
+    "prompt_lock": "f26cee1e30467fd076ce396fe2db722993661d2e6668bb30486238075508af89",
+    "amendment": "dac09dc28941af6a8382d4400dc31b55fb719f2a4218b40bd51ef1ca17cb1251",
+    "gemma": "549dadf9076736f05c71cb1c39e1a31298e6384dbc8bfbfaa1b2c9aa6a7d99d4",
+    "qwen": "77b5a399925c07866a0ae836ef3f4e732e384d6a443cdd808331214debf974bc"
+  },
+  "analysis_script_sha256": "d09e6f3fb0f4a403c1b55b4dc881a0ece3663d26e6a89a673afa49e4fa7e801f",
+  "strict_template_generalization_gate": "FAIL_SHARED_RENDERERS",
+  "original_confirmatory_claims_evaluable": false,
+  "test_opened": false,
+  "ood_opened": false,
+  "actual_source_clusters": 64,
+  "actual_shared_reference_clusters": 50,
+  "actual_renderer_lineages": 4,
+  "limitations": [
+    "No new hypothesis tests or changes to the four-claim family.",
+    "Conditional capability flags do not pass the original template/generalization/power gate.",
+    "Convenience source records and shared institutions may remain dependent beyond recorded graph edges.",
+    "Sixteen variants are repeated measurements, not sixteen independent sources.",
+    "A passing controlled-record task does not establish broad semantic or natural-language competence."
+  ],
+  "response_diagnostics": {
+    "gemma": {
+      "overall": {
+        "n": 1024,
+        "accuracy": 0.6171875,
+        "predicted_answer_code_counts": {
+          "A": 816,
+          "B": 208
+        },
+        "predicted_answer_code_frequencies": {
+          "A": 0.796875,
+          "B": 0.203125
+        },
+        "predicted_proposition_counts": {
+          "statement_true": 682,
+          "statement_false": 342
+        }
+      },
+      "truth_code_language_cells": [
+        {
+          "semantic_state": 0,
+          "answer_code": 0,
+          "language": "en",
+          "n": 128,
+          "accuracy": 0.1328125,
+          "predicted_answer_code_counts": {
+            "A": 111,
+            "B": 17
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.8671875,
+            "B": 0.1328125
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 111,
+            "statement_false": 17
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 0,
+          "language": "ko",
+          "n": 128,
+          "accuracy": 0.0078125,
+          "predicted_answer_code_counts": {
+            "A": 127,
+            "B": 1
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.9921875,
+            "B": 0.0078125
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 127,
+            "statement_false": 1
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 1,
+          "language": "en",
+          "n": 128,
+          "accuracy": 0.8359375,
+          "predicted_answer_code_counts": {
+            "A": 107,
+            "B": 21
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.8359375,
+            "B": 0.1640625
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 21,
+            "statement_false": 107
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 1,
+          "language": "ko",
+          "n": 128,
+          "accuracy": 0.828125,
+          "predicted_answer_code_counts": {
+            "A": 106,
+            "B": 22
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.828125,
+            "B": 0.171875
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 22,
+            "statement_false": 106
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 0,
+          "language": "en",
+          "n": 128,
+          "accuracy": 0.9921875,
+          "predicted_answer_code_counts": {
+            "A": 127,
+            "B": 1
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.9921875,
+            "B": 0.0078125
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 127,
+            "statement_false": 1
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 0,
+          "language": "ko",
+          "n": 128,
+          "accuracy": 1.0,
+          "predicted_answer_code_counts": {
+            "A": 128,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 128,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 1,
+          "language": "en",
+          "n": 128,
+          "accuracy": 0.734375,
+          "predicted_answer_code_counts": {
+            "A": 34,
+            "B": 94
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.265625,
+            "B": 0.734375
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 94,
+            "statement_false": 34
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 1,
+          "language": "ko",
+          "n": 128,
+          "accuracy": 0.40625,
+          "predicted_answer_code_counts": {
+            "A": 76,
+            "B": 52
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.59375,
+            "B": 0.40625
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 52,
+            "statement_false": 76
+          }
+        }
+      ],
+      "concept_truth_code_language_cells": [
+        {
+          "semantic_state": 0,
+          "answer_code": 0,
+          "language": "en",
+          "concept": "negation",
+          "n": 32,
+          "accuracy": 0.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 0,
+          "language": "en",
+          "concept": "ownership_coreference",
+          "n": 32,
+          "accuracy": 0.4375,
+          "predicted_answer_code_counts": {
+            "A": 18,
+            "B": 14
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.5625,
+            "B": 0.4375
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 18,
+            "statement_false": 14
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 0,
+          "language": "en",
+          "concept": "temporal_order",
+          "n": 32,
+          "accuracy": 0.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 0,
+          "language": "en",
+          "concept": "numeric_comparison",
+          "n": 32,
+          "accuracy": 0.09375,
+          "predicted_answer_code_counts": {
+            "A": 29,
+            "B": 3
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.90625,
+            "B": 0.09375
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 29,
+            "statement_false": 3
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 0,
+          "language": "ko",
+          "concept": "negation",
+          "n": 32,
+          "accuracy": 0.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 0,
+          "language": "ko",
+          "concept": "ownership_coreference",
+          "n": 32,
+          "accuracy": 0.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 0,
+          "language": "ko",
+          "concept": "temporal_order",
+          "n": 32,
+          "accuracy": 0.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 0,
+          "language": "ko",
+          "concept": "numeric_comparison",
+          "n": 32,
+          "accuracy": 0.03125,
+          "predicted_answer_code_counts": {
+            "A": 31,
+            "B": 1
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.96875,
+            "B": 0.03125
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 31,
+            "statement_false": 1
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 1,
+          "language": "en",
+          "concept": "negation",
+          "n": 32,
+          "accuracy": 0.9375,
+          "predicted_answer_code_counts": {
+            "A": 30,
+            "B": 2
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.9375,
+            "B": 0.0625
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 2,
+            "statement_false": 30
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 1,
+          "language": "en",
+          "concept": "ownership_coreference",
+          "n": 32,
+          "accuracy": 0.9375,
+          "predicted_answer_code_counts": {
+            "A": 30,
+            "B": 2
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.9375,
+            "B": 0.0625
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 2,
+            "statement_false": 30
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 1,
+          "language": "en",
+          "concept": "temporal_order",
+          "n": 32,
+          "accuracy": 1.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 0,
+            "statement_false": 32
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 1,
+          "language": "en",
+          "concept": "numeric_comparison",
+          "n": 32,
+          "accuracy": 0.46875,
+          "predicted_answer_code_counts": {
+            "A": 15,
+            "B": 17
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.46875,
+            "B": 0.53125
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 17,
+            "statement_false": 15
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 1,
+          "language": "ko",
+          "concept": "negation",
+          "n": 32,
+          "accuracy": 1.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 0,
+            "statement_false": 32
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 1,
+          "language": "ko",
+          "concept": "ownership_coreference",
+          "n": 32,
+          "accuracy": 0.875,
+          "predicted_answer_code_counts": {
+            "A": 28,
+            "B": 4
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.875,
+            "B": 0.125
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 4,
+            "statement_false": 28
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 1,
+          "language": "ko",
+          "concept": "temporal_order",
+          "n": 32,
+          "accuracy": 0.5,
+          "predicted_answer_code_counts": {
+            "A": 16,
+            "B": 16
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.5,
+            "B": 0.5
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 16,
+            "statement_false": 16
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 1,
+          "language": "ko",
+          "concept": "numeric_comparison",
+          "n": 32,
+          "accuracy": 0.9375,
+          "predicted_answer_code_counts": {
+            "A": 30,
+            "B": 2
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.9375,
+            "B": 0.0625
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 2,
+            "statement_false": 30
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 0,
+          "language": "en",
+          "concept": "negation",
+          "n": 32,
+          "accuracy": 1.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 0,
+          "language": "en",
+          "concept": "ownership_coreference",
+          "n": 32,
+          "accuracy": 1.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 0,
+          "language": "en",
+          "concept": "temporal_order",
+          "n": 32,
+          "accuracy": 1.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 0,
+          "language": "en",
+          "concept": "numeric_comparison",
+          "n": 32,
+          "accuracy": 0.96875,
+          "predicted_answer_code_counts": {
+            "A": 31,
+            "B": 1
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.96875,
+            "B": 0.03125
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 31,
+            "statement_false": 1
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 0,
+          "language": "ko",
+          "concept": "negation",
+          "n": 32,
+          "accuracy": 1.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 0,
+          "language": "ko",
+          "concept": "ownership_coreference",
+          "n": 32,
+          "accuracy": 1.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 0,
+          "language": "ko",
+          "concept": "temporal_order",
+          "n": 32,
+          "accuracy": 1.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 0,
+          "language": "ko",
+          "concept": "numeric_comparison",
+          "n": 32,
+          "accuracy": 1.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 1,
+          "language": "en",
+          "concept": "negation",
+          "n": 32,
+          "accuracy": 0.625,
+          "predicted_answer_code_counts": {
+            "A": 12,
+            "B": 20
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.375,
+            "B": 0.625
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 20,
+            "statement_false": 12
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 1,
+          "language": "en",
+          "concept": "ownership_coreference",
+          "n": 32,
+          "accuracy": 0.9375,
+          "predicted_answer_code_counts": {
+            "A": 2,
+            "B": 30
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.0625,
+            "B": 0.9375
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 30,
+            "statement_false": 2
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 1,
+          "language": "en",
+          "concept": "temporal_order",
+          "n": 32,
+          "accuracy": 0.53125,
+          "predicted_answer_code_counts": {
+            "A": 15,
+            "B": 17
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.46875,
+            "B": 0.53125
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 17,
+            "statement_false": 15
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 1,
+          "language": "en",
+          "concept": "numeric_comparison",
+          "n": 32,
+          "accuracy": 0.84375,
+          "predicted_answer_code_counts": {
+            "A": 5,
+            "B": 27
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.15625,
+            "B": 0.84375
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 27,
+            "statement_false": 5
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 1,
+          "language": "ko",
+          "concept": "negation",
+          "n": 32,
+          "accuracy": 0.1875,
+          "predicted_answer_code_counts": {
+            "A": 26,
+            "B": 6
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.8125,
+            "B": 0.1875
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 6,
+            "statement_false": 26
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 1,
+          "language": "ko",
+          "concept": "ownership_coreference",
+          "n": 32,
+          "accuracy": 0.84375,
+          "predicted_answer_code_counts": {
+            "A": 5,
+            "B": 27
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.15625,
+            "B": 0.84375
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 27,
+            "statement_false": 5
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 1,
+          "language": "ko",
+          "concept": "temporal_order",
+          "n": 32,
+          "accuracy": 0.5,
+          "predicted_answer_code_counts": {
+            "A": 16,
+            "B": 16
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.5,
+            "B": 0.5
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 16,
+            "statement_false": 16
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 1,
+          "language": "ko",
+          "concept": "numeric_comparison",
+          "n": 32,
+          "accuracy": 0.09375,
+          "predicted_answer_code_counts": {
+            "A": 29,
+            "B": 3
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.90625,
+            "B": 0.09375
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 3,
+            "statement_false": 29
+          }
+        }
+      ],
+      "answer_code_reversal": {
+        "n_pairs": 512,
+        "semantic_prediction_consistency_rate": 0.40625,
+        "same_output_letter_rate": 0.59375,
+        "both_correct_rate": 0.3203125
+      },
+      "semantic_counterfactual": {
+        "n_pairs": 512,
+        "prediction_flip_rate": 0.23828125,
+        "both_correct_rate": 0.236328125
+      },
+      "lexical_rephrasing": {
+        "n_pairs": 512,
+        "semantic_prediction_consistency_rate": 0.78125
+      },
+      "interpretation": "Observed response-pattern diagnostics only; no causal mechanism attribution, general reasoning-inability claim, new tuning or hypothesis test."
+    },
+    "qwen": {
+      "overall": {
+        "n": 1024,
+        "accuracy": 0.4990234375,
+        "predicted_answer_code_counts": {
+          "A": 749,
+          "B": 275
+        },
+        "predicted_answer_code_frequencies": {
+          "A": 0.7314453125,
+          "B": 0.2685546875
+        },
+        "predicted_proposition_counts": {
+          "statement_true": 779,
+          "statement_false": 245
+        }
+      },
+      "truth_code_language_cells": [
+        {
+          "semantic_state": 0,
+          "answer_code": 0,
+          "language": "en",
+          "n": 128,
+          "accuracy": 0.0078125,
+          "predicted_answer_code_counts": {
+            "A": 127,
+            "B": 1
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.9921875,
+            "B": 0.0078125
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 127,
+            "statement_false": 1
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 0,
+          "language": "ko",
+          "n": 128,
+          "accuracy": 0.0078125,
+          "predicted_answer_code_counts": {
+            "A": 127,
+            "B": 1
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.9921875,
+            "B": 0.0078125
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 127,
+            "statement_false": 1
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 1,
+          "language": "en",
+          "n": 128,
+          "accuracy": 0.921875,
+          "predicted_answer_code_counts": {
+            "A": 118,
+            "B": 10
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.921875,
+            "B": 0.078125
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 10,
+            "statement_false": 118
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 1,
+          "language": "ko",
+          "n": 128,
+          "accuracy": 0.015625,
+          "predicted_answer_code_counts": {
+            "A": 2,
+            "B": 126
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.015625,
+            "B": 0.984375
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 126,
+            "statement_false": 2
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 0,
+          "language": "en",
+          "n": 128,
+          "accuracy": 0.9921875,
+          "predicted_answer_code_counts": {
+            "A": 127,
+            "B": 1
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.9921875,
+            "B": 0.0078125
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 127,
+            "statement_false": 1
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 0,
+          "language": "ko",
+          "n": 128,
+          "accuracy": 0.9921875,
+          "predicted_answer_code_counts": {
+            "A": 127,
+            "B": 1
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.9921875,
+            "B": 0.0078125
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 127,
+            "statement_false": 1
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 1,
+          "language": "en",
+          "n": 128,
+          "accuracy": 0.078125,
+          "predicted_answer_code_counts": {
+            "A": 118,
+            "B": 10
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.921875,
+            "B": 0.078125
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 10,
+            "statement_false": 118
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 1,
+          "language": "ko",
+          "n": 128,
+          "accuracy": 0.9765625,
+          "predicted_answer_code_counts": {
+            "A": 3,
+            "B": 125
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.0234375,
+            "B": 0.9765625
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 125,
+            "statement_false": 3
+          }
+        }
+      ],
+      "concept_truth_code_language_cells": [
+        {
+          "semantic_state": 0,
+          "answer_code": 0,
+          "language": "en",
+          "concept": "negation",
+          "n": 32,
+          "accuracy": 0.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 0,
+          "language": "en",
+          "concept": "ownership_coreference",
+          "n": 32,
+          "accuracy": 0.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 0,
+          "language": "en",
+          "concept": "temporal_order",
+          "n": 32,
+          "accuracy": 0.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 0,
+          "language": "en",
+          "concept": "numeric_comparison",
+          "n": 32,
+          "accuracy": 0.03125,
+          "predicted_answer_code_counts": {
+            "A": 31,
+            "B": 1
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.96875,
+            "B": 0.03125
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 31,
+            "statement_false": 1
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 0,
+          "language": "ko",
+          "concept": "negation",
+          "n": 32,
+          "accuracy": 0.03125,
+          "predicted_answer_code_counts": {
+            "A": 31,
+            "B": 1
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.96875,
+            "B": 0.03125
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 31,
+            "statement_false": 1
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 0,
+          "language": "ko",
+          "concept": "ownership_coreference",
+          "n": 32,
+          "accuracy": 0.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 0,
+          "language": "ko",
+          "concept": "temporal_order",
+          "n": 32,
+          "accuracy": 0.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 0,
+          "language": "ko",
+          "concept": "numeric_comparison",
+          "n": 32,
+          "accuracy": 0.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 1,
+          "language": "en",
+          "concept": "negation",
+          "n": 32,
+          "accuracy": 1.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 0,
+            "statement_false": 32
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 1,
+          "language": "en",
+          "concept": "ownership_coreference",
+          "n": 32,
+          "accuracy": 1.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 0,
+            "statement_false": 32
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 1,
+          "language": "en",
+          "concept": "temporal_order",
+          "n": 32,
+          "accuracy": 1.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 0,
+            "statement_false": 32
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 1,
+          "language": "en",
+          "concept": "numeric_comparison",
+          "n": 32,
+          "accuracy": 0.6875,
+          "predicted_answer_code_counts": {
+            "A": 22,
+            "B": 10
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.6875,
+            "B": 0.3125
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 10,
+            "statement_false": 22
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 1,
+          "language": "ko",
+          "concept": "negation",
+          "n": 32,
+          "accuracy": 0.0,
+          "predicted_answer_code_counts": {
+            "A": 0,
+            "B": 32
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.0,
+            "B": 1.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 1,
+          "language": "ko",
+          "concept": "ownership_coreference",
+          "n": 32,
+          "accuracy": 0.0,
+          "predicted_answer_code_counts": {
+            "A": 0,
+            "B": 32
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.0,
+            "B": 1.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 1,
+          "language": "ko",
+          "concept": "temporal_order",
+          "n": 32,
+          "accuracy": 0.0,
+          "predicted_answer_code_counts": {
+            "A": 0,
+            "B": 32
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.0,
+            "B": 1.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 0,
+          "answer_code": 1,
+          "language": "ko",
+          "concept": "numeric_comparison",
+          "n": 32,
+          "accuracy": 0.0625,
+          "predicted_answer_code_counts": {
+            "A": 2,
+            "B": 30
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.0625,
+            "B": 0.9375
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 30,
+            "statement_false": 2
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 0,
+          "language": "en",
+          "concept": "negation",
+          "n": 32,
+          "accuracy": 1.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 0,
+          "language": "en",
+          "concept": "ownership_coreference",
+          "n": 32,
+          "accuracy": 1.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 0,
+          "language": "en",
+          "concept": "temporal_order",
+          "n": 32,
+          "accuracy": 1.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 0,
+          "language": "en",
+          "concept": "numeric_comparison",
+          "n": 32,
+          "accuracy": 0.96875,
+          "predicted_answer_code_counts": {
+            "A": 31,
+            "B": 1
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.96875,
+            "B": 0.03125
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 31,
+            "statement_false": 1
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 0,
+          "language": "ko",
+          "concept": "negation",
+          "n": 32,
+          "accuracy": 0.96875,
+          "predicted_answer_code_counts": {
+            "A": 31,
+            "B": 1
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.96875,
+            "B": 0.03125
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 31,
+            "statement_false": 1
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 0,
+          "language": "ko",
+          "concept": "ownership_coreference",
+          "n": 32,
+          "accuracy": 1.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 0,
+          "language": "ko",
+          "concept": "temporal_order",
+          "n": 32,
+          "accuracy": 1.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 0,
+          "language": "ko",
+          "concept": "numeric_comparison",
+          "n": 32,
+          "accuracy": 1.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 1,
+          "language": "en",
+          "concept": "negation",
+          "n": 32,
+          "accuracy": 0.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 0,
+            "statement_false": 32
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 1,
+          "language": "en",
+          "concept": "ownership_coreference",
+          "n": 32,
+          "accuracy": 0.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 0,
+            "statement_false": 32
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 1,
+          "language": "en",
+          "concept": "temporal_order",
+          "n": 32,
+          "accuracy": 0.0,
+          "predicted_answer_code_counts": {
+            "A": 32,
+            "B": 0
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 1.0,
+            "B": 0.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 0,
+            "statement_false": 32
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 1,
+          "language": "en",
+          "concept": "numeric_comparison",
+          "n": 32,
+          "accuracy": 0.3125,
+          "predicted_answer_code_counts": {
+            "A": 22,
+            "B": 10
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.6875,
+            "B": 0.3125
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 10,
+            "statement_false": 22
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 1,
+          "language": "ko",
+          "concept": "negation",
+          "n": 32,
+          "accuracy": 1.0,
+          "predicted_answer_code_counts": {
+            "A": 0,
+            "B": 32
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.0,
+            "B": 1.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 1,
+          "language": "ko",
+          "concept": "ownership_coreference",
+          "n": 32,
+          "accuracy": 1.0,
+          "predicted_answer_code_counts": {
+            "A": 0,
+            "B": 32
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.0,
+            "B": 1.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 1,
+          "language": "ko",
+          "concept": "temporal_order",
+          "n": 32,
+          "accuracy": 1.0,
+          "predicted_answer_code_counts": {
+            "A": 0,
+            "B": 32
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.0,
+            "B": 1.0
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 32,
+            "statement_false": 0
+          }
+        },
+        {
+          "semantic_state": 1,
+          "answer_code": 1,
+          "language": "ko",
+          "concept": "numeric_comparison",
+          "n": 32,
+          "accuracy": 0.90625,
+          "predicted_answer_code_counts": {
+            "A": 3,
+            "B": 29
+          },
+          "predicted_answer_code_frequencies": {
+            "A": 0.09375,
+            "B": 0.90625
+          },
+          "predicted_proposition_counts": {
+            "statement_true": 29,
+            "statement_false": 3
+          }
+        }
+      ],
+      "answer_code_reversal": {
+        "n_pairs": 512,
+        "semantic_prediction_consistency_rate": 0.529296875,
+        "same_output_letter_rate": 0.470703125,
+        "both_correct_rate": 0.263671875
+      },
+      "semantic_counterfactual": {
+        "n_pairs": 512,
+        "prediction_flip_rate": 0.005859375,
+        "both_correct_rate": 0.001953125
+      },
+      "lexical_rephrasing": {
+        "n_pairs": 512,
+        "semantic_prediction_consistency_rate": 0.943359375
+      },
+      "interpretation": "Observed response-pattern diagnostics only; no causal mechanism attribution, general reasoning-inability claim, new tuning or hypothesis test."
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "status": "PASS_SOURCE_FACT_REPLAY_ONLY",
+  "records": 64,
+  "canonical_facts": 112,
+  "counts_by_concept": {
+    "numeric_comparison": 16,
+    "negation": 16,
+    "ownership_coreference": 16,
+    "temporal_order": 16
+  },
+  "raw_snapshots": 50,
+  "checks": [
+    "Every raw snapshot hash",
+    "Met exact selected property values",
+    "Wikidata exact recorded revision/property/statement values",
+    "Ownership full original statement including qualifiers/references",
+    "Temporal date precision/calendar and reference hashes",
+    "Canonical fact hashes",
+    "KO/EN presence, no R assignment"
+  ],
+  "limitations": [
+    "Does not independently verify truth of upstream data.",
+    "Does not certify independent source or template sampling.",
+    "Does not validate an R renderer, oracle, or capability gate."
+  ],
+  "catalogue_sha256": "9110fe7ea1883380dcf3346113e98c98671a60fedaccc18ba66ccf71b64930dc"
+}

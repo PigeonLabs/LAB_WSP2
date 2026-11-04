@@ -1,0 +1,56 @@
+{
+  "status": "STARTED",
+  "scope": "Two existing E fixtures, same-engine arithmetic checks only; no independent cross-engine intervention validation",
+  "criteria": {
+    "schema_version": 1,
+    "status": "FROZEN_BEFORE_GPU_EXECUTION",
+    "scope": "Two existing E fixtures, same-engine arithmetic checks only; no independent cross-engine intervention validation",
+    "fixture_indexes": [
+      0,
+      1
+    ],
+    "units": [
+      {
+        "fixture": 0,
+        "layer_zero_based": 5,
+        "neuron": 277
+      },
+      {
+        "fixture": 0,
+        "layer_zero_based": 27,
+        "neuron": 2890
+      },
+      {
+        "fixture": 1,
+        "layer_zero_based": 5,
+        "neuron": 277
+      },
+      {
+        "fixture": 1,
+        "layer_zero_based": 27,
+        "neuron": 2890
+      }
+    ],
+    "unit_source": "results/followup-v3-gemma-map/engineering_engine/validation.json; already selected engineering neurons, no reselection",
+    "position": "last_prompt_token",
+    "replacement_rules": {
+      "zero": 0.0,
+      "patch": "-0.5 * baseline_native_product"
+    },
+    "logit_rmse_max": 0.001,
+    "logit_max_abs_max": 0.01,
+    "raw_mlp_atol": 0.0001,
+    "raw_mlp_rtol": 1e-05,
+    "cached_full_top1_exact": true,
+    "greedy_tokens_exact": true,
+    "greedy_steps": 4,
+    "greedy_eog_policy": "Record EOG IDs but continue exactly four arithmetic diagnostic steps; this does not test normal EOG stopping behavior",
+    "cache_schedule": "One token per forward including prompt prefill; compare every prompt position against one full uncached forward",
+    "precision": "float32, eager attention, TF32 disabled, no autocast",
+    "failure_policy": "Preserve all measured errors and mark FAIL; do not relax criteria or overwrite earlier artifacts"
+  },
+  "criteria_sha256": "0d7a069ebe1486e9ccb87bf2e27dac69a0d2329df6197e8a23969cdc475353ea",
+  "script_sha256": "0c1ab01b26ff66d1cb5f302a188e695b1aa43ba2bc770eb8528ffc32b19b08d0",
+  "fixture_sha256": "e619f34dd6155b4af943839f48575b7d12cdc6776aaf0439282684bd00c5acae",
+  "original_validation_sha256": "159c91587838ca219895aaaf0233f0c9217752fb27e4f6921d9b76fd3b0257c8"
+}

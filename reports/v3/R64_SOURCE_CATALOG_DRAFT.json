@@ -1,0 +1,1418 @@
+{
+  "schema": "v3-r-source-recruitment-draft-1",
+  "status": "DRAFT_NOT_R_READY",
+  "created_date": "2026-11-04",
+  "target_families": 64,
+  "target_per_concept": 16,
+  "filled_R_families": 0,
+  "approved_independent_R_lineages": 0,
+  "verified_candidate_source_pages": 6,
+  "licensed_CC0_metadata_candidate_pages": 2,
+  "claims": [
+    "Recruitment slots are not observations, families, or independent templates.",
+    "Evidence records are not R prompts and contain no model scores.",
+    "No R assignment or model evaluation; E prompt freeze required first.",
+    "No T/O data were generated."
+  ],
+  "sources": [
+    {
+      "id": "met-436535",
+      "url": "https://www.metmuseum.org/art/collection/search/436535",
+      "publisher": "Metropolitan Museum of Art",
+      "record_id": "1993.132",
+      "title": "Wheat Field with Cypresses",
+      "facts": {
+        "creator": "Vincent van Gogh",
+        "year": 1889,
+        "height_cm": 73.2,
+        "width_cm": 93.4
+      },
+      "license": "CC0 basic accession metadata only",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "concept_candidates": [
+        "numeric_comparison"
+      ],
+      "dependence_group": "met-collection/van-gogh",
+      "review": "Verified basic facts; no R assignment or independent-lineage approval. Do not copy curatorial essay."
+    },
+    {
+      "id": "met-436524",
+      "url": "https://www.metmuseum.org/art/collection/search/436524",
+      "publisher": "Metropolitan Museum of Art",
+      "record_id": "49.41",
+      "title": "Sunflowers",
+      "facts": {
+        "creator": "Vincent van Gogh",
+        "year": 1887,
+        "height_cm": 43.2,
+        "width_cm": 61
+      },
+      "license": "CC0 basic accession metadata only",
+      "license_url": "https://www.metmuseum.org/hubs/open-access",
+      "concept_candidates": [
+        "numeric_comparison"
+      ],
+      "dependence_group": "met-collection/van-gogh",
+      "review": "Same publisher and creator as met-436535: not two verified independent source lineages. Funding credit does not establish a transfer-of-ownership chain."
+    },
+    {
+      "id": "nasa-voyager-1",
+      "url": "https://science.nasa.gov/mission/voyager/voyager-1/",
+      "publisher": "NASA/JPL",
+      "facts": {
+        "launch_date": "1977-09-05",
+        "jupiter_flyby_date": "1979-03-05",
+        "saturn_flyby_date": "1980-11-12"
+      },
+      "license": "Factual extraction only; page-specific text/media reuse not cleared",
+      "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "concept_candidates": [
+        "temporal_order"
+      ],
+      "dependence_group": "nasa-jpl/voyager-program",
+      "review": "Verified launch/key dates; related Voyager records remain one shared source-program cluster unless audit justifies otherwise."
+    },
+    {
+      "id": "nasa-voyager-2",
+      "url": "https://science.nasa.gov/mission/voyager/voyager-2/",
+      "publisher": "NASA/JPL",
+      "facts": {
+        "launch_date": "1977-08-20",
+        "jupiter_flyby_date": "1979-07-09"
+      },
+      "license": "Factual extraction only; page-specific text/media reuse not cleared",
+      "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "concept_candidates": [
+        "temporal_order"
+      ],
+      "dependence_group": "nasa-jpl/voyager-program",
+      "review": "Do not interpret page URL uniqueness as independent authorship. Saturn dates differ between summary and body; excluded from candidate facts."
+    },
+    {
+      "id": "smithsonian-hope",
+      "url": "https://naturalhistory.si.edu/explore/collections/hope-diamond",
+      "publisher": "Smithsonian NMNH",
+      "record_id": "NMNH G3551",
+      "facts": {
+        "1949_transaction": {
+          "type": "purchase",
+          "buyer": "Harry Winston",
+          "seller": "Evalyn Walsh McLean estate",
+          "object": "Hope Diamond"
+        },
+        "1958_transaction": {
+          "type": "donation",
+          "donor": "Harry Winston Inc.",
+          "recipient": "National Gem Collection",
+          "object": "Hope Diamond"
+        }
+      },
+      "license": "Factual extraction only; page-specific open-license clearance pending",
+      "license_url": "https://www.si.edu/termsofuse",
+      "concept_candidates": [
+        "ownership_coreference"
+      ],
+      "dependence_group": "smithsonian/hope-diamond-history",
+      "review": "Source supports transactions, but Harry Winston/person and Harry Winston Inc./company are not automatically the same entity. No full ownership-coreference oracle approved."
+    },
+    {
+      "id": "nasa-apollo13",
+      "url": "https://www.nasa.gov/mission/apollo-13/",
+      "publisher": "NASA",
+      "facts": {
+        "launch_date": "1970-04-11",
+        "splashdown_date": "1970-04-17"
+      },
+      "license": "Factual extraction only; page-specific text/media reuse not cleared",
+      "license_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+      "concept_candidates": [
+        "negation",
+        "temporal_order"
+      ],
+      "dependence_group": "nasa/apollo13-program",
+      "review": "Not approved as negation evidence: page mission-type field says Lunar Landing although prose describes an intended landing and failed plan. Need explicit historical outcome evidence and tense/scope audit; do not use category label as truth oracle."
+    }
+  ],
+  "recruitment_slots": [
+    {
+      "slot_id": "R-DRAFT-negation-01",
+      "concept": "negation",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-negation-02",
+      "concept": "negation",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-negation-03",
+      "concept": "negation",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-negation-04",
+      "concept": "negation",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-negation-05",
+      "concept": "negation",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-negation-06",
+      "concept": "negation",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-negation-07",
+      "concept": "negation",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-negation-08",
+      "concept": "negation",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-negation-09",
+      "concept": "negation",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-negation-10",
+      "concept": "negation",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-negation-11",
+      "concept": "negation",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-negation-12",
+      "concept": "negation",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-negation-13",
+      "concept": "negation",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-negation-14",
+      "concept": "negation",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-negation-15",
+      "concept": "negation",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-negation-16",
+      "concept": "negation",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-ownership_coreference-01",
+      "concept": "ownership_coreference",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-ownership_coreference-02",
+      "concept": "ownership_coreference",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-ownership_coreference-03",
+      "concept": "ownership_coreference",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-ownership_coreference-04",
+      "concept": "ownership_coreference",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-ownership_coreference-05",
+      "concept": "ownership_coreference",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-ownership_coreference-06",
+      "concept": "ownership_coreference",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-ownership_coreference-07",
+      "concept": "ownership_coreference",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-ownership_coreference-08",
+      "concept": "ownership_coreference",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-ownership_coreference-09",
+      "concept": "ownership_coreference",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-ownership_coreference-10",
+      "concept": "ownership_coreference",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-ownership_coreference-11",
+      "concept": "ownership_coreference",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-ownership_coreference-12",
+      "concept": "ownership_coreference",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-ownership_coreference-13",
+      "concept": "ownership_coreference",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-ownership_coreference-14",
+      "concept": "ownership_coreference",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-ownership_coreference-15",
+      "concept": "ownership_coreference",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-ownership_coreference-16",
+      "concept": "ownership_coreference",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-temporal_order-01",
+      "concept": "temporal_order",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-temporal_order-02",
+      "concept": "temporal_order",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-temporal_order-03",
+      "concept": "temporal_order",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-temporal_order-04",
+      "concept": "temporal_order",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-temporal_order-05",
+      "concept": "temporal_order",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-temporal_order-06",
+      "concept": "temporal_order",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-temporal_order-07",
+      "concept": "temporal_order",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-temporal_order-08",
+      "concept": "temporal_order",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-temporal_order-09",
+      "concept": "temporal_order",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-temporal_order-10",
+      "concept": "temporal_order",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-temporal_order-11",
+      "concept": "temporal_order",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-temporal_order-12",
+      "concept": "temporal_order",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-temporal_order-13",
+      "concept": "temporal_order",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-temporal_order-14",
+      "concept": "temporal_order",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-temporal_order-15",
+      "concept": "temporal_order",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-temporal_order-16",
+      "concept": "temporal_order",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-numeric_comparison-01",
+      "concept": "numeric_comparison",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-numeric_comparison-02",
+      "concept": "numeric_comparison",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-numeric_comparison-03",
+      "concept": "numeric_comparison",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-numeric_comparison-04",
+      "concept": "numeric_comparison",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-numeric_comparison-05",
+      "concept": "numeric_comparison",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-numeric_comparison-06",
+      "concept": "numeric_comparison",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-numeric_comparison-07",
+      "concept": "numeric_comparison",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-numeric_comparison-08",
+      "concept": "numeric_comparison",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-numeric_comparison-09",
+      "concept": "numeric_comparison",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-numeric_comparison-10",
+      "concept": "numeric_comparison",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-numeric_comparison-11",
+      "concept": "numeric_comparison",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-numeric_comparison-12",
+      "concept": "numeric_comparison",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-numeric_comparison-13",
+      "concept": "numeric_comparison",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-numeric_comparison-14",
+      "concept": "numeric_comparison",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-numeric_comparison-15",
+      "concept": "numeric_comparison",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    },
+    {
+      "slot_id": "R-DRAFT-numeric_comparison-16",
+      "concept": "numeric_comparison",
+      "languages": [
+        "ko",
+        "en"
+      ],
+      "status": "UNFILLED_NOT_A_FAMILY",
+      "source_ids": [],
+      "source_lineage_id": null,
+      "rendering_lineage_id": null,
+      "required": [
+        "source_license_and_version",
+        "independent_source_or_graph_derivation_audit",
+        "E_disjoint_source_template_triples",
+        "KO_EN_oracle_agreement",
+        "all_16_variants_same_family",
+        "freeze_before_R_inference"
+      ]
+    }
+  ]
+}

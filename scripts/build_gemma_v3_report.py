@@ -9,6 +9,9 @@ DESIGNED, RUNNING, MEASURED, BLOCKED, NOT_APPLICABLE, NOT_EVALUABLE, INVALID.
 Optional keys: scope, verdict, rationale, limitations (list of strings),
 sources/artifacts (lists of repository-relative existing file paths), metrics
 (list of {name, value, unit, source}). An absent/null metric displays N/A.
+Optional tables: [{title,columns:[{key,label,format?}],rows:[...],sources:[...],
+caption}]. Column format='percent' expects a fractional rate; 'percent_ci'
+expects [low,high]. Tables preserve explicit cluster/variant denominators.
 MEASURED requires at least one raw source. BLOCKED may retain actual diagnostic
 measurements; it never implies the stage's scientific claim was measured.
 
@@ -17,6 +20,7 @@ Kinds: bar/interval (x categorical, y numeric), line/scatter (x/y numeric),
 heatmap (x/y categorical, value numeric). Optional series names a grouping key;
 low/high name interval columns; unit='fraction' formats fractional rates as %;
 reference is a numeric benchmark; vmin/vmax and center control heatmap scale.
+An optional xlim=[lower,upper] explicitly sets a numeric horizontal domain.
 All rows remain in source.json, including missing values and denominators.
 Numeric null is missing, never zero. NaN/Inf, duplicate heatmap cells, invalid
 intervals and unknown statuses fail. Empty figures are described as unavailable.
@@ -87,6 +91,23 @@ def display(value):
         number(value)
         return f"{value:.6g}"
     return escaped(value)
+
+
+def table_cell(value, style=None):
+    if value is None:
+        return display(None)
+    if style == "percent":
+        return f"{number(value):.2%}"
+    if style == "percent_ci":
+        if len(value) != 2:
+            raise ValueError("Interval table cell must contain two bounds")
+        lo, hi = map(number, value)
+        if lo is None or hi is None:
+            return display(None)
+        if lo > hi:
+            raise ValueError("Reversed table interval")
+        return f"[{lo:.2%}, {hi:.2%}]"
+    return display(value)
 
 
 def wrap(value, width=30):
@@ -194,6 +215,8 @@ def draw_figure(root, stage_path, stage, spec):
         ref = number(spec["reference"])
         if ref is not None:
             (ax.axvline if kind in {"bar", "interval"} else ax.axhline)(ref, color="#555D65", linestyle="--", linewidth=1)
+    if "xlim" in spec:
+        ax.set_xlim(*spec["xlim"])
     ax.set_title(wrap(spec["title"], 78), loc="left", pad=14, fontsize=14)
     output = root / "artifacts" / PREFIX / "figures" / f"{stage}_{ident}"
     output.parent.mkdir(parents=True, exist_ok=True)
@@ -243,6 +266,17 @@ def render(root: Path, max_stage="G6"):
                 if src:
                     source_path(root, src)
                 lines.append(f"| {escaped(m['name'])} | {display(m.get('value'))} | {escaped(m.get('unit',''))} | {link(src) if src else '단계 receipt'} |")
+        for table in data.get("tables", []):
+            columns = table["columns"]
+            for src in table.get("sources", []):
+                source_path(root, src)
+            lines += ["", f"**{table['title']}**", "", "| " + " | ".join(escaped(c.get("label", c["key"])) for c in columns) + " |", "| " + " | ".join("---" for c in columns) + " |"]
+            for row in table["rows"]:
+                lines.append("| " + " | ".join(table_cell(row.get(c["key"]), c.get("format")) for c in columns) + " |")
+            if table.get("caption"):
+                lines += ["", table["caption"]]
+            if table.get("sources"):
+                lines += ["", " · ".join(link(src) for src in table["sources"])]
         seen_ids = set()
         for spec in data.get("figures", []):
             if spec["id"] in seen_ids:
@@ -264,9 +298,45 @@ def render(root: Path, max_stage="G6"):
     return {"fragment": str(destination), "loaded_stages": [s for s,d,p in loaded if d is not None]}
 
 
+def prepare_readiness_additions(root: Path):
+    """Create a reviewable append-only payload; the stage owner merges it into G1."""
+    root = root.resolve()
+    summary_path = f"results/{PREFIX}/readiness_summary.json"
+    summary = read_json(source_path(root, summary_path))
+    audit_path = f"results/{PREFIX}/readiness_replay_audit.json"
+    audit = read_json(source_path(root, audit_path))
+    if summary.get("status") != "MEASURED_CONDITIONAL_READINESS_SUMMARY" or audit.get("status") != "PASS":
+        raise ValueError("Readiness additions require completed diagnostic and passed raw replay")
+    if audit.get("summary_sha256") != receipt(root, summary_path)["sha256"]:
+        raise ValueError("Readiness replay refers to a different summary")
+    for key, path in summary["source_paths"].items():
+        if receipt(root, path)["sha256"] != summary["source_sha256"][key]:
+            raise ValueError(f"Readiness source changed: {key}")
+    rows = summary["rows"]
+    if len(rows) != 16 or len({(r["model"], r["concept"], r["language"]) for r in rows}) != 16:
+        raise ValueError("Readiness report requires all 16 unique model/concept/language cells")
+    sources = [summary_path, audit_path, f"results/{PREFIX}/readiness_conditional_amendment.json", *[f"results/{PREFIX}/readiness_scores/{m}.json" for m in summary["models"]]]
+    for src in sources:
+        source_path(root, src)
+    table_rows, figure_rows = [], []
+    for row in rows:
+        source_ci = row["source_cluster_bootstrap"]["ci95"]
+        shared_ci = row["shared_reference_cluster_sensitivity"]["ci95"]
+        table_rows.append({"model":row["model"], "concept":row["concept"], "language":row["language"], "accuracy":row["accuracy"], "n_variants":row["n_rows"], "n_sources":row["source_cluster_bootstrap"]["n_clusters"], "source_ci":source_ci, "n_shared":row["shared_reference_cluster_sensitivity"]["n_clusters"], "shared_ci":shared_ci, "conditional_flag":str(row["conditional_threshold_met"]), "shared_flag":str(row["shared_reference_threshold_met"])})
+        figure_rows.append({"cell":f"{row['model']} / {row['concept']} / {row['language']}", "accuracy":row["accuracy"], "low":source_ci[0], "high":source_ci[1], "n_variants":row["n_rows"], "n_source_clusters":row["source_cluster_bootstrap"]["n_clusters"]})
+    note = "고정 renderer·편의표집 source에 조건부인 진단이다. Source cluster 95% bootstrap CI는 독립 template 모집단 CI가 아니다. 같은 source의 변형을 함께 재표집하며, 공유 reference로 묶은 민감도 CI도 별도로 공개한다. 표의 조건부 기준(.75 정확도 및 CI 하한>.50)은 원래 strict renderer gate 또는 H1–H4의 적격성 통과를 뜻하지 않는다."
+    columns = [{"key":k,"label":label,**({"format":style} if style else {})} for k,label,style in [("model","모델",None),("concept","개념",None),("language","언어",None),("accuracy","정확도","percent"),("n_variants","변형 수",None),("n_sources","source clusters",None),("source_ci","source 95% CI","percent_ci"),("n_shared","shared-reference clusters",None),("shared_ci","민감도 95% CI","percent_ci"),("conditional_flag","조건부 기준",None),("shared_flag","민감도 기준",None)]]
+    payload = {"schema_version":1,"target_stage":"G1","merge_policy":"append figures/tables/sources/limitations; stage owner sets status and scientific interpretation", "sources":sources, "figures":[{"id":"readiness_conditional_accuracy","kind":"interval","title":"Conditional readiness accuracy — source-cluster bootstrap 95% CI","x":"cell","y":"accuracy","rows":figure_rows,"unit":"fraction","reference":.75,"xlim":[0,1],"ylabel":"Accuracy (conditional diagnostic)","sources":sources,"caption":"16 model/concept/language cells; dashed line: accuracy threshold .75 only. The separate lower-CI criterion is >.50. "+note}], "tables":[{"title":"조건부 readiness: 정확도·분모·cluster 민감도","columns":columns,"rows":table_rows,"sources":sources,"caption":note}], "limitations":[note]}
+    destination = root / "results" / PREFIX / "report_inputs" / "G1_readiness_additions.json"
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    destination.write_text(json.dumps(payload, ensure_ascii=False, indent=2, allow_nan=False)+"\n", encoding="utf-8")
+    return {"additions":str(destination),"cells":len(rows)}
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument("--max-stage", choices=STAGES, default="G6")
+    parser.add_argument("--prepare-readiness", action="store_true", help="Write G1 additions from complete readiness sources, without rendering or mutating G1")
     args = parser.parse_args()
-    print(json.dumps(render(args.root, args.max_stage), ensure_ascii=False))
+    print(json.dumps(prepare_readiness_additions(args.root) if args.prepare_readiness else render(args.root, args.max_stage), ensure_ascii=False))

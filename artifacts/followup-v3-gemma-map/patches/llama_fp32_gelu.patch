@@ -1,0 +1,11 @@
+--- a/ggml/src/ggml-cpu/vec.h
++++ b/ggml/src/ggml-cpu/vec.h
+@@ -43,7 +43,7 @@
+ }
+ #endif
+ 
+-#define GGML_GELU_FP16
++// WSP2 FP32 reference: retain the existing analytic GELU branches.
+ 
+ #define GGML_SOFT_MAX_UNROLL 4
+ #define GGML_VEC_DOT_UNROLL  2

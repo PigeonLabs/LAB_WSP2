@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "stage": "G1",
+  "figure": {
+    "id": "engineering_accuracy",
+    "kind": "heatmap",
+    "title": "Engineering diagnostic accuracy under common raw prompt",
+    "x": "language",
+    "y": "model_concept",
+    "value": "accuracy",
+    "rows": [
+      {
+        "model_concept": "gemma / negation",
+        "language": "en",
+        "accuracy": 0.9375,
+        "n_variants": 64,
+        "n_scenarios": 8,
+        "renderer_lineages": 1
+      },
+      {
+        "model_concept": "gemma / negation",
+        "language": "ko",
+        "accuracy": 0.9375,
+        "n_variants": 64,
+        "n_scenarios": 8,
+        "renderer_lineages": 1
+      },
+      {
+        "model_concept": "gemma / numeric_comparison",
+        "language": "en",
+        "accuracy": 0.796875,
+        "n_variants": 64,
+        "n_scenarios": 8,
+        "renderer_lineages": 1
+      },
+      {
+        "model_concept": "gemma / numeric_comparison",
+        "language": "ko",
+        "accuracy": 0.703125,
+        "n_variants": 64,
+        "n_scenarios": 8,
+        "renderer_lineages": 1
+      },
+      {
+        "model_concept": "gemma / ownership_coreference",
+        "language": "en",
+        "accuracy": 0.703125,
+        "n_variants": 64,
+        "n_scenarios": 8,
+        "renderer_lineages": 1
+      },
+      {
+        "model_concept": "gemma / ownership_coreference",
+        "language": "ko",
+        "accuracy": 0.53125,
+        "n_variants": 64,
+        "n_scenarios": 8,
+        "renderer_lineages": 1
+      },
+      {
+        "model_concept": "gemma / temporal_order",
+        "language": "en",
+        "accuracy": 0.8125,
+        "n_variants": 64,
+        "n_scenarios": 8,
+        "renderer_lineages": 1
+      },
+      {
+        "model_concept": "gemma / temporal_order",
+        "language": "ko",
+        "accuracy": 0.71875,
+        "n_variants": 64,
+        "n_scenarios": 8,
+        "renderer_lineages": 1
+      },
+      {
+        "model_concept": "qwen / negation",
+        "language": "en",
+        "accuracy": 0.703125,
+        "n_variants": 64,
+        "n_scenarios": 8,
+        "renderer_lineages": 1
+      },
+      {
+        "model_concept": "qwen / negation",
+        "language": "ko",
+        "accuracy": 0.5,
+        "n_variants": 64,
+        "n_scenarios": 8,
+        "renderer_lineages": 1
+      },
+      {
+        "model_concept": "qwen / numeric_comparison",
+        "language": "en",
+        "accuracy": 0.5,
+        "n_variants": 64,
+        "n_scenarios": 8,
+        "renderer_lineages": 1
+      },
+      {
+        "model_concept": "qwen / numeric_comparison",
+        "language": "ko",
+        "accuracy": 0.5,
+        "n_variants": 64,
+        "n_scenarios": 8,
+        "renderer_lineages": 1
+      },
+      {
+        "model_concept": "qwen / ownership_coreference",
+        "language": "en",
+        "accuracy": 0.578125,
+        "n_variants": 64,
+        "n_scenarios": 8,
+        "renderer_lineages": 1
+      },
+      {
+        "model_concept": "qwen / ownership_coreference",
+        "language": "ko",
+        "accuracy": 0.5,
+        "n_variants": 64,
+        "n_scenarios": 8,
+        "renderer_lineages": 1
+      },
+      {
+        "model_concept": "qwen / temporal_order",
+        "language": "en",
+        "accuracy": 0.453125,
+        "n_variants": 64,
+        "n_scenarios": 8,
+        "renderer_lineages": 1
+      },
+      {
+        "model_concept": "qwen / temporal_order",
+        "language": "ko",
+        "accuracy": 0.5,
+        "n_variants": 64,
+        "n_scenarios": 8,
+        "renderer_lineages": 1
+      }
+    ],
+    "unit": "fraction",
+    "vmin": 0,
+    "vmax": 1,
+    "sources": [
+      "results/followup-v3-gemma-map/engineering_scores/gemma.json",
+      "results/followup-v3-gemma-map/engineering_scores/qwen.json"
+    ],
+    "caption": "64 variants per model/concept/language cell,8 scenarios,1 shared renderer lineage. E-only: neither independent readiness nor final test.",
+    "value_label": "Accuracy"
+  },
+  "sources": [
+    {
+      "path": "results/followup-v3-gemma-map/stages/G1.json",
+      "sha256": "67bb66d42b6e2bf22a4e7c4633b7ef711354dd7f3e3b828a8b65591b44a2693e"
+    },
+    {
+      "path": "results/followup-v3-gemma-map/engineering_scores/gemma.json",
+      "sha256": "2968766b2dae3f35b14f189ce83c15abb8a9d742baa38b6d19ad2dad47b08ad2"
+    },
+    {
+      "path": "results/followup-v3-gemma-map/engineering_scores/qwen.json",
+      "sha256": "5ff916cf9e549573a3b423cae4f5c3a544adbda4a757343ef4b032895944a780"
+    }
+  ],
+  "missing_policy": "null remains missing; no statistical inference by renderer"
+}

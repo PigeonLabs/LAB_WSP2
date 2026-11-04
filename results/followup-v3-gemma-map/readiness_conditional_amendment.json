@@ -1,0 +1,15 @@
+{
+  "status": "APPROVED_PRE_READINESS",
+  "conditional_capability_only": true,
+  "strict_template_generalization_passed": false,
+  "test_opened": false,
+  "source_catalog_sha256": "9110fe7ea1883380dcf3346113e98c98671a60fedaccc18ba66ccf71b64930dc",
+  "prompt_lock_sha256": "f26cee1e30467fd076ce396fe2db722993661d2e6668bb30486238075508af89",
+  "decision": "Run a separately labeled fixed-renderer/source-record conditional readiness diagnostic. This does not replace or pass the original independent-template gate. A passing diagnostic alone does not establish scientific eligibility for H1-H4 confirmatory evaluation.",
+  "thresholds_unchanged": {
+    "accuracy": 0.75,
+    "descriptive_source_cluster_CI_lower": 0.5
+  },
+  "scope": "Source-graph/record clusters and shared renderer lineages reported separately; convenience sample; no template-population inference.",
+  "authorization_basis": "User authorized experiment execution; reversible pretest engineering diagnostic, preserving original protocol/gates."
+}

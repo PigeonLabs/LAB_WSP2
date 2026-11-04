@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "stage": "G1",
+  "figure": {
+    "id": "readiness_conditional_accuracy",
+    "kind": "interval",
+    "title": "Conditional readiness accuracy — source-cluster bootstrap 95% CI",
+    "x": "cell",
+    "y": "accuracy",
+    "rows": [
+      {
+        "cell": "gemma / negation / en",
+        "accuracy": 0.640625,
+        "low": 0.6015625,
+        "high": 0.6796875,
+        "n_variants": 128,
+        "n_source_clusters": 16
+      },
+      {
+        "cell": "gemma / negation / ko",
+        "accuracy": 0.546875,
+        "low": 0.515625,
+        "high": 0.578125,
+        "n_variants": 128,
+        "n_source_clusters": 16
+      },
+      {
+        "cell": "gemma / ownership_coreference / en",
+        "accuracy": 0.828125,
+        "low": 0.796875,
+        "high": 0.859375,
+        "n_variants": 128,
+        "n_source_clusters": 16
+      },
+      {
+        "cell": "gemma / ownership_coreference / ko",
+        "accuracy": 0.6796875,
+        "low": 0.6328125,
+        "high": 0.71875,
+        "n_variants": 128,
+        "n_source_clusters": 16
+      },
+      {
+        "cell": "gemma / temporal_order / en",
+        "accuracy": 0.6328125,
+        "low": 0.625,
+        "high": 0.6484375,
+        "n_variants": 128,
+        "n_source_clusters": 16
+      },
+      {
+        "cell": "gemma / temporal_order / ko",
+        "accuracy": 0.5,
+        "low": 0.4765625,
+        "high": 0.5234375,
+        "n_variants": 128,
+        "n_source_clusters": 16
+      },
+      {
+        "cell": "gemma / numeric_comparison / en",
+        "accuracy": 0.59375,
+        "low": 0.5625,
+        "high": 0.625,
+        "n_variants": 128,
+        "n_source_clusters": 16
+      },
+      {
+        "cell": "gemma / numeric_comparison / ko",
+        "accuracy": 0.515625,
+        "low": 0.5,
+        "high": 0.5390625,
+        "n_variants": 128,
+        "n_source_clusters": 16
+      },
+      {
+        "cell": "qwen / negation / en",
+        "accuracy": 0.5,
+        "low": 0.5,
+        "high": 0.5,
+        "n_variants": 128,
+        "n_source_clusters": 16
+      },
+      {
+        "cell": "qwen / negation / ko",
+        "accuracy": 0.5,
+        "low": 0.5,
+        "high": 0.5,
+        "n_variants": 128,
+        "n_source_clusters": 16
+      },
+      {
+        "cell": "qwen / ownership_coreference / en",
+        "accuracy": 0.5,
+        "low": 0.5,
+        "high": 0.5,
+        "n_variants": 128,
+        "n_source_clusters": 16
+      },
+      {
+        "cell": "qwen / ownership_coreference / ko",
+        "accuracy": 0.5,
+        "low": 0.5,
+        "high": 0.5,
+        "n_variants": 128,
+        "n_source_clusters": 16
+      },
+      {
+        "cell": "qwen / temporal_order / en",
+        "accuracy": 0.5,
+        "low": 0.5,
+        "high": 0.5,
+        "n_variants": 128,
+        "n_source_clusters": 16
+      },
+      {
+        "cell": "qwen / temporal_order / ko",
+        "accuracy": 0.5,
+        "low": 0.5,
+        "high": 0.5,
+        "n_variants": 128,
+        "n_source_clusters": 16
+      },
+      {
+        "cell": "qwen / numeric_comparison / en",
+        "accuracy": 0.5,
+        "low": 0.4765625,
+        "high": 0.5234375,
+        "n_variants": 128,
+        "n_source_clusters": 16
+      },
+      {
+        "cell": "qwen / numeric_comparison / ko",
+        "accuracy": 0.4921875,
+        "low": 0.4765625,
+        "high": 0.5,
+        "n_variants": 128,
+        "n_source_clusters": 16
+      }
+    ],
+    "unit": "fraction",
+    "reference": 0.75,
+    "xlim": [
+      0,
+      1
+    ],
+    "ylabel": "Accuracy (conditional diagnostic)",
+    "sources": [
+      "results/followup-v3-gemma-map/readiness_summary.json",
+      "results/followup-v3-gemma-map/readiness_replay_audit.json",
+      "results/followup-v3-gemma-map/readiness_conditional_amendment.json",
+      "results/followup-v3-gemma-map/readiness_scores/gemma.json",
+      "results/followup-v3-gemma-map/readiness_scores/qwen.json"
+    ],
+    "caption": "16 model/concept/language cells; dashed line: accuracy threshold .75 only. The separate lower-CI criterion is >.50. 고정 renderer·편의표집 source에 조건부인 진단이다. Source cluster 95% bootstrap CI는 독립 template 모집단 CI가 아니다. 같은 source의 변형을 함께 재표집하며, 공유 reference로 묶은 민감도 CI도 별도로 공개한다. 표의 조건부 기준(.75 정확도 및 CI 하한>.50)은 원래 strict renderer gate 또는 H1–H4의 적격성 통과를 뜻하지 않는다."
+  },
+  "sources": [
+    {
+      "path": "results/followup-v3-gemma-map/stages/G1.json",
+      "sha256": "67bb66d42b6e2bf22a4e7c4633b7ef711354dd7f3e3b828a8b65591b44a2693e"
+    },
+    {
+      "path": "results/followup-v3-gemma-map/readiness_summary.json",
+      "sha256": "71c5fcc5b490d83676ba31d16e8be2d739f2afd87fd4bba093847973bbc76a92"
+    },
+    {
+      "path": "results/followup-v3-gemma-map/readiness_replay_audit.json",
+      "sha256": "5ca4ac69072edab84670dc9ff9c69282a400c695e961a5d1900af8c089b06ca1"
+    },
+    {
+      "path": "results/followup-v3-gemma-map/readiness_conditional_amendment.json",
+      "sha256": "dac09dc28941af6a8382d4400dc31b55fb719f2a4218b40bd51ef1ca17cb1251"
+    },
+    {
+      "path": "results/followup-v3-gemma-map/readiness_scores/gemma.json",
+      "sha256": "549dadf9076736f05c71cb1c39e1a31298e6384dbc8bfbfaa1b2c9aa6a7d99d4"
+    },
+    {
+      "path": "results/followup-v3-gemma-map/readiness_scores/qwen.json",
+      "sha256": "77b5a399925c07866a0ae836ef3f4e732e384d6a443cdd808331214debf974bc"
+    }
+  ],
+  "missing_policy": "null remains missing; no statistical inference by renderer"
+}

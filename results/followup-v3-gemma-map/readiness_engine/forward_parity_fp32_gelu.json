@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "criteria": {
+    "token_ids_exact": true,
+    "fp32_reference_rmse_max": 0.001,
+    "fp32_reference_max_abs_max": 0.01,
+    "top1_exact": true,
+    "scope": "eight preselected engineering fixtures; fixed before either forward output"
+  },
+  "criteria_sha256": "e3b6cee2771063f1df33417841a97053eb3df3f125e68d9c3b02fcc69bfe3df9",
+  "scope": "Eight fixed readiness inputs; patched official llama.cpp graph; shared GGUF dequantizer. No independent intervention or original-map reproduction claim.",
+  "reference_patch": "results/followup-v3-gemma-map/reference_gelu_patch.json",
+  "rows": [
+    {
+      "id": "R-met-436602-s0-l0-c0-en",
+      "token_ids_exact": true,
+      "top1_exact": true,
+      "rmse": 3.111506238379382e-05,
+      "max_abs": 6.4849853515625e-05,
+      "gpu_sha256": "271c0379ec18123254f38eafc198e5226db7c1899410a9cd6c9e6990a81fb053",
+      "reference_sha256": "a99dd5e330911fe6d55b1ac60b85f5fc78f26bfe8a84d3b993bd918a31cd7175",
+      "passed": true
+    },
+    {
+      "id": "R-met-436602-s0-l0-c0-ko",
+      "token_ids_exact": true,
+      "top1_exact": true,
+      "rmse": 7.87239557915817e-06,
+      "max_abs": 3.62396240234375e-05,
+      "gpu_sha256": "36329859a6b34fec8a120646d74a60338e7bc55979b46b449abc4045a0d111ca",
+      "reference_sha256": "c3e40bea1a33e2d29a2f9aad6b21a9361fca11fc6f38f82de012ade20cf1e11d",
+      "passed": true
+    },
+    {
+      "id": "R-met-436046-s0-l0-c0-en",
+      "token_ids_exact": true,
+      "top1_exact": true,
+      "rmse": 9.276354205775866e-05,
+      "max_abs": 0.000213623046875,
+      "gpu_sha256": "8818a0e485968d9c85ca249492d2b42202ee9f6390d8eff8678c0c0e1946d36d",
+      "reference_sha256": "454eae8148f23a4946ad80f946d8399f564b7a7520a3c044c40f53925ca9c0aa",
+      "passed": true
+    },
+    {
+      "id": "R-met-436046-s0-l0-c0-ko",
+      "token_ids_exact": true,
+      "top1_exact": true,
+      "rmse": 6.205181760685378e-05,
+      "max_abs": 0.00013875961303710938,
+      "gpu_sha256": "d000d29617b6e1bb4398619be7292166ba43268f853e49ad41ace3919d67c3d1",
+      "reference_sha256": "f82f4f7be1e8ef7ccce08f44db4b4b1459bcc35cb06441cd57c32754767d01ae",
+      "passed": true
+    },
+    {
+      "id": "R-ownership-Q247282-s0-l0-c0-en",
+      "token_ids_exact": true,
+      "top1_exact": true,
+      "rmse": 8.586848139973882e-05,
+      "max_abs": 0.0001373291015625,
+      "gpu_sha256": "80368ff7b868e96181eb5ead27d7cbaf30bd6b7651fc2d3c8df8d785f2f44a51",
+      "reference_sha256": "1f475331ae05106cbf7aad6bab3945e186fbbbc3fd5797e9f29153a3116b4667",
+      "passed": true
+    },
+    {
+      "id": "R-ownership-Q247282-s0-l0-c0-ko",
+      "token_ids_exact": true,
+      "top1_exact": true,
+      "rmse": 2.769829410772275e-05,
+      "max_abs": 6.4849853515625e-05,
+      "gpu_sha256": "21ebd0a33d3946ca33f00331c38db26d74e1df579459af0a8e806d39edc5e887",
+      "reference_sha256": "f5b8f40903ef5c26acb1b5e3846b607b206c74acc879dc1495fb41709d87668e",
+      "passed": true
+    },
+    {
+      "id": "R-v3-source-temporal-01-s0-l0-c0-en",
+      "token_ids_exact": true,
+      "top1_exact": true,
+      "rmse": 3.93031830471875e-05,
+      "max_abs": 6.771087646484375e-05,
+      "gpu_sha256": "721818e241da0defc400686ac6ecdcbaafc70fa1ffa783dc99cbb309aa560ce8",
+      "reference_sha256": "7cda57106129e6a3301756da2cedfb546b8655abf13664727e82a6567c7958cb",
+      "passed": true
+    },
+    {
+      "id": "R-v3-source-temporal-01-s0-l0-c0-ko",
+      "token_ids_exact": true,
+      "top1_exact": true,
+      "rmse": 2.9057749972720516e-05,
+      "max_abs": 7.867813110351562e-05,
+      "gpu_sha256": "b2af0c43d6890470aae4cf7f24ae93e84bf2d3b3a1cc9352a47d437f71ca72e2",
+      "reference_sha256": "529e9c82f812b897039726866dd0751c330b8b05895c192c93a2ca4b1b93568c",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "model_weights_loaded": false,
+  "raw_prediction_rows_replayed": 2048,
+  "full_continuation_scores_replayed": 4096,
+  "cell_intervals_replayed": 32,
+  "bootstrap_replicates": 10000,
+  "checks_passed": 2177,
+  "source_sha256": {
+    "data": "04e469fb29bd4f6acaf722bdd3be42519f6366ed2ab4cc003f06de060bf42e5d",
+    "manifest": "a670a63a3d609f9e487c7347accc80fd51db00e61e32c7f565d8e3033d00568b",
+    "source_catalog": "9110fe7ea1883380dcf3346113e98c98671a60fedaccc18ba66ccf71b64930dc",
+    "prompt_lock": "f26cee1e30467fd076ce396fe2db722993661d2e6668bb30486238075508af89",
+    "amendment": "dac09dc28941af6a8382d4400dc31b55fb719f2a4218b40bd51ef1ca17cb1251",
+    "gemma": "549dadf9076736f05c71cb1c39e1a31298e6384dbc8bfbfaa1b2c9aa6a7d99d4",
+    "qwen": "77b5a399925c07866a0ae836ef3f4e732e384d6a443cdd808331214debf974bc"
+  },
+  "analysis_script_sha256": "d09e6f3fb0f4a403c1b55b4dc881a0ece3663d26e6a89a673afa49e4fa7e801f",
+  "independent_replay_method": "Scalar argmax from saved logP and frozen answer index; separate family grouping and count-matrix cluster bootstrap.",
+  "scope": "Weights-free numerical replay of stored measurements; no claim of rerunning model inference or historical execution chronology.",
+  "summary_sha256": "71c5fcc5b490d83676ba31d16e8be2d739f2afd87fd4bba093847973bbc76a92"
+}

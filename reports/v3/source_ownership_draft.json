@@ -1,0 +1,2227 @@
+{
+  "schema": "v3-source-fact-bank-1",
+  "concept": "ownership_coreference",
+  "status": "FACTS_COLLECTED_R_NOT_OPENED",
+  "records": [
+    {
+      "record_id": "ownership-Q247282",
+      "concept": "ownership_coreference",
+      "status": "SOURCE_FACT_COLLECTED_NOT_R_APPROVED",
+      "source_record_id": "Q247282",
+      "source_url": "https://www.wikidata.org/wiki/Q247282",
+      "source_revision": 2433169742,
+      "source_institution": "Wikidata community",
+      "source_license": "CC0-1.0 structured data",
+      "license_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "retrieved_date": "2026-11-04",
+      "entity_label_en": "Apollo in the Forge of Vulcan",
+      "entity_label_ko": "Apollo in the Forge of Vulcan",
+      "canonical_facts": [
+        {
+          "subject": "Q247282",
+          "predicate": "P127/owned_by",
+          "object": "Q186256",
+          "object_label_en": "Ferdinand VII of Spain",
+          "object_label_ko": "페르난도 7세",
+          "statement_id": "Q247282$E0C7E940-3CAC-455C-8470-04B2D773EB60",
+          "rank": "normal",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "ef649e9d86ae175218eb19087544b4eba69e6f6f",
+                "datavalue": {
+                  "value": {
+                    "time": "+1814-00-00T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ]
+          }
+        }
+      ],
+      "evidence": {
+        "property": "P127",
+        "statement": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P127",
+            "hash": "abc0ae40fc2fa866c4aedf1f10a9f6d1bc957c4e",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 186256,
+                "id": "Q186256"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "ef649e9d86ae175218eb19087544b4eba69e6f6f",
+                "datavalue": {
+                  "value": {
+                    "time": "+1814-00-00T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q247282$E0C7E940-3CAC-455C-8470-04B2D773EB60",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "88fbe434657569e5398c228d9280f35c1394a7d7",
+              "snaks": {
+                "P248": [
+                  {
+                    "snaktype": "value",
+                    "property": "P248",
+                    "hash": "330115b9bdb4702bf550c60a5f7393c18981a8f8",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 59676414,
+                        "id": "Q59676414"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P248"
+              ]
+            }
+          ]
+        },
+        "upstream_reference_urls": []
+      },
+      "underlying_event_id": "ownership-record/Q247282",
+      "derivation_lineage_id": "wikidata-ownership-statement/Q247282$E0C7E940-3CAC-455C-8470-04B2D773EB60",
+      "source_cluster_candidates": [
+        "wikidata-item/Q247282",
+        "reference/88fbe434657569e5398c228d9280f35c1394a7d7"
+      ],
+      "independence_assessment": "Distinct object ownership record; statistical/source independence unproven. Shared original citations/imports must cluster; publisher alone does not collapse records.",
+      "short_controlled_paraphrase": {
+        "en": "The ownership record concerns Apollo in the Forge of Vulcan. In that record, its owner is Ferdinand VII of Spain.",
+        "ko": "이 소유 기록의 대상은 Apollo in the Forge of Vulcan이다. 이 기록에서 그 대상의 소유자는 페르난도 7세이다."
+      },
+      "oracle_requirements": [
+        "Resolve its / 그 대상 to the record subject, not owner.",
+        "Interpret ownership as the recorded P127 assertion with preserved qualifiers, not independently verified present-day ownership.",
+        "Build and test new bilingual renderer/parser; existing engineering grammars are insufficient.",
+        "Do not interpret missing owner values as negation or exclusive ownership."
+      ],
+      "source_fact_sha256": "01fe95cdfdd1dc9a03abf3abfc8b2802f0d31dbf3833d91ca5b88ec9d510684a",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/wikidata_ownership_Q247282_rev2433169742.json",
+      "raw_snapshot_sha256": "24581038306ee15c70e259445eff4dda2ba95ca6bd7a23d97c0d63602c60f189",
+      "raw_snapshot_url": "https://www.wikidata.org/wiki/Special:EntityData/Q247282.json?revision=2433169742",
+      "raw_snapshot_provenance": "Retrieved after collection at the exact recorded revision; returned revision and full P127 statement equality verified. Original first-fetch HTTP bytes were not retained."
+    },
+    {
+      "record_id": "ownership-Q266435",
+      "concept": "ownership_coreference",
+      "status": "SOURCE_FACT_COLLECTED_NOT_R_APPROVED",
+      "source_record_id": "Q266435",
+      "source_url": "https://www.wikidata.org/wiki/Q266435",
+      "source_revision": 2522920248,
+      "source_institution": "Wikidata community",
+      "source_license": "CC0-1.0 structured data",
+      "license_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "retrieved_date": "2026-11-04",
+      "entity_label_en": "Peace Concluded",
+      "entity_label_ko": "평화 협정",
+      "canonical_facts": [
+        {
+          "subject": "Q266435",
+          "predicate": "P127/owned_by",
+          "object": "Q1700481",
+          "object_label_en": "Minneapolis Institute of Art",
+          "object_label_ko": "미니애폴리스 미술관",
+          "statement_id": "Q266435$9b187fef-4edc-1958-44a6-13f724bbcd6c",
+          "rank": "normal",
+          "qualifiers": {}
+        }
+      ],
+      "evidence": {
+        "property": "P127",
+        "statement": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P127",
+            "hash": "2ee570110f79c530c9681a023613b9dd021c9bba",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 1700481,
+                "id": "Q1700481"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q266435$9b187fef-4edc-1958-44a6-13f724bbcd6c",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "6aef488abb1c87f2a422c7f60870dd8e42648daf",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "5e4cf15707150e33da427ed2995eb2079755f20c",
+                    "datavalue": {
+                      "value": "http://www.artsconnected.org/resource/6327/peace-concluded",
+                      "type": "string"
+                    },
+                    "datatype": "url"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        "upstream_reference_urls": [
+          "http://www.artsconnected.org/resource/6327/peace-concluded"
+        ]
+      },
+      "underlying_event_id": "ownership-record/Q266435",
+      "derivation_lineage_id": "wikidata-ownership-statement/Q266435$9b187fef-4edc-1958-44a6-13f724bbcd6c",
+      "source_cluster_candidates": [
+        "wikidata-item/Q266435",
+        "reference/6aef488abb1c87f2a422c7f60870dd8e42648daf"
+      ],
+      "independence_assessment": "Distinct object ownership record; statistical/source independence unproven. Shared original citations/imports must cluster; publisher alone does not collapse records.",
+      "short_controlled_paraphrase": {
+        "en": "The ownership record concerns Peace Concluded. In that record, its owner is Minneapolis Institute of Art.",
+        "ko": "이 소유 기록의 대상은 평화 협정이다. 이 기록에서 그 대상의 소유자는 미니애폴리스 미술관이다."
+      },
+      "oracle_requirements": [
+        "Resolve its / 그 대상 to the record subject, not owner.",
+        "Interpret ownership as the recorded P127 assertion with preserved qualifiers, not independently verified present-day ownership.",
+        "Build and test new bilingual renderer/parser; existing engineering grammars are insufficient.",
+        "Do not interpret missing owner values as negation or exclusive ownership."
+      ],
+      "source_fact_sha256": "6d9daebd2abf593ab501d7fde574311152775858c96838dc85cb6148a64fa866",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/wikidata_ownership_Q266435_rev2522920248.json",
+      "raw_snapshot_sha256": "edf215f550cc28cf04ea3e893e02ad389c50e0d1ee9160a3f4eb12c0bf595675",
+      "raw_snapshot_url": "https://www.wikidata.org/wiki/Special:EntityData/Q266435.json?revision=2522920248",
+      "raw_snapshot_provenance": "Retrieved after collection at the exact recorded revision; returned revision and full P127 statement equality verified. Original first-fetch HTTP bytes were not retained."
+    },
+    {
+      "record_id": "ownership-Q288380",
+      "concept": "ownership_coreference",
+      "status": "SOURCE_FACT_COLLECTED_NOT_R_APPROVED",
+      "source_record_id": "Q288380",
+      "source_url": "https://www.wikidata.org/wiki/Q288380",
+      "source_revision": 2349655831,
+      "source_institution": "Wikidata community",
+      "source_license": "CC0-1.0 structured data",
+      "license_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "retrieved_date": "2026-11-04",
+      "entity_label_en": "Equestrian Portrait of Elisabeth of France",
+      "entity_label_ko": "Equestrian Portrait of Elisabeth of France",
+      "canonical_facts": [
+        {
+          "subject": "Q288380",
+          "predicate": "P127/owned_by",
+          "object": "Q186256",
+          "object_label_en": "Ferdinand VII of Spain",
+          "object_label_ko": "페르난도 7세",
+          "statement_id": "Q288380$BE71E5E3-0680-4472-BA32-3BD2973C37D3",
+          "rank": "normal",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "ef649e9d86ae175218eb19087544b4eba69e6f6f",
+                "datavalue": {
+                  "value": {
+                    "time": "+1814-00-00T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ]
+          }
+        }
+      ],
+      "evidence": {
+        "property": "P127",
+        "statement": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P127",
+            "hash": "abc0ae40fc2fa866c4aedf1f10a9f6d1bc957c4e",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 186256,
+                "id": "Q186256"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "ef649e9d86ae175218eb19087544b4eba69e6f6f",
+                "datavalue": {
+                  "value": {
+                    "time": "+1814-00-00T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q288380$BE71E5E3-0680-4472-BA32-3BD2973C37D3",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "88fbe434657569e5398c228d9280f35c1394a7d7",
+              "snaks": {
+                "P248": [
+                  {
+                    "snaktype": "value",
+                    "property": "P248",
+                    "hash": "330115b9bdb4702bf550c60a5f7393c18981a8f8",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 59676414,
+                        "id": "Q59676414"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P248"
+              ]
+            }
+          ]
+        },
+        "upstream_reference_urls": []
+      },
+      "underlying_event_id": "ownership-record/Q288380",
+      "derivation_lineage_id": "wikidata-ownership-statement/Q288380$BE71E5E3-0680-4472-BA32-3BD2973C37D3",
+      "source_cluster_candidates": [
+        "wikidata-item/Q288380",
+        "reference/88fbe434657569e5398c228d9280f35c1394a7d7"
+      ],
+      "independence_assessment": "Distinct object ownership record; statistical/source independence unproven. Shared original citations/imports must cluster; publisher alone does not collapse records.",
+      "short_controlled_paraphrase": {
+        "en": "The ownership record concerns Equestrian Portrait of Elisabeth of France. In that record, its owner is Ferdinand VII of Spain.",
+        "ko": "이 소유 기록의 대상은 Equestrian Portrait of Elisabeth of France이다. 이 기록에서 그 대상의 소유자는 페르난도 7세이다."
+      },
+      "oracle_requirements": [
+        "Resolve its / 그 대상 to the record subject, not owner.",
+        "Interpret ownership as the recorded P127 assertion with preserved qualifiers, not independently verified present-day ownership.",
+        "Build and test new bilingual renderer/parser; existing engineering grammars are insufficient.",
+        "Do not interpret missing owner values as negation or exclusive ownership."
+      ],
+      "source_fact_sha256": "41ac84cc928ff928c253202e5c169600de826ca7f9dbbf709b28bef933fb87ec",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/wikidata_ownership_Q288380_rev2349655831.json",
+      "raw_snapshot_sha256": "350b8f1e7f732105551cea25a9ecc0b7b8612826d4600df6ff6f08d98025e9c2",
+      "raw_snapshot_url": "https://www.wikidata.org/wiki/Special:EntityData/Q288380.json?revision=2349655831",
+      "raw_snapshot_provenance": "Retrieved after collection at the exact recorded revision; returned revision and full P127 statement equality verified. Original first-fetch HTTP bytes were not retained."
+    },
+    {
+      "record_id": "ownership-Q320328",
+      "concept": "ownership_coreference",
+      "status": "SOURCE_FACT_COLLECTED_NOT_R_APPROVED",
+      "source_record_id": "Q320328",
+      "source_url": "https://www.wikidata.org/wiki/Q320328",
+      "source_revision": 2532219976,
+      "source_institution": "Wikidata community",
+      "source_license": "CC0-1.0 structured data",
+      "license_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "retrieved_date": "2026-11-04",
+      "entity_label_en": "Madonna of the Rose Bower",
+      "entity_label_ko": "Madonna of the Rose Bower",
+      "canonical_facts": [
+        {
+          "subject": "Q320328",
+          "predicate": "P127/owned_by",
+          "object": "Q700959",
+          "object_label_en": "Wallraf–Richartz Museum",
+          "object_label_ko": "발라프리하르츠 미술관",
+          "statement_id": "Q320328$2630ca96-4677-8b17-3191-25b9a7ebd78f",
+          "rank": "preferred",
+          "qualifiers": {
+            "P580": [
+              {
+                "snaktype": "value",
+                "property": "P580",
+                "hash": "553e4f3dbcac357ee7d25d27138bd327d91b3bff",
+                "datavalue": {
+                  "value": {
+                    "time": "+1848-00-00T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ]
+          }
+        }
+      ],
+      "evidence": {
+        "property": "P127",
+        "statement": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P127",
+            "hash": "1244caee222758b214f6cf78e003ffcb12d8ff6f",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 700959,
+                "id": "Q700959"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P580": [
+              {
+                "snaktype": "value",
+                "property": "P580",
+                "hash": "553e4f3dbcac357ee7d25d27138bd327d91b3bff",
+                "datavalue": {
+                  "value": {
+                    "time": "+1848-00-00T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P580"
+          ],
+          "id": "Q320328$2630ca96-4677-8b17-3191-25b9a7ebd78f",
+          "rank": "preferred",
+          "references": [
+            {
+              "hash": "c0cbc1153317617a13ed5705e1adee6fb9f81432",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "073ea941b281ff4a800cc0ea55a383bb9acb811e",
+                    "datavalue": {
+                      "value": "http://www.wallraf.museum/en/collections/middle-ages/masterpieces/stefan-lochner-madonna-of-the-rose-bower/the-highlight/",
+                      "type": "string"
+                    },
+                    "datatype": "url"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            },
+            {
+              "hash": "076e3f1699ecdfc8d0aef21acb92908c509f9f83",
+              "snaks": {
+                "P248": [
+                  {
+                    "snaktype": "value",
+                    "property": "P248",
+                    "hash": "31b5f6268bcebf02b39191d7824909737bea0990",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 43728152,
+                        "id": "Q43728152"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ],
+                "P4582": [
+                  {
+                    "snaktype": "value",
+                    "property": "P4582",
+                    "hash": "1588d717a13831413db6718727eee9ed7a38c06b",
+                    "datavalue": {
+                      "value": "05011284",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P248",
+                "P4582"
+              ]
+            }
+          ]
+        },
+        "upstream_reference_urls": [
+          "http://www.wallraf.museum/en/collections/middle-ages/masterpieces/stefan-lochner-madonna-of-the-rose-bower/the-highlight/"
+        ]
+      },
+      "underlying_event_id": "ownership-record/Q320328",
+      "derivation_lineage_id": "wikidata-ownership-statement/Q320328$2630ca96-4677-8b17-3191-25b9a7ebd78f",
+      "source_cluster_candidates": [
+        "wikidata-item/Q320328",
+        "reference/c0cbc1153317617a13ed5705e1adee6fb9f81432",
+        "reference/076e3f1699ecdfc8d0aef21acb92908c509f9f83"
+      ],
+      "independence_assessment": "Distinct object ownership record; statistical/source independence unproven. Shared original citations/imports must cluster; publisher alone does not collapse records.",
+      "short_controlled_paraphrase": {
+        "en": "The ownership record concerns Madonna of the Rose Bower. In that record, its owner is Wallraf–Richartz Museum.",
+        "ko": "이 소유 기록의 대상은 Madonna of the Rose Bower이다. 이 기록에서 그 대상의 소유자는 발라프리하르츠 미술관이다."
+      },
+      "oracle_requirements": [
+        "Resolve its / 그 대상 to the record subject, not owner.",
+        "Interpret ownership as the recorded P127 assertion with preserved qualifiers, not independently verified present-day ownership.",
+        "Build and test new bilingual renderer/parser; existing engineering grammars are insufficient.",
+        "Do not interpret missing owner values as negation or exclusive ownership."
+      ],
+      "source_fact_sha256": "ede2e4e117d66ed2b8e781aee1a5ca0aba1fd2f2f6f19648708b880848b7afdd",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/wikidata_ownership_Q320328_rev2532219976.json",
+      "raw_snapshot_sha256": "b6b1e42da97810730c4ce9b8ffca566d461ff209d1d572c77fe0d7ea10f09ed6",
+      "raw_snapshot_url": "https://www.wikidata.org/wiki/Special:EntityData/Q320328.json?revision=2532219976",
+      "raw_snapshot_provenance": "Retrieved after collection at the exact recorded revision; returned revision and full P127 statement equality verified. Original first-fetch HTTP bytes were not retained."
+    },
+    {
+      "record_id": "ownership-Q321303",
+      "concept": "ownership_coreference",
+      "status": "SOURCE_FACT_COLLECTED_NOT_R_APPROVED",
+      "source_record_id": "Q321303",
+      "source_url": "https://www.wikidata.org/wiki/Q321303",
+      "source_revision": 2504363340,
+      "source_institution": "Wikidata community",
+      "source_license": "CC0-1.0 structured data",
+      "license_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "retrieved_date": "2026-11-04",
+      "entity_label_en": "The Garden of Earthly Delights",
+      "entity_label_ko": "세속적인 쾌락의 정원",
+      "canonical_facts": [
+        {
+          "subject": "Q321303",
+          "predicate": "P127/owned_by",
+          "object": "Q69450",
+          "object_label_en": "Henry III of Nassau-Breda",
+          "object_label_ko": "Henry III of Nassau-Breda",
+          "statement_id": "Q321303$ecb1ba41-4872-6795-c5c1-dfa13cd33374",
+          "rank": "normal",
+          "qualifiers": {
+            "P580": [
+              {
+                "snaktype": "value",
+                "property": "P580",
+                "hash": "83b50729b93b406547835196a9e108bf1c802bc5",
+                "datavalue": {
+                  "value": {
+                    "time": "+1517-00-00T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985786"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ]
+          }
+        }
+      ],
+      "evidence": {
+        "property": "P127",
+        "statement": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P127",
+            "hash": "1dd3c083a8ee9e6ec66cda170d35aad87da44122",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 69450,
+                "id": "Q69450"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P580": [
+              {
+                "snaktype": "value",
+                "property": "P580",
+                "hash": "83b50729b93b406547835196a9e108bf1c802bc5",
+                "datavalue": {
+                  "value": {
+                    "time": "+1517-00-00T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985786"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P580"
+          ],
+          "id": "Q321303$ecb1ba41-4872-6795-c5c1-dfa13cd33374",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "751a7f4aebbf9b55c200c3f49420e3468f3ae177",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "0210c251ad6da264b8fc8228906387313d66b813",
+                    "datavalue": {
+                      "value": "https://www.museodelprado.es/en/the-collection/art-work/the-garden-of-earthly-delights-triptych/02388242-6d6a-4e9e-a992-e1311eab3609",
+                      "type": "string"
+                    },
+                    "datatype": "url"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        "upstream_reference_urls": [
+          "https://www.museodelprado.es/en/the-collection/art-work/the-garden-of-earthly-delights-triptych/02388242-6d6a-4e9e-a992-e1311eab3609"
+        ]
+      },
+      "underlying_event_id": "ownership-record/Q321303",
+      "derivation_lineage_id": "wikidata-ownership-statement/Q321303$ecb1ba41-4872-6795-c5c1-dfa13cd33374",
+      "source_cluster_candidates": [
+        "wikidata-item/Q321303",
+        "reference/751a7f4aebbf9b55c200c3f49420e3468f3ae177"
+      ],
+      "independence_assessment": "Distinct object ownership record; statistical/source independence unproven. Shared original citations/imports must cluster; publisher alone does not collapse records.",
+      "short_controlled_paraphrase": {
+        "en": "The ownership record concerns The Garden of Earthly Delights. In that record, its owner is Henry III of Nassau-Breda.",
+        "ko": "이 소유 기록의 대상은 세속적인 쾌락의 정원이다. 이 기록에서 그 대상의 소유자는 Henry III of Nassau-Breda이다."
+      },
+      "oracle_requirements": [
+        "Resolve its / 그 대상 to the record subject, not owner.",
+        "Interpret ownership as the recorded P127 assertion with preserved qualifiers, not independently verified present-day ownership.",
+        "Build and test new bilingual renderer/parser; existing engineering grammars are insufficient.",
+        "Do not interpret missing owner values as negation or exclusive ownership."
+      ],
+      "source_fact_sha256": "65c2bfe811c5ee130eabc0f5b17ff588abeb80f4e0217d59c500b23d0e975c5c",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/wikidata_ownership_Q321303_rev2504363340.json",
+      "raw_snapshot_sha256": "85b7aea2989df97d0c4c00a25173cb3bfc003df12659fbf05a172e120f0f92d2",
+      "raw_snapshot_url": "https://www.wikidata.org/wiki/Special:EntityData/Q321303.json?revision=2504363340",
+      "raw_snapshot_provenance": "Retrieved after collection at the exact recorded revision; returned revision and full P127 statement equality verified. Original first-fetch HTTP bytes were not retained."
+    },
+    {
+      "record_id": "ownership-Q323141",
+      "concept": "ownership_coreference",
+      "status": "SOURCE_FACT_COLLECTED_NOT_R_APPROVED",
+      "source_record_id": "Q323141",
+      "source_url": "https://www.wikidata.org/wiki/Q323141",
+      "source_revision": 2557023721,
+      "source_institution": "Wikidata community",
+      "source_license": "CC0-1.0 structured data",
+      "license_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "retrieved_date": "2026-11-04",
+      "entity_label_en": "Heller Altarpiece",
+      "entity_label_ko": "Heller Altarpiece",
+      "canonical_facts": [
+        {
+          "subject": "Q323141",
+          "predicate": "P127/owned_by",
+          "object": "Q1237975",
+          "object_label_en": "Dominikanerkloster Frankfurt am Main",
+          "object_label_ko": "Dominikanerkloster Frankfurt am Main",
+          "statement_id": "Q323141$8a16b989-4c20-8eb2-0672-84738becaa0e",
+          "rank": "normal",
+          "qualifiers": {
+            "P580": [
+              {
+                "snaktype": "value",
+                "property": "P580",
+                "hash": "1f8a2d1e5eb9f4b02f097d011ccc574cb9317174",
+                "datavalue": {
+                  "value": {
+                    "time": "+1614-00-00T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ],
+            "P518": [
+              {
+                "snaktype": "value",
+                "property": "P518",
+                "hash": "66580e23cda70f0ad1214adea2d6ee6874a2fca1",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 106322065,
+                    "id": "Q106322065"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              }
+            ]
+          }
+        }
+      ],
+      "evidence": {
+        "property": "P127",
+        "statement": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P127",
+            "hash": "f9989695219fd44454077ae13bc04313d03df6d6",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 1237975,
+                "id": "Q1237975"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P580": [
+              {
+                "snaktype": "value",
+                "property": "P580",
+                "hash": "1f8a2d1e5eb9f4b02f097d011ccc574cb9317174",
+                "datavalue": {
+                  "value": {
+                    "time": "+1614-00-00T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ],
+            "P518": [
+              {
+                "snaktype": "value",
+                "property": "P518",
+                "hash": "66580e23cda70f0ad1214adea2d6ee6874a2fca1",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 106322065,
+                    "id": "Q106322065"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P580",
+            "P518"
+          ],
+          "id": "Q323141$8a16b989-4c20-8eb2-0672-84738becaa0e",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "168a4c75d0e6029b7e438e31462f29a0bcf4efe9",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "5dc72d794d28a5aa9c49c38ba4f7372eb90ae573",
+                    "datavalue": {
+                      "value": "https://historisches-museum-frankfurt.de/de/node/33614",
+                      "type": "string"
+                    },
+                    "datatype": "url"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        "upstream_reference_urls": [
+          "https://historisches-museum-frankfurt.de/de/node/33614"
+        ]
+      },
+      "underlying_event_id": "ownership-record/Q323141",
+      "derivation_lineage_id": "wikidata-ownership-statement/Q323141$8a16b989-4c20-8eb2-0672-84738becaa0e",
+      "source_cluster_candidates": [
+        "wikidata-item/Q323141",
+        "reference/168a4c75d0e6029b7e438e31462f29a0bcf4efe9"
+      ],
+      "independence_assessment": "Distinct object ownership record; statistical/source independence unproven. Shared original citations/imports must cluster; publisher alone does not collapse records.",
+      "short_controlled_paraphrase": {
+        "en": "The ownership record concerns Heller Altarpiece. In that record, its owner is Dominikanerkloster Frankfurt am Main.",
+        "ko": "이 소유 기록의 대상은 Heller Altarpiece이다. 이 기록에서 그 대상의 소유자는 Dominikanerkloster Frankfurt am Main이다."
+      },
+      "oracle_requirements": [
+        "Resolve its / 그 대상 to the record subject, not owner.",
+        "Interpret ownership as the recorded P127 assertion with preserved qualifiers, not independently verified present-day ownership.",
+        "Build and test new bilingual renderer/parser; existing engineering grammars are insufficient.",
+        "Do not interpret missing owner values as negation or exclusive ownership."
+      ],
+      "source_fact_sha256": "39050766ec20d8a6489ec7ad40937962ed64b5a1d0b00f6fe2953cc28157173c",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/wikidata_ownership_Q323141_rev2557023721.json",
+      "raw_snapshot_sha256": "dd060483bb212f8cd513227035b03a8e717234f99c62ab8714cb99f39177716d",
+      "raw_snapshot_url": "https://www.wikidata.org/wiki/Special:EntityData/Q323141.json?revision=2557023721",
+      "raw_snapshot_provenance": "Retrieved after collection at the exact recorded revision; returned revision and full P127 statement equality verified. Original first-fetch HTTP bytes were not retained."
+    },
+    {
+      "record_id": "ownership-Q334360",
+      "concept": "ownership_coreference",
+      "status": "SOURCE_FACT_COLLECTED_NOT_R_APPROVED",
+      "source_record_id": "Q334360",
+      "source_url": "https://www.wikidata.org/wiki/Q334360",
+      "source_revision": 2524014530,
+      "source_institution": "Wikidata community",
+      "source_license": "CC0-1.0 structured data",
+      "license_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "retrieved_date": "2026-11-04",
+      "entity_label_en": "The Abbey in the Oakwood",
+      "entity_label_ko": "The Abbey in the Oakwood",
+      "canonical_facts": [
+        {
+          "subject": "Q334360",
+          "predicate": "P127/owned_by",
+          "object": "Q685171",
+          "object_label_en": "Prussian Cultural Heritage Foundation",
+          "object_label_ko": "프로이센 문화유산 재단",
+          "statement_id": "Q334360$82037961-427a-0bc4-c63b-768d8cd17ee5",
+          "rank": "normal",
+          "qualifiers": {
+            "P580": [
+              {
+                "snaktype": "value",
+                "property": "P580",
+                "hash": "c786a8b39f62b37eb45745acf99302b5409f2e26",
+                "datavalue": {
+                  "value": {
+                    "time": "+1957-00-00T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ]
+          }
+        }
+      ],
+      "evidence": {
+        "property": "P127",
+        "statement": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P127",
+            "hash": "23b9a9d27eab3a8e458019ec2f59a11ab89b7607",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 685171,
+                "id": "Q685171"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P580": [
+              {
+                "snaktype": "value",
+                "property": "P580",
+                "hash": "c786a8b39f62b37eb45745acf99302b5409f2e26",
+                "datavalue": {
+                  "value": {
+                    "time": "+1957-00-00T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P580"
+          ],
+          "id": "Q334360$82037961-427a-0bc4-c63b-768d8cd17ee5",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "15632e41d4b40a8c4e56bd0bb4cb8b731eb265b8",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "f35067ee9117805b6ed22cc77329444e702950c3",
+                    "datavalue": {
+                      "value": "http://www.smb-digital.de/eMuseumPlus?service=ExternalInterface&module=collection&objectId=968249&viewType=detailView",
+                      "type": "string"
+                    },
+                    "datatype": "url"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        "upstream_reference_urls": [
+          "http://www.smb-digital.de/eMuseumPlus?service=ExternalInterface&module=collection&objectId=968249&viewType=detailView"
+        ]
+      },
+      "underlying_event_id": "ownership-record/Q334360",
+      "derivation_lineage_id": "wikidata-ownership-statement/Q334360$82037961-427a-0bc4-c63b-768d8cd17ee5",
+      "source_cluster_candidates": [
+        "wikidata-item/Q334360",
+        "reference/15632e41d4b40a8c4e56bd0bb4cb8b731eb265b8"
+      ],
+      "independence_assessment": "Distinct object ownership record; statistical/source independence unproven. Shared original citations/imports must cluster; publisher alone does not collapse records.",
+      "short_controlled_paraphrase": {
+        "en": "The ownership record concerns The Abbey in the Oakwood. In that record, its owner is Prussian Cultural Heritage Foundation.",
+        "ko": "이 소유 기록의 대상은 The Abbey in the Oakwood이다. 이 기록에서 그 대상의 소유자는 프로이센 문화유산 재단이다."
+      },
+      "oracle_requirements": [
+        "Resolve its / 그 대상 to the record subject, not owner.",
+        "Interpret ownership as the recorded P127 assertion with preserved qualifiers, not independently verified present-day ownership.",
+        "Build and test new bilingual renderer/parser; existing engineering grammars are insufficient.",
+        "Do not interpret missing owner values as negation or exclusive ownership."
+      ],
+      "source_fact_sha256": "460e940dbb169e18ee58517c5b373d46d5c809b9fa40a60f6f76da5b0d716be4",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/wikidata_ownership_Q334360_rev2524014530.json",
+      "raw_snapshot_sha256": "421fc7d5a12a4027943772646543c841aca564eeca1561d8c33728b453b12aa4",
+      "raw_snapshot_url": "https://www.wikidata.org/wiki/Special:EntityData/Q334360.json?revision=2524014530",
+      "raw_snapshot_provenance": "Retrieved after collection at the exact recorded revision; returned revision and full P127 statement equality verified. Original first-fetch HTTP bytes were not retained."
+    },
+    {
+      "record_id": "ownership-Q335051",
+      "concept": "ownership_coreference",
+      "status": "SOURCE_FACT_COLLECTED_NOT_R_APPROVED",
+      "source_record_id": "Q335051",
+      "source_url": "https://www.wikidata.org/wiki/Q335051",
+      "source_revision": 2392633508,
+      "source_institution": "Wikidata community",
+      "source_license": "CC0-1.0 structured data",
+      "license_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "retrieved_date": "2026-11-04",
+      "entity_label_en": "The Invisible Man",
+      "entity_label_ko": "The Invisible Man",
+      "canonical_facts": [
+        {
+          "subject": "Q335051",
+          "predicate": "P127/owned_by",
+          "object": "Q5577",
+          "object_label_en": "Salvador Dalí",
+          "object_label_ko": "살바도르 달리",
+          "statement_id": "Q335051$27c74fd4-4166-41cd-cfed-962560fe5c1b",
+          "rank": "normal",
+          "qualifiers": {}
+        }
+      ],
+      "evidence": {
+        "property": "P127",
+        "statement": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P127",
+            "hash": "73a49dafa7b880422581a6e2aac39000ff6005a4",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 5577,
+                "id": "Q5577"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q335051$27c74fd4-4166-41cd-cfed-962560fe5c1b",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "cf47099504244256a55e69feb3c5f7a6a697e1ad",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "d23b92a913e1942d7688197ea696b636eaa66b17",
+                    "datavalue": {
+                      "value": "http://www.museoreinasofia.es/en/collection/artwork/lhomme-invisible-invisible-man",
+                      "type": "string"
+                    },
+                    "datatype": "url"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        "upstream_reference_urls": [
+          "http://www.museoreinasofia.es/en/collection/artwork/lhomme-invisible-invisible-man"
+        ]
+      },
+      "underlying_event_id": "ownership-record/Q335051",
+      "derivation_lineage_id": "wikidata-ownership-statement/Q335051$27c74fd4-4166-41cd-cfed-962560fe5c1b",
+      "source_cluster_candidates": [
+        "wikidata-item/Q335051",
+        "reference/cf47099504244256a55e69feb3c5f7a6a697e1ad"
+      ],
+      "independence_assessment": "Distinct object ownership record; statistical/source independence unproven. Shared original citations/imports must cluster; publisher alone does not collapse records.",
+      "short_controlled_paraphrase": {
+        "en": "The ownership record concerns The Invisible Man. In that record, its owner is Salvador Dalí.",
+        "ko": "이 소유 기록의 대상은 The Invisible Man이다. 이 기록에서 그 대상의 소유자는 살바도르 달리이다."
+      },
+      "oracle_requirements": [
+        "Resolve its / 그 대상 to the record subject, not owner.",
+        "Interpret ownership as the recorded P127 assertion with preserved qualifiers, not independently verified present-day ownership.",
+        "Build and test new bilingual renderer/parser; existing engineering grammars are insufficient.",
+        "Do not interpret missing owner values as negation or exclusive ownership."
+      ],
+      "source_fact_sha256": "6d041d12934bf1dbd8b4e5c44b1f043933cb7c56f919edee5b362a6f32004d58",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/wikidata_ownership_Q335051_rev2392633508.json",
+      "raw_snapshot_sha256": "50e9fc5546d3888fb53a87f90d28b264401b0c243dcdbd18529cd7606247e737",
+      "raw_snapshot_url": "https://www.wikidata.org/wiki/Special:EntityData/Q335051.json?revision=2392633508",
+      "raw_snapshot_provenance": "Retrieved after collection at the exact recorded revision; returned revision and full P127 statement equality verified. Original first-fetch HTTP bytes were not retained."
+    },
+    {
+      "record_id": "ownership-Q354396",
+      "concept": "ownership_coreference",
+      "status": "SOURCE_FACT_COLLECTED_NOT_R_APPROVED",
+      "source_record_id": "Q354396",
+      "source_url": "https://www.wikidata.org/wiki/Q354396",
+      "source_revision": 2548947334,
+      "source_institution": "Wikidata community",
+      "source_license": "CC0-1.0 structured data",
+      "license_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "retrieved_date": "2026-11-04",
+      "entity_label_en": "Portrait of Adele Bloch-Bauer I",
+      "entity_label_ko": "아델레 블로흐-바우어의 초상 I",
+      "canonical_facts": [
+        {
+          "subject": "Q354396",
+          "predicate": "P127/owned_by",
+          "object": "Q699565",
+          "object_label_en": "Ronald Lauder",
+          "object_label_ko": "로널드 로더",
+          "statement_id": "Q354396$96f292d6-4bd5-1907-2eb0-65c868e3a5d9",
+          "rank": "normal",
+          "qualifiers": {
+            "P580": [
+              {
+                "snaktype": "value",
+                "property": "P580",
+                "hash": "868489904a41b5c743a1e632b40277e6e7678a20",
+                "datavalue": {
+                  "value": {
+                    "time": "+2006-00-00T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ]
+          }
+        }
+      ],
+      "evidence": {
+        "property": "P127",
+        "statement": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P127",
+            "hash": "1de17c504e533d87ce2d6fb857df392152bb3f62",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 699565,
+                "id": "Q699565"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P580": [
+              {
+                "snaktype": "value",
+                "property": "P580",
+                "hash": "868489904a41b5c743a1e632b40277e6e7678a20",
+                "datavalue": {
+                  "value": {
+                    "time": "+2006-00-00T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P580"
+          ],
+          "id": "Q354396$96f292d6-4bd5-1907-2eb0-65c868e3a5d9",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "f8c22a396b9af11a856ee9840fff77aebc804df8",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "3875f519a9a5ce420df8f2238632b116c0ac62c8",
+                    "datavalue": {
+                      "value": "https://plone.unige.ch/art-adr/cases-affaires/6-klimt-paintings-2013-maria-altmann-and-austria",
+                      "type": "string"
+                    },
+                    "datatype": "url"
+                  }
+                ],
+                "P1476": [
+                  {
+                    "snaktype": "value",
+                    "property": "P1476",
+                    "hash": "e2bb005314a47f86daeb9313bfa3ea9a779bfa48",
+                    "datavalue": {
+                      "value": {
+                        "text": "Six Klimt paintings – Maria Altmann and Austria — Centre du droit de l'art",
+                        "language": "en"
+                      },
+                      "type": "monolingualtext"
+                    },
+                    "datatype": "monolingualtext"
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "hash": "9409a00e3e43335c542f540a9751eea6e0b9b80f",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2024-10-16T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    },
+                    "datatype": "time"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854",
+                "P1476",
+                "P813"
+              ]
+            },
+            {
+              "hash": "e7882827022b57e01d084daa20b481e7fb899833",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "e41e559c07d4eb4e3de10356dde7db9599a004aa",
+                    "datavalue": {
+                      "value": "https://web.archive.org/web/20070116035626/https://www.artnews.com/issues/article.asp?art_id=2193",
+                      "type": "string"
+                    },
+                    "datatype": "url"
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "hash": "9409a00e3e43335c542f540a9751eea6e0b9b80f",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2024-10-16T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    },
+                    "datatype": "time"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854",
+                "P813"
+              ]
+            }
+          ]
+        },
+        "upstream_reference_urls": [
+          "https://plone.unige.ch/art-adr/cases-affaires/6-klimt-paintings-2013-maria-altmann-and-austria",
+          "https://web.archive.org/web/20070116035626/https://www.artnews.com/issues/article.asp?art_id=2193"
+        ]
+      },
+      "underlying_event_id": "ownership-record/Q354396",
+      "derivation_lineage_id": "wikidata-ownership-statement/Q354396$96f292d6-4bd5-1907-2eb0-65c868e3a5d9",
+      "source_cluster_candidates": [
+        "wikidata-item/Q354396",
+        "reference/f8c22a396b9af11a856ee9840fff77aebc804df8",
+        "reference/e7882827022b57e01d084daa20b481e7fb899833"
+      ],
+      "independence_assessment": "Distinct object ownership record; statistical/source independence unproven. Shared original citations/imports must cluster; publisher alone does not collapse records.",
+      "short_controlled_paraphrase": {
+        "en": "The ownership record concerns Portrait of Adele Bloch-Bauer I. In that record, its owner is Ronald Lauder.",
+        "ko": "이 소유 기록의 대상은 아델레 블로흐-바우어의 초상 I이다. 이 기록에서 그 대상의 소유자는 로널드 로더이다."
+      },
+      "oracle_requirements": [
+        "Resolve its / 그 대상 to the record subject, not owner.",
+        "Interpret ownership as the recorded P127 assertion with preserved qualifiers, not independently verified present-day ownership.",
+        "Build and test new bilingual renderer/parser; existing engineering grammars are insufficient.",
+        "Do not interpret missing owner values as negation or exclusive ownership."
+      ],
+      "source_fact_sha256": "5c019486283f515a7b24371773433d2bb11293333e07a15acf2967cbba226ffc",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/wikidata_ownership_Q354396_rev2548947334.json",
+      "raw_snapshot_sha256": "9d1f55fe916a08fc9752774f330a8248b2b83712b92883b5088aa58df39e51ab",
+      "raw_snapshot_url": "https://www.wikidata.org/wiki/Special:EntityData/Q354396.json?revision=2548947334",
+      "raw_snapshot_provenance": "Retrieved after collection at the exact recorded revision; returned revision and full P127 statement equality verified. Original first-fetch HTTP bytes were not retained."
+    },
+    {
+      "record_id": "ownership-Q390713",
+      "concept": "ownership_coreference",
+      "status": "SOURCE_FACT_COLLECTED_NOT_R_APPROVED",
+      "source_record_id": "Q390713",
+      "source_url": "https://www.wikidata.org/wiki/Q390713",
+      "source_revision": 2417491894,
+      "source_institution": "Wikidata community",
+      "source_license": "CC0-1.0 structured data",
+      "license_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "retrieved_date": "2026-11-04",
+      "entity_label_en": "Buffoon with books, formerly known as portrait of \"el Primo\"",
+      "entity_label_ko": "Buffoon with books, formerly known as portrait of \"el Primo\"",
+      "canonical_facts": [
+        {
+          "subject": "Q390713",
+          "predicate": "P127/owned_by",
+          "object": "Q186256",
+          "object_label_en": "Ferdinand VII of Spain",
+          "object_label_ko": "페르난도 7세",
+          "statement_id": "Q390713$E547912B-4BCB-4741-8DB6-3767AF1D342E",
+          "rank": "normal",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "ef649e9d86ae175218eb19087544b4eba69e6f6f",
+                "datavalue": {
+                  "value": {
+                    "time": "+1814-00-00T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ]
+          }
+        }
+      ],
+      "evidence": {
+        "property": "P127",
+        "statement": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P127",
+            "hash": "abc0ae40fc2fa866c4aedf1f10a9f6d1bc957c4e",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 186256,
+                "id": "Q186256"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P585": [
+              {
+                "snaktype": "value",
+                "property": "P585",
+                "hash": "ef649e9d86ae175218eb19087544b4eba69e6f6f",
+                "datavalue": {
+                  "value": {
+                    "time": "+1814-00-00T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P585"
+          ],
+          "id": "Q390713$E547912B-4BCB-4741-8DB6-3767AF1D342E",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "88fbe434657569e5398c228d9280f35c1394a7d7",
+              "snaks": {
+                "P248": [
+                  {
+                    "snaktype": "value",
+                    "property": "P248",
+                    "hash": "330115b9bdb4702bf550c60a5f7393c18981a8f8",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 59676414,
+                        "id": "Q59676414"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P248"
+              ]
+            }
+          ]
+        },
+        "upstream_reference_urls": []
+      },
+      "underlying_event_id": "ownership-record/Q390713",
+      "derivation_lineage_id": "wikidata-ownership-statement/Q390713$E547912B-4BCB-4741-8DB6-3767AF1D342E",
+      "source_cluster_candidates": [
+        "wikidata-item/Q390713",
+        "reference/88fbe434657569e5398c228d9280f35c1394a7d7"
+      ],
+      "independence_assessment": "Distinct object ownership record; statistical/source independence unproven. Shared original citations/imports must cluster; publisher alone does not collapse records.",
+      "short_controlled_paraphrase": {
+        "en": "The ownership record concerns Buffoon with books, formerly known as portrait of \"el Primo\". In that record, its owner is Ferdinand VII of Spain.",
+        "ko": "이 소유 기록의 대상은 Buffoon with books, formerly known as portrait of \"el Primo\"이다. 이 기록에서 그 대상의 소유자는 페르난도 7세이다."
+      },
+      "oracle_requirements": [
+        "Resolve its / 그 대상 to the record subject, not owner.",
+        "Interpret ownership as the recorded P127 assertion with preserved qualifiers, not independently verified present-day ownership.",
+        "Build and test new bilingual renderer/parser; existing engineering grammars are insufficient.",
+        "Do not interpret missing owner values as negation or exclusive ownership."
+      ],
+      "source_fact_sha256": "f9f58dd7b178c638972c5078144ece0c8bf690da4197b981530394d474ffeda2",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/wikidata_ownership_Q390713_rev2417491894.json",
+      "raw_snapshot_sha256": "65c576c5de77a448e8ab39630af7f03b81383789c691058a79ed1af53875ba3d",
+      "raw_snapshot_url": "https://www.wikidata.org/wiki/Special:EntityData/Q390713.json?revision=2417491894",
+      "raw_snapshot_provenance": "Retrieved after collection at the exact recorded revision; returned revision and full P127 statement equality verified. Original first-fetch HTTP bytes were not retained."
+    },
+    {
+      "record_id": "ownership-Q405814",
+      "concept": "ownership_coreference",
+      "status": "SOURCE_FACT_COLLECTED_NOT_R_APPROVED",
+      "source_record_id": "Q405814",
+      "source_url": "https://www.wikidata.org/wiki/Q405814",
+      "source_revision": 2559448125,
+      "source_institution": "Wikidata community",
+      "source_license": "CC0-1.0 structured data",
+      "license_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "retrieved_date": "2026-11-04",
+      "entity_label_en": "Ship of Fools",
+      "entity_label_ko": "바보들의 배",
+      "canonical_facts": [
+        {
+          "subject": "Q405814",
+          "predicate": "P127/owned_by",
+          "object": "Q3591845",
+          "object_label_en": "French State",
+          "object_label_ko": "프랑스 정부",
+          "statement_id": "Q405814$3AFC8407-0B52-4DD8-8476-2EEEBFA30EEB",
+          "rank": "normal",
+          "qualifiers": {}
+        }
+      ],
+      "evidence": {
+        "property": "P127",
+        "statement": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P127",
+            "hash": "925454b70d04851919316e9a759c97b70a245a37",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 3591845,
+                "id": "Q3591845"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q405814$3AFC8407-0B52-4DD8-8476-2EEEBFA30EEB",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "e1088323e9481f8a4da1b79b8841b91ab7f2e304",
+              "snaks": {
+                "P9394": [
+                  {
+                    "snaktype": "value",
+                    "property": "P9394",
+                    "hash": "dfbc1179054a7dca919ecf4f6e8387468100ea41",
+                    "datavalue": {
+                      "value": "010062860",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "hash": "12911de4ebf15418a5aaddf64d6e1f08859cfdd3",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2023-08-20T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    },
+                    "datatype": "time"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P9394",
+                "P813"
+              ]
+            }
+          ]
+        },
+        "upstream_reference_urls": []
+      },
+      "underlying_event_id": "ownership-record/Q405814",
+      "derivation_lineage_id": "wikidata-ownership-statement/Q405814$3AFC8407-0B52-4DD8-8476-2EEEBFA30EEB",
+      "source_cluster_candidates": [
+        "wikidata-item/Q405814",
+        "reference/e1088323e9481f8a4da1b79b8841b91ab7f2e304"
+      ],
+      "independence_assessment": "Distinct object ownership record; statistical/source independence unproven. Shared original citations/imports must cluster; publisher alone does not collapse records.",
+      "short_controlled_paraphrase": {
+        "en": "The ownership record concerns Ship of Fools. In that record, its owner is French State.",
+        "ko": "이 소유 기록의 대상은 바보들의 배이다. 이 기록에서 그 대상의 소유자는 프랑스 정부이다."
+      },
+      "oracle_requirements": [
+        "Resolve its / 그 대상 to the record subject, not owner.",
+        "Interpret ownership as the recorded P127 assertion with preserved qualifiers, not independently verified present-day ownership.",
+        "Build and test new bilingual renderer/parser; existing engineering grammars are insufficient.",
+        "Do not interpret missing owner values as negation or exclusive ownership."
+      ],
+      "source_fact_sha256": "ca688341aec0853634becc64137964fe6814b36831866f96ad907a851f9f5f38",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/wikidata_ownership_Q405814_rev2559448125.json",
+      "raw_snapshot_sha256": "c06c334735261595c577838f86e243a06165154f20b8dbe14af0fbbf27c6ba1b",
+      "raw_snapshot_url": "https://www.wikidata.org/wiki/Special:EntityData/Q405814.json?revision=2559448125",
+      "raw_snapshot_provenance": "Retrieved after collection at the exact recorded revision; returned revision and full P127 statement equality verified. Original first-fetch HTTP bytes were not retained."
+    },
+    {
+      "record_id": "ownership-Q429753",
+      "concept": "ownership_coreference",
+      "status": "SOURCE_FACT_COLLECTED_NOT_R_APPROVED",
+      "source_record_id": "Q429753",
+      "source_url": "https://www.wikidata.org/wiki/Q429753",
+      "source_revision": 2543253100,
+      "source_institution": "Wikidata community",
+      "source_license": "CC0-1.0 structured data",
+      "license_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "retrieved_date": "2026-11-04",
+      "entity_label_en": "The 1821 Derby at Epsom",
+      "entity_label_ko": "1821년 엡섬 더비",
+      "canonical_facts": [
+        {
+          "subject": "Q429753",
+          "predicate": "P127/owned_by",
+          "object": "Q3591845",
+          "object_label_en": "French State",
+          "object_label_ko": "프랑스 정부",
+          "statement_id": "Q429753$10BD6907-4FE7-4B70-BE4F-25BD30FCD0A7",
+          "rank": "normal",
+          "qualifiers": {}
+        }
+      ],
+      "evidence": {
+        "property": "P127",
+        "statement": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P127",
+            "hash": "925454b70d04851919316e9a759c97b70a245a37",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 3591845,
+                "id": "Q3591845"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q429753$10BD6907-4FE7-4B70-BE4F-25BD30FCD0A7",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "3bdf1159e5f1057621f5dc8cea894d6df31a3913",
+              "snaks": {
+                "P9394": [
+                  {
+                    "snaktype": "value",
+                    "property": "P9394",
+                    "hash": "4ab6fd559661c9fa6fc1a3249388652ebb4c0d0e",
+                    "datavalue": {
+                      "value": "010064852",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "hash": "12911de4ebf15418a5aaddf64d6e1f08859cfdd3",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2023-08-20T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    },
+                    "datatype": "time"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P9394",
+                "P813"
+              ]
+            }
+          ]
+        },
+        "upstream_reference_urls": []
+      },
+      "underlying_event_id": "ownership-record/Q429753",
+      "derivation_lineage_id": "wikidata-ownership-statement/Q429753$10BD6907-4FE7-4B70-BE4F-25BD30FCD0A7",
+      "source_cluster_candidates": [
+        "wikidata-item/Q429753",
+        "reference/3bdf1159e5f1057621f5dc8cea894d6df31a3913"
+      ],
+      "independence_assessment": "Distinct object ownership record; statistical/source independence unproven. Shared original citations/imports must cluster; publisher alone does not collapse records.",
+      "short_controlled_paraphrase": {
+        "en": "The ownership record concerns The 1821 Derby at Epsom. In that record, its owner is French State.",
+        "ko": "이 소유 기록의 대상은 1821년 엡섬 더비이다. 이 기록에서 그 대상의 소유자는 프랑스 정부이다."
+      },
+      "oracle_requirements": [
+        "Resolve its / 그 대상 to the record subject, not owner.",
+        "Interpret ownership as the recorded P127 assertion with preserved qualifiers, not independently verified present-day ownership.",
+        "Build and test new bilingual renderer/parser; existing engineering grammars are insufficient.",
+        "Do not interpret missing owner values as negation or exclusive ownership."
+      ],
+      "source_fact_sha256": "6c85d1b5a112b8e75444d43750af61b22d58f681880eaa805c36531f7a2a7c0a",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/wikidata_ownership_Q429753_rev2543253100.json",
+      "raw_snapshot_sha256": "6a880063201f8fdcc5116fb476567b20e222180774d3f60be84a009f515072db",
+      "raw_snapshot_url": "https://www.wikidata.org/wiki/Special:EntityData/Q429753.json?revision=2543253100",
+      "raw_snapshot_provenance": "Retrieved after collection at the exact recorded revision; returned revision and full P127 statement equality verified. Original first-fetch HTTP bytes were not retained."
+    },
+    {
+      "record_id": "ownership-Q432253",
+      "concept": "ownership_coreference",
+      "status": "SOURCE_FACT_COLLECTED_NOT_R_APPROVED",
+      "source_record_id": "Q432253",
+      "source_url": "https://www.wikidata.org/wiki/Q432253",
+      "source_revision": 2561606945,
+      "source_institution": "Wikidata community",
+      "source_license": "CC0-1.0 structured data",
+      "license_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "retrieved_date": "2026-11-04",
+      "entity_label_en": "Garden at Sainte-Adresse",
+      "entity_label_ko": "생타드레스의 정원",
+      "canonical_facts": [
+        {
+          "subject": "Q432253",
+          "predicate": "P127/owned_by",
+          "object": "Q18576205",
+          "object_label_en": "Geoffrey Agnew",
+          "object_label_ko": "Geoffrey Agnew",
+          "statement_id": "Q432253$4b1ffb8e-4cb9-5d08-1086-82e296008d78",
+          "rank": "normal",
+          "qualifiers": {}
+        }
+      ],
+      "evidence": {
+        "property": "P127",
+        "statement": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P127",
+            "hash": "7046e1df3de0a16e9f81dfbeae4e2390d0c99221",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 18576205,
+                "id": "Q18576205"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q432253$4b1ffb8e-4cb9-5d08-1086-82e296008d78",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "6129c156abc3fbf643739d2a20b52b70f19d78dd",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "9ec9b3434338e121ded7d5c15746f3e1223d40ca",
+                    "datavalue": {
+                      "value": "https://www.nytimes.com/1986/11/25/obituaries/sir-geoffrey-agnew-78-dies-eminent-london-art-dealer.html",
+                      "type": "string"
+                    },
+                    "datatype": "url"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            },
+            {
+              "hash": "5c0e3731e79dde40f62c836ae0370a2ea6226441",
+              "snaks": {
+                "P248": [
+                  {
+                    "snaktype": "value",
+                    "property": "P248",
+                    "hash": "ac268b2b3d30bdca19e090062750ee8683ecb037",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 160236,
+                        "id": "Q160236"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ],
+                "P3634": [
+                  {
+                    "snaktype": "value",
+                    "property": "P3634",
+                    "hash": "ba98e87e791632a4f47e3eb2290772b0a54498b4",
+                    "datavalue": {
+                      "value": "437133",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P248",
+                "P3634"
+              ]
+            }
+          ]
+        },
+        "upstream_reference_urls": [
+          "https://www.nytimes.com/1986/11/25/obituaries/sir-geoffrey-agnew-78-dies-eminent-london-art-dealer.html"
+        ]
+      },
+      "underlying_event_id": "ownership-record/Q432253",
+      "derivation_lineage_id": "wikidata-ownership-statement/Q432253$4b1ffb8e-4cb9-5d08-1086-82e296008d78",
+      "source_cluster_candidates": [
+        "wikidata-item/Q432253",
+        "reference/6129c156abc3fbf643739d2a20b52b70f19d78dd",
+        "reference/5c0e3731e79dde40f62c836ae0370a2ea6226441"
+      ],
+      "independence_assessment": "Distinct object ownership record; statistical/source independence unproven. Shared original citations/imports must cluster; publisher alone does not collapse records.",
+      "short_controlled_paraphrase": {
+        "en": "The ownership record concerns Garden at Sainte-Adresse. In that record, its owner is Geoffrey Agnew.",
+        "ko": "이 소유 기록의 대상은 생타드레스의 정원이다. 이 기록에서 그 대상의 소유자는 Geoffrey Agnew이다."
+      },
+      "oracle_requirements": [
+        "Resolve its / 그 대상 to the record subject, not owner.",
+        "Interpret ownership as the recorded P127 assertion with preserved qualifiers, not independently verified present-day ownership.",
+        "Build and test new bilingual renderer/parser; existing engineering grammars are insufficient.",
+        "Do not interpret missing owner values as negation or exclusive ownership."
+      ],
+      "source_fact_sha256": "c25b7ef89fd66dcec983041433d1dfa1b9fc6b8dba47baea1e1b41be32981f95",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/wikidata_ownership_Q432253_rev2561606945.json",
+      "raw_snapshot_sha256": "88b23b623480a7c0ea7c138b674a83caef5cbb7dd047654eafb3e8818f72a963",
+      "raw_snapshot_url": "https://www.wikidata.org/wiki/Special:EntityData/Q432253.json?revision=2561606945",
+      "raw_snapshot_provenance": "Retrieved after collection at the exact recorded revision; returned revision and full P127 statement equality verified. Original first-fetch HTTP bytes were not retained."
+    },
+    {
+      "record_id": "ownership-Q434461",
+      "concept": "ownership_coreference",
+      "status": "SOURCE_FACT_COLLECTED_NOT_R_APPROVED",
+      "source_record_id": "Q434461",
+      "source_url": "https://www.wikidata.org/wiki/Q434461",
+      "source_revision": 2502220710,
+      "source_institution": "Wikidata community",
+      "source_license": "CC0-1.0 structured data",
+      "license_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "retrieved_date": "2026-11-04",
+      "entity_label_en": "The Seven Sacraments",
+      "entity_label_ko": "The Seven Sacraments",
+      "canonical_facts": [
+        {
+          "subject": "Q434461",
+          "predicate": "P127/owned_by",
+          "object": "Q1471477",
+          "object_label_en": "Royal Museum of Fine Arts Antwerp",
+          "object_label_ko": "안트베르펜 왕립미술관",
+          "statement_id": "Q434461$3efb879e-4466-101d-39a0-3a1e676f0a43",
+          "rank": "normal",
+          "qualifiers": {}
+        }
+      ],
+      "evidence": {
+        "property": "P127",
+        "statement": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P127",
+            "hash": "b612090531f7769c1ee3ebb2342520a71d15090a",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 1471477,
+                "id": "Q1471477"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q434461$3efb879e-4466-101d-39a0-3a1e676f0a43",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "685c0f34d2f081d65da5302d5b833e117ed78b06",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "27152cbdb45a276e7ddbf11c11e37e2ee2570282",
+                    "datavalue": {
+                      "value": "http://www.kmska.be/en/collectie/Restauratie/Rogier_van_der_Weyden/Over_het_kunstwerk.html",
+                      "type": "string"
+                    },
+                    "datatype": "url"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        "upstream_reference_urls": [
+          "http://www.kmska.be/en/collectie/Restauratie/Rogier_van_der_Weyden/Over_het_kunstwerk.html"
+        ]
+      },
+      "underlying_event_id": "ownership-record/Q434461",
+      "derivation_lineage_id": "wikidata-ownership-statement/Q434461$3efb879e-4466-101d-39a0-3a1e676f0a43",
+      "source_cluster_candidates": [
+        "wikidata-item/Q434461",
+        "reference/685c0f34d2f081d65da5302d5b833e117ed78b06"
+      ],
+      "independence_assessment": "Distinct object ownership record; statistical/source independence unproven. Shared original citations/imports must cluster; publisher alone does not collapse records.",
+      "short_controlled_paraphrase": {
+        "en": "The ownership record concerns The Seven Sacraments. In that record, its owner is Royal Museum of Fine Arts Antwerp.",
+        "ko": "이 소유 기록의 대상은 The Seven Sacraments이다. 이 기록에서 그 대상의 소유자는 안트베르펜 왕립미술관이다."
+      },
+      "oracle_requirements": [
+        "Resolve its / 그 대상 to the record subject, not owner.",
+        "Interpret ownership as the recorded P127 assertion with preserved qualifiers, not independently verified present-day ownership.",
+        "Build and test new bilingual renderer/parser; existing engineering grammars are insufficient.",
+        "Do not interpret missing owner values as negation or exclusive ownership."
+      ],
+      "source_fact_sha256": "c05e8eb1cacdd1b72afe50e0ced000baa10228b50c72ff0817f3e1006464ff13",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/wikidata_ownership_Q434461_rev2502220710.json",
+      "raw_snapshot_sha256": "d2d149b2000d8c6acf38004c6fdea918554678e69db8eab9e2138f4848052ad3",
+      "raw_snapshot_url": "https://www.wikidata.org/wiki/Special:EntityData/Q434461.json?revision=2502220710",
+      "raw_snapshot_provenance": "Retrieved after collection at the exact recorded revision; returned revision and full P127 statement equality verified. Original first-fetch HTTP bytes were not retained."
+    },
+    {
+      "record_id": "ownership-Q455319",
+      "concept": "ownership_coreference",
+      "status": "SOURCE_FACT_COLLECTED_NOT_R_APPROVED",
+      "source_record_id": "Q455319",
+      "source_url": "https://www.wikidata.org/wiki/Q455319",
+      "source_revision": 2541570609,
+      "source_institution": "Wikidata community",
+      "source_license": "CC0-1.0 structured data",
+      "license_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "retrieved_date": "2026-11-04",
+      "entity_label_en": "Darmstadt Madonna",
+      "entity_label_ko": "다름슈타트 마돈나",
+      "canonical_facts": [
+        {
+          "subject": "Q455319",
+          "predicate": "P127/owned_by",
+          "object": "Q150652",
+          "object_label_en": "Wilhelm I",
+          "object_label_ko": "빌헬름 1세",
+          "statement_id": "Q455319$29036d3c-4132-4ec0-1c18-630d2ac21d20",
+          "rank": "normal",
+          "qualifiers": {
+            "P580": [
+              {
+                "snaktype": "value",
+                "property": "P580",
+                "hash": "8dffaf164b9bc46949882b514de340abfa30ee34",
+                "datavalue": {
+                  "value": {
+                    "time": "+1822-01-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ]
+          }
+        }
+      ],
+      "evidence": {
+        "property": "P127",
+        "statement": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P127",
+            "hash": "786377c8258b9a62959a2ad1c46dcbb99c673196",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 150652,
+                "id": "Q150652"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P580": [
+              {
+                "snaktype": "value",
+                "property": "P580",
+                "hash": "8dffaf164b9bc46949882b514de340abfa30ee34",
+                "datavalue": {
+                  "value": {
+                    "time": "+1822-01-01T00:00:00Z",
+                    "timezone": 0,
+                    "before": 0,
+                    "after": 0,
+                    "precision": 9,
+                    "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                  },
+                  "type": "time"
+                },
+                "datatype": "time"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P580"
+          ],
+          "id": "Q455319$29036d3c-4132-4ec0-1c18-630d2ac21d20",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "00293ac4bdae537a53c7f44de9303ba3a6b8c622",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "21681b990b04e8863f994075a874debc509d19d9",
+                    "datavalue": {
+                      "value": "http://www.theartnewspaper.com/articles/Greatest-German-Renaissance-Madonna-sold-by-prince/24331",
+                      "type": "string"
+                    },
+                    "datatype": "url"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854"
+              ]
+            }
+          ]
+        },
+        "upstream_reference_urls": [
+          "http://www.theartnewspaper.com/articles/Greatest-German-Renaissance-Madonna-sold-by-prince/24331"
+        ]
+      },
+      "underlying_event_id": "ownership-record/Q455319",
+      "derivation_lineage_id": "wikidata-ownership-statement/Q455319$29036d3c-4132-4ec0-1c18-630d2ac21d20",
+      "source_cluster_candidates": [
+        "wikidata-item/Q455319",
+        "reference/00293ac4bdae537a53c7f44de9303ba3a6b8c622"
+      ],
+      "independence_assessment": "Distinct object ownership record; statistical/source independence unproven. Shared original citations/imports must cluster; publisher alone does not collapse records.",
+      "short_controlled_paraphrase": {
+        "en": "The ownership record concerns Darmstadt Madonna. In that record, its owner is Wilhelm I.",
+        "ko": "이 소유 기록의 대상은 다름슈타트 마돈나이다. 이 기록에서 그 대상의 소유자는 빌헬름 1세이다."
+      },
+      "oracle_requirements": [
+        "Resolve its / 그 대상 to the record subject, not owner.",
+        "Interpret ownership as the recorded P127 assertion with preserved qualifiers, not independently verified present-day ownership.",
+        "Build and test new bilingual renderer/parser; existing engineering grammars are insufficient.",
+        "Do not interpret missing owner values as negation or exclusive ownership."
+      ],
+      "source_fact_sha256": "f205cd69e83943f3efbfc145b15539aa81dd484c21b15310d7999d65e735c8a5",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/wikidata_ownership_Q455319_rev2541570609.json",
+      "raw_snapshot_sha256": "9dcc260a37424e27acc62458e8d9c426b5af128692e477a255414f3cbd825237",
+      "raw_snapshot_url": "https://www.wikidata.org/wiki/Special:EntityData/Q455319.json?revision=2541570609",
+      "raw_snapshot_provenance": "Retrieved after collection at the exact recorded revision; returned revision and full P127 statement equality verified. Original first-fetch HTTP bytes were not retained."
+    },
+    {
+      "record_id": "ownership-Q462688",
+      "concept": "ownership_coreference",
+      "status": "SOURCE_FACT_COLLECTED_NOT_R_APPROVED",
+      "source_record_id": "Q462688",
+      "source_url": "https://www.wikidata.org/wiki/Q462688",
+      "source_revision": 2386914822,
+      "source_institution": "Wikidata community",
+      "source_license": "CC0-1.0 structured data",
+      "license_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "retrieved_date": "2026-11-04",
+      "entity_label_en": "The Garden of the Tuileries on a Spring Morning",
+      "entity_label_ko": "The Garden of the Tuileries on a Spring Morning",
+      "canonical_facts": [
+        {
+          "subject": "Q462688",
+          "predicate": "P127/owned_by",
+          "object": "Q19308411",
+          "object_label_en": "Sam Salz",
+          "object_label_ko": "Sam Salz",
+          "statement_id": "Q462688$db26df62-4d61-010a-546b-413ae3d052b9",
+          "rank": "normal",
+          "qualifiers": {}
+        }
+      ],
+      "evidence": {
+        "property": "P127",
+        "statement": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P127",
+            "hash": "b1deb22b37e88e30862fbf7a90e649169621d662",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 19308411,
+                "id": "Q19308411"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q462688$db26df62-4d61-010a-546b-413ae3d052b9",
+          "rank": "normal",
+          "references": [
+            {
+              "hash": "18458c190f48e6a514f4d2d646526e4f8eb82af7",
+              "snaks": {
+                "P854": [
+                  {
+                    "snaktype": "value",
+                    "property": "P854",
+                    "hash": "53024ceed11fbd87098dd4b7d907cf8f0f8edf22",
+                    "datavalue": {
+                      "value": "https://view.publitas.com/wildenstein-plattner-institute-ol46yv9z6qv6/c-r_camille_pissarro_volume_iii_wildenstein_institute/page/296-297",
+                      "type": "string"
+                    },
+                    "datatype": "url"
+                  }
+                ],
+                "P1476": [
+                  {
+                    "snaktype": "value",
+                    "property": "P1476",
+                    "hash": "fa83d108ac0125813357f9427be9426577b90b94",
+                    "datavalue": {
+                      "value": {
+                        "text": "Wildenstein Plattner Institute - C.R_Camille_Pissarro_Volume_III_Wildenstein_Institute - Page 296-297",
+                        "language": "en"
+                      },
+                      "type": "monolingualtext"
+                    },
+                    "datatype": "monolingualtext"
+                  }
+                ],
+                "P407": [
+                  {
+                    "snaktype": "value",
+                    "property": "P407",
+                    "hash": "daf1c4fcb58181b02dff9cc89deb084004ddae4b",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 1860,
+                        "id": "Q1860"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ],
+                "P813": [
+                  {
+                    "snaktype": "value",
+                    "property": "P813",
+                    "hash": "a727fe92c14c0eb1c0e38ab653aed11bb8635dce",
+                    "datavalue": {
+                      "value": {
+                        "time": "+2025-08-01T00:00:00Z",
+                        "timezone": 0,
+                        "before": 0,
+                        "after": 0,
+                        "precision": 11,
+                        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                      },
+                      "type": "time"
+                    },
+                    "datatype": "time"
+                  }
+                ]
+              },
+              "snaks-order": [
+                "P854",
+                "P1476",
+                "P407",
+                "P813"
+              ]
+            }
+          ]
+        },
+        "upstream_reference_urls": [
+          "https://view.publitas.com/wildenstein-plattner-institute-ol46yv9z6qv6/c-r_camille_pissarro_volume_iii_wildenstein_institute/page/296-297"
+        ]
+      },
+      "underlying_event_id": "ownership-record/Q462688",
+      "derivation_lineage_id": "wikidata-ownership-statement/Q462688$db26df62-4d61-010a-546b-413ae3d052b9",
+      "source_cluster_candidates": [
+        "wikidata-item/Q462688",
+        "reference/18458c190f48e6a514f4d2d646526e4f8eb82af7"
+      ],
+      "independence_assessment": "Distinct object ownership record; statistical/source independence unproven. Shared original citations/imports must cluster; publisher alone does not collapse records.",
+      "short_controlled_paraphrase": {
+        "en": "The ownership record concerns The Garden of the Tuileries on a Spring Morning. In that record, its owner is Sam Salz.",
+        "ko": "이 소유 기록의 대상은 The Garden of the Tuileries on a Spring Morning이다. 이 기록에서 그 대상의 소유자는 Sam Salz이다."
+      },
+      "oracle_requirements": [
+        "Resolve its / 그 대상 to the record subject, not owner.",
+        "Interpret ownership as the recorded P127 assertion with preserved qualifiers, not independently verified present-day ownership.",
+        "Build and test new bilingual renderer/parser; existing engineering grammars are insufficient.",
+        "Do not interpret missing owner values as negation or exclusive ownership."
+      ],
+      "source_fact_sha256": "2f685dd05e2926319ff86b9d7fb218aebdab83663a36d1dceeae87b4fa98ab8f",
+      "raw_snapshot": "artifacts/followup-v3-gemma-map/source_bank/wikidata_ownership_Q462688_rev2386914822.json",
+      "raw_snapshot_sha256": "5fb071e93c7813fc5110ec56f76f28a0f01c504dc6023f76b87fb54f463107c8",
+      "raw_snapshot_url": "https://www.wikidata.org/wiki/Special:EntityData/Q462688.json?revision=2386914822",
+      "raw_snapshot_provenance": "Retrieved after collection at the exact recorded revision; returned revision and full P127 statement equality verified. Original first-fetch HTTP bytes were not retained."
+    }
+  ],
+  "count": 16,
+  "sampling": {
+    "query": "SELECT DISTINCT ?item WHERE { ?item wdt:P31 wd:Q3305213; p:P127 ?s. ?s ps:P127 ?owner. FILTER NOT EXISTS { ?s pq:P582 ?end } ?s prov:wasDerivedFrom ?ref. } LIMIT 70",
+    "query_url": "https://query.wikidata.org/sparql?query=SELECT+DISTINCT+%3Fitem+WHERE+%7B+%3Fitem+wdt%3AP31+wd%3AQ3305213%3B+p%3AP127+%3Fs.+%3Fs+ps%3AP127+%3Fowner.+FILTER+NOT+EXISTS+%7B+%3Fs+pq%3AP582+%3Fend+%7D+%3Fs+prov%3AwasDerivedFrom+%3Fref.+%7D+LIMIT+70&format=json",
+    "selection": "First 16 distinct fetched painting items with a nondeprecated P127 value, references, and no end-time qualifier; preferred rank chosen first. Endpoint ordering is not a probability sample."
+  },
+  "limitations": [
+    "No claim of 16 independent source/template clusters.",
+    "No current ownership claim: prose is explicitly source-record-scoped.",
+    "KO labels fall back to original EN proper name when no KO label exists.",
+    "CC0 applies to structured data; external reference page text is not republished.",
+    "No R answer prompts, test data, OOD data, or model observations."
+  ],
+  "audit": {
+    "distinct_item_records": 16,
+    "distinct_owners": 13,
+    "reference_hash_clusters": 17,
+    "records_with_external_reference_url": 11,
+    "all_statement_hashes_checked": true,
+    "independence_guaranteed": false,
+    "source_fact_fidelity": "Exact Wikidata statements retained; upstream pages not independently reverified. Some references may be imports or authority catalogue IDs, and historical ownership statements may have incomplete time qualifiers."
+  }
+}
