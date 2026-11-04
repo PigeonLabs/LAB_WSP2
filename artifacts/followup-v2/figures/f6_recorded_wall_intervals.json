@@ -1,0 +1,428 @@
+{
+  "schema": "followup-figure-v1",
+  "title": "Recorded model-stage wall intervals",
+  "encoding": {
+    "id": "recorded_wall_intervals",
+    "kind": "bar",
+    "title": "Recorded model-stage wall intervals",
+    "xlabel": "Minutes; stage wall intervals, not GPU active time",
+    "source": [
+      "results/followup-v2/training/runtime.json",
+      "results/followup-v2/calibration/seed101/summary.json",
+      "results/followup-v2/calibration/seed211/summary.json",
+      "results/followup-v2/calibration/seed307/summary.json",
+      "results/followup-v2/calibration/seed401/summary.json",
+      "results/followup-v2/calibration/seed503/summary.json",
+      "results/followup-v2/calibration/qwen/summary.json",
+      "results/followup-v2/calibration/smol/summary.json",
+      "results/followup-v2/calibration/olmo/summary.json",
+      "results/followup-v2/runtime/causal-fit_olmo.json",
+      "results/followup-v2/runtime/causal-fit_qwen.json",
+      "results/followup-v2/runtime/causal-fit_seed101.json",
+      "results/followup-v2/runtime/causal-fit_seed211.json",
+      "results/followup-v2/runtime/causal-fit_seed307.json",
+      "results/followup-v2/runtime/causal-fit_seed401.json",
+      "results/followup-v2/runtime/causal-fit_seed503.json",
+      "results/followup-v2/runtime/causal-fit_smol.json",
+      "results/followup-v2/runtime/causal-test_olmo.json",
+      "results/followup-v2/runtime/causal-test_qwen.json",
+      "results/followup-v2/runtime/causal-test_seed101.json",
+      "results/followup-v2/runtime/causal-test_seed211.json",
+      "results/followup-v2/runtime/causal-test_seed307.json",
+      "results/followup-v2/runtime/causal-test_seed401.json",
+      "results/followup-v2/runtime/causal-test_seed503.json",
+      "results/followup-v2/runtime/causal-test_smol.json",
+      "results/followup-v2/runtime/discover_olmo_final.json",
+      "results/followup-v2/runtime/discover_qwen_final.json",
+      "results/followup-v2/runtime/discover_seed101_final.json",
+      "results/followup-v2/runtime/discover_seed211_final.json",
+      "results/followup-v2/runtime/discover_seed307_final.json",
+      "results/followup-v2/runtime/discover_seed401_final.json",
+      "results/followup-v2/runtime/discover_seed503_final.json",
+      "results/followup-v2/runtime/discover_smol_final.json",
+      "results/followup-v2/runtime/heldout_olmo_final.json",
+      "results/followup-v2/runtime/heldout_qwen_final.json",
+      "results/followup-v2/runtime/heldout_seed101_final.json",
+      "results/followup-v2/runtime/heldout_seed101_initial.json",
+      "results/followup-v2/runtime/heldout_seed101_middle.json",
+      "results/followup-v2/runtime/heldout_seed211_final.json",
+      "results/followup-v2/runtime/heldout_seed211_initial.json",
+      "results/followup-v2/runtime/heldout_seed211_middle.json",
+      "results/followup-v2/runtime/heldout_seed307_final.json",
+      "results/followup-v2/runtime/heldout_seed307_initial.json",
+      "results/followup-v2/runtime/heldout_seed307_middle.json",
+      "results/followup-v2/runtime/heldout_seed401_final.json",
+      "results/followup-v2/runtime/heldout_seed401_initial.json",
+      "results/followup-v2/runtime/heldout_seed401_middle.json",
+      "results/followup-v2/runtime/heldout_seed503_final.json",
+      "results/followup-v2/runtime/heldout_seed503_initial.json",
+      "results/followup-v2/runtime/heldout_seed503_middle.json",
+      "results/followup-v2/runtime/heldout_smol_final.json",
+      "results/followup-v2/positive_control/summary.json",
+      "results/followup-v2/transfers/seed101_to_seed211/summary.json",
+      "results/followup-v2/transfers/seed211_to_seed307/summary.json",
+      "results/followup-v2/transfers/seed307_to_seed401/summary.json",
+      "results/followup-v2/transfers/seed401_to_seed503/summary.json",
+      "results/followup-v2/transfers/seed503_to_seed101/summary.json",
+      "results/followup-v2/hard_stress/olmo/final/summary.json",
+      "results/followup-v2/hard_stress/qwen/final/summary.json",
+      "results/followup-v2/hard_stress/seed101/final/summary.json",
+      "results/followup-v2/hard_stress/seed101/initial/summary.json",
+      "results/followup-v2/hard_stress/seed101/middle/summary.json",
+      "results/followup-v2/hard_stress/seed211/final/summary.json",
+      "results/followup-v2/hard_stress/seed211/initial/summary.json",
+      "results/followup-v2/hard_stress/seed211/middle/summary.json",
+      "results/followup-v2/hard_stress/seed307/final/summary.json",
+      "results/followup-v2/hard_stress/seed307/initial/summary.json",
+      "results/followup-v2/hard_stress/seed307/middle/summary.json",
+      "results/followup-v2/hard_stress/seed401/final/summary.json",
+      "results/followup-v2/hard_stress/seed401/initial/summary.json",
+      "results/followup-v2/hard_stress/seed401/middle/summary.json",
+      "results/followup-v2/hard_stress/seed503/final/summary.json",
+      "results/followup-v2/hard_stress/seed503/initial/summary.json",
+      "results/followup-v2/hard_stress/seed503/middle/summary.json",
+      "results/followup-v2/hard_stress/smol/final/summary.json"
+    ],
+    "note": "Sum of saved serial model-stage wall intervals, including CPU/IO/transfer overhead. An upper wall-duration accounting for recorded GPU-bearing stages, not GPU utilization, active kernel time, or complete project elapsed time. CPU statistical analysis and reporting are excluded. Training is counted once via aggregate runtime; its per-seed manifests are not added again."
+  },
+  "sources": [
+    {
+      "path": "results/followup-v2/training/runtime.json",
+      "sha256": "5d633cc3f56cf6441751c004244129e41b4ea8a6e29e227c0f503069a5cad551"
+    },
+    {
+      "path": "results/followup-v2/calibration/seed101/summary.json",
+      "sha256": "65e0327fb652e7a0e93e31678364335256e70c401c6387c9a2579a5a75cc9ebb"
+    },
+    {
+      "path": "results/followup-v2/calibration/seed211/summary.json",
+      "sha256": "64782adc5cc86f9845a1aa6137cf37f9454abe6f22c4b2a0365d9d9f4693da0e"
+    },
+    {
+      "path": "results/followup-v2/calibration/seed307/summary.json",
+      "sha256": "2be3d80878468c3d2a22934ada8a5ca9b6c3c81387fe5e0c90ed1c3417227456"
+    },
+    {
+      "path": "results/followup-v2/calibration/seed401/summary.json",
+      "sha256": "224d344dac597b53aa351a7fc76b55253d46c7fb075eb90595f8312e8df48ea6"
+    },
+    {
+      "path": "results/followup-v2/calibration/seed503/summary.json",
+      "sha256": "393c4622943da832f47c21a8bb2e4f6623fe3d2aaa8c65c272253d91dd16cb23"
+    },
+    {
+      "path": "results/followup-v2/calibration/qwen/summary.json",
+      "sha256": "4f397c174e8a17d708bc5633970f7ff7e887ea42759d015467b02f058ae8bb56"
+    },
+    {
+      "path": "results/followup-v2/calibration/smol/summary.json",
+      "sha256": "a7cba3ffb6f40757470261788a5984e3c201e7e441e0c77804017da9305b28fc"
+    },
+    {
+      "path": "results/followup-v2/calibration/olmo/summary.json",
+      "sha256": "21847dcd8c1137cb03d1de808907d6f072d1ae60508a975597bf0574c910ca1a"
+    },
+    {
+      "path": "results/followup-v2/runtime/causal-fit_olmo.json",
+      "sha256": "f13c5a0776e68efd9721efdc7f016b912847df6583c95a51c197efb54b13fbb4"
+    },
+    {
+      "path": "results/followup-v2/runtime/causal-fit_qwen.json",
+      "sha256": "655e435a4460a3f7e85fd5b0807b39cf5eff388aafce7c3761902a521cba65d2"
+    },
+    {
+      "path": "results/followup-v2/runtime/causal-fit_seed101.json",
+      "sha256": "5072179e9345494340630222451f41b90531a92309cc9dc8f3880ec7c9311918"
+    },
+    {
+      "path": "results/followup-v2/runtime/causal-fit_seed211.json",
+      "sha256": "ce62a93b3fd530d732d80ec787b10d438b0890e7b9bfb5c4fa0b276978a291f3"
+    },
+    {
+      "path": "results/followup-v2/runtime/causal-fit_seed307.json",
+      "sha256": "80443573e8357d8680e7f49d7886dbad6c6f5c596a442d42325d328f1e7684c2"
+    },
+    {
+      "path": "results/followup-v2/runtime/causal-fit_seed401.json",
+      "sha256": "c951c65ae9a70972026e20a489a353a75a2fc4a51a7c44c3704d60103fabfb03"
+    },
+    {
+      "path": "results/followup-v2/runtime/causal-fit_seed503.json",
+      "sha256": "fb78c022c40ac517ec699e1d40fe135b86b737cd701f6b66246882fbf1424059"
+    },
+    {
+      "path": "results/followup-v2/runtime/causal-fit_smol.json",
+      "sha256": "26ad52a157ac6bed19530962548bd092c4fde135d8eabefcff3dfbad4f49a59f"
+    },
+    {
+      "path": "results/followup-v2/runtime/causal-test_olmo.json",
+      "sha256": "f25820985562b3f9865653bcb258a7783bd87a5d22678f7d0076ee98ac284853"
+    },
+    {
+      "path": "results/followup-v2/runtime/causal-test_qwen.json",
+      "sha256": "21e90ef832907c173d2a2a7d4c6c9fccbe38922762e469df6dfa5436c17889c2"
+    },
+    {
+      "path": "results/followup-v2/runtime/causal-test_seed101.json",
+      "sha256": "77edde1cb4239fd6233be9c48d9cd94345247aa0b6b895fc8f7dfc7953d51aa2"
+    },
+    {
+      "path": "results/followup-v2/runtime/causal-test_seed211.json",
+      "sha256": "a849c41d267a4b938e45799e36c65ffa419e5b53992197cc1220bdff36369208"
+    },
+    {
+      "path": "results/followup-v2/runtime/causal-test_seed307.json",
+      "sha256": "0e4482677af24e88a01263792563523b33c245e32e2affeb3412631d13f8fd17"
+    },
+    {
+      "path": "results/followup-v2/runtime/causal-test_seed401.json",
+      "sha256": "f676fc93d195c4c6c0e4c66ae96248f98cc8bdd71417a59cdfcb98d625f1f611"
+    },
+    {
+      "path": "results/followup-v2/runtime/causal-test_seed503.json",
+      "sha256": "7828829841546f4c296f28e3c99f616dcd16488fdf333f6b9c8ba1b2d59a36d0"
+    },
+    {
+      "path": "results/followup-v2/runtime/causal-test_smol.json",
+      "sha256": "4b95bf005a30da35a247ddc0ae9edbb59f4def0641e7dc85c349044d9867e885"
+    },
+    {
+      "path": "results/followup-v2/runtime/discover_olmo_final.json",
+      "sha256": "a30b8f0cdec47ae44d4291413a9d79c9421408dddc16690052f26c0834b969bf"
+    },
+    {
+      "path": "results/followup-v2/runtime/discover_qwen_final.json",
+      "sha256": "806a862eafc72a696e405bcf2f93c3c6a6eefe33c21d1c6baf9b5fce488ef57f"
+    },
+    {
+      "path": "results/followup-v2/runtime/discover_seed101_final.json",
+      "sha256": "63e3c6e45d7e2ab4159c15d81099cf0068beb27cec6aa2dc9ea88f7e59e9e6ba"
+    },
+    {
+      "path": "results/followup-v2/runtime/discover_seed211_final.json",
+      "sha256": "272091ead0875d5abbd881caa70993857a51c9fde4505b4848734903402f2cc7"
+    },
+    {
+      "path": "results/followup-v2/runtime/discover_seed307_final.json",
+      "sha256": "6ebc73d435f0ddec53c9ab546a7714a0341518a7fe6f0a96a10c130d55508c6b"
+    },
+    {
+      "path": "results/followup-v2/runtime/discover_seed401_final.json",
+      "sha256": "e2548ff3643c43134316d17e2d1dd33b3288d539b05c2558d0031ab32c1d35d9"
+    },
+    {
+      "path": "results/followup-v2/runtime/discover_seed503_final.json",
+      "sha256": "4b13e0c2be0da553f165dfca9f416b78ca3c1340ee0f3beb99d583468838c992"
+    },
+    {
+      "path": "results/followup-v2/runtime/discover_smol_final.json",
+      "sha256": "8e4eecbb0c338321371a31cf7e4618f93c7cb14a2b891c4c2461b2836df768b8"
+    },
+    {
+      "path": "results/followup-v2/runtime/heldout_olmo_final.json",
+      "sha256": "2c1ca510a4ab9449406117475e4b2e30cec078c84a8835f975ff45985aa14910"
+    },
+    {
+      "path": "results/followup-v2/runtime/heldout_qwen_final.json",
+      "sha256": "529f3b1ec401f9662150c78f2afa38e0c8895b850abc06638f3f81a8f2f429cc"
+    },
+    {
+      "path": "results/followup-v2/runtime/heldout_seed101_final.json",
+      "sha256": "768671e769e5859809683863a96d7fe209b1c47a5acbaa928650a4f771319252"
+    },
+    {
+      "path": "results/followup-v2/runtime/heldout_seed101_initial.json",
+      "sha256": "4d042108cb4e375846705904cb0350f0a53544398dce9342fbda2a4010953ca2"
+    },
+    {
+      "path": "results/followup-v2/runtime/heldout_seed101_middle.json",
+      "sha256": "6ca5ae33e9d4fb2362cdb6d5bfd75bcf67b56e1e6ee8f8c962812c16f31c9812"
+    },
+    {
+      "path": "results/followup-v2/runtime/heldout_seed211_final.json",
+      "sha256": "89fe3332297d88d4394ec484287445c66c4842e1013c3b85299fdee7f20fe0ea"
+    },
+    {
+      "path": "results/followup-v2/runtime/heldout_seed211_initial.json",
+      "sha256": "4fad12bc4a430d26d92592d0ffd13c6c1315e17288172f076fc4b4da3b62ff59"
+    },
+    {
+      "path": "results/followup-v2/runtime/heldout_seed211_middle.json",
+      "sha256": "401b1652fa66a2560279e352f3bb7c18fee72e74301c2cd96cdefdfd4a8fe3c2"
+    },
+    {
+      "path": "results/followup-v2/runtime/heldout_seed307_final.json",
+      "sha256": "16802920d0b1b8bc174105c58bd7681ae813039daad3d8594da30a0c9a15895b"
+    },
+    {
+      "path": "results/followup-v2/runtime/heldout_seed307_initial.json",
+      "sha256": "1de2a3e2c79a09b75d70d8de37c178e590f1ef07677328156411ce7e9e627bcb"
+    },
+    {
+      "path": "results/followup-v2/runtime/heldout_seed307_middle.json",
+      "sha256": "06f56ca603d5d9c4e9cf83ee3995f533b7dbde75b19ed5487fa2e6dfeb8e33a7"
+    },
+    {
+      "path": "results/followup-v2/runtime/heldout_seed401_final.json",
+      "sha256": "02063ee7ae2c719e7b75ffe956e1ed52fce78753dc9198dec847557fbba011c1"
+    },
+    {
+      "path": "results/followup-v2/runtime/heldout_seed401_initial.json",
+      "sha256": "f3bd0f36271991666e4d901b1575a812c07e9dbe400b1d3c8938f6088dfdda17"
+    },
+    {
+      "path": "results/followup-v2/runtime/heldout_seed401_middle.json",
+      "sha256": "912e8dd30973ab2000eabf5a29098ee1709b6f27be9f9064f4c407b47ffb49e3"
+    },
+    {
+      "path": "results/followup-v2/runtime/heldout_seed503_final.json",
+      "sha256": "64792ac5a6b9abb08e8d9b9a41b376b553a62f00018ee9aad5f6e6effa2fd6ee"
+    },
+    {
+      "path": "results/followup-v2/runtime/heldout_seed503_initial.json",
+      "sha256": "358f0f0bda712d2b98b2d65b39e240c566963c5a91a8d36cc1e23911bfc3918b"
+    },
+    {
+      "path": "results/followup-v2/runtime/heldout_seed503_middle.json",
+      "sha256": "866a9285995a529cd7f1dd77d613d7be72c31de51935d7669463fd72c62d54e1"
+    },
+    {
+      "path": "results/followup-v2/runtime/heldout_smol_final.json",
+      "sha256": "285e197539a7a820cb31fde8ac85602713211a22f0f36ac56e5ed2da8c32ae77"
+    },
+    {
+      "path": "results/followup-v2/positive_control/summary.json",
+      "sha256": "051c270bf9945762fa0a6c0a39ecb0da0441de35d1187797afb60d9942721d24"
+    },
+    {
+      "path": "results/followup-v2/transfers/seed101_to_seed211/summary.json",
+      "sha256": "9735fa047bf8731504ac37115c24f5b568730f642014dda2fe6150bea82ce0f2"
+    },
+    {
+      "path": "results/followup-v2/transfers/seed211_to_seed307/summary.json",
+      "sha256": "11c57ef4dcf846d4a8191d66d2c74cb3e1df99691390b427ce65b7bae416ca38"
+    },
+    {
+      "path": "results/followup-v2/transfers/seed307_to_seed401/summary.json",
+      "sha256": "4eb4f8962c09c36f549619627b07a24444cab36ba682bc638fca86c7300f5397"
+    },
+    {
+      "path": "results/followup-v2/transfers/seed401_to_seed503/summary.json",
+      "sha256": "991f6bcbeb80eb039364415379f598b234cd35adc8dc71fff1b100e07387eb32"
+    },
+    {
+      "path": "results/followup-v2/transfers/seed503_to_seed101/summary.json",
+      "sha256": "74bd6eff20b86d1a1a3e39835aa3e6d031a717e2e57232710e9e689c539f00ba"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/olmo/final/summary.json",
+      "sha256": "c65cd80242c244e4f974a996e933de74e2b4020c70c62a0543e34e19d5bb4b74"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/qwen/final/summary.json",
+      "sha256": "1735392951274907802a318eac7a175e782ba581e63023096820b6ba54b6d2d5"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed101/final/summary.json",
+      "sha256": "f8b7d9198b3ef574f7c007dade9434234840a474219b32a8a7c4fdf1e933cb66"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed101/initial/summary.json",
+      "sha256": "78e1158351a98bb5e9bde4773a396717e9cbe19e7f7d520462387ca397c5c1a7"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed101/middle/summary.json",
+      "sha256": "2d039f6e261b2ef5d8de18d39bd18d580abfd996334e95836c38a1affcc0de09"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed211/final/summary.json",
+      "sha256": "e2e03ff4479fb48ad2c40521a6dc1366988d3073cb72d6c862c4139449269ebc"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed211/initial/summary.json",
+      "sha256": "d160f1037549d7e9688247957f67de3996f035507e5ec9066fb7bcca4ff94610"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed211/middle/summary.json",
+      "sha256": "dfb96cd95623e4efd3789f0e5fcb01342f6925a497e34bd21702d6df4415d289"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed307/final/summary.json",
+      "sha256": "85e3ea2626cb0daf5d810ce3579e0d1d1bb6816990b7a462a57af690ed4f2c95"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed307/initial/summary.json",
+      "sha256": "ddc77993ec3c33e0625c2a908071209f92b1a8dc4a9080a4721455f7ea13d442"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed307/middle/summary.json",
+      "sha256": "3ec079fca7c813cd98943ae4bde8d668734122ba0c687fb98465c370ce437df3"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed401/final/summary.json",
+      "sha256": "fe916b26b917ca781d8e72f5b8436c74d1266daa85dbb94f691950d335d0aa59"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed401/initial/summary.json",
+      "sha256": "d1a7782a6a27b0e904e6cc841f1a94bd2f283f43b39cff36afa2518f7380ee75"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed401/middle/summary.json",
+      "sha256": "15ddebfeb0572238ad50a048a3a3db159b98a6c1ee94803be1fb76febd3f14ac"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed503/final/summary.json",
+      "sha256": "4a6447304bb4ad686957a2ba6bb81544ab92f42d4ef25e43b820801f7cb74735"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed503/initial/summary.json",
+      "sha256": "45b48d96e1dd0b06986269a6118a7352880872061d68192b6c1cf78caf876668"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/seed503/middle/summary.json",
+      "sha256": "1c26e6cdef9c7f9ce5be4f6bc7fac52a1d4bf3465a5438b951b0b017874e7769"
+    },
+    {
+      "path": "results/followup-v2/hard_stress/smol/final/summary.json",
+      "sha256": "1e25d8c8e695effab2be1fe4d4e23573b81399963fc4347a028820832cb9ed50"
+    }
+  ],
+  "rows": [
+    {
+      "label": "Training",
+      "value": 10.137773059816391
+    },
+    {
+      "label": "Calibration",
+      "value": 1.3138959236671022
+    },
+    {
+      "label": "causal-fit",
+      "value": 68.01547706486599
+    },
+    {
+      "label": "causal-test",
+      "value": 67.96528587820066
+    },
+    {
+      "label": "discover",
+      "value": 1.67259677786642
+    },
+    {
+      "label": "heldout",
+      "value": 0.8774254374332183
+    },
+    {
+      "label": "Permutation control",
+      "value": 0.03853438386625688
+    },
+    {
+      "label": "Transfer",
+      "value": 1.286917425066349
+    },
+    {
+      "label": "Hard stress",
+      "value": 0.406735430000117
+    }
+  ]
+}

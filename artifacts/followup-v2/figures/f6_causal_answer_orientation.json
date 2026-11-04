@@ -1,0 +1,281 @@
+{
+  "schema": "followup-figure-v1",
+  "title": "Supplementary combined-map causal agreement by orientation",
+  "encoding": {
+    "id": "causal_answer_orientation",
+    "kind": "heatmap",
+    "title": "Supplementary combined-map causal agreement by orientation",
+    "row": "cohort",
+    "column": "view",
+    "value": "value",
+    "vmin": -1,
+    "vmax": 1,
+    "unit": "Pearson; undefined support = N/A",
+    "source": [
+      "results/followup-v2/exploratory_causal_diagnostics/summary.json",
+      "results/followup-v2/exploratory_causal_diagnostics/seed101_seed211/single/diagnostics.json",
+      "results/followup-v2/exploratory_causal_diagnostics/seed101_seed211/group/diagnostics.json",
+      "results/followup-v2/exploratory_causal_diagnostics/seed101_seed307/single/diagnostics.json",
+      "results/followup-v2/exploratory_causal_diagnostics/seed101_seed307/group/diagnostics.json",
+      "results/followup-v2/exploratory_causal_diagnostics/seed101_seed401/single/diagnostics.json",
+      "results/followup-v2/exploratory_causal_diagnostics/seed101_seed401/group/diagnostics.json",
+      "results/followup-v2/exploratory_causal_diagnostics/seed101_seed503/single/diagnostics.json",
+      "results/followup-v2/exploratory_causal_diagnostics/seed101_seed503/group/diagnostics.json",
+      "results/followup-v2/exploratory_causal_diagnostics/seed211_seed307/single/diagnostics.json",
+      "results/followup-v2/exploratory_causal_diagnostics/seed211_seed307/group/diagnostics.json",
+      "results/followup-v2/exploratory_causal_diagnostics/seed211_seed401/single/diagnostics.json",
+      "results/followup-v2/exploratory_causal_diagnostics/seed211_seed401/group/diagnostics.json",
+      "results/followup-v2/exploratory_causal_diagnostics/seed211_seed503/single/diagnostics.json",
+      "results/followup-v2/exploratory_causal_diagnostics/seed211_seed503/group/diagnostics.json",
+      "results/followup-v2/exploratory_causal_diagnostics/seed307_seed401/single/diagnostics.json",
+      "results/followup-v2/exploratory_causal_diagnostics/seed307_seed401/group/diagnostics.json",
+      "results/followup-v2/exploratory_causal_diagnostics/seed307_seed503/single/diagnostics.json",
+      "results/followup-v2/exploratory_causal_diagnostics/seed307_seed503/group/diagnostics.json",
+      "results/followup-v2/exploratory_causal_diagnostics/seed401_seed503/single/diagnostics.json",
+      "results/followup-v2/exploratory_causal_diagnostics/seed401_seed503/group/diagnostics.json",
+      "results/followup-v2/exploratory_causal_diagnostics/qwen_smol/single/diagnostics.json",
+      "results/followup-v2/exploratory_causal_diagnostics/qwen_smol/group/diagnostics.json",
+      "results/followup-v2/exploratory_causal_diagnostics/qwen_olmo/single/diagnostics.json",
+      "results/followup-v2/exploratory_causal_diagnostics/qwen_olmo/group/diagnostics.json",
+      "results/followup-v2/exploratory_causal_diagnostics/smol_olmo/single/diagnostics.json",
+      "results/followup-v2/exploratory_causal_diagnostics/smol_olmo/group/diagnostics.json"
+    ],
+    "figsize": [
+      12,
+      6.8
+    ],
+    "note": "Same frozen maps and primary zero/mean/patch interventions. Views may have different identifiable cell support; constant/insufficient scores remain N/A. Within-label attenuation is consistent with answer-orientation confounding, not proof of its exclusive cause."
+  },
+  "sources": [
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/summary.json",
+      "sha256": "61a2133a3b2faa7ae694b265f92559ab76cf2b3d483eab1192f2d4761d64f5ba"
+    },
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/seed101_seed211/single/diagnostics.json",
+      "sha256": "8b5a8ce28be05f410372c7ccc87a5e2fa62e1ded41a731f228eac273183c5ab2"
+    },
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/seed101_seed211/group/diagnostics.json",
+      "sha256": "ebbf48d2ecab03f27abf91e593e651853de9dfe55394c86dde3671eb56a72381"
+    },
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/seed101_seed307/single/diagnostics.json",
+      "sha256": "ee24449e94e0b531b85fc897d53152ff02fe92e2788a686b4b1e91ec82323afd"
+    },
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/seed101_seed307/group/diagnostics.json",
+      "sha256": "2e19d3a040f56184425b49742fc946f1627d00965449fcdcb8444b06a1f43d34"
+    },
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/seed101_seed401/single/diagnostics.json",
+      "sha256": "a234314d27b4f46fbb432f1ac8cd6280c5abc4a7883758b0df96dbfc3aba27cd"
+    },
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/seed101_seed401/group/diagnostics.json",
+      "sha256": "b97f8692278daa1a1a5af23bbe753963d312838ae50fbd48644d948bc2150bd8"
+    },
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/seed101_seed503/single/diagnostics.json",
+      "sha256": "c3298fc4ceffd5b24555291a61e08a18515f1ea172fcbf659c62228e9aca423d"
+    },
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/seed101_seed503/group/diagnostics.json",
+      "sha256": "05c73576bdfce958b93574d0df168e6ad31b79463e91da434dd3cf6443969bd1"
+    },
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/seed211_seed307/single/diagnostics.json",
+      "sha256": "598b5bd6cd184083443a4e1d347a3ff4dd0d5883786854c626ed9d01ee5ab57c"
+    },
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/seed211_seed307/group/diagnostics.json",
+      "sha256": "75e89fcd16f66a43772a8b26ee03abcca5e5628be53476cddf145bc623aef00c"
+    },
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/seed211_seed401/single/diagnostics.json",
+      "sha256": "5fc2a37895e39bb2ec3c985e1acc76bbb21bf09b1dfc9be7625feb4ed4fe1773"
+    },
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/seed211_seed401/group/diagnostics.json",
+      "sha256": "d5f9ea47e191f26106bec24cb1c2bf2e9244a10d46d5f6e3420debdb73d3a1a5"
+    },
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/seed211_seed503/single/diagnostics.json",
+      "sha256": "99be2ca8304f8d0d3d922b32afba0ce65e14097c6dd22353bade3b46970b83bf"
+    },
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/seed211_seed503/group/diagnostics.json",
+      "sha256": "72f906c661e34442646ca01d2a144cd8069e34a1ed35636fd6938ede74a1b396"
+    },
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/seed307_seed401/single/diagnostics.json",
+      "sha256": "c6d41ecece72b71f7cc57a48b6dcd4ea7796528b20f873bf44ba8a2bae53b78e"
+    },
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/seed307_seed401/group/diagnostics.json",
+      "sha256": "73636d5b6d6cd520ec3a60ea748872137bc6948e9c3f66345335b75c652ea2f3"
+    },
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/seed307_seed503/single/diagnostics.json",
+      "sha256": "b5f42a6964c7086442c3885091da54f6413ded969aaede4188a07addf240e976"
+    },
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/seed307_seed503/group/diagnostics.json",
+      "sha256": "7af07ba6f55057527aeb82ce8cf9f0bf5f42c2faf0048c227995a2ff4e61f36c"
+    },
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/seed401_seed503/single/diagnostics.json",
+      "sha256": "1eabd742b99f24cdc866f5f8b7e7709c75010c159f1b3566a15c66f36adf6b0b"
+    },
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/seed401_seed503/group/diagnostics.json",
+      "sha256": "446d1d88f9f96b26f08b263cbc6691fded6ac197f94e633255e39806834a5a26"
+    },
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/qwen_smol/single/diagnostics.json",
+      "sha256": "eaf38f66e7f65e9e950e2fbff6f480c21b06326027df4d3735971b83dc6ebb41"
+    },
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/qwen_smol/group/diagnostics.json",
+      "sha256": "a1b31595ab44738413728be217e8869059df6d72395d4db9ea4faba00adcf6b3"
+    },
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/qwen_olmo/single/diagnostics.json",
+      "sha256": "a3a18019390db0a55af9a6ca94f92cc95f8e089f062dc58bcd7ee0c90c2c5ca9"
+    },
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/qwen_olmo/group/diagnostics.json",
+      "sha256": "8b6a71c98453677eacbf9c66636e9f088a502416861cf201d641eef116c26b08"
+    },
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/smol_olmo/single/diagnostics.json",
+      "sha256": "0bea7963465b8caf5a6c4bbe9ff7ba998277c25becdbb816bd08f6f76944c1db"
+    },
+    {
+      "path": "results/followup-v2/exploratory_causal_diagnostics/smol_olmo/group/diagnostics.json",
+      "sha256": "ab5d327a5fa654ae3857ab1e9117c8173318446c9958d4325d324dca71fe5522"
+    }
+  ],
+  "rows": [
+    {
+      "cohort": "independent_seeds/single/answer",
+      "view": "truth\noriented",
+      "value": 0.061994681374679984
+    },
+    {
+      "cohort": "independent_seeds/single/answer",
+      "view": "yes\noriented",
+      "value": 0.023381100367018893
+    },
+    {
+      "cohort": "independent_seeds/single/answer",
+      "view": "within\nlabel",
+      "value": 0.017257455672916196
+    },
+    {
+      "cohort": "independent_seeds/single/span",
+      "view": "truth\noriented",
+      "value": 0.003371800724660453
+    },
+    {
+      "cohort": "independent_seeds/single/span",
+      "view": "yes\noriented",
+      "value": 0.002874110209601162
+    },
+    {
+      "cohort": "independent_seeds/single/span",
+      "view": "within\nlabel",
+      "value": 0.0010534568063288545
+    },
+    {
+      "cohort": "independent_seeds/group/answer",
+      "view": "truth\noriented",
+      "value": 0.08217669767097564
+    },
+    {
+      "cohort": "independent_seeds/group/answer",
+      "view": "yes\noriented",
+      "value": 0.05609165975294866
+    },
+    {
+      "cohort": "independent_seeds/group/answer",
+      "view": "within\nlabel",
+      "value": 0.03796886282506492
+    },
+    {
+      "cohort": "independent_seeds/group/span",
+      "view": "truth\noriented",
+      "value": -0.00010085468745249226
+    },
+    {
+      "cohort": "independent_seeds/group/span",
+      "view": "yes\noriented",
+      "value": 0.006042119471347345
+    },
+    {
+      "cohort": "independent_seeds/group/span",
+      "view": "within\nlabel",
+      "value": -0.004337089685631791
+    },
+    {
+      "cohort": "cross_family/single/answer",
+      "view": "truth\noriented",
+      "value": 0.04353200866585402
+    },
+    {
+      "cohort": "cross_family/single/answer",
+      "view": "yes\noriented",
+      "value": 0.0003013154399498768
+    },
+    {
+      "cohort": "cross_family/single/answer",
+      "view": "within\nlabel",
+      "value": -0.00012939087012013716
+    },
+    {
+      "cohort": "cross_family/single/span",
+      "view": "truth\noriented",
+      "value": 0.08801742721410925
+    },
+    {
+      "cohort": "cross_family/single/span",
+      "view": "yes\noriented",
+      "value": 0.012951028403374296
+    },
+    {
+      "cohort": "cross_family/single/span",
+      "view": "within\nlabel",
+      "value": 0.005048622566836464
+    },
+    {
+      "cohort": "cross_family/group/answer",
+      "view": "truth\noriented",
+      "value": 0.055074440648054744
+    },
+    {
+      "cohort": "cross_family/group/answer",
+      "view": "yes\noriented",
+      "value": 0.0006988897354569101
+    },
+    {
+      "cohort": "cross_family/group/answer",
+      "view": "within\nlabel",
+      "value": 0.008297491265632777
+    },
+    {
+      "cohort": "cross_family/group/span",
+      "view": "truth\noriented",
+      "value": 0.08646885834191236
+    },
+    {
+      "cohort": "cross_family/group/span",
+      "view": "yes\noriented",
+      "value": 0.02531004207344023
+    },
+    {
+      "cohort": "cross_family/group/span",
+      "view": "within\nlabel",
+      "value": 0.015905158352869455
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "status": "REVIEWED",
+  "overall_verdict": "INCONCLUSIVE",
+  "review_basis": "Measured source-backed evidence, independently critiqued; operational objectives distinguished from broad semantic/causal conservation.",
+  "questions": [
+    {
+      "id": "Q1",
+      "question": "독립 초기화로 학습한 같은 구조 모델 사이에 원본 뉴런의 기능적 대응이 보존되는가?",
+      "verdict": "INCONCLUSIVE",
+      "scope": "이 다섯 모델에서 반응 대응은 관찰됐으나 의미 계산의 보존은 미확립",
+      "rationale": "독립 학습 모델의 activation−random 차이는 answer +0.15289 (95% wrapper CI [+0.14632, +0.15982]), span +0.08602 (95% wrapper CI [+0.07660, +0.09445])였다. 반복 무작위 대조군을 넘는 반응 대응은 관찰됐지만, 이것만으로 같은 의미 계산이나 원본 뉴런의 주기능 보존을 확정할 수 없다. 새 hard syntax 문항의 최종 정확도 50.26–56.12%와 응답 방향 진단은 과제 정답률·효과 상관의 구성 타당성에 한계를 드러냈다. 서로 내용·구조 분포가 다른 스트레스 집합의 성능 차이를 특정 shortcut 사용의 인과적 증명으로 해석하지 않는다.",
+      "evidence": [
+        "results/followup-v2/alignment/summary.json",
+        "results/followup-v2/hard_stress/summary.json",
+        "results/followup-v2/exploratory_causal_diagnostics/summary.json"
+      ]
+    },
+    {
+      "id": "Q2",
+      "question": "서로 다른 LLM 계열에서도 원본 뉴런의 주기능이 보존·수렴하는가?",
+      "verdict": "INCONCLUSIVE",
+      "scope": "능력 미달과 다른 접두 맥락을 가진 세 공개 계열의 제한된 비교",
+      "rationale": "세 공개 모델 계열의 어느 D4 과제에서도 양쪽 모델이 동시에 능력 기준을 통과한 쌍이 없었다. 단일 뉴런 answer combined 상관은 truth-oriented 0.04353, yes-oriented 0.00030, within-label −0.00013이었다. 프롬프트 접두 맥락도 Qwen fourshot·Smol default·OLMo explicit로 다르다. 이 결과는 테스트한 조건에서의 개입 반응이며, 학습된 과제 기능의 계열 간 보존이나 부재를 확정하지 못한다.",
+      "evidence": [
+        "results/followup-v2/causal_alignment/summary.json",
+        "results/followup-v2/causal_alignment/competence_descriptive.json",
+        "results/followup-v2/exploratory_causal_diagnostics/summary.json"
+      ]
+    },
+    {
+      "id": "Q3",
+      "question": "이번 주기능 semantic proxy 정렬이 activation 정렬보다 실제 대응을 더 잘 예측하는가?",
+      "verdict": "NOT SUPPORTED",
+      "scope": "등록한 expanded semantic proxy의 체계적 우위가 이번 실험에서 입증되지 않음",
+      "rationale": "이번 expanded input-derived semantic proxy의 activation 대비 차이는 answer -0.00204 (95% wrapper CI [-0.00712, +0.00251]), span -0.00579 (95% wrapper CI [-0.01776, +0.00750])였다. 일관된 평균 우위를 입증하지 못했으며, 이것은 열등성·동등성 검정의 통과나 모든 semantic alignment 방법의 반증이 아니다. 같은 v2 자료에서 기존 4차원 proxy보다 개선된 보충 분석은 activation 기준선보다 우월하다는 주장과 구분한다.",
+      "evidence": [
+        "results/followup-v2/alignment/summary.json",
+        "results/followup-v2/statistics/global_tests.json",
+        "results/followup-v2/exploratory_proxy_ablation/summary.json"
+      ]
+    },
+    {
+      "id": "Q4",
+      "question": "인과 정보를 이용한 정렬이 의미 기반 정렬보다 독립 D4에서 더 높은 개입효과 대응을 제공하는가?",
+      "verdict": "SUPPORTED",
+      "scope": "정답 위치의 등록된 truth-oriented 개입효과 상관 개선에 한정; 넓은 기능 보존은 판단 불가",
+      "rationale": "고정 D2 절차를 새 D4 문항에 적용했을 때, 독립 시드 answer 위치의 combined−semantic 차이는 single +0.05870 (95% wrapper CI [+0.04763, +0.06991]), group +0.06778 (95% wrapper CI [+0.05201, +0.08372])였다. 원래 110개 검정군의 BH에서 양의 pair 효과는 single 8/10, group 4/10이고, 사후 BY 민감도에서는 7/10, 4/10이다. 이 사실은 정답 방향으로 정의된 zero/mean/patch 효과의 대응 지표에 한정한 개선을 지지한다. 위 cohort CI는 고정 모델·공유 wrapper에 조건부인 기술적 구간이며 다중검정 보정 구간이 아니다. Group span 차이는 +0.00161 (95% wrapper CI [-0.00997, +0.01340])로 일관된 span 개선을 보이지 않는다. Tiny single-answer fit 6/10과 공개 single-answer fit 3/3은 인과 가중치 1을 선택했으므로 의미·인과 정보의 시너지를 입증하지 않는다. 같은 정답끼리 비교한 tiny answer의 절대 상관은 single 0.01726, group 0.03797로 더 약하며, view 간 감소를 별도의 확증적 차이 검정으로 취급하지 않는다. Activation 기준선 대비 비교는 사후 보충 분석이다. 넓은 의미의 인과 기능 보존·회로 동등성·이식 유용성은 여전히 판단 불가다.",
+      "evidence": [
+        "results/followup-v2/causal_alignment/summary.json",
+        "results/followup-v2/statistics/global_tests.json",
+        "results/followup-v2/statistics/dependence_sensitivity.json",
+        "results/followup-v2/exploratory_causal_diagnostics/summary.json",
+        "results/followup-v2/supplemental_causal_activation/summary.json"
+      ]
+    }
+  ],
+  "stage_verdicts": {
+    "F4": {
+      "verdict": "SUPPORTED",
+      "scope": "정답 위치의 등록된 truth-oriented 개입효과 상관 개선에 한정; 넓은 기능 보존은 판단 불가",
+      "rationale": "고정 D2 절차를 새 D4 문항에 적용했을 때, 독립 시드 answer 위치의 combined−semantic 차이는 single +0.05870 (95% wrapper CI [+0.04763, +0.06991]), group +0.06778 (95% wrapper CI [+0.05201, +0.08372])였다. 원래 110개 검정군의 BH에서 양의 pair 효과는 single 8/10, group 4/10이고, 사후 BY 민감도에서는 7/10, 4/10이다. 이 사실은 정답 방향으로 정의된 zero/mean/patch 효과의 대응 지표에 한정한 개선을 지지한다. 위 cohort CI는 고정 모델·공유 wrapper에 조건부인 기술적 구간이며 다중검정 보정 구간이 아니다. Group span 차이는 +0.00161 (95% wrapper CI [-0.00997, +0.01340])로 일관된 span 개선을 보이지 않는다. Tiny single-answer fit 6/10과 공개 single-answer fit 3/3은 인과 가중치 1을 선택했으므로 의미·인과 정보의 시너지를 입증하지 않는다. 같은 정답끼리 비교한 tiny answer의 절대 상관은 single 0.01726, group 0.03797로 더 약하며, view 간 감소를 별도의 확증적 차이 검정으로 취급하지 않는다. Activation 기준선 대비 비교는 사후 보충 분석이다. 넓은 의미의 인과 기능 보존·회로 동등성·이식 유용성은 여전히 판단 불가다."
+    },
+    "F5": {
+      "verdict": "NOT SUPPORTED",
+      "scope": "선택 정책의 유용한 전이 개선은 확립되지 않음",
+      "rationale": "선택 정책의 D4 목표 과제 평균 변화는 +0.1042 percentage points, 95% wrapper CI [0, +0.3125] percentage points, p=q=1이었다. 한 쌍의 한 wrapper에서 192문항 중 정답 한 개가 늘었고 네 쌍은 정책을 선택하지 않았다. 유용한 전이 개선이 확립되지 않았다는 판정이며 효과가 정확히 0이거나 모든 병합이 불가능하다는 뜻은 아니다. Naive 50% 전체 평균은 comparison 정확도를 41.15–45.31 percentage points 낮췄고, alpha=1은 donor 전체 교체이므로 병합 성공으로 해석하지 않는다."
+    }
+  },
+  "uncertainty_scope": "Five fixed trained models, three public models and 24 authored wrappers. Shared pairs/checkpoints are dependent. Cohort intervals are conditional descriptive summaries, not population-of-model or multiplicity-adjusted intervals.",
+  "source_sha256": {
+    "results/followup-v2/alignment/summary.json": "09794656fc83d64e9105f0b9128432ff84145822738d837f281134a159d2e97e",
+    "results/followup-v2/causal_alignment/competence_descriptive.json": "0ed320ecd4b0bd051cb73ba6324f63cd4d8407551ca2628f92ba02505aec3fdc",
+    "results/followup-v2/causal_alignment/summary.json": "51502e8d174995ca881bda01bfe4d7f18267ea4baa04b9a4e4df3733eecf04e9",
+    "results/followup-v2/exploratory_causal_diagnostics/summary.json": "61a2133a3b2faa7ae694b265f92559ab76cf2b3d483eab1192f2d4761d64f5ba",
+    "results/followup-v2/exploratory_proxy_ablation/summary.json": "635fdc6e639b56b078d291022a52bb6a430bda60685fc18743714a79941fae47",
+    "results/followup-v2/hard_stress/summary.json": "988f3e642e2c58e1aacdc157b79d0be1fbab0d2ad8e02e8cadaf10de39a54080",
+    "results/followup-v2/statistics/dependence_sensitivity.json": "fa27ad325132ef30302ff533cee5cf8df1ed75f256056b553720658a7a59cc50",
+    "results/followup-v2/statistics/global_tests.json": "3a2ecbacb6752c74f15faf7019f25e37d2dc1045480d8bb350fc71c434fb1009",
+    "results/followup-v2/supplemental_causal_activation/summary.json": "b4d44445344c7642f8fd01e5c222a37dafc719af1f0ae201f2e43ba0dbd0267a",
+    "results/followup-v2/transfers/summary.json": "f77473e264c0d6f5f33b76283a2ae86bba2ecd45a084bb9693f48113691607e4"
+  }
+}

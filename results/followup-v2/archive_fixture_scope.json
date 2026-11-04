@@ -1,0 +1,45 @@
+{
+  "fixture_type": "relocated publication-shaped copy of immutable F0-F5 evidence plus global statistics and supplements",
+  "fixture_files": 1114,
+  "fixture_bytes": 268588717,
+  "omitted_weights": true,
+  "omitted_raw_data_jsonl": true,
+  "omitted_causal_chunk_directories": true,
+  "omitted_legacy_png": true,
+  "included_archives": [
+    "data/followup-v2-hard-stress.tar.gz",
+    "data/followup-v2.tar.gz",
+    "data/pilot-v1-cluster-corrected.tar.gz",
+    "data/pilot-v1.tar.gz"
+  ],
+  "xml_not_needed_by_numerical_replay": [
+    "results/followup-v2/tests_before_cohort_routing_fix.xml",
+    "results/followup-v2/tests_before_final_supplements.xml",
+    "results/followup-v2/tests_final.xml"
+  ],
+  "supplemental_replay_script_sha256": "e5485057226b7694d3dbba0a38386d507404a92e25d0e26dbd9a279460ef2c3e",
+  "copy_script_sha256": "17cff56f7b5691d82807602f74b008fc109a5174d2345d138e7f0e0993839a8e",
+  "scope_limitations": [
+    "Tests archive file shape and relocation without model weights; not a fresh GitHub download or full model inference reproduction.",
+    "Original weight files and legacy PNG omissions are explicit; old JSONL bytes are verified through tar members.",
+    "Causal chunk cross-check is omitted only when whole chunk directory absent; final effects, hashes, identities, maps and statistics remain mandatory.",
+    "F6 publication snapshot follows these audits and is not required to avoid circular dependencies."
+  ],
+  "completed_replay": {
+    "status": "COMPLETE",
+    "checks_passed": 181,
+    "errors": 0,
+    "pending": 0,
+    "verified_preservation_entries": 245,
+    "optional_omitted_preservation_entries": 16,
+    "omitted_whole_chunk_directories": 16,
+    "hard_stress_evaluations": 18,
+    "same_checked_items_and_competence_as_local": true
+  },
+  "audit_sha256": {
+    "replay_audit.json": "7d28b47659aa9d6afa6cfc97d4df011568f2c349ff61ad80ae8d1f0b36535f53",
+    "archive_replay_audit.json": "3fc683fb980fa034d988ac83d10c558494ca9a2e0d0bbd6da170bb61290f7c3d",
+    "supplemental_replay_audit.json": "0db54e790f23e2ec7bc70e8a4da5137f8625fd47b6abb50d0883f398a6a486d7",
+    "archive_supplemental_replay_audit.json": "0db54e790f23e2ec7bc70e8a4da5137f8625fd47b6abb50d0883f398a6a486d7"
+  }
+}

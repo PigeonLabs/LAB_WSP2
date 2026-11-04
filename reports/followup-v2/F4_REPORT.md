@@ -1,10 +1,12 @@
 # F4 — 단일·그룹 뉴런 인과 정렬과 dose-response
 
-갱신: 2026-11-04 14:54 KST. 실행 상태: **MEASURED**. 가설 판정: **INCONCLUSIVE**.
+갱신: 2026-11-04 15:08 KST. 실행 상태: **MEASURED**. 가설 판정: **SUPPORTED (정답 위치의 등록된 truth-oriented 개입효과 상관 개선에 한정; 넓은 기능 보존은 판단 불가)**.
+
+원본 단계 스냅샷의 잠정 판정은 **INCONCLUSIVE**로 보존되어 있습니다. 위 표시는 전역 보정 후의 [최종 과학 검토](../../results/followup-v2/scientific_review.json)가 정한 제한된 범위의 판정입니다. 원본 측정과 단계 JSON은 수정하지 않았습니다.
 
 연구 질문: 독립 D4에서 의미·인과 결합 정렬이 의미 정렬보다 효과를 더 잘 예측하는가?
 
-등록한 모델쌍·단위 종류26개에서 D4의 zero/mean/patch 인과 효과를 비교했다. 모델쌍×단위종류×과제 셀104개 중 52개가 양쪽 모델의 과제 능력 기준을 충족했다. 단일 뉴런과 그룹을 분리하며 dose-response는 주 정렬과 별도의 기술 진단으로 보존한다. 전역 다중검정과 전체 판정은 F6에서 완료한다. 이종 계열은 같은 목표 문장에도 서로 다른 calibration 선택 접두 맥락을 사용한다. 위치 정렬은 이 맥락 차이를 제거하지 않으며, 낮은 D4 능력에서는 기능 보존의 부재를 판정할 수 없다. 과제별 전체 쌍과 양측 능력 조건을 충족한 쌍의 인과 대응·누락 범위를 별도 기술 표로 공개한다. D4 결과에 따른 부분집합 구분이며 추가 검정이나 재학습이 아니다. 괄호 정확도 gate 통과만으로 재귀적·구조적 이해를 보장하지 않는다. 주 F4의 activation 매칭 대조군 누락은 별도의 사후 보충 분석으로 점검했다. D2에서만 맞춘 raw activation과 task-centered activation을 모두 보존·공개하며, 이 분석을 사전 등록된 주 결과나 새로운 확증 검정으로 취급하지 않는다. 별도 응답 방향 진단에서 이종 계열 answer 위치의 combined 상관은 truth → yes → within-label 순서로 single 0.04353 → 0.00030 → -0.00013, group 0.05507 → 0.00070 → 0.00830였다. 유효 셀 범위가 달라질 수 있는 탐색적 진단이며 응답 방향 혼입 가능성을 점검한다. 낮은 과제 능력과 함께 읽어야 하며 혼입의 유일한 원인을 입증하지 않는다.
+등록한 모델쌍·단위 종류26개에서 D4의 zero/mean/patch 인과 효과를 비교했다. 모델쌍×단위종류×과제 셀104개 중 52개가 양쪽 모델의 과제 능력 기준을 충족했다. 단일 뉴런과 그룹을 분리하며 dose-response는 주 정렬과 별도의 기술 진단으로 보존한다. 전역 다중검정은 F6의 단일110개 BH family로 완료했으며, 보정값과 해석 한계를 함께 보고한다. 이종 계열은 같은 목표 문장에도 서로 다른 calibration 선택 접두 맥락을 사용한다. 위치 정렬은 이 맥락 차이를 제거하지 않으며, 낮은 D4 능력에서는 기능 보존의 부재를 판정할 수 없다. 과제별 전체 쌍과 양측 능력 조건을 충족한 쌍의 인과 대응·누락 범위를 별도 기술 표로 공개한다. D4 결과에 따른 부분집합 구분이며 추가 검정이나 재학습이 아니다. 괄호 정확도 gate 통과만으로 재귀적·구조적 이해를 보장하지 않는다. 주 F4의 activation 매칭 대조군 누락은 별도의 사후 보충 분석으로 점검했다. D2에서만 맞춘 raw activation과 task-centered activation을 모두 보존·공개하며, 이 분석을 사전 등록된 주 결과나 새로운 확증 검정으로 취급하지 않는다. 별도 응답 방향 진단에서 이종 계열 answer 위치의 combined 상관은 truth → yes → within-label 순서로 single 0.04353 → 0.00030 → -0.00013, group 0.05507 → 0.00070 → 0.00830였다. 유효 셀 범위가 달라질 수 있는 탐색적 진단이며 응답 방향 혼입 가능성을 점검한다. 낮은 과제 능력과 함께 읽어야 하며 혼입의 유일한 원인을 입증하지 않는다. 최종 과학 검토: 고정 D2 절차를 새 D4 문항에 적용했을 때, 독립 시드 answer 위치의 combined−semantic 차이는 single +0.05870 (95% wrapper CI [+0.04763, +0.06991]), group +0.06778 (95% wrapper CI [+0.05201, +0.08372])였다. 원래 110개 검정군의 BH에서 양의 pair 효과는 single 8/10, group 4/10이고, 사후 BY 민감도에서는 7/10, 4/10이다. 이 사실은 정답 방향으로 정의된 zero/mean/patch 효과의 대응 지표에 한정한 개선을 지지한다. 위 cohort CI는 고정 모델·공유 wrapper에 조건부인 기술적 구간이며 다중검정 보정 구간이 아니다. Group span 차이는 +0.00161 (95% wrapper CI [-0.00997, +0.01340])로 일관된 span 개선을 보이지 않는다. Tiny single-answer fit 6/10과 공개 single-answer fit 3/3은 인과 가중치 1을 선택했으므로 의미·인과 정보의 시너지를 입증하지 않는다. 같은 정답끼리 비교한 tiny answer의 절대 상관은 single 0.01726, group 0.03797로 더 약하며, view 간 감소를 별도의 확증적 차이 검정으로 취급하지 않는다. Activation 기준선 대비 비교는 사후 보충 분석이다. 넓은 의미의 인과 기능 보존·회로 동등성·이식 유용성은 여전히 판단 불가다. 적용 범위: 정답 위치의 등록된 truth-oriented 개입효과 상관 개선에 한정; 넓은 기능 보존은 판단 불가.
 
 ## 과제 능력 조건
 
@@ -264,58 +266,58 @@
 
 | 비교 | Δ | CI | p | q | 보정 범위 |
 |---|---:|---|---:|---:|---|
-| F4/seed101_seed211/answer/single/combined_minus_semantic | 0.0443 | [0.0205, 0.0697] | 0.0015 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed101_seed211/span/single/combined_minus_semantic | 0 | [0, 0] | 1 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed101_seed211/answer/group/combined_minus_semantic | 0.1219 | [0.0776, 0.1652] | 1.00e-04 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed101_seed211/span/group/combined_minus_semantic | 0 | [0, 0] | 1 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed101_seed307/answer/single/combined_minus_semantic | 0.0973 | [0.0617, 0.1341] | 1.00e-04 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed101_seed307/span/single/combined_minus_semantic | 0 | [0, 0] | 1 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed101_seed307/answer/group/combined_minus_semantic | 0.1235 | [0.0856, 0.1624] | 5.00e-05 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed101_seed307/span/group/combined_minus_semantic | -0.0076 | [-0.0387, 0.0251] | 0.6435 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed101_seed401/answer/single/combined_minus_semantic | 0.0255 | [0.0094, 0.0417] | 0.0079 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed101_seed401/span/single/combined_minus_semantic | 0.0264 | [0.0109, 0.042] | 0.0044 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed101_seed401/answer/group/combined_minus_semantic | 0.0196 | [-0.0171, 0.0538] | 0.2893 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed101_seed401/span/group/combined_minus_semantic | 0 | [0, 0] | 1 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed101_seed503/answer/single/combined_minus_semantic | 0.0614 | [0.0303, 0.0902] | 0.0011 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed101_seed503/span/single/combined_minus_semantic | 0.0046 | [-0.0209, 0.0314] | 0.7338 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed101_seed503/answer/group/combined_minus_semantic | 0 | [0, 0] | 1 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed101_seed503/span/group/combined_minus_semantic | -0.0167 | [-0.0641, 0.0356] | 0.5218 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed211_seed307/answer/single/combined_minus_semantic | 0.0523 | [0.0315, 0.0744] | 0.0001 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed211_seed307/span/single/combined_minus_semantic | 0.0184 | [-0.0117, 0.0484] | 0.2528 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed211_seed307/answer/group/combined_minus_semantic | 0.0351 | [-0.013, 0.0825] | 0.179 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed211_seed307/span/group/combined_minus_semantic | 0.0029 | [-0.0436, 0.0517] | 0.9087 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed211_seed401/answer/single/combined_minus_semantic | 0.0078 | [-0.0184, 0.0331] | 0.5711 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed211_seed401/span/single/combined_minus_semantic | 0 | [0, 0] | 1 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed211_seed401/answer/group/combined_minus_semantic | 0.1645 | [0.126, 0.2061] | 5.00e-05 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed211_seed401/span/group/combined_minus_semantic | -0.0097 | [-0.0499, 0.028] | 0.6325 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed211_seed503/answer/single/combined_minus_semantic | 0.1023 | [0.0742, 0.13] | 5.00e-05 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed211_seed503/span/single/combined_minus_semantic | 0.0335 | [-0.0159, 0.0834] | 0.1896 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed211_seed503/answer/group/combined_minus_semantic | 0 | [0, 0] | 1 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed211_seed503/span/group/combined_minus_semantic | 0 | [0, 0] | 1 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed307_seed401/answer/single/combined_minus_semantic | 0.0544 | [0.0332, 0.0765] | 0.0001 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed307_seed401/span/single/combined_minus_semantic | 0 | [0, 0] | 1 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed307_seed401/answer/group/combined_minus_semantic | 0.1546 | [0.1136, 0.1956] | 5.00e-05 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed307_seed401/span/group/combined_minus_semantic | -0.0117 | [-0.0369, 0.0121] | 0.3754 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed307_seed503/answer/single/combined_minus_semantic | 0.1321 | [0.1065, 0.1579] | 5.00e-05 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed307_seed503/span/single/combined_minus_semantic | -0.0066 | [-0.0346, 0.0232] | 0.6722 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed307_seed503/answer/group/combined_minus_semantic | 0.0274 | [-0.0186, 0.075] | 0.2694 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed307_seed503/span/group/combined_minus_semantic | 0.0231 | [-0.0332, 0.0844] | 0.473 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed401_seed503/answer/single/combined_minus_semantic | 0.0095 | [-0.0172, 0.0362] | 0.5054 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed401_seed503/span/single/combined_minus_semantic | 0.0402 | [0.0129, 0.0663] | 0.0078 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed401_seed503/answer/group/combined_minus_semantic | 0.0311 | [-0.0017, 0.0673] | 0.098 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/seed401_seed503/span/group/combined_minus_semantic | 0.0359 | [-0.0184, 0.091] | 0.2241 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/qwen_smol/answer/single/combined_minus_semantic | 0.07 | [0.0222, 0.1192] | 0.0116 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/qwen_smol/span/single/combined_minus_semantic | 0.0719 | [0.0365, 0.1077] | 0.001 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/qwen_smol/answer/group/combined_minus_semantic | 0.0536 | [0.004, 0.106] | 0.046 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/qwen_smol/span/group/combined_minus_semantic | 0.1269 | [0.0584, 0.1901] | 0.002 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/qwen_olmo/answer/single/combined_minus_semantic | 0.0769 | [0.0314, 0.127] | 0.0047 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/qwen_olmo/span/single/combined_minus_semantic | 0.0911 | [0.0458, 0.1404] | 0.0016 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/qwen_olmo/answer/group/combined_minus_semantic | 0.036 | [-0.0308, 0.1035] | 0.3141 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/qwen_olmo/span/group/combined_minus_semantic | -0.0633 | [-0.1038, -0.0183] | 0.0095 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/smol_olmo/answer/single/combined_minus_semantic | 0.0629 | [0.0186, 0.1062] | 0.0135 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/smol_olmo/span/single/combined_minus_semantic | 0.1078 | [0.0553, 0.1728] | 0.0002 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/smol_olmo/answer/group/combined_minus_semantic | 0.193 | [0.1405, 0.2436] | 5.00e-05 | 미측정 | Predeclared F4 family member; global BH pending F6 |
-| F4/smol_olmo/span/group/combined_minus_semantic | 0.1873 | [0.11, 0.2687] | 1.00e-04 | 미측정 | Predeclared F4 family member; global BH pending F6 |
+| F4/seed101_seed211/answer/single/combined_minus_semantic | 0.0443 | [0.0205, 0.0697] | 0.0015 | 0.0043 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed101_seed211/span/single/combined_minus_semantic | 0 | [0, 0] | 1 | 1 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed101_seed211/answer/group/combined_minus_semantic | 0.1219 | [0.0776, 0.1652] | 1.00e-04 | 0.0004 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed101_seed211/span/group/combined_minus_semantic | 0 | [0, 0] | 1 | 1 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed101_seed307/answer/single/combined_minus_semantic | 0.0973 | [0.0617, 0.1341] | 1.00e-04 | 0.0004 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed101_seed307/span/single/combined_minus_semantic | 0 | [0, 0] | 1 | 1 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed101_seed307/answer/group/combined_minus_semantic | 0.1235 | [0.0856, 0.1624] | 5.00e-05 | 0.0002 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed101_seed307/span/group/combined_minus_semantic | -0.0076 | [-0.0387, 0.0251] | 0.6435 | 0.8043 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed101_seed401/answer/single/combined_minus_semantic | 0.0255 | [0.0094, 0.0417] | 0.0079 | 0.0165 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed101_seed401/span/single/combined_minus_semantic | 0.0264 | [0.0109, 0.042] | 0.0044 | 0.0105 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed101_seed401/answer/group/combined_minus_semantic | 0.0196 | [-0.0171, 0.0538] | 0.2893 | 0.4301 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed101_seed401/span/group/combined_minus_semantic | 0 | [0, 0] | 1 | 1 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed101_seed503/answer/single/combined_minus_semantic | 0.0614 | [0.0303, 0.0902] | 0.0011 | 0.0032 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed101_seed503/span/single/combined_minus_semantic | 0.0046 | [-0.0209, 0.0314] | 0.7338 | 0.887 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed101_seed503/answer/group/combined_minus_semantic | 0 | [0, 0] | 1 | 1 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed101_seed503/span/group/combined_minus_semantic | -0.0167 | [-0.0641, 0.0356] | 0.5218 | 0.6915 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed211_seed307/answer/single/combined_minus_semantic | 0.0523 | [0.0315, 0.0744] | 0.0001 | 0.0005 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed211_seed307/span/single/combined_minus_semantic | 0.0184 | [-0.0117, 0.0484] | 0.2528 | 0.3916 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed211_seed307/answer/group/combined_minus_semantic | 0.0351 | [-0.013, 0.0825] | 0.179 | 0.2939 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed211_seed307/span/group/combined_minus_semantic | 0.0029 | [-0.0436, 0.0517] | 0.9087 | 1 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed211_seed401/answer/single/combined_minus_semantic | 0.0078 | [-0.0184, 0.0331] | 0.5711 | 0.7401 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed211_seed401/span/single/combined_minus_semantic | 0 | [0, 0] | 1 | 1 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed211_seed401/answer/group/combined_minus_semantic | 0.1645 | [0.126, 0.2061] | 5.00e-05 | 0.0002 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed211_seed401/span/group/combined_minus_semantic | -0.0097 | [-0.0499, 0.028] | 0.6325 | 0.7997 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed211_seed503/answer/single/combined_minus_semantic | 0.1023 | [0.0742, 0.13] | 5.00e-05 | 0.0002 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed211_seed503/span/single/combined_minus_semantic | 0.0335 | [-0.0159, 0.0834] | 0.1896 | 0.3067 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed211_seed503/answer/group/combined_minus_semantic | 0 | [0, 0] | 1 | 1 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed211_seed503/span/group/combined_minus_semantic | 0 | [0, 0] | 1 | 1 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed307_seed401/answer/single/combined_minus_semantic | 0.0544 | [0.0332, 0.0765] | 0.0001 | 0.0005 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed307_seed401/span/single/combined_minus_semantic | 0 | [0, 0] | 1 | 1 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed307_seed401/answer/group/combined_minus_semantic | 0.1546 | [0.1136, 0.1956] | 5.00e-05 | 0.0002 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed307_seed401/span/group/combined_minus_semantic | -0.0117 | [-0.0369, 0.0121] | 0.3754 | 0.5228 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed307_seed503/answer/single/combined_minus_semantic | 0.1321 | [0.1065, 0.1579] | 5.00e-05 | 0.0002 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed307_seed503/span/single/combined_minus_semantic | -0.0066 | [-0.0346, 0.0232] | 0.6722 | 0.8308 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed307_seed503/answer/group/combined_minus_semantic | 0.0274 | [-0.0186, 0.075] | 0.2694 | 0.406 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed307_seed503/span/group/combined_minus_semantic | 0.0231 | [-0.0332, 0.0844] | 0.473 | 0.6423 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed401_seed503/answer/single/combined_minus_semantic | 0.0095 | [-0.0172, 0.0362] | 0.5054 | 0.678 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed401_seed503/span/single/combined_minus_semantic | 0.0402 | [0.0129, 0.0663] | 0.0078 | 0.0165 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed401_seed503/answer/group/combined_minus_semantic | 0.0311 | [-0.0017, 0.0673] | 0.098 | 0.1739 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/seed401_seed503/span/group/combined_minus_semantic | 0.0359 | [-0.0184, 0.091] | 0.2241 | 0.3521 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/qwen_smol/answer/single/combined_minus_semantic | 0.07 | [0.0222, 0.1192] | 0.0116 | 0.0233 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/qwen_smol/span/single/combined_minus_semantic | 0.0719 | [0.0365, 0.1077] | 0.001 | 0.003 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/qwen_smol/answer/group/combined_minus_semantic | 0.0536 | [0.004, 0.106] | 0.046 | 0.0859 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/qwen_smol/span/group/combined_minus_semantic | 0.1269 | [0.0584, 0.1901] | 0.002 | 0.0052 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/qwen_olmo/answer/single/combined_minus_semantic | 0.0769 | [0.0314, 0.127] | 0.0047 | 0.0108 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/qwen_olmo/span/single/combined_minus_semantic | 0.0911 | [0.0458, 0.1404] | 0.0016 | 0.0044 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/qwen_olmo/answer/group/combined_minus_semantic | 0.036 | [-0.0308, 0.1035] | 0.3141 | 0.4488 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/qwen_olmo/span/group/combined_minus_semantic | -0.0633 | [-0.1038, -0.0183] | 0.0095 | 0.0194 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/smol_olmo/answer/single/combined_minus_semantic | 0.0629 | [0.0186, 0.1062] | 0.0135 | 0.0265 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/smol_olmo/span/single/combined_minus_semantic | 0.1078 | [0.0553, 0.1728] | 0.0002 | 0.0006 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/smol_olmo/answer/group/combined_minus_semantic | 0.193 | [0.1405, 0.2436] | 5.00e-05 | 0.0002 | Final single110-member BH family; conditional dependent-pair estimates |
+| F4/smol_olmo/span/group/combined_minus_semantic | 0.1873 | [0.11, 0.2687] | 1.00e-04 | 0.0004 | Final single110-member BH family; conditional dependent-pair estimates |
 
 ## 과제별 전체 쌍과 능력 조건을 충족한 쌍
 
@@ -410,7 +412,7 @@ Primary evaluation uses zero/mean/patch only. Dose modes are supplementary; no t
 
 ![D4 joint-wrapper combined minus semantic](../../artifacts/followup-v2/figures/f4_combined_minus_semantic.svg)
 
-Observed pairs are retained jointly inside wrappers; global BH is deferred to F6.
+Observed pairs are retained jointly inside wrappers; q values are supplied by the final110-member global BH family.
 
 [그림 수치와 출처](../../artifacts/followup-v2/figures/f4_combined_minus_semantic.json)
 
@@ -493,6 +495,7 @@ Descriptive mean over fixed units and examples; no uncertainty or model-populati
 - [results/followup-v2/causal_alignment/smol_olmo/single/eval.json](../../results/followup-v2/causal_alignment/smol_olmo/single/eval.json)
 - [results/followup-v2/causal_alignment/smol_olmo/group/eval.json](../../results/followup-v2/causal_alignment/smol_olmo/group/eval.json)
 - [results/followup-v2/causal_alignment/summary.json](../../results/followup-v2/causal_alignment/summary.json)
+- [results/followup-v2/statistics/global_tests.json](../../results/followup-v2/statistics/global_tests.json)
 - [results/followup-v2/causal_alignment/fit_manifest.json](../../results/followup-v2/causal_alignment/fit_manifest.json)
 - [results/followup-v2/causal_alignment/competence_descriptive.json](../../results/followup-v2/causal_alignment/competence_descriptive.json)
 - [reports/followup-v2/CAUSAL_COMPETENCE.md](../../reports/followup-v2/CAUSAL_COMPETENCE.md)
@@ -500,3 +503,4 @@ Descriptive mean over fixed units and examples; no uncertainty or model-populati
 - [results/followup-v2/supplemental_causal_activation/summary.json](../../results/followup-v2/supplemental_causal_activation/summary.json)
 - [results/followup-v2/supplemental_causal_activation/fit_manifest.json](../../results/followup-v2/supplemental_causal_activation/fit_manifest.json)
 - [results/followup-v2/exploratory_causal_diagnostics/summary.json](../../results/followup-v2/exploratory_causal_diagnostics/summary.json)
+- [results/followup-v2/scientific_review.json](../../results/followup-v2/scientific_review.json)

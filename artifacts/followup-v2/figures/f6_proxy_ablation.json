@@ -1,0 +1,52 @@
+{
+  "schema": "followup-figure-v1",
+  "title": "Posthoc matched proxy ablation on followup-v2",
+  "encoding": {
+    "id": "proxy_ablation",
+    "kind": "interval",
+    "title": "Posthoc matched proxy ablation on followup-v2",
+    "xlabel": "Expanded minus original4D proxy;95% shared-wrapper CI",
+    "source": "results/followup-v2/exploratory_proxy_ablation/summary.json",
+    "note": "Requested after D3 observation. Samev2 data, frozen candidates and evaluation metric; not independent confirmation or attribution of the full pilot-v1 to followup-v2 change."
+  },
+  "sources": [
+    {
+      "path": "results/followup-v2/exploratory_proxy_ablation/summary.json",
+      "sha256": "635fdc6e639b56b078d291022a52bb6a430bda60685fc18743714a79941fae47"
+    }
+  ],
+  "rows": [
+    {
+      "label": "independent_seeds/answer",
+      "value": 0.011091660595794172,
+      "ci": [
+        0.004213465009862769,
+        0.017534019074816307
+      ]
+    },
+    {
+      "label": "independent_seeds/span",
+      "value": 0.0386778352763806,
+      "ci": [
+        0.03055106944458315,
+        0.046202628467042955
+      ]
+    },
+    {
+      "label": "cross_family/answer",
+      "value": 0.004125738409188634,
+      "ci": [
+        -0.0054265025945011485,
+        0.014230012518892346
+      ]
+    },
+    {
+      "label": "cross_family/span",
+      "value": 0.0007169845471349731,
+      "ci": [
+        -0.010079696123567397,
+        0.011433467915365618
+      ]
+    }
+  ]
+}

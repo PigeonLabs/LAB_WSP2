@@ -203,7 +203,8 @@ def _comparison_table(comparisons):
 def _review_text(review,prefix=''):
     parts=[]
     for answer in review['questions']:
-        parts += [f"**{answer['id']} — {answer['question']} · {answer['verdict']}**", '',
+        label=answer['verdict']+(f" ({answer['scope']})" if answer['verdict']=='SUPPORTED' else '')
+        parts += [f"**{answer['id']} — {answer['question']} · {label}**", '',
                   answer['rationale'], '', '적용 범위: '+answer['scope'], '',
                   '근거: '+' · '.join(f'[{Path(path).name}]({prefix}{path})' for path in answer['evidence']), '']
     return '\n'.join(parts)
@@ -304,6 +305,24 @@ def _final_q_overlay(payload,sid,global_stats):
     return payload
 
 
+def _reviewed_stage_overlay(payload,sid,review):
+    """Final scientific display is explicit about its difference from the interim record."""
+    decision=review.get('stage_verdicts',{}).get(sid)
+    if decision is None:return payload
+    if review.get('status')!='REVIEWED' or decision.get('verdict') not in VALID_VERDICTS:
+        raise ValueError('Final stage decision requires reviewed valid verdict')
+    if not decision.get('scope') or not decision.get('rationale'):
+        raise ValueError('Final stage decision requires explicit scope and rationale')
+    payload['interim_snapshot_verdict']=payload.get('verdict','INCONCLUSIVE')
+    payload['verdict']=decision['verdict']
+    payload['final_verdict_scope']=decision['scope']
+    payload['final_review_rationale']=decision['rationale']
+    payload['rationale']+=' 최종 과학 검토: '+decision['rationale']+' 적용 범위: '+decision['scope']+'.'
+    payload.setdefault('artifacts',[]).append({'label':'Final scoped scientific review; interim snapshot preserved',
+                                             'path':'results/followup-v2/scientific_review.json'})
+    return payload
+
+
 def _hard_stress_supplement(root,reports,out,plt):
     """Render completed exploratory evidence without touching frozen stage snapshots."""
     run=root/'results/followup-v2';path=run/'hard_stress/summary.json'
@@ -381,12 +400,15 @@ def render_followup_reports(root=None,max_stage=None):
     global_path=root/'results/followup-v2/statistics/global_tests.json'
     final_stage=root/'results/followup-v2/stages/F6.json'
     global_stats=_json(global_path) if limit==6 and global_path.exists() and final_stage.exists() else None
+    final_review=_json(root/'results/followup-v2/scientific_review.json') if global_stats is not None else None
     date=datetime.now(ZoneInfo('Asia/Seoul')).strftime('%Y-%m-%d %H:%M KST')
     snapshots=[]
     for sid,title in STAGES.items():
         path=root/f'results/followup-v2/stages/{sid}.json'
         payload=_json(path) if path.exists() and int(sid[1:])<=limit else {'id':sid,'title':title,'status':'PENDING'}
-        if global_stats is not None:payload=_final_q_overlay(payload,sid,global_stats)
+        if global_stats is not None:
+            payload=_final_q_overlay(payload,sid,global_stats)
+            payload=_reviewed_stage_overlay(payload,sid,final_review)
         if payload.get('id',sid)!=sid:raise ValueError('Stage ID and filename disagree')
         status=payload.get('status','PENDING')
         if status not in VALID_STATUSES:raise ValueError(f'Unknown stage status: {status}')
@@ -409,9 +431,12 @@ def render_followup_reports(root=None,max_stage=None):
                 figure=_figure(root,out,plt,sid,spec,path)
                 if figure:figures.append(figure)
         else:sources=[]
-        snapshot={'id':sid,'title':payload.get('title',title),'status':status,'verdict':verdict,'payload':payload,'figures':figures,'sources':sources}
+        verdict_label=verdict+(f" ({payload['final_verdict_scope']})" if payload.get('final_verdict_scope') else '')
+        snapshot={'id':sid,'title':payload.get('title',title),'status':status,'verdict':verdict,'verdict_label':verdict_label,'payload':payload,'figures':figures,'sources':sources}
         snapshots.append(snapshot)
-        content=f"# {sid} — {snapshot['title']}\n\n갱신: {date}. 실행 상태: **{status}**. 가설 판정: **{verdict}**.\n\n"
+        content=f"# {sid} — {snapshot['title']}\n\n갱신: {date}. 실행 상태: **{status}**. 가설 판정: **{verdict_label}**.\n\n"
+        if payload.get('interim_snapshot_verdict'):
+            content+=f"원본 단계 스냅샷의 잠정 판정은 **{payload['interim_snapshot_verdict']}**로 보존되어 있습니다. 위 표시는 전역 보정 후의 [최종 과학 검토](../../results/followup-v2/scientific_review.json)가 정한 제한된 범위의 판정입니다. 원본 측정과 단계 JSON은 수정하지 않았습니다.\n\n"
         if payload.get('question'):content+='연구 질문: '+payload['question']+'\n\n'
         content+=payload.get('rationale','판정 근거가 아직 보고되지 않았습니다.')+'\n\n'
         if payload.get('scientific_review'):
@@ -427,6 +452,8 @@ def render_followup_reports(root=None,max_stage=None):
         if payload.get('dependence_sensitivity'):
             d=payload['dependence_sensitivity']
             content+='## 다중검정 의존성 민감도\n\n'+d['summary']+f" [SciPy 공식 문서]({d['reference']})\n\n[민감도 상세 보고서](../../{d['report']}) · [전체 BH/BY 수치](../../{d['source']})\n\n"
+        if payload.get('resource_summary'):
+            content+='## 실제 자원 기록과 측정 범위\n\n'+payload['resource_summary']+' [원본 기록](../../results/followup-v2/resource_accounting.json)\n\n'
         if payload.get('diagnostic_support'):
             content+='## 보조 인과 진단의 유효 셀 범위\n\n다른 view는 유효 셀 집합이 다를 수 있습니다. 값이 정의되지 않는 셀을 0 상관으로 바꾸지 않습니다.\n\n| Pair | 단위·위치 | View·방법 | 유효 셀 | 가능 셀 | 유효 비율 |\n|---|---|---|---:|---:|---:|\n'
             for r in payload['diagnostic_support']:
@@ -438,20 +465,26 @@ def render_followup_reports(root=None,max_stage=None):
         if sources:content+='## 원본과 재현\n\n'+'\n'.join(f"- [{s['path']}](../../{s['path']})" for s in sources)+'\n'
         (reports/f'{sid}_REPORT.md').write_text(content)
     table=['| 단계 | 실험 | 실행 상태 | 가설 판정 |','|---|---|---|---|']
-    for s in snapshots:table.append(f"| {s['id']} | [{s['title']}](reports/followup-v2/{s['id']}_REPORT.md) | {s['status']} | {s['verdict']} |")
+    for s in snapshots:table.append(f"| {s['id']} | [{s['title']}](reports/followup-v2/{s['id']}_REPORT.md) | {s['status']} | {_value(s['verdict_label'])} |")
     common='실행 완료와 가설 지지는 별개입니다. 모델이 해당 과제를 학습했는지 먼저 확인하며, 낮은 능력의 대응 실패를 보존 가설의 반증으로 바꾸지 않습니다. 새 데이터·프로토콜·후보·검정 범위를 기록하고 기존 pilot-v1 결과를 보존합니다. 군집·모델 seed·매칭 seed·다중검정 범위가 다른 수치를 임의로 합치지 않습니다. 인과 효과 일치도 이식이나 병합의 유효성을 자동으로 보장하지 않습니다.'
     section=f"## 후속 연구 — followup-v2\n\n갱신: **{date}**. 이 절은 새 단계별 측정 파일에서 생성되었습니다.\n\n"+'\n'.join(table)+'\n\n'+common+'\n\n'
     if snapshots[-1]['payload'].get('executive_summary'):
         section=section.replace('이 절은 새 단계별 측정 파일에서 생성되었습니다.\n\n','이 절은 새 단계별 측정 파일에서 생성되었습니다.\n\n'+snapshots[-1]['payload']['executive_summary']+'\n\n',1)
     if snapshots[-1]['payload'].get('scientific_review'):
         section+='### 네 연구 질문의 최종 검토\n\n'+_review_text(snapshots[-1]['payload']['scientific_review'])+'\n'
+    if final_review and final_review.get('stage_verdicts'):
+        section+='F4/F5의 표시는 전역 보정 후 [최종 과학 검토](results/followup-v2/scientific_review.json)의 제한된 범위 판정입니다. 원본 단계 스냅샷의 잠정 판정은 그대로 보존했고, 아래 단계별 설명에서 이를 구분합니다.\n\n'
     for s in snapshots:
         p=s['payload']
         if s['status'] in ('PENDING','PLANNED'):continue
-        section+=f"### {s['id']} — {s['title']}\n\n**{s['status']} · {s['verdict']}**. "+p.get('rationale','판정 근거 미보고.')+'\n\n'
+        section+=f"### {s['id']} — {s['title']}\n\n**{s['status']} · {s['verdict_label']}**. "+p.get('rationale','판정 근거 미보고.')+'\n\n'
+        if p.get('interim_snapshot_verdict'):
+            section+=f"원본 단계 스냅샷의 잠정 판정: **{p['interim_snapshot_verdict']}**. 현재 표시: **{s['verdict_label']}**. [최종 검토 근거](results/followup-v2/scientific_review.json).\n\n"
         if p.get('dependence_sensitivity'):
             d=p['dependence_sensitivity']
             section+=d['summary']+f" [SciPy 공식 문서]({d['reference']}) · [민감도 상세]({d['report']})\n\n"
+        if p.get('resource_summary'):
+            section+=p['resource_summary']+' [원본 기록](results/followup-v2/resource_accounting.json)\n\n'
         if p.get('causal_competence'):
             d=p['causal_competence']
             section+=f"[과제별 전체/능력충족 쌍의 인과 대응과 누락 범위]({d['report']}). 이 구분은 D4 결과를 조건으로 한 기술 통계이며, 추가 CI·p값·재학습을 포함하지 않습니다.\n\n"
@@ -466,7 +499,10 @@ def render_followup_reports(root=None,max_stage=None):
     critique=['# Followup-v2 research critique', '', '측정 완료 여부, 과제 능력, 대조군 회복, 가설 지지를 구분합니다. 아래 한계는 각 단계의 저장된 증거와 함께 읽어야 합니다.', '']
     for s in snapshots:
         if s['status'] in ('PENDING','PLANNED'):continue
-        critique += [f"## {s['id']} — {s['title']}", '', f"상태: {s['status']}; 판정: {s['verdict']}.", '']
+        critique += [f"## {s['id']} — {s['title']}", '', f"상태: {s['status']}; 판정: {s['verdict_label']}.", '']
+        if s['payload'].get('final_review_rationale'):
+            critique += [s['payload']['final_review_rationale'], '',
+                         '[최종 검토 원본](../../results/followup-v2/scientific_review.json)', '']
         critique += ['- '+item for item in s['payload'].get('limitations',[])]
         critique += ['', f"[측정과 원본]({s['id']}_REPORT.md)", '']
     if hard_supplement:
@@ -476,7 +512,7 @@ def render_followup_reports(root=None,max_stage=None):
     (reports/'README_SECTION.md').write_text(section)
     full=section.replace('](reports/','](../../reports/').replace('](artifacts/','](../../artifacts/').replace('](results/','](../../results/').replace('](data/','](../../data/')
     (reports/'FINAL_FOLLOWUP_REPORT.md').write_text('# Followup-v2 research report\n\n'+full)
-    receipt={'generated_kst':date,'stages':[{'id':s['id'],'status':s['status'],'verdict':s['verdict'],'sources':s['sources'],'figures':s['figures']} for s in snapshots],'supplements':[hard_supplement] if hard_supplement else [],'root_readme_edited':False,'pilot_v1_edited':False}
+    receipt={'generated_kst':date,'stages':[{'id':s['id'],'status':s['status'],'verdict':s['verdict'],'verdict_scope':s['payload'].get('final_verdict_scope'),'interim_snapshot_verdict':s['payload'].get('interim_snapshot_verdict'),'sources':s['sources'],'figures':s['figures']} for s in snapshots],'supplements':[hard_supplement] if hard_supplement else [],'root_readme_edited':False,'pilot_v1_edited':False}
     (reports/'REPORT_GENERATION.json').write_text(json.dumps(receipt,indent=2,ensure_ascii=False)+'\n')
     return {'stage_status':{s['id']:s['status'] for s in snapshots},'figures':sum(len(s['figures']) for s in snapshots)+(len(hard_supplement['figures']) if hard_supplement else 0),'section':'reports/followup-v2/README_SECTION.md'}
 

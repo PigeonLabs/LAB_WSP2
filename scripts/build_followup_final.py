@@ -252,6 +252,24 @@ def build():
     p['diagnostic_support'] = support_rows
     runtime = runtime_accounting(hard, transfers)
     p['runtime_accounting'] = runtime
+    resource_path=RUN/'resource_accounting.json';resources=read(resource_path)
+    if abs(resources['total_seconds']-runtime['total_seconds'])>1e-8 or resources['category_seconds']!=runtime['category_seconds']:
+        raise ValueError('Resource accounting disagrees with deduplicated runtime receipts')
+    peak_source=ROOT/resources['peak_source'];peak=read(peak_source)
+    if peak.get('peak_allocated_bytes')!=resources['peak_recorded_torch_allocated_bytes']:
+        raise ValueError('Recorded peak Torch allocation source disagrees')
+    disk=sum(resources['measured_followup_directory_bytes'].values())
+    p['resource_summary']=(f"기록된 모델 단계 경과시간 합계는 {runtime['total_seconds']/3600:.6f}시간이다. "
+        f"최대 기록 Torch allocated memory는 {resources['peak_recorded_torch_allocated_bytes']/2**30:.5f}GiB이며, "
+        f"resource-accounting 스냅샷 당시 명시한 후속 디렉터리 합계는 {disk/2**30:.6f}GiB였다. "
+        "경과시간에는 CPU·I/O·전송 overhead가 포함되며 GPU 활성시간·이용률·프로젝트 전체 경과시간이 아니다. "
+        "Torch allocated는 전체 물리 VRAM 사용량과 다르다. 디스크 합계에는 로컬 체크포인트와 재시작 chunk가 포함되지만 기존 base-model cache와 무관한 workspace 파일은 제외한다.")
+    p['metrics'] += [metric('Peak recorded Torch allocated memory',resources['peak_recorded_torch_allocated_bytes']/2**30,resource_path,unit='GiB'),
+                     metric('Named followup directory snapshot total',disk/2**30,resource_path,unit='GiB')]
+    for directory,size in resources['measured_followup_directory_bytes'].items():
+        p['metrics'].append(metric('Named directory snapshot storage',size/2**30,resource_path,method=directory,unit='GiB'))
+    p['artifacts'] += [source_entry(resource_path,'Resource accounting snapshot and exact scope'),
+                       source_entry(peak_source,'Peak Torch allocated-memory receipt')]
     p['metrics'].append({'name': 'Recorded GPU-bearing stage wall sum', 'value': runtime['total_seconds'],
                          'source': [e['source'] for e in runtime['entries']], 'unit': 'seconds'})
     for category, seconds in runtime['category_seconds'].items():
@@ -291,7 +309,7 @@ def build():
         f"독립 학습 모델의 activation−random 평균 대응 차이는 answer {f3a['activation_minus_random']['effect']:.4f}, span {f3s['activation_minus_random']['effect']:.4f}였고, "
         f"semantic−activation 차이는 각각 {f3a['semantic_minus_activation']['effect']:.4f}, {f3s['semantic_minus_activation']['effect']:.4f}였다. "
         '독립 시드의 인과 결합−의미 단독 차이는 '+', '.join(causal_effects)+'였다. '
-        f"D2 선택 이식 정책의 D4 목표 과제 평균 변화는 {f5['effect']:+.4f}였다. "
+        f"D2 선택 이식 정책의 D4 목표 과제 평균 변화는 {100*f5['effect']:+.4f} percentage points였다. "
         f"새768개 hard syntax 문항에서 학습 완료5개 모델의 정확도 범위는 {min(final_tiny):.1%}–{max(final_tiny):.1%}였다. "
         f"전체110개 주 검정을 하나의 BH family로 보정하고{tests['passed']}개 테스트 및 저장 수치 replay를 통과했다. "
         "확증적 q와 기술적 cohort CI를 구분하며, 높은 합성 과제 정확도·개입 상관만으로 보편적 의미 기능 보존이나 재귀 이해를 입증하지 않는다. 네 연구 질문의 최종 판정은 별도 과학 검토의 근거와 적용 범위를 따른다. "+archive_scope)
@@ -306,7 +324,9 @@ def build():
         'Truth-oriented, yes-oriented and within-label causal views can differ in identifiable support. Attenuation is not proof that answer bias exclusively caused the original association.',
         'The four-dimensional versus expanded proxy comparison uses the samefollowup-v2 evidence and was requested after D3; it cannot explain every historical pilot-v1 to followup-v2 change.',
         'Native neuron transplantation and parameter interpolation do not establish whole-circuit-preserving model merging.',
-        runtime['scope'], preservation.get('claim', ''), archive_scope,
+        runtime['scope'], resources['disk_scope']+' This is the saved accounting snapshot, not a promise that later report generation consumes zero additional bytes.',
+        'Peak Torch allocated memory measures the framework allocator, not total physical device usage or GPU utilization.',
+        preservation.get('claim', ''), archive_scope,
         'Saved-artifact replay does not establish historical execution chronology or independently regenerate excluded model weights.'
     ] + audit.get('limitations', [])
     add_causal_competence(p)
