@@ -165,8 +165,8 @@ def _method_chart(root,out,plt,stage,rows,source):
 
 def _markdown_table(rows):
     if not rows:return '정렬 평가가 아직 완료되지 않아 측정값을 제시하지 않습니다.'
-    lines=['| 모델 쌍 | 방법 | 독립 평가 평균 | 95% CI |','|---|---|---:|---|']
-    for r in rows:lines.append(f"| {r['pair']} | {METHODS.get(r['method'],r['method'])} | {_num(r['mean'])} | {_ci(r['ci'])} |")
+    lines=['| 모델 쌍 | 방법 | 독립 평가 평균 | 95% CI | 후보 coverage |','|---|---|---:|---|---:|']
+    for r in rows:lines.append(f"| {r['pair']} | {METHODS.get(r['method'],r['method'])} | {_num(r['mean'])} | {_ci(r['ci'])} | {_num(r['raw'].get('coverage'))} |")
     return '\n'.join(lines)
 
 
@@ -288,7 +288,7 @@ def render_reports(root=None,max_stage=None):
         metric='D4 causal effect agreement' if stage=='E4' else 'D3 response agreement'
         summary.append(f"| {stage} | {hyp} | {metric} | {' | '.join(val)} | {s['verdict']} |")
     summary='\n'.join(summary)
-    limitations='''이 연구는 제한된 합성 참·거짓 과제의 파일럿입니다. 학습·탐색·정렬·독립 반응 평가·독립 인과 평가를 분리했지만 의미 문법은 공유합니다. 여섯 wrapper 군집의 부트스트랩 신뢰구간과 무작위화 검정은 탐색적입니다. 뉴런 개수를 독립 표본 수로 사용하지 않습니다. 모델의 과제 능력이 낮으면 대응 실패를 기능 보존의 기각으로 해석하지 않습니다. 활성값 유사성·의미 설명·인과 효과 일치를 구분하며, 긍정적 결과도 뉴런 복사나 모델 병합의 안전성을 보장하지 않습니다.'''
+    limitations='''이 연구는 제한된 합성 참·거짓 과제의 파일럿입니다. 학습·탐색·정렬·독립 반응 평가·독립 인과 평가를 분리했지만 의미 문법은 공유합니다. 여섯 wrapper 군집의 부트스트랩 신뢰구간과 무작위화 검정은 탐색적입니다. 뉴런 개수를 독립 표본 수로 사용하지 않습니다. BH q는 모델 쌍별 비교군 안에서 보정한 값이며 연구 전체의 다중검정 보정이 아닙니다. Random 기준선은 쌍당 한 번 고정한 매칭으로, 그 무작위 매칭 자체의 변동은 CI에 포함되지 않습니다. 모델의 과제 능력이 낮으면 대응 실패를 기능 보존의 기각으로 해석하지 않습니다. 활성값 유사성·의미 설명·인과 효과 일치를 구분하며, 긍정적 결과도 뉴런 복사나 모델 병합의 안전성을 보장하지 않습니다.'''
     methodology='''- **E1:** 서로 다른 초기 가중치로 학습한 소형 RMSNorm·RoPE·SwiGLU decoder 두 개. 초기/중간/최종 체크포인트와 학습 로그를 보존합니다.
 - **E2:** 공개 Base 모델의 같은 원문에 대한 모델별 토큰화를 사용합니다. 약 20/40/60/80% 깊이에서 gate, up, SwiGLU product, 부호 구간과 down 기여를 관찰합니다.
 - **E3:** random, activation, rank, semantic, sign-aware semantic, label-shuffled 기준선을 비교합니다. D1에서 후보 선택, D2에서 정렬을 고정하고 D3에서 독립 반응을 평가합니다.
@@ -315,6 +315,8 @@ def render_reports(root=None,max_stage=None):
 6. 상대 깊이 정렬은 구조적 동등성을 보장하지 않습니다. 같은 원문과 답변을 사용해도 토크나이저별 경계·길이·확률 척도 차이가 남습니다.
 7. 단일 뉴런 zero/mean/patch는 세 개입의 정합성을 검사할 수 있으나 완전한 회로를 복원하지 않습니다. 주변 회로·보상 경로·분포 외 개입의 영향을 받습니다.
 8. 높은 held-out 상관만으로 기능적 동등성, 인과 추상화, transplant 성공을 주장할 수 없습니다. 동형 모델도 무작위 초기화에서 구조적 상관을 보일 수 있어 untrained control이 필요합니다.
+9. Random 기준선은 모델 쌍당 하나의 고정 매칭입니다. 군집 CI는 무작위 매칭 seed의 변동을 포함하지 않습니다. BH 보정은 모델 쌍 안의 비교군 범위이며 연구 전체 보정으로 제시하면 안 됩니다.
+10. 부분 정렬 임계값은 D2 shuffled row-maximum 분포의 탐색적 기준입니다. 개별 뉴런의 유의성이나 전체 뉴런 모집단의 보존율로 해석할 수 없습니다. 학습 중 기능 변화, 완전히 새로운 과제군의 일반화, dose-response와 회로 보존은 현재 결과 범위를 넘어섭니다.
 
 ## 선행연구와 기준선
 
@@ -324,6 +326,7 @@ def render_reports(root=None,max_stage=None):
 
 새 데이터 버전에서 shortcut을 차단하고, 더 많은 wrapper·독립 초기화·모델 쌍·학습 seed를 사전 고정해야 합니다. D3/D4를 본 뒤 동일 버전의 후보나 임계값을 바꿔 얻은 결과는 본 확인 분석으로 재사용하지 않습니다. 실패한 실행과 수정 이유는 삭제하지 않고 별도 로그로 보존합니다.
 '''
+    if (reports/'ENGINE_AUDIT.md').exists():critique+='\n\n[실행 코드·실제 E1 결과 감사](ENGINE_AUDIT.md)는 데이터 행 정렬, 저장된 매칭의 재계산, 초기화 독립성, 부정적 대조군과 재시작 한계를 구체적으로 기록합니다.\n'
     _write(reports/'RESEARCH_CRITIQUE.md',critique)
     nxt='''# Next Experiments
 
@@ -340,11 +343,17 @@ def render_reports(root=None,max_stage=None):
     _write(reports/'NEXT_EXPERIMENTS.md',nxt)
     completed=[e for e,s in stages.items() if s['metrics']]
     report=f'# Final Research Report — Native Neuron Conservation\n\n갱신: {date}. 결과 파일이 확인된 단계: **{", ".join(completed) or "없음"}**. 미완료 단계의 가설 판단은 `INCONCLUSIVE`이며 구현 완료를 실제 실행 완료로 해석하지 않습니다.\n\n## 연구 배경\n\nGoodfire의 [Neural Networks Are Already Clean](https://already-clean.goodfire.com/)을 검증 대상 작업 가설로 삼습니다. 원본 SwiGLU 뉴런의 활성·주기능 proxy·독립 인과 효과가 모델 간에 어떻게 대응하는지를 별개로 평가합니다. [선행연구 검토](../literature_review.md)는 ARM·LED-Merging·HeteroFusion·Git Re-Basin·Rosetta·SAE와의 차이를 기록합니다.\n\n## 가설별 결과\n\n{summary}\n\n## 모델·데이터·방법\n\n{methodology}\n\n{training}\n\n실제 모델 revision·라이선스는 [모델 manifest](../configs/models.json), 데이터 생성 규칙은 [데이터 protocol](../configs/data_protocol.json), 사전 설정은 [pilot config](../configs/pilot.json)에 기록합니다.\n\n## 결과와 시각자료\n\n'+ '\n\n'.join(f'### {e}\n\n[{e} 보고서]({e}_report.md)\n\n{_markdown_table(s["rows"])}'+''.join(f'\n\n![{e}](../artifacts/figures/{n}.svg)' for n in s['figures']) for e,s in stages.items())+f'\n\n## 해석과 한계\n\n{limitations}\n\n[상세 비판](RESEARCH_CRITIQUE.md)과 [후속 실험 우선순위](NEXT_EXPERIMENTS.md)를 참조합니다.'
+    report+='\n\n## 대응 비교의 통계와 판단 근거\n\n'+'\n\n'.join(f'### {e}\n\n{_interpretation(e,s["metrics"])}\n\n{_comparison_table(s["metrics"])}' for e,s in stages.items())
+    env=_read(root/'results/pilot-v1/environment.json',{})
+    if env:
+        environment=f"GPU: **{env.get('gpu_name','미측정')}**. Python {env.get('python','미측정')}, PyTorch {env.get('packages',{}).get('torch','미측정')}, CUDA runtime {env.get('cuda','미측정')}. [실제 환경 원본](../results/pilot-v1/environment.json)에 패키지 버전·디스크·초기 Git commit을 기록했습니다."
+        report+='\n\n## 실행 환경과 재현성\n\n'+environment
+    if 'competence' in figures:report+='\n\n## 모델별 과제 능력\n\n![D3 competence](../artifacts/figures/competence.svg)\n\n정답과 대비 답변 중 더 높은 전체 continuation likelihood를 가지는 후보를 선택했습니다. 우연 수준은 50%이며 낮은 능력의 과제도 대조군으로 보존합니다.'
     _write(reports/'FINAL_RESEARCH_REPORT.md',report)
     readme=f'# Native Neuron Conservation Pilot\n\n독립적으로 학습된 모델에서 원본 뉴런의 **활성 반응·의미 proxy·인과 역할**이 보존되는지를 검증합니다. [MASTER.md](MASTER.md)에 따른 연구이며, 결과는 각 단계의 실제 측정 파일에서 자동 생성됩니다.\n\n갱신: **{date}**. 정렬 평가 결과가 있는 단계: **{", ".join(completed) or "아직 없음"}**.\n\n## 실험 결과\n\n{summary}\n\n{limitations}\n\n'
     if 'competence' in figures:readme+='![Held-out competence](artifacts/figures/competence.svg)\n\n정답과 대비 답변의 전체 continuation likelihood를 비교한 D3 정확도입니다. 우연 수준은 50%입니다.\n\n'
     for e,s in stages.items():
-        if s['figures']:readme+=f'### {e} — {STAGES[e][0]}\n\n'+ '\n\n'.join(f'![{e} method comparison](artifacts/figures/{n}.svg)' for n in s['figures'])+f'\n\n[{e} 방법·원본 데이터·통계](reports/{e}_report.md)\n\n'
+        if s['figures']:readme+=f'### {e} — {STAGES[e][0]}\n\n'+_interpretation(e,s['metrics'])+'\n\n'+ '\n\n'.join(f'![{e} method comparison](artifacts/figures/{n}.svg)' for n in s['figures'])+f'\n\n[{e} 방법·원본 데이터·통계](reports/{e}_report.md)\n\n'
     if manifests:readme+='## 독립 초기화 모델 학습\n\n![E1 training](artifacts/figures/e1_training.svg)\n\n'+training+'\n\n학습 손실 감소는 과제 일반화나 뉴런 보존의 증거를 대신하지 않습니다.\n\n'
     readme+='''## 재현과 자료
 

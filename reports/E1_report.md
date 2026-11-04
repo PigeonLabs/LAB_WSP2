@@ -1,6 +1,6 @@
 # E1: Independent Seed Neuron Conservation
 
-갱신: 2026-11-04 10:58 KST. 상태: **실제 결과 파일 확보**. 가설 판단: **INCONCLUSIVE**.
+갱신: 2026-11-04 10:59 KST. 상태: **실제 결과 파일 확보**. 가설 판단: **INCONCLUSIVE**.
 
 연구 질문: 독립 초기화 모델의 기능 대응.
 
@@ -10,25 +10,25 @@
 - **untrained11_untrained29**: activation_minus_random Δ=0.135, Δ 95% CI [0.104, 0.173], q=0.0391. 양의 차이가 관찰됨; BH 보정 후 유의 기준 q<0.05 충족.
 학습 전 대조군에서도 대응이 나타나면 공유된 아키텍처·표면 패턴만으로 상관이 생길 수 있습니다. 학습 모델의 산술·부정 과제 능력이 약한 조건도 있으므로 H1의 일반적 기능 보존 주장은 판단을 보류합니다.
 
-| 모델 쌍 | 방법 | 독립 평가 평균 | 95% CI |
-|---|---|---:|---|
-| seed11_seed29 | Random | -0.077 | [-0.105, -0.058] |
-| seed11_seed29 | Activation | 0.289 | [0.234, 0.344] |
-| seed11_seed29 | Rank | 0.308 | [0.259, 0.356] |
-| seed11_seed29 | Semantic | 0.220 | [0.182, 0.261] |
-| seed11_seed29 | Sign-aware semantic | 0.215 | [0.196, 0.234] |
-| seed11_seed29 | Label-shuffled | 0.118 | [0.089, 0.143] |
-| seed11_seed29 | Weight (local) | -0.002 | [-0.031, 0.028] |
-| seed11_seed29 | Activation (partial) | 0.304 | [0.242, 0.361] |
-| seed11_seed29 | Activation (one-to-many) | 0.375 | [0.311, 0.436] |
-| untrained11_untrained29 | Random | -0.019 | [-0.041, 0.004] |
-| untrained11_untrained29 | Activation | 0.116 | [0.069, 0.163] |
-| untrained11_untrained29 | Rank | 0.098 | [0.070, 0.133] |
-| untrained11_untrained29 | Semantic | 0.083 | [0.068, 0.102] |
-| untrained11_untrained29 | Sign-aware semantic | -0.014 | [-0.046, 0.020] |
-| untrained11_untrained29 | Label-shuffled | -0.020 | [-0.044, 0.005] |
-| untrained11_untrained29 | Activation (partial) | 0.116 | [0.069, 0.163] |
-| untrained11_untrained29 | Activation (one-to-many) | 0.094 | [0.056, 0.131] |
+| 모델 쌍 | 방법 | 독립 평가 평균 | 95% CI | 후보 coverage |
+|---|---|---:|---|---:|
+| seed11_seed29 | Random | -0.077 | [-0.105, -0.058] | 1.000 |
+| seed11_seed29 | Activation | 0.289 | [0.234, 0.344] | 1.000 |
+| seed11_seed29 | Rank | 0.308 | [0.259, 0.356] | 1.000 |
+| seed11_seed29 | Semantic | 0.220 | [0.182, 0.261] | 1.000 |
+| seed11_seed29 | Sign-aware semantic | 0.215 | [0.196, 0.234] | 1.000 |
+| seed11_seed29 | Label-shuffled | 0.118 | [0.089, 0.143] | 1.000 |
+| seed11_seed29 | Weight (local) | -0.002 | [-0.031, 0.028] | 1.000 |
+| seed11_seed29 | Activation (partial) | 0.304 | [0.242, 0.361] | 0.953 |
+| seed11_seed29 | Activation (one-to-many) | 0.375 | [0.311, 0.436] | 1.000 |
+| untrained11_untrained29 | Random | -0.019 | [-0.041, 0.004] | 1.000 |
+| untrained11_untrained29 | Activation | 0.116 | [0.069, 0.163] | 1.000 |
+| untrained11_untrained29 | Rank | 0.098 | [0.070, 0.133] | 1.000 |
+| untrained11_untrained29 | Semantic | 0.083 | [0.068, 0.102] | 1.000 |
+| untrained11_untrained29 | Sign-aware semantic | -0.014 | [-0.046, 0.020] | 1.000 |
+| untrained11_untrained29 | Label-shuffled | -0.020 | [-0.044, 0.005] | 1.000 |
+| untrained11_untrained29 | Activation (partial) | 0.116 | [0.069, 0.163] | 1.000 |
+| untrained11_untrained29 | Activation (one-to-many) | 0.094 | [0.056, 0.131] | 1.000 |
 
 ## 대응 차이 검정
 

@@ -1,11 +1,11 @@
 # Executive Summary
 
-갱신: 2026-11-04 10:58 KST. 실행 완료와 가설 지지는 다른 판단입니다.
+갱신: 2026-11-04 10:59 KST. 실행 완료와 가설 지지는 다른 판단입니다.
 
 | Experiment | Hypothesis | Main Metric | Baseline | Proposed | Improvement | CI | Verdict |
 |---|---|---|---:|---:|---:|---|---|
 | E1 | 독립 초기화 모델의 기능 대응 | D3 response agreement | -0.077 | 0.289 | 0.366 | [0.296, 0.443] | INCONCLUSIVE |
-| E2 | 이종 Base 모델의 기능 대응 | D3 response agreement | 미측정 | 미측정 | 미측정 | 미측정 | INCONCLUSIVE |
+| E2 | 이종 Base 모델의 기능 대응 | D3 response agreement | 모델 쌍별 | 모델 쌍별 | 모델 쌍별 | 상세 표 참조 | INCONCLUSIVE |
 | E3 | 의미 정렬의 독립 입력 일반화 | D3 response agreement | 미측정 | 미측정 | 미측정 | 미측정 | INCONCLUSIVE |
 | E4 | 독립 인과 효과 일치 | D4 causal effect agreement | 미측정 | 미측정 | 미측정 | 미측정 | INCONCLUSIVE |
 

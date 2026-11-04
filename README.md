@@ -2,14 +2,14 @@
 
 독립적으로 학습된 모델에서 원본 뉴런의 **활성 반응·의미 proxy·인과 역할**이 보존되는지를 검증합니다. [MASTER.md](MASTER.md)에 따른 연구이며, 결과는 각 단계의 실제 측정 파일에서 자동 생성됩니다.
 
-갱신: **2026-11-04 10:58 KST**. 정렬 평가 결과가 있는 단계: **E1**.
+갱신: **2026-11-04 10:59 KST**. 정렬 평가 결과가 있는 단계: **E1, E2**.
 
 ## 실험 결과
 
 | Experiment | Hypothesis | Main Metric | Baseline | Proposed | Improvement | CI | Verdict |
 |---|---|---|---:|---:|---:|---|---|
 | E1 | 독립 초기화 모델의 기능 대응 | D3 response agreement | -0.077 | 0.289 | 0.366 | [0.296, 0.443] | INCONCLUSIVE |
-| E2 | 이종 Base 모델의 기능 대응 | D3 response agreement | 미측정 | 미측정 | 미측정 | 미측정 | INCONCLUSIVE |
+| E2 | 이종 Base 모델의 기능 대응 | D3 response agreement | 모델 쌍별 | 모델 쌍별 | 모델 쌍별 | 상세 표 참조 | INCONCLUSIVE |
 | E3 | 의미 정렬의 독립 입력 일반화 | D3 response agreement | 미측정 | 미측정 | 미측정 | 미측정 | INCONCLUSIVE |
 | E4 | 독립 인과 효과 일치 | D4 causal effect agreement | 미측정 | 미측정 | 미측정 | 미측정 | INCONCLUSIVE |
 
@@ -21,11 +21,28 @@
 
 ### E1 — Independent Seed Neuron Conservation
 
+- **seed11_seed29**: activation_minus_random Δ=0.366, Δ 95% CI [0.296, 0.443], q=0.0521. 양의 차이가 관찰됨; BH 보정 후 유의 기준 q<0.05 미충족.
+- **untrained11_untrained29**: activation_minus_random Δ=0.135, Δ 95% CI [0.104, 0.173], q=0.0391. 양의 차이가 관찰됨; BH 보정 후 유의 기준 q<0.05 충족.
+학습 전 대조군에서도 대응이 나타나면 공유된 아키텍처·표면 패턴만으로 상관이 생길 수 있습니다. 학습 모델의 산술·부정 과제 능력이 약한 조건도 있으므로 H1의 일반적 기능 보존 주장은 판단을 보류합니다.
+
 ![E1 method comparison](artifacts/figures/e1_methods.svg)
 
 ![E1 method comparison](artifacts/figures/e1_seed_heatmap.svg)
 
 [E1 방법·원본 데이터·통계](reports/E1_report.md)
+
+### E2 — Cross-Family Neuron Conservation
+
+- **qwen_olmo**: activation_minus_random Δ=0.118, Δ 95% CI [0.062, 0.172], q=0.0781. 양의 차이가 관찰됨; BH 보정 후 유의 기준 q<0.05 미충족.
+- **qwen_smol**: activation_minus_random Δ=0.196, Δ 95% CI [0.143, 0.272], q=0.0312. 양의 차이가 관찰됨; BH 보정 후 유의 기준 q<0.05 충족.
+- **smol_olmo**: activation_minus_random Δ=0.059, Δ 95% CI [0.010, 0.108], q=0.2344. 양의 차이가 관찰됨; BH 보정 후 유의 기준 q<0.05 미충족.
+모델 쌍별 능력 차이와 같은 yes/no 답변 공간의 영향을 분리해야 합니다. 반응 상관만으로 이종 모델의 동일 의미 기능을 확정하지 않습니다.
+
+![E2 method comparison](artifacts/figures/e2_methods.svg)
+
+![E2 method comparison](artifacts/figures/e2_layers.svg)
+
+[E2 방법·원본 데이터·통계](reports/E2_report.md)
 
 ## 독립 초기화 모델 학습
 
