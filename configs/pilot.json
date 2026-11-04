@@ -1,0 +1,17 @@
+{
+  "version": "pilot-v1",
+  "seed": 1729,
+  "data_counts": {"train": 1536, "D1": 128, "D2": 128, "D3": 128, "D4": 128},
+  "training": {
+    "model": {"vocab_size": 258, "dim": 512, "hidden_dim": 1536, "layers": 6, "heads": 8, "max_seq_len": 256},
+    "seeds": [11, 29], "steps": 1200, "batch_size": 64,
+    "lr": 0.0003, "max_seconds_per_seed": 1800
+  },
+  "neurons_per_layer": 16,
+  "causal_neurons_per_layer": 4,
+  "depths": [0.2, 0.4, 0.6, 0.8],
+  "gpu_hours_limit": 8,
+  "additional_disk_gb_limit": 60,
+  "inference_precision": "float32 for small causal effects; BF16 for training",
+  "status": "Frozen before any D3 or D4 observations. Engine settings are also recorded with each stage."
+}

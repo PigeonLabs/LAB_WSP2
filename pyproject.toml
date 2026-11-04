@@ -1,0 +1,9 @@
+[project]
+name = "native-neuron-conservation-pilot"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["torch>=2.6", "transformers>=5.0", "numpy>=2", "scipy>=1.13", "pandas>=2", "pyarrow>=15", "matplotlib>=3.8", "huggingface-hub>=0.30", "pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

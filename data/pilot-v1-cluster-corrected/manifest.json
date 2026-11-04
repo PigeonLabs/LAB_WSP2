@@ -1,0 +1,133 @@
+{
+  "version": "controlled-truth-v1",
+  "splits": {
+    "train": {
+      "n": 6144,
+      "sha256": "0c460bed9ea42abedd6b85af4de4a5ab80ce8cecf63013c206880294c4f56c5b",
+      "clusters": 6,
+      "counts": {
+        "arithmetic": {
+          "0": 768,
+          "1": 768
+        },
+        "comparison": {
+          "0": 768,
+          "1": 768
+        },
+        "negation": {
+          "0": 768,
+          "1": 768
+        },
+        "syntax": {
+          "0": 768,
+          "1": 768
+        }
+      }
+    },
+    "D1": {
+      "n": 512,
+      "sha256": "10dc705a8d5aedef58325494d52f3cc80266c1ff24892f0b2e364bf488af8cd9",
+      "clusters": 6,
+      "counts": {
+        "arithmetic": {
+          "0": 64,
+          "1": 64
+        },
+        "comparison": {
+          "0": 64,
+          "1": 64
+        },
+        "negation": {
+          "0": 64,
+          "1": 64
+        },
+        "syntax": {
+          "0": 64,
+          "1": 64
+        }
+      }
+    },
+    "D2": {
+      "n": 512,
+      "sha256": "a983e6834efedca4cdb2cca79d3ec40ac580ad24278d7eead5925989a1cdf712",
+      "clusters": 6,
+      "counts": {
+        "arithmetic": {
+          "0": 64,
+          "1": 64
+        },
+        "comparison": {
+          "0": 64,
+          "1": 64
+        },
+        "negation": {
+          "0": 64,
+          "1": 64
+        },
+        "syntax": {
+          "0": 64,
+          "1": 64
+        }
+      }
+    },
+    "D3": {
+      "n": 512,
+      "sha256": "3886f3d1561d8e46291d6776c37ed584b90941edc755345d5da98b3499beefb9",
+      "clusters": 6,
+      "counts": {
+        "arithmetic": {
+          "0": 64,
+          "1": 64
+        },
+        "comparison": {
+          "0": 64,
+          "1": 64
+        },
+        "negation": {
+          "0": 64,
+          "1": 64
+        },
+        "syntax": {
+          "0": 64,
+          "1": 64
+        }
+      }
+    },
+    "D4": {
+      "n": 512,
+      "sha256": "65b15ea7f00a4c0c85fc91e395ddc255d866280b2f499d973e2763f23317c1fd",
+      "clusters": 6,
+      "counts": {
+        "arithmetic": {
+          "0": 64,
+          "1": 64
+        },
+        "comparison": {
+          "0": 64,
+          "1": 64
+        },
+        "negation": {
+          "0": 64,
+          "1": 64
+        },
+        "syntax": {
+          "0": 64,
+          "1": 64
+        }
+      }
+    }
+  },
+  "cross_split_leakage": false,
+  "template_disjoint": true,
+  "unordered_operand_tuple_disjoint": true,
+  "grouping_scheme": "shared-wrapper-across-concepts-v2",
+  "limitations": [
+    "Synthetic task probes; natural-language atlas requires a separate corpus.",
+    "Six shared wrapper clusters per split, not 24 independent concept-wrapper clusters; intervals are exploratory.",
+    "Truth contrast is not evidence of a uniquely monosemantic neuron.",
+    "Negation assumes the stated property fact and uses synthetic entity/property names.",
+    "Negation can be solved by property-token equality; adjacent numeric property names provide a shortcut.",
+    "Invalid syntax examples have unequal opening/closing counts; bracket counting is a shortcut.",
+    "Held-out wrapper wording changes but underlying semantic task grammar is shared."
+  ]
+}

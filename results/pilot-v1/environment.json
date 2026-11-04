@@ -1,0 +1,29 @@
+{
+  "timestamp_kst": "2026-11-04T10:53:20.041587+09:00",
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-146-generic-x86_64-with-glibc2.39",
+  "packages": {
+    "torch": "2.15.0",
+    "transformers": "5.21.0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pandas": "3.1.0",
+    "pyarrow": "26.0.0",
+    "matplotlib": "3.11.2",
+    "pytest": "9.2.0",
+    "huggingface-hub": "2.3.0"
+  },
+  "cuda": "13.2",
+  "cuda_available": true,
+  "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+  "gpu_total_bytes": 101936136192,
+  "nvidia_smi": "Wed Nov  4 10:53:20 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 580.178.04             Driver Version: 580.178.04     CUDA Version: 13.0     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA RTX PRO 6000 Blac...    Off |   00000000:0B:00.0 Off |                  Off |\n| 30%   48C    P8             19W /  300W |    3628MiB /  97887MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A            2693      G   /usr/lib/xorg/Xorg                     1864MiB |\n|    0   N/A  N/A            2887      G   /usr/bin/gnome-shell                    504MiB |\n|    0   N/A  N/A            3617      G   ...rack-uuid=3190708988185955192        201MiB |\n|    0   N/A  N/A            4198      G   .../9036/usr/lib/firefox/firefox        315MiB |\n|    0   N/A  N/A            5188      G   ...rack-uuid=3190708988185955192        262MiB |\n|    0   N/A  N/A            5305      G   ...88185955192 --disable-logging        174MiB |\n|    0   N/A  N/A            5405      G   /usr/bin/nautilus                        82MiB |\n|    0   N/A  N/A          458441      G   /usr/bin/gnome-control-center            32MiB |\n+-----------------------------------------------------------------------------------------+\n",
+  "disk": {
+    "total": 983349346304,
+    "used": 481172402176,
+    "free": 452150013952
+  },
+  "git_commit_at_start": "bdd9032145f42b3c02beb5bd524491edac1b666a",
+  "environment_note": "Project venv borrows installed packages read-only via .pth; local scipy/numpy installed. No global package/driver changes.",
+  "sandbox_probe": "nvidia-smi and outbound DNS fail in sandbox; approved execution exposes GPU/network normally."
+}

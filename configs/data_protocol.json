@@ -1,0 +1,22 @@
+{
+  "version": "controlled-truth-v1",
+  "seed": 1729,
+  "default_per_concept_per_split": 64,
+  "concepts": ["arithmetic", "comparison", "negation", "syntax"],
+  "splits": {"train": "E1 training only", "D1": "candidate discovery only", "D2": "alignment and calibration only", "D3": "final noncausal evaluation only", "D4": "final causal evaluation only"},
+  "positive_negative_definition": "Truth label within each concept; this is distinct from concept membership",
+  "matched_controls": "Each content tuple has one true and one false claim sharing concept and wrapper template",
+  "split_control": "No identical prompt, complete wrapper template, unordered numeric operand pair, negation entity-property pair, or valid bracket string across splits",
+  "number_domain": "All splits sample without replacement from the same 0..63 operand domain",
+  "templates": "Six held-out wrapper templates per concept per split; semantic sentence grammar is shared",
+  "answer_scoring": "Teacher-forced full continuation likelihood for ' yes' versus ' no'; use identical textual candidates across tokenizers",
+  "alignment_position": "Character span boundaries in each prompt and final prompt-token position; never compare token IDs across models",
+  "statistical_unit": "Shared wrapper template across all concepts: 6 clusters per split; paired comparisons keep matched prompts and all concepts together",
+  "grouping_scheme": "shared-wrapper-across-concepts-v2",
+  "grouping_correction": "Before results, replaced concept x wrapper grouping with wrapper-only grouping to avoid pseudoreplication; prompts, answers, seeds and split memberships unchanged",
+  "confidence_interval": "95% equal-cluster-weighted percentile bootstrap, exploratory with few semantically distinct task grammars",
+  "randomization": "Paired method-label swaps/sign flips at cluster level; exact for <=16 clusters, Monte Carlo +1 correction otherwise",
+  "multiple_comparisons": "Benjamini-Hochberg adjusted p-values for neuron-level families",
+  "licensing": "Generated synthetic text and code are project-authored; no external corpus copied",
+  "limitations": ["Synthetic entity/property names in negation are not natural language semantics", "Negation is solvable by property equality and uses adjacent numeric property names", "Invalid syntax replaces a closing bracket with an opening bracket, allowing a count-only shortcut", "Six shared wrappers do not imply six independent semantic grammars", "Arithmetic false claims differ by one, allowing modular/parity shortcuts", "Comparison changes the greater/less relation token within each pair", "Natural-language top-activation atlas requires separately sourced licensed text", "Truth contrast alone is not a test of monosemanticity", "D3/D4 results must never change candidates, thresholds, method weights, or dataset version in-place"]
+}

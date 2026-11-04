@@ -1,0 +1,147 @@
+{
+  "signature": "c365188a374cc36015d8bd1dec86a015faa20e0fc04951627d89b197ff4a0080",
+  "model_info": {
+    "id": "seed29",
+    "checkpoint": "results/pilot-v1/training/seed_29/final.pt",
+    "sha256": "b435867670e51c2014c18a2344e44f71dbab1b0f83907244eb9c1a4f012bd0b9"
+  },
+  "selection": {
+    "1": [
+      299,
+      1455,
+      622,
+      754,
+      150,
+      815,
+      141,
+      1201,
+      1016,
+      1270,
+      1085,
+      1176,
+      391,
+      1460,
+      194,
+      1269
+    ],
+    "2": [
+      1073,
+      607,
+      199,
+      928,
+      145,
+      874,
+      1050,
+      1360,
+      1513,
+      765,
+      953,
+      100,
+      920,
+      515,
+      518,
+      1125
+    ],
+    "3": [
+      804,
+      293,
+      1056,
+      850,
+      1260,
+      1028,
+      969,
+      181,
+      1021,
+      1175,
+      1433,
+      1422,
+      1195,
+      769,
+      1492,
+      89
+    ],
+    "4": [
+      743,
+      1042,
+      798,
+      164,
+      802,
+      290,
+      549,
+      1301,
+      265,
+      168,
+      194,
+      1192,
+      1421,
+      856,
+      1025,
+      534
+    ]
+  },
+  "competence": {
+    "D1": {
+      "arithmetic": {
+        "accuracy": 0.5078125,
+        "n": 128
+      },
+      "comparison": {
+        "accuracy": 0.6953125,
+        "n": 128
+      },
+      "negation": {
+        "accuracy": 0.5546875,
+        "n": 128
+      },
+      "syntax": {
+        "accuracy": 1.0,
+        "n": 128
+      }
+    },
+    "D2": {
+      "arithmetic": {
+        "accuracy": 0.484375,
+        "n": 128
+      },
+      "comparison": {
+        "accuracy": 0.640625,
+        "n": 128
+      },
+      "negation": {
+        "accuracy": 0.5390625,
+        "n": 128
+      },
+      "syntax": {
+        "accuracy": 1.0,
+        "n": 128
+      }
+    },
+    "D3": {
+      "arithmetic": {
+        "accuracy": 0.5078125,
+        "n": 128
+      },
+      "comparison": {
+        "accuracy": 0.6796875,
+        "n": 128
+      },
+      "negation": {
+        "accuracy": 0.4921875,
+        "n": 128
+      },
+      "syntax": {
+        "accuracy": 0.9140625,
+        "n": 128
+      }
+    }
+  },
+  "elapsed_seconds": 1.8643999499909114,
+  "num_candidates": 64,
+  "splits": {
+    "D1": 512,
+    "D2": 512,
+    "D3": 512
+  },
+  "position": "last shared-context token before correct/foil divergence; common answer prefix included; same text, model-specific tokenization",
+  "device": "cuda"
+}

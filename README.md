@@ -1,25 +1,59 @@
 # Native Neuron Conservation Pilot
 
-MASTER.md 기반 E1–E4 실험 진행 중입니다.
+독립적으로 학습된 모델에서 원본 뉴런의 **활성 반응·의미 proxy·인과 역할**이 보존되는지를 검증합니다. [MASTER.md](MASTER.md)에 따른 연구이며, 결과는 각 단계의 실제 측정 파일에서 자동 생성됩니다.
 
-- E1: 독립 초기화 모델의 뉴런 대응
-- E2: 이종 Base 모델 간 대응
-- E3: 의미 기반 정렬 비교
-- E4: 독립 테스트에서 인과 효과 비교
+갱신: **2026-11-04 10:58 KST**. 정렬 평가 결과가 있는 단계: **E1**.
 
-## 환경 점검 — 2026-11-04 KST
+## 실험 결과
 
-실제 측정: NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, VRAM 97,887 MiB, PyTorch 2.14.1+cu130 / CUDA 13.0. CUDA 접근 확인. 시작 시 GPU 사용률 0%, 기존 데스크톱 프로세스 VRAM 약 3.6 GiB. 외장 작업 디스크 여유 약 427 GiB.
+| Experiment | Hypothesis | Main Metric | Baseline | Proposed | Improvement | CI | Verdict |
+|---|---|---|---:|---:|---:|---|---|
+| E1 | 독립 초기화 모델의 기능 대응 | D3 response agreement | -0.077 | 0.289 | 0.366 | [0.296, 0.443] | INCONCLUSIVE |
+| E2 | 이종 Base 모델의 기능 대응 | D3 response agreement | 미측정 | 미측정 | 미측정 | 미측정 | INCONCLUSIVE |
+| E3 | 의미 정렬의 독립 입력 일반화 | D3 response agreement | 미측정 | 미측정 | 미측정 | 미측정 | INCONCLUSIVE |
+| E4 | 독립 인과 효과 일치 | D4 causal effect agreement | 미측정 | 미측정 | 미측정 | 미측정 | INCONCLUSIVE |
 
-샌드박스에서는 GPU가 보이지 않아 실패했으나, 승인된 실행 환경에서 정상 접근을 확인했습니다. 실험은 준비 중이며 아직 가설에 대한 결과는 없습니다.
+이 연구는 제한된 합성 참·거짓 과제의 파일럿입니다. 학습·탐색·정렬·독립 반응 평가·독립 인과 평가를 분리했지만 의미 문법은 공유합니다. 여섯 wrapper 군집의 부트스트랩 신뢰구간과 무작위화 검정은 탐색적입니다. 뉴런 개수를 독립 표본 수로 사용하지 않습니다. 모델의 과제 능력이 낮으면 대응 실패를 기능 보존의 기각으로 해석하지 않습니다. 활성값 유사성·의미 설명·인과 효과 일치를 구분하며, 긍정적 결과도 뉴런 복사나 모델 병합의 안전성을 보장하지 않습니다.
 
-```mermaid
-flowchart LR
-    A[환경·문헌·사전 설계] --> B[E1 독립 시드]
-    B --> C[E2 이종 모델]
-    C --> D[E3 의미 정렬]
-    D --> E[E4 인과 정렬]
-    E --> F[검증·최종 보고서]
+![Held-out competence](artifacts/figures/competence.svg)
+
+정답과 대비 답변의 전체 continuation likelihood를 비교한 D3 정확도입니다. 우연 수준은 50%입니다.
+
+### E1 — Independent Seed Neuron Conservation
+
+![E1 method comparison](artifacts/figures/e1_methods.svg)
+
+![E1 method comparison](artifacts/figures/e1_seed_heatmap.svg)
+
+[E1 방법·원본 데이터·통계](reports/E1_report.md)
+
+## 독립 초기화 모델 학습
+
+![E1 training](artifacts/figures/e1_training.svg)
+
+- Seed 11: 20,718,080 parameters, 1,200 steps, 32.1 s; 초기 SHA256 `1f145274bd40588b758ecf438de08824cb31b05060e919d843cdb1b8989d64c5`.
+- Seed 29: 20,718,080 parameters, 1,200 steps, 24.9 s; 초기 SHA256 `0a284644080f81bc07f6965bbaa3016716092bf1b763e62d1665a0f22b9b4a5a`.
+
+학습 손실 감소는 과제 일반화나 뉴런 보존의 증거를 대신하지 않습니다.
+
+## 재현과 자료
+
+```bash
+make smoke
+make e1
+make e2
+make e3
+make e4
+make pilot
+make report
 ```
 
-각 단계의 실제 결과·통계·시각자료를 완료 시 자동 커밋합니다. 미측정 값은 성공으로 간주하지 않습니다.
+- [최종 연구 보고서](reports/FINAL_RESEARCH_REPORT.md)
+- [Executive summary](reports/EXECUTIVE_SUMMARY.md)
+- [비판적 검토](reports/RESEARCH_CRITIQUE.md)
+- [다음 실험](reports/NEXT_EXPERIMENTS.md)
+- [문헌 검토](literature_review.md)
+- [데이터 설계 한계](reports/DATA_DESIGN_LIMITATIONS.md)
+- [실험 코드](src/experiment.py) · [보고서 생성 코드](src/reporting.py)
+
+각 그림 옆 JSON은 실제 그림 값과 원본 파일 경로를 보존합니다. 모델 가중치와 캐시는 저장소에 업로드하지 않고, 정확한 revision과 데이터·체크포인트 해시로 추적합니다. 유료 외부 API는 사용하지 않습니다.
