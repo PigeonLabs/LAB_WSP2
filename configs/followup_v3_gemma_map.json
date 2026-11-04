@@ -1,0 +1,283 @@
+{
+  "schema_version": 1,
+  "study_id": "followup-v3-gemma-map",
+  "status": "DESIGNED_NOT_RUN",
+  "date": "2026-11-04",
+  "protocol": "reports/followup-v3-gemma-map/DESIGN.md",
+  "reference_commit": "c2dfd9e7a54c745824ffe2472ab15040ffb8048f",
+  "wsp2_completed_commit": "e0644b14dbdf095240e6bea3997c657e4ad55a90",
+  "freeze": {
+    "status": "PENDING_PREFLIGHT",
+    "required_before_test": [
+      "verified model/tokenizer/engine hashes",
+      "family lineage and split manifest",
+      "oracle/parser validation",
+      "capability eligible cells",
+      "candidate IDs and native target panel",
+      "matched feature panel and fidelity if H3 applicable",
+      "F-fitted maps and hyperparameters",
+      "test-blind power and runtime checks",
+      "immutable code/config/source hashes"
+    ],
+    "test_opened": false
+  },
+  "models": {
+    "gemma_original_gguf_sha256": "740185b21d22ceb83a11c3aa62ad5842ef32c70f6096d756bbee85a1e4ec34b8",
+    "verified_model_path": null,
+    "verified_engine_sha256": null,
+    "primary_target": "Qwen/Qwen3-0.6B-Base",
+    "target_revision": null,
+    "secondary_candidates": [
+      "HuggingFaceTB/SmolLM2-360M",
+      "allenai/OLMo-2-0425-1B"
+    ],
+    "primary_direction": "Gemma_to_Qwen",
+    "original_transcoder_weights_available": null,
+    "original_transcoder_availability": "NOT_FOUND_IN_REVIEWED_PUBLIC_TREE"
+  },
+  "data": {
+    "families": {
+      "engineering": 32,
+      "readiness": 64,
+      "discovery": 96,
+      "fit": 96,
+      "test": 320,
+      "ood": 96
+    },
+    "fit_partition": {
+      "train": 64,
+      "validation": 32
+    },
+    "full_variants_per_family": 16,
+    "causal_variants_per_family": 8,
+    "canonical_completions": 2,
+    "concepts": [
+      "negation",
+      "ownership_coreference",
+      "temporal_order",
+      "numeric_comparison"
+    ],
+    "languages": [
+      "ko",
+      "en"
+    ],
+    "factors": {
+      "semantic_state": 2,
+      "lexical": 2,
+      "answer_code": 2,
+      "language": 2
+    },
+    "resample_unit": "source/template lineage component; all variants stay together",
+    "reuse_v2_test": false,
+    "external_map_use": "discovery_only",
+    "readiness_prompt_tuning": false
+  },
+  "selection": {
+    "seed": 20261104,
+    "gemma_layers_zero_based": [
+      5,
+      27
+    ],
+    "candidates_per_layer": 64,
+    "uniform_candidates": 32,
+    "activity_stratified_candidates": 32,
+    "source_units_per_layer": 4,
+    "target_units_per_layer": 8,
+    "primary_matching": "partial",
+    "random_maps": 100,
+    "one_to_many_cap_secondary": 4,
+    "causal_lambda_grid": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ]
+  },
+  "capability_gate": {
+    "split": "readiness",
+    "accuracy_min": 0.75,
+    "family_ci_lower_must_exceed": 0.5,
+    "shared_raw_prompt": true,
+    "test_reselection": false
+  },
+  "causal": {
+    "primary_mode": "paired_counterfactual_patch",
+    "primary_location": "last_prompt_token",
+    "mandatory_fit_diagnostics": [
+      "zero",
+      "conditional_mean",
+      "same_state_lexical_patch",
+      "no_op"
+    ],
+    "secondary": [
+      "span",
+      "group4",
+      "dose_response",
+      "zero_test",
+      "mean_test",
+      "reverse_mapping"
+    ],
+    "effect": "full_continuation_logp_do_minus_logp_baseline; center across canonical completions; no truth sign",
+    "strata": [
+      "semantic_truth_state",
+      "answer_code",
+      "language",
+      "concept"
+    ],
+    "score": "regularized_within_stratum_effect_correlation",
+    "epsilon_sd_fraction": 0.05,
+    "epsilon_nats_floor": 1e-06,
+    "unmatched_constant_score": 0,
+    "numerical_failure": "BLOCK_CLAIM",
+    "context_count_fit_and_test_core": 79872,
+    "continuation_scores_core": 159744
+  },
+  "transcoder": {
+    "status": "CONDITIONAL_DEPENDENCY_AND_BUDGET",
+    "layers": [
+      5,
+      27
+    ],
+    "diagnostic_layer": 15,
+    "width": 16384,
+    "top_k": 32,
+    "seeds": [
+      101,
+      211,
+      307
+    ],
+    "training_token_target_per_seed": 2000000,
+    "units_per_layer_per_kind": 64,
+    "min_common_support_pairs_per_layer": 32,
+    "operation": "add (coefficient_target-current)*decoder_in_raw_units; retain skip and reconstruction residual",
+    "native_decoder": "W_down column",
+    "feature_decoder": "s_y * D row",
+    "activity_definition": "abs(a-D_conditional_median)>max(1.4826*MAD,1e-6)",
+    "quantiles": [
+      0.1,
+      0.5,
+      0.9
+    ],
+    "gate_proposed": {
+      "kl_recovery_min": 0.9,
+      "kl_zero_floor_nats_per_token": 0.0001,
+      "fvu_max": 0.2,
+      "dead_fraction_max": 0.1,
+      "accuracy_drop_max": 0.02
+    },
+    "prediction_ridge_grid": [
+      0.01,
+      0.1,
+      1,
+      10,
+      100
+    ],
+    "null_mse_floor": 1e-08,
+    "original_feature_ids_reusable": false
+  },
+  "steering": {
+    "primary_language": "ko",
+    "registers": [
+      "haeyo",
+      "hasipsio"
+    ],
+    "arms": [
+      "unchanged",
+      "prompt_only",
+      "intervention_only",
+      "prompt_plus_intervention",
+      "matched_random"
+    ],
+    "dose_grid": [
+      0,
+      0.25,
+      0.5,
+      1
+    ],
+    "fallback": "prompt_only_plus_zero_intervention",
+    "primary_decode": "greedy",
+    "secondary_sample_seeds": [
+      20261104,
+      20261105
+    ],
+    "joint_success": [
+      "target_register",
+      "all_fact_slots",
+      "no_new_contradiction",
+      "valid_output"
+    ],
+    "practical_gain_min": 0.05,
+    "semantic_noninferiority_margin": 0.02,
+    "fluency_noninferiority_margin": 0.02,
+    "human_verified": false
+  },
+  "statistics": {
+    "confirmatory_claims": [
+      "H1_semantic_minus_activation_causal_agreement",
+      "H2_combined_minus_activation_causal_agreement",
+      "H3_feature_minus_native_causal_prediction_skill",
+      "H4_joint_utility_and_semantic_fluency_retention"
+    ],
+    "multiplicity": "Holm FWER",
+    "alpha": 0.05,
+    "family_size": 4,
+    "h4_composite_p": "max(gain_p, semantic_NI_p, fluency_NI_p)",
+    "blocked_placeholder_p": 1,
+    "bootstrap_replicates": 10000,
+    "bootstrap": "concept-stratified source-family, joint across all arms; recompute score",
+    "test_method": "null-centered cluster bootstrap; asymptotic not exact randomization",
+    "power_target": 0.8,
+    "planning_alpha": 0.0125,
+    "minimum_independent_test_lineages_per_concept": 40,
+    "h1_h2_mde": 0.05,
+    "h3_mde_absolute": 0.05,
+    "claim_population": "fixed models and selected units; new source-family population"
+  },
+  "resources": {
+    "inference_executed_this_turn": false,
+    "incremental_model_wall_hours_cap": 5,
+    "test_open_cost_fraction_max": 0.8,
+    "incremental_disk_target_gb": 12,
+    "master_total_gpu_hours_target": 8,
+    "master_total_added_disk_gb_target": 60,
+    "paid_apis": false,
+    "stages_hours": {
+      "G0_G1": 0.5,
+      "G2_G3": 2,
+      "G4": 1.25,
+      "G5": 0.75,
+      "reserve": 0.5
+    }
+  },
+  "stages": {
+    "G0": {
+      "status": "DESIGNED",
+      "measured": false
+    },
+    "G1": {
+      "status": "DESIGNED",
+      "measured": false
+    },
+    "G2": {
+      "status": "DESIGNED",
+      "measured": false
+    },
+    "G3": {
+      "status": "DESIGNED",
+      "measured": false
+    },
+    "G4": {
+      "status": "DESIGNED",
+      "measured": false
+    },
+    "G5": {
+      "status": "DESIGNED",
+      "measured": false
+    },
+    "G6": {
+      "status": "DESIGNED",
+      "measured": false
+    }
+  }
+}
