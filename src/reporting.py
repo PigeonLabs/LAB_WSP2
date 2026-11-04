@@ -186,10 +186,12 @@ def _structure_figures(root,out,plt,stages):
         arr=np.array([[p['results'].get(m,{}).get('mean',np.nan) for m in methods] for p in pairs])
         fig,ax=plt.subplots(figsize=(10,3.5),layout='constrained')
         im=ax.imshow(arr,cmap='RdBu_r',vmin=-1,vmax=1,aspect='auto')
-        ax.set_xticks(range(len(methods)),[METHODS[m].replace(' ','\n') for m in methods]);ax.set_yticks(range(len(pairs)),[p['pair'] for p in pairs]);ax.set_title('E1: trained and untrained control correspondence')
+        labels=[METHODS[m].replace(' ','\n').replace('Label-shuffled','Label-\nshuffled') for m in methods]
+        ax.set_xticks(range(len(methods)),labels);ax.set_yticks(range(len(pairs)),[p['pair'] for p in pairs]);ax.set_title('E1: trained and untrained control correspondence')
         for i in range(len(pairs)):
             for j in range(len(methods)):
                 if np.isfinite(arr[i,j]):ax.text(j,i,f'{arr[i,j]:.3f}',ha='center',va='center',color='white' if abs(arr[i,j])>.65 else '#26323D')
+                else:ax.text(j,i,'N/A',ha='center',va='center',color='#7B858E')
         fig.colorbar(im,ax=ax,label='D3 within-wrapper Pearson',shrink=.8)
         rows=[{'pair':p['pair'],'method':m,'mean':float(arr[i,j])} for i,p in enumerate(pairs) for j,m in enumerate(methods) if np.isfinite(arr[i,j])]
         made.append(_save(fig,out,'e1_seed_heatmap',rows,e1['source_paths']));stages['E1']['figures'].append('e1_seed_heatmap')
