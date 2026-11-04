@@ -1,0 +1,128 @@
+{
+  "signature": "6083f64075104ee26f413d279351956bd4f1585da5f5f71ecc5159bb3c6602cc",
+  "plan": {
+    "version": "followup-measurement-v2",
+    "model_info": {
+      "id": "smol",
+      "family": "public_pretrained",
+      "model_id": "HuggingFaceTB/SmolLM2-360M",
+      "revision": "f8027fd0eaeea54caa13c31d31b9fdc459c38b49",
+      "license": "apache-2.0",
+      "model_type": "llama",
+      "cached_file_manifest_sha256": "72111eda12d08d2177fee43649de901a91a7370b583b7fb1129cb9286828ff09"
+    },
+    "records_sha256": "44651b2c02ceb359bb11d2cd4804051d9792c53bb69a576dfe513941679fc37e",
+    "selection": {
+      "6": [
+        705,
+        1483,
+        1587,
+        1295,
+        78,
+        430,
+        1961,
+        913
+      ],
+      "12": [
+        1596,
+        820,
+        420,
+        701,
+        1331,
+        2079,
+        1474,
+        1226
+      ],
+      "19": [
+        1105,
+        1735,
+        836,
+        1774,
+        384,
+        1470,
+        2345,
+        367
+      ],
+      "25": [
+        1868,
+        77,
+        1324,
+        1154,
+        413,
+        933,
+        136,
+        1529
+      ]
+    },
+    "per_layer": 8,
+    "split": "D4",
+    "precision": "float32",
+    "boundary": "before answer divergence after common answer prefix",
+    "span": "mean over character-overlapping statement tokens"
+  },
+  "selection": {
+    "6": [
+      705,
+      1483,
+      1587,
+      1295,
+      78,
+      430,
+      1961,
+      913
+    ],
+    "12": [
+      1596,
+      820,
+      420,
+      701,
+      1331,
+      2079,
+      1474,
+      1226
+    ],
+    "19": [
+      1105,
+      1735,
+      836,
+      1774,
+      384,
+      1470,
+      2345,
+      367
+    ],
+    "25": [
+      1868,
+      77,
+      1324,
+      1154,
+      413,
+      933,
+      136,
+      1529
+    ]
+  },
+  "n": 768,
+  "neurons": 32,
+  "competence": {
+    "arithmetic": {
+      "n": 192,
+      "accuracy": 0.4947916666666667
+    },
+    "comparison": {
+      "n": 192,
+      "accuracy": 0.5104166666666666
+    },
+    "negation": {
+      "n": 192,
+      "accuracy": 0.5104166666666666
+    },
+    "syntax": {
+      "n": 192,
+      "accuracy": 0.5
+    }
+  },
+  "elapsed_seconds": 2.1148275269952137,
+  "device": "cuda",
+  "measurements_sha256": "5b64cf7bb6a599ea472af57d483aa7415a81bbe91a5cc721a79308482e42eae5"
+}

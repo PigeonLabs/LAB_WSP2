@@ -1,0 +1,4238 @@
+{
+  "status": "SUPPLEMENTARY_ANSWER_BIAS_DIAGNOSTIC",
+  "locations": {
+    "answer": {
+      "truth_oriented": {
+        "wrapper_scores": {
+          "semantic": {
+            "D4:wrapper:t00": 0.04490682551017383,
+            "D4:wrapper:t01": -0.012168747956175147,
+            "D4:wrapper:t02": 0.1900419267164791,
+            "D4:wrapper:t03": -0.12524072243763837,
+            "D4:wrapper:t04": 0.05168959142874813,
+            "D4:wrapper:t05": -0.23484923566465568,
+            "D4:wrapper:t06": -0.08793972567434473,
+            "D4:wrapper:t07": -0.13834923826867748,
+            "D4:wrapper:t08": -0.1049035853865028,
+            "D4:wrapper:t09": -0.0721274723539241,
+            "D4:wrapper:t10": -0.05877574195825572,
+            "D4:wrapper:t11": 0.015676861306489383,
+            "D4:wrapper:t12": 0.07208842727596478,
+            "D4:wrapper:t13": -0.03779487782302014,
+            "D4:wrapper:t14": 0.06120775915743295,
+            "D4:wrapper:t15": -0.0846206944802157,
+            "D4:wrapper:t16": -0.2615621531352442,
+            "D4:wrapper:t17": -0.24620468776370194,
+            "D4:wrapper:t18": -0.030155512404379067,
+            "D4:wrapper:t19": 0.0016199464742988612,
+            "D4:wrapper:t20": 0.129117454250731,
+            "D4:wrapper:t21": 0.005722474346800825,
+            "D4:wrapper:t22": -0.09920503411164755,
+            "D4:wrapper:t23": 0.02035599350173684
+          },
+          "causal": {
+            "D4:wrapper:t00": 0.0315338052070478,
+            "D4:wrapper:t01": 0.1642561825401291,
+            "D4:wrapper:t02": 0.099202483158341,
+            "D4:wrapper:t03": 0.07956787724178153,
+            "D4:wrapper:t04": 0.03846513181129194,
+            "D4:wrapper:t05": -0.06745726689306135,
+            "D4:wrapper:t06": 0.06586968117560398,
+            "D4:wrapper:t07": 0.3749383263925515,
+            "D4:wrapper:t08": 0.09612265942830826,
+            "D4:wrapper:t09": 0.3939518128079495,
+            "D4:wrapper:t10": 0.10626804137008601,
+            "D4:wrapper:t11": 0.014971540226698237,
+            "D4:wrapper:t12": 0.13883681508311174,
+            "D4:wrapper:t13": 0.3275474230538233,
+            "D4:wrapper:t14": 0.09624035626060388,
+            "D4:wrapper:t15": -0.010700481810155057,
+            "D4:wrapper:t16": 0.024835995385394133,
+            "D4:wrapper:t17": 0.06930713516946609,
+            "D4:wrapper:t18": -0.05062103700794812,
+            "D4:wrapper:t19": 0.10358892206291102,
+            "D4:wrapper:t20": 0.30744017977347843,
+            "D4:wrapper:t21": 0.09517900205434744,
+            "D4:wrapper:t22": 0.19333343896242783,
+            "D4:wrapper:t23": 0.16292690325441356
+          },
+          "combined": {
+            "D4:wrapper:t00": 0.15613705198290848,
+            "D4:wrapper:t01": -0.08545826345429237,
+            "D4:wrapper:t02": 0.20887177145355573,
+            "D4:wrapper:t03": 0.1019216408786817,
+            "D4:wrapper:t04": 0.22280981725866855,
+            "D4:wrapper:t05": 0.049075929479161944,
+            "D4:wrapper:t06": -0.004919333151204695,
+            "D4:wrapper:t07": 0.0599411985524524,
+            "D4:wrapper:t08": 0.05368108989940976,
+            "D4:wrapper:t09": 0.23452290572469184,
+            "D4:wrapper:t10": 0.09775594234878876,
+            "D4:wrapper:t11": 0.27380291830129183,
+            "D4:wrapper:t12": 0.1659355969481185,
+            "D4:wrapper:t13": 0.3342719822054862,
+            "D4:wrapper:t14": 0.14443956574298583,
+            "D4:wrapper:t15": 0.06308893551569317,
+            "D4:wrapper:t16": -0.19970234230732628,
+            "D4:wrapper:t17": 0.0998231064897412,
+            "D4:wrapper:t18": -0.01272044148930547,
+            "D4:wrapper:t19": 0.20291294510414395,
+            "D4:wrapper:t20": 0.3852865467556063,
+            "D4:wrapper:t21": 0.42166195015442026,
+            "D4:wrapper:t22": 0.2834648950747451,
+            "D4:wrapper:t23": 0.3730038266104081
+          },
+          "random": {
+            "D4:wrapper:t00": 0.04776086917660382,
+            "D4:wrapper:t01": -0.03142325040587832,
+            "D4:wrapper:t02": 0.07770091449281226,
+            "D4:wrapper:t03": -0.13465686716460928,
+            "D4:wrapper:t04": -0.026515250883707143,
+            "D4:wrapper:t05": -0.03884226282170663,
+            "D4:wrapper:t06": -0.1052723858273721,
+            "D4:wrapper:t07": 0.033253032806417115,
+            "D4:wrapper:t08": -0.0021879527139112413,
+            "D4:wrapper:t09": 0.10294399825849335,
+            "D4:wrapper:t10": 0.1132152772264027,
+            "D4:wrapper:t11": 0.05075248910599564,
+            "D4:wrapper:t12": 0.05264908614961418,
+            "D4:wrapper:t13": 0.07844553080954046,
+            "D4:wrapper:t14": 0.06431876544010198,
+            "D4:wrapper:t15": 0.0075127542844233685,
+            "D4:wrapper:t16": -0.09907350763020395,
+            "D4:wrapper:t17": 0.009178312850515595,
+            "D4:wrapper:t18": -0.0740395109071253,
+            "D4:wrapper:t19": -0.03487647882290541,
+            "D4:wrapper:t20": 0.03640882762071037,
+            "D4:wrapper:t21": 0.026640572790691895,
+            "D4:wrapper:t22": 0.036886121216970484,
+            "D4:wrapper:t23": 0.08290586859270105
+          }
+        },
+        "descriptive": {
+          "semantic": {
+            "mean": -0.041727923727063625,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24,
+            "status": "DESCRIPTIVE"
+          },
+          "causal": {
+            "mean": 0.11898353861285842,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24,
+            "status": "DESCRIPTIVE"
+          },
+          "combined": {
+            "mean": 0.1512337181699513,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24,
+            "status": "DESCRIPTIVE"
+          },
+          "random": {
+            "mean": 0.011403539735190621,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24,
+            "status": "DESCRIPTIVE"
+          }
+        },
+        "support": {
+          "semantic": {
+            "D4:wrapper:t00": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t01": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t02": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t03": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t04": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t05": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t06": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t07": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t08": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t09": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t10": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t11": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t12": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t13": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t14": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t15": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t16": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t17": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t18": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t19": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t20": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t21": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t22": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t23": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            }
+          },
+          "causal": {
+            "D4:wrapper:t00": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t01": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t02": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t03": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t04": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t05": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t06": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t07": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t08": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t09": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t10": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t11": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t12": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t13": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t14": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t15": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t16": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t17": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t18": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t19": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t20": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t21": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t22": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t23": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            }
+          },
+          "combined": {
+            "D4:wrapper:t00": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t01": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t02": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t03": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t04": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t05": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t06": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t07": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t08": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t09": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t10": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t11": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t12": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t13": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t14": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t15": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t16": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t17": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t18": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t19": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t20": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t21": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t22": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t23": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            }
+          }
+        },
+        "random_controls": {
+          "n_frozen_draws": 100,
+          "draw_means": [
+            -0.017395491010493612,
+            -0.027059591387606007,
+            0.0036990307401359745,
+            0.024008262409391343,
+            -0.11960101755720287,
+            -0.09471686803075487,
+            -0.11960101755720287,
+            -0.01093010405739051,
+            -0.095307782382564,
+            -0.017395491010493612,
+            -0.027059591387606007,
+            -0.041727923727063625,
+            -0.01093010405739051,
+            0.024008262409391343,
+            -0.11960101755720287,
+            0.08516974966084408,
+            -0.095307782382564,
+            -0.017395491010493612,
+            0.11741992921793694,
+            -0.09471686803075487,
+            -0.03206382334995123,
+            -0.017395491010493612,
+            -0.01093010405739051,
+            -0.11901010320539375,
+            0.0036990307401359745,
+            -0.04321948115641452,
+            0.07395153869162115,
+            0.11898353861285842,
+            0.0036990307401359745,
+            0.08516974966084408,
+            -0.057848615953941,
+            -0.041727923727063625,
+            0.11898353861285842,
+            0.024008262409391343,
+            -0.01093010405739051,
+            0.11898353861285842,
+            0.0036990307401359745,
+            0.11741992921793694,
+            -0.11901010320539375,
+            0.1512337181699513,
+            0.02644211244326153,
+            0.008749015718124586,
+            0.11898353861285842,
+            -0.027059591387606007,
+            0.052226905047251304,
+            0.0036990307401359745,
+            0.052226905047251304,
+            0.02644211244326153,
+            0.11898353861285842,
+            0.008749015718124586,
+            0.1512337181699513,
+            -0.041727923727063625,
+            -0.01093010405739051,
+            0.11898353861285842,
+            0.008749015718124586,
+            -0.01093010405739051,
+            -0.11960101755720287,
+            0.07395153869162115,
+            0.11741992921793694,
+            -0.017395491010493612,
+            0.0072574582887736895,
+            0.11898353861285842,
+            -0.04321948115641452,
+            -0.09471686803075487,
+            0.0036990307401359745,
+            0.11741992921793694,
+            0.024008262409391343,
+            0.11898353861285842,
+            0.008749015718124586,
+            0.008749015718124586,
+            -0.03206382334995123,
+            0.11898353861285842,
+            -0.11901010320539375,
+            -0.03206382334995123,
+            0.0072574582887736895,
+            0.08516974966084408,
+            0.054766884537133305,
+            0.1512337181699513,
+            0.11898353861285842,
+            -0.11960101755720287,
+            0.11898353861285842,
+            0.06748615173851806,
+            -0.041727923727063625,
+            0.07395153869162115,
+            -0.01093010405739051,
+            0.052226905047251304,
+            0.0072574582887736895,
+            -0.11960101755720287,
+            -0.027059591387606007,
+            0.11898353861285842,
+            -0.027059591387606007,
+            -0.09471686803075487,
+            0.054766884537133305,
+            0.11741992921793694,
+            -0.11960101755720287,
+            0.02644211244326153,
+            0.02644211244326153,
+            0.0036990307401359745,
+            -0.017395491010493612,
+            0.054766884537133305
+          ]
+        },
+        "metric": "within-task and wrapper Pearson; core intervention modes equally weighted"
+      },
+      "yes_oriented": {
+        "wrapper_scores": {
+          "semantic": {
+            "D4:wrapper:t00": -0.0127618277695074,
+            "D4:wrapper:t01": -0.03847013222800408,
+            "D4:wrapper:t02": 0.1655684053591411,
+            "D4:wrapper:t03": 0.11427308290446253,
+            "D4:wrapper:t04": 0.0352585529650007,
+            "D4:wrapper:t05": 0.0953922764182427,
+            "D4:wrapper:t06": -0.040442131947986716,
+            "D4:wrapper:t07": 0.15088689785478146,
+            "D4:wrapper:t08": -0.038925469577776574,
+            "D4:wrapper:t09": 0.057857965014534746,
+            "D4:wrapper:t10": -0.09888110202506813,
+            "D4:wrapper:t11": 0.07910564290332182,
+            "D4:wrapper:t12": 0.08066261631348078,
+            "D4:wrapper:t13": 0.0787062480639464,
+            "D4:wrapper:t14": -0.03526330441129627,
+            "D4:wrapper:t15": -0.13941257622743378,
+            "D4:wrapper:t16": -0.22116219530522993,
+            "D4:wrapper:t17": 0.024899396553066833,
+            "D4:wrapper:t18": -0.08436691866807054,
+            "D4:wrapper:t19": 0.03457927267828975,
+            "D4:wrapper:t20": 0.0275046048662914,
+            "D4:wrapper:t21": -0.015244605003968176,
+            "D4:wrapper:t22": -0.0773749595139842,
+            "D4:wrapper:t23": 0.18347805830399636
+          },
+          "causal": {
+            "D4:wrapper:t00": 0.08261887909469276,
+            "D4:wrapper:t01": 0.06310940285626775,
+            "D4:wrapper:t02": 0.08151880653983866,
+            "D4:wrapper:t03": -0.027707800130693506,
+            "D4:wrapper:t04": -0.08771788981407695,
+            "D4:wrapper:t05": -0.0006599616127609931,
+            "D4:wrapper:t06": 0.12690726858549606,
+            "D4:wrapper:t07": 0.0073920870477738225,
+            "D4:wrapper:t08": 0.05603671633547865,
+            "D4:wrapper:t09": 0.17934061762039535,
+            "D4:wrapper:t10": 0.015577466586195486,
+            "D4:wrapper:t11": 0.14326457150822006,
+            "D4:wrapper:t12": 0.04914213464513487,
+            "D4:wrapper:t13": -0.07839839416716236,
+            "D4:wrapper:t14": -0.09688668027927504,
+            "D4:wrapper:t15": -0.11798679812713096,
+            "D4:wrapper:t16": -0.13264281924473506,
+            "D4:wrapper:t17": 0.05727203970732341,
+            "D4:wrapper:t18": -0.05278879884354792,
+            "D4:wrapper:t19": -0.04936357560822671,
+            "D4:wrapper:t20": -0.03426640375756416,
+            "D4:wrapper:t21": 0.04168781684584439,
+            "D4:wrapper:t22": -0.05780668221646129,
+            "D4:wrapper:t23": -0.07460341776428883
+          },
+          "combined": {
+            "D4:wrapper:t00": 0.06234870941438439,
+            "D4:wrapper:t01": -0.05163459484341735,
+            "D4:wrapper:t02": 0.10947238943826558,
+            "D4:wrapper:t03": 0.10525676348301966,
+            "D4:wrapper:t04": 0.018274994214829327,
+            "D4:wrapper:t05": 0.09113214981444072,
+            "D4:wrapper:t06": 0.08213936332412759,
+            "D4:wrapper:t07": -0.03221933116669597,
+            "D4:wrapper:t08": 0.10436263037799444,
+            "D4:wrapper:t09": 0.14714578048552965,
+            "D4:wrapper:t10": -0.08226459300316259,
+            "D4:wrapper:t11": -0.08124870957913162,
+            "D4:wrapper:t12": 0.052958511928212104,
+            "D4:wrapper:t13": -0.05553928778215441,
+            "D4:wrapper:t14": -0.0293239076075713,
+            "D4:wrapper:t15": -0.06206640368746099,
+            "D4:wrapper:t16": -0.05777835947671129,
+            "D4:wrapper:t17": -0.02497333601111792,
+            "D4:wrapper:t18": -0.04795597631370296,
+            "D4:wrapper:t19": 0.1240480051667327,
+            "D4:wrapper:t20": 0.03996739321331175,
+            "D4:wrapper:t21": -0.033996568660107834,
+            "D4:wrapper:t22": 0.04179872890935663,
+            "D4:wrapper:t23": 0.028162489563436463
+          },
+          "random": {
+            "D4:wrapper:t00": 0.0007645953227736563,
+            "D4:wrapper:t01": -0.0003574080820112592,
+            "D4:wrapper:t02": 0.09134091805328617,
+            "D4:wrapper:t03": 0.04452634545061059,
+            "D4:wrapper:t04": -0.10082539607681797,
+            "D4:wrapper:t05": 0.04367855639375043,
+            "D4:wrapper:t06": 0.00990204734922786,
+            "D4:wrapper:t07": -0.009295054627837583,
+            "D4:wrapper:t08": 0.0012338267237056734,
+            "D4:wrapper:t09": 0.061517576164484916,
+            "D4:wrapper:t10": 0.019555829093230104,
+            "D4:wrapper:t11": 0.041946424781496155,
+            "D4:wrapper:t12": 0.03901463994621893,
+            "D4:wrapper:t13": 0.017187593621786814,
+            "D4:wrapper:t14": -0.023795232006983837,
+            "D4:wrapper:t15": -0.1017664712718401,
+            "D4:wrapper:t16": -0.08298183955610598,
+            "D4:wrapper:t17": 0.004762209476332572,
+            "D4:wrapper:t18": -0.12640047156928377,
+            "D4:wrapper:t19": 0.0074766530365286,
+            "D4:wrapper:t20": 0.01175435936387307,
+            "D4:wrapper:t21": 0.01104802639780886,
+            "D4:wrapper:t22": -0.0049928874869328045,
+            "D4:wrapper:t23": -0.021938329033437638
+          }
+        },
+        "descriptive": {
+          "semantic": {
+            "mean": 0.013577824896676286,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24,
+            "status": "DESCRIPTIVE"
+          },
+          "causal": {
+            "mean": 0.0038766077419473965,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24,
+            "status": "DESCRIPTIVE"
+          },
+          "combined": {
+            "mean": 0.01866945171676695,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24,
+            "status": "DESCRIPTIVE"
+          },
+          "random": {
+            "mean": -0.002776812022339023,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24,
+            "status": "DESCRIPTIVE"
+          }
+        },
+        "support": {
+          "semantic": {
+            "D4:wrapper:t00": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t01": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t02": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t03": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t04": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t05": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t06": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t07": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t08": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t09": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t10": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t11": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t12": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t13": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t14": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t15": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t16": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t17": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t18": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t19": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t20": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t21": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t22": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t23": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            }
+          },
+          "causal": {
+            "D4:wrapper:t00": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t01": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t02": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t03": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t04": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t05": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t06": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t07": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t08": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t09": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t10": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t11": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t12": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t13": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t14": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t15": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t16": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t17": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t18": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t19": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t20": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t21": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t22": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t23": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            }
+          },
+          "combined": {
+            "D4:wrapper:t00": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t01": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t02": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t03": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t04": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t05": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t06": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t07": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t08": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t09": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t10": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t11": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t12": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t13": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t14": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t15": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t16": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t17": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t18": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t19": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t20": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t21": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t22": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t23": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            }
+          }
+        },
+        "random_controls": {
+          "n_frozen_draws": 100,
+          "draw_means": [
+            -0.01368585665191866,
+            0.012301042115126818,
+            0.010866483386534285,
+            0.023588512584757203,
+            -0.02990639183082792,
+            -0.008740840608712816,
+            -0.02990639183082792,
+            -0.010189865462986244,
+            -0.03483694174835286,
+            -0.01368585665191866,
+            0.012301042115126818,
+            0.013577824896676286,
+            -0.010189865462986244,
+            0.023588512584757203,
+            -0.02990639183082792,
+            0.003692876619688754,
+            -0.03483694174835286,
+            -0.01368585665191866,
+            0.018485720594508304,
+            -0.008740840608712816,
+            -0.012409073870369191,
+            -0.01368585665191866,
+            -0.010189865462986244,
+            -0.003810290691187881,
+            0.010866483386534285,
+            -0.0026495778067357977,
+            0.0012813361289027829,
+            0.0038766077419473965,
+            0.010866483386534285,
+            0.003692876619688754,
+            -0.023705926656256333,
+            0.013577824896676286,
+            0.0038766077419473965,
+            0.023588512584757203,
+            -0.010189865462986244,
+            0.0038766077419473965,
+            0.010866483386534285,
+            0.018485720594508304,
+            -0.003810290691187881,
+            0.01866945171676695,
+            -0.038330826204007344,
+            -0.0012308057733333704,
+            0.0038766077419473965,
+            0.012301042115126818,
+            -0.027033973418120194,
+            0.010866483386534285,
+            -0.027033973418120194,
+            -0.038330826204007344,
+            0.0038766077419473965,
+            -0.0012308057733333704,
+            0.01866945171676695,
+            0.013577824896676286,
+            -0.010189865462986244,
+            0.0038766077419473965,
+            -0.0012308057733333704,
+            -0.010189865462986244,
+            -0.02990639183082792,
+            0.0012813361289027829,
+            0.018485720594508304,
+            -0.01368585665191866,
+            -0.017458208476745455,
+            0.0038766077419473965,
+            -0.0026495778067357977,
+            -0.008740840608712816,
+            0.010866483386534285,
+            0.018485720594508304,
+            0.023588512584757203,
+            0.0038766077419473965,
+            -0.0012308057733333704,
+            -0.0012308057733333704,
+            -0.012409073870369191,
+            0.0038766077419473965,
+            -0.003810290691187881,
+            -0.012409073870369191,
+            -0.017458208476745455,
+            0.003692876619688754,
+            0.022153953856164674,
+            0.01866945171676695,
+            0.0038766077419473965,
+            -0.02990639183082792,
+            0.0038766077419473965,
+            -0.002214655060029621,
+            0.013577824896676286,
+            0.0012813361289027829,
+            -0.010189865462986244,
+            -0.027033973418120194,
+            -0.017458208476745455,
+            -0.02990639183082792,
+            0.012301042115126818,
+            0.0038766077419473965,
+            0.012301042115126818,
+            -0.008740840608712816,
+            0.022153953856164674,
+            0.018485720594508304,
+            -0.02990639183082792,
+            -0.038330826204007344,
+            -0.038330826204007344,
+            0.010866483386534285,
+            -0.01368585665191866,
+            0.022153953856164674
+          ]
+        },
+        "metric": "within-task and wrapper Pearson; core intervention modes equally weighted"
+      },
+      "within_label": {
+        "wrapper_scores": {
+          "semantic": {
+            "D4:wrapper:t00": 0.015025814796815917,
+            "D4:wrapper:t01": -0.0727770625098453,
+            "D4:wrapper:t02": 0.20555914630526737,
+            "D4:wrapper:t03": 0.14300452903801464,
+            "D4:wrapper:t04": 0.0646254182347129,
+            "D4:wrapper:t05": 0.11960525839150611,
+            "D4:wrapper:t06": 0.04588730719115217,
+            "D4:wrapper:t07": 0.12441806783783553,
+            "D4:wrapper:t08": -0.06488105941653498,
+            "D4:wrapper:t09": 0.11503861716759593,
+            "D4:wrapper:t10": -0.12590460142458731,
+            "D4:wrapper:t11": 0.08490077775226712,
+            "D4:wrapper:t12": 0.07505995094544925,
+            "D4:wrapper:t13": 0.05889268227596978,
+            "D4:wrapper:t14": -0.05033716458623964,
+            "D4:wrapper:t15": -0.14412394149818644,
+            "D4:wrapper:t16": -0.26450778955956494,
+            "D4:wrapper:t17": -0.020584616814204038,
+            "D4:wrapper:t18": -0.16558291983782059,
+            "D4:wrapper:t19": 0.04039012812312251,
+            "D4:wrapper:t20": 0.06449277116603293,
+            "D4:wrapper:t21": 0.027092805263752313,
+            "D4:wrapper:t22": -0.07906938327682421,
+            "D4:wrapper:t23": 0.15914229495461854
+          },
+          "causal": {
+            "D4:wrapper:t00": 0.061364122639951446,
+            "D4:wrapper:t01": 0.07056129932669797,
+            "D4:wrapper:t02": 0.1394216749485375,
+            "D4:wrapper:t03": 0.005535029101873266,
+            "D4:wrapper:t04": -0.08037671994795921,
+            "D4:wrapper:t05": 0.025162977149941434,
+            "D4:wrapper:t06": 0.14210765546478912,
+            "D4:wrapper:t07": 0.05218941333421298,
+            "D4:wrapper:t08": 0.158847418350287,
+            "D4:wrapper:t09": 0.23076466666245019,
+            "D4:wrapper:t10": 0.003513845906648561,
+            "D4:wrapper:t11": 0.16953810005957407,
+            "D4:wrapper:t12": 0.06789211396910576,
+            "D4:wrapper:t13": -0.06023474918693717,
+            "D4:wrapper:t14": -0.11303828087605539,
+            "D4:wrapper:t15": -0.08800881812494894,
+            "D4:wrapper:t16": -0.09998536498152866,
+            "D4:wrapper:t17": 0.013846672024404453,
+            "D4:wrapper:t18": -0.0784235516173749,
+            "D4:wrapper:t19": -0.04139726072995555,
+            "D4:wrapper:t20": -0.051367267509777076,
+            "D4:wrapper:t21": 0.09859099884122019,
+            "D4:wrapper:t22": -0.061195143638304646,
+            "D4:wrapper:t23": -0.11448723830354228
+          },
+          "combined": {
+            "D4:wrapper:t00": 0.06252393279919573,
+            "D4:wrapper:t01": -0.07679933099897122,
+            "D4:wrapper:t02": 0.1516650404873656,
+            "D4:wrapper:t03": 0.09922141147962316,
+            "D4:wrapper:t04": 0.026727661368746908,
+            "D4:wrapper:t05": 0.1290914544563494,
+            "D4:wrapper:t06": 0.12850169505486647,
+            "D4:wrapper:t07": -0.005149460377436317,
+            "D4:wrapper:t08": 0.10299862502520862,
+            "D4:wrapper:t09": 0.2088703682583409,
+            "D4:wrapper:t10": -0.016054625001862582,
+            "D4:wrapper:t11": 0.012071418412096914,
+            "D4:wrapper:t12": -0.008346293523762744,
+            "D4:wrapper:t13": -0.04381022181714197,
+            "D4:wrapper:t14": -0.05228458026205803,
+            "D4:wrapper:t15": -0.061249789491102415,
+            "D4:wrapper:t16": -0.014402742395880986,
+            "D4:wrapper:t17": -0.07087769396350507,
+            "D4:wrapper:t18": -0.10767566343431201,
+            "D4:wrapper:t19": 0.12769824966027227,
+            "D4:wrapper:t20": 0.03588273829807723,
+            "D4:wrapper:t21": 0.013773598480786428,
+            "D4:wrapper:t22": 0.035949926008728095,
+            "D4:wrapper:t23": 0.025208372339938594
+          },
+          "random": {
+            "D4:wrapper:t00": 0.018668968388987083,
+            "D4:wrapper:t01": -0.008881880670646302,
+            "D4:wrapper:t02": 0.12537736623129975,
+            "D4:wrapper:t03": 0.04768624216716651,
+            "D4:wrapper:t04": -0.08644334651232828,
+            "D4:wrapper:t05": 0.08018531427697288,
+            "D4:wrapper:t06": 0.030873336957279594,
+            "D4:wrapper:t07": -0.0023574645631881767,
+            "D4:wrapper:t08": 0.011076148258237368,
+            "D4:wrapper:t09": 0.09316328949255422,
+            "D4:wrapper:t10": 0.020549307395017116,
+            "D4:wrapper:t11": 0.05802067366067459,
+            "D4:wrapper:t12": 0.04256946855369948,
+            "D4:wrapper:t13": 0.025270539469015932,
+            "D4:wrapper:t14": -0.019456262428400064,
+            "D4:wrapper:t15": -0.07158530246629217,
+            "D4:wrapper:t16": -0.06228287485112656,
+            "D4:wrapper:t17": -0.03500857895910602,
+            "D4:wrapper:t18": -0.11671275627641992,
+            "D4:wrapper:t19": 0.029594909908670256,
+            "D4:wrapper:t20": 0.03343488619826332,
+            "D4:wrapper:t21": 0.03375710227273336,
+            "D4:wrapper:t22": -0.02532881048359086,
+            "D4:wrapper:t23": -0.04102934833489186
+          }
+        },
+        "descriptive": {
+          "semantic": {
+            "mean": 0.014806959605012729,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24,
+            "status": "DESCRIPTIVE"
+          },
+          "causal": {
+            "mean": 0.018784233035971255,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24,
+            "status": "DESCRIPTIVE"
+          },
+          "combined": {
+            "mean": 0.029313920452648457,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24,
+            "status": "DESCRIPTIVE"
+          },
+          "random": {
+            "mean": 0.00754753865352422,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24,
+            "status": "DESCRIPTIVE"
+          }
+        },
+        "support": {
+          "semantic": {
+            "D4:wrapper:t00": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t01": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t02": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t03": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t04": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t05": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t06": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t07": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t08": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t09": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t10": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t11": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t12": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t13": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t14": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t15": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t16": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t17": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t18": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t19": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t20": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t21": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t22": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t23": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            }
+          },
+          "causal": {
+            "D4:wrapper:t00": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t01": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t02": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t03": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t04": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t05": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t06": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t07": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t08": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t09": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t10": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t11": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t12": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t13": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t14": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t15": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t16": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t17": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t18": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t19": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t20": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t21": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t22": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t23": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            }
+          },
+          "combined": {
+            "D4:wrapper:t00": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t01": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t02": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t03": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t04": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t05": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t06": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t07": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t08": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t09": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t10": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t11": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t12": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t13": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t14": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t15": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t16": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t17": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t18": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t19": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t20": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t21": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t22": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t23": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            }
+          }
+        },
+        "random_controls": {
+          "n_frozen_draws": 100,
+          "draw_means": [
+            0.0017406692213864788,
+            0.018660030800703595,
+            0.017768322812644396,
+            0.0361498653800834,
+            -0.026570061236260423,
+            0.00036726694290989864,
+            -0.026570061236260423,
+            -0.0005392832800888113,
+            -0.025181816722844346,
+            0.0017406692213864788,
+            0.018660030800703595,
+            0.014806959605012729,
+            -0.0005392832800888113,
+            0.0361498653800834,
+            -0.026570061236260423,
+            0.022248801058132706,
+            -0.025181816722844346,
+            0.0017406692213864788,
+            0.032778488474809915,
+            0.00036726694290989864,
+            -0.002112401974304385,
+            0.0017406692213864788,
+            -0.0005392832800888113,
+            -0.0010209775705061856,
+            0.017768322812644396,
+            0.003385564200276326,
+            0.013485983277129535,
+            0.018784233035971255,
+            0.017768322812644396,
+            0.022248801058132706,
+            -0.014922041892456878,
+            0.014806959605012729,
+            0.018784233035971255,
+            0.0361498653800834,
+            -0.0005392832800888113,
+            0.018784233035971255,
+            0.017768322812644396,
+            0.032778488474809915,
+            -0.0010209775705061856,
+            0.029313920452648457,
+            -0.026445859000992777,
+            0.006747710518638293,
+            0.018784233035971255,
+            0.018660030800703595,
+            -0.013636219082840281,
+            0.017768322812644396,
+            -0.013636219082840281,
+            -0.026445859000992777,
+            0.018784233035971255,
+            0.006747710518638293,
+            0.029313920452648457,
+            0.014806959605012729,
+            -0.0005392832800888113,
+            0.018784233035971255,
+            0.006747710518638293,
+            -0.0005392832800888113,
+            -0.026570061236260423,
+            0.013485983277129535,
+            0.032778488474809915,
+            0.0017406692213864788,
+            -0.004673684886098109,
+            0.018784233035971255,
+            0.003385564200276326,
+            0.00036726694290989864,
+            0.017768322812644396,
+            0.032778488474809915,
+            0.0361498653800834,
+            0.018784233035971255,
+            0.006747710518638293,
+            0.006747710518638293,
+            -0.002112401974304385,
+            0.018784233035971255,
+            -0.0010209775705061856,
+            -0.002112401974304385,
+            -0.004673684886098109,
+            0.022248801058132706,
+            0.035258157392024196,
+            0.029313920452648457,
+            0.018784233035971255,
+            -0.026570061236260423,
+            0.018784233035971255,
+            0.015765935778604825,
+            0.014806959605012729,
+            0.013485983277129535,
+            -0.0005392832800888113,
+            -0.013636219082840281,
+            -0.004673684886098109,
+            -0.026570061236260423,
+            0.018660030800703595,
+            0.018784233035971255,
+            0.018660030800703595,
+            0.00036726694290989864,
+            0.035258157392024196,
+            0.032778488474809915,
+            -0.026570061236260423,
+            -0.026445859000992777,
+            -0.026445859000992777,
+            0.017768322812644396,
+            0.0017406692213864788,
+            0.035258157392024196
+          ]
+        },
+        "metric": "within-task and wrapper Pearson; core intervention modes equally weighted"
+      }
+    },
+    "span": {
+      "truth_oriented": {
+        "wrapper_scores": {
+          "semantic": {
+            "D4:wrapper:t00": 0.039754887799932075,
+            "D4:wrapper:t01": -0.14555286139592075,
+            "D4:wrapper:t02": -0.019315293611659207,
+            "D4:wrapper:t03": -0.06068586061863768,
+            "D4:wrapper:t04": 0.05793198590785609,
+            "D4:wrapper:t05": -0.1268040538349152,
+            "D4:wrapper:t06": -0.13693617621296236,
+            "D4:wrapper:t07": 0.020376527094465538,
+            "D4:wrapper:t08": -0.020129371715412545,
+            "D4:wrapper:t09": -0.1277444316933312,
+            "D4:wrapper:t10": -0.16281407421251615,
+            "D4:wrapper:t11": 0.11726383160915686,
+            "D4:wrapper:t12": -0.12621684129165023,
+            "D4:wrapper:t13": 0.0084824184497275,
+            "D4:wrapper:t14": -0.07233476001445713,
+            "D4:wrapper:t15": -0.07462032202219152,
+            "D4:wrapper:t16": -0.2422740548839812,
+            "D4:wrapper:t17": -0.1183923802352236,
+            "D4:wrapper:t18": -0.18021611410459262,
+            "D4:wrapper:t19": 0.0858380991778717,
+            "D4:wrapper:t20": -0.2027339518541669,
+            "D4:wrapper:t21": 0.13059372637380123,
+            "D4:wrapper:t22": -0.01241339161191929,
+            "D4:wrapper:t23": 0.0013721347003733282
+          },
+          "causal": {
+            "D4:wrapper:t00": -0.20275960638609972,
+            "D4:wrapper:t01": 0.14148406738728184,
+            "D4:wrapper:t02": 0.09744017238159236,
+            "D4:wrapper:t03": -0.03824681395786481,
+            "D4:wrapper:t04": 0.07933317936402254,
+            "D4:wrapper:t05": 0.28722498938185215,
+            "D4:wrapper:t06": 0.12991268770447392,
+            "D4:wrapper:t07": 0.01234758698101269,
+            "D4:wrapper:t08": 0.020172409580213012,
+            "D4:wrapper:t09": -0.029006046037462846,
+            "D4:wrapper:t10": 0.2130608367548593,
+            "D4:wrapper:t11": 0.32161476275939815,
+            "D4:wrapper:t12": 0.38227913855894347,
+            "D4:wrapper:t13": 0.20884582811226962,
+            "D4:wrapper:t14": -0.014201085999251102,
+            "D4:wrapper:t15": 0.25254476915426394,
+            "D4:wrapper:t16": 0.2713914931675497,
+            "D4:wrapper:t17": 0.21441612140039926,
+            "D4:wrapper:t18": 0.0590405280661574,
+            "D4:wrapper:t19": 0.22401104536295546,
+            "D4:wrapper:t20": 0.3251090010287045,
+            "D4:wrapper:t21": 0.08023914336127652,
+            "D4:wrapper:t22": -0.06412040059217805,
+            "D4:wrapper:t23": 0.15524071867973951
+          },
+          "combined": {
+            "D4:wrapper:t00": -0.20275960638609972,
+            "D4:wrapper:t01": 0.14148406738728184,
+            "D4:wrapper:t02": 0.09744017238159236,
+            "D4:wrapper:t03": -0.03824681395786481,
+            "D4:wrapper:t04": 0.07933317936402254,
+            "D4:wrapper:t05": 0.28722498938185215,
+            "D4:wrapper:t06": 0.12991268770447392,
+            "D4:wrapper:t07": 0.01234758698101269,
+            "D4:wrapper:t08": 0.020172409580213012,
+            "D4:wrapper:t09": -0.029006046037462846,
+            "D4:wrapper:t10": 0.2130608367548593,
+            "D4:wrapper:t11": 0.32161476275939815,
+            "D4:wrapper:t12": 0.38227913855894347,
+            "D4:wrapper:t13": 0.20884582811226962,
+            "D4:wrapper:t14": -0.014201085999251102,
+            "D4:wrapper:t15": 0.25254476915426394,
+            "D4:wrapper:t16": 0.2713914931675497,
+            "D4:wrapper:t17": 0.21441612140039926,
+            "D4:wrapper:t18": 0.0590405280661574,
+            "D4:wrapper:t19": 0.22401104536295546,
+            "D4:wrapper:t20": 0.3251090010287045,
+            "D4:wrapper:t21": 0.08023914336127652,
+            "D4:wrapper:t22": -0.06412040059217805,
+            "D4:wrapper:t23": 0.15524071867973951
+          },
+          "random": {
+            "D4:wrapper:t00": -0.07974372896381979,
+            "D4:wrapper:t01": -0.03108013797216369,
+            "D4:wrapper:t02": -0.07322412415228943,
+            "D4:wrapper:t03": -0.17793373081495947,
+            "D4:wrapper:t04": -0.02346533260767641,
+            "D4:wrapper:t05": -0.007873184820294178,
+            "D4:wrapper:t06": 0.021671312462411562,
+            "D4:wrapper:t07": -0.005231338907468518,
+            "D4:wrapper:t08": 0.02290920600965967,
+            "D4:wrapper:t09": -0.028964894543103206,
+            "D4:wrapper:t10": -0.06542210801785836,
+            "D4:wrapper:t11": 0.06206372686641124,
+            "D4:wrapper:t12": -0.024025319926562184,
+            "D4:wrapper:t13": 0.01532375691834563,
+            "D4:wrapper:t14": -0.135613771733682,
+            "D4:wrapper:t15": 0.049908422735628476,
+            "D4:wrapper:t16": -0.021627162782683968,
+            "D4:wrapper:t17": 0.005602569625818601,
+            "D4:wrapper:t18": -0.02144596467010009,
+            "D4:wrapper:t19": -0.010473017941082558,
+            "D4:wrapper:t20": -0.023635722319541908,
+            "D4:wrapper:t21": 0.009789312613343553,
+            "D4:wrapper:t22": -0.08596565207919596,
+            "D4:wrapper:t23": -0.0024831864069406197
+          }
+        },
+        "descriptive": {
+          "semantic": {
+            "mean": -0.056982097008348054,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24,
+            "status": "DESCRIPTIVE"
+          },
+          "causal": {
+            "mean": 0.13030727192558786,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24,
+            "status": "DESCRIPTIVE"
+          },
+          "combined": {
+            "mean": 0.13030727192558786,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24,
+            "status": "DESCRIPTIVE"
+          },
+          "random": {
+            "mean": -0.026289169642825152,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24,
+            "status": "DESCRIPTIVE"
+          }
+        },
+        "support": {
+          "semantic": {
+            "D4:wrapper:t00": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t01": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t02": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t03": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t04": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t05": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t06": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t07": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t08": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t09": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t10": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t11": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t12": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t13": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t14": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t15": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t16": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t17": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t18": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t19": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t20": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t21": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t22": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t23": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            }
+          },
+          "causal": {
+            "D4:wrapper:t00": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t01": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t02": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t03": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t04": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t05": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t06": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t07": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t08": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t09": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t10": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t11": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t12": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t13": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t14": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t15": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t16": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t17": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t18": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t19": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t20": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t21": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t22": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t23": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            }
+          },
+          "combined": {
+            "D4:wrapper:t00": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t01": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t02": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t03": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t04": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t05": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t06": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t07": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t08": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t09": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t10": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t11": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t12": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t13": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t14": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t15": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t16": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t17": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t18": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t19": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t20": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t21": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t22": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t23": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            }
+          }
+        },
+        "random_controls": {
+          "n_frozen_draws": 100,
+          "draw_means": [
+            -0.056982097008348054,
+            0.00628002765220128,
+            0.04738451883458259,
+            0.00628002765220128,
+            0.13030727192558786,
+            0.1218471821286929,
+            -0.08367669590889236,
+            0.0827890443979118,
+            -0.08367669590889236,
+            -0.03906520830579476,
+            -0.06670372267086515,
+            0.13030727192558786,
+            -0.056982097008348054,
+            0.007509103757355186,
+            0.02542599245990848,
+            -0.10619849766539902,
+            -0.07639288857291403,
+            -0.04123819987547477,
+            -0.018804855060495562,
+            0.0827890443979118,
+            -0.018804855060495562,
+            -0.06670372267086515,
+            0.02542599245990848,
+            -0.06670372267086515,
+            -0.09213678570578732,
+            0.008139580705938692,
+            -0.11371467199776786,
+            -0.12317147090342623,
+            0.01573682655785962,
+            0.007509103757355186,
+            -0.11371467199776786,
+            0.13030727192558786,
+            -0.05872583673625068,
+            0.0827890443979118,
+            -0.06670372267086515,
+            -0.12317147090342623,
+            0.04738451883458259,
+            -0.09213678570578732,
+            -0.08367669590889236,
+            0.04738451883458259,
+            -0.03906520830579476,
+            0.0827890443979118,
+            0.01573682655785962,
+            -0.03906520830579476,
+            -0.11371467199776786,
+            -0.09213678570578732,
+            -0.11371467199776786,
+            -0.04123819987547477,
+            0.1218471821286929,
+            0.007509103757355186,
+            0.01573682655785962,
+            -0.07639288857291403,
+            -0.056982097008348054,
+            -0.03906520830579476,
+            0.02542599245990848,
+            -0.05872583673625068,
+            -0.07639288857291403,
+            -0.12368613452617494,
+            0.008139580705938692,
+            -0.12368613452617494,
+            0.1218471821286929,
+            -0.018804855060495562,
+            -0.12317147090342623,
+            -0.056982097008348054,
+            -0.10619849766539902,
+            -0.10210824823419436,
+            -0.03906520830579476,
+            -0.056982097008348054,
+            -0.09213678570578732,
+            -0.05872583673625068,
+            -0.12368613452617494,
+            -0.05872583673625068,
+            -0.04123819987547477,
+            -0.10619849766539902,
+            0.008139580705938692,
+            0.00628002765220128,
+            0.00628002765220128,
+            -0.08367669590889236,
+            0.13030727192558786,
+            -0.12368613452617494,
+            -0.10210824823419436,
+            -0.04123819987547477,
+            0.008139580705938692,
+            0.00628002765220128,
+            -0.07639288857291403,
+            0.04738451883458259,
+            -0.04123819987547477,
+            -0.10333732433934828,
+            0.008139580705938692,
+            0.0827890443979118,
+            0.0827890443979118,
+            -0.04123819987547477,
+            -0.06670372267086515,
+            -0.056982097008348054,
+            0.007509103757355186,
+            0.13030727192558786,
+            -0.04123819987547477,
+            -0.10210824823419436,
+            0.01573682655785962,
+            -0.06670372267086515
+          ]
+        },
+        "metric": "within-task and wrapper Pearson; core intervention modes equally weighted"
+      },
+      "yes_oriented": {
+        "wrapper_scores": {
+          "semantic": {
+            "D4:wrapper:t00": -0.22044081932091994,
+            "D4:wrapper:t01": -0.17328331195031432,
+            "D4:wrapper:t02": 0.06408067409834357,
+            "D4:wrapper:t03": -0.011578650729080387,
+            "D4:wrapper:t04": -0.12924248612662334,
+            "D4:wrapper:t05": -0.03981441712017177,
+            "D4:wrapper:t06": -0.065177961599767,
+            "D4:wrapper:t07": -0.03342280898371061,
+            "D4:wrapper:t08": -0.03459377398081001,
+            "D4:wrapper:t09": -0.11281334132210012,
+            "D4:wrapper:t10": 0.00594163646394233,
+            "D4:wrapper:t11": 0.11635228599072701,
+            "D4:wrapper:t12": -0.016901219772016664,
+            "D4:wrapper:t13": -0.07839004913067027,
+            "D4:wrapper:t14": -0.1098739783072493,
+            "D4:wrapper:t15": -0.06778152516698327,
+            "D4:wrapper:t16": -0.21918464409552688,
+            "D4:wrapper:t17": -0.029583189612470386,
+            "D4:wrapper:t18": -0.15225364170273753,
+            "D4:wrapper:t19": -0.06614753599500287,
+            "D4:wrapper:t20": 0.06997109238118025,
+            "D4:wrapper:t21": 0.07647759128558725,
+            "D4:wrapper:t22": -0.052814352454203156,
+            "D4:wrapper:t23": -0.15256523899762373
+          },
+          "causal": {
+            "D4:wrapper:t00": -0.13474358140215342,
+            "D4:wrapper:t01": -0.04553248607292718,
+            "D4:wrapper:t02": 0.14070244549095903,
+            "D4:wrapper:t03": 0.016919463775184617,
+            "D4:wrapper:t04": -0.11129813375172426,
+            "D4:wrapper:t05": 0.04788728126935407,
+            "D4:wrapper:t06": 0.024275935762207546,
+            "D4:wrapper:t07": 0.04942493945558309,
+            "D4:wrapper:t08": -0.05663307118958167,
+            "D4:wrapper:t09": 0.014561782734017028,
+            "D4:wrapper:t10": 0.08637252304556654,
+            "D4:wrapper:t11": 0.20748473136589188,
+            "D4:wrapper:t12": 0.054911185953772944,
+            "D4:wrapper:t13": 0.07959765597437495,
+            "D4:wrapper:t14": -0.006921258911295754,
+            "D4:wrapper:t15": 0.0769480587937806,
+            "D4:wrapper:t16": -0.010428179947168334,
+            "D4:wrapper:t17": 0.1582494042589521,
+            "D4:wrapper:t18": 0.10256076583651763,
+            "D4:wrapper:t19": 0.1644991471793947,
+            "D4:wrapper:t20": 0.01945614729518926,
+            "D4:wrapper:t21": 0.1091210464037961,
+            "D4:wrapper:t22": -0.20074732003945117,
+            "D4:wrapper:t23": 0.10556174651081641
+          },
+          "combined": {
+            "D4:wrapper:t00": -0.13474358140215342,
+            "D4:wrapper:t01": -0.04553248607292718,
+            "D4:wrapper:t02": 0.14070244549095903,
+            "D4:wrapper:t03": 0.016919463775184617,
+            "D4:wrapper:t04": -0.11129813375172426,
+            "D4:wrapper:t05": 0.04788728126935407,
+            "D4:wrapper:t06": 0.024275935762207546,
+            "D4:wrapper:t07": 0.04942493945558309,
+            "D4:wrapper:t08": -0.05663307118958167,
+            "D4:wrapper:t09": 0.014561782734017028,
+            "D4:wrapper:t10": 0.08637252304556654,
+            "D4:wrapper:t11": 0.20748473136589188,
+            "D4:wrapper:t12": 0.054911185953772944,
+            "D4:wrapper:t13": 0.07959765597437495,
+            "D4:wrapper:t14": -0.006921258911295754,
+            "D4:wrapper:t15": 0.0769480587937806,
+            "D4:wrapper:t16": -0.010428179947168334,
+            "D4:wrapper:t17": 0.1582494042589521,
+            "D4:wrapper:t18": 0.10256076583651763,
+            "D4:wrapper:t19": 0.1644991471793947,
+            "D4:wrapper:t20": 0.01945614729518926,
+            "D4:wrapper:t21": 0.1091210464037961,
+            "D4:wrapper:t22": -0.20074732003945117,
+            "D4:wrapper:t23": 0.10556174651081641
+          },
+          "random": {
+            "D4:wrapper:t00": -0.07357237028984258,
+            "D4:wrapper:t01": -0.07294189938746168,
+            "D4:wrapper:t02": 0.03713841422495466,
+            "D4:wrapper:t03": -0.00680945146769816,
+            "D4:wrapper:t04": -0.08833052346956405,
+            "D4:wrapper:t05": 0.003930559037388609,
+            "D4:wrapper:t06": -0.015303633925709513,
+            "D4:wrapper:t07": 0.03807240045314579,
+            "D4:wrapper:t08": -0.04957971215078457,
+            "D4:wrapper:t09": -0.006528242480798751,
+            "D4:wrapper:t10": -0.038443525033240195,
+            "D4:wrapper:t11": 0.08565239431351404,
+            "D4:wrapper:t12": 0.01997609624777804,
+            "D4:wrapper:t13": 0.023837181193306137,
+            "D4:wrapper:t14": -0.05437534800904806,
+            "D4:wrapper:t15": -0.025391206668523413,
+            "D4:wrapper:t16": -0.08348478911063979,
+            "D4:wrapper:t17": 0.020415213690571046,
+            "D4:wrapper:t18": -0.014229395870186788,
+            "D4:wrapper:t19": 0.027934575761937093,
+            "D4:wrapper:t20": -0.035835172464751874,
+            "D4:wrapper:t21": 0.03648407921149554,
+            "D4:wrapper:t22": -0.06706840507129036,
+            "D4:wrapper:t23": -0.017483304559645144
+          }
+        },
+        "descriptive": {
+          "semantic": {
+            "mean": -0.05970998608950837,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24,
+            "status": "DESCRIPTIVE"
+          },
+          "causal": {
+            "mean": 0.03717625957462737,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24,
+            "status": "DESCRIPTIVE"
+          },
+          "combined": {
+            "mean": 0.03717625957462737,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24,
+            "status": "DESCRIPTIVE"
+          },
+          "random": {
+            "mean": -0.014830669409378916,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24,
+            "status": "DESCRIPTIVE"
+          }
+        },
+        "support": {
+          "semantic": {
+            "D4:wrapper:t00": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t01": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t02": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t03": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t04": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t05": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t06": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t07": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t08": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t09": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t10": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t11": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t12": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t13": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t14": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t15": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t16": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t17": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t18": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t19": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t20": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t21": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t22": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t23": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            }
+          },
+          "causal": {
+            "D4:wrapper:t00": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t01": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t02": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t03": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t04": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t05": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t06": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t07": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t08": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t09": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t10": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t11": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t12": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t13": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t14": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t15": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t16": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t17": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t18": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t19": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t20": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t21": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t22": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t23": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            }
+          },
+          "combined": {
+            "D4:wrapper:t00": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t01": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t02": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t03": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t04": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t05": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t06": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t07": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t08": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t09": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t10": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t11": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t12": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t13": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t14": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t15": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t16": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t17": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t18": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t19": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t20": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t21": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t22": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t23": {
+              "finite_neuron_task_mode_cells": 48,
+              "eligible_neuron_task_mode_cells": 48,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            }
+          }
+        },
+        "random_controls": {
+          "n_frozen_draws": 100,
+          "draw_means": [
+            -0.05970998608950837,
+            -0.025401957270008005,
+            -0.000902983506405261,
+            -0.025401957270008005,
+            0.03717625957462737,
+            0.0312138572717708,
+            -0.01778325748343556,
+            0.007615584369902365,
+            -0.01778325748343556,
+            -0.004481798348885052,
+            -0.02285975682884389,
+            0.03717625957462737,
+            -0.05970998608950837,
+            -0.035225810230191716,
+            0.020002377510431615,
+            -0.06100593154674788,
+            -0.018998306171516734,
+            -0.05496263247473301,
+            0.0028775703817635746,
+            0.007615584369902365,
+            0.0028775703817635746,
+            -0.02285975682884389,
+            0.020002377510431615,
+            -0.02285975682884389,
+            -0.023745659786292117,
+            0.005433735955214641,
+            -0.006663646763572769,
+            -0.055929432201339536,
+            0.02386382816775876,
+            -0.035225810230191716,
+            -0.006663646763572769,
+            0.03717625957462737,
+            -0.0082530126104173,
+            0.007615584369902365,
+            -0.02285975682884389,
+            -0.055929432201339536,
+            -0.000902983506405261,
+            -0.023745659786292117,
+            -0.01778325748343556,
+            -0.000902983506405261,
+            -0.004481798348885052,
+            0.007615584369902365,
+            0.02386382816775876,
+            -0.004481798348885052,
+            -0.006663646763572769,
+            -0.023745659786292117,
+            -0.006663646763572769,
+            -0.05496263247473301,
+            0.0312138572717708,
+            -0.035225810230191716,
+            0.02386382816775876,
+            -0.018998306171516734,
+            -0.05970998608950837,
+            -0.004481798348885052,
+            0.020002377510431615,
+            -0.0082530126104173,
+            -0.018998306171516734,
+            -0.01429631168243217,
+            0.005433735955214641,
+            -0.01429631168243217,
+            0.0312138572717708,
+            0.0028775703817635746,
+            -0.055929432201339536,
+            -0.05970998608950837,
+            -0.06100593154674788,
+            -0.03137832470515151,
+            -0.004481798348885052,
+            -0.05970998608950837,
+            -0.023745659786292117,
+            -0.0082530126104173,
+            -0.01429631168243217,
+            -0.0082530126104173,
+            -0.05496263247473301,
+            -0.06100593154674788,
+            0.005433735955214641,
+            -0.025401957270008005,
+            -0.025401957270008005,
+            -0.01778325748343556,
+            0.03717625957462737,
+            -0.01429631168243217,
+            -0.03137832470515151,
+            -0.05496263247473301,
+            0.005433735955214641,
+            -0.025401957270008005,
+            -0.018998306171516734,
+            -0.000902983506405261,
+            -0.05496263247473301,
+            -0.021554471744967805,
+            0.005433735955214641,
+            0.007615584369902365,
+            0.007615584369902365,
+            -0.05496263247473301,
+            -0.02285975682884389,
+            -0.05970998608950837,
+            -0.035225810230191716,
+            0.03717625957462737,
+            -0.05496263247473301,
+            -0.03137832470515151,
+            0.02386382816775876,
+            -0.02285975682884389
+          ]
+        },
+        "metric": "within-task and wrapper Pearson; core intervention modes equally weighted"
+      },
+      "within_label": {
+        "wrapper_scores": {
+          "semantic": {
+            "D4:wrapper:t00": -0.15871096903498894,
+            "D4:wrapper:t01": -0.1352701469155682,
+            "D4:wrapper:t02": 0.08180061499809929,
+            "D4:wrapper:t03": -0.03991665515376731,
+            "D4:wrapper:t04": -0.1361750559225234,
+            "D4:wrapper:t05": -0.023925223047735863,
+            "D4:wrapper:t06": -0.041556150298683314,
+            "D4:wrapper:t07": -0.05086822528634205,
+            "D4:wrapper:t08": -0.020933200043297212,
+            "D4:wrapper:t09": -0.12633643781565534,
+            "D4:wrapper:t10": -0.02422225464303072,
+            "D4:wrapper:t11": 0.15686484610356738,
+            "D4:wrapper:t12": 0.006330718688741892,
+            "D4:wrapper:t13": -0.06084750150058884,
+            "D4:wrapper:t14": -0.1536253047819465,
+            "D4:wrapper:t15": -0.07891666247642937,
+            "D4:wrapper:t16": -0.2141000391980974,
+            "D4:wrapper:t17": -0.02200234526462465,
+            "D4:wrapper:t18": -0.13828586385929895,
+            "D4:wrapper:t19": 0.01644273008758666,
+            "D4:wrapper:t20": 0.050693229908757464,
+            "D4:wrapper:t21": 0.09417371999911238,
+            "D4:wrapper:t22": -0.004627617714985673,
+            "D4:wrapper:t23": -0.12209855030825874
+          },
+          "causal": {
+            "D4:wrapper:t00": -0.1561097380356631,
+            "D4:wrapper:t01": -0.03971289490680739,
+            "D4:wrapper:t02": 0.12964267356379294,
+            "D4:wrapper:t03": -0.0236914167921979,
+            "D4:wrapper:t04": -0.07321895010373722,
+            "D4:wrapper:t05": 0.04285671504655671,
+            "D4:wrapper:t06": 0.052205218202145444,
+            "D4:wrapper:t07": 0.05412191288075316,
+            "D4:wrapper:t08": -0.08062911558953868,
+            "D4:wrapper:t09": 0.01730604464549156,
+            "D4:wrapper:t10": 0.06497161502769132,
+            "D4:wrapper:t11": 0.21734374887542415,
+            "D4:wrapper:t12": 0.07428274834031189,
+            "D4:wrapper:t13": 0.10332637983603511,
+            "D4:wrapper:t14": -0.024067263027934088,
+            "D4:wrapper:t15": 0.07143111295042924,
+            "D4:wrapper:t16": -0.05821087176085532,
+            "D4:wrapper:t17": 0.17855427378579777,
+            "D4:wrapper:t18": 0.09095959807883618,
+            "D4:wrapper:t19": 0.17173337159334498,
+            "D4:wrapper:t20": 0.029563852096593023,
+            "D4:wrapper:t21": 0.1262098576687411,
+            "D4:wrapper:t22": -0.21844361927903977,
+            "D4:wrapper:t23": 0.07642447782167062
+          },
+          "combined": {
+            "D4:wrapper:t00": -0.1561097380356631,
+            "D4:wrapper:t01": -0.03971289490680739,
+            "D4:wrapper:t02": 0.12964267356379294,
+            "D4:wrapper:t03": -0.0236914167921979,
+            "D4:wrapper:t04": -0.07321895010373722,
+            "D4:wrapper:t05": 0.04285671504655671,
+            "D4:wrapper:t06": 0.052205218202145444,
+            "D4:wrapper:t07": 0.05412191288075316,
+            "D4:wrapper:t08": -0.08062911558953868,
+            "D4:wrapper:t09": 0.01730604464549156,
+            "D4:wrapper:t10": 0.06497161502769132,
+            "D4:wrapper:t11": 0.21734374887542415,
+            "D4:wrapper:t12": 0.07428274834031189,
+            "D4:wrapper:t13": 0.10332637983603511,
+            "D4:wrapper:t14": -0.024067263027934088,
+            "D4:wrapper:t15": 0.07143111295042924,
+            "D4:wrapper:t16": -0.05821087176085532,
+            "D4:wrapper:t17": 0.17855427378579777,
+            "D4:wrapper:t18": 0.09095959807883618,
+            "D4:wrapper:t19": 0.17173337159334498,
+            "D4:wrapper:t20": 0.029563852096593023,
+            "D4:wrapper:t21": 0.1262098576687411,
+            "D4:wrapper:t22": -0.21844361927903977,
+            "D4:wrapper:t23": 0.07642447782167062
+          },
+          "random": {
+            "D4:wrapper:t00": -0.050586096971600616,
+            "D4:wrapper:t01": -0.05853765961632569,
+            "D4:wrapper:t02": 0.021446314236258934,
+            "D4:wrapper:t03": -0.03583719692622471,
+            "D4:wrapper:t04": -0.08348966285915607,
+            "D4:wrapper:t05": -0.003326757646861278,
+            "D4:wrapper:t06": -0.007722098098408391,
+            "D4:wrapper:t07": 0.04012440625499166,
+            "D4:wrapper:t08": -0.05822452255442975,
+            "D4:wrapper:t09": -0.021265732032417252,
+            "D4:wrapper:t10": -0.05667764978506013,
+            "D4:wrapper:t11": 0.10435488723160637,
+            "D4:wrapper:t12": 0.042165502587021814,
+            "D4:wrapper:t13": 0.03427640231588533,
+            "D4:wrapper:t14": -0.08099627729320813,
+            "D4:wrapper:t15": -0.0002038540074845085,
+            "D4:wrapper:t16": -0.10373440571652838,
+            "D4:wrapper:t17": 0.011582682396213708,
+            "D4:wrapper:t18": -0.010449872586066363,
+            "D4:wrapper:t19": 0.048183040100532135,
+            "D4:wrapper:t20": -0.04802622768656751,
+            "D4:wrapper:t21": 0.03460044321331567,
+            "D4:wrapper:t22": -0.07267450979031224,
+            "D4:wrapper:t23": -0.020682548308470314
+          }
+        },
+        "descriptive": {
+          "semantic": {
+            "mean": -0.047754680978331555,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24,
+            "status": "DESCRIPTIVE"
+          },
+          "causal": {
+            "mean": 0.034452072121576735,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24,
+            "status": "DESCRIPTIVE"
+          },
+          "combined": {
+            "mean": 0.034452072121576735,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24,
+            "status": "DESCRIPTIVE"
+          },
+          "random": {
+            "mean": -0.015654224730970657,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24,
+            "status": "DESCRIPTIVE"
+          }
+        },
+        "support": {
+          "semantic": {
+            "D4:wrapper:t00": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t01": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t02": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t03": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t04": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t05": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t06": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t07": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t08": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t09": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t10": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t11": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t12": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t13": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t14": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t15": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t16": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t17": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t18": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t19": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t20": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t21": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t22": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t23": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            }
+          },
+          "causal": {
+            "D4:wrapper:t00": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t01": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t02": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t03": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t04": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t05": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t06": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t07": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t08": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t09": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t10": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t11": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t12": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t13": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t14": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t15": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t16": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t17": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t18": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t19": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t20": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t21": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t22": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t23": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            }
+          },
+          "combined": {
+            "D4:wrapper:t00": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t01": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t02": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t03": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t04": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t05": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t06": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t07": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t08": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t09": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t10": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t11": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t12": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t13": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t14": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t15": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t16": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t17": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t18": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t19": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t20": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t21": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t22": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            },
+            "D4:wrapper:t23": {
+              "finite_neuron_task_mode_cells": 96,
+              "eligible_neuron_task_mode_cells": 96,
+              "invalid_constant_or_insufficient_cells": 0,
+              "finite_fraction": 1.0
+            }
+          }
+        },
+        "random_controls": {
+          "n_frozen_draws": 100,
+          "draw_means": [
+            -0.047754680978331555,
+            -0.029827956259217955,
+            0.015650638321548335,
+            -0.029827956259217955,
+            0.034452072121576735,
+            0.04310232500031134,
+            -0.027660590606368083,
+            0.00820574934553044,
+            -0.027660590606368083,
+            -0.009371342276104722,
+            -0.04178584412141997,
+            0.034452072121576735,
+            -0.047754680978331555,
+            -0.035633611717337144,
+            0.002749726984889695,
+            -0.06434791652568041,
+            -0.02732993578456618,
+            -0.05607427903526425,
+            0.013182656289251374,
+            0.00820574934553044,
+            0.013182656289251374,
+            -0.04178584412141997,
+            0.002749726984889695,
+            -0.04178584412141997,
+            -0.01901033772763349,
+            0.014388020191968073,
+            -0.0031890714296670883,
+            -0.05022266301062853,
+            0.017205635321743486,
+            -0.035633611717337144,
+            -0.0031890714296670883,
+            0.034452072121576735,
+            -0.010246051357019512,
+            0.00820574934553044,
+            -0.04178584412141997,
+            -0.05022266301062853,
+            0.015650638321548335,
+            -0.01901033772763349,
+            -0.027660590606368083,
+            0.015650638321548335,
+            -0.009371342276104722,
+            0.00820574934553044,
+            0.017205635321743486,
+            -0.009371342276104722,
+            -0.0031890714296670883,
+            -0.01901033772763349,
+            -0.0031890714296670883,
+            -0.05607427903526425,
+            0.04310232500031134,
+            -0.035633611717337144,
+            0.017205635321743486,
+            -0.02732993578456618,
+            -0.047754680978331555,
+            -0.009371342276104722,
+            0.002749726984889695,
+            -0.010246051357019512,
+            -0.02732993578456618,
+            -0.018519688847435673,
+            0.014388020191968073,
+            -0.018519688847435673,
+            0.04310232500031134,
+            0.013182656289251374,
+            -0.05022266301062853,
+            -0.047754680978331555,
+            -0.06434791652568041,
+            -0.03434095514540208,
+            -0.009371342276104722,
+            -0.047754680978331555,
+            -0.01901033772763349,
+            -0.010246051357019512,
+            -0.018519688847435673,
+            -0.010246051357019512,
+            -0.05607427903526425,
+            -0.06434791652568041,
+            0.014388020191968073,
+            -0.029827956259217955,
+            -0.029827956259217955,
+            -0.027660590606368083,
+            0.034452072121576735,
+            -0.018519688847435673,
+            -0.03434095514540208,
+            -0.05607427903526425,
+            0.014388020191968073,
+            -0.029827956259217955,
+            -0.02732993578456618,
+            0.015650638321548335,
+            -0.05607427903526425,
+            -0.028535299687282873,
+            0.014388020191968073,
+            0.00820574934553044,
+            0.00820574934553044,
+            -0.05607427903526425,
+            -0.04178584412141997,
+            -0.047754680978331555,
+            -0.035633611717337144,
+            0.034452072121576735,
+            -0.05607427903526425,
+            -0.03434095514540208,
+            0.017205635321743486,
+            -0.04178584412141997
+          ]
+        },
+        "metric": "within-task and wrapper Pearson; core intervention modes equally weighted"
+      }
+    }
+  },
+  "fit_split": "D2",
+  "evaluation_split": "D4",
+  "maps_refitted": false,
+  "primary_modes": [
+    "zero",
+    "mean",
+    "patch"
+  ],
+  "excluded_from_confirmatory_family": true,
+  "direction_transform": "yes_oriented = truth_oriented * (2*label - 1)",
+  "limitations": [
+    "Diagnostic views are not new primary endpoints and have no confirmatory p-values.",
+    "Constant or fewer-than-three-example cells remain undefined, never zero evidence.",
+    "Views can have different identifiable unit/cell support; inspect support counts.",
+    "Within-label attenuation is consistent with answer-orientation confounding, not proof of its exclusive cause.",
+    "Task competence remains necessary for functional conservation claims."
+  ],
+  "pair": [
+    "smol",
+    "olmo"
+  ],
+  "unit_kind": "group",
+  "cohort": "cross_family",
+  "task_competence": {
+    "arithmetic": {
+      "model_a": {
+        "n": 192,
+        "correct": 95,
+        "accuracy": 0.4947916666666667,
+        "wilson95": [
+          0.4248705123482253,
+          0.5649171454233036
+        ],
+        "passed": false,
+        "ties_counted_incorrect": 0
+      },
+      "model_b": {
+        "n": 192,
+        "correct": 94,
+        "accuracy": 0.4895833333333333,
+        "wilson95": [
+          0.41977551678441105,
+          0.5597997987586464
+        ],
+        "passed": false,
+        "ties_counted_incorrect": 0
+      },
+      "both_passed": false
+    },
+    "comparison": {
+      "model_a": {
+        "n": 192,
+        "correct": 98,
+        "accuracy": 0.5104166666666666,
+        "wilson95": [
+          0.4402002012413536,
+          0.5802244832155888
+        ],
+        "passed": false,
+        "ties_counted_incorrect": 0
+      },
+      "model_b": {
+        "n": 192,
+        "correct": 99,
+        "accuracy": 0.515625,
+        "wilson95": [
+          0.44532500223818083,
+          0.5853120244472331
+        ],
+        "passed": false,
+        "ties_counted_incorrect": 0
+      },
+      "both_passed": false
+    },
+    "negation": {
+      "model_a": {
+        "n": 192,
+        "correct": 98,
+        "accuracy": 0.5104166666666666,
+        "wilson95": [
+          0.4402002012413536,
+          0.5802244832155888
+        ],
+        "passed": false,
+        "ties_counted_incorrect": 0
+      },
+      "model_b": {
+        "n": 192,
+        "correct": 97,
+        "accuracy": 0.5052083333333334,
+        "wilson95": [
+          0.4350828545766966,
+          0.5751294876517749
+        ],
+        "passed": false,
+        "ties_counted_incorrect": 0
+      },
+      "both_passed": false
+    },
+    "syntax": {
+      "model_a": {
+        "n": 192,
+        "correct": 96,
+        "accuracy": 0.5,
+        "wilson95": [
+          0.42997295867531937,
+          0.5700270413246806
+        ],
+        "passed": false,
+        "ties_counted_incorrect": 0
+      },
+      "model_b": {
+        "n": 192,
+        "correct": 96,
+        "accuracy": 0.5,
+        "wilson95": [
+          0.42997295867531937,
+          0.5700270413246806
+        ],
+        "passed": false,
+        "ties_counted_incorrect": 0
+      },
+      "both_passed": false
+    }
+  },
+  "source": {
+    "effects_sha256_a": "ad16e1c0b44df47b440415105f59427ca9ae59829c2da9b70f7042cd44b41940",
+    "effects_sha256_b": "df047931d298ef4b60dd02bfe0b652a8244aa6e96e5dc89545b6a8e70b09d096",
+    "frozen_fit_sha256": "ba56b0e82f6b06d85363ab2c11072f3e38d4a0e282f9d41b844dc6ed54206c46",
+    "fit_manifest_sha256": "4f0b52462f1a60880d85f2bf9ce1d631088ccb3d4073153428bb69b31ac6a9ab",
+    "analysis_version": "answer-bias-diagnostic-v1",
+    "analysis_settings": {
+      "primary_modes": [
+        "zero",
+        "mean",
+        "patch"
+      ],
+      "minimum_examples_per_cell": 3,
+      "constant_standard_deviation_tolerance": 1e-10,
+      "task_and_mode_weighting": "equal",
+      "random_maps": "reuse frozen D2 maps",
+      "orientation": "truth effect times (2*label-1)",
+      "within_label": "concept crossed with binary truth label",
+      "cohort_bootstrap_replicates": 5000,
+      "cohort_bootstrap_seed": 1729
+    },
+    "analysis_code_sha256": "0907037cf8d8e163213353e370a4862306bbd311268e3bc589d2b57607cb77af",
+    "numerical_helper_sha256": "86bb3b4fa8df0140fe8606862b7fde174a1ce207559627fafe064ae9760facc4"
+  }
+}

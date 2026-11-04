@@ -1,0 +1,362 @@
+{
+  "schema": "followup-figure-v1",
+  "title": "D4 dose response: group units at span",
+  "encoding": {
+    "id": "dose_group_span",
+    "kind": "line",
+    "title": "D4 dose response: group units at span",
+    "x": "scale",
+    "y": "value",
+    "series": "model",
+    "xlabel": "Activation scale",
+    "ylabel": "Mean absolute margin effect",
+    "source": [
+      "results/followup-v2/causal_alignment/summary.json",
+      "results/followup-v2/causal_alignment/fit_manifest.json",
+      "results/followup-v2/causal_alignment/seed101_seed211/single/eval.json",
+      "results/followup-v2/causal_alignment/seed101_seed211/group/eval.json",
+      "results/followup-v2/causal_alignment/seed101_seed307/single/eval.json",
+      "results/followup-v2/causal_alignment/seed101_seed307/group/eval.json",
+      "results/followup-v2/causal_alignment/seed101_seed401/single/eval.json",
+      "results/followup-v2/causal_alignment/seed101_seed401/group/eval.json",
+      "results/followup-v2/causal_alignment/seed101_seed503/single/eval.json",
+      "results/followup-v2/causal_alignment/seed101_seed503/group/eval.json",
+      "results/followup-v2/causal_alignment/seed211_seed307/single/eval.json",
+      "results/followup-v2/causal_alignment/seed211_seed307/group/eval.json",
+      "results/followup-v2/causal_alignment/seed211_seed401/single/eval.json",
+      "results/followup-v2/causal_alignment/seed211_seed401/group/eval.json",
+      "results/followup-v2/causal_alignment/seed211_seed503/single/eval.json",
+      "results/followup-v2/causal_alignment/seed211_seed503/group/eval.json",
+      "results/followup-v2/causal_alignment/seed307_seed401/single/eval.json",
+      "results/followup-v2/causal_alignment/seed307_seed401/group/eval.json",
+      "results/followup-v2/causal_alignment/seed307_seed503/single/eval.json",
+      "results/followup-v2/causal_alignment/seed307_seed503/group/eval.json",
+      "results/followup-v2/causal_alignment/seed401_seed503/single/eval.json",
+      "results/followup-v2/causal_alignment/seed401_seed503/group/eval.json",
+      "results/followup-v2/causal_alignment/qwen_smol/single/eval.json",
+      "results/followup-v2/causal_alignment/qwen_smol/group/eval.json",
+      "results/followup-v2/causal_alignment/qwen_olmo/single/eval.json",
+      "results/followup-v2/causal_alignment/qwen_olmo/group/eval.json",
+      "results/followup-v2/causal_alignment/smol_olmo/single/eval.json",
+      "results/followup-v2/causal_alignment/smol_olmo/group/eval.json"
+    ],
+    "show_in_readme": false,
+    "note": "Descriptive mean over fixed units and examples; no uncertainty or model-population inference is attached. These dose modes never select the primary matching."
+  },
+  "sources": [
+    {
+      "path": "results/followup-v2/causal_alignment/summary.json",
+      "sha256": "51502e8d174995ca881bda01bfe4d7f18267ea4baa04b9a4e4df3733eecf04e9"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/fit_manifest.json",
+      "sha256": "4f0b52462f1a60880d85f2bf9ce1d631088ccb3d4073153428bb69b31ac6a9ab"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/seed101_seed211/single/eval.json",
+      "sha256": "66cbb243a559bcbb869207d0f06e94966621168c9622d3a076d5f95f01ba9555"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/seed101_seed211/group/eval.json",
+      "sha256": "c50dfe23fef58c5443e08789a5b10976324de93dd22349869e65acd46c65195e"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/seed101_seed307/single/eval.json",
+      "sha256": "6a760bba659f8e3ea8d1af7c7cb927ce0cd08367b6c7a168a13694e9b25a5712"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/seed101_seed307/group/eval.json",
+      "sha256": "bed3fc41191712ba4cfd83abf936722f5b9bcf5218689f58d671a910e4154907"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/seed101_seed401/single/eval.json",
+      "sha256": "1c5c9cf2d05ea89b35a9fac9e369144c1d07406cea5dac16060a1dc120b54e64"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/seed101_seed401/group/eval.json",
+      "sha256": "a6080edfc917595d76b962f610f5e9f2b70c63ad30105e8a47f38b8308a3ecaf"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/seed101_seed503/single/eval.json",
+      "sha256": "799fcc6d87c310bb0e791ee468614b337a983b857ed8675f388fbf43934ca48c"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/seed101_seed503/group/eval.json",
+      "sha256": "f312458b0abe11e961a3c03cc944a367d7b3e19a9d50d1375f94bf8f9c0673b6"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/seed211_seed307/single/eval.json",
+      "sha256": "c06bb8a724d932109705915409b86288fec02465c4a1466b99e13141016758c1"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/seed211_seed307/group/eval.json",
+      "sha256": "a1ab25e233a6f477e1c9248d2cc58e59633b5ac8625cba93c11bea63b01573e4"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/seed211_seed401/single/eval.json",
+      "sha256": "a4c76f7a98f739e1885e68365acac04c1d58e88e9f70a41c3a7bf8c43befed0f"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/seed211_seed401/group/eval.json",
+      "sha256": "182b994bfdf1079785907bf92e631a8594241cf3e387c6f9db9a510cece0fad2"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/seed211_seed503/single/eval.json",
+      "sha256": "3e6a7ac857cdeb62ef3747f52ce95d301e3d4a9ed5ab003ff9ed4abb72df4ba3"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/seed211_seed503/group/eval.json",
+      "sha256": "cec1f1850fd813cc90bbab5a7dde35dea7552892ae5fcdc40ea3e28ebeea5025"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/seed307_seed401/single/eval.json",
+      "sha256": "fb0e5c016daf80ae773227e7d39e429da81c805aaf9141bdc1b2ca9ec07d8b66"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/seed307_seed401/group/eval.json",
+      "sha256": "4854de4b3ff60009bbf493eeaf7e3c30bc11851bfac6a2d7ba34424951b2bf5f"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/seed307_seed503/single/eval.json",
+      "sha256": "63bf17f5ba0d6868377d5782eb50b81ac2dabd4a66d8891bd3ce54c32c9066c6"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/seed307_seed503/group/eval.json",
+      "sha256": "9e011f1da8540b410b6e215ab81718fbccba1a836577831f0a38c7ec8bfb85ec"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/seed401_seed503/single/eval.json",
+      "sha256": "5602ebda4ea4175e4992057ae5ac86e5225ba4502b4d123648b4ff1a3eeed8bb"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/seed401_seed503/group/eval.json",
+      "sha256": "f59e078e31991c5320868d0f43079bccf2733f531f2cc2249d83790e431d93f6"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/qwen_smol/single/eval.json",
+      "sha256": "6e0a0de21bcfd793d172d734ecc93df5c35a62b99ee9d361404a1b513fcbeff5"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/qwen_smol/group/eval.json",
+      "sha256": "ec0caf239d4bdd3cb1ca50039257daa6e2781970d79b4128d69235c3e5c1df41"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/qwen_olmo/single/eval.json",
+      "sha256": "53db434d1d97ae89631ae84f5ba911641ec5a018cb8025ea94f12792ec92df06"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/qwen_olmo/group/eval.json",
+      "sha256": "1a64cf53c05e76e3268a98905899f9de5a8b6c974d1a0d90eeb9f3095be52201"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/smol_olmo/single/eval.json",
+      "sha256": "82784fd68f9cd2bcc0e5130f965b33d36a48da4a788ced44a559ad29b540a144"
+    },
+    {
+      "path": "results/followup-v2/causal_alignment/smol_olmo/group/eval.json",
+      "sha256": "4d1f92320e21f7c6cd416dd6ccb3d92519d7eb2e49fd9d7ccb11a276f78fd04a"
+    }
+  ],
+  "rows": [
+    {
+      "model": "olmo",
+      "scale": 0.0,
+      "value": 0.0021651677088811994
+    },
+    {
+      "model": "olmo",
+      "scale": 0.5,
+      "value": 0.0010803688298134755
+    },
+    {
+      "model": "olmo",
+      "scale": 1.0,
+      "value": 0.0
+    },
+    {
+      "model": "olmo",
+      "scale": 1.5,
+      "value": 0.0010761102215231706
+    },
+    {
+      "model": "olmo",
+      "scale": 2.0,
+      "value": 0.002146643945404018
+    },
+    {
+      "model": "qwen",
+      "scale": 0.0,
+      "value": 0.003972524777054787
+    },
+    {
+      "model": "qwen",
+      "scale": 0.5,
+      "value": 0.0019862709062484405
+    },
+    {
+      "model": "qwen",
+      "scale": 1.0,
+      "value": 0.0
+    },
+    {
+      "model": "qwen",
+      "scale": 1.5,
+      "value": 0.001982110009218256
+    },
+    {
+      "model": "qwen",
+      "scale": 2.0,
+      "value": 0.003959085908718407
+    },
+    {
+      "model": "seed101",
+      "scale": 0.0,
+      "value": 0.00480072640105315
+    },
+    {
+      "model": "seed101",
+      "scale": 0.5,
+      "value": 0.0021590862009380394
+    },
+    {
+      "model": "seed101",
+      "scale": 1.0,
+      "value": 0.0
+    },
+    {
+      "model": "seed101",
+      "scale": 1.5,
+      "value": 0.0017276767434661147
+    },
+    {
+      "model": "seed101",
+      "scale": 2.0,
+      "value": 0.003342739775159013
+    },
+    {
+      "model": "seed211",
+      "scale": 0.0,
+      "value": 0.0015961918898691845
+    },
+    {
+      "model": "seed211",
+      "scale": 0.5,
+      "value": 0.0007964260961443871
+    },
+    {
+      "model": "seed211",
+      "scale": 1.0,
+      "value": 0.0
+    },
+    {
+      "model": "seed211",
+      "scale": 1.5,
+      "value": 0.000793510202318733
+    },
+    {
+      "model": "seed211",
+      "scale": 2.0,
+      "value": 0.001584439203763092
+    },
+    {
+      "model": "seed307",
+      "scale": 0.0,
+      "value": 0.0023480407746205856
+    },
+    {
+      "model": "seed307",
+      "scale": 0.5,
+      "value": 0.0011692880561705958
+    },
+    {
+      "model": "seed307",
+      "scale": 1.0,
+      "value": 0.0
+    },
+    {
+      "model": "seed307",
+      "scale": 1.5,
+      "value": 0.0011645264946764655
+    },
+    {
+      "model": "seed307",
+      "scale": 2.0,
+      "value": 0.0023054278917508477
+    },
+    {
+      "model": "seed401",
+      "scale": 0.0,
+      "value": 0.002530745855968538
+    },
+    {
+      "model": "seed401",
+      "scale": 0.5,
+      "value": 0.0012713829119093134
+    },
+    {
+      "model": "seed401",
+      "scale": 1.0,
+      "value": 0.0
+    },
+    {
+      "model": "seed401",
+      "scale": 1.5,
+      "value": 0.0012806459078168095
+    },
+    {
+      "model": "seed401",
+      "scale": 2.0,
+      "value": 0.002566794639164982
+    },
+    {
+      "model": "seed503",
+      "scale": 0.0,
+      "value": 0.006254169770367449
+    },
+    {
+      "model": "seed503",
+      "scale": 0.5,
+      "value": 0.0030594480785642495
+    },
+    {
+      "model": "seed503",
+      "scale": 1.0,
+      "value": 0.0
+    },
+    {
+      "model": "seed503",
+      "scale": 1.5,
+      "value": 0.0029331202330998467
+    },
+    {
+      "model": "seed503",
+      "scale": 2.0,
+      "value": 0.005742668455923194
+    },
+    {
+      "model": "smol",
+      "scale": 0.0,
+      "value": 0.0025980444625020027
+    },
+    {
+      "model": "smol",
+      "scale": 0.5,
+      "value": 0.0012936124888559182
+    },
+    {
+      "model": "smol",
+      "scale": 1.0,
+      "value": 0.0
+    },
+    {
+      "model": "smol",
+      "scale": 1.5,
+      "value": 0.0012825229205191135
+    },
+    {
+      "model": "smol",
+      "scale": 2.0,
+      "value": 0.002555812243372202
+    }
+  ]
+}

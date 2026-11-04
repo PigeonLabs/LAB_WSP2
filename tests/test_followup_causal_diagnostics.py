@@ -1,4 +1,5 @@
 import copy
+import hashlib
 import json
 
 import numpy as np
@@ -62,3 +63,59 @@ def test_insufficient_within_label_sample_is_missing_not_zero():
     result=evaluate_bias_diagnostics(a,a,rows,fit)
     assert result['locations']['answer']['truth_oriented']['descriptive']['combined']['mean']==pytest.approx(1.)
     assert result['locations']['answer']['within_label']['descriptive']['combined']['mean'] is None
+
+
+def test_subset_readiness_and_reuse_require_requested_models_and_current_provenance(tmp_path,monkeypatch):
+    from src import followup_causal_diagnostics as diagnostic
+    from src.followup_alignment_runner import PAIRS
+    rows,template=fixture()
+    data=tmp_path/'data';data.mkdir()
+    (data/'D4.jsonl').write_text(''.join(json.dumps(row)+'\n' for row in rows))
+    entries=[]
+    for pair in PAIRS:
+        for kind,index in [('single',0),('group',1)]:
+            fit=copy.deepcopy(template)
+            fit.update(unit_indices_a=[index],unit_indices_b=[index],source=dict(
+                unit_ids_a=['u0','u1'],unit_ids_b=['u0','u1'],modes=['zero','mean','patch'],
+                locations=['answer'],primary_mode_indices=[0,1,2]))
+            local=fit['locations']['answer']
+            single=dict(source=[0],target=[0])
+            local['mappings']={k:copy.deepcopy(single) for k in ('semantic','causal','combined')}
+            local['random_mappings']=[copy.deepcopy(single) for _ in range(100)]
+            path=tmp_path/'causal_alignment'/('_'.join(pair))/kind/'fit.json'
+            path.parent.mkdir(parents=True,exist_ok=True)
+            path.write_text(json.dumps(json_ready(fit)))
+            entries.append(dict(path=str(path.relative_to(tmp_path)),sha256=hashlib.sha256(path.read_bytes()).hexdigest()))
+    manifest=tmp_path/'causal_alignment/fit_manifest.json'
+    manifest.write_text(json.dumps(dict(full_protocol_complete=True,n_fits=26,fits=entries)))
+    arrays=dict(effects=np.random.default_rng(9).normal(size=(len(rows),2,1,3)),
+                row_ids=np.array([r['id'] for r in rows]),groups=np.array([r['group_id'] for r in rows]),
+                concepts=np.array([r['concept'] for r in rows]),labels=np.array([r['label'] for r in rows]),
+                margins=np.ones(len(rows)),unit_ids=np.array(['u0','u1']),locations=np.array(['answer']),
+                modes=np.array(['zero','mean','patch']))
+    for name in ('seed101','seed211'):
+        path=tmp_path/'causal'/name/'D4';path.mkdir(parents=True)
+        np.savez(path/'effects.npz',**arrays)
+        (path/'manifest.json').write_text(json.dumps(dict(effects_sha256=hashlib.sha256((path/'effects.npz').read_bytes()).hexdigest())))
+    # Other six model manifests intentionally do not exist: this pair is independent.
+    result=diagnostic.run_diagnostics(tmp_path,data,pairs=[('seed101','seed211')])
+    assert result['n_evaluations']==2 and not result['full_protocol_complete']
+    assert not (tmp_path/'exploratory_causal_diagnostics/summary.json').exists()
+    def refuse_recalculation(*args,**kwargs):
+        raise AssertionError('Unchanged verified diagnostic should have been reused')
+    monkeypatch.setattr(diagnostic,'evaluate_bias_diagnostics',refuse_recalculation)
+    replay=diagnostic.run_diagnostics(tmp_path,data,pairs=[('seed101','seed211')])
+    assert json_ready(replay)==json_ready(result)
+    monkeypatch.setattr(diagnostic,'DIAGNOSTIC_VERSION','changed-settings-version')
+    with pytest.raises(ValueError,match='source checksum mismatch'):
+        diagnostic.run_diagnostics(tmp_path,data,pairs=[('seed101','seed211')])
+    monkeypatch.setattr(diagnostic,'DIAGNOSTIC_VERSION','answer-bias-diagnostic-v1')
+    path=tmp_path/'causal/seed101/D4'
+    arrays['effects'][0,0,0,0]+=1
+    np.savez(path/'effects.npz',**arrays)
+    (path/'manifest.json').write_text(json.dumps(dict(effects_sha256=hashlib.sha256((path/'effects.npz').read_bytes()).hexdigest())))
+    with pytest.raises(ValueError,match='source checksum mismatch'):
+        diagnostic.run_diagnostics(tmp_path,data,pairs=[('seed101','seed211')])
+    (tmp_path/'causal/seed211/D4/manifest.json').unlink()
+    with pytest.raises(ValueError,match='D4 not complete for seed211'):
+        diagnostic.run_diagnostics(tmp_path,data,pairs=[('seed101','seed211')])

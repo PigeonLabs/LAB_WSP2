@@ -12,7 +12,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from scripts.build_followup_stages import RUN, MODELS, NotReady, read, rel, base, metric, comparison
+from scripts.build_followup_stages import RUN, MODELS, NotReady, read, rel, base, metric, comparison, add_causal_competence, add_causal_activation_baselines
 
 
 def digest(path):
@@ -308,6 +308,9 @@ def build():
         runtime['scope'], preservation.get('claim', ''), archive_scope,
         'Saved-artifact replay does not establish historical execution chronology or independently regenerate excluded model weights.'
     ] + audit.get('limitations', [])
+    add_causal_competence(p)
+    add_causal_activation_baselines(p)
+    p['executive_summary']=p['rationale']
     return p
 
 

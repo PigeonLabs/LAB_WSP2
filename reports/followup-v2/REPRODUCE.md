@@ -10,7 +10,7 @@ python scripts/validate_followup_results.py --require-complete --output /tmp/fol
 
 Raw data are also published in `data/followup-v2.tar.gz`. The validator can reconstruct the deterministic dataset and checks stored hashes. Raw measurements include row identities, model coordinates, full-answer likelihood margins, token lengths, sign routes, and intervention effects. Original large weights remain local; training and model manifests pin their hashes and public model revisions.
 
-For a new experiment reproduction, create a separate project checkout/workspace and keep its `results/followup-v2` empty. Install dependencies in its own virtual environment; download pinned base models using `scripts/prepare_models.py` so local paths refer to that workspace. Generate and freeze data with `src.followup_data.generate_dataset` and `freeze_dataset`. The following is the execution order used here (invoke the project's Python environment):
+For a new experiment reproduction, create a separate project checkout/workspace and keep its `results/followup-v2` empty. Install dependencies in its own virtual environment; download pinned base models using `scripts/prepare_models.py` so local paths refer to that workspace. Generate and freeze data with `src.followup_data.generate_dataset` and `freeze_dataset`. The following dependency order reproduces the saved analyses (invoke the project's Python environment); the explicitly post-hoc supplements retain that status:
 
 ```bash
 python scripts/run_followup_training.py
@@ -27,6 +27,10 @@ python -m src.followup_runner causal-fit
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m src.followup_alignment_runner causal-fit
 python -m src.followup_runner causal-test
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m src.followup_alignment_runner causal-evaluate
+python scripts/followup_causal_competence.py
+# Separate post-hoc missing-baseline check; fits read D2 only:
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m src.followup_causal_activation_baseline fit
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m src.followup_causal_activation_baseline evaluate
 python scripts/build_followup_stages.py F4 --render
 python -m src.followup_transfer --device cuda
 python scripts/build_followup_stages.py F5 --render
@@ -47,6 +51,8 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m src.followup_causal_diagnosti
 ```
 
 Run GPU commands serially. Hard-stress uses original checkpoints and calibration locks without retraining. Neither its outcomes nor supplementary diagnostics change a primary mapping, threshold, or selected transplant policy.
+
+The additional causal activation controls were designed after some tiny-model D4 outcomes had already been observed. Their raw-activation and task-centered-activation maps were frozen using only the first 12 D2 wrappers, and evaluation waits for all 26 primary F4 results. Both controls are published without choosing a winner. This checks a missing primary baseline but is not retrospective preregistration, does not change the primary 110-test family, and adds no p/q values or confidence intervals. The F4 and final report builders require all 26 completed supplemental comparisons.
 
 After all primary and supplementary measurements finish, perform the final CPU checks and reporting. These commands use the already installed project environment (for example, `.venv/bin/python` in place of `python`). The dependence sensitivity retains the same 110 original p-values and primary BH results; BY is a post-hoc robustness check, not another hypothesis family or a repair for invalid sign-flip assumptions or construct confounds. [SciPy documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.false_discovery_control.html)
 
@@ -90,7 +96,7 @@ The final adapter also requires a completed `results/followup-v2/scientific_revi
 python scripts/build_followup_final.py --render
 ```
 
-This command refuses to write F6 until all F0–F5 measured snapshots, 110-test correction, dependence sensitivity, complete audit/replay, 18 hard-stress evaluations, 26 causal-orientation diagnostics, matched proxy ablation, five transfer pairs, and the scientific review are present. It generates `report_inputs/F6.json`, the F6 snapshot and reports. Final displays add validated global q-values to F3/F4/F5 without modifying their saved primary measurements or historical stage snapshots. Recorded GPU-bearing stage wall intervals are summed once from saved runtime receipts; they are not GPU utilization or active-kernel time.
+This command refuses to write F6 until all F0–F5 measured snapshots, 110-test correction, dependence sensitivity, complete audit/replay, 18 hard-stress evaluations, 26 causal-orientation diagnostics, task-level causal competence descriptives, matched proxy ablation, five transfer pairs, and the scientific review are present. It generates `report_inputs/F6.json`, the F6 snapshot and reports. Final displays add validated global q-values to F3/F4/F5 without modifying their saved primary measurements or historical stage snapshots. Recorded GPU-bearing stage wall intervals are summed once from saved runtime receipts; they are not GPU utilization or active-kernel time.
 
 D2 causal collection can overlap CPU-only F3 fitting in wall time, but only one GPU process is active. D3 model measurements begin after the complete F3 freeze; D4 measurements begin after the complete F4 freeze. The eight measured interventions remain in raw arrays; primary F4 scoring uses only zero/mean/patch. Identical no-op and duplicate-dose controls are retained as diagnostics.
 

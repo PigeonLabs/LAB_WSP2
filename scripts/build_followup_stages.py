@@ -40,6 +40,122 @@ def base(stage,title,question):
             'verdict':'INCONCLUSIVE','rationale':'','metrics':[], 'comparisons':[],
             'figures':[],'artifacts':[],'limitations':[]}
 
+
+def add_causal_competence(payload):
+    """Attach completed descriptive task strata; never refit or add tests."""
+    path=RUN/'causal_alignment/competence_descriptive.json'
+    source=RUN/'causal_alignment/summary.json';report=ROOT/'reports/followup-v2/CAUSAL_COMPETENCE.md'
+    data=read(path)
+    if data.get('status')!='COMPLETE_DESCRIPTIVE' or len(data.get('rows',[]))!=64 or not report.is_file():
+        raise NotReady('Complete64-row F4 task-competence descriptive analysis required')
+    if data.get('source_summary_sha256')!=hashlib.sha256(source.read_bytes()).hexdigest():
+        raise ValueError('F4 competence descriptives source summary hash mismatch')
+    if data.get('primary_family_modified') is not False or data.get('new_tests_or_intervals') is not False:
+        raise ValueError('Task competence analysis must remain descriptive')
+    keys=[(r['cohort'],r['unit_kind'],r['position'],r['concept'],r['subset']) for r in data['rows']]
+    if len(set(keys))!=64:raise ValueError('Duplicate F4 descriptive task strata')
+    payload['causal_competence']={'rows':data['rows'],'source':rel(path),'report':rel(report),
+        'scope':'Saved D4 by-task results split into all pairs and pairs passing both operational task gates. Descriptive only: no new confidence intervals, p-values, refits or primary-family changes. Eligibility conditions on D4 outcomes; different subsets and missing-wrapper support must not be treated as a controlled causal comparison. Passing the syntax accuracy gate does not establish recursive or structural understanding.'}
+    payload['artifacts'] += [{'label':'D4 all-pair and competence-qualified task evidence','path':rel(path)},
+                            {'label':'Task-method means, pair counts and missing support','path':rel(report)}]
+    payload['rationale'] += ' 과제별 전체 쌍과 양측 능력 조건을 충족한 쌍의 인과 대응·누락 범위를 별도 기술 표로 공개한다. D4 결과에 따른 부분집합 구분이며 추가 검정이나 재학습이 아니다. 괄호 정확도 gate 통과만으로 재귀적·구조적 이해를 보장하지 않는다.'
+    payload['limitations'].append(payload['causal_competence']['scope'])
+    return payload
+
+
+def add_causal_activation_baselines(payload):
+    """Consume the complete posthoc baseline check; never modify its frozen code/maps."""
+    directory=RUN/'supplemental_causal_activation';path=directory/'summary.json'
+    manifest_path=directory/'fit_manifest.json';summary=read(path);manifest=read(manifest_path)
+    if summary.get('status')!='POSTHOC_BASELINE_CHECK_EVALUATED' or summary.get('n_evaluations')!=26 or len(summary.get('evaluations',[]))!=26:
+        raise NotReady('Complete26 supplemental causal activation evaluations required')
+    if summary.get('fit_manifest_sha256')!=hashlib.sha256(manifest_path.read_bytes()).hexdigest():
+        raise ValueError('Supplemental activation freeze manifest hash mismatch')
+    if not summary.get('posthoc') or summary.get('global_primary_test_family_modified') is not False or not summary.get('no_new_pvalues_or_qvalues'):
+        raise ValueError('Supplemental activation result scope mismatch')
+    if manifest.get('n_fit_files')!=26 or manifest.get('n_location_control_maps')!=104 or manifest.get('D4_read_during_fitting') is not False or not manifest.get('posthoc_after_some_D4_observed'):
+        raise ValueError('Supplemental activation D2 freeze scope mismatch')
+    primary=read(RUN/'causal_alignment/summary.json')
+    expected={(tuple(e['pair']),e['unit_kind']) for e in primary['evaluations']}
+    observed={(tuple(e['pair']),e['unit_kind']) for e in summary['evaluations']}
+    if observed!=expected or len(observed)!=26:raise ValueError('Supplemental activation pair/kind coverage mismatch')
+    methods=('semantic','combined','random','activation_raw','activation_task_centered')
+    collected={};sources=[rel(path),rel(manifest_path)]
+    for entry in summary['evaluations']:
+        ep=directory/entry['path'];e=read(ep)
+        if hashlib.sha256(ep.read_bytes()).hexdigest()!=entry['sha256']:raise ValueError('Supplemental activation evaluation hash mismatch')
+        pair=tuple(entry['pair']);kind=entry['unit_kind']
+        oldpath=RUN/'causal_alignment'/'_'.join(pair)/kind/'eval.json'
+        if e['source']['primary_eval_sha256']!=hashlib.sha256(oldpath.read_bytes()).hexdigest():raise ValueError('Supplemental activation primary replay source changed')
+        cohort='independent_seeds' if all(name.startswith('seed') for name in pair) else 'cross_family'
+        sources.append(rel(ep))
+        for position,location in e['locations'].items():
+            key=(cohort,kind,position);local=collected.setdefault(key,{method:[] for method in methods})
+            for method in methods:local[method].append({'pair':'_'.join(pair),**location['descriptive'][method]})
+    if len(collected)!=8:raise ValueError('Expected8 supplemental activation cohorts')
+    rows=[]
+    for key,values in sorted(collected.items()):
+        row={'cohort':key[0],'unit_kind':key[1],'position':key[2],'methods':{}}
+        for method,entries in values.items():
+            finite=[e['mean'] for e in entries if e['mean'] is not None]
+            valid=sum(e['n_valid_wrappers'] for e in entries);possible=sum(e['n_wrappers'] for e in entries)
+            row['methods'][method]={'mean':float(np.mean(finite)) if finite else None,
+                'n_available_pairs':len(finite),'n_pairs_total':len(entries),'n_missing_pairs':len(entries)-len(finite),
+                'n_valid_wrapper_cells':valid,'n_possible_wrapper_cells':possible,
+                'wrapper_coverage_fraction':valid/possible if possible else None,'pair_values':entries}
+        rows.append(row)
+    scope=('The primary F4 comparison omitted an activation-based causal matching baseline. This separate gap check was added after some tiny-model D4 outcomes had been observed. Both activation_raw and activation_task_centered maps were fitted only on the first12 D2 wrappers; fitting read no D4 values. Raw activation follows the F3 raw-correlation matching family; task-centered activation is an additional control. Both are retained without selecting a winner. The comparison is descriptive and posthoc: no new p/q/CI, no110-family change, no automatic conservation support. Means equally weight finite observed pair means; missing pair/wrapper coverage must be compared. Shared-model pairs are dependent.')
+    report=ROOT/'reports/followup-v2/CAUSAL_ACTIVATION_BASELINES.md'
+    labels={'semantic':'Semantic','combined':'Combined','random':'Random','activation_raw':'Raw activation','activation_task_centered':'Task-centered activation'}
+    lines=['# F4 posthoc activation-based causal matching controls','',scope,'',
+        'Cell format: **mean [available pairs/total pairs; valid wrapper cells/possible wrapper cells]**. Undefined values remain N/A. These are conditional descriptive cohort summaries, not independent replication or new confidence intervals.','',
+        '| Cohort / unit / position | '+' | '.join(labels[m] for m in methods)+' |','|---|'+'---:|'*len(methods)]
+    for row in rows:
+        cells=[]
+        for method in methods:
+            r=row['methods'][method];value='N/A' if r['mean'] is None else f"{r['mean']:.4f}"
+            cells.append(f"{value} [{r['n_available_pairs']}/{r['n_pairs_total']}; {r['n_valid_wrapper_cells']}/{r['n_possible_wrapper_cells']}]")
+        lines.append('| '+row['cohort']+'/'+row['unit_kind']+'/'+row['position']+' | '+' | '.join(cells)+' |')
+    lines += ['', '## Interpretation limits', '',
+        '- The original comparison answers only combined-versus-semantic matching. It cannot by itself establish superiority to activation matching; this missing baseline is acknowledged rather than retrospectively preregistered.',
+        '- Raw and task-centered controls remain separately visible, including unfavorable or undefined outcomes. No outcome selects the preferred control.',
+        '- Task competence and construct validity remain distinct. Passing the syntax gate does not establish recursive understanding; consult the hard-stress evidence.',
+        '- Per-model calibration prefixes differ across pretrained families. These controls do not remove the context, response-orientation, or finite-model-generalization limitations.',
+        '', '## Source measurements and frozen maps', '']
+    lines += [f'- [{source}](../../{source})' for source in sources]
+    report.parent.mkdir(parents=True,exist_ok=True);report.write_text('\n'.join(lines)+'\n')
+    payload['causal_activation_baselines']={'rows':rows,'scope':scope,'source':rel(path),'report':rel(report),'sources':sources}
+    payload['artifacts'] += [{'label':'Posthoc missing activation-baseline comparison','path':rel(report)},
+                            {'label':'All26 supplemental activation evaluations','path':rel(path)},
+                            {'label':'All104 supplemental D2 control maps','path':rel(manifest_path)}]
+    payload['rationale'] += ' 주 F4의 activation 매칭 대조군 누락은 별도의 사후 보충 분석으로 점검했다. D2에서만 맞춘 raw activation과 task-centered activation을 모두 보존·공개하며, 이 분석을 사전 등록된 주 결과나 새로운 확증 검정으로 취급하지 않는다.'
+    payload['limitations'].append(scope)
+    return payload
+
+
+def add_causal_answer_orientation(payload):
+    path=RUN/'exploratory_causal_diagnostics/summary.json';data=read(path)
+    if not data.get('full_protocol_complete') or data.get('n_evaluations')!=26:
+        raise NotReady('Complete26 causal answer-orientation diagnostics required')
+    if not data.get('excluded_from_confirmatory_family') or data.get('maps_refitted'):
+        raise ValueError('Causal orientation diagnostics must preserve primary maps/family')
+    if data.get('fit_manifest_sha256_unchanged')!=hashlib.sha256((RUN/'causal_alignment/fit_manifest.json').read_bytes()).hexdigest():
+        raise ValueError('Causal orientation frozen-map manifest changed')
+    rows=[]
+    for cohort,views in data['cohorts'].items():
+        rows.append({'cohort':cohort,'views':{name:values['combined'] for name,values in views.items()}})
+    payload['causal_answer_orientation']={'rows':rows,'source':rel(path),
+        'scope':'Same frozen maps and zero/mean/patch effects, viewed as truth-oriented, yes-oriented, and within-label correlations. This is an exploratory answer-bias diagnostic, not a new primary endpoint or refit. Different views can have different identifiable cell support; attenuation is consistent with answer-orientation confounding but does not prove its exclusive cause. Undefined views remain N/A.'}
+    snippets=[]
+    for kind in ('single','group'):
+        views=data['cohorts']['cross_family/'+kind+'/answer']
+        values=[views[view]['combined']['mean'] for view in ('truth_oriented','yes_oriented','within_label')]
+        snippets.append(kind+' '+ ' → '.join('N/A' if value is None else f'{value:.5f}' for value in values))
+    payload['rationale']+=' 별도 응답 방향 진단에서 이종 계열 answer 위치의 combined 상관은 truth → yes → within-label 순서로 '+', '.join(snippets)+'였다. 유효 셀 범위가 달라질 수 있는 탐색적 진단이며 응답 방향 혼입 가능성을 점검한다. 낮은 과제 능력과 함께 읽어야 하며 혼입의 유일한 원인을 입증하지 않는다.'
+    payload['limitations'].append(payload['causal_answer_orientation']['scope'])
+    payload['artifacts'].append({'label':'All26 frozen-map causal answer-orientation diagnostics','path':rel(path)})
+    return payload
+
 def f1():
     p=base('F1','5개 독립 초기화 학습과 calibration 전용 형식 선택',
            '독립 학습 모델을 확보하고 테스트셋을 보지 않고 평가 형식을 고정했는가?')
@@ -407,7 +523,7 @@ def f4():
                      'No D4 outcome changes the frozen maps or D2-selected mixing weights.',
                      'Cross-family causal comparisons retain each calibration-selected prompt format: Qwen fourshot, Smol default, OLMo explicit. The same target statements have different prefix contexts. Character-span alignment cannot remove this context confound; conclusions concern calibrated-use conditions, not identical full inputs.',
                      'Pretrained calibration competence is below0.70. D4 competence is evaluated independently; low competence cannot falsify conservation of a function not established in the tested model.']
-    return p
+    return add_causal_answer_orientation(add_causal_activation_baselines(add_causal_competence(p)))
 
 
 def prepared_stage(stage):

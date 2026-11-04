@@ -281,6 +281,16 @@ def _causal_source(ma,mb,a,b):
                 modes=a['modes'].tolist(),locations=a['locations'].tolist())
 
 
+def _causal_cohort_path(run,cohort,kind,location,pair_names):
+    """Pair subsets and complete cohorts must never share an artifact identity."""
+    names=sorted(pair_names)
+    expected=sorted('_'.join(pair) for pair in PAIRS
+                    if ('independent_seeds' if pair[0] in SEEDS else 'cross_family')==cohort)
+    if names==expected:
+        return Path(run)/'causal_alignment/cohorts'/cohort/kind/f'{location}.json'
+    return Path(run)/'causal_alignment/subsets'/('__'.join(names))/'cohorts'/cohort/kind/f'{location}.json'
+
+
 def fit_causal_all(run,data,pairs=PAIRS):
     run = Path(run)
     canonical = load_rows(data,'D2')
@@ -400,14 +410,20 @@ def evaluate_causal_all(run,data,pairs=PAIRS):
                                   locations={k:v['descriptive'] for k,v in measured['locations'].items()},
                                   selected_weights={k:v['selected_causal_weight'] for k,v in measured['locations'].items()},
                                   competent_tasks=measured['competent_tasks']))
-    cohorts = {}
+    cohorts,cohort_artifacts = {},{}
     for (cohort,kind,location),pairs_ in collected.items():
         stats = aggregate_pairs(pairs_,{'combined_minus_semantic':('combined','semantic')},correct=False)
-        cohorts[f'{cohort}/{kind}/{location}'] = stats
-        write_once(run/'causal_alignment/cohorts'/cohort/kind/f'{location}.json',stats)
+        key=f'{cohort}/{kind}/{location}'
+        cohorts[key] = stats
+        cohort_path=_causal_cohort_path(run,cohort,kind,location,pairs_)
+        write_once(cohort_path,stats)
+        cohort_artifacts[key]=dict(path=str(cohort_path.relative_to(run)),sha256=_sha(cohort_path),
+                                   pair_names=sorted(pairs_))
     summary = dict(stage='F4',status='MEASURED',evaluations=completed,cohorts=cohorts,
                    confirmatory_tests=confirmatory,correction='PENDING_F6_GLOBAL_BH',
                    expected_evaluations=26,n_evaluations=len(completed),full_protocol_complete=len(completed)==26,
+                   cohort_artifacts=cohort_artifacts,
+                   cohort_artifact_policy='Complete cohorts use canonical paths; partial cohorts use explicitly named subsets/ paths. Earlier qwen_smol snapshots were preserved by recorded relocation.',
                    inference_scope='Fixed observed models and units; shared wrappers retained jointly.')
     if summary['full_protocol_complete']:
         write_once(run/'causal_alignment/summary.json',summary)

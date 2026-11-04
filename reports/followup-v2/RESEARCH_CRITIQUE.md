@@ -53,6 +53,23 @@
 
 [측정과 원본](F3_REPORT.md)
 
+## F4 — 단일·그룹 뉴런 인과 정렬과 dose-response
+
+상태: MEASURED; 판정: INCONCLUSIVE.
+
+- All model pairs sharing a seed are dependent; inference is conditional on the observed model collection.
+- Groups contain fixed D1 candidates; the results do not imply full circuit recovery.
+- Zero/mean/patch can alter activation distributions; dose response is supplementary.
+- Exact-zero or constant effects are not evidence of causal agreement.
+- No D4 outcome changes the frozen maps or D2-selected mixing weights.
+- Cross-family causal comparisons retain each calibration-selected prompt format: Qwen fourshot, Smol default, OLMo explicit. The same target statements have different prefix contexts. Character-span alignment cannot remove this context confound; conclusions concern calibrated-use conditions, not identical full inputs.
+- Pretrained calibration competence is below0.70. D4 competence is evaluated independently; low competence cannot falsify conservation of a function not established in the tested model.
+- Saved D4 by-task results split into all pairs and pairs passing both operational task gates. Descriptive only: no new confidence intervals, p-values, refits or primary-family changes. Eligibility conditions on D4 outcomes; different subsets and missing-wrapper support must not be treated as a controlled causal comparison. Passing the syntax accuracy gate does not establish recursive or structural understanding.
+- The primary F4 comparison omitted an activation-based causal matching baseline. This separate gap check was added after some tiny-model D4 outcomes had been observed. Both activation_raw and activation_task_centered maps were fitted only on the first12 D2 wrappers; fitting read no D4 values. Raw activation follows the F3 raw-correlation matching family; task-centered activation is an additional control. Both are retained without selecting a winner. The comparison is descriptive and posthoc: no new p/q/CI, no110-family change, no automatic conservation support. Means equally weight finite observed pair means; missing pair/wrapper coverage must be compared. Shared-model pairs are dependent.
+- Same frozen maps and zero/mean/patch effects, viewed as truth-oriented, yes-oriented, and within-label correlations. This is an exploratory answer-bias diagnostic, not a new primary endpoint or refit. Different views can have different identifiable cell support; attenuation is consistent with answer-orientation confounding but does not prove its exclusive cause. Undefined views remain N/A.
+
+[측정과 원본](F4_REPORT.md)
+
 ## 새 hard syntax 보충 검증
 
 - Post-hoc motivated by D3 local-cue weakness; fresh outcomes do not make it preregistered primary evidence.

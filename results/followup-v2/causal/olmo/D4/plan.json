@@ -1,0 +1,158 @@
+{
+  "signature": "4a40017104a59df6a34f7e3ffa6b00069b3b6ca5e9c0309bc6b34af952adec67",
+  "plan": {
+    "version": "followup-measurement-v2",
+    "model_info": {
+      "id": "olmo",
+      "family": "public_pretrained",
+      "model_id": "allenai/OLMo-2-0425-1B",
+      "revision": "a1847dff35000b4271fa70afc5db10fd29fedbdf",
+      "license": "apache-2.0",
+      "model_type": "olmo2",
+      "cached_file_manifest_sha256": "4121aeecd90ddaa9e22eca9f60c95ee76b57c5de0ec5ec2cded9c5af829db73b"
+    },
+    "records_sha256": "99aed904f59f7cfb8a41e173724f2612a7b5ec83352770e851608f6757c5dbbd",
+    "d1_signature": "7444483b27e92d6dde934455f4682a41aa2169a917ae93ba689af9d50945d8ef",
+    "d1_measurements_sha256": "1b7f5c7d07ad79bad4be9cffd93325f7902f5440d01dba4e933ce7676c1f252b",
+    "units": [
+      {
+        "id": "L3_N7927_functional",
+        "kind": "single",
+        "units_by_layer": {
+          "3": [
+            7927
+          ]
+        }
+      },
+      {
+        "id": "L3_N2924_random",
+        "kind": "single",
+        "units_by_layer": {
+          "3": [
+            2924
+          ]
+        }
+      },
+      {
+        "id": "L3_group4",
+        "kind": "group",
+        "units_by_layer": {
+          "3": [
+            2410,
+            7927,
+            6279,
+            2924
+          ]
+        }
+      },
+      {
+        "id": "L6_N5917_functional",
+        "kind": "single",
+        "units_by_layer": {
+          "6": [
+            5917
+          ]
+        }
+      },
+      {
+        "id": "L6_N3920_random",
+        "kind": "single",
+        "units_by_layer": {
+          "6": [
+            3920
+          ]
+        }
+      },
+      {
+        "id": "L6_group4",
+        "kind": "group",
+        "units_by_layer": {
+          "6": [
+            1482,
+            5917,
+            4718,
+            3920
+          ]
+        }
+      },
+      {
+        "id": "L9_N2607_functional",
+        "kind": "single",
+        "units_by_layer": {
+          "9": [
+            2607
+          ]
+        }
+      },
+      {
+        "id": "L9_N1180_random",
+        "kind": "single",
+        "units_by_layer": {
+          "9": [
+            1180
+          ]
+        }
+      },
+      {
+        "id": "L9_group4",
+        "kind": "group",
+        "units_by_layer": {
+          "9": [
+            2592,
+            2607,
+            7503,
+            1180
+          ]
+        }
+      },
+      {
+        "id": "L12_N5636_functional",
+        "kind": "single",
+        "units_by_layer": {
+          "12": [
+            5636
+          ]
+        }
+      },
+      {
+        "id": "L12_N4891_random",
+        "kind": "single",
+        "units_by_layer": {
+          "12": [
+            4891
+          ]
+        }
+      },
+      {
+        "id": "L12_group4",
+        "kind": "group",
+        "units_by_layer": {
+          "12": [
+            8167,
+            5636,
+            435,
+            4891
+          ]
+        }
+      }
+    ],
+    "locations": [
+      "answer",
+      "span"
+    ],
+    "modes": [
+      "zero",
+      "mean",
+      "patch",
+      "scale_0",
+      "scale_0.5",
+      "scale_1",
+      "scale_1.5",
+      "scale_2"
+    ],
+    "split": "D4",
+    "patch_policy": "same-model opposite-label donor; donor span mean broadcast over recipient statement span",
+    "precision": "float32",
+    "pairs_per_task_wrapper": 4
+  }
+}

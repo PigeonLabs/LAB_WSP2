@@ -229,3 +229,18 @@ def test_causal_runner_selects_only_independent_core_modes(tmp_path):
     supplementary = measured['supplementary_dose_response']['model_a']
     assert supplementary['identity_scale_1_max_absolute_effect'] == 0
     assert supplementary['zero_vs_scale_0_max_absolute_difference'] == 0
+
+
+def test_partial_causal_cohorts_cannot_collide_with_complete_cohorts(tmp_path):
+    from src.followup_alignment_runner import _causal_cohort_path,write_once
+    subset=['qwen_smol']
+    full=['qwen_smol','qwen_olmo','smol_olmo']
+    partial_path=_causal_cohort_path(tmp_path,'cross_family','single','answer',subset)
+    full_path=_causal_cohort_path(tmp_path,'cross_family','single','answer',full)
+    assert partial_path!=full_path
+    assert full_path==_causal_cohort_path(tmp_path,'cross_family','single','answer',list(reversed(full)))
+    write_once(partial_path,{'n_pairs':1,'effect':.2})
+    frozen=partial_path.read_bytes()
+    write_once(full_path,{'n_pairs':3,'effect':.1})
+    assert partial_path.read_bytes()==frozen
+    assert json.loads(full_path.read_text())['n_pairs']==3

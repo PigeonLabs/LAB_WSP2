@@ -1,0 +1,84 @@
+{
+  "schema": "followup-figure-v1",
+  "title": "D4 joint-wrapper combined minus semantic",
+  "encoding": {
+    "id": "combined_minus_semantic",
+    "kind": "interval",
+    "title": "D4 joint-wrapper combined minus semantic",
+    "xlabel": "Causal Pearson difference;95% shared-wrapper CI",
+    "source": "results/followup-v2/causal_alignment/summary.json",
+    "note": "Observed pairs are retained jointly inside wrappers; global BH is deferred to F6."
+  },
+  "sources": [
+    {
+      "path": "results/followup-v2/causal_alignment/summary.json",
+      "sha256": "51502e8d174995ca881bda01bfe4d7f18267ea4baa04b9a4e4df3733eecf04e9"
+    }
+  ],
+  "rows": [
+    {
+      "label": "independent_seeds/single/answer",
+      "value": 0.05869596310847754,
+      "ci": [
+        0.04762736467411073,
+        0.06990600020507341
+      ]
+    },
+    {
+      "label": "independent_seeds/single/span",
+      "value": 0.011651518718239834,
+      "ci": [
+        0.004371328564230403,
+        0.018839463058710128
+      ]
+    },
+    {
+      "label": "independent_seeds/group/answer",
+      "value": 0.06777954269035592,
+      "ci": [
+        0.05201471044781269,
+        0.08372249333919576
+      ]
+    },
+    {
+      "label": "independent_seeds/group/span",
+      "value": 0.0016100597903117003,
+      "ci": [
+        -0.00997335781253658,
+        0.013401804636930113
+      ]
+    },
+    {
+      "label": "cross_family/single/answer",
+      "value": 0.06995681545557335,
+      "ci": [
+        0.04607671501796167,
+        0.09095426884268826
+      ]
+    },
+    {
+      "label": "cross_family/single/span",
+      "value": 0.09026901377439968,
+      "ci": [
+        0.06713603040311354,
+        0.11526919926966571
+      ]
+    },
+    {
+      "label": "cross_family/group/answer",
+      "value": 0.09416261601585545,
+      "ci": [
+        0.056769219216009685,
+        0.13159921457751336
+      ]
+    },
+    {
+      "label": "cross_family/group/span",
+      "value": 0.08364761649750767,
+      "ci": [
+        0.048303755152575435,
+        0.11915047053270439
+      ]
+    }
+  ]
+}

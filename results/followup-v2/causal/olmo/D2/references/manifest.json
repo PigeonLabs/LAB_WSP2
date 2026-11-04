@@ -1,0 +1,128 @@
+{
+  "signature": "be4eba2ec8da77aff0e7d00eb5beb2a0c700ae9d969459bfd48ea7015f9485cd",
+  "plan": {
+    "version": "followup-measurement-v2",
+    "model_info": {
+      "id": "olmo",
+      "family": "public_pretrained",
+      "model_id": "allenai/OLMo-2-0425-1B",
+      "revision": "a1847dff35000b4271fa70afc5db10fd29fedbdf",
+      "license": "apache-2.0",
+      "model_type": "olmo2",
+      "cached_file_manifest_sha256": "4121aeecd90ddaa9e22eca9f60c95ee76b57c5de0ec5ec2cded9c5af829db73b"
+    },
+    "records_sha256": "724cb9435dce946b6307750f194631d06abc901c141e638502611e7cb15fa65a",
+    "selection": {
+      "3": [
+        2177,
+        3118,
+        2410,
+        7927,
+        251,
+        1379,
+        6279,
+        2924
+      ],
+      "6": [
+        4653,
+        6137,
+        1482,
+        5917,
+        4258,
+        6654,
+        4718,
+        3920
+      ],
+      "9": [
+        990,
+        4097,
+        2592,
+        2607,
+        1234,
+        4711,
+        7503,
+        1180
+      ],
+      "12": [
+        5395,
+        6859,
+        8167,
+        5636,
+        1322,
+        2986,
+        435,
+        4891
+      ]
+    },
+    "per_layer": 8,
+    "split": "D2",
+    "precision": "float32",
+    "boundary": "before answer divergence after common answer prefix",
+    "span": "mean over character-overlapping statement tokens"
+  },
+  "selection": {
+    "3": [
+      2177,
+      3118,
+      2410,
+      7927,
+      251,
+      1379,
+      6279,
+      2924
+    ],
+    "6": [
+      4653,
+      6137,
+      1482,
+      5917,
+      4258,
+      6654,
+      4718,
+      3920
+    ],
+    "9": [
+      990,
+      4097,
+      2592,
+      2607,
+      1234,
+      4711,
+      7503,
+      1180
+    ],
+    "12": [
+      5395,
+      6859,
+      8167,
+      5636,
+      1322,
+      2986,
+      435,
+      4891
+    ]
+  },
+  "n": 768,
+  "neurons": 32,
+  "competence": {
+    "arithmetic": {
+      "n": 192,
+      "accuracy": 0.5052083333333334
+    },
+    "comparison": {
+      "n": 192,
+      "accuracy": 0.546875
+    },
+    "negation": {
+      "n": 192,
+      "accuracy": 0.484375
+    },
+    "syntax": {
+      "n": 192,
+      "accuracy": 0.5052083333333334
+    }
+  },
+  "elapsed_seconds": 10.362923016975401,
+  "device": "cuda",
+  "measurements_sha256": "aca85f466900918606630fccb4a445c53c6b250187da7c870cb49bd57f099209"
+}

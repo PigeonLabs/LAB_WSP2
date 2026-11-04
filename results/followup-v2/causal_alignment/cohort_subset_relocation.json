@@ -1,0 +1,32 @@
+{
+  "event": "Preserve qwen_smol subset cohort snapshots before writing complete three-pair cohorts",
+  "timestamp_utc": "2026-11-04T05:42:26.517270+00:00",
+  "scope": "Artifact routing only; no per-pair result, map, raw measurement or numerical method change",
+  "parent_authorized": true,
+  "files": [
+    {
+      "from": "causal_alignment/cohorts/cross_family/single/answer.json",
+      "to": "causal_alignment/subsets/qwen_smol/cohorts/cross_family/single/answer.json",
+      "sha256_unchanged": "1d593028a20ee8b6874ba2fb02668c1ba719dfbaf99bd248b572a3b5dbceae9f",
+      "n_pairs": 1
+    },
+    {
+      "from": "causal_alignment/cohorts/cross_family/single/span.json",
+      "to": "causal_alignment/subsets/qwen_smol/cohorts/cross_family/single/span.json",
+      "sha256_unchanged": "344156b3b2ba64e2b5b024ec8d914af0e32dd57f57ce1531bec64b77fc320b8b",
+      "n_pairs": 1
+    },
+    {
+      "from": "causal_alignment/cohorts/cross_family/group/answer.json",
+      "to": "causal_alignment/subsets/qwen_smol/cohorts/cross_family/group/answer.json",
+      "sha256_unchanged": "d34d149522c82e748dae668e10329e33ebeb1e52c7258d6e8df308237f1b268f",
+      "n_pairs": 1
+    },
+    {
+      "from": "causal_alignment/cohorts/cross_family/group/span.json",
+      "to": "causal_alignment/subsets/qwen_smol/cohorts/cross_family/group/span.json",
+      "sha256_unchanged": "8fe439aee3de80629b0fbe722b5281ce5b05c3d7377d38fc015777ce75cbb1db",
+      "n_pairs": 1
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{"stage": "F4 evaluate", "pair": ["qwen", "olmo"], "kind": "single", "seconds": 14.377}
+{"stage": "F4 evaluate", "pair": ["qwen", "olmo"], "kind": "group", "seconds": 8.629}
+{"stage": "F4 evaluate", "pair": ["smol", "olmo"], "kind": "single", "seconds": 14.476}
+{"stage": "F4 evaluate", "pair": ["smol", "olmo"], "kind": "group", "seconds": 8.692}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/media/jeong/ExtHDD/WSP2/src/followup_alignment_runner.py", line 436, in <module>
+    main()
+  File "/media/jeong/ExtHDD/WSP2/src/followup_alignment_runner.py", line 431, in main
+    result = (fit_causal_all if args.stage=='causal-fit' else evaluate_causal_all)(args.root,args.data,pairs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/jeong/ExtHDD/WSP2/src/followup_alignment_runner.py", line 407, in evaluate_causal_all
+    write_once(run/'causal_alignment/cohorts'/cohort/kind/f'{location}.json',stats)
+  File "/media/jeong/ExtHDD/WSP2/src/followup_alignment_runner.py", line 38, in write_once
+    raise ValueError(f'Refusing to overwrite divergent evidence: {path}')
+ValueError: Refusing to overwrite divergent evidence: /media/jeong/ExtHDD/WSP2/results/followup-v2/causal_alignment/cohorts/cross_family/single/answer.json
+{"stage": "causal-evaluate", "complete": true}

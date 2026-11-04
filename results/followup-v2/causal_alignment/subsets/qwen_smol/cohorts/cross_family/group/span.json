@@ -1,0 +1,66 @@
+{
+  "tests": {
+    "combined_minus_semantic": {
+      "effect": 0.12692289588882388,
+      "pvalue": 0.002049897505124744,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.7409626255712214,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.12692289588882388,
+        "median": 0.15262672061969756,
+        "std": 0.17129459909125205,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.05836028751871432,
+          0.19008745513918554
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.2542448509919436,
+        "D4:wrapper:t01": 0.16778071558501967,
+        "D4:wrapper:t02": 0.34881512684567934,
+        "D4:wrapper:t03": 0.03709815121759976,
+        "D4:wrapper:t04": 0.17810613164695743,
+        "D4:wrapper:t05": 0.20310293417811073,
+        "D4:wrapper:t06": 0.3370342763186701,
+        "D4:wrapper:t07": -0.1832910182800137,
+        "D4:wrapper:t08": 0.2907498290651418,
+        "D4:wrapper:t09": 0.1374727256543755,
+        "D4:wrapper:t10": 0.043706928076260254,
+        "D4:wrapper:t11": -0.24107046490320438,
+        "D4:wrapper:t12": 0.1937009041059614,
+        "D4:wrapper:t13": 0.3133210600102718,
+        "D4:wrapper:t14": 0.032467460185282807,
+        "D4:wrapper:t15": -0.04018362307479533,
+        "D4:wrapper:t16": 0.253163041775618,
+        "D4:wrapper:t17": 0.11215935966930782,
+        "D4:wrapper:t18": -0.06924679754952466,
+        "D4:wrapper:t19": 0.22781680082896552,
+        "D4:wrapper:t20": -0.021057824591439733,
+        "D4:wrapper:t21": -0.035854868986118386,
+        "D4:wrapper:t22": 0.4269809270497984,
+        "D4:wrapper:t23": 0.07913287551190579
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only"
+    }
+  },
+  "correction": "PENDING_GLOBAL_FAMILY",
+  "pair_descriptives": {
+    "combined_minus_semantic": {
+      "qwen_smol": {
+        "mean": 0.12692289588882388,
+        "n_wrappers": 24
+      }
+    }
+  },
+  "n_pairs": 1,
+  "resampling_unit": "shared wrapper; all pairs and concepts retained together",
+  "inference_scope": "Conditional on observed models; no independent-seed replication claim."
+}

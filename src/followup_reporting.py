@@ -208,6 +208,48 @@ def _review_text(review,prefix=''):
     return '\n'.join(parts)
 
 
+def _causal_competence_text(data,prefix=''):
+    rows={}
+    for row in data['rows']:
+        key=(row['cohort'],row['unit_kind'],row['position'],row['concept'])
+        rows.setdefault(key,{})[row['subset']]=row
+    lines=[data['scope'], '',
+           '| Cohort / unit / position | Task | All-pair combined r | Available/all pairs | Eligible combined r | Available/eligible pairs | Eligible wrapper coverage |',
+           '|---|---|---:|---:|---:|---:|---:|']
+    show=lambda value:'N/A' if value is None else _value(value)
+    for key,subsets in rows.items():
+        all_rows=subsets['all_pairs'];eligible=subsets['both_passed']
+        a=all_rows['methods']['combined'];e=eligible['methods']['combined']
+        lines.append(f"| {'/'.join(key[:3])} | {key[3]} | {show(a['mean'])} | {a['n_available_pairs']}/{all_rows['n_pairs_in_subset']} | {show(e['mean'])} | {e['n_available_pairs']}/{eligible['n_pairs_in_subset']} | {show(e['wrapper_coverage_fraction'])} |")
+    lines += ['', 'No eligible pairs or unidentifiable cells remain N/A; zero is not substituted. The linked report contains every semantic/causal/combined/random mean, missing pair count and wrapper support.', '',
+              f"[모든 방법과 누락 범위]({prefix}{data['report']}) · [수치 원본]({prefix}{data['source']})", '']
+    return '\n'.join(lines)
+
+
+def _causal_activation_text(data,prefix=''):
+    methods=('semantic','combined','random','activation_raw','activation_task_centered')
+    labels=('Semantic','Combined','Random','Raw activation','Task-centered activation')
+    lines=[data['scope'],'','Cells: mean [available/total pairs; valid/possible wrapper cells].','',
+           '| Cohort / unit / position | '+' | '.join(labels)+' |','|---|'+'---:|'*len(methods)]
+    for row in data['rows']:
+        cells=[]
+        for method in methods:
+            r=row['methods'][method];value='N/A' if r['mean'] is None else _value(r['mean'])
+            cells.append(f"{value} [{r['n_available_pairs']}/{r['n_pairs_total']}; {r['n_valid_wrapper_cells']}/{r['n_possible_wrapper_cells']}]")
+        lines.append('| '+row['cohort']+'/'+row['unit_kind']+'/'+row['position']+' | '+' | '.join(cells)+' |')
+    lines+=['',f"[상세 범위와 모든 원본]({prefix}{data['report']}) · [측정 요약]({prefix}{data['source']})",'']
+    return '\n'.join(lines)
+
+
+def _causal_orientation_text(data,prefix=''):
+    lines=[data['scope'],'','| Cohort / unit / position | Truth-oriented | Yes-oriented | Within-label |','|---|---:|---:|---:|']
+    for row in data['rows']:
+        values=[row['views'][view].get('mean') for view in ('truth_oriented','yes_oriented','within_label')]
+        lines.append('| '+row['cohort']+' | '+' | '.join('N/A' if value is None else _value(value,5) for value in values)+' |')
+    lines+=['',f"[모든 방법·유효 셀 범위·원본 경로]({prefix}{data['source']})",'']
+    return '\n'.join(lines)
+
+
 def _sources(root,stage_path,payload):
     candidates=[stage_path.relative_to(root).as_posix()]
     for row in payload.get('metrics',[])+payload.get('comparisons',[]):
@@ -375,6 +417,12 @@ def render_followup_reports(root=None,max_stage=None):
             content+='## 네 연구 질문의 최종 검토\n\n'+_review_text(payload['scientific_review'],'../../')+'\n'
         if payload.get('competence_gate'):content+='## 과제 능력 조건\n\n'+json.dumps(payload['competence_gate'],ensure_ascii=False,indent=2)+'\n\n'
         content+='## 실제 측정\n\n'+_metric_table(payload.get('metrics',[]))+'\n\n## 비교와 불확실성\n\n'+_comparison_table(payload.get('comparisons',[]))+'\n\n'
+        if payload.get('causal_competence'):
+            content+='## 과제별 전체 쌍과 능력 조건을 충족한 쌍\n\n'+_causal_competence_text(payload['causal_competence'],'../../')+'\n'
+        if payload.get('causal_activation_baselines'):
+            content+='## 누락된 activation 기준선의 사후 보충 비교\n\n'+_causal_activation_text(payload['causal_activation_baselines'],'../../')+'\n'
+        if payload.get('causal_answer_orientation'):
+            content+='## 응답 방향에 따른 보조 인과 대응\n\n'+_causal_orientation_text(payload['causal_answer_orientation'],'../../')+'\n'
         if payload.get('dependence_sensitivity'):
             d=payload['dependence_sensitivity']
             content+='## 다중검정 의존성 민감도\n\n'+d['summary']+f" [SciPy 공식 문서]({d['reference']})\n\n[민감도 상세 보고서](../../{d['report']}) · [전체 BH/BY 수치](../../{d['source']})\n\n"
@@ -403,6 +451,12 @@ def render_followup_reports(root=None,max_stage=None):
         if p.get('dependence_sensitivity'):
             d=p['dependence_sensitivity']
             section+=d['summary']+f" [SciPy 공식 문서]({d['reference']}) · [민감도 상세]({d['report']})\n\n"
+        if p.get('causal_competence'):
+            d=p['causal_competence']
+            section+=f"[과제별 전체/능력충족 쌍의 인과 대응과 누락 범위]({d['report']}). 이 구분은 D4 결과를 조건으로 한 기술 통계이며, 추가 CI·p값·재학습을 포함하지 않습니다.\n\n"
+        if p.get('causal_activation_baselines'):
+            d=p['causal_activation_baselines']
+            section+=f"[Raw/task-centered activation 인과 기준선의 사후 비교]({d['report']}). 두 대조군을 모두 공개하며 주110개 검정·p/q값은 바꾸지 않습니다.\n\n"
         for f in s['figures']:
             if f['show_in_readme']:section+=f"![{f['title']}]({f['path']})\n\n{f['note']}\n\n[그림 데이터]({f['receipt']})\n\n"
         section+=f"[{s['id']} 측정값·불확실성·원본](reports/followup-v2/{s['id']}_REPORT.md)\n\n"

@@ -1,0 +1,6157 @@
+{
+  "stage": "SUPPLEMENTARY_CAUSAL_ANSWER_BIAS_DIAGNOSTICS",
+  "status": "MEASURED_DESCRIPTIVE",
+  "evaluations": [
+    {
+      "pair": [
+        "seed101",
+        "seed211"
+      ],
+      "unit_kind": "single",
+      "path": "exploratory_causal_diagnostics/seed101_seed211/single/diagnostics.json",
+      "sha256": "8b5a8ce28be05f410372c7ccc87a5e2fa62e1ded41a731f228eac273183c5ab2",
+      "locations": {
+        "answer": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": 0.04973294899905804,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.09404324529631132,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.09404324529631132,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.03321755001248053,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": 0.02862915427897079,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.051235023344147014,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.051235023344147014,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.023235228045600714,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": 0.015661668580188748,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.02796677374289369,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.02796677374289369,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.013420777219204096,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        },
+        "span": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": 0.000453067017911163,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.00744189191230311,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.000453067017911163,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.0010130567507256505,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": 0.025194858635785845,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.005066720084173318,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.025194858635785845,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.005341054800077315,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": 0.011265569122343633,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.0030294038743786506,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.011265569122343633,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.00015742778246457452,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair": [
+        "seed101",
+        "seed211"
+      ],
+      "unit_kind": "group",
+      "path": "exploratory_causal_diagnostics/seed101_seed211/group/diagnostics.json",
+      "sha256": "ebbf48d2ecab03f27abf91e593e651853de9dfe55394c86dde3671eb56a72381",
+      "locations": {
+        "answer": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": 0.016966597547076114,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.1388796021270008,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.1388796021270008,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.06993885512369978,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -8.178874158554228e-05,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.06594676572308565,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.06594676572308565,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.030412254612465172,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.01492639858400526,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.06828792546119967,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.06828792546119967,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.03183684026279229,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        },
+        "span": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.013068492356784353,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.04876086229211162,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.013068492356784353,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.003120096208899832,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.0160101340225957,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.019456648512574302,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.0160101340225957,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.0006481524314994498,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.007585350159311929,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.008396900377097399,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.007585350159311929,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.00784375218577802,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair": [
+        "seed101",
+        "seed307"
+      ],
+      "unit_kind": "single",
+      "path": "exploratory_causal_diagnostics/seed101_seed307/single/diagnostics.json",
+      "sha256": "ee24449e94e0b531b85fc897d53152ff02fe92e2788a686b4b1e91ec82323afd",
+      "locations": {
+        "answer": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.03487544279931656,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.023524826646779642,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.06241216400810762,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.0013626942459935688,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.03229334757135864,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.0018310829238361106,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.017647518444010846,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.004094404501954466,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.025082409607055392,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.0005753248037841489,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.03302601627791298,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.001313657130317022,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        },
+        "span": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": 0.02262503418105782,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.015716688439283352,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.02262503418105782,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.00686617631721326,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": 0.02117405667166086,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.011222979887570256,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.02117405667166086,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.0023911277627743127,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": 0.01381600625799795,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.00905961692139815,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.01381600625799795,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -9.904671925530424e-05,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair": [
+        "seed101",
+        "seed307"
+      ],
+      "unit_kind": "group",
+      "path": "exploratory_causal_diagnostics/seed101_seed307/group/diagnostics.json",
+      "sha256": "2e19d3a040f56184425b49742fc946f1627d00965449fcdcb8444b06a1f43d34",
+      "locations": {
+        "answer": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.058123065328615664,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.024243731376134153,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.06538015071589699,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.004747711353028928,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.02210830034762425,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.011770447589208038,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.054580176329845576,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.007494271051435887,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.007683576347117346,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.00847794555566568,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.05665894266295096,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.01186912906817881,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        },
+        "span": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.014858948067067793,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.024687445830149906,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.022487837517381547,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.0032986462616666407,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.005961727598743578,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.03301401401636537,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.0021505168291399077,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.003631137420196553,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.024068101187686763,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.002749195942807974,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.014289221767613111,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.010965651090356512,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair": [
+        "seed101",
+        "seed401"
+      ],
+      "unit_kind": "single",
+      "path": "exploratory_causal_diagnostics/seed101_seed401/single/diagnostics.json",
+      "sha256": "a234314d27b4f46fbb432f1ac8cd6280c5abc4a7883758b0df96dbfc3aba27cd",
+      "locations": {
+        "answer": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.0011076888196344576,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.02746940198416123,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.024388876786897887,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.010160045003091154,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": 0.01454682699080658,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.02389419700028302,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.005861145044334523,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.005282002094235531,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": 0.00238618281243767,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.012023396275072295,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.005634325677173519,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.003041159301137738,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        },
+        "span": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.010304326792309337,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.009875614903626808,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.016113271277922375,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.004607060666120895,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": 0.009573702558997083,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.0141165464479773,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.02476926469282933,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.007141037716723941,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": 0.009350351684075678,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.02243946016984705,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.021174847239524997,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.004343005810341558,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair": [
+        "seed101",
+        "seed401"
+      ],
+      "unit_kind": "group",
+      "path": "exploratory_causal_diagnostics/seed101_seed401/group/diagnostics.json",
+      "sha256": "b97f8692278daa1a1a5af23bbe753963d312838ae50fbd48644d948bc2150bd8",
+      "locations": {
+        "answer": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": 0.07844515729968377,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.09808437755942305,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.09808437755942305,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.04994262309976774,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": 0.04810206952120084,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.06571077470139229,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.06571077470139229,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.03313573252345262,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": 0.024234570638905873,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.03578655025043138,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.03578655025043138,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.013165206913899876,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        },
+        "span": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": 0.0009252726565453553,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.010089152486490857,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.0009252726565453553,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.0012086729330073112,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.0022747920419125575,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.00810387049092316,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.0022747920419125575,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.019306847397931436,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": 0.0026741431408844967,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.02114780883223062,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.0026741431408844967,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.01334815025620196,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair": [
+        "seed101",
+        "seed503"
+      ],
+      "unit_kind": "single",
+      "path": "exploratory_causal_diagnostics/seed101_seed503/single/diagnostics.json",
+      "sha256": "c3298fc4ceffd5b24555291a61e08a18515f1ea172fcbf659c62228e9aca423d",
+      "locations": {
+        "answer": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.017859011751171962,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.04949943261043196,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.04349884249000674,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.004611298829260157,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.03814808032956211,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.014148170197460874,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.022863210550454486,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.016393188627565235,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.0160028966015013,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.012200129179878179,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.012370906943042492,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.006456764655475945,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        },
+        "span": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.017009976136103135,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.00387208548471581,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.01239223648145467,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.0026968053388734593,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.001137722845417186,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.00030740441265319764,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.00019715135576663795,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.01065952092177068,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.0010013189998641613,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.006816361741267321,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.006639076387444878,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.00575196648876686,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair": [
+        "seed101",
+        "seed503"
+      ],
+      "unit_kind": "group",
+      "path": "exploratory_causal_diagnostics/seed101_seed503/group/diagnostics.json",
+      "sha256": "05c73576bdfce958b93574d0df168e6ad31b79463e91da434dd3cf6443969bd1",
+      "locations": {
+        "answer": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": 0.07385870386489476,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.05661323460014774,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.07385870386489476,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.0415021293450105,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": 0.02816338789209891,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.028858437561996176,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.02816338789209891,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.026851386100580684,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": 0.02692517639846391,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.04278332765947317,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.02692517639846391,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.021692435837995266,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        },
+        "span": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": 0.04651249149378072,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.0036243611349320837,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.02977228019538587,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.01638611399565165,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": 0.06713314700807367,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.03390757191466872,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.02061484190267983,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.014828737587472047,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": 0.022347680335982074,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.006114823051598076,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.008693745373313974,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.004448898250775078,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair": [
+        "seed211",
+        "seed307"
+      ],
+      "unit_kind": "single",
+      "path": "exploratory_causal_diagnostics/seed211_seed307/single/diagnostics.json",
+      "sha256": "598b5bd6cd184083443a4e1d347a3ff4dd0d5883786854c626ed9d01ee5ab57c",
+      "locations": {
+        "answer": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": 0.025058008954092496,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.07755102854038938,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.07738240119104568,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.005006962399077434,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": 0.016720820206842037,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.02211659744177819,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.02295181261595247,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.011948664110037996,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": 0.018129902132127236,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.03252188572906788,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.023284703567630568,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.0011457809219421163,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        },
+        "span": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.029916479656001096,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.01153454219147274,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.01153454219147274,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.0056146261829242644,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.017744562791839308,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.0006613164263339887,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.0006613164263339887,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.0019410318619731467,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.012745545772933199,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.0038325316082173148,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.0038325316082173148,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.0004938825580509662,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair": [
+        "seed211",
+        "seed307"
+      ],
+      "unit_kind": "group",
+      "path": "exploratory_causal_diagnostics/seed211_seed307/group/diagnostics.json",
+      "sha256": "75e89fcd16f66a43772a8b26ee03abcca5e5628be53476cddf145bc623aef00c",
+      "locations": {
+        "answer": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.03198980453515032,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.0031402673995015525,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.0031402673995015525,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.02210558447232891,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.044129782768479654,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.00207929097979458,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.00207929097979458,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.022083688738240948,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.030951916700784846,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.011159773958865847,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.011159773958865847,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.01256902920733588,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        },
+        "span": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": 0.029098412020592355,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.03197571930008513,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.03197571930008513,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.00536611741333622,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": 0.013467885472758914,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.024089262907922144,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.024089262907922144,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.011746507537673678,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": 0.018410970975407132,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.015190742292662658,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.015190742292662658,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.010474801455741764,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair": [
+        "seed211",
+        "seed401"
+      ],
+      "unit_kind": "single",
+      "path": "exploratory_causal_diagnostics/seed211_seed401/single/diagnostics.json",
+      "sha256": "5fc2a37895e39bb2ec3c985e1acc76bbb21bf09b1dfc9be7625feb4ed4fe1773",
+      "locations": {
+        "answer": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": 0.062126780353383405,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.06990010761549828,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.06990010761549828,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.005308963247933988,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": 0.023473618219507747,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.028698120740279647,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.028698120740279647,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.009995452202433919,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": 0.028785890801549485,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.019446011445214482,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.019446011445214482,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.005318063818788549,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        },
+        "span": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": 0.020350759511261907,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.007162212445382242,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.020350759511261907,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.006232361429265049,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": 0.022509866375998142,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.018830026573881775,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.022509866375998142,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.0033002268160002026,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": 0.012508505522515737,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.019783240448209113,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.012508505522515737,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.0017319626561514128,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair": [
+        "seed211",
+        "seed401"
+      ],
+      "unit_kind": "group",
+      "path": "exploratory_causal_diagnostics/seed211_seed401/group/diagnostics.json",
+      "sha256": "d5f9ea47e191f26106bec24cb1c2bf2e9244a10d46d5f6e3420debdb73d3a1a5",
+      "locations": {
+        "answer": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.03143415983814916,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.13305887923998497,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.13305887923998497,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.01825860811133789,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.03741687596098927,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.07992245335282856,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.07992245335282856,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.011938978704900216,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.014885076678864234,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.048843810907032936,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.048843810907032936,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.013123314742317241,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        },
+        "span": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.03902919790852578,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.0487492069489453,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.0487492069489453,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.015832338391430913,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.006472267546475503,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.02279784490921509,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.02279784490921509,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.0028071354157754463,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.025081762471138927,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.023509800967381502,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.023509800967381502,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.007210622546070256,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair": [
+        "seed211",
+        "seed503"
+      ],
+      "unit_kind": "single",
+      "path": "exploratory_causal_diagnostics/seed211_seed503/single/diagnostics.json",
+      "sha256": "99be2ca8304f8d0d3d922b32afba0ce65e14097c6dd22353bade3b46970b83bf",
+      "locations": {
+        "answer": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.03232300910642746,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.07000151118314307,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.07000151118314307,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.01420283473066449,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.01914072985192603,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.019450187388042477,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.019450187388042477,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.01811740977587312,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.003613301396224672,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.015809624665579714,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.015809624665579714,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.002699835614611623,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        },
+        "span": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.026983151582662318,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.006540464599033602,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.006540464599033602,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.004025696192630675,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.024993660625275218,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.0064020854613810185,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.0064020854613810185,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.007538393155692515,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.020934910525164014,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.01633777155564332,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.01633777155564332,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.00015603395054602774,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair": [
+        "seed211",
+        "seed503"
+      ],
+      "unit_kind": "group",
+      "path": "exploratory_causal_diagnostics/seed211_seed503/group/diagnostics.json",
+      "sha256": "72f906c661e34442646ca01d2a144cd8069e34a1ed35636fd6938ede74a1b396",
+      "locations": {
+        "answer": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": 0.09346908236706504,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.10834546024875218,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.09346908236706504,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.018293871063021033,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": 0.025742503657152287,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.06146735958245125,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.025742503657152287,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.018110837066617678,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": 0.032488929488431094,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.044164638517708577,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.032488929488431094,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.007016537912833098,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        },
+        "span": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.0014541968085969054,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.05372853078086138,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.0014541968085969054,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.008877323307977322,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.045700292052730296,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.016027461911831378,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.045700292052730296,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.0008859674549352888,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.047506906959583046,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.011720059286794865,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.047506906959583046,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.005031641711469695,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair": [
+        "seed307",
+        "seed401"
+      ],
+      "unit_kind": "single",
+      "path": "exploratory_causal_diagnostics/seed307_seed401/single/diagnostics.json",
+      "sha256": "c6d41ecece72b71f7cc57a48b6dcd4ea7796528b20f873bf44ba8a2bae53b78e",
+      "locations": {
+        "answer": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.0033790746798486927,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.05106853828138038,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.05106853828138038,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.004624379218363939,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": 0.01726235311430622,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.008584419244199643,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.008584419244199643,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.006651181390300222,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": 0.009468053338666016,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.00527087048207207,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.00527087048207207,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.001566602494511702,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        },
+        "span": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.010857475579295214,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.028746636884880803,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.010857475579295214,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 7.245797145592166e-05,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.009006803908518468,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.03318539296314198,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.009006803908518468,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.0030756309288895653,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.010206783743564518,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.014921115583021186,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.010206783743564518,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.0036950040983298165,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair": [
+        "seed307",
+        "seed401"
+      ],
+      "unit_kind": "group",
+      "path": "exploratory_causal_diagnostics/seed307_seed401/group/diagnostics.json",
+      "sha256": "73636d5b6d6cd520ec3a60ea748872137bc6948e9c3f66345335b75c652ea2f3",
+      "locations": {
+        "answer": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.08599517101807282,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.06862505304537615,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.06862505304537615,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.0045865056159812454,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": 0.004471130761812893,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.09060880513940113,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.09060880513940113,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.03491859130649936,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.019296556802016942,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.036159869445286937,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.036159869445286937,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.01019837159571021,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        },
+        "span": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.001288653438766792,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.012957244971288305,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.012957244971288305,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.0008823980755348302,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.03315971960498539,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.02186286904006232,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.02186286904006232,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.005338075359589149,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.02046674535588254,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.017762651487413853,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.017762651487413853,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.011538095672716298,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair": [
+        "seed307",
+        "seed503"
+      ],
+      "unit_kind": "single",
+      "path": "exploratory_causal_diagnostics/seed307_seed503/single/diagnostics.json",
+      "sha256": "b5f42a6964c7086442c3885091da54f6413ded969aaede4188a07addf240e976",
+      "locations": {
+        "answer": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.041083981411782634,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.09105035415604168,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.09105035415604168,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.0047691704235160405,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.005593388801738135,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.07003043553187913,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.07003043553187913,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.013689950243830684,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.015003143387500736,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.03406507347047785,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.03406507347047785,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.006851221615652392,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        },
+        "span": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.01626146369239533,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.007045753040353551,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.02290172286348069,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.0063694752665003395,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.01251155922869937,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.008568501636094988,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.029350411366072058,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.000173458773646459,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.027739768963691482,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.003525564062205356,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.020354814383251065,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.002522579888358266,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair": [
+        "seed307",
+        "seed503"
+      ],
+      "unit_kind": "group",
+      "path": "exploratory_causal_diagnostics/seed307_seed503/group/diagnostics.json",
+      "sha256": "7af07ba6f55057527aeb82ce8cf9f0bf5f42c2faf0048c227995a2ff4e61f36c",
+      "locations": {
+        "answer": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": 0.08583618076073829,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.11318665647128014,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.11318665647128014,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.016304828552930296,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": 0.09809165714779634,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.11798262595707833,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.11798262595707833,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.04739961855129323,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": 0.06022343934740328,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.06721025921272944,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.06721025921272944,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.027312796385281588,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        },
+        "span": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.03350015966509844,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.02453393931412082,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.010416138790900397,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.0038635629014231593,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.00910791455197251,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.02539350070050637,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.048578714161972375,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.020115589607876752,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.01849444388033195,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.024234571130711775,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.03329892613055665,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.01715293786007803,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair": [
+        "seed401",
+        "seed503"
+      ],
+      "unit_kind": "single",
+      "path": "exploratory_causal_diagnostics/seed401_seed503/single/diagnostics.json",
+      "sha256": "1eabd742b99f24cdc866f5f8b7e7709c75010c159f1b3566a15c66f36adf6b0b",
+      "locations": {
+        "answer": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": 0.026697652923672276,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.0362007727383673,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.0362007727383673,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.000778533914421803,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.013864024951680843,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.0036579692552880295,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.0036579692552880295,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.003313347222212376,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": 0.0035611422033573633,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.00696890181151161,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.00696890181151161,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.0017302935662283482,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        },
+        "span": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.01489316720725823,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.021047320636487305,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.025321387775120986,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.00016426821920543662,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.02040618161159694,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.04486880245640323,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.03381028224915369,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.0024001521546274866,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.03438337492891986,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.022891101647856894,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.02353492551225934,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.0025289991923377066,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair": [
+        "seed401",
+        "seed503"
+      ],
+      "unit_kind": "group",
+      "path": "exploratory_causal_diagnostics/seed401_seed503/group/diagnostics.json",
+      "sha256": "446d1d88f9f96b26f08b263cbc6691fded6ac197f94e633255e39806834a5a26",
+      "locations": {
+        "answer": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": 0.0029380286867272403,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.06984662895741824,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.03408420391933305,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.01610943581037988,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": 0.00911759373593403,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.06506479659608741,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.034338395756398334,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.023400893071624452,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": 0.0023627181546595024,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.05238840061737788,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.003832609534743084,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.01074504032926435,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        },
+        "span": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": 0.009554327296279697,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.045451298367355515,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.045451298367355515,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.01164870755837552,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.02125229539898647,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.02803810115984498,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.02803810115984498,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.014746988928124946,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.023046031619442946,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.024812968294195725,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.024812968294195725,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.005205835171067289,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair": [
+        "qwen",
+        "smol"
+      ],
+      "unit_kind": "single",
+      "path": "exploratory_causal_diagnostics/qwen_smol/single/diagnostics.json",
+      "sha256": "eaf38f66e7f65e9e950e2fbff6f480c21b06326027df4d3735971b83dc6ebb41",
+      "locations": {
+        "answer": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.06109940051509442,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.008900852537698721,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.008900852537698721,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.005514170370624354,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.007976461090022936,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.012692432018359392,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.012692432018359392,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.00863623166642933,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.005724639354209586,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.018709222836326412,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.018709222836326412,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.008451047166893473,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        },
+        "span": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.010050790449340473,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.06183793424553971,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.06183793424553971,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.004149710847707643,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": 0.0021012750114251222,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.0006855778322820716,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.0006855778322820716,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.0035274400511996814,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.0031599373220658282,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.006229518483367975,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.006229518483367975,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.002609470961220861,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair": [
+        "qwen",
+        "smol"
+      ],
+      "unit_kind": "group",
+      "path": "exploratory_causal_diagnostics/qwen_smol/group/diagnostics.json",
+      "sha256": "a1b31595ab44738413728be217e8869059df6d72395d4db9ea4faba00adcf6b3",
+      "locations": {
+        "answer": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.04367420189033261,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.009881328174079277,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.009881328174079277,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.03705632331637107,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.01557575048259309,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.013967474676616768,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.013967474676616768,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.011889792185021725,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.012322937772070205,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.007651397361542901,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.007651397361542901,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.015211476041768446,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        },
+        "span": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.02705538303385829,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.0998675128549656,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.0998675128549656,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.013687343637956323,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.04566579422014283,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.0038370451095260847,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.0038370451095260847,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.003652161316022157,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.038476282642650586,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.007227819714262423,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.007227819714262423,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.004515517512448888,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair": [
+        "qwen",
+        "olmo"
+      ],
+      "unit_kind": "single",
+      "path": "exploratory_causal_diagnostics/qwen_olmo/single/diagnostics.json",
+      "sha256": "a3a18019390db0a55af9a6ca94f92cc95f8e089f062dc58bcd7ee0c90c2c5ca9",
+      "locations": {
+        "answer": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": 0.008082130907139605,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.08502607570552138,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.08502607570552138,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.007579079709497852,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.018850826207701562,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.010674542585801998,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.010674542585801998,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.0022946368016685775,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.0021864093749572933,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.015215201049354518,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.015215201049354518,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.0028370970237815915,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        },
+        "span": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": 0.03321815829457087,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.12430315820808392,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.12430315820808392,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.006816810820573995,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": 0.003089956912529298,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.030900166002765368,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.030900166002765368,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.0038680920429078713,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": 0.00816378102944581,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.01582825288454193,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.01582825288454193,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.0006087571472830705,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair": [
+        "qwen",
+        "olmo"
+      ],
+      "unit_kind": "group",
+      "path": "exploratory_causal_diagnostics/qwen_olmo/group/diagnostics.json",
+      "sha256": "8b6a71c98453677eacbf9c66636e9f088a502416861cf201d641eef116c26b08",
+      "locations": {
+        "answer": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.03186240048600588,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.004108275600133648,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.004108275600133648,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.010644654860176414,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": 0.0237783336862445,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.0026053078337794477,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.0026053078337794477,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.00850771855958658,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": 0.0248201812421241,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": -0.012072844017293036,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": -0.012072844017293036,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.0024425414230250914,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        },
+        "span": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": 0.09250120557542041,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.029231790245183565,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.029231790245183565,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.011965721869529489,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": 0.03391430363563733,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.034916821536167236,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.034916821536167236,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.023086638772381693,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": 0.04793396393830324,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.020491222651294053,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.020491222651294053,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.023304415694356446,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair": [
+        "smol",
+        "olmo"
+      ],
+      "unit_kind": "single",
+      "path": "exploratory_causal_diagnostics/smol_olmo/single/diagnostics.json",
+      "sha256": "0bea7963465b8caf5a6c4bbe9ff7ba998277c25becdbb816bd08f6f76944c1db",
+      "locations": {
+        "answer": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.02625715076120315,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.036669097754341955,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.036669097754341955,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.0006108760334518513,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.00814771687839805,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.0029218357524070193,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.0029218357524070193,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.007384738562564132,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.005090985138404309,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.0031058491766114784,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.0031058491766114784,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.00537984610043095,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        },
+        "span": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.029922127526101707,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.07791118918870414,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.07791118918870414,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.0053944568785787884,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.05100449522208982,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.008638497039639583,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.008638497039639583,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.004570810296453533,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.042362129040363926,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.005547133299335442,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.005547133299335442,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.00599766364945923,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "pair": [
+        "smol",
+        "olmo"
+      ],
+      "unit_kind": "group",
+      "path": "exploratory_causal_diagnostics/smol_olmo/group/diagnostics.json",
+      "sha256": "ab5d327a5fa654ae3857ab1e9117c8173318446c9958d4325d324dca71fe5522",
+      "locations": {
+        "answer": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.041727923727063625,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.11898353861285842,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.1512337181699513,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.011403539735190621,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": 0.013577824896676286,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.0038766077419473965,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.01866945171676695,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.002776812022339023,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": 0.014806959605012729,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.018784233035971255,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.029313920452648457,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": 0.00754753865352422,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        },
+        "span": {
+          "truth_oriented": {
+            "semantic": {
+              "mean": -0.056982097008348054,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.13030727192558786,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.13030727192558786,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.026289169642825152,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "yes_oriented": {
+            "semantic": {
+              "mean": -0.05970998608950837,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.03717625957462737,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.03717625957462737,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.014830669409378916,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          },
+          "within_label": {
+            "semantic": {
+              "mean": -0.047754680978331555,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "causal": {
+              "mean": 0.034452072121576735,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "combined": {
+              "mean": 0.034452072121576735,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            },
+            "random": {
+              "mean": -0.015654224730970657,
+              "n_valid_wrappers": 24,
+              "n_wrappers": 24,
+              "status": "DESCRIPTIVE"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "n_evaluations": 26,
+  "expected_evaluations": 26,
+  "full_protocol_complete": true,
+  "cohorts": {
+    "independent_seeds/single/answer": {
+      "truth_oriented": {
+        "semantic": {
+          "mean": 0.0032987182662024468,
+          "median": 0.004432097833433704,
+          "std": 0.014502100701841235,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.0024242373483066874,
+            0.008885920803289761
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "causal": {
+          "mean": 0.05903092190525042,
+          "median": 0.056884263742869215,
+          "std": 0.022488032229330813,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.05033691921649332,
+            0.06813632999604054
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "combined": {
+          "mean": 0.061994681374679984,
+          "median": 0.060989398679536094,
+          "std": 0.02136579935676265,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.054043298049642745,
+            0.07020084340761806
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "random": {
+          "mean": -0.00037865348319792184,
+          "median": -0.0020260461995834362,
+          "std": 0.007313664462371046,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.003190259509835169,
+            0.0025875971935520417
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        }
+      },
+      "yes_oriented": {
+        "semantic": {
+          "mean": -0.0008406798695832371,
+          "median": -0.0015442560693026196,
+          "std": 0.015403887285284218,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.006683120245598695,
+            0.005014658194815817
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "causal": {
+          "mean": 0.022647736457879486,
+          "median": 0.022749396375250495,
+          "std": 0.021290874243137,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.01453831355915749,
+            0.030907303028799495
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "combined": {
+          "mean": 0.023381100367018893,
+          "median": 0.022756510140557663,
+          "std": 0.017985520583614568,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.01667808180808922,
+            0.030457332013781094
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "random": {
+          "mean": -0.000831556304184257,
+          "median": -0.0005981232334997514,
+          "std": 0.007311174939787149,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.003595728428389029,
+            0.0020672064261547307
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        }
+      },
+      "within_label": {
+        "semantic": {
+          "mean": 0.0018291088876044414,
+          "median": -0.0004818687402770739,
+          "std": 0.015559043198376853,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.004221248724817793,
+            0.007886526481426192
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "causal": {
+          "mean": 0.016569734199798365,
+          "median": 0.014794033300224035,
+          "std": 0.02364868708013654,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.007676099699125455,
+            0.026016640562072656
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "combined": {
+          "mean": 0.017257455672916196,
+          "median": 0.013767225195131266,
+          "std": 0.020316520905704526,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.009584756355214148,
+            0.025207932395362082
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "random": {
+          "mean": 0.0012554845073938818,
+          "median": -0.00010205752320231385,
+          "std": 0.008463975903479744,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.0019188220819728176,
+            0.004621893055700227
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        }
+      }
+    },
+    "independent_seeds/single/span": {
+      "truth_oriented": {
+        "semantic": {
+          "mean": -0.00827971799357938,
+          "median": -0.0057336544806508875,
+          "std": 0.024685191215497497,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.01827853231733389,
+            0.0008961724444840015
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "causal": {
+          "mean": 0.0073286171360556,
+          "median": 0.006131327769863991,
+          "std": 0.015526683329198574,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.0012973696962377758,
+            0.013665055528338653
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "combined": {
+          "mean": 0.003371800724660453,
+          "median": 0.002571817818897967,
+          "std": 0.020385388801031037,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.004778764713644677,
+            0.011197769327042792
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "random": {
+          "mean": -0.00021058715668047004,
+          "median": -0.0011254929572526782,
+          "std": 0.007006556184381135,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.0029230407537165935,
+            0.002525374410534303
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        }
+      },
+      "yes_oriented": {
+        "semantic": {
+          "mean": -0.0007348006768904559,
+          "median": 0.004270786535869693,
+          "std": 0.021836028935401222,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.009644212036497802,
+            0.007378456959254492
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "causal": {
+          "mean": 0.005287736261149819,
+          "median": 0.0006667341038283394,
+          "std": 0.020661367827842215,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.002532621293550265,
+            0.013663127609848384
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "combined": {
+          "mean": 0.002874110209601162,
+          "median": -0.000489569973534807,
+          "std": 0.019628439412076388,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.004199557824895351,
+            0.01105311377973882
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "random": {
+          "mean": 0.00024185848807013418,
+          "median": -0.000468584836204984,
+          "std": 0.007696211829785392,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.0027059397388740024,
+            0.0033025246734772864
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        }
+      },
+      "within_label": {
+        "semantic": {
+          "mean": -0.006007127034720423,
+          "median": -0.008509842515594024,
+          "std": 0.023668290233574734,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.015370886639944558,
+            0.003205740830300771
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "causal": {
+          "mean": 0.006313009335113864,
+          "median": 0.0017992781871254667,
+          "std": 0.023412256196625226,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.0025754377846373727,
+            0.0157638191677832
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "combined": {
+          "mean": 0.0010534568063288545,
+          "median": -0.00126386356920216,
+          "std": 0.021721006412532044,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.007657535263647214,
+            0.009533091923527382
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "random": {
+          "mean": -0.00016278961138648657,
+          "median": -0.0006301141115423954,
+          "std": 0.008793340693996394,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.003473094355763008,
+            0.0034845286330088578
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        }
+      }
+    },
+    "independent_seeds/group/answer": {
+      "truth_oriented": {
+        "semantic": {
+          "mean": 0.014397154980619727,
+          "median": 0.015331449284573802,
+          "std": 0.020414356651529506,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.006327481275705661,
+            0.02233957591472339
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "causal": {
+          "mean": 0.0814023891025019,
+          "median": 0.08115972401142792,
+          "std": 0.028404172716127215,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.07024944379795846,
+            0.09245443515937732
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "combined": {
+          "mean": 0.08217669767097564,
+          "median": 0.07356169102702434,
+          "std": 0.03775290870386771,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.06780686654622343,
+            0.09748489007791614
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "random": {
+          "mean": 0.0162322807538766,
+          "median": 0.014680778873249343,
+          "std": 0.01727953684390694,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.00959556343377901,
+            0.022898279244882355
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        }
+      },
+      "yes_oriented": {
+        "semantic": {
+          "mean": 0.010995159489731657,
+          "median": 0.011158579707242978,
+          "std": 0.02696116382381183,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.00033506596544464524,
+            0.02149678819992163
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "causal": {
+          "mean": 0.05617122800453183,
+          "median": 0.061882262691100504,
+          "std": 0.026155636323352705,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.04576219323767136,
+            0.06669709338215883
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "combined": {
+          "mean": 0.05609165975294866,
+          "median": 0.0540557474522345,
+          "std": 0.03049202708406,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.044758558414926576,
+            0.068939382458947
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "random": {
+          "mean": 0.017535720011739298,
+          "median": 0.01927800300805993,
+          "std": 0.015214248865059295,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.011540269502004513,
+            0.023471596493842138
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        }
+      },
+      "within_label": {
+        "semantic": {
+          "mean": 0.005849130891507503,
+          "median": 0.003170553259610449,
+          "std": 0.024593212392389638,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.0038047057038621324,
+            0.015623183662204306
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "causal": {
+          "mean": 0.04152625015857716,
+          "median": 0.04393016830254641,
+          "std": 0.02562064007849803,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.03151326639887266,
+            0.05172491850225662
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "combined": {
+          "mean": 0.03796886282506492,
+          "median": 0.0407436655555298,
+          "std": 0.027201837612069506,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.027135594050488147,
+            0.0487564734654137
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "random": {
+          "mean": 0.012035756801527067,
+          "median": 0.009970431099650429,
+          "std": 0.013596417069666144,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.006682078114137168,
+            0.01760651254044304
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        }
+      }
+    },
+    "independent_seeds/group/span": {
+      "truth_oriented": {
+        "semantic": {
+          "mean": -0.0017109144777641948,
+          "median": -0.008133175640542948,
+          "std": 0.03172211626364642,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.013982438118790868,
+            0.010994130810702338
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "causal": {
+          "mean": -0.001481963728689099,
+          "median": -0.002497561780607834,
+          "std": 0.017624790480151843,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.008189819004739292,
+            0.005425378054645376
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "combined": {
+          "mean": -0.00010085468745249226,
+          "median": 0.00315259182727224,
+          "std": 0.023849726094855174,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.009302472263376712,
+            0.00905148612909362
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "random": {
+          "mean": 0.0014119747217123137,
+          "median": 0.0004437864699181021,
+          "std": 0.016842530137420646,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.0048148586743789945,
+            0.008450069143046147
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        }
+      },
+      "yes_oriented": {
+        "semantic": {
+          "mean": -0.005933811033756942,
+          "median": -0.006337017010136194,
+          "std": 0.03494888347693812,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.019284986163129195,
+            0.008003967723779482
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "causal": {
+          "mean": 0.003576141762040077,
+          "median": -0.003680603358901395,
+          "std": 0.019053895634706178,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.003781258463925972,
+            0.011176565911315108
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "combined": {
+          "mean": 0.006042119471347345,
+          "median": 0.007764657885371998,
+          "std": 0.026187707649516202,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.0038554319306140184,
+            0.01649833547481147
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "random": {
+          "mean": 0.0018561260747540509,
+          "median": -0.00032294672904218356,
+          "std": 0.01822525661403427,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.0048428593871419,
+            0.009468725264235445
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        }
+      },
+      "within_label": {
+        "semantic": {
+          "mean": -0.01228165471811044,
+          "median": -0.012065377753040927,
+          "std": 0.03494284879414831,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.025899872357137574,
+            0.0014483762992236514
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "causal": {
+          "mean": 0.000850680644903175,
+          "median": -0.0015138928068612139,
+          "std": 0.022558868647646266,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.00787744906772924,
+            0.00945062144558512
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "combined": {
+          "mean": -0.004337089685631791,
+          "median": -0.0030680935068325777,
+          "std": 0.029638252138121157,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.01607166749828064,
+            0.006930642312283932
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "random": {
+          "mean": -3.461010163462565e-05,
+          "median": 0.00033910666543886855,
+          "std": 0.015093328858031226,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.005793286840628799,
+            0.006186671220108838
+          ],
+          "status": "OK",
+          "n_pairs": 10,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        }
+      }
+    },
+    "cross_family/single/answer": {
+      "truth_oriented": {
+        "semantic": {
+          "mean": -0.026424806789719323,
+          "median": -0.007167209833994076,
+          "std": 0.041173179339315226,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.04373453648381664,
+            -0.010867792931510465
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "causal": {
+          "mean": 0.04353200866585402,
+          "median": 0.04901741828611428,
+          "std": 0.06186994027287817,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.018323369685981854,
+            0.06763343640281616
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "combined": {
+          "mean": 0.04353200866585402,
+          "median": 0.04901741828611428,
+          "std": 0.06186994027287817,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.018323369685981854,
+            0.06763343640281616
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "random": {
+          "mean": -0.0004846777684738818,
+          "median": 0.00011121911378759634,
+          "std": 0.014595152916735582,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.0063616716993689275,
+            0.0050605768517398815
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        }
+      },
+      "yes_oriented": {
+        "semantic": {
+          "mean": -0.011658334725374184,
+          "median": -0.005975747171116533,
+          "std": 0.03958201875421494,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.026992640098233014,
+            0.0035448919444148338
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "causal": {
+          "mean": 0.0003013154399498768,
+          "median": 0.0038541402035862345,
+          "std": 0.03787279436667187,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.014431811920756312,
+            0.015390557175031043
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "combined": {
+          "mean": 0.0003013154399498768,
+          "median": 0.0038541402035862345,
+          "std": 0.03787279436667187,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.014431811920756312,
+            0.015390557175031043
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "random": {
+          "mean": -0.00034771456593445945,
+          "median": -0.002641007903674331,
+          "std": 0.013006082015003131,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.005050717693824233,
+            0.005047794347194361
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        }
+      },
+      "within_label": {
+        "semantic": {
+          "mean": -0.004334011289190395,
+          "median": 0.0064915140300877494,
+          "std": 0.038944547099942994,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.019712699300982003,
+            0.010206885681942007
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "causal": {
+          "mean": -0.00012939087012013716,
+          "median": -0.0043058728591609105,
+          "std": 0.04006977153986903,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.014986927620443556,
+            0.015919262982143922
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "combined": {
+          "mean": -0.00012939087012013716,
+          "median": -0.0043058728591609105,
+          "std": 0.04006977153986903,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.014986927620443556,
+            0.015919262982143922
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "random": {
+          "mean": 0.0019694326967480374,
+          "median": -0.0003135342856971426,
+          "std": 0.01273552988606422,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.0027820917718850047,
+            0.007170736923091079
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        }
+      }
+    },
+    "cross_family/single/span": {
+      "truth_oriented": {
+        "semantic": {
+          "mean": -0.0022515865602904354,
+          "median": 0.00451606071667401,
+          "std": 0.05624574655435908,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.025046928331643216,
+            0.018917581498594294
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "causal": {
+          "mean": 0.08801742721410925,
+          "median": 0.08986529839286461,
+          "std": 0.03443410474919436,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.07456137748242543,
+            0.1023579118581869
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "combined": {
+          "mean": 0.08801742721410925,
+          "median": 0.08986529839286461,
+          "std": 0.03443410474919436,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.07456137748242543,
+            0.1023579118581869
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "random": {
+          "mean": -0.0009091189685708126,
+          "median": -0.004338115229015104,
+          "std": 0.01616853679193709,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.007275027518709938,
+            0.005479788958685028
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        }
+      },
+      "yes_oriented": {
+        "semantic": {
+          "mean": -0.015271087766045134,
+          "median": -0.006841314302110636,
+          "std": 0.04247739892002637,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.03225900142426767,
+            0.0008901517485683094
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "causal": {
+          "mean": 0.012951028403374296,
+          "median": 0.01124187125508018,
+          "std": 0.038802381468402404,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.0017576549584261245,
+            0.02817932181001224
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "combined": {
+          "mean": 0.012951028403374296,
+          "median": 0.01124187125508018,
+          "std": 0.038802381468402404,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.0017576549584261245,
+            0.02817932181001224
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "random": {
+          "mean": 0.0009415739325513402,
+          "median": 0.0005893119769929476,
+          "std": 0.019654582428697758,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.006533854117204522,
+            0.009198681752155427
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        }
+      },
+      "within_label": {
+        "semantic": {
+          "mean": -0.012452761777661317,
+          "median": -0.013069232740449974,
+          "std": 0.040558275742572626,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.028294125229965474,
+            0.0029712870258755968
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "causal": {
+          "mean": 0.005048622566836464,
+          "median": 0.002751594673229909,
+          "std": 0.03914653061017381,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.01020187973132834,
+            0.020375203630323
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "combined": {
+          "mean": 0.005048622566836464,
+          "median": 0.002751594673229909,
+          "std": 0.03914653061017381,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.01020187973132834,
+            0.020375203630323
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "random": {
+          "mean": -0.0009264785136517658,
+          "median": 0.001564121706140383,
+          "std": 0.019360063034244916,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.008167461812279715,
+            0.007144296784626017
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        }
+      }
+    },
+    "cross_family/group/answer": {
+      "truth_oriented": {
+        "semantic": {
+          "mean": -0.0390881753678007,
+          "median": -0.04243099232144859,
+          "std": 0.05900967399955363,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.06288783448555185,
+            -0.01627688509968269
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "causal": {
+          "mean": 0.044324380795690434,
+          "median": 0.02418450640146248,
+          "std": 0.08826999153413764,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.011744361283904386,
+            0.08092715919565333
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "combined": {
+          "mean": 0.055074440648054744,
+          "median": 0.04739706152840725,
+          "std": 0.07448117832836257,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.02691575213292515,
+            0.08572649200664045
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "random": {
+          "mean": -0.012099146147118954,
+          "median": -0.006362584079749751,
+          "std": 0.03305815413380738,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.025475297349058307,
+            0.0010538600901955448
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        }
+      },
+      "yes_oriented": {
+        "semantic": {
+          "mean": 0.007260136033442564,
+          "median": -0.0027694433556467316,
+          "std": 0.04437497525274464,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.010353086816234033,
+            0.024636448147761964
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "causal": {
+          "mean": -0.004232058256149605,
+          "median": -0.0021807278131018596,
+          "std": 0.046554582315211104,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.021994747175029177,
+            0.01436881571383925
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "combined": {
+          "mean": 0.0006988897354569101,
+          "median": -0.015673387446733994,
+          "std": 0.04402195146045147,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.01511955513850475,
+            0.019057044377921793
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "random": {
+          "mean": 0.00020175386769870669,
+          "median": 0.0024318295930698835,
+          "std": 0.02346483683210611,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.009204429568301222,
+            0.009452428037803627
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        }
+      },
+      "within_label": {
+        "semantic": {
+          "mean": 0.00910140102502221,
+          "median": 0.00965539624432368,
+          "std": 0.0532557906253429,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.011748868195881182,
+            0.030340819350634582
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "causal": {
+          "mean": 0.004787595460073709,
+          "median": -0.009308300893075128,
+          "std": 0.05222288751418069,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.01463382717255373,
+            0.02658172776153594
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "combined": {
+          "mean": 0.008297491265632777,
+          "median": -0.003969753461767865,
+          "std": 0.05033723877763993,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.01022859972090975,
+            0.02962622280018186
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "random": {
+          "mean": 0.006772157757422525,
+          "median": 0.006554718851219287,
+          "std": 0.02837995033834402,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.004214501850058808,
+            0.018141558536737257
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        }
+      }
+    },
+    "cross_family/group/span": {
+      "truth_oriented": {
+        "semantic": {
+          "mean": 0.002821241844404687,
+          "median": -0.002072679404119597,
+          "std": 0.06936143775330046,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.02240187083315892,
+            0.029964691549643648
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "causal": {
+          "mean": 0.08646885834191236,
+          "median": 0.08737480706057382,
+          "std": 0.07330950880480062,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.05761231334319747,
+            0.11475756585436013
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "combined": {
+          "mean": 0.08646885834191236,
+          "median": 0.08737480706057382,
+          "std": 0.07330950880480062,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.05761231334319747,
+            0.11475756585436013
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "random": {
+          "mean": -0.00021203471177978065,
+          "median": 0.0015261558128818642,
+          "std": 0.03335555439116751,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.013268946726948274,
+            0.012774997136268439
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        }
+      },
+      "yes_oriented": {
+        "semantic": {
+          "mean": -0.023820492224671298,
+          "median": -0.0168673034835452,
+          "std": 0.042769669334720095,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.040527628233139705,
+            -0.007758385146079776
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "causal": {
+          "mean": 0.02531004207344023,
+          "median": 0.017709470515577364,
+          "std": 0.052778915858088964,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.004857207558997827,
+            0.04709924750439847
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "combined": {
+          "mean": 0.02531004207344023,
+          "median": 0.017709470515577364,
+          "std": 0.052778915858088964,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            0.004857207558997827,
+            0.04709924750439847
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "random": {
+          "mean": 0.0039693768930083115,
+          "median": -0.0007819167408033771,
+          "std": 0.028914289644266143,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.007127673321775444,
+            0.015369838949392528
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        }
+      },
+      "within_label": {
+        "semantic": {
+          "mean": -0.012765666560892971,
+          "median": -0.019882631408664257,
+          "std": 0.04935232774871568,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.03200981802699456,
+            0.005810648331146016
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "causal": {
+          "mean": 0.015905158352869455,
+          "median": 0.0027289726232262953,
+          "std": 0.06215169653893186,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.00821695597591137,
+            0.0411492672932292
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "combined": {
+          "mean": 0.015905158352869455,
+          "median": 0.0027289726232262953,
+          "std": 0.06215169653893186,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.00821695597591137,
+            0.0411492672932292
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        },
+        "random": {
+          "mean": 0.00405523615861156,
+          "median": -0.0016038620432015593,
+          "std": 0.030774625016205797,
+          "n_observations": 24,
+          "n_clusters": 24,
+          "estimand": "equal-cluster-weighted mean",
+          "confidence": 0.95,
+          "ci": [
+            -0.007812827593054123,
+            0.016076409168926283
+          ],
+          "status": "OK",
+          "n_pairs": 3,
+          "descriptive_only": true,
+          "pairs_resampled_independently": false
+        }
+      }
+    }
+  },
+  "excluded_from_confirmatory_family": true,
+  "maps_refitted": false,
+  "fit_manifest_sha256_unchanged": "4f0b52462f1a60880d85f2bf9ce1d631088ccb3d4073153428bb69b31ac6a9ab",
+  "interpretation": "Compare identifiable correlation support and response orientation; no new primary claims."
+}

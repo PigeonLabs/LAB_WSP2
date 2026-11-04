@@ -21,6 +21,21 @@ from .followup_alignment_runner import (ROOT, PAIRS, SEEDS, PRIMARY_CAUSAL_MODES
 from .statistics import cluster_bootstrap
 
 
+DIAGNOSTIC_VERSION = 'answer-bias-diagnostic-v1'
+DIAGNOSTIC_SETTINGS = dict(primary_modes=['zero','mean','patch'],
+    minimum_examples_per_cell=3,constant_standard_deviation_tolerance=1e-10,
+    task_and_mode_weighting='equal',random_maps='reuse frozen D2 maps',
+    orientation='truth effect times (2*label-1)',
+    within_label='concept crossed with binary truth label',
+    cohort_bootstrap_replicates=5000,cohort_bootstrap_seed=1729)
+
+
+def _analysis_provenance():
+    return dict(analysis_version=DIAGNOSTIC_VERSION,analysis_settings=DIAGNOSTIC_SETTINGS,
+                analysis_code_sha256=_sha(Path(__file__)),
+                numerical_helper_sha256=_sha(Path(__file__).with_name('followup_analysis.py')))
+
+
 def _measurement(cells,mappings,random_mappings):
     scores,support = {},{}
     for name,mapping in mappings.items():
@@ -131,8 +146,9 @@ def run_diagnostics(run,data,pairs=PAIRS):
     for entry in manifest['fits']:
         if _sha(run/entry['path'])!=entry['sha256']:
             raise ValueError('Frozen causal fit checksum mismatch')
-    # Require all intended real D4 model arrays before writing a completion view.
-    for model in sorted({x for pair in PAIRS for x in pair}):
+    # Independent pair subsets may run while other models are still collecting.
+    # The global completion summary still requires all 26 pair/kind outputs.
+    for model in sorted({x for pair in pairs for x in pair}):
         if not (run/'causal'/model/'D4/manifest.json').exists():
             raise ValueError(f'D4 not complete for {model}')
     canonical = load_rows(data,'D4')
@@ -157,14 +173,21 @@ def run_diagnostics(run,data,pairs=PAIRS):
             core = fitted['source']['primary_mode_indices']
             aa = a['effects'][:,fitted['unit_indices_a']][...,core]
             bb = b['effects'][:,fitted['unit_indices_b']][...,core]
-            result = evaluate_bias_diagnostics(aa,bb,rows,fitted)
-            result.update(pair=list(pair),unit_kind=kind,cohort=cohort,
-                          task_competence={c:dict(model_a=gate_a[c],model_b=gate_b[c],
-                                                 both_passed=gate_a[c]['passed'] and gate_b[c]['passed']) for c in gate_a},
-                          source=dict(effects_sha256_a=ma['effects_sha256'],effects_sha256_b=mb['effects_sha256'],
-                                      frozen_fit_sha256=_sha(fitpath),fit_manifest_sha256=_sha(manifest_path)))
             path=output/('_'.join(pair))/kind/'diagnostics.json'
-            write_once(path,result)
+            source=dict(effects_sha256_a=ma['effects_sha256'],effects_sha256_b=mb['effects_sha256'],
+                        frozen_fit_sha256=_sha(fitpath),fit_manifest_sha256=_sha(manifest_path),
+                        **_analysis_provenance())
+            if path.exists():
+                result=json.loads(path.read_text())
+                if result.get('source')!=source:
+                    raise ValueError('Existing diagnostic source checksum mismatch')
+            else:
+                result = evaluate_bias_diagnostics(aa,bb,rows,fitted)
+                result.update(pair=list(pair),unit_kind=kind,cohort=cohort,
+                              task_competence={c:dict(model_a=gate_a[c],model_b=gate_b[c],
+                                                     both_passed=gate_a[c]['passed'] and gate_b[c]['passed']) for c in gate_a},
+                              source=source)
+                write_once(path,result)
             for location,views in result['locations'].items():
                 cohorts.setdefault((cohort,kind,location),{})['_'.join(pair)]=views
             completed.append(dict(pair=list(pair),unit_kind=kind,path=str(path.relative_to(run)),sha256=_sha(path),

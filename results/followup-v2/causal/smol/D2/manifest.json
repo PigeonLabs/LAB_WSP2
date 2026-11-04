@@ -1,0 +1,164 @@
+{
+  "signature": "6d79521229552d94a2c76999cc5298b12caec4d731122b9b950cbc2d8e9981ff",
+  "plan": {
+    "version": "followup-measurement-v2",
+    "model_info": {
+      "id": "smol",
+      "family": "public_pretrained",
+      "model_id": "HuggingFaceTB/SmolLM2-360M",
+      "revision": "f8027fd0eaeea54caa13c31d31b9fdc459c38b49",
+      "license": "apache-2.0",
+      "model_type": "llama",
+      "cached_file_manifest_sha256": "72111eda12d08d2177fee43649de901a91a7370b583b7fb1129cb9286828ff09"
+    },
+    "records_sha256": "8594363bc62f6d6a46fa9c9ab28355c3bfde9ca4d6d244a5e7e58e9d60462e0a",
+    "d1_signature": "a3efffc409783697453c863511fb88a40f2a0cc3f2746c6d4950edcb4831017e",
+    "d1_measurements_sha256": "2daa16ddc8c98086d22986f3acc928922969c493b673a6151809e614a56642ce",
+    "units": [
+      {
+        "id": "L6_N1295_functional",
+        "kind": "single",
+        "units_by_layer": {
+          "6": [
+            1295
+          ]
+        }
+      },
+      {
+        "id": "L6_N913_random",
+        "kind": "single",
+        "units_by_layer": {
+          "6": [
+            913
+          ]
+        }
+      },
+      {
+        "id": "L6_group4",
+        "kind": "group",
+        "units_by_layer": {
+          "6": [
+            1587,
+            1295,
+            1961,
+            913
+          ]
+        }
+      },
+      {
+        "id": "L12_N701_functional",
+        "kind": "single",
+        "units_by_layer": {
+          "12": [
+            701
+          ]
+        }
+      },
+      {
+        "id": "L12_N1226_random",
+        "kind": "single",
+        "units_by_layer": {
+          "12": [
+            1226
+          ]
+        }
+      },
+      {
+        "id": "L12_group4",
+        "kind": "group",
+        "units_by_layer": {
+          "12": [
+            420,
+            701,
+            1474,
+            1226
+          ]
+        }
+      },
+      {
+        "id": "L19_N1774_functional",
+        "kind": "single",
+        "units_by_layer": {
+          "19": [
+            1774
+          ]
+        }
+      },
+      {
+        "id": "L19_N367_random",
+        "kind": "single",
+        "units_by_layer": {
+          "19": [
+            367
+          ]
+        }
+      },
+      {
+        "id": "L19_group4",
+        "kind": "group",
+        "units_by_layer": {
+          "19": [
+            836,
+            1774,
+            2345,
+            367
+          ]
+        }
+      },
+      {
+        "id": "L25_N1154_functional",
+        "kind": "single",
+        "units_by_layer": {
+          "25": [
+            1154
+          ]
+        }
+      },
+      {
+        "id": "L25_N1529_random",
+        "kind": "single",
+        "units_by_layer": {
+          "25": [
+            1529
+          ]
+        }
+      },
+      {
+        "id": "L25_group4",
+        "kind": "group",
+        "units_by_layer": {
+          "25": [
+            1324,
+            1154,
+            136,
+            1529
+          ]
+        }
+      }
+    ],
+    "locations": [
+      "answer",
+      "span"
+    ],
+    "modes": [
+      "zero",
+      "mean",
+      "patch",
+      "scale_0",
+      "scale_0.5",
+      "scale_1",
+      "scale_1.5",
+      "scale_2"
+    ],
+    "split": "D2",
+    "patch_policy": "same-model opposite-label donor; donor span mean broadcast over recipient statement span",
+    "precision": "float32",
+    "pairs_per_task_wrapper": 4
+  },
+  "n": 768,
+  "num_units": 12,
+  "elapsed_seconds_this_call": 264.98310403400683,
+  "intervention_seconds_total": 262.6213374345971,
+  "effects_sha256": "f6ba02d43f53095f1e8a880e3327b624e6c41d1176f8db208ae3342d18d6b27b",
+  "device": "cuda"
+}

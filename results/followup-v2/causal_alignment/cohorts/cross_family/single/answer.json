@@ -1,0 +1,74 @@
+{
+  "tests": {
+    "combined_minus_semantic": {
+      "effect": 0.06995681545557335,
+      "pvalue": 4.999750012499375e-05,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 1.228244632718411,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.06995681545557335,
+        "median": 0.08350865554136083,
+        "std": 0.056956744277189726,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.04607671501796167,
+          0.09095426884268826
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 3,
+      "wrapper_effects": {
+        "D4:wrapper:t00": -0.00861051854351135,
+        "D4:wrapper:t01": 0.08998658201832449,
+        "D4:wrapper:t02": 0.04659091240355586,
+        "D4:wrapper:t03": 0.07703072906439717,
+        "D4:wrapper:t04": 0.05554971706545279,
+        "D4:wrapper:t05": 0.04046305186109598,
+        "D4:wrapper:t06": 0.09865985435183248,
+        "D4:wrapper:t07": 0.013336692113454724,
+        "D4:wrapper:t08": 0.09969402169635662,
+        "D4:wrapper:t09": -0.010716119780451616,
+        "D4:wrapper:t10": -0.0025514002563826834,
+        "D4:wrapper:t11": 0.11324769982722908,
+        "D4:wrapper:t12": 0.09076981933176453,
+        "D4:wrapper:t13": 0.1188511301350927,
+        "D4:wrapper:t14": 0.06752587438442859,
+        "D4:wrapper:t15": -0.08823896906479396,
+        "D4:wrapper:t16": 0.12001202747705304,
+        "D4:wrapper:t17": 0.07673472444877398,
+        "D4:wrapper:t18": 0.05012564600498335,
+        "D4:wrapper:t19": 0.10667798608474217,
+        "D4:wrapper:t20": 0.1129053976582761,
+        "D4:wrapper:t21": 0.12718916752157833,
+        "D4:wrapper:t22": 0.15191518997101996,
+        "D4:wrapper:t23": 0.13181435515948772
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only"
+    }
+  },
+  "correction": "PENDING_GLOBAL_FAMILY",
+  "pair_descriptives": {
+    "combined_minus_semantic": {
+      "qwen_olmo": {
+        "mean": 0.07694394479838178,
+        "n_wrappers": 24
+      },
+      "qwen_smol": {
+        "mean": 0.07000025305279313,
+        "n_wrappers": 24
+      },
+      "smol_olmo": {
+        "mean": 0.06292624851554511,
+        "n_wrappers": 24
+      }
+    }
+  },
+  "n_pairs": 3,
+  "resampling_unit": "shared wrapper; all pairs and concepts retained together",
+  "inference_scope": "Conditional on observed models; no independent-seed replication claim."
+}

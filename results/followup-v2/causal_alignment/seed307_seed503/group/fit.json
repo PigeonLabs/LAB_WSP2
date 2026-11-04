@@ -1,0 +1,5885 @@
+{
+  "fit_split": "D2",
+  "train_wrappers": [
+    "D2:wrapper:t00",
+    "D2:wrapper:t01",
+    "D2:wrapper:t02",
+    "D2:wrapper:t03",
+    "D2:wrapper:t04",
+    "D2:wrapper:t05",
+    "D2:wrapper:t06",
+    "D2:wrapper:t07",
+    "D2:wrapper:t08",
+    "D2:wrapper:t09",
+    "D2:wrapper:t10",
+    "D2:wrapper:t11"
+  ],
+  "validation_wrappers": [
+    "D2:wrapper:t12",
+    "D2:wrapper:t13",
+    "D2:wrapper:t14",
+    "D2:wrapper:t15",
+    "D2:wrapper:t16",
+    "D2:wrapper:t17",
+    "D2:wrapper:t18",
+    "D2:wrapper:t19",
+    "D2:wrapper:t20",
+    "D2:wrapper:t21",
+    "D2:wrapper:t22",
+    "D2:wrapper:t23"
+  ],
+  "locations": {
+    "answer": {
+      "mappings": {
+        "semantic": {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            3,
+            0,
+            2
+          ],
+          "similarity": [
+            -0.34087664525067324,
+            0.38338034024094736,
+            0.4772880529234637,
+            0.8809128777905398
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        "causal": {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            0,
+            3,
+            1
+          ],
+          "similarity": [
+            -0.03162655679574673,
+            0.045440640905214165,
+            0.20563245007158884,
+            0.5526639221324298
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        "combined": {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            0,
+            3,
+            1
+          ],
+          "similarity": [
+            -0.03162655679574673,
+            0.045440640905214165,
+            0.20563245007158884,
+            0.5526639221324298
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        }
+      },
+      "random_mappings": [
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            1,
+            2,
+            0
+          ],
+          "similarity": [
+            0.87535226474703,
+            0.8716658688404981,
+            0.5677210731274538,
+            0.776536642567124
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            1,
+            0,
+            2
+          ],
+          "similarity": [
+            0.9453172498196633,
+            0.7858128360648657,
+            0.862320930653419,
+            0.8187523423778579
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            2,
+            0,
+            1
+          ],
+          "similarity": [
+            0.9580256789108351,
+            0.9670351344782759,
+            0.24525478668322476,
+            0.4422694210263013
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            1,
+            3,
+            2
+          ],
+          "similarity": [
+            0.9087346751538079,
+            0.5426655061725568,
+            0.7748615603230297,
+            0.8032184512122469
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            0,
+            1,
+            2
+          ],
+          "similarity": [
+            0.9155253063099398,
+            0.974029847469406,
+            0.1963117434342878,
+            0.976759740975406
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            3,
+            2,
+            1
+          ],
+          "similarity": [
+            0.9103935175710021,
+            0.2709885804348481,
+            0.8488327175683373,
+            0.9335162781416418
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            0,
+            1,
+            2
+          ],
+          "similarity": [
+            0.851456485677176,
+            0.6923161283135507,
+            0.765174832774439,
+            0.9690942414555066
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "similarity": [
+            0.8182058193450108,
+            0.8098079364633226,
+            0.9484489677195278,
+            0.9437492084160238
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            0,
+            2,
+            1
+          ],
+          "similarity": [
+            0.8946331537726228,
+            0.9745087156639193,
+            0.736448470517414,
+            0.6679024225340927
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            1,
+            2,
+            0
+          ],
+          "similarity": [
+            0.9863473668080553,
+            0.6493680791116369,
+            0.7489853059794315,
+            0.5099381075739663
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            1,
+            0,
+            2
+          ],
+          "similarity": [
+            0.4899791274563937,
+            0.9194752392105305,
+            0.5926525542159661,
+            0.612304949159083
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            3,
+            0,
+            2
+          ],
+          "similarity": [
+            0.12478854442287746,
+            0.8340373892468598,
+            0.6424166542510481,
+            0.9984581278286109
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "similarity": [
+            0.7777735309983437,
+            0.7528724436032418,
+            0.9371876560562031,
+            0.5717482669556408
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            1,
+            3,
+            2
+          ],
+          "similarity": [
+            0.9303542495352644,
+            0.4665250977044335,
+            0.7276085068702001,
+            0.5942296967229118
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            0,
+            1,
+            2
+          ],
+          "similarity": [
+            0.9558759830119297,
+            0.9610507448856197,
+            0.9614366515948024,
+            0.8270697499160744
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            3,
+            0
+          ],
+          "similarity": [
+            0.9079771153537533,
+            0.7725568786265365,
+            0.9112504478161318,
+            0.9451576976466145
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            0,
+            2,
+            1
+          ],
+          "similarity": [
+            0.670598004373292,
+            0.7459758526011012,
+            0.4885994964165985,
+            0.4027891263557103
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            1,
+            2,
+            0
+          ],
+          "similarity": [
+            0.3443834725130376,
+            0.9306578125391345,
+            0.42702263440903077,
+            0.8370406027806513
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            2,
+            3,
+            0
+          ],
+          "similarity": [
+            0.7349074240559239,
+            0.893853088287828,
+            0.8103458226121173,
+            0.8365648288838372
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            3,
+            2,
+            1
+          ],
+          "similarity": [
+            0.4054310255140625,
+            0.653158602243211,
+            0.9468525676561083,
+            0.8205705521571306
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            3,
+            2,
+            0
+          ],
+          "similarity": [
+            0.46004917379615706,
+            0.6348558011004372,
+            0.5349516497918528,
+            0.8449635180549813
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            1,
+            2,
+            0
+          ],
+          "similarity": [
+            0.13070620929132648,
+            0.8048270801041476,
+            0.7002772034851097,
+            0.8105068349097813
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "similarity": [
+            0.8628774667483617,
+            0.7691992553961576,
+            0.8375046471346984,
+            0.8412372407298008
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            3,
+            1,
+            2
+          ],
+          "similarity": [
+            0.7485889192938798,
+            0.9395908356676201,
+            0.6092275921883326,
+            0.5148397808699664
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            2,
+            0,
+            1
+          ],
+          "similarity": [
+            0.6381929512479435,
+            0.4700686265192654,
+            0.7537977854716532,
+            0.7194673310795978
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            3,
+            0,
+            1
+          ],
+          "similarity": [
+            0.9324119440088142,
+            0.7442549115196699,
+            0.6516465314884149,
+            0.37616418067117885
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            2,
+            1,
+            3
+          ],
+          "similarity": [
+            0.9789218710927344,
+            0.41858848013543415,
+            0.8625194250655498,
+            0.9736652681679693
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            0,
+            3
+          ],
+          "similarity": [
+            0.9006652036310987,
+            0.2463813374617816,
+            0.6601305488660442,
+            0.9396368258603985
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            2,
+            0,
+            1
+          ],
+          "similarity": [
+            0.9168790787863462,
+            0.9568627180592791,
+            0.6518180859843707,
+            0.894137852614984
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            3,
+            0
+          ],
+          "similarity": [
+            0.8868541349518475,
+            0.8126980740663827,
+            0.9378851806666141,
+            0.9402851282708655
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            3,
+            1,
+            0
+          ],
+          "similarity": [
+            0.8906589910187711,
+            0.4013693745670953,
+            0.8679530564950543,
+            0.9096024369797768
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            3,
+            0,
+            2
+          ],
+          "similarity": [
+            0.4263517339058248,
+            0.9234917981419931,
+            0.9557826903438414,
+            0.8886474885704142
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            0,
+            3
+          ],
+          "similarity": [
+            0.6883251258325036,
+            0.6271652907346159,
+            0.5580757749047557,
+            0.8617280549748675
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            1,
+            3,
+            2
+          ],
+          "similarity": [
+            0.7553241200830194,
+            0.648591639456641,
+            0.5345009506033693,
+            0.806027164146057
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "similarity": [
+            0.8621195839383685,
+            0.6949196606671452,
+            0.10062137906378232,
+            0.8877460448122657
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            0,
+            3
+          ],
+          "similarity": [
+            0.8519361853536175,
+            0.5481621444172531,
+            0.9892417701268783,
+            0.8284826338826734
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            2,
+            0,
+            1
+          ],
+          "similarity": [
+            0.7583433335300784,
+            0.14099340129489102,
+            0.5068524577408823,
+            0.7878951829113221
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            2,
+            3,
+            0
+          ],
+          "similarity": [
+            0.6477086121426279,
+            0.9372519887318517,
+            0.9232359908769086,
+            0.19365944307651717
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            3,
+            1,
+            2
+          ],
+          "similarity": [
+            0.6659103586285157,
+            0.6412640156783567,
+            0.9338302530854539,
+            0.7164254357311162
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            2,
+            0,
+            3
+          ],
+          "similarity": [
+            0.8938704048748176,
+            0.8422772178431,
+            0.7917385351118138,
+            0.6400996531287753
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            0,
+            1,
+            3
+          ],
+          "similarity": [
+            0.8088667602611328,
+            0.803749537303651,
+            0.9661912691384913,
+            0.47751392495862377
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            0,
+            3,
+            2
+          ],
+          "similarity": [
+            0.9672788463021033,
+            0.9096356724306731,
+            0.7381441632268592,
+            0.7166539748932741
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            0,
+            3
+          ],
+          "similarity": [
+            0.8936357782494074,
+            0.9462945081035228,
+            0.05152155515392709,
+            0.4007857350790909
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            1,
+            0,
+            2
+          ],
+          "similarity": [
+            0.7939231413704487,
+            0.7555806959852548,
+            0.765840495797046,
+            0.5215954882701581
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            0,
+            2,
+            3
+          ],
+          "similarity": [
+            0.2548034282547327,
+            0.8649113983677938,
+            0.9238525243491995,
+            0.80745365600501
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            2,
+            0,
+            1
+          ],
+          "similarity": [
+            0.8386792000150404,
+            0.9626377444421752,
+            0.9567965449141796,
+            0.843337280275792
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            0,
+            2,
+            3
+          ],
+          "similarity": [
+            0.644410617137804,
+            0.8010107976433188,
+            0.6470314127620062,
+            0.3211639311581501
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            0,
+            1,
+            3
+          ],
+          "similarity": [
+            0.725326657161634,
+            0.5780362601749617,
+            0.5148621963895905,
+            0.9507543171021788
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            0,
+            3
+          ],
+          "similarity": [
+            0.45088565293329086,
+            0.9044864422232427,
+            0.9943899176626776,
+            0.8178681079046829
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            0,
+            3,
+            2
+          ],
+          "similarity": [
+            0.9637341824347451,
+            0.5426503355351114,
+            0.7477659875038827,
+            0.8285919592304847
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            2,
+            0,
+            3
+          ],
+          "similarity": [
+            0.9778536170047475,
+            0.9767132445796325,
+            0.37502457741174,
+            0.6694988106655642
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            3,
+            0,
+            2
+          ],
+          "similarity": [
+            0.9380418434853067,
+            0.6213013767536985,
+            0.6540380443179385,
+            0.842376841397748
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "similarity": [
+            0.47131627252918096,
+            0.7662110909415434,
+            0.3658793120143171,
+            0.5660117774726934
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            0,
+            3
+          ],
+          "similarity": [
+            0.773494069838277,
+            0.9030256774817321,
+            0.9952536615470802,
+            0.6096383325748623
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            0,
+            3,
+            2
+          ],
+          "similarity": [
+            0.8703836003360166,
+            0.7636992809099286,
+            0.7662343919018633,
+            0.5440559629371157
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "similarity": [
+            0.4122841114389928,
+            0.6143568283958748,
+            0.8879839652283891,
+            0.8749195716162803
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            0,
+            1,
+            2
+          ],
+          "similarity": [
+            0.8506435967746663,
+            0.7126589653354256,
+            0.17434648129691166,
+            0.6898086896137038
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            2,
+            1,
+            3
+          ],
+          "similarity": [
+            0.8121651744813926,
+            0.871569301257365,
+            0.4150145420565796,
+            0.8171310503742847
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            2,
+            3,
+            0
+          ],
+          "similarity": [
+            0.7730544571226721,
+            0.9315789470345222,
+            0.6216128489513152,
+            0.8492596249827656
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            1,
+            2,
+            0
+          ],
+          "similarity": [
+            0.7853821296237912,
+            0.2767502657316555,
+            0.13615317062092602,
+            0.9791202499938382
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            0,
+            3,
+            1
+          ],
+          "similarity": [
+            0.5881091963091787,
+            0.5839029037391171,
+            0.979950134858276,
+            0.9918716257349776
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            0,
+            3
+          ],
+          "similarity": [
+            0.6273079399269549,
+            0.49544455489630745,
+            0.460104227341137,
+            0.7283082318635736
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            3,
+            0,
+            1
+          ],
+          "similarity": [
+            0.8582201738970007,
+            0.4916790081134219,
+            0.5594892962744065,
+            0.6011677355490179
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            3,
+            2,
+            1
+          ],
+          "similarity": [
+            0.3592839896457768,
+            0.8694610701679902,
+            0.9438009702470613,
+            0.7253856219547572
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            2,
+            0,
+            1
+          ],
+          "similarity": [
+            0.972667282707792,
+            0.8222562679390335,
+            0.6744094300607342,
+            0.7831030020541434
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            2,
+            3,
+            0
+          ],
+          "similarity": [
+            0.9313087681910631,
+            0.332915770874878,
+            0.5417449165544814,
+            0.8853036198468824
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            1,
+            3,
+            2
+          ],
+          "similarity": [
+            0.7356338796623938,
+            0.6815960791203818,
+            0.870661608555265,
+            0.8761456160939702
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            0,
+            3
+          ],
+          "similarity": [
+            0.702393021452606,
+            0.6587538493695776,
+            0.6179972775623923,
+            0.8534936446033018
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            0,
+            3,
+            2
+          ],
+          "similarity": [
+            0.9842931663505475,
+            0.9788571135505413,
+            0.722894759937567,
+            0.9040009460501925
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            0,
+            3,
+            2
+          ],
+          "similarity": [
+            0.8334821683652487,
+            0.601691156013468,
+            0.9526415715092369,
+            0.8440677858188983
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            3,
+            2,
+            0
+          ],
+          "similarity": [
+            0.7890767151122993,
+            0.6924045929839661,
+            0.9923679562299822,
+            0.8422513331739031
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            0,
+            3
+          ],
+          "similarity": [
+            0.8639234398929099,
+            0.9936623993251111,
+            0.5523712895798248,
+            0.849590815217322
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            3,
+            1,
+            2
+          ],
+          "similarity": [
+            0.8214506037646104,
+            0.7925841453781199,
+            0.8655856851369672,
+            0.6166805335813936
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            3,
+            2,
+            0
+          ],
+          "similarity": [
+            0.6319143609431246,
+            0.8984682120682462,
+            0.5692926833664852,
+            0.9949460045005082
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            0,
+            3,
+            1
+          ],
+          "similarity": [
+            0.49220774794077216,
+            0.9903207705665351,
+            0.649950749607968,
+            0.6905341920541672
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            3,
+            0
+          ],
+          "similarity": [
+            0.7163956457239518,
+            0.6436114092281775,
+            0.7264044465233703,
+            0.9782127557007797
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "similarity": [
+            0.9599124955819998,
+            0.23143766581646164,
+            0.8764337757355609,
+            0.8755710911548181
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            2,
+            0,
+            3
+          ],
+          "similarity": [
+            0.4800939639571805,
+            0.682662042826466,
+            0.8630704156795208,
+            0.9856418839608965
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            0,
+            3
+          ],
+          "similarity": [
+            0.9404075276164423,
+            0.6973210402368193,
+            0.7978242397497612,
+            0.650945376591842
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            0,
+            1,
+            2
+          ],
+          "similarity": [
+            0.24156568093579422,
+            0.6563578499471135,
+            0.9869406955254174,
+            0.639135225139496
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            0,
+            3
+          ],
+          "similarity": [
+            0.7435019087361106,
+            0.9366952857046393,
+            0.9682903074173163,
+            0.8203391840252072
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "similarity": [
+            0.5899018844919406,
+            0.4041440062754117,
+            0.49557223483153845,
+            0.468481053586118
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            3,
+            0,
+            2
+          ],
+          "similarity": [
+            0.9314158650210997,
+            0.8180697801850888,
+            0.8048717234613143,
+            0.5146648256200581
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            2,
+            1,
+            3
+          ],
+          "similarity": [
+            0.6724362658939503,
+            0.2339487246401768,
+            0.955350616236841,
+            0.5673770366168895
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "similarity": [
+            0.9835936762742903,
+            0.7902281480425802,
+            0.9542745361534556,
+            0.12362478904811469
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            0,
+            2,
+            3
+          ],
+          "similarity": [
+            0.9511602571460156,
+            0.5530516215737894,
+            0.7316700629498233,
+            0.9137296334271944
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            0,
+            3,
+            1
+          ],
+          "similarity": [
+            0.9491022387576685,
+            0.845780296071285,
+            0.020218710210880397,
+            0.725518258322662
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            0,
+            1,
+            2
+          ],
+          "similarity": [
+            0.4986784398040265,
+            0.6559602365636887,
+            0.7205052041817107,
+            0.482927614798795
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            1,
+            0,
+            2
+          ],
+          "similarity": [
+            0.7747217566020649,
+            0.8748114438053617,
+            0.9655991978067211,
+            0.9811288446429595
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            0,
+            3
+          ],
+          "similarity": [
+            0.8851161449532399,
+            0.28977877960052245,
+            0.9704465377283138,
+            0.580029921340518
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            1,
+            0,
+            2
+          ],
+          "similarity": [
+            0.9464993028426771,
+            0.7454854906706827,
+            0.9416513923035287,
+            0.7590172561278264
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            3,
+            2,
+            1
+          ],
+          "similarity": [
+            0.8094603719551157,
+            0.9477249149929786,
+            0.7356629103031967,
+            0.7869031742883523
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "similarity": [
+            0.5106080723904646,
+            0.7757184438257834,
+            0.6274647982861133,
+            0.4033777544487137
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            2,
+            3,
+            0
+          ],
+          "similarity": [
+            0.45566301311573654,
+            0.5221794120496949,
+            0.6818912841406616,
+            0.74479182789155
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            0,
+            1,
+            2
+          ],
+          "similarity": [
+            0.9724010650812409,
+            0.5912019805766238,
+            0.3398131015144551,
+            0.9528164005262605
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            0,
+            1,
+            3
+          ],
+          "similarity": [
+            0.4882157259680179,
+            0.6587865458827301,
+            0.9334696706132782,
+            0.738937519973774
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            0,
+            1,
+            3
+          ],
+          "similarity": [
+            0.8297397332911862,
+            0.8929704186225744,
+            0.38887488566604966,
+            0.5307378578644841
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            2,
+            0,
+            1
+          ],
+          "similarity": [
+            0.5682413822337627,
+            0.841923145389167,
+            0.6305314862241641,
+            0.5008340739291991
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            1,
+            2,
+            0
+          ],
+          "similarity": [
+            0.8391601387701012,
+            0.9925542036793691,
+            0.4915534593974138,
+            0.998790459042702
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "similarity": [
+            0.9415157444910736,
+            0.9939264962724144,
+            0.626411353500032,
+            0.7758360473221445
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        }
+      ],
+      "normalization_a": [
+        [
+          0.00012677587735937166,
+          0.0001139914361562251,
+          8.54059831483217e-05
+        ],
+        [
+          0.001025863039873843,
+          0.0004629598885681636,
+          0.00040204947207096774
+        ],
+        [
+          0.00031919315314134835,
+          0.00023000708301691301,
+          0.00023618831356696387
+        ],
+        [
+          0.0004765994571981085,
+          0.00031987338583745273,
+          0.00057999153591005
+        ]
+      ],
+      "normalization_b": [
+        [
+          0.001564762508433679,
+          0.0012177686296292558,
+          0.0012555199721600936
+        ],
+        [
+          0.000810850338744656,
+          0.0004616988100210537,
+          0.0007362313190831405
+        ],
+        [
+          0.0003134231819342441,
+          0.0003002128622136226,
+          0.0003878518072360676
+        ],
+        [
+          0.003020636547449032,
+          0.0024325872455484843,
+          0.00314829005294495
+        ]
+      ],
+      "causal_similarity": [
+        [
+          -0.04819149625494945,
+          -0.02789508545597327,
+          -0.03162655679574673,
+          0.02791489065028988
+        ],
+        [
+          0.045440640905214165,
+          0.07381248905636009,
+          -0.03865352828411539,
+          0.06909515612622787
+        ],
+        [
+          0.028517211008135656,
+          0.04338326286313651,
+          -0.07403731489486105,
+          0.20563245007158884
+        ],
+        [
+          -0.016464252698777347,
+          0.5526639221324298,
+          0.16083467359493545,
+          -0.16164877591794283
+        ]
+      ],
+      "semantic_similarity": [
+        [
+          -0.28227281259618137,
+          -0.34087664525067324,
+          -0.21516151286171242,
+          -0.0923930495532208
+        ],
+        [
+          0.034479372337554264,
+          -0.3746987838486386,
+          0.24570559101549902,
+          0.38338034024094736
+        ],
+        [
+          0.4772880529234637,
+          0.1051294877155541,
+          -0.978179170240145,
+          -0.8370117509621114
+        ],
+        [
+          -0.3895990050864972,
+          -0.19800135846905562,
+          0.8809128777905398,
+          0.9157129120938227
+        ]
+      ],
+      "selected_causal_weight": 1.0,
+      "selection": [
+        {
+          "causal_weight": 0.0,
+          "validation_mean": 0.0477716905958794,
+          "n_valid_wrappers": 12,
+          "wrapper_scores": {
+            "D2:wrapper:t12": -0.027896901221789196,
+            "D2:wrapper:t13": 0.05141032130813351,
+            "D2:wrapper:t14": 0.24722191262697646,
+            "D2:wrapper:t15": 0.06979928214892724,
+            "D2:wrapper:t16": -0.0011005752720169536,
+            "D2:wrapper:t17": 0.09201144011919242,
+            "D2:wrapper:t18": 0.09484456663602953,
+            "D2:wrapper:t19": 0.035025452239668665,
+            "D2:wrapper:t20": -0.007978948046347958,
+            "D2:wrapper:t21": -0.005797029702682826,
+            "D2:wrapper:t22": 0.02114793089164213,
+            "D2:wrapper:t23": 0.004572835422819728
+          }
+        },
+        {
+          "causal_weight": 0.25,
+          "validation_mean": 0.0477716905958794,
+          "n_valid_wrappers": 12,
+          "wrapper_scores": {
+            "D2:wrapper:t12": -0.027896901221789196,
+            "D2:wrapper:t13": 0.05141032130813351,
+            "D2:wrapper:t14": 0.24722191262697646,
+            "D2:wrapper:t15": 0.06979928214892724,
+            "D2:wrapper:t16": -0.0011005752720169536,
+            "D2:wrapper:t17": 0.09201144011919242,
+            "D2:wrapper:t18": 0.09484456663602953,
+            "D2:wrapper:t19": 0.035025452239668665,
+            "D2:wrapper:t20": -0.007978948046347958,
+            "D2:wrapper:t21": -0.005797029702682826,
+            "D2:wrapper:t22": 0.02114793089164213,
+            "D2:wrapper:t23": 0.004572835422819728
+          }
+        },
+        {
+          "causal_weight": 0.5,
+          "validation_mean": 0.0477716905958794,
+          "n_valid_wrappers": 12,
+          "wrapper_scores": {
+            "D2:wrapper:t12": -0.027896901221789196,
+            "D2:wrapper:t13": 0.05141032130813351,
+            "D2:wrapper:t14": 0.24722191262697646,
+            "D2:wrapper:t15": 0.06979928214892724,
+            "D2:wrapper:t16": -0.0011005752720169536,
+            "D2:wrapper:t17": 0.09201144011919242,
+            "D2:wrapper:t18": 0.09484456663602953,
+            "D2:wrapper:t19": 0.035025452239668665,
+            "D2:wrapper:t20": -0.007978948046347958,
+            "D2:wrapper:t21": -0.005797029702682826,
+            "D2:wrapper:t22": 0.02114793089164213,
+            "D2:wrapper:t23": 0.004572835422819728
+          }
+        },
+        {
+          "causal_weight": 0.75,
+          "validation_mean": 0.06971671843515323,
+          "n_valid_wrappers": 12,
+          "wrapper_scores": {
+            "D2:wrapper:t12": 0.026276223329588427,
+            "D2:wrapper:t13": 0.07215104805429313,
+            "D2:wrapper:t14": 0.27129415149539277,
+            "D2:wrapper:t15": 0.08605594793713982,
+            "D2:wrapper:t16": 0.10369810012116258,
+            "D2:wrapper:t17": -0.031116877229493533,
+            "D2:wrapper:t18": -0.08597227583859009,
+            "D2:wrapper:t19": 0.18391509834483108,
+            "D2:wrapper:t20": 0.14687847747497573,
+            "D2:wrapper:t21": 0.06228696531103051,
+            "D2:wrapper:t22": -0.03782064009322741,
+            "D2:wrapper:t23": 0.03895440231473566
+          }
+        },
+        {
+          "causal_weight": 1.0,
+          "validation_mean": 0.09452282576680349,
+          "n_valid_wrappers": 12,
+          "wrapper_scores": {
+            "D2:wrapper:t12": 0.07319885892358279,
+            "D2:wrapper:t13": 0.07886558270735662,
+            "D2:wrapper:t14": 0.19395870452936093,
+            "D2:wrapper:t15": 0.12463630012256395,
+            "D2:wrapper:t16": 0.14934098095312734,
+            "D2:wrapper:t17": 0.030699011139227766,
+            "D2:wrapper:t18": -0.01677777446576393,
+            "D2:wrapper:t19": 0.1355905669825939,
+            "D2:wrapper:t20": 0.10473176335168893,
+            "D2:wrapper:t21": 0.22152166111905838,
+            "D2:wrapper:t22": 0.006652166372212338,
+            "D2:wrapper:t23": 0.03185608746663276
+          }
+        }
+      ],
+      "selection_split": "D2 validation half"
+    },
+    "span": {
+      "mappings": {
+        "semantic": {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            0,
+            1,
+            2
+          ],
+          "similarity": [
+            0.631755742748458,
+            0.46862217382403387,
+            0.7253507763291325,
+            -0.3286336265666324
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        "causal": {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            2,
+            3,
+            0
+          ],
+          "similarity": [
+            0.2071612293148572,
+            -0.0055709855305155764,
+            -0.04445544517590134,
+            -0.03454584381931631
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        "combined": {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            2,
+            1,
+            3
+          ],
+          "similarity": [
+            -0.13187519161901085,
+            0.05922590440823466,
+            0.18020048430730537,
+            0.10500547165988225
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        }
+      },
+      "random_mappings": [
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            3,
+            1,
+            0
+          ],
+          "similarity": [
+            0.8236092961345987,
+            0.722579821352296,
+            0.674857393026728,
+            0.4797542163640388
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            2,
+            3,
+            0
+          ],
+          "similarity": [
+            0.9279529771113832,
+            0.9923117923043282,
+            0.5517249282688779,
+            0.9660586810946733
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            0,
+            1,
+            3
+          ],
+          "similarity": [
+            0.869619920605452,
+            0.34987447228516577,
+            0.7235948693233911,
+            0.7812154911330501
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            2,
+            3,
+            0
+          ],
+          "similarity": [
+            0.6792106462169427,
+            0.8510324156966218,
+            0.860152180980282,
+            0.5252477500355094
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            2,
+            0,
+            3
+          ],
+          "similarity": [
+            0.8713913219974704,
+            0.3046376255355904,
+            0.5366562317610138,
+            0.8339673355255472
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            2,
+            1,
+            3
+          ],
+          "similarity": [
+            0.8617599656270579,
+            0.6968135227895792,
+            0.4067748290049612,
+            0.4118391720558271
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            3,
+            0,
+            2
+          ],
+          "similarity": [
+            0.8744649014178197,
+            0.4009933143639155,
+            0.9333142796051584,
+            0.8963908067601672
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            0,
+            3
+          ],
+          "similarity": [
+            0.783935396251011,
+            0.9069530052581668,
+            0.7119987626159108,
+            0.6568511704266383
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            3,
+            0,
+            2
+          ],
+          "similarity": [
+            0.9901090834053254,
+            0.6080818814033814,
+            0.4838972074545833,
+            0.8964934855162527
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            3,
+            0,
+            1
+          ],
+          "similarity": [
+            0.7826557545285975,
+            0.4932701560208368,
+            0.8001078384336197,
+            0.3155518413398818
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            1,
+            0,
+            2
+          ],
+          "similarity": [
+            0.619422213380348,
+            0.9632748081440684,
+            0.6590111448806064,
+            0.9601355405253023
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            2,
+            0,
+            3
+          ],
+          "similarity": [
+            0.3354355764527449,
+            0.9261522941977511,
+            0.7442191318172767,
+            0.8650573682495198
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            3,
+            1,
+            0
+          ],
+          "similarity": [
+            0.6874362344898687,
+            0.9943490580905194,
+            0.5654170009815128,
+            0.905089010676771
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "similarity": [
+            0.8596765669834437,
+            0.8265544915696346,
+            0.9728878530339485,
+            0.8471850795389798
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            2,
+            0,
+            1
+          ],
+          "similarity": [
+            0.3546991313859513,
+            0.5384167283327975,
+            0.9712402322572936,
+            0.7411425850204394
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            1,
+            2,
+            0
+          ],
+          "similarity": [
+            0.883591725304996,
+            0.9208899934765024,
+            0.9697216133374018,
+            0.24000786790011286
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            1,
+            3,
+            2
+          ],
+          "similarity": [
+            0.9852247670131206,
+            0.652561382088029,
+            0.7978393704536674,
+            0.8339615762158058
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            3,
+            0
+          ],
+          "similarity": [
+            0.6281777552144859,
+            0.613511532045058,
+            0.9192580448446332,
+            0.6705678277992363
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            0,
+            2,
+            3
+          ],
+          "similarity": [
+            0.6973789682314335,
+            0.16317750101589223,
+            0.9188333899972811,
+            0.7299264933279084
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            0,
+            3
+          ],
+          "similarity": [
+            0.9865539523747422,
+            0.7552205625506584,
+            0.6821392313644998,
+            0.6961101680130016
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            0,
+            2,
+            3
+          ],
+          "similarity": [
+            0.6663329731114566,
+            0.450479070643654,
+            0.999286921067424,
+            0.8039056718460634
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            1,
+            0,
+            2
+          ],
+          "similarity": [
+            0.8662897112261277,
+            0.4482774966356403,
+            0.5835807967540466,
+            0.6302568293230697
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            2,
+            0,
+            1
+          ],
+          "similarity": [
+            0.5946287866215941,
+            0.9592434939690665,
+            0.7326008249354855,
+            0.8384408008305163
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            1,
+            0,
+            2
+          ],
+          "similarity": [
+            0.6091775526880437,
+            0.8930997163220472,
+            0.7298240846765488,
+            0.48581072404133807
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            3,
+            1,
+            2
+          ],
+          "similarity": [
+            0.29619951182867077,
+            0.6622765539295298,
+            0.44856511354967665,
+            0.9351224753421032
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "similarity": [
+            0.9970950679018713,
+            0.5254074262190283,
+            0.8898905997959703,
+            0.5045919021003881
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            3,
+            2,
+            1
+          ],
+          "similarity": [
+            0.5334235141864309,
+            0.8507156065883389,
+            0.8806317392476162,
+            0.7623753812163868
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            3,
+            2,
+            0
+          ],
+          "similarity": [
+            0.44162448911460006,
+            0.6796283656134477,
+            0.8641467228968893,
+            0.3170650320778057
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "similarity": [
+            0.6727741086495613,
+            0.22478528704629486,
+            0.7441864766929487,
+            0.7551360177538047
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "similarity": [
+            0.44207949007521974,
+            0.8962448621613213,
+            0.7068668808595835,
+            0.8711652368457324
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            3,
+            2,
+            1
+          ],
+          "similarity": [
+            0.6160688549852505,
+            0.5453743063400539,
+            0.8929563806450586,
+            0.9575667691778421
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            2,
+            0,
+            3
+          ],
+          "similarity": [
+            0.7279171635091374,
+            0.8562059947403389,
+            0.4207559758259095,
+            0.3363187550745199
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            0,
+            3,
+            1
+          ],
+          "similarity": [
+            0.6847525066448429,
+            0.8182637706499472,
+            0.9780451515652995,
+            0.7040219102900077
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            0,
+            3
+          ],
+          "similarity": [
+            0.9961954856559144,
+            0.8021752239335891,
+            0.7405159619874843,
+            0.794893515424779
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            1,
+            0,
+            2
+          ],
+          "similarity": [
+            0.871244961832899,
+            0.6046271830193014,
+            0.858880503338695,
+            0.9512673772815241
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            3,
+            2,
+            0
+          ],
+          "similarity": [
+            0.8318833664854995,
+            0.275892352286383,
+            0.8167637332643641,
+            0.8402254891418016
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            0,
+            1,
+            3
+          ],
+          "similarity": [
+            0.7196174357896602,
+            0.9621637580802761,
+            0.7430435741935896,
+            0.49800383654062397
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            3,
+            1,
+            2
+          ],
+          "similarity": [
+            0.9024482066776536,
+            0.9951966614814494,
+            0.3036196124011269,
+            0.4354738601264527
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            3,
+            0,
+            2
+          ],
+          "similarity": [
+            0.3332310612001602,
+            0.5209344849743832,
+            0.9157555001891422,
+            0.30996617985796104
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            0,
+            1,
+            3
+          ],
+          "similarity": [
+            0.8840596193854335,
+            0.7225555606664542,
+            0.9488566452331108,
+            0.8986659921716752
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            3,
+            0,
+            1
+          ],
+          "similarity": [
+            0.33958120915774426,
+            0.7346195875482835,
+            0.8238042370762929,
+            0.7303683466665782
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            0,
+            3
+          ],
+          "similarity": [
+            0.7727928757709756,
+            0.33899736921093004,
+            0.9336762833744144,
+            0.8588354930234546
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "similarity": [
+            0.7042607399183692,
+            0.7543873220835564,
+            0.8889832372698862,
+            0.5951910460830627
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            3,
+            0,
+            1
+          ],
+          "similarity": [
+            0.6131227916383252,
+            0.8423886060638871,
+            0.8243114091479959,
+            0.8766804689937521
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            3,
+            2,
+            1
+          ],
+          "similarity": [
+            0.8626598423670425,
+            0.9693281994581445,
+            0.9580387070449854,
+            0.5596413087417591
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            3,
+            1,
+            2
+          ],
+          "similarity": [
+            0.6374179980085961,
+            0.6958254945311512,
+            0.5509864942578304,
+            0.6544356270811797
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            3,
+            2,
+            1
+          ],
+          "similarity": [
+            0.9718899276788249,
+            0.7916524232554863,
+            0.5901210683068179,
+            0.866832539382655
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            3,
+            0
+          ],
+          "similarity": [
+            0.6229437376013465,
+            0.9159676626386003,
+            0.9929749400362694,
+            0.8615028571759455
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            2,
+            1,
+            3
+          ],
+          "similarity": [
+            0.8213129608239473,
+            0.7173652998380808,
+            0.5577340817864386,
+            0.9987341583471351
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "similarity": [
+            0.5766526672137714,
+            0.6243647707448733,
+            0.8171521639790729,
+            0.6923258998776317
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "similarity": [
+            0.45987598053411094,
+            0.9955072485345768,
+            0.8606214471698096,
+            0.3935000822177862
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            1,
+            3,
+            2
+          ],
+          "similarity": [
+            0.7798122683308073,
+            0.9327001306223045,
+            0.5598071264705209,
+            0.8024504442719638
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            3,
+            1,
+            0
+          ],
+          "similarity": [
+            0.6858723356426428,
+            0.6392202504796483,
+            0.7471525186527195,
+            0.987400889547642
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            3,
+            0,
+            1
+          ],
+          "similarity": [
+            0.9334922767905499,
+            0.5932860144700773,
+            0.8195989246897579,
+            0.4617608551481055
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            2,
+            0,
+            1
+          ],
+          "similarity": [
+            0.9378906956750642,
+            0.2717487987377494,
+            0.908305809637572,
+            0.8634618128788024
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            0,
+            3,
+            1
+          ],
+          "similarity": [
+            0.6495054355330876,
+            0.5586809996185444,
+            0.6899904951832854,
+            0.8597122848914409
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            1,
+            3,
+            2
+          ],
+          "similarity": [
+            0.987991345106006,
+            0.9663187268666067,
+            0.5148014956402477,
+            0.014582507340675344
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            0,
+            2,
+            1
+          ],
+          "similarity": [
+            0.9262066892280346,
+            0.7429139922578109,
+            0.9186100987315227,
+            0.9876366830377898
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "similarity": [
+            0.8166189782770398,
+            0.8540254448874756,
+            0.506573097792384,
+            0.6685691443398529
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            0,
+            2,
+            1
+          ],
+          "similarity": [
+            0.49979346060606256,
+            0.630077554318683,
+            0.8591636533021991,
+            0.9451167558855843
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            2,
+            1,
+            3
+          ],
+          "similarity": [
+            0.7496597538510041,
+            0.9334792002810737,
+            0.6528405262107843,
+            0.7815793979174579
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            0,
+            2,
+            3
+          ],
+          "similarity": [
+            0.6300295913387074,
+            0.9995275666874412,
+            0.8948801142889776,
+            0.9385648632577348
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            3,
+            2,
+            0
+          ],
+          "similarity": [
+            0.07429683197071313,
+            0.9651482503838149,
+            0.8498162316793256,
+            0.5768091628339794
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            3,
+            1,
+            0
+          ],
+          "similarity": [
+            0.8093924300691856,
+            0.26936204375330464,
+            0.9025783895728042,
+            0.6603303163649555
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            1,
+            2,
+            0
+          ],
+          "similarity": [
+            0.6053362699036553,
+            0.8899100346388785,
+            0.7782767343386576,
+            0.6664951792105899
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            0,
+            1,
+            2
+          ],
+          "similarity": [
+            0.6224322297383887,
+            0.7961442558220625,
+            0.8269980473915075,
+            0.7181258980601599
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            3,
+            0,
+            1
+          ],
+          "similarity": [
+            0.7256677716642976,
+            0.2919228284971821,
+            0.6498713593226969,
+            0.28483809289993567
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            3,
+            1,
+            0
+          ],
+          "similarity": [
+            0.8426329920013891,
+            0.27539058596462473,
+            0.40589261676714883,
+            0.9570733272779132
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            3,
+            1,
+            2
+          ],
+          "similarity": [
+            0.37238560312706004,
+            0.7604424548864226,
+            0.5872272557960041,
+            0.8926547545856949
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            0,
+            3,
+            1
+          ],
+          "similarity": [
+            0.2981440582309378,
+            0.5556426588416845,
+            0.9413387416064466,
+            0.5719553434294726
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            0,
+            2,
+            1
+          ],
+          "similarity": [
+            0.863857180868922,
+            0.7429810928996293,
+            0.8299817445581251,
+            0.6829933170212612
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            0,
+            3,
+            1
+          ],
+          "similarity": [
+            0.6437873506441761,
+            0.039144932917364095,
+            0.8365787053757994,
+            0.8204968009417586
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            3,
+            0
+          ],
+          "similarity": [
+            0.9033712996784382,
+            0.9391781096114405,
+            0.9579643526486653,
+            0.9433314035486765
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            1,
+            2,
+            0
+          ],
+          "similarity": [
+            0.9375766904613742,
+            0.6571982567807981,
+            0.21498130554106587,
+            0.676410844738599
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "similarity": [
+            0.9550682256588785,
+            0.6262391060246657,
+            0.8506089911674983,
+            0.7659017188202782
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            2,
+            3,
+            0
+          ],
+          "similarity": [
+            0.8930681396156976,
+            0.9692999793258705,
+            0.5592440345525627,
+            0.8324473342298504
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            2,
+            3,
+            0
+          ],
+          "similarity": [
+            0.6836664721176746,
+            0.95911774354112,
+            0.8976767065476821,
+            0.0834941363945545
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            3,
+            0,
+            2
+          ],
+          "similarity": [
+            0.9113866741368462,
+            0.7518477093960316,
+            0.47254501188969356,
+            0.6591755137828021
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            2,
+            0,
+            3
+          ],
+          "similarity": [
+            0.8679250076998891,
+            0.7592613724155508,
+            0.9000782775385392,
+            0.5619390559538313
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            0,
+            2,
+            1
+          ],
+          "similarity": [
+            0.5160597104632072,
+            0.9462912671894684,
+            0.8322679093567245,
+            0.8378934702672975
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            0,
+            1,
+            2
+          ],
+          "similarity": [
+            0.9943896900829166,
+            0.4732118193421747,
+            0.8634002767986906,
+            0.7837891032420491
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            3,
+            0
+          ],
+          "similarity": [
+            0.7775442483072564,
+            0.9928299289650568,
+            0.6416361895522303,
+            0.7528473468553798
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "similarity": [
+            0.7446913010046459,
+            0.6577715091322507,
+            0.6875222464888547,
+            0.1426897163650539
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            2,
+            3,
+            0
+          ],
+          "similarity": [
+            0.8315714750412193,
+            0.8567191824465583,
+            0.8147562949082041,
+            0.8471104451666431
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            1,
+            3,
+            2
+          ],
+          "similarity": [
+            0.7785544939641887,
+            0.9464611490105922,
+            0.8999551156346258,
+            0.9129757651093878
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            0,
+            1,
+            3
+          ],
+          "similarity": [
+            0.17560085604785747,
+            0.45425234917311075,
+            0.9827606839702461,
+            0.6944866572363831
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            3,
+            0
+          ],
+          "similarity": [
+            0.6296259171112083,
+            0.9111636979429603,
+            0.9746913196438399,
+            0.5190691880419093
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            0,
+            3,
+            2
+          ],
+          "similarity": [
+            0.8021567661005042,
+            0.8218740566855749,
+            0.18610892369324128,
+            0.7497987104005549
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "similarity": [
+            0.7184562761757738,
+            0.6242693411163401,
+            0.7952594817027132,
+            0.8071147591949557
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            0,
+            3
+          ],
+          "similarity": [
+            0.7255923268948148,
+            0.9457317321409593,
+            0.49083121057069623,
+            0.8461734146382615
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            0,
+            3
+          ],
+          "similarity": [
+            0.848278587291643,
+            0.8498354790970394,
+            0.3578862040355434,
+            0.8427908431802111
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            3,
+            0
+          ],
+          "similarity": [
+            0.8521921380638426,
+            0.5979096858349735,
+            0.8844126235438621,
+            0.8798240577962682
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            1,
+            0,
+            2
+          ],
+          "similarity": [
+            0.9173227636382595,
+            0.5257523477838738,
+            0.8678369940996887,
+            0.6271614756687574
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            3,
+            1,
+            0
+          ],
+          "similarity": [
+            0.7907644993660161,
+            0.7934754006850954,
+            0.6525570837169585,
+            0.9131953259577031
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "similarity": [
+            0.4409350808799479,
+            0.8745100963622044,
+            0.9280121640207076,
+            0.7072002213311864
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            1,
+            2,
+            0,
+            3
+          ],
+          "similarity": [
+            0.6303256002915026,
+            0.9586226637224502,
+            0.8489221387606277,
+            0.9569537245319697
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            2,
+            1,
+            3,
+            0
+          ],
+          "similarity": [
+            0.9146537434515568,
+            0.9374104435041594,
+            0.8025792481593212,
+            0.2703207188329053
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            0,
+            1,
+            2
+          ],
+          "similarity": [
+            0.4653454574742998,
+            0.5450579118038418,
+            0.82677206682439,
+            0.8699344028631687
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "similarity": [
+            0.4147554650079962,
+            0.8730449696852941,
+            0.8643547253383915,
+            0.9200063777623151
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        },
+        {
+          "source": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "target": [
+            3,
+            1,
+            0,
+            2
+          ],
+          "similarity": [
+            0.890654304615744,
+            0.7851885512612254,
+            0.443586332151623,
+            0.7346350087112127
+          ],
+          "coverage": 1.0,
+          "target_coverage": 1.0,
+          "unmatched_source_fraction": 0.0,
+          "unmatched_target_fraction": 0.0,
+          "mode": "hungarian",
+          "threshold": null
+        }
+      ],
+      "normalization_a": [
+        [
+          0.00879777789563584,
+          0.008884322689196823,
+          0.008231819358571124
+        ],
+        [
+          0.014544359779761241,
+          0.014412538643260317,
+          0.014422776721512758
+        ],
+        [
+          0.0015384506539368713,
+          0.0015629666886699744,
+          0.0016025909223908504
+        ],
+        [
+          0.003954189382659869,
+          0.003892437382999114,
+          0.0037872474913137233
+        ]
+      ],
+      "normalization_b": [
+        [
+          0.03151461255626282,
+          0.030281449843709188,
+          0.030174945843628256
+        ],
+        [
+          0.0033781472314684913,
+          0.0033777728307831365,
+          0.0033987641089348996
+        ],
+        [
+          0.0010729173375932303,
+          0.0010714044688972695,
+          0.0010732185108163256
+        ],
+        [
+          0.007839336511782254,
+          0.007865995157120796,
+          0.007902335351796113
+        ]
+      ],
+      "causal_similarity": [
+        [
+          0.07113550719856102,
+          0.2071612293148572,
+          -0.016782709056543412,
+          -0.18706008833485657
+        ],
+        [
+          -0.047795220627368636,
+          -0.11733634504116451,
+          -0.0055709855305155764,
+          0.06658959192270653
+        ],
+        [
+          -0.10134415304811771,
+          -0.0015162796999703308,
+          -0.1653197814850355,
+          -0.04445544517590134
+        ],
+        [
+          -0.03454584381931631,
+          0.01459822661619708,
+          -0.06107940706743267,
+          0.014006190100991403
+        ]
+      ],
+      "semantic_similarity": [
+        [
+          -0.7409072880717265,
+          0.40602356114243326,
+          -0.8261775525905696,
+          0.631755742748458
+        ],
+        [
+          0.46862217382403387,
+          -0.7255973849396873,
+          0.25361657422448536,
+          0.046998704427288096
+        ],
+        [
+          -0.6361145423296753,
+          0.7253507763291325,
+          -0.4510538393300689,
+          -0.28264375475817
+        ],
+        [
+          -0.29970041356764243,
+          0.764721931441102,
+          -0.3286336265666324,
+          0.3780033163365548
+        ]
+      ],
+      "selected_causal_weight": 0.75,
+      "selection": [
+        {
+          "causal_weight": 0.0,
+          "validation_mean": -0.039258460272118746,
+          "n_valid_wrappers": 12,
+          "wrapper_scores": {
+            "D2:wrapper:t12": -0.017554225737494673,
+            "D2:wrapper:t13": -0.06673715798586721,
+            "D2:wrapper:t14": -0.22195866750382046,
+            "D2:wrapper:t15": 0.05520529563406629,
+            "D2:wrapper:t16": 0.10891237650876105,
+            "D2:wrapper:t17": 0.009561496528332068,
+            "D2:wrapper:t18": -0.11921609772083748,
+            "D2:wrapper:t19": -0.04282853141102968,
+            "D2:wrapper:t20": 0.015008040199892282,
+            "D2:wrapper:t21": -0.11681962089026471,
+            "D2:wrapper:t22": 0.031546915666555604,
+            "D2:wrapper:t23": -0.10622134655371801
+          }
+        },
+        {
+          "causal_weight": 0.25,
+          "validation_mean": -0.039258460272118746,
+          "n_valid_wrappers": 12,
+          "wrapper_scores": {
+            "D2:wrapper:t12": -0.017554225737494673,
+            "D2:wrapper:t13": -0.06673715798586721,
+            "D2:wrapper:t14": -0.22195866750382046,
+            "D2:wrapper:t15": 0.05520529563406629,
+            "D2:wrapper:t16": 0.10891237650876105,
+            "D2:wrapper:t17": 0.009561496528332068,
+            "D2:wrapper:t18": -0.11921609772083748,
+            "D2:wrapper:t19": -0.04282853141102968,
+            "D2:wrapper:t20": 0.015008040199892282,
+            "D2:wrapper:t21": -0.11681962089026471,
+            "D2:wrapper:t22": 0.031546915666555604,
+            "D2:wrapper:t23": -0.10622134655371801
+          }
+        },
+        {
+          "causal_weight": 0.5,
+          "validation_mean": -0.039258460272118746,
+          "n_valid_wrappers": 12,
+          "wrapper_scores": {
+            "D2:wrapper:t12": -0.017554225737494673,
+            "D2:wrapper:t13": -0.06673715798586721,
+            "D2:wrapper:t14": -0.22195866750382046,
+            "D2:wrapper:t15": 0.05520529563406629,
+            "D2:wrapper:t16": 0.10891237650876105,
+            "D2:wrapper:t17": 0.009561496528332068,
+            "D2:wrapper:t18": -0.11921609772083748,
+            "D2:wrapper:t19": -0.04282853141102968,
+            "D2:wrapper:t20": 0.015008040199892282,
+            "D2:wrapper:t21": -0.11681962089026471,
+            "D2:wrapper:t22": 0.031546915666555604,
+            "D2:wrapper:t23": -0.10622134655371801
+          }
+        },
+        {
+          "causal_weight": 0.75,
+          "validation_mean": -0.010257655848554233,
+          "n_valid_wrappers": 12,
+          "wrapper_scores": {
+            "D2:wrapper:t12": 0.0206483052099673,
+            "D2:wrapper:t13": 0.06474571467387241,
+            "D2:wrapper:t14": -0.09900995527590693,
+            "D2:wrapper:t15": -0.053460457832949,
+            "D2:wrapper:t16": 0.04166612409632149,
+            "D2:wrapper:t17": -0.013579517459643316,
+            "D2:wrapper:t18": -0.041572228725959955,
+            "D2:wrapper:t19": 0.03686385718797925,
+            "D2:wrapper:t20": 0.1201069626150552,
+            "D2:wrapper:t21": -0.09971774189131886,
+            "D2:wrapper:t22": -0.10939976389555296,
+            "D2:wrapper:t23": 0.00961683111548457
+          }
+        },
+        {
+          "causal_weight": 1.0,
+          "validation_mean": -0.024534525379835723,
+          "n_valid_wrappers": 12,
+          "wrapper_scores": {
+            "D2:wrapper:t12": -0.23386086044449805,
+            "D2:wrapper:t13": -0.022935173486070295,
+            "D2:wrapper:t14": 0.0624074279231126,
+            "D2:wrapper:t15": 0.01334262372306586,
+            "D2:wrapper:t16": -0.10853880808377825,
+            "D2:wrapper:t17": 0.04021026536442546,
+            "D2:wrapper:t18": -0.13492086441192314,
+            "D2:wrapper:t19": -0.05105287418877921,
+            "D2:wrapper:t20": 0.07707766974667864,
+            "D2:wrapper:t21": 0.017797815782864296,
+            "D2:wrapper:t22": -0.014085774770207449,
+            "D2:wrapper:t23": 0.06014424828708081
+          }
+        }
+      ],
+      "selection_split": "D2 validation half"
+    }
+  },
+  "modes": [
+    "zero",
+    "mean",
+    "patch"
+  ],
+  "location_order": [
+    "answer",
+    "span"
+  ],
+  "weights": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "seed": 1729,
+  "normalization": "unit-by-mode RMS from D2 fit-half only",
+  "source": {
+    "effects_sha256_a": "3cc30b071dafde0ec8565040244d84e62790bb196ad72fe8195ebd817181b2ee",
+    "effects_sha256_b": "12d81ff280049bcde9a27658040218b7ec89f91bfd27accc2d3c57b7dce41d51",
+    "unit_ids_a": [
+      "L1_N12_functional",
+      "L1_N549_random",
+      "L1_group4",
+      "L2_N933_functional",
+      "L2_N735_random",
+      "L2_group4",
+      "L3_N80_functional",
+      "L3_N221_random",
+      "L3_group4",
+      "L4_N711_functional",
+      "L4_N917_random",
+      "L4_group4"
+    ],
+    "unit_ids_b": [
+      "L1_N983_functional",
+      "L1_N547_random",
+      "L1_group4",
+      "L2_N1162_functional",
+      "L2_N735_random",
+      "L2_group4",
+      "L3_N1254_functional",
+      "L3_N221_random",
+      "L3_group4",
+      "L4_N907_functional",
+      "L4_N915_random",
+      "L4_group4"
+    ],
+    "modes": [
+      "zero",
+      "mean",
+      "patch",
+      "scale_0",
+      "scale_0.5",
+      "scale_1",
+      "scale_1.5",
+      "scale_2"
+    ],
+    "locations": [
+      "answer",
+      "span"
+    ],
+    "reference_sha256_a": "b91aaac0b5b6ab0e7c76ea379e96cbfbfc0518d2d663c54df4e2d5f18ff876af",
+    "reference_sha256_b": "8ed1044fbb08fc6b787a194f82dea11f50ab7d291ade20c88f25a744734fd6f7",
+    "primary_modes": [
+      "zero",
+      "mean",
+      "patch"
+    ],
+    "primary_mode_indices": [
+      0,
+      1,
+      2
+    ]
+  },
+  "pair": [
+    "seed307",
+    "seed503"
+  ],
+  "unit_kind": "group",
+  "unit_indices_a": [
+    2,
+    5,
+    8,
+    11
+  ],
+  "unit_indices_b": [
+    2,
+    5,
+    8,
+    11
+  ],
+  "semantic_definition": "Mean member-neuron expanded semantic features; fit on D2 causal-train wrappers only"
+}

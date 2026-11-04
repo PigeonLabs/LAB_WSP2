@@ -1,0 +1,158 @@
+{
+  "signature": "ecf633a900078ab9a1935781bc8fe6c4c0eef49c9237f7f8d94e5b1f193316eb",
+  "plan": {
+    "version": "followup-measurement-v2",
+    "model_info": {
+      "id": "qwen",
+      "family": "public_pretrained",
+      "model_id": "Qwen/Qwen3-0.6B-Base",
+      "revision": "da87bfb608c14b7cf20ba1ce41287e8de496c0cd",
+      "license": "apache-2.0",
+      "model_type": "qwen3",
+      "cached_file_manifest_sha256": "f7393c390776b582fa06a19522efe8ba9183873c66c63643b44ddc768242ca1e"
+    },
+    "records_sha256": "ea309f9c4479c2cd296a8ec17dca38eb4dd1e3b85738f08659583e53d82ff823",
+    "d1_signature": "adde0f0132749476a4237f2f1bb059ce0019cf0c1a6a0c45727b247ab20e8529",
+    "d1_measurements_sha256": "54aa885ef37e75048a04f828ee3ab858e194e52ff722b9feb476295e6ddb34eb",
+    "units": [
+      {
+        "id": "L5_N1490_functional",
+        "kind": "single",
+        "units_by_layer": {
+          "5": [
+            1490
+          ]
+        }
+      },
+      {
+        "id": "L5_N1097_random",
+        "kind": "single",
+        "units_by_layer": {
+          "5": [
+            1097
+          ]
+        }
+      },
+      {
+        "id": "L5_group4",
+        "kind": "group",
+        "units_by_layer": {
+          "5": [
+            2220,
+            1490,
+            2354,
+            1097
+          ]
+        }
+      },
+      {
+        "id": "L11_N1090_functional",
+        "kind": "single",
+        "units_by_layer": {
+          "11": [
+            1090
+          ]
+        }
+      },
+      {
+        "id": "L11_N1470_random",
+        "kind": "single",
+        "units_by_layer": {
+          "11": [
+            1470
+          ]
+        }
+      },
+      {
+        "id": "L11_group4",
+        "kind": "group",
+        "units_by_layer": {
+          "11": [
+            2246,
+            1090,
+            1768,
+            1470
+          ]
+        }
+      },
+      {
+        "id": "L16_N1560_functional",
+        "kind": "single",
+        "units_by_layer": {
+          "16": [
+            1560
+          ]
+        }
+      },
+      {
+        "id": "L16_N441_random",
+        "kind": "single",
+        "units_by_layer": {
+          "16": [
+            441
+          ]
+        }
+      },
+      {
+        "id": "L16_group4",
+        "kind": "group",
+        "units_by_layer": {
+          "16": [
+            1620,
+            1560,
+            2813,
+            441
+          ]
+        }
+      },
+      {
+        "id": "L22_N772_functional",
+        "kind": "single",
+        "units_by_layer": {
+          "22": [
+            772
+          ]
+        }
+      },
+      {
+        "id": "L22_N1834_random",
+        "kind": "single",
+        "units_by_layer": {
+          "22": [
+            1834
+          ]
+        }
+      },
+      {
+        "id": "L22_group4",
+        "kind": "group",
+        "units_by_layer": {
+          "22": [
+            289,
+            772,
+            163,
+            1834
+          ]
+        }
+      }
+    ],
+    "locations": [
+      "answer",
+      "span"
+    ],
+    "modes": [
+      "zero",
+      "mean",
+      "patch",
+      "scale_0",
+      "scale_0.5",
+      "scale_1",
+      "scale_1.5",
+      "scale_2"
+    ],
+    "split": "D2",
+    "patch_policy": "same-model opposite-label donor; donor span mean broadcast over recipient statement span",
+    "precision": "float32",
+    "pairs_per_task_wrapper": 4
+  }
+}

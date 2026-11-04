@@ -1,0 +1,5302 @@
+{
+  "stage": "F4",
+  "status": "MEASURED",
+  "evaluations": [
+    {
+      "pair": [
+        "seed101",
+        "seed211"
+      ],
+      "unit_kind": "single",
+      "path": "causal_alignment/seed101_seed211/single/eval.json",
+      "sha256": "66cbb243a559bcbb869207d0f06e94966621168c9622d3a076d5f95f01ba9555",
+      "locations": {
+        "answer": {
+          "semantic": {
+            "mean": 0.04973294899905804,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.09404324529631132,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.09404324529631132,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": 0.03321755001248053,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        },
+        "span": {
+          "semantic": {
+            "mean": 0.000453067017911163,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": -0.00744189191230311,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.000453067017911163,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": -0.0010130567507256505,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "selected_weights": {
+        "answer": 1.0,
+        "span": 0.0
+      },
+      "competent_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    {
+      "pair": [
+        "seed101",
+        "seed211"
+      ],
+      "unit_kind": "group",
+      "path": "causal_alignment/seed101_seed211/group/eval.json",
+      "sha256": "c50dfe23fef58c5443e08789a5b10976324de93dd22349869e65acd46c65195e",
+      "locations": {
+        "answer": {
+          "semantic": {
+            "mean": 0.016966597547076114,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.1388796021270008,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.1388796021270008,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": 0.06993885512369978,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        },
+        "span": {
+          "semantic": {
+            "mean": -0.013068492356784353,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": -0.04876086229211162,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": -0.013068492356784353,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": -0.003120096208899832,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "selected_weights": {
+        "answer": 0.5,
+        "span": 0.0
+      },
+      "competent_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    {
+      "pair": [
+        "seed101",
+        "seed307"
+      ],
+      "unit_kind": "single",
+      "path": "causal_alignment/seed101_seed307/single/eval.json",
+      "sha256": "6a760bba659f8e3ea8d1af7c7cb927ce0cd08367b6c7a168a13694e9b25a5712",
+      "locations": {
+        "answer": {
+          "semantic": {
+            "mean": -0.03487544279931656,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.023524826646779642,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.06241216400810762,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": 0.0013626942459935688,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        },
+        "span": {
+          "semantic": {
+            "mean": 0.02262503418105782,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.015716688439283352,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.02262503418105782,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": 0.00686617631721326,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "selected_weights": {
+        "answer": 0.75,
+        "span": 0.0
+      },
+      "competent_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    {
+      "pair": [
+        "seed101",
+        "seed307"
+      ],
+      "unit_kind": "group",
+      "path": "causal_alignment/seed101_seed307/group/eval.json",
+      "sha256": "bed3fc41191712ba4cfd83abf936722f5b9bcf5218689f58d671a910e4154907",
+      "locations": {
+        "answer": {
+          "semantic": {
+            "mean": -0.058123065328615664,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.024243731376134153,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.06538015071589699,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": -0.004747711353028928,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        },
+        "span": {
+          "semantic": {
+            "mean": -0.014858948067067793,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": -0.024687445830149906,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": -0.022487837517381547,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": 0.0032986462616666407,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "selected_weights": {
+        "answer": 0.5,
+        "span": 0.75
+      },
+      "competent_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    {
+      "pair": [
+        "seed101",
+        "seed401"
+      ],
+      "unit_kind": "single",
+      "path": "causal_alignment/seed101_seed401/single/eval.json",
+      "sha256": "1c5c9cf2d05ea89b35a9fac9e369144c1d07406cea5dac16060a1dc120b54e64",
+      "locations": {
+        "answer": {
+          "semantic": {
+            "mean": -0.0011076888196344576,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.02746940198416123,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.024388876786897887,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": -0.010160045003091154,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        },
+        "span": {
+          "semantic": {
+            "mean": -0.010304326792309337,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.009875614903626808,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.016113271277922375,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": 0.004607060666120895,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "selected_weights": {
+        "answer": 0.75,
+        "span": 0.75
+      },
+      "competent_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    {
+      "pair": [
+        "seed101",
+        "seed401"
+      ],
+      "unit_kind": "group",
+      "path": "causal_alignment/seed101_seed401/group/eval.json",
+      "sha256": "a6080edfc917595d76b962f610f5e9f2b70c63ad30105e8a47f38b8308a3ecaf",
+      "locations": {
+        "answer": {
+          "semantic": {
+            "mean": 0.07844515729968377,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.09808437755942305,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.09808437755942305,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": 0.04994262309976774,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        },
+        "span": {
+          "semantic": {
+            "mean": 0.0009252726565453553,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.010089152486490857,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.0009252726565453553,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": 0.0012086729330073112,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "selected_weights": {
+        "answer": 1.0,
+        "span": 0.0
+      },
+      "competent_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    {
+      "pair": [
+        "seed101",
+        "seed503"
+      ],
+      "unit_kind": "single",
+      "path": "causal_alignment/seed101_seed503/single/eval.json",
+      "sha256": "799fcc6d87c310bb0e791ee468614b337a983b857ed8675f388fbf43934ca48c",
+      "locations": {
+        "answer": {
+          "semantic": {
+            "mean": -0.017859011751171962,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.04949943261043196,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.04349884249000674,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": -0.004611298829260157,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        },
+        "span": {
+          "semantic": {
+            "mean": -0.017009976136103135,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": -0.00387208548471581,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": -0.01239223648145467,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": -0.0026968053388734593,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "selected_weights": {
+        "answer": 0.75,
+        "span": 0.75
+      },
+      "competent_tasks": [
+        "comparison",
+        "syntax"
+      ]
+    },
+    {
+      "pair": [
+        "seed101",
+        "seed503"
+      ],
+      "unit_kind": "group",
+      "path": "causal_alignment/seed101_seed503/group/eval.json",
+      "sha256": "f312458b0abe11e961a3c03cc944a367d7b3e19a9d50d1375f94bf8f9c0673b6",
+      "locations": {
+        "answer": {
+          "semantic": {
+            "mean": 0.07385870386489476,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.05661323460014774,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.07385870386489476,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": 0.0415021293450105,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        },
+        "span": {
+          "semantic": {
+            "mean": 0.04651249149378072,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.0036243611349320837,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.02977228019538587,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": 0.01638611399565165,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "selected_weights": {
+        "answer": 0.0,
+        "span": 0.5
+      },
+      "competent_tasks": [
+        "comparison",
+        "syntax"
+      ]
+    },
+    {
+      "pair": [
+        "seed211",
+        "seed307"
+      ],
+      "unit_kind": "single",
+      "path": "causal_alignment/seed211_seed307/single/eval.json",
+      "sha256": "c06bb8a724d932109705915409b86288fec02465c4a1466b99e13141016758c1",
+      "locations": {
+        "answer": {
+          "semantic": {
+            "mean": 0.025058008954092496,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.07755102854038938,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.07738240119104568,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": -0.005006962399077434,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        },
+        "span": {
+          "semantic": {
+            "mean": -0.029916479656001096,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": -0.01153454219147274,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": -0.01153454219147274,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": -0.0056146261829242644,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "selected_weights": {
+        "answer": 0.75,
+        "span": 1.0
+      },
+      "competent_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    {
+      "pair": [
+        "seed211",
+        "seed307"
+      ],
+      "unit_kind": "group",
+      "path": "causal_alignment/seed211_seed307/group/eval.json",
+      "sha256": "a1ab25e233a6f477e1c9248d2cc58e59633b5ac8625cba93c11bea63b01573e4",
+      "locations": {
+        "answer": {
+          "semantic": {
+            "mean": -0.03198980453515032,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.0031402673995015525,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.0031402673995015525,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": -0.02210558447232891,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        },
+        "span": {
+          "semantic": {
+            "mean": 0.029098412020592355,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.03197571930008513,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.03197571930008513,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": -0.00536611741333622,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "selected_weights": {
+        "answer": 1.0,
+        "span": 1.0
+      },
+      "competent_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    {
+      "pair": [
+        "seed211",
+        "seed401"
+      ],
+      "unit_kind": "single",
+      "path": "causal_alignment/seed211_seed401/single/eval.json",
+      "sha256": "a4c76f7a98f739e1885e68365acac04c1d58e88e9f70a41c3a7bf8c43befed0f",
+      "locations": {
+        "answer": {
+          "semantic": {
+            "mean": 0.062126780353383405,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.06990010761549828,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.06990010761549828,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": -0.005308963247933988,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        },
+        "span": {
+          "semantic": {
+            "mean": 0.020350759511261907,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.007162212445382242,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.020350759511261907,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": 0.006232361429265049,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "selected_weights": {
+        "answer": 1.0,
+        "span": 0.0
+      },
+      "competent_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    {
+      "pair": [
+        "seed211",
+        "seed401"
+      ],
+      "unit_kind": "group",
+      "path": "causal_alignment/seed211_seed401/group/eval.json",
+      "sha256": "182b994bfdf1079785907bf92e631a8594241cf3e387c6f9db9a510cece0fad2",
+      "locations": {
+        "answer": {
+          "semantic": {
+            "mean": -0.03143415983814916,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.13305887923998497,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.13305887923998497,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": 0.01825860811133789,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        },
+        "span": {
+          "semantic": {
+            "mean": -0.03902919790852578,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": -0.0487492069489453,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": -0.0487492069489453,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": -0.015832338391430913,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "selected_weights": {
+        "answer": 1.0,
+        "span": 1.0
+      },
+      "competent_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    {
+      "pair": [
+        "seed211",
+        "seed503"
+      ],
+      "unit_kind": "single",
+      "path": "causal_alignment/seed211_seed503/single/eval.json",
+      "sha256": "3e6a7ac857cdeb62ef3747f52ce95d301e3d4a9ed5ab003ff9ed4abb72df4ba3",
+      "locations": {
+        "answer": {
+          "semantic": {
+            "mean": -0.03232300910642746,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.07000151118314307,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.07000151118314307,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": -0.01420283473066449,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        },
+        "span": {
+          "semantic": {
+            "mean": -0.026983151582662318,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.006540464599033602,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.006540464599033602,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": -0.004025696192630675,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "selected_weights": {
+        "answer": 1.0,
+        "span": 1.0
+      },
+      "competent_tasks": [
+        "comparison",
+        "syntax"
+      ]
+    },
+    {
+      "pair": [
+        "seed211",
+        "seed503"
+      ],
+      "unit_kind": "group",
+      "path": "causal_alignment/seed211_seed503/group/eval.json",
+      "sha256": "cec1f1850fd813cc90bbab5a7dde35dea7552892ae5fcdc40ea3e28ebeea5025",
+      "locations": {
+        "answer": {
+          "semantic": {
+            "mean": 0.09346908236706504,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.10834546024875218,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.09346908236706504,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": -0.018293871063021033,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        },
+        "span": {
+          "semantic": {
+            "mean": -0.0014541968085969054,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.05372853078086138,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": -0.0014541968085969054,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": 0.008877323307977322,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "selected_weights": {
+        "answer": 0.0,
+        "span": 0.0
+      },
+      "competent_tasks": [
+        "comparison",
+        "syntax"
+      ]
+    },
+    {
+      "pair": [
+        "seed307",
+        "seed401"
+      ],
+      "unit_kind": "single",
+      "path": "causal_alignment/seed307_seed401/single/eval.json",
+      "sha256": "fb0e5c016daf80ae773227e7d39e429da81c805aaf9141bdc1b2ca9ec07d8b66",
+      "locations": {
+        "answer": {
+          "semantic": {
+            "mean": -0.0033790746798486927,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.05106853828138038,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.05106853828138038,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": -0.004624379218363939,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        },
+        "span": {
+          "semantic": {
+            "mean": -0.010857475579295214,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.028746636884880803,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": -0.010857475579295214,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": 7.245797145592166e-05,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "selected_weights": {
+        "answer": 1.0,
+        "span": 0.0
+      },
+      "competent_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    {
+      "pair": [
+        "seed307",
+        "seed401"
+      ],
+      "unit_kind": "group",
+      "path": "causal_alignment/seed307_seed401/group/eval.json",
+      "sha256": "4854de4b3ff60009bbf493eeaf7e3c30bc11851bfac6a2d7ba34424951b2bf5f",
+      "locations": {
+        "answer": {
+          "semantic": {
+            "mean": -0.08599517101807282,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.06862505304537615,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.06862505304537615,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": -0.0045865056159812454,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        },
+        "span": {
+          "semantic": {
+            "mean": -0.001288653438766792,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": -0.012957244971288305,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": -0.012957244971288305,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": 0.0008823980755348302,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "selected_weights": {
+        "answer": 0.5,
+        "span": 1.0
+      },
+      "competent_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    {
+      "pair": [
+        "seed307",
+        "seed503"
+      ],
+      "unit_kind": "single",
+      "path": "causal_alignment/seed307_seed503/single/eval.json",
+      "sha256": "63bf17f5ba0d6868377d5782eb50b81ac2dabd4a66d8891bd3ce54c32c9066c6",
+      "locations": {
+        "answer": {
+          "semantic": {
+            "mean": -0.041083981411782634,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.09105035415604168,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.09105035415604168,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": 0.0047691704235160405,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        },
+        "span": {
+          "semantic": {
+            "mean": -0.01626146369239533,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.007045753040353551,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": -0.02290172286348069,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": -0.0063694752665003395,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "selected_weights": {
+        "answer": 1.0,
+        "span": 0.75
+      },
+      "competent_tasks": [
+        "comparison",
+        "syntax"
+      ]
+    },
+    {
+      "pair": [
+        "seed307",
+        "seed503"
+      ],
+      "unit_kind": "group",
+      "path": "causal_alignment/seed307_seed503/group/eval.json",
+      "sha256": "9e011f1da8540b410b6e215ab81718fbccba1a836577831f0a38c7ec8bfb85ec",
+      "locations": {
+        "answer": {
+          "semantic": {
+            "mean": 0.08583618076073829,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.11318665647128014,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.11318665647128014,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": 0.016304828552930296,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        },
+        "span": {
+          "semantic": {
+            "mean": -0.03350015966509844,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": -0.02453393931412082,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": -0.010416138790900397,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": -0.0038635629014231593,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "selected_weights": {
+        "answer": 1.0,
+        "span": 0.75
+      },
+      "competent_tasks": [
+        "comparison",
+        "syntax"
+      ]
+    },
+    {
+      "pair": [
+        "seed401",
+        "seed503"
+      ],
+      "unit_kind": "single",
+      "path": "causal_alignment/seed401_seed503/single/eval.json",
+      "sha256": "5602ebda4ea4175e4992057ae5ac86e5225ba4502b4d123648b4ff1a3eeed8bb",
+      "locations": {
+        "answer": {
+          "semantic": {
+            "mean": 0.026697652923672276,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.0362007727383673,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.0362007727383673,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": 0.000778533914421803,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        },
+        "span": {
+          "semantic": {
+            "mean": -0.01489316720725823,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.021047320636487305,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.025321387775120986,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": -0.00016426821920543662,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "selected_weights": {
+        "answer": 1.0,
+        "span": 0.75
+      },
+      "competent_tasks": [
+        "comparison",
+        "syntax"
+      ]
+    },
+    {
+      "pair": [
+        "seed401",
+        "seed503"
+      ],
+      "unit_kind": "group",
+      "path": "causal_alignment/seed401_seed503/group/eval.json",
+      "sha256": "f59e078e31991c5320868d0f43079bccf2733f531f2cc2249d83790e431d93f6",
+      "locations": {
+        "answer": {
+          "semantic": {
+            "mean": 0.0029380286867272403,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.06984662895741824,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.03408420391933305,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": 0.01610943581037988,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        },
+        "span": {
+          "semantic": {
+            "mean": 0.009554327296279697,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.045451298367355515,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.045451298367355515,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": 0.01164870755837552,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "selected_weights": {
+        "answer": 0.25,
+        "span": 1.0
+      },
+      "competent_tasks": [
+        "comparison",
+        "syntax"
+      ]
+    },
+    {
+      "pair": [
+        "qwen",
+        "smol"
+      ],
+      "unit_kind": "single",
+      "path": "causal_alignment/qwen_smol/single/eval.json",
+      "sha256": "6e0a0de21bcfd793d172d734ecc93df5c35a62b99ee9d361404a1b513fcbeff5",
+      "locations": {
+        "answer": {
+          "semantic": {
+            "mean": -0.06109940051509442,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.008900852537698721,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.008900852537698721,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": 0.005514170370624354,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        },
+        "span": {
+          "semantic": {
+            "mean": -0.010050790449340473,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.06183793424553971,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.06183793424553971,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": -0.004149710847707643,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "selected_weights": {
+        "answer": 1.0,
+        "span": 1.0
+      },
+      "competent_tasks": []
+    },
+    {
+      "pair": [
+        "qwen",
+        "smol"
+      ],
+      "unit_kind": "group",
+      "path": "causal_alignment/qwen_smol/group/eval.json",
+      "sha256": "ec0caf239d4bdd3cb1ca50039257daa6e2781970d79b4128d69235c3e5c1df41",
+      "locations": {
+        "answer": {
+          "semantic": {
+            "mean": -0.04367420189033261,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.009881328174079277,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.009881328174079277,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": -0.03705632331637107,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        },
+        "span": {
+          "semantic": {
+            "mean": -0.02705538303385829,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.0998675128549656,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.0998675128549656,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": 0.013687343637956323,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "selected_weights": {
+        "answer": 1.0,
+        "span": 1.0
+      },
+      "competent_tasks": []
+    },
+    {
+      "pair": [
+        "qwen",
+        "olmo"
+      ],
+      "unit_kind": "single",
+      "path": "causal_alignment/qwen_olmo/single/eval.json",
+      "sha256": "53db434d1d97ae89631ae84f5ba911641ec5a018cb8025ea94f12792ec92df06",
+      "locations": {
+        "answer": {
+          "semantic": {
+            "mean": 0.008082130907139605,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.08502607570552138,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.08502607570552138,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": -0.007579079709497852,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        },
+        "span": {
+          "semantic": {
+            "mean": 0.03321815829457087,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.12430315820808392,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.12430315820808392,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": 0.006816810820573995,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "selected_weights": {
+        "answer": 1.0,
+        "span": 0.75
+      },
+      "competent_tasks": []
+    },
+    {
+      "pair": [
+        "qwen",
+        "olmo"
+      ],
+      "unit_kind": "group",
+      "path": "causal_alignment/qwen_olmo/group/eval.json",
+      "sha256": "1a64cf53c05e76e3268a98905899f9de5a8b6c974d1a0d90eeb9f3095be52201",
+      "locations": {
+        "answer": {
+          "semantic": {
+            "mean": -0.03186240048600588,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.004108275600133648,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.004108275600133648,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": -0.010644654860176414,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        },
+        "span": {
+          "semantic": {
+            "mean": 0.09250120557542041,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.029231790245183565,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.029231790245183565,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": 0.011965721869529489,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "selected_weights": {
+        "answer": 1.0,
+        "span": 0.5
+      },
+      "competent_tasks": []
+    },
+    {
+      "pair": [
+        "smol",
+        "olmo"
+      ],
+      "unit_kind": "single",
+      "path": "causal_alignment/smol_olmo/single/eval.json",
+      "sha256": "82784fd68f9cd2bcc0e5130f965b33d36a48da4a788ced44a559ad29b540a144",
+      "locations": {
+        "answer": {
+          "semantic": {
+            "mean": -0.02625715076120315,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.036669097754341955,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.036669097754341955,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": 0.0006108760334518513,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        },
+        "span": {
+          "semantic": {
+            "mean": -0.029922127526101707,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.07791118918870414,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.07791118918870414,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": -0.0053944568785787884,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "selected_weights": {
+        "answer": 1.0,
+        "span": 1.0
+      },
+      "competent_tasks": []
+    },
+    {
+      "pair": [
+        "smol",
+        "olmo"
+      ],
+      "unit_kind": "group",
+      "path": "causal_alignment/smol_olmo/group/eval.json",
+      "sha256": "4d1f92320e21f7c6cd416dd6ccb3d92519d7eb2e49fd9d7ccb11a276f78fd04a",
+      "locations": {
+        "answer": {
+          "semantic": {
+            "mean": -0.041727923727063625,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.11898353861285842,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.1512337181699513,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": 0.011403539735190621,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        },
+        "span": {
+          "semantic": {
+            "mean": -0.056982097008348054,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "causal": {
+            "mean": 0.13030727192558786,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "combined": {
+            "mean": 0.13030727192558786,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          },
+          "random": {
+            "mean": -0.026289169642825152,
+            "n_valid_wrappers": 24,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "selected_weights": {
+        "answer": 0.25,
+        "span": 1.0
+      },
+      "competent_tasks": []
+    }
+  ],
+  "cohorts": {
+    "independent_seeds/single/answer": {
+      "tests": {
+        "combined_minus_semantic": {
+          "effect": 0.05869596310847754,
+          "pvalue": 4.999750012499375e-05,
+          "n_clusters": 24,
+          "method": "monte_carlo",
+          "standardized_effect": 2.0204775203224683,
+          "status": "OK",
+          "bootstrap": {
+            "mean": 0.05869596310847754,
+            "median": 0.051746922601919106,
+            "std": 0.029050540042192433,
+            "n_observations": 24,
+            "n_clusters": 24,
+            "estimand": "equal-cluster-weighted mean",
+            "confidence": 0.95,
+            "ci": [
+              0.04762736467411073,
+              0.06990600020507341
+            ],
+            "status": "OK"
+          },
+          "n_pairs": 10,
+          "wrapper_effects": {
+            "D4:wrapper:t00": 0.04120347174871015,
+            "D4:wrapper:t01": 0.03562369069658076,
+            "D4:wrapper:t02": 0.10272527048686435,
+            "D4:wrapper:t03": 0.04389548470177351,
+            "D4:wrapper:t04": 0.053090483406029454,
+            "D4:wrapper:t05": 0.0375360794945744,
+            "D4:wrapper:t06": 0.08554298235968574,
+            "D4:wrapper:t07": 0.07115052669333735,
+            "D4:wrapper:t08": 0.11346527665887432,
+            "D4:wrapper:t09": 0.06501032448134701,
+            "D4:wrapper:t10": 0.07170448242517172,
+            "D4:wrapper:t11": 0.03984483885472493,
+            "D4:wrapper:t12": 0.021864695125773975,
+            "D4:wrapper:t13": 0.04200763973274093,
+            "D4:wrapper:t14": 0.06092522064745646,
+            "D4:wrapper:t15": 0.00950859104345696,
+            "D4:wrapper:t16": 0.05040336179780876,
+            "D4:wrapper:t17": 0.09055154011603621,
+            "D4:wrapper:t18": 0.011417209683979265,
+            "D4:wrapper:t19": 0.04869553607545021,
+            "D4:wrapper:t20": 0.04880718341037284,
+            "D4:wrapper:t21": 0.057810164110146375,
+            "D4:wrapper:t22": 0.1030266581913349,
+            "D4:wrapper:t23": 0.10289240266123052
+          },
+          "inference_scope": "fixed observed models; shared-wrapper uncertainty only"
+        }
+      },
+      "correction": "PENDING_GLOBAL_FAMILY",
+      "pair_descriptives": {
+        "combined_minus_semantic": {
+          "seed101_seed211": {
+            "mean": 0.044310296297253284,
+            "n_wrappers": 24
+          },
+          "seed101_seed307": {
+            "mean": 0.09728760680742417,
+            "n_wrappers": 24
+          },
+          "seed101_seed401": {
+            "mean": 0.025496565606532347,
+            "n_wrappers": 24
+          },
+          "seed101_seed503": {
+            "mean": 0.0613578542411787,
+            "n_wrappers": 24
+          },
+          "seed211_seed307": {
+            "mean": 0.05232439223695318,
+            "n_wrappers": 24
+          },
+          "seed211_seed401": {
+            "mean": 0.0077733272621148645,
+            "n_wrappers": 24
+          },
+          "seed211_seed503": {
+            "mean": 0.10232452028957052,
+            "n_wrappers": 24
+          },
+          "seed307_seed401": {
+            "mean": 0.05444761296122907,
+            "n_wrappers": 24
+          },
+          "seed307_seed503": {
+            "mean": 0.1321343355678243,
+            "n_wrappers": 24
+          },
+          "seed401_seed503": {
+            "mean": 0.00950311981469502,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "n_pairs": 10,
+      "resampling_unit": "shared wrapper; all pairs and concepts retained together",
+      "inference_scope": "Conditional on observed models; no independent-seed replication claim."
+    },
+    "independent_seeds/single/span": {
+      "tests": {
+        "combined_minus_semantic": {
+          "effect": 0.011651518718239834,
+          "pvalue": 0.005499725013749313,
+          "n_clusters": 24,
+          "method": "monte_carlo",
+          "standardized_effect": 0.6364156274760344,
+          "status": "OK",
+          "bootstrap": {
+            "mean": 0.011651518718239834,
+            "median": 0.012008386025186977,
+            "std": 0.018308033642179217,
+            "n_observations": 24,
+            "n_clusters": 24,
+            "estimand": "equal-cluster-weighted mean",
+            "confidence": 0.95,
+            "ci": [
+              0.004371328564230403,
+              0.018839463058710128
+            ],
+            "status": "OK"
+          },
+          "n_pairs": 10,
+          "wrapper_effects": {
+            "D4:wrapper:t00": 0.009326147394660835,
+            "D4:wrapper:t01": 0.012663123891365502,
+            "D4:wrapper:t02": -0.020508250239735813,
+            "D4:wrapper:t03": 0.018810176989229543,
+            "D4:wrapper:t04": 0.015472182404390208,
+            "D4:wrapper:t05": 0.00030673019045882597,
+            "D4:wrapper:t06": 0.006359757915887196,
+            "D4:wrapper:t07": 0.01244910630834983,
+            "D4:wrapper:t08": 0.025864655580018703,
+            "D4:wrapper:t09": 0.03716524457013588,
+            "D4:wrapper:t10": 0.02975647719086223,
+            "D4:wrapper:t11": 0.0058714960645787784,
+            "D4:wrapper:t12": -0.024692936159058702,
+            "D4:wrapper:t13": 0.052684306150219094,
+            "D4:wrapper:t14": 0.011567665742024124,
+            "D4:wrapper:t15": 0.0012424244014474686,
+            "D4:wrapper:t16": 0.00938770574620408,
+            "D4:wrapper:t17": -0.005288560218264092,
+            "D4:wrapper:t18": -0.006962953731692853,
+            "D4:wrapper:t19": 0.022746691484989832,
+            "D4:wrapper:t20": 0.022167317090461873,
+            "D4:wrapper:t21": 0.032740257794009006,
+            "D4:wrapper:t22": 0.024219188474558815,
+            "D4:wrapper:t23": -0.013711505797344406
+          },
+          "inference_scope": "fixed observed models; shared-wrapper uncertainty only"
+        }
+      },
+      "correction": "PENDING_GLOBAL_FAMILY",
+      "pair_descriptives": {
+        "combined_minus_semantic": {
+          "seed101_seed211": {
+            "mean": 0.0,
+            "n_wrappers": 24
+          },
+          "seed101_seed307": {
+            "mean": 0.0,
+            "n_wrappers": 24
+          },
+          "seed101_seed401": {
+            "mean": 0.026417598070231713,
+            "n_wrappers": 24
+          },
+          "seed101_seed503": {
+            "mean": 0.004617739654648466,
+            "n_wrappers": 24
+          },
+          "seed211_seed307": {
+            "mean": 0.018381937464528354,
+            "n_wrappers": 24
+          },
+          "seed211_seed401": {
+            "mean": 0.0,
+            "n_wrappers": 24
+          },
+          "seed211_seed503": {
+            "mean": 0.03352361618169592,
+            "n_wrappers": 24
+          },
+          "seed307_seed401": {
+            "mean": 0.0,
+            "n_wrappers": 24
+          },
+          "seed307_seed503": {
+            "mean": -0.0066402591710853645,
+            "n_wrappers": 24
+          },
+          "seed401_seed503": {
+            "mean": 0.04021455498237922,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "n_pairs": 10,
+      "resampling_unit": "shared wrapper; all pairs and concepts retained together",
+      "inference_scope": "Conditional on observed models; no independent-seed replication claim."
+    },
+    "independent_seeds/group/answer": {
+      "tests": {
+        "combined_minus_semantic": {
+          "effect": 0.06777954269035592,
+          "pvalue": 4.999750012499375e-05,
+          "n_clusters": 24,
+          "method": "monte_carlo",
+          "standardized_effect": 1.6729630182104207,
+          "status": "OK",
+          "bootstrap": {
+            "mean": 0.06777954269035592,
+            "median": 0.05934131101496325,
+            "std": 0.0405146688555376,
+            "n_observations": 24,
+            "n_clusters": 24,
+            "estimand": "equal-cluster-weighted mean",
+            "confidence": 0.95,
+            "ci": [
+              0.05201471044781269,
+              0.08372249333919576
+            ],
+            "status": "OK"
+          },
+          "n_pairs": 10,
+          "wrapper_effects": {
+            "D4:wrapper:t00": 0.0282710958112533,
+            "D4:wrapper:t01": 0.13387359532577553,
+            "D4:wrapper:t02": 0.07974009948218429,
+            "D4:wrapper:t03": 0.03947702375837429,
+            "D4:wrapper:t04": -0.014475495361874119,
+            "D4:wrapper:t05": 0.05480778612554062,
+            "D4:wrapper:t06": 0.10720985401191425,
+            "D4:wrapper:t07": 0.06225478417189756,
+            "D4:wrapper:t08": 0.07018958218032742,
+            "D4:wrapper:t09": 0.08372339996516047,
+            "D4:wrapper:t10": 0.14088929424640173,
+            "D4:wrapper:t11": 0.029020895888201188,
+            "D4:wrapper:t12": 0.0517818651425065,
+            "D4:wrapper:t13": 0.043820372827364305,
+            "D4:wrapper:t14": 0.08755924318397171,
+            "D4:wrapper:t15": 0.04674314137112305,
+            "D4:wrapper:t16": 0.07477238371067095,
+            "D4:wrapper:t17": 0.05642783785802894,
+            "D4:wrapper:t18": 0.051286355071486246,
+            "D4:wrapper:t19": 0.03270275043334459,
+            "D4:wrapper:t20": 0.08500289143154385,
+            "D4:wrapper:t21": 0.11431109710434888,
+            "D4:wrapper:t22": 0.15052833064955612,
+            "D4:wrapper:t23": 0.0167908401794405
+          },
+          "inference_scope": "fixed observed models; shared-wrapper uncertainty only"
+        }
+      },
+      "correction": "PENDING_GLOBAL_FAMILY",
+      "pair_descriptives": {
+        "combined_minus_semantic": {
+          "seed101_seed211": {
+            "mean": 0.12191300457992467,
+            "n_wrappers": 24
+          },
+          "seed101_seed307": {
+            "mean": 0.12350321604451264,
+            "n_wrappers": 24
+          },
+          "seed101_seed401": {
+            "mean": 0.019639220259739274,
+            "n_wrappers": 24
+          },
+          "seed101_seed503": {
+            "mean": 0.0,
+            "n_wrappers": 24
+          },
+          "seed211_seed307": {
+            "mean": 0.035130071934651876,
+            "n_wrappers": 24
+          },
+          "seed211_seed401": {
+            "mean": 0.16449303907813415,
+            "n_wrappers": 24
+          },
+          "seed211_seed503": {
+            "mean": 0.0,
+            "n_wrappers": 24
+          },
+          "seed307_seed401": {
+            "mean": 0.154620224063449,
+            "n_wrappers": 24
+          },
+          "seed307_seed503": {
+            "mean": 0.027350475710541847,
+            "n_wrappers": 24
+          },
+          "seed401_seed503": {
+            "mean": 0.031146175232605804,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "n_pairs": 10,
+      "resampling_unit": "shared wrapper; all pairs and concepts retained together",
+      "inference_scope": "Conditional on observed models; no independent-seed replication claim."
+    },
+    "independent_seeds/group/span": {
+      "tests": {
+        "combined_minus_semantic": {
+          "effect": 0.0016100597903117003,
+          "pvalue": 0.792410379481026,
+          "n_clusters": 24,
+          "method": "monte_carlo",
+          "standardized_effect": 0.053248860747577884,
+          "status": "OK",
+          "bootstrap": {
+            "mean": 0.0016100597903117003,
+            "median": -0.003604600339976359,
+            "std": 0.03023651149916736,
+            "n_observations": 24,
+            "n_clusters": 24,
+            "estimand": "equal-cluster-weighted mean",
+            "confidence": 0.95,
+            "ci": [
+              -0.00997335781253658,
+              0.013401804636930113
+            ],
+            "status": "OK"
+          },
+          "n_pairs": 10,
+          "wrapper_effects": {
+            "D4:wrapper:t00": -0.05226076833576552,
+            "D4:wrapper:t01": 0.03161146152565402,
+            "D4:wrapper:t02": -0.013055355556125742,
+            "D4:wrapper:t03": -0.04849006448022153,
+            "D4:wrapper:t04": 0.03368961380617751,
+            "D4:wrapper:t05": -0.02646895040900101,
+            "D4:wrapper:t06": -0.022373353039894957,
+            "D4:wrapper:t07": -0.006172317422069018,
+            "D4:wrapper:t08": 0.025224514644627456,
+            "D4:wrapper:t09": 3.221803110321706e-05,
+            "D4:wrapper:t10": 0.06332818766459355,
+            "D4:wrapper:t11": -0.02123806090388487,
+            "D4:wrapper:t12": 0.04444029524953049,
+            "D4:wrapper:t13": 0.01243089750282506,
+            "D4:wrapper:t14": 0.002843369043279939,
+            "D4:wrapper:t15": -0.020744431363072805,
+            "D4:wrapper:t16": -0.0087075411441979,
+            "D4:wrapper:t17": -0.020188284030862393,
+            "D4:wrapper:t18": 0.0008462233117029802,
+            "D4:wrapper:t19": 0.0566593056165583,
+            "D4:wrapper:t20": 0.0291704885609274,
+            "D4:wrapper:t21": -0.014511037007028054,
+            "D4:wrapper:t22": -0.006388093039491616,
+            "D4:wrapper:t23": -0.0010368832578837
+          },
+          "inference_scope": "fixed observed models; shared-wrapper uncertainty only"
+        }
+      },
+      "correction": "PENDING_GLOBAL_FAMILY",
+      "pair_descriptives": {
+        "combined_minus_semantic": {
+          "seed101_seed211": {
+            "mean": 0.0,
+            "n_wrappers": 24
+          },
+          "seed101_seed307": {
+            "mean": -0.007628889450313754,
+            "n_wrappers": 24
+          },
+          "seed101_seed401": {
+            "mean": 0.0,
+            "n_wrappers": 24
+          },
+          "seed101_seed503": {
+            "mean": -0.016740211298394845,
+            "n_wrappers": 24
+          },
+          "seed211_seed307": {
+            "mean": 0.0028773072794927696,
+            "n_wrappers": 24
+          },
+          "seed211_seed401": {
+            "mean": -0.009720009040419515,
+            "n_wrappers": 24
+          },
+          "seed211_seed503": {
+            "mean": 0.0,
+            "n_wrappers": 24
+          },
+          "seed307_seed401": {
+            "mean": -0.01166859153252151,
+            "n_wrappers": 24
+          },
+          "seed307_seed503": {
+            "mean": 0.023084020874198044,
+            "n_wrappers": 24
+          },
+          "seed401_seed503": {
+            "mean": 0.03589697107107583,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "n_pairs": 10,
+      "resampling_unit": "shared wrapper; all pairs and concepts retained together",
+      "inference_scope": "Conditional on observed models; no independent-seed replication claim."
+    },
+    "cross_family/single/answer": {
+      "tests": {
+        "combined_minus_semantic": {
+          "effect": 0.06995681545557335,
+          "pvalue": 4.999750012499375e-05,
+          "n_clusters": 24,
+          "method": "monte_carlo",
+          "standardized_effect": 1.228244632718411,
+          "status": "OK",
+          "bootstrap": {
+            "mean": 0.06995681545557335,
+            "median": 0.08350865554136083,
+            "std": 0.056956744277189726,
+            "n_observations": 24,
+            "n_clusters": 24,
+            "estimand": "equal-cluster-weighted mean",
+            "confidence": 0.95,
+            "ci": [
+              0.04607671501796167,
+              0.09095426884268826
+            ],
+            "status": "OK"
+          },
+          "n_pairs": 3,
+          "wrapper_effects": {
+            "D4:wrapper:t00": -0.00861051854351135,
+            "D4:wrapper:t01": 0.08998658201832449,
+            "D4:wrapper:t02": 0.04659091240355586,
+            "D4:wrapper:t03": 0.07703072906439717,
+            "D4:wrapper:t04": 0.05554971706545279,
+            "D4:wrapper:t05": 0.04046305186109598,
+            "D4:wrapper:t06": 0.09865985435183248,
+            "D4:wrapper:t07": 0.013336692113454724,
+            "D4:wrapper:t08": 0.09969402169635662,
+            "D4:wrapper:t09": -0.010716119780451616,
+            "D4:wrapper:t10": -0.0025514002563826834,
+            "D4:wrapper:t11": 0.11324769982722908,
+            "D4:wrapper:t12": 0.09076981933176453,
+            "D4:wrapper:t13": 0.1188511301350927,
+            "D4:wrapper:t14": 0.06752587438442859,
+            "D4:wrapper:t15": -0.08823896906479396,
+            "D4:wrapper:t16": 0.12001202747705304,
+            "D4:wrapper:t17": 0.07673472444877398,
+            "D4:wrapper:t18": 0.05012564600498335,
+            "D4:wrapper:t19": 0.10667798608474217,
+            "D4:wrapper:t20": 0.1129053976582761,
+            "D4:wrapper:t21": 0.12718916752157833,
+            "D4:wrapper:t22": 0.15191518997101996,
+            "D4:wrapper:t23": 0.13181435515948772
+          },
+          "inference_scope": "fixed observed models; shared-wrapper uncertainty only"
+        }
+      },
+      "correction": "PENDING_GLOBAL_FAMILY",
+      "pair_descriptives": {
+        "combined_minus_semantic": {
+          "qwen_olmo": {
+            "mean": 0.07694394479838178,
+            "n_wrappers": 24
+          },
+          "qwen_smol": {
+            "mean": 0.07000025305279313,
+            "n_wrappers": 24
+          },
+          "smol_olmo": {
+            "mean": 0.06292624851554511,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "n_pairs": 3,
+      "resampling_unit": "shared wrapper; all pairs and concepts retained together",
+      "inference_scope": "Conditional on observed models; no independent-seed replication claim."
+    },
+    "cross_family/single/span": {
+      "tests": {
+        "combined_minus_semantic": {
+          "effect": 0.09026901377439968,
+          "pvalue": 4.999750012499375e-05,
+          "n_clusters": 24,
+          "method": "monte_carlo",
+          "standardized_effect": 1.4563759257850837,
+          "status": "OK",
+          "bootstrap": {
+            "mean": 0.09026901377439968,
+            "median": 0.08237845600685925,
+            "std": 0.06198194585353275,
+            "n_observations": 24,
+            "n_clusters": 24,
+            "estimand": "equal-cluster-weighted mean",
+            "confidence": 0.95,
+            "ci": [
+              0.06713603040311354,
+              0.11526919926966571
+            ],
+            "status": "OK"
+          },
+          "n_pairs": 3,
+          "wrapper_effects": {
+            "D4:wrapper:t00": -0.021898465441869477,
+            "D4:wrapper:t01": 0.04801555544292437,
+            "D4:wrapper:t02": 0.12607185136352936,
+            "D4:wrapper:t03": 0.1407846819617592,
+            "D4:wrapper:t04": 0.1064092230105836,
+            "D4:wrapper:t05": 0.08319279391417957,
+            "D4:wrapper:t06": 0.04357727984190155,
+            "D4:wrapper:t07": 0.08156411809953894,
+            "D4:wrapper:t08": 0.11906825996245944,
+            "D4:wrapper:t09": 0.03637429553524866,
+            "D4:wrapper:t10": 0.2324362141349787,
+            "D4:wrapper:t11": 0.13215345083460023,
+            "D4:wrapper:t12": 0.05846575600020417,
+            "D4:wrapper:t13": 0.18204495295635503,
+            "D4:wrapper:t14": 0.048513556748894904,
+            "D4:wrapper:t15": 0.1544937594049597,
+            "D4:wrapper:t16": 0.13261170853425944,
+            "D4:wrapper:t17": 0.02869787876641507,
+            "D4:wrapper:t18": 0.018927745210693295,
+            "D4:wrapper:t19": 0.021690483836624672,
+            "D4:wrapper:t20": 0.14965074320340974,
+            "D4:wrapper:t21": 0.1515034010700088,
+            "D4:wrapper:t22": 0.042268537912414444,
+            "D4:wrapper:t23": 0.04983854828151916
+          },
+          "inference_scope": "fixed observed models; shared-wrapper uncertainty only"
+        }
+      },
+      "correction": "PENDING_GLOBAL_FAMILY",
+      "pair_descriptives": {
+        "combined_minus_semantic": {
+          "qwen_olmo": {
+            "mean": 0.09108499991351304,
+            "n_wrappers": 24
+          },
+          "qwen_smol": {
+            "mean": 0.07188872469488018,
+            "n_wrappers": 24
+          },
+          "smol_olmo": {
+            "mean": 0.10783331671480584,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "n_pairs": 3,
+      "resampling_unit": "shared wrapper; all pairs and concepts retained together",
+      "inference_scope": "Conditional on observed models; no independent-seed replication claim."
+    },
+    "cross_family/group/answer": {
+      "tests": {
+        "combined_minus_semantic": {
+          "effect": 0.09416261601585545,
+          "pvalue": 0.000199990000499975,
+          "n_clusters": 24,
+          "method": "monte_carlo",
+          "standardized_effect": 1.0001423107978644,
+          "status": "OK",
+          "bootstrap": {
+            "mean": 0.09416261601585545,
+            "median": 0.10215127803917527,
+            "std": 0.09414921756558538,
+            "n_observations": 24,
+            "n_clusters": 24,
+            "estimand": "equal-cluster-weighted mean",
+            "confidence": 0.95,
+            "ci": [
+              0.056769219216009685,
+              0.13159921457751336
+            ],
+            "status": "OK"
+          },
+          "n_pairs": 3,
+          "wrapper_effects": {
+            "D4:wrapper:t00": 0.11134195510906715,
+            "D4:wrapper:t01": 0.016935791314475476,
+            "D4:wrapper:t02": 0.06143722442905309,
+            "D4:wrapper:t03": 0.08639711618647751,
+            "D4:wrapper:t04": 0.142616029352213,
+            "D4:wrapper:t05": 0.1388190536183738,
+            "D4:wrapper:t06": 0.020669587805341047,
+            "D4:wrapper:t07": 0.191074305480431,
+            "D4:wrapper:t08": 0.0929606009692834,
+            "D4:wrapper:t09": 0.14229064277572664,
+            "D4:wrapper:t10": 0.020549341344536162,
+            "D4:wrapper:t11": 0.1357505223591979,
+            "D4:wrapper:t12": -0.023805190175769934,
+            "D4:wrapper:t13": 0.29179317826851525,
+            "D4:wrapper:t14": 0.03296405132101016,
+            "D4:wrapper:t15": 0.03939198092261181,
+            "D4:wrapper:t16": 0.12390343712469946,
+            "D4:wrapper:t17": 0.15572923387103324,
+            "D4:wrapper:t18": -0.10216811685805605,
+            "D4:wrapper:t19": -0.014400235012689647,
+            "D4:wrapper:t20": -0.005661284793919512,
+            "D4:wrapper:t21": 0.19054658956823176,
+            "D4:wrapper:t22": 0.27306406870265293,
+            "D4:wrapper:t23": 0.13770290069803492
+          },
+          "inference_scope": "fixed observed models; shared-wrapper uncertainty only"
+        }
+      },
+      "correction": "PENDING_GLOBAL_FAMILY",
+      "pair_descriptives": {
+        "combined_minus_semantic": {
+          "qwen_olmo": {
+            "mean": 0.035970676086139526,
+            "n_wrappers": 24
+          },
+          "qwen_smol": {
+            "mean": 0.05355553006441188,
+            "n_wrappers": 24
+          },
+          "smol_olmo": {
+            "mean": 0.1929616418970149,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "n_pairs": 3,
+      "resampling_unit": "shared wrapper; all pairs and concepts retained together",
+      "inference_scope": "Conditional on observed models; no independent-seed replication claim."
+    },
+    "cross_family/group/span": {
+      "tests": {
+        "combined_minus_semantic": {
+          "effect": 0.08364761649750767,
+          "pvalue": 0.0002999850007499625,
+          "n_clusters": 24,
+          "method": "monte_carlo",
+          "standardized_effect": 0.9285794148430936,
+          "status": "OK",
+          "bootstrap": {
+            "mean": 0.08364761649750767,
+            "median": 0.08399985835415334,
+            "std": 0.09008127378275126,
+            "n_observations": 24,
+            "n_clusters": 24,
+            "estimand": "equal-cluster-weighted mean",
+            "confidence": 0.95,
+            "ci": [
+              0.048303755152575435,
+              0.11915047053270439
+            ],
+            "status": "OK"
+          },
+          "n_pairs": 3,
+          "wrapper_effects": {
+            "D4:wrapper:t00": -0.024581938602496134,
+            "D4:wrapper:t01": 0.07876089776922934,
+            "D4:wrapper:t02": 0.08047161467336418,
+            "D4:wrapper:t03": 0.0411737219245245,
+            "D4:wrapper:t04": -0.007958371943557002,
+            "D4:wrapper:t05": 0.19223436253612336,
+            "D4:wrapper:t06": 0.2209179856832113,
+            "D4:wrapper:t07": -0.07088282127456383,
+            "D4:wrapper:t08": 0.11407555038399576,
+            "D4:wrapper:t09": 0.16730356156378393,
+            "D4:wrapper:t10": 0.12262821168090159,
+            "D4:wrapper:t11": -0.07178937473628189,
+            "D4:wrapper:t12": 0.20065466410059105,
+            "D4:wrapper:t13": 0.14444395449094913,
+            "D4:wrapper:t14": 0.03898083093696766,
+            "D4:wrapper:t15": 0.057439258255819324,
+            "D4:wrapper:t16": 0.2368142878880679,
+            "D4:wrapper:t17": 0.0875281020349425,
+            "D4:wrapper:t18": 0.03535914584198479,
+            "D4:wrapper:t19": 0.10718545090793012,
+            "D4:wrapper:t20": 0.16772651377917824,
+            "D4:wrapper:t21": -0.06606431548235163,
+            "D4:wrapper:t22": 0.09471241664730418,
+            "D4:wrapper:t23": 0.06040908688056538
+          },
+          "inference_scope": "fixed observed models; shared-wrapper uncertainty only"
+        }
+      },
+      "correction": "PENDING_GLOBAL_FAMILY",
+      "pair_descriptives": {
+        "combined_minus_semantic": {
+          "qwen_olmo": {
+            "mean": -0.06326941533023685,
+            "n_wrappers": 24
+          },
+          "qwen_smol": {
+            "mean": 0.12692289588882388,
+            "n_wrappers": 24
+          },
+          "smol_olmo": {
+            "mean": 0.1872893689339359,
+            "n_wrappers": 24
+          }
+        }
+      },
+      "n_pairs": 3,
+      "resampling_unit": "shared wrapper; all pairs and concepts retained together",
+      "inference_scope": "Conditional on observed models; no independent-seed replication claim."
+    }
+  },
+  "confirmatory_tests": {
+    "F4/seed101_seed211/answer/single/combined_minus_semantic": {
+      "effect": 0.044310296297253284,
+      "pvalue": 0.0015499225038748063,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.715765152635816,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.044310296297253284,
+        "median": 0.031524652489674954,
+        "std": 0.06190619385992731,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.020493184892708894,
+          0.06967054424299189
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": -0.009438386959953679,
+        "D4:wrapper:t01": 0.027242580869580993,
+        "D4:wrapper:t02": 0.13654913924524822,
+        "D4:wrapper:t03": 0.018257386240550254,
+        "D4:wrapper:t04": -0.014905196663424713,
+        "D4:wrapper:t05": 0.08788517791644745,
+        "D4:wrapper:t06": 0.10122318881258505,
+        "D4:wrapper:t07": 0.14149152360097977,
+        "D4:wrapper:t08": 0.19569200231519351,
+        "D4:wrapper:t09": 0.0880601435640638,
+        "D4:wrapper:t10": 0.041384343491538404,
+        "D4:wrapper:t11": 0.05802178140259859,
+        "D4:wrapper:t12": -0.007334564801513704,
+        "D4:wrapper:t13": 0.035806724109768914,
+        "D4:wrapper:t14": -0.010154388557307936,
+        "D4:wrapper:t15": 0.051604306744227516,
+        "D4:wrapper:t16": 0.10196486120373344,
+        "D4:wrapper:t17": -0.0667635905258349,
+        "D4:wrapper:t18": -0.010397537622078457,
+        "D4:wrapper:t19": 0.011646246813591818,
+        "D4:wrapper:t20": 0.020130344748304455,
+        "D4:wrapper:t21": -0.00858716522472256,
+        "D4:wrapper:t22": -0.005936725544060009,
+        "D4:wrapper:t23": 0.08000491595456273
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    "F4/seed101_seed211/span/single/combined_minus_semantic": {
+      "effect": 0.0,
+      "pvalue": 1.0,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": null,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.0,
+        "D4:wrapper:t01": 0.0,
+        "D4:wrapper:t02": 0.0,
+        "D4:wrapper:t03": 0.0,
+        "D4:wrapper:t04": 0.0,
+        "D4:wrapper:t05": 0.0,
+        "D4:wrapper:t06": 0.0,
+        "D4:wrapper:t07": 0.0,
+        "D4:wrapper:t08": 0.0,
+        "D4:wrapper:t09": 0.0,
+        "D4:wrapper:t10": 0.0,
+        "D4:wrapper:t11": 0.0,
+        "D4:wrapper:t12": 0.0,
+        "D4:wrapper:t13": 0.0,
+        "D4:wrapper:t14": 0.0,
+        "D4:wrapper:t15": 0.0,
+        "D4:wrapper:t16": 0.0,
+        "D4:wrapper:t17": 0.0,
+        "D4:wrapper:t18": 0.0,
+        "D4:wrapper:t19": 0.0,
+        "D4:wrapper:t20": 0.0,
+        "D4:wrapper:t21": 0.0,
+        "D4:wrapper:t22": 0.0,
+        "D4:wrapper:t23": 0.0
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    "F4/seed101_seed211/answer/group/combined_minus_semantic": {
+      "effect": 0.12191300457992467,
+      "pvalue": 9.99950002499875e-05,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 1.0802129251486003,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.12191300457992467,
+        "median": 0.12882176955646193,
+        "std": 0.1128601609383202,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.07764187338173217,
+          0.16520724100755793
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.0633049381605932,
+        "D4:wrapper:t01": 0.2908624189872296,
+        "D4:wrapper:t02": 0.1995405678312228,
+        "D4:wrapper:t03": 0.10379761183001854,
+        "D4:wrapper:t04": -0.14643451461467225,
+        "D4:wrapper:t05": 0.2451830504160621,
+        "D4:wrapper:t06": 0.006032632680634142,
+        "D4:wrapper:t07": -0.030667487322837562,
+        "D4:wrapper:t08": 0.07959690885008969,
+        "D4:wrapper:t09": 0.13086719463025906,
+        "D4:wrapper:t10": 0.24653631613128088,
+        "D4:wrapper:t11": 0.06546497320240481,
+        "D4:wrapper:t12": 0.14770203285791006,
+        "D4:wrapper:t13": 0.03941973025992739,
+        "D4:wrapper:t14": 0.18140686834858546,
+        "D4:wrapper:t15": -0.04790203393983543,
+        "D4:wrapper:t16": 0.12901604896288205,
+        "D4:wrapper:t17": 0.10366599403919935,
+        "D4:wrapper:t18": 0.31230585661111987,
+        "D4:wrapper:t19": 0.040933119842156224,
+        "D4:wrapper:t20": 0.12862749015004182,
+        "D4:wrapper:t21": 0.2367796454553277,
+        "D4:wrapper:t22": 0.17102081665205543,
+        "D4:wrapper:t23": 0.22885192989653705
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    "F4/seed101_seed211/span/group/combined_minus_semantic": {
+      "effect": 0.0,
+      "pvalue": 1.0,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": null,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.0,
+        "D4:wrapper:t01": 0.0,
+        "D4:wrapper:t02": 0.0,
+        "D4:wrapper:t03": 0.0,
+        "D4:wrapper:t04": 0.0,
+        "D4:wrapper:t05": 0.0,
+        "D4:wrapper:t06": 0.0,
+        "D4:wrapper:t07": 0.0,
+        "D4:wrapper:t08": 0.0,
+        "D4:wrapper:t09": 0.0,
+        "D4:wrapper:t10": 0.0,
+        "D4:wrapper:t11": 0.0,
+        "D4:wrapper:t12": 0.0,
+        "D4:wrapper:t13": 0.0,
+        "D4:wrapper:t14": 0.0,
+        "D4:wrapper:t15": 0.0,
+        "D4:wrapper:t16": 0.0,
+        "D4:wrapper:t17": 0.0,
+        "D4:wrapper:t18": 0.0,
+        "D4:wrapper:t19": 0.0,
+        "D4:wrapper:t20": 0.0,
+        "D4:wrapper:t21": 0.0,
+        "D4:wrapper:t22": 0.0,
+        "D4:wrapper:t23": 0.0
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    "F4/seed101_seed307/answer/single/combined_minus_semantic": {
+      "effect": 0.09728760680742417,
+      "pvalue": 9.99950002499875e-05,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 1.0307645469076276,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.09728760680742417,
+        "median": 0.0978024072821431,
+        "std": 0.09438392802633193,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.06170868160504261,
+          0.13412845969341736
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.032799434460278845,
+        "D4:wrapper:t01": 0.08767319294903717,
+        "D4:wrapper:t02": 0.3306455330979463,
+        "D4:wrapper:t03": 0.061050697526341804,
+        "D4:wrapper:t04": 0.2513061973364014,
+        "D4:wrapper:t05": 0.10653685437403346,
+        "D4:wrapper:t06": 0.08906796019025275,
+        "D4:wrapper:t07": 0.13527763911487398,
+        "D4:wrapper:t08": 0.0694742798246524,
+        "D4:wrapper:t09": 0.11973245655308298,
+        "D4:wrapper:t10": 0.155862982953587,
+        "D4:wrapper:t11": 0.12057107989366121,
+        "D4:wrapper:t12": -0.06553717784974125,
+        "D4:wrapper:t13": 0.029678786737189933,
+        "D4:wrapper:t14": 0.04590372148757349,
+        "D4:wrapper:t15": 0.042209867082233565,
+        "D4:wrapper:t16": -0.015132955824001645,
+        "D4:wrapper:t17": 0.14486565456927603,
+        "D4:wrapper:t18": -0.082514978233052,
+        "D4:wrapper:t19": 0.01737229124836956,
+        "D4:wrapper:t20": 0.15892902805902567,
+        "D4:wrapper:t21": 0.1538724187729224,
+        "D4:wrapper:t22": 0.11983500346946864,
+        "D4:wrapper:t23": 0.22542259558476632
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    "F4/seed101_seed307/span/single/combined_minus_semantic": {
+      "effect": 0.0,
+      "pvalue": 1.0,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": null,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.0,
+        "D4:wrapper:t01": 0.0,
+        "D4:wrapper:t02": 0.0,
+        "D4:wrapper:t03": 0.0,
+        "D4:wrapper:t04": 0.0,
+        "D4:wrapper:t05": 0.0,
+        "D4:wrapper:t06": 0.0,
+        "D4:wrapper:t07": 0.0,
+        "D4:wrapper:t08": 0.0,
+        "D4:wrapper:t09": 0.0,
+        "D4:wrapper:t10": 0.0,
+        "D4:wrapper:t11": 0.0,
+        "D4:wrapper:t12": 0.0,
+        "D4:wrapper:t13": 0.0,
+        "D4:wrapper:t14": 0.0,
+        "D4:wrapper:t15": 0.0,
+        "D4:wrapper:t16": 0.0,
+        "D4:wrapper:t17": 0.0,
+        "D4:wrapper:t18": 0.0,
+        "D4:wrapper:t19": 0.0,
+        "D4:wrapper:t20": 0.0,
+        "D4:wrapper:t21": 0.0,
+        "D4:wrapper:t22": 0.0,
+        "D4:wrapper:t23": 0.0
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    "F4/seed101_seed307/answer/group/combined_minus_semantic": {
+      "effect": 0.12350321604451264,
+      "pvalue": 4.999750012499375e-05,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 1.2279308552092958,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.12350321604451264,
+        "median": 0.13587664426566953,
+        "std": 0.10057831474840008,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.08557377822679779,
+          0.16238689568916445
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.08009883629608343,
+        "D4:wrapper:t01": 0.3320257821258329,
+        "D4:wrapper:t02": 0.2291225614290956,
+        "D4:wrapper:t03": 0.07495919497136326,
+        "D4:wrapper:t04": 0.10577701019132638,
+        "D4:wrapper:t05": 0.15440423688089971,
+        "D4:wrapper:t06": 0.005267586768293697,
+        "D4:wrapper:t07": 0.15730442974584097,
+        "D4:wrapper:t08": 0.210052346389615,
+        "D4:wrapper:t09": -0.014968425241041833,
+        "D4:wrapper:t10": 0.17382753906928772,
+        "D4:wrapper:t11": -0.002899526209600517,
+        "D4:wrapper:t12": 0.13072201878763823,
+        "D4:wrapper:t13": 0.012904758887358748,
+        "D4:wrapper:t14": 0.18301640080455103,
+        "D4:wrapper:t15": 0.09773929686802996,
+        "D4:wrapper:t16": 0.2991278106985562,
+        "D4:wrapper:t17": 0.004560195688519564,
+        "D4:wrapper:t18": -0.0037125032052912343,
+        "D4:wrapper:t19": 0.23900051151245194,
+        "D4:wrapper:t20": 0.002286304467709825,
+        "D4:wrapper:t21": 0.15803053353226293,
+        "D4:wrapper:t22": 0.1410312697437008,
+        "D4:wrapper:t23": 0.1943990148658194
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    "F4/seed101_seed307/span/group/combined_minus_semantic": {
+      "effect": -0.007628889450313754,
+      "pvalue": 0.6434678266086695,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": -0.09441561215717156,
+      "status": "OK",
+      "bootstrap": {
+        "mean": -0.007628889450313754,
+        "median": -0.015551795924995289,
+        "std": 0.08080114375167226,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          -0.03873310665844897,
+          0.025066861887975897
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": -0.1076304550959199,
+        "D4:wrapper:t01": -0.11815440988148115,
+        "D4:wrapper:t02": -0.03531604206145324,
+        "D4:wrapper:t03": -0.08649686128452047,
+        "D4:wrapper:t04": 0.01293616934915004,
+        "D4:wrapper:t05": 0.01884796747582581,
+        "D4:wrapper:t06": 0.011896765580519768,
+        "D4:wrapper:t07": 0.10335161930604465,
+        "D4:wrapper:t08": -0.09396798179427152,
+        "D4:wrapper:t09": -0.033267684660977834,
+        "D4:wrapper:t10": -9.146481832138752e-05,
+        "D4:wrapper:t11": -0.013599842384700273,
+        "D4:wrapper:t12": 0.09981522888538617,
+        "D4:wrapper:t13": -0.11146377318839058,
+        "D4:wrapper:t14": 0.1394526032503472,
+        "D4:wrapper:t15": -0.05216281453193881,
+        "D4:wrapper:t16": -0.017503749465290305,
+        "D4:wrapper:t17": 0.07994378734870722,
+        "D4:wrapper:t18": 0.11434446446523788,
+        "D4:wrapper:t19": -0.041101583680359655,
+        "D4:wrapper:t20": 0.1036835032383255,
+        "D4:wrapper:t21": -0.05153239917053817,
+        "D4:wrapper:t22": -0.1262799313765361,
+        "D4:wrapper:t23": 0.021203537687625066
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    "F4/seed101_seed401/answer/single/combined_minus_semantic": {
+      "effect": 0.025496565606532347,
+      "pvalue": 0.007949602519874007,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.6058281641468812,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.025496565606532347,
+        "median": 0.028636163963238523,
+        "std": 0.0420854742572694,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.009369929588498036,
+          0.04170004262573319
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": -0.011641143038998172,
+        "D4:wrapper:t01": 0.07774096250045559,
+        "D4:wrapper:t02": 0.0276612429362783,
+        "D4:wrapper:t03": -0.011330331408727586,
+        "D4:wrapper:t04": 0.002363993365956352,
+        "D4:wrapper:t05": -0.013359617824453898,
+        "D4:wrapper:t06": 0.0902944053333195,
+        "D4:wrapper:t07": 0.020407053520413856,
+        "D4:wrapper:t08": 0.04845086898601413,
+        "D4:wrapper:t09": 0.029611084990198745,
+        "D4:wrapper:t10": 0.021682727389491493,
+        "D4:wrapper:t11": 0.08002768784028058,
+        "D4:wrapper:t12": -0.01347487460590347,
+        "D4:wrapper:t13": 0.024873996263445972,
+        "D4:wrapper:t14": 0.035309859942735396,
+        "D4:wrapper:t15": -0.07886439533371682,
+        "D4:wrapper:t16": -0.020306623686421242,
+        "D4:wrapper:t17": 0.03205610008240402,
+        "D4:wrapper:t18": -0.019680298227394616,
+        "D4:wrapper:t19": 0.03622153517191292,
+        "D4:wrapper:t20": 0.04756521277037438,
+        "D4:wrapper:t21": 0.03405344954675533,
+        "D4:wrapper:t22": 0.066761395004345,
+        "D4:wrapper:t23": 0.10549328303801053
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    "F4/seed101_seed401/span/single/combined_minus_semantic": {
+      "effect": 0.026417598070231713,
+      "pvalue": 0.004449777511124443,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.6514724918755885,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.026417598070231713,
+        "median": 0.023588526494489476,
+        "std": 0.040550596379250764,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.0108519858921121,
+          0.0420245155944491
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.0782720558334777,
+        "D4:wrapper:t01": 0.004780802840521944,
+        "D4:wrapper:t02": 0.027050502190512415,
+        "D4:wrapper:t03": 0.02327285754197289,
+        "D4:wrapper:t04": -0.024082518245347517,
+        "D4:wrapper:t05": 0.0892487769826239,
+        "D4:wrapper:t06": -0.0061200826921317675,
+        "D4:wrapper:t07": 0.058560155662881544,
+        "D4:wrapper:t08": -0.0025820336131261515,
+        "D4:wrapper:t09": 0.0021753038689768175,
+        "D4:wrapper:t10": 0.037420917295748,
+        "D4:wrapper:t11": 0.02831309407942719,
+        "D4:wrapper:t12": 0.06959492407055433,
+        "D4:wrapper:t13": 0.023904195447006057,
+        "D4:wrapper:t14": 0.007744581383586198,
+        "D4:wrapper:t15": 0.018183211233834026,
+        "D4:wrapper:t16": 0.06820442294339445,
+        "D4:wrapper:t17": 0.07367790029189228,
+        "D4:wrapper:t18": -0.009013378752798694,
+        "D4:wrapper:t19": 0.0029867123167034437,
+        "D4:wrapper:t20": 0.09181441389842232,
+        "D4:wrapper:t21": -0.037995822733745216,
+        "D4:wrapper:t22": 0.06361301842831235,
+        "D4:wrapper:t23": -0.05500165658713743
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    "F4/seed101_seed401/answer/group/combined_minus_semantic": {
+      "effect": 0.019639220259739274,
+      "pvalue": 0.2893355332233388,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.21998892335993447,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.019639220259739274,
+        "median": 0.02673332395750585,
+        "std": 0.08927367778243361,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          -0.01706517646902225,
+          0.053817766476029524
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.08316011554935954,
+        "D4:wrapper:t01": 0.022199460344868083,
+        "D4:wrapper:t02": 0.060123101770774234,
+        "D4:wrapper:t03": -0.043667289287553604,
+        "D4:wrapper:t04": -0.17148271838873683,
+        "D4:wrapper:t05": 0.1111592008250987,
+        "D4:wrapper:t06": 0.027566726278102652,
+        "D4:wrapper:t07": -0.1649809328650006,
+        "D4:wrapper:t08": -0.03128562450837763,
+        "D4:wrapper:t09": 0.053211365319060205,
+        "D4:wrapper:t10": 0.014327512296494774,
+        "D4:wrapper:t11": -0.029849807255109002,
+        "D4:wrapper:t12": -0.013169780378210053,
+        "D4:wrapper:t13": 0.0988691286870548,
+        "D4:wrapper:t14": -0.047660780623955325,
+        "D4:wrapper:t15": -0.04409975703747877,
+        "D4:wrapper:t16": 0.04903477304203936,
+        "D4:wrapper:t17": 0.17243914026176863,
+        "D4:wrapper:t18": 0.025899921636909046,
+        "D4:wrapper:t19": 0.05624885356809127,
+        "D4:wrapper:t20": 0.12133450424030118,
+        "D4:wrapper:t21": 0.13192025379002525,
+        "D4:wrapper:t22": 0.10148832520744386,
+        "D4:wrapper:t23": -0.11144440623922715
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    "F4/seed101_seed401/span/group/combined_minus_semantic": {
+      "effect": 0.0,
+      "pvalue": 1.0,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": null,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.0,
+        "D4:wrapper:t01": 0.0,
+        "D4:wrapper:t02": 0.0,
+        "D4:wrapper:t03": 0.0,
+        "D4:wrapper:t04": 0.0,
+        "D4:wrapper:t05": 0.0,
+        "D4:wrapper:t06": 0.0,
+        "D4:wrapper:t07": 0.0,
+        "D4:wrapper:t08": 0.0,
+        "D4:wrapper:t09": 0.0,
+        "D4:wrapper:t10": 0.0,
+        "D4:wrapper:t11": 0.0,
+        "D4:wrapper:t12": 0.0,
+        "D4:wrapper:t13": 0.0,
+        "D4:wrapper:t14": 0.0,
+        "D4:wrapper:t15": 0.0,
+        "D4:wrapper:t16": 0.0,
+        "D4:wrapper:t17": 0.0,
+        "D4:wrapper:t18": 0.0,
+        "D4:wrapper:t19": 0.0,
+        "D4:wrapper:t20": 0.0,
+        "D4:wrapper:t21": 0.0,
+        "D4:wrapper:t22": 0.0,
+        "D4:wrapper:t23": 0.0
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    "F4/seed101_seed503/answer/single/combined_minus_semantic": {
+      "effect": 0.0613578542411787,
+      "pvalue": 0.0010999450027498626,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.811410393738943,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.0613578542411787,
+        "median": 0.06750550613665326,
+        "std": 0.07561876790663777,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.030286634626470094,
+          0.09021034446424883
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.055686123529576054,
+        "D4:wrapper:t01": -0.0327051272549152,
+        "D4:wrapper:t02": 0.0643882731418917,
+        "D4:wrapper:t03": 0.15384365891228136,
+        "D4:wrapper:t04": 0.07062273913141484,
+        "D4:wrapper:t05": -0.06354754724001645,
+        "D4:wrapper:t06": 0.1578040528260058,
+        "D4:wrapper:t07": 0.022549935969186655,
+        "D4:wrapper:t08": 0.10962541977864994,
+        "D4:wrapper:t09": 0.10894822791101316,
+        "D4:wrapper:t10": 0.02593705933391011,
+        "D4:wrapper:t11": -0.006887670991661958,
+        "D4:wrapper:t12": 0.006784987448308548,
+        "D4:wrapper:t13": 0.14852781581358626,
+        "D4:wrapper:t14": 0.09518652346709891,
+        "D4:wrapper:t15": -0.058391582599989264,
+        "D4:wrapper:t16": 0.1193862197904068,
+        "D4:wrapper:t17": 0.19883715121820825,
+        "D4:wrapper:t18": 0.01088171800742651,
+        "D4:wrapper:t19": 0.10206650833565392,
+        "D4:wrapper:t20": -0.04134984488584352,
+        "D4:wrapper:t21": -0.014333491189751486,
+        "D4:wrapper:t22": 0.09168212745559474,
+        "D4:wrapper:t23": 0.14704522388025307
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "syntax"
+      ]
+    },
+    "F4/seed101_seed503/span/single/combined_minus_semantic": {
+      "effect": 0.004617739654648466,
+      "pvalue": 0.7338133093345333,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.06962744538909003,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.004617739654648466,
+        "median": 0.0031801550386656163,
+        "std": 0.06632068186393669,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          -0.020914538292402824,
+          0.03138856048831241
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": -0.08903726664693987,
+        "D4:wrapper:t01": 0.06330971391791046,
+        "D4:wrapper:t02": -0.026143260795641825,
+        "D4:wrapper:t03": -0.10521288183960867,
+        "D4:wrapper:t04": -0.046689381815129376,
+        "D4:wrapper:t05": 0.007626038347525274,
+        "D4:wrapper:t06": -0.043926813747590936,
+        "D4:wrapper:t07": 0.07107614916771217,
+        "D4:wrapper:t08": 0.05426228365179062,
+        "D4:wrapper:t09": -0.054670622800594135,
+        "D4:wrapper:t10": -0.07635966831984697,
+        "D4:wrapper:t11": -0.05293838116181496,
+        "D4:wrapper:t12": 0.018360398932370903,
+        "D4:wrapper:t13": 0.13219285272475545,
+        "D4:wrapper:t14": 0.07860451542837088,
+        "D4:wrapper:t15": 0.060927057992738454,
+        "D4:wrapper:t16": -0.03671298399555896,
+        "D4:wrapper:t17": -0.06534745176990399,
+        "D4:wrapper:t18": -0.0012657282701940414,
+        "D4:wrapper:t19": 0.05229419478728759,
+        "D4:wrapper:t20": 0.05975296577868948,
+        "D4:wrapper:t21": -0.026199087639626154,
+        "D4:wrapper:t22": 0.11596279566820955,
+        "D4:wrapper:t23": 0.020960314116652255
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "syntax"
+      ]
+    },
+    "F4/seed101_seed503/answer/group/combined_minus_semantic": {
+      "effect": 0.0,
+      "pvalue": 1.0,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": null,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.0,
+        "D4:wrapper:t01": 0.0,
+        "D4:wrapper:t02": 0.0,
+        "D4:wrapper:t03": 0.0,
+        "D4:wrapper:t04": 0.0,
+        "D4:wrapper:t05": 0.0,
+        "D4:wrapper:t06": 0.0,
+        "D4:wrapper:t07": 0.0,
+        "D4:wrapper:t08": 0.0,
+        "D4:wrapper:t09": 0.0,
+        "D4:wrapper:t10": 0.0,
+        "D4:wrapper:t11": 0.0,
+        "D4:wrapper:t12": 0.0,
+        "D4:wrapper:t13": 0.0,
+        "D4:wrapper:t14": 0.0,
+        "D4:wrapper:t15": 0.0,
+        "D4:wrapper:t16": 0.0,
+        "D4:wrapper:t17": 0.0,
+        "D4:wrapper:t18": 0.0,
+        "D4:wrapper:t19": 0.0,
+        "D4:wrapper:t20": 0.0,
+        "D4:wrapper:t21": 0.0,
+        "D4:wrapper:t22": 0.0,
+        "D4:wrapper:t23": 0.0
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "syntax"
+      ]
+    },
+    "F4/seed101_seed503/span/group/combined_minus_semantic": {
+      "effect": -0.016740211298394845,
+      "pvalue": 0.5217739113044347,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": -0.131494252477405,
+      "status": "OK",
+      "bootstrap": {
+        "mean": -0.016740211298394845,
+        "median": -0.031822441238924845,
+        "std": 0.12730755134161745,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          -0.06410350271317475,
+          0.035586585153690446
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": -0.22640020369865488,
+        "D4:wrapper:t01": 0.18473559067582307,
+        "D4:wrapper:t02": -0.029616366669651284,
+        "D4:wrapper:t03": -0.021412915980422775,
+        "D4:wrapper:t04": 0.05377584129014127,
+        "D4:wrapper:t05": -0.10126568877402947,
+        "D4:wrapper:t06": -0.12529297310920598,
+        "D4:wrapper:t07": -0.06284452673641885,
+        "D4:wrapper:t08": 0.016983006486755044,
+        "D4:wrapper:t09": -0.1445985606884213,
+        "D4:wrapper:t10": 0.03247522803191137,
+        "D4:wrapper:t11": -0.0721354896926096,
+        "D4:wrapper:t12": -0.011290089528714506,
+        "D4:wrapper:t13": 0.1455386083838122,
+        "D4:wrapper:t14": -0.07555655465538325,
+        "D4:wrapper:t15": 0.007503953901791344,
+        "D4:wrapper:t16": -0.0340285158081984,
+        "D4:wrapper:t17": -0.2530215774851844,
+        "D4:wrapper:t18": 0.04256204778999936,
+        "D4:wrapper:t19": 0.2777385713620836,
+        "D4:wrapper:t20": -0.10324303611144431,
+        "D4:wrapper:t21": -0.06113747563364995,
+        "D4:wrapper:t22": 0.21037827327561093,
+        "D4:wrapper:t23": -0.051612217787415475
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "syntax"
+      ]
+    },
+    "F4/seed211_seed307/answer/single/combined_minus_semantic": {
+      "effect": 0.05232439223695318,
+      "pvalue": 0.00014999250037498125,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.9564107133135475,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.05232439223695318,
+        "median": 0.04116532488914895,
+        "std": 0.05470912392404294,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.031516117793559915,
+          0.07439173738053723
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": -0.0004046383440351013,
+        "D4:wrapper:t01": 0.060572884542583756,
+        "D4:wrapper:t02": 0.1137447632279645,
+        "D4:wrapper:t03": -0.033060930888307166,
+        "D4:wrapper:t04": -0.026510369891729793,
+        "D4:wrapper:t05": 0.09266296355410437,
+        "D4:wrapper:t06": 0.020192441889096885,
+        "D4:wrapper:t07": 0.027840458797749462,
+        "D4:wrapper:t08": 0.12681331833296894,
+        "D4:wrapper:t09": 0.002229415252518463,
+        "D4:wrapper:t10": 0.08396908343797796,
+        "D4:wrapper:t11": 0.05642590428772213,
+        "D4:wrapper:t12": 0.00319285785908463,
+        "D4:wrapper:t13": 0.031568166122409834,
+        "D4:wrapper:t14": 0.1650890501738636,
+        "D4:wrapper:t15": 3.4626482792107782e-06,
+        "D4:wrapper:t16": 0.022614322077342888,
+        "D4:wrapper:t17": 0.15690570222377825,
+        "D4:wrapper:t18": 0.06254475307536081,
+        "D4:wrapper:t19": 0.07030084184778514,
+        "D4:wrapper:t20": 0.0184890375083112,
+        "D4:wrapper:t21": 0.034432233576464244,
+        "D4:wrapper:t22": 0.11827127617374833,
+        "D4:wrapper:t23": 0.04789841620183366
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    "F4/seed211_seed307/span/single/combined_minus_semantic": {
+      "effect": 0.018381937464528354,
+      "pvalue": 0.2527873606319684,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.23975567459482774,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.018381937464528354,
+        "median": 0.03557526701760426,
+        "std": 0.07666945733648511,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          -0.011731175363921213,
+          0.04840924241868126
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.039551932376335114,
+        "D4:wrapper:t01": 0.05104847657483687,
+        "D4:wrapper:t02": 0.1194966774728901,
+        "D4:wrapper:t03": -0.015581179381966584,
+        "D4:wrapper:t04": -0.06632473785753366,
+        "D4:wrapper:t05": -0.0012710117128741927,
+        "D4:wrapper:t06": 0.055113795421939324,
+        "D4:wrapper:t07": -0.04278331481808498,
+        "D4:wrapper:t08": 0.11657985103336474,
+        "D4:wrapper:t09": -0.04138352986608666,
+        "D4:wrapper:t10": 0.07905008374408326,
+        "D4:wrapper:t11": -0.04419334655074331,
+        "D4:wrapper:t12": -0.15330118448461136,
+        "D4:wrapper:t13": 0.10246034017031298,
+        "D4:wrapper:t14": 0.046016029949508305,
+        "D4:wrapper:t15": 0.12546461894407132,
+        "D4:wrapper:t16": 0.044024129110300486,
+        "D4:wrapper:t17": -0.04360992035804949,
+        "D4:wrapper:t18": -0.06138135354595266,
+        "D4:wrapper:t19": 0.031598601658873404,
+        "D4:wrapper:t20": -0.054507666866642615,
+        "D4:wrapper:t21": 0.1387754912001787,
+        "D4:wrapper:t22": 0.0752978170097976,
+        "D4:wrapper:t23": -0.05897410007526624
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    "F4/seed211_seed307/answer/group/combined_minus_semantic": {
+      "effect": 0.035130071934651876,
+      "pvalue": 0.17904104794760262,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.28113615114933876,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.035130071934651876,
+        "median": 0.04075430707246799,
+        "std": 0.1249575047215855,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          -0.013003369207854231,
+          0.0825059015440452
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.004922774452038731,
+        "D4:wrapper:t01": 0.22482782276945476,
+        "D4:wrapper:t02": 0.06000984036319347,
+        "D4:wrapper:t03": 0.06445947368257411,
+        "D4:wrapper:t04": 0.07919170099228748,
+        "D4:wrapper:t05": -0.11761052514335281,
+        "D4:wrapper:t06": 0.2526468987510953,
+        "D4:wrapper:t07": 0.04054643878887074,
+        "D4:wrapper:t08": 0.13057389989225235,
+        "D4:wrapper:t09": 0.021328820749896595,
+        "D4:wrapper:t10": 0.2143714888786855,
+        "D4:wrapper:t11": 0.047827636387898914,
+        "D4:wrapper:t12": 0.04096217535606525,
+        "D4:wrapper:t13": 0.017308337931964214,
+        "D4:wrapper:t14": 0.11849418874450184,
+        "D4:wrapper:t15": -0.0872046191939729,
+        "D4:wrapper:t16": -0.03585607084095108,
+        "D4:wrapper:t17": -0.07694008681297324,
+        "D4:wrapper:t18": -0.021564308316055422,
+        "D4:wrapper:t19": -0.2175666077413127,
+        "D4:wrapper:t20": 0.16299126162537436,
+        "D4:wrapper:t21": -0.045940797225741806,
+        "D4:wrapper:t22": 0.17133808556462732,
+        "D4:wrapper:t23": -0.20599610322477607
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    "F4/seed211_seed307/span/group/combined_minus_semantic": {
+      "effect": 0.0028773072794927696,
+      "pvalue": 0.9086545672716364,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.02375024891820083,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.0028773072794927696,
+        "median": -0.0038203135244300017,
+        "std": 0.12114851045993738,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          -0.04359836574249935,
+          0.05169658660099238
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": -0.10562838470002944,
+        "D4:wrapper:t01": -0.013591770673280108,
+        "D4:wrapper:t02": -0.05725920530962545,
+        "D4:wrapper:t03": 0.06981519093039266,
+        "D4:wrapper:t04": -0.06652627049253489,
+        "D4:wrapper:t05": -0.0689469714949596,
+        "D4:wrapper:t06": -0.16037629739800593,
+        "D4:wrapper:t07": 0.005951143624420105,
+        "D4:wrapper:t08": 0.20237082077309904,
+        "D4:wrapper:t09": -0.12404120887570733,
+        "D4:wrapper:t10": 0.21015153368837214,
+        "D4:wrapper:t11": -0.19975332396854656,
+        "D4:wrapper:t12": -0.06400929566125657,
+        "D4:wrapper:t13": 0.19324943010810863,
+        "D4:wrapper:t14": 0.0745384286184911,
+        "D4:wrapper:t15": 0.06677183495849244,
+        "D4:wrapper:t16": 0.01953509059693942,
+        "D4:wrapper:t17": 0.10020470033478565,
+        "D4:wrapper:t18": -0.12049054480254413,
+        "D4:wrapper:t19": -0.07336184758391116,
+        "D4:wrapper:t20": 0.2282837466837388,
+        "D4:wrapper:t21": -0.08945759879909103,
+        "D4:wrapper:t22": 0.011558664615261671,
+        "D4:wrapper:t23": 0.03006750953521705
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    "F4/seed211_seed401/answer/single/combined_minus_semantic": {
+      "effect": 0.0077733272621148645,
+      "pvalue": 0.5711214439278036,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.11545404004026008,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.0077733272621148645,
+        "median": 0.019691397743068103,
+        "std": 0.06732832614089745,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          -0.018429049304425165,
+          0.03312452215150909
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": -0.06956326292867218,
+        "D4:wrapper:t01": 0.018602959731784968,
+        "D4:wrapper:t02": 0.044313474158162246,
+        "D4:wrapper:t03": 0.009708628580606997,
+        "D4:wrapper:t04": -0.08726525831690614,
+        "D4:wrapper:t05": 0.07313803486106296,
+        "D4:wrapper:t06": 0.04893936039372987,
+        "D4:wrapper:t07": -0.10390737144762688,
+        "D4:wrapper:t08": 0.08205658539252686,
+        "D4:wrapper:t09": 0.020779835754351238,
+        "D4:wrapper:t10": 0.10767256266758517,
+        "D4:wrapper:t11": -0.052234555555505484,
+        "D4:wrapper:t12": 0.09901104033977065,
+        "D4:wrapper:t13": -0.03650271970846522,
+        "D4:wrapper:t14": -0.031837640465373046,
+        "D4:wrapper:t15": -0.10077569666044918,
+        "D4:wrapper:t16": -0.046206606399304316,
+        "D4:wrapper:t17": -0.08382549448773212,
+        "D4:wrapper:t18": 0.02928375212129751,
+        "D4:wrapper:t19": 0.036553185316059014,
+        "D4:wrapper:t20": 0.016530549787601448,
+        "D4:wrapper:t21": 0.09092415416768965,
+        "D4:wrapper:t22": 0.08592077423055693,
+        "D4:wrapper:t23": 0.035243562758005845
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    "F4/seed211_seed401/span/single/combined_minus_semantic": {
+      "effect": 0.0,
+      "pvalue": 1.0,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": null,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.0,
+        "D4:wrapper:t01": 0.0,
+        "D4:wrapper:t02": 0.0,
+        "D4:wrapper:t03": 0.0,
+        "D4:wrapper:t04": 0.0,
+        "D4:wrapper:t05": 0.0,
+        "D4:wrapper:t06": 0.0,
+        "D4:wrapper:t07": 0.0,
+        "D4:wrapper:t08": 0.0,
+        "D4:wrapper:t09": 0.0,
+        "D4:wrapper:t10": 0.0,
+        "D4:wrapper:t11": 0.0,
+        "D4:wrapper:t12": 0.0,
+        "D4:wrapper:t13": 0.0,
+        "D4:wrapper:t14": 0.0,
+        "D4:wrapper:t15": 0.0,
+        "D4:wrapper:t16": 0.0,
+        "D4:wrapper:t17": 0.0,
+        "D4:wrapper:t18": 0.0,
+        "D4:wrapper:t19": 0.0,
+        "D4:wrapper:t20": 0.0,
+        "D4:wrapper:t21": 0.0,
+        "D4:wrapper:t22": 0.0,
+        "D4:wrapper:t23": 0.0
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    "F4/seed211_seed401/answer/group/combined_minus_semantic": {
+      "effect": 0.16449303907813415,
+      "pvalue": 4.999750012499375e-05,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 1.619398577651817,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.16449303907813415,
+        "median": 0.1739182472549948,
+        "std": 0.10157662316627118,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.12596841686226168,
+          0.20607222484573443
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.006859826462100281,
+        "D4:wrapper:t01": 0.21846092331619346,
+        "D4:wrapper:t02": 0.07345140701244926,
+        "D4:wrapper:t03": 0.24487364390630098,
+        "D4:wrapper:t04": 0.08770497630000458,
+        "D4:wrapper:t05": 0.3901786082267756,
+        "D4:wrapper:t06": 0.18821320691741816,
+        "D4:wrapper:t07": 0.19267042058554973,
+        "D4:wrapper:t08": 0.03849939817620789,
+        "D4:wrapper:t09": 0.23873224320051872,
+        "D4:wrapper:t10": 0.233964711309211,
+        "D4:wrapper:t11": 0.05638549195615496,
+        "D4:wrapper:t12": 0.1072598346509131,
+        "D4:wrapper:t13": 0.15882415223465157,
+        "D4:wrapper:t14": 0.23212049841150467,
+        "D4:wrapper:t15": 0.15962328759257144,
+        "D4:wrapper:t16": 0.15760580320089496,
+        "D4:wrapper:t17": 0.2108462240540343,
+        "D4:wrapper:t18": 0.021058110134093158,
+        "D4:wrapper:t19": 0.07760266120375148,
+        "D4:wrapper:t20": 0.24261402887792372,
+        "D4:wrapper:t21": 0.2683059380075854,
+        "D4:wrapper:t22": 0.3185081289524817,
+        "D4:wrapper:t23": 0.02346941318592901
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    "F4/seed211_seed401/span/group/combined_minus_semantic": {
+      "effect": -0.009720009040419515,
+      "pvalue": 0.632518374081296,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": -0.09854892617756726,
+      "status": "OK",
+      "bootstrap": {
+        "mean": -0.009720009040419515,
+        "median": -0.014803709471105979,
+        "std": 0.09863130342897725,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          -0.04987170423945166,
+          0.027954683277665298
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.15474612158804452,
+        "D4:wrapper:t01": -0.18319216285903545,
+        "D4:wrapper:t02": -0.017511579509316255,
+        "D4:wrapper:t03": -0.1896572086547953,
+        "D4:wrapper:t04": 0.0905339727662113,
+        "D4:wrapper:t05": 0.04426735971853275,
+        "D4:wrapper:t06": -0.012095839432895703,
+        "D4:wrapper:t07": -0.1483368270048782,
+        "D4:wrapper:t08": -0.049514180096085054,
+        "D4:wrapper:t09": 0.064732422712975,
+        "D4:wrapper:t10": -0.09522675802661972,
+        "D4:wrapper:t11": 0.03775572499678018,
+        "D4:wrapper:t12": 0.14262604940988977,
+        "D4:wrapper:t13": -0.0005085144662869551,
+        "D4:wrapper:t14": 0.11098761542573916,
+        "D4:wrapper:t15": 0.03759833049687738,
+        "D4:wrapper:t16": -0.10494810471262353,
+        "D4:wrapper:t17": -0.05386553876609999,
+        "D4:wrapper:t18": -0.13028623082527976,
+        "D4:wrapper:t19": 0.09802200813872534,
+        "D4:wrapper:t20": -0.02797837940290414,
+        "D4:wrapper:t21": -0.026170742473684266,
+        "D4:wrapper:t22": -0.044391955808785695,
+        "D4:wrapper:t23": 0.06913419981544625
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    "F4/seed211_seed503/answer/single/combined_minus_semantic": {
+      "effect": 0.10232452028957052,
+      "pvalue": 4.999750012499375e-05,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 1.4210114499981203,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.10232452028957052,
+        "median": 0.0975663394907468,
+        "std": 0.07200823067942617,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.07422436628080926,
+          0.12999841328987724
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.17261353407650615,
+        "D4:wrapper:t01": -0.016311045335816822,
+        "D4:wrapper:t02": 0.19995591580787359,
+        "D4:wrapper:t03": 0.03401568344677272,
+        "D4:wrapper:t04": 0.10760536041766254,
+        "D4:wrapper:t05": -0.037463908377523114,
+        "D4:wrapper:t06": 0.11177646477202871,
+        "D4:wrapper:t07": 0.15097797937918284,
+        "D4:wrapper:t08": 0.08843075557012373,
+        "D4:wrapper:t09": 0.0911979736580039,
+        "D4:wrapper:t10": 0.14792079424708493,
+        "D4:wrapper:t11": 0.10393470532348972,
+        "D4:wrapper:t12": 0.03409493395814597,
+        "D4:wrapper:t13": 0.029007607087343575,
+        "D4:wrapper:t14": 0.054184093579059935,
+        "D4:wrapper:t15": 0.07037323192353578,
+        "D4:wrapper:t16": 0.05843303303784596,
+        "D4:wrapper:t17": 0.23524333323368724,
+        "D4:wrapper:t18": 0.08158291520747134,
+        "D4:wrapper:t19": 0.15112238251956361,
+        "D4:wrapper:t20": 0.1411724034869291,
+        "D4:wrapper:t21": 0.044660831700579114,
+        "D4:wrapper:t22": 0.22966631993026512,
+        "D4:wrapper:t23": 0.17159318829987713
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "syntax"
+      ]
+    },
+    "F4/seed211_seed503/span/single/combined_minus_semantic": {
+      "effect": 0.03352361618169592,
+      "pvalue": 0.18959052047397632,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.2743155024183009,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.03352361618169592,
+        "median": 0.0127364626263675,
+        "std": 0.12220824519999642,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          -0.015850933471438487,
+          0.08335507304356482
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.04057614456330298,
+        "D4:wrapper:t01": -0.0350914425488158,
+        "D4:wrapper:t02": -0.08906034880427476,
+        "D4:wrapper:t03": 0.19340604622613258,
+        "D4:wrapper:t04": 0.18193217555098767,
+        "D4:wrapper:t05": -0.05778647524926854,
+        "D4:wrapper:t06": 0.011661780201283202,
+        "D4:wrapper:t07": -0.00605212864362327,
+        "D4:wrapper:t08": 0.0925417729673006,
+        "D4:wrapper:t09": 0.25150254276913736,
+        "D4:wrapper:t10": 0.14823331150188668,
+        "D4:wrapper:t11": 0.14973507129116642,
+        "D4:wrapper:t12": -0.15595977474519643,
+        "D4:wrapper:t13": 0.23788323851930593,
+        "D4:wrapper:t14": -0.10312419041318568,
+        "D4:wrapper:t15": -0.12117743776883197,
+        "D4:wrapper:t16": 0.011643506260430009,
+        "D4:wrapper:t17": 0.016542152350295783,
+        "D4:wrapper:t18": -0.13035147575722236,
+        "D4:wrapper:t19": 0.1126514197935266,
+        "D4:wrapper:t20": 0.013811145051451796,
+        "D4:wrapper:t21": 0.16025476049466625,
+        "D4:wrapper:t22": -0.06787818849418031,
+        "D4:wrapper:t23": -0.05132681675557255
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "syntax"
+      ]
+    },
+    "F4/seed211_seed503/answer/group/combined_minus_semantic": {
+      "effect": 0.0,
+      "pvalue": 1.0,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": null,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.0,
+        "D4:wrapper:t01": 0.0,
+        "D4:wrapper:t02": 0.0,
+        "D4:wrapper:t03": 0.0,
+        "D4:wrapper:t04": 0.0,
+        "D4:wrapper:t05": 0.0,
+        "D4:wrapper:t06": 0.0,
+        "D4:wrapper:t07": 0.0,
+        "D4:wrapper:t08": 0.0,
+        "D4:wrapper:t09": 0.0,
+        "D4:wrapper:t10": 0.0,
+        "D4:wrapper:t11": 0.0,
+        "D4:wrapper:t12": 0.0,
+        "D4:wrapper:t13": 0.0,
+        "D4:wrapper:t14": 0.0,
+        "D4:wrapper:t15": 0.0,
+        "D4:wrapper:t16": 0.0,
+        "D4:wrapper:t17": 0.0,
+        "D4:wrapper:t18": 0.0,
+        "D4:wrapper:t19": 0.0,
+        "D4:wrapper:t20": 0.0,
+        "D4:wrapper:t21": 0.0,
+        "D4:wrapper:t22": 0.0,
+        "D4:wrapper:t23": 0.0
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "syntax"
+      ]
+    },
+    "F4/seed211_seed503/span/group/combined_minus_semantic": {
+      "effect": 0.0,
+      "pvalue": 1.0,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": null,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.0,
+        "D4:wrapper:t01": 0.0,
+        "D4:wrapper:t02": 0.0,
+        "D4:wrapper:t03": 0.0,
+        "D4:wrapper:t04": 0.0,
+        "D4:wrapper:t05": 0.0,
+        "D4:wrapper:t06": 0.0,
+        "D4:wrapper:t07": 0.0,
+        "D4:wrapper:t08": 0.0,
+        "D4:wrapper:t09": 0.0,
+        "D4:wrapper:t10": 0.0,
+        "D4:wrapper:t11": 0.0,
+        "D4:wrapper:t12": 0.0,
+        "D4:wrapper:t13": 0.0,
+        "D4:wrapper:t14": 0.0,
+        "D4:wrapper:t15": 0.0,
+        "D4:wrapper:t16": 0.0,
+        "D4:wrapper:t17": 0.0,
+        "D4:wrapper:t18": 0.0,
+        "D4:wrapper:t19": 0.0,
+        "D4:wrapper:t20": 0.0,
+        "D4:wrapper:t21": 0.0,
+        "D4:wrapper:t22": 0.0,
+        "D4:wrapper:t23": 0.0
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "syntax"
+      ]
+    },
+    "F4/seed307_seed401/answer/single/combined_minus_semantic": {
+      "effect": 0.05444761296122907,
+      "pvalue": 0.00014999250037498125,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.969563255145462,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.05444761296122907,
+        "median": 0.05675562440729072,
+        "std": 0.05615684450939756,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.03320544765780176,
+          0.07651304778111052
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.055580330165204465,
+        "D4:wrapper:t01": 0.06177553354284129,
+        "D4:wrapper:t02": -0.012270615037140775,
+        "D4:wrapper:t03": 0.14668074203403478,
+        "D4:wrapper:t04": 0.0490839863707356,
+        "D4:wrapper:t05": -0.004944538757939692,
+        "D4:wrapper:t06": 0.06934565765608625,
+        "D4:wrapper:t07": 0.15299610403494077,
+        "D4:wrapper:t08": 0.14478323467488047,
+        "D4:wrapper:t09": 0.08722366454105758,
+        "D4:wrapper:t10": 0.06881954658486025,
+        "D4:wrapper:t11": -0.013093098183137013,
+        "D4:wrapper:t12": 0.006176461911357595,
+        "D4:wrapper:t13": 0.051951992433900494,
+        "D4:wrapper:t14": 0.1182206717431037,
+        "D4:wrapper:t15": 0.0954464151524743,
+        "D4:wrapper:t16": 0.009498340456751048,
+        "D4:wrapper:t17": 0.05793091864937698,
+        "D4:wrapper:t18": -0.041682234288015596,
+        "D4:wrapper:t19": 0.010873095396711403,
+        "D4:wrapper:t20": 0.11858065255924925,
+        "D4:wrapper:t21": 0.017658988847468693,
+        "D4:wrapper:t22": 0.07226908093101087,
+        "D4:wrapper:t23": -0.016162220350315143
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    "F4/seed307_seed401/span/single/combined_minus_semantic": {
+      "effect": 0.0,
+      "pvalue": 1.0,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": null,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.0,
+        "median": 0.0,
+        "std": 0.0,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.0,
+        "D4:wrapper:t01": 0.0,
+        "D4:wrapper:t02": 0.0,
+        "D4:wrapper:t03": 0.0,
+        "D4:wrapper:t04": 0.0,
+        "D4:wrapper:t05": 0.0,
+        "D4:wrapper:t06": 0.0,
+        "D4:wrapper:t07": 0.0,
+        "D4:wrapper:t08": 0.0,
+        "D4:wrapper:t09": 0.0,
+        "D4:wrapper:t10": 0.0,
+        "D4:wrapper:t11": 0.0,
+        "D4:wrapper:t12": 0.0,
+        "D4:wrapper:t13": 0.0,
+        "D4:wrapper:t14": 0.0,
+        "D4:wrapper:t15": 0.0,
+        "D4:wrapper:t16": 0.0,
+        "D4:wrapper:t17": 0.0,
+        "D4:wrapper:t18": 0.0,
+        "D4:wrapper:t19": 0.0,
+        "D4:wrapper:t20": 0.0,
+        "D4:wrapper:t21": 0.0,
+        "D4:wrapper:t22": 0.0,
+        "D4:wrapper:t23": 0.0
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    "F4/seed307_seed401/answer/group/combined_minus_semantic": {
+      "effect": 0.154620224063449,
+      "pvalue": 4.999750012499375e-05,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 1.45955798223527,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.154620224063449,
+        "median": 0.16672860280685023,
+        "std": 0.10593633548333084,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.11360647575460754,
+          0.19555150173145144
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.07904470308207742,
+        "D4:wrapper:t01": 0.11590159005270156,
+        "D4:wrapper:t02": -0.0100275553538853,
+        "D4:wrapper:t03": -0.011911223368133987,
+        "D4:wrapper:t04": 0.05897315208843039,
+        "D4:wrapper:t05": 0.032228089663699666,
+        "D4:wrapper:t06": 0.3044529018853603,
+        "D4:wrapper:t07": 0.3112054505356908,
+        "D4:wrapper:t08": 0.1772463008443174,
+        "D4:wrapper:t09": 0.22281216965904008,
+        "D4:wrapper:t10": 0.2939145326811662,
+        "D4:wrapper:t11": 0.1802849069225769,
+        "D4:wrapper:t12": 0.2623672507181058,
+        "D4:wrapper:t13": 0.19967053075654662,
+        "D4:wrapper:t14": 0.09694788786930003,
+        "D4:wrapper:t15": 0.19113462714910961,
+        "D4:wrapper:t16": 0.18268678252724238,
+        "D4:wrapper:t17": 0.10615820849511667,
+        "D4:wrapper:t18": 0.0028406318271831654,
+        "D4:wrapper:t19": 0.20014370235458656,
+        "D4:wrapper:t20": 0.15621090476938307,
+        "D4:wrapper:t21": 0.13065646279398008,
+        "D4:wrapper:t22": 0.3649328885404841,
+        "D4:wrapper:t23": 0.06301048102869633
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    "F4/seed307_seed401/span/group/combined_minus_semantic": {
+      "effect": -0.01166859153252151,
+      "pvalue": 0.37543122843857807,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": -0.18780833372773698,
+      "status": "OK",
+      "bootstrap": {
+        "mean": -0.01166859153252151,
+        "median": -0.015128621059176891,
+        "std": 0.06213031818618495,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          -0.03694930589134141,
+          0.012149187239807952
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.06494031434611104,
+        "D4:wrapper:t01": -0.01904026212646183,
+        "D4:wrapper:t02": 0.08123787288188714,
+        "D4:wrapper:t03": -0.03861375329817389,
+        "D4:wrapper:t04": -0.003118257528532682,
+        "D4:wrapper:t05": -0.006386046388599888,
+        "D4:wrapper:t06": -0.04283600018720591,
+        "D4:wrapper:t07": -0.04426894552598301,
+        "D4:wrapper:t08": 0.10801609430271591,
+        "D4:wrapper:t09": 0.03778287119972049,
+        "D4:wrapper:t10": -0.029364817524560258,
+        "D4:wrapper:t11": 0.024112175424645502,
+        "D4:wrapper:t12": -0.09327337336621973,
+        "D4:wrapper:t13": -0.03356380712150056,
+        "D4:wrapper:t14": 0.03144404745029182,
+        "D4:wrapper:t15": -0.041545936186941204,
+        "D4:wrapper:t16": -0.011216979991891952,
+        "D4:wrapper:t17": -0.007213101515301953,
+        "D4:wrapper:t18": 0.06278988376272093,
+        "D4:wrapper:t19": 0.02678613643940849,
+        "D4:wrapper:t20": -0.058529499844159213,
+        "D4:wrapper:t21": -0.08943739490876844,
+        "D4:wrapper:t22": -0.1782513211534682,
+        "D4:wrapper:t23": -0.020496095920248862
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "negation",
+        "syntax"
+      ]
+    },
+    "F4/seed307_seed503/answer/single/combined_minus_semantic": {
+      "effect": 0.1321343355678243,
+      "pvalue": 4.999750012499375e-05,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 2.056149597494545,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.1321343355678243,
+        "median": 0.1361756437726618,
+        "std": 0.06426299707415858,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.10652397260744731,
+          0.15785405998543406
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.1556454889846368,
+        "D4:wrapper:t01": 0.12456514079421915,
+        "D4:wrapper:t02": 0.004487410074069487,
+        "D4:wrapper:t03": 0.1904566199722535,
+        "D4:wrapper:t04": 0.13417262334420468,
+        "D4:wrapper:t05": 0.1648943703410202,
+        "D4:wrapper:t06": 0.11300507596407947,
+        "D4:wrapper:t07": 0.13335255451482197,
+        "D4:wrapper:t08": 0.13831379778744715,
+        "D4:wrapper:t09": 0.17334730812809365,
+        "D4:wrapper:t10": 0.13817866420111893,
+        "D4:wrapper:t11": -0.0092909967744646,
+        "D4:wrapper:t12": 0.18270506496303096,
+        "D4:wrapper:t13": 0.14339842621151244,
+        "D4:wrapper:t14": 0.08993869392705167,
+        "D4:wrapper:t15": 0.047796638908950584,
+        "D4:wrapper:t16": 0.1924651273272132,
+        "D4:wrapper:t17": 0.17924858139565014,
+        "D4:wrapper:t18": 0.10897973098650326,
+        "D4:wrapper:t19": 0.09203470648130088,
+        "D4:wrapper:t20": 0.0693456275423017,
+        "D4:wrapper:t21": 0.23845724321975864,
+        "D4:wrapper:t22": 0.25864024080291254,
+        "D4:wrapper:t23": 0.10708591453009719
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "syntax"
+      ]
+    },
+    "F4/seed307_seed503/span/single/combined_minus_semantic": {
+      "effect": -0.0066402591710853645,
+      "pvalue": 0.6722163891805409,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": -0.08770462403800723,
+      "status": "OK",
+      "bootstrap": {
+        "mean": -0.0066402591710853645,
+        "median": -0.016670464592583267,
+        "std": 0.07571162004192362,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          -0.0345650042171593,
+          0.023198237400507835
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": -0.048197591631401096,
+        "D4:wrapper:t01": -0.046755519058090805,
+        "D4:wrapper:t02": -0.056253963192711004,
+        "D4:wrapper:t03": 0.04479451869897469,
+        "D4:wrapper:t04": 0.042210181951231884,
+        "D4:wrapper:t05": -0.1258652956199657,
+        "D4:wrapper:t06": -0.03821864775630499,
+        "D4:wrapper:t07": -0.02811700578286347,
+        "D4:wrapper:t08": 0.02043787572210581,
+        "D4:wrapper:t09": 0.18183957816601984,
+        "D4:wrapper:t10": -0.07500801935893203,
+        "D4:wrapper:t11": -0.05388855745008636,
+        "D4:wrapper:t12": -0.08966282226227565,
+        "D4:wrapper:t13": -0.005223923402303064,
+        "D4:wrapper:t14": 0.07177911575813473,
+        "D4:wrapper:t15": -0.13032255456409994,
+        "D4:wrapper:t16": 0.0014082984483154426,
+        "D4:wrapper:t17": -0.0829840575335681,
+        "D4:wrapper:t18": 0.03942942835969426,
+        "D4:wrapper:t19": 0.06901353523448799,
+        "D4:wrapper:t20": 0.0032979569925999652,
+        "D4:wrapper:t21": 0.10898883021921667,
+        "D4:wrapper:t22": 0.0705104739781588,
+        "D4:wrapper:t23": -0.03257805602238662
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "syntax"
+      ]
+    },
+    "F4/seed307_seed503/answer/group/combined_minus_semantic": {
+      "effect": 0.027350475710541847,
+      "pvalue": 0.2694365281735913,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.22840283088622815,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.027350475710541847,
+        "median": 0.028007047182468194,
+        "std": 0.11974665814963407,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          -0.018631866502438876,
+          0.07499022292100299
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": -0.01307457440163147,
+        "D4:wrapper:t01": 0.12610489881421885,
+        "D4:wrapper:t02": 0.146259619463394,
+        "D4:wrapper:t03": 0.03794950058453982,
+        "D4:wrapper:t04": -0.06193895997691824,
+        "D4:wrapper:t05": -0.24660068710408906,
+        "D4:wrapper:t06": 0.16816043013391208,
+        "D4:wrapper:t07": 0.1313364384998537,
+        "D4:wrapper:t08": 0.02257766000787275,
+        "D4:wrapper:t09": -0.10170994678157844,
+        "D4:wrapper:t10": 0.07213686527309779,
+        "D4:wrapper:t11": -0.10286928293809254,
+        "D4:wrapper:t12": -0.10669240852740708,
+        "D4:wrapper:t13": -0.13306911717044315,
+        "D4:wrapper:t14": 0.03164013250593632,
+        "D4:wrapper:t15": 0.25758078298791764,
+        "D4:wrapper:t16": 0.024373961859000065,
+        "D4:wrapper:t17": -0.023088238814495704,
+        "D4:wrapper:t18": 0.16090824344755372,
+        "D4:wrapper:t19": -0.03224164803024317,
+        "D4:wrapper:t20": 0.05581562253752162,
+        "D4:wrapper:t21": 0.18289663492443195,
+        "D4:wrapper:t22": 0.0977018312860368,
+        "D4:wrapper:t23": -0.03774634152738393
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "syntax"
+      ]
+    },
+    "F4/seed307_seed503/span/group/combined_minus_semantic": {
+      "effect": 0.023084020874198044,
+      "pvalue": 0.47297635118244086,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.15223749483872562,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.023084020874198044,
+        "median": 0.0019685326353651236,
+        "std": 0.15163163909556146,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          -0.03315455683006755,
+          0.0844212673580694
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": -0.07074168730206987,
+        "D4:wrapper:t01": 0.4086915579009815,
+        "D4:wrapper:t02": -0.15225802551484258,
+        "D4:wrapper:t03": -0.16639171556953433,
+        "D4:wrapper:t04": 0.09969284979629803,
+        "D4:wrapper:t05": -0.013045047751319983,
+        "D4:wrapper:t06": 0.11402781023963274,
+        "D4:wrapper:t07": -0.06403269530534682,
+        "D4:wrapper:t08": 0.16978314527084623,
+        "D4:wrapper:t09": 0.14879736564815763,
+        "D4:wrapper:t10": 0.14450287363588288,
+        "D4:wrapper:t11": -0.09534071380137009,
+        "D4:wrapper:t12": 0.3528295528078356,
+        "D4:wrapper:t13": -0.09426379389095599,
+        "D4:wrapper:t14": -0.057270621138604566,
+        "D4:wrapper:t15": -0.19539190241682855,
+        "D4:wrapper:t16": 0.06715663080132817,
+        "D4:wrapper:t17": -0.13450481424176566,
+        "D4:wrapper:t18": -0.025815233024621617,
+        "D4:wrapper:t19": -0.057350513191028504,
+        "D4:wrapper:t20": 0.0681837463919861,
+        "D4:wrapper:t21": 0.03486964642834463,
+        "D4:wrapper:t22": 0.054905972185697795,
+        "D4:wrapper:t23": 0.01698211302205023
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "syntax"
+      ]
+    },
+    "F4/seed401_seed503/answer/single/combined_minus_semantic": {
+      "effect": 0.00950311981469502,
+      "pvalue": 0.5054247287635618,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.13931834700946902,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.00950311981469502,
+        "median": 0.009420376014265345,
+        "std": 0.06821154584937132,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          -0.017221855867047706,
+          0.03615406572392346
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.03075723754255829,
+        "D4:wrapper:t01": -0.05292017537396337,
+        "D4:wrapper:t02": 0.11777756821634998,
+        "D4:wrapper:t03": -0.1306673073980715,
+        "D4:wrapper:t04": 0.044430758965979734,
+        "D4:wrapper:t05": -0.030440993900991253,
+        "D4:wrapper:t06": 0.053781215759673255,
+        "D4:wrapper:t07": 0.030519389448851263,
+        "D4:wrapper:t08": 0.13101250392628627,
+        "D4:wrapper:t09": -0.07102686553891334,
+        "D4:wrapper:t10": -0.07438294005543704,
+        "D4:wrapper:t11": 0.060973551304266085,
+        "D4:wrapper:t12": -0.0269717779648002,
+        "D4:wrapper:t13": -0.03823439774328283,
+        "D4:wrapper:t14": 0.04741162117675886,
+        "D4:wrapper:t15": 0.025683662569023887,
+        "D4:wrapper:t16": 0.08131789999452145,
+        "D4:wrapper:t17": 0.051017044801548256,
+        "D4:wrapper:t18": -0.024825724187726106,
+        "D4:wrapper:t19": -0.04123543237644607,
+        "D4:wrapper:t20": -0.061321177472525426,
+        "D4:wrapper:t21": -0.013037022315700204,
+        "D4:wrapper:t22": -0.006842910540493196,
+        "D4:wrapper:t23": 0.1252991467152137
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "syntax"
+      ]
+    },
+    "F4/seed401_seed503/span/single/combined_minus_semantic": {
+      "effect": 0.04021455498237922,
+      "pvalue": 0.007799610019499025,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.5914237355712535,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.04021455498237922,
+        "median": 0.04812909174174157,
+        "std": 0.06799618034189339,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.012865264514304685,
+          0.06629304288062482
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.07209619945183351,
+        "D4:wrapper:t01": 0.08933920718729235,
+        "D4:wrapper:t02": -0.1801721092681331,
+        "D4:wrapper:t03": 0.047422408646790544,
+        "D4:wrapper:t04": 0.0676761044596931,
+        "D4:wrapper:t05": 0.09111526915654752,
+        "D4:wrapper:t06": 0.08508754773167712,
+        "D4:wrapper:t07": 0.0718072074974763,
+        "D4:wrapper:t08": -0.022593193961248585,
+        "D4:wrapper:t09": 0.032189173563905576,
+        "D4:wrapper:t10": 0.18422814704568335,
+        "D4:wrapper:t11": 0.03168708043783879,
+        "D4:wrapper:t12": 0.06403909689857118,
+        "D4:wrapper:t13": 0.03562635804311355,
+        "D4:wrapper:t14": 0.014656605313826808,
+        "D4:wrapper:t15": 0.05934934817676281,
+        "D4:wrapper:t16": 0.0053096846951593835,
+        "D4:wrapper:t17": 0.0488357748366926,
+        "D4:wrapper:t18": 0.09295297064954497,
+        "D4:wrapper:t19": -0.041077548940980715,
+        "D4:wrapper:t20": 0.10750435605009778,
+        "D4:wrapper:t21": -0.016421593600600234,
+        "D4:wrapper:t22": -0.015314031844709848,
+        "D4:wrapper:t23": 0.039805257350266514
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "syntax"
+      ]
+    },
+    "F4/seed401_seed503/answer/group/combined_minus_semantic": {
+      "effect": 0.031146175232605804,
+      "pvalue": 0.09799510024498775,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.3536673764102311,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.031146175232605804,
+        "median": 0.01424600619408025,
+        "std": 0.08806629423596671,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          -0.0016583217352269869,
+          0.0673088922889953
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": -0.021605661488088106,
+        "D4:wrapper:t01": 0.008353056847256004,
+        "D4:wrapper:t02": 0.03892145230559883,
+        "D4:wrapper:t03": -0.0756906747353663,
+        "D4:wrapper:t04": -0.09654560021046271,
+        "D4:wrapper:t05": -0.020864112509687636,
+        "D4:wrapper:t06": 0.11975815670432616,
+        "D4:wrapper:t07": -0.014866916248992288,
+        "D4:wrapper:t08": 0.07463493215129681,
+        "D4:wrapper:t09": 0.28696057811545034,
+        "D4:wrapper:t10": 0.1598139768247934,
+        "D4:wrapper:t11": 0.07586456681577836,
+        "D4:wrapper:t12": -0.05133247203995024,
+        "D4:wrapper:t13": 0.044276206686582824,
+        "D4:wrapper:t14": 0.07962723577929315,
+        "D4:wrapper:t15": -0.059440170715110985,
+        "D4:wrapper:t16": -0.05826527234295431,
+        "D4:wrapper:t17": 0.06663694166911982,
+        "D4:wrapper:t18": 0.01512759857935022,
+        "D4:wrapper:t19": -0.0370930883760357,
+        "D4:wrapper:t20": -0.019851202352817003,
+        "D4:wrapper:t21": 0.08046229976561725,
+        "D4:wrapper:t22": 0.13926196054873122,
+        "D4:wrapper:t23": 0.013364413808810281
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "syntax"
+      ]
+    },
+    "F4/seed401_seed503/span/group/combined_minus_semantic": {
+      "effect": 0.03589697107107583,
+      "pvalue": 0.224088795560222,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.25566233847553804,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.03589697107107583,
+        "median": 0.03811890008937469,
+        "std": 0.14040773969729797,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          -0.0184352569086579,
+          0.0910063481478476
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": -0.23189338849513658,
+        "D4:wrapper:t01": 0.056666072219994215,
+        "D4:wrapper:t02": 0.08016979062174426,
+        "D4:wrapper:t03": -0.052143380945161105,
+        "D4:wrapper:t04": 0.149601832881042,
+        "D4:wrapper:t05": -0.13816107687545973,
+        "D4:wrapper:t06": -0.009056996091788573,
+        "D4:wrapper:t07": 0.14845705742147197,
+        "D4:wrapper:t08": -0.10142575849678509,
+        "D4:wrapper:t09": 0.050916974975285516,
+        "D4:wrapper:t10": 0.3708352816592706,
+        "D4:wrapper:t11": 0.10658086038695214,
+        "D4:wrapper:t12": 0.017704879948384183,
+        "D4:wrapper:t13": 0.025320825203463872,
+        "D4:wrapper:t14": -0.19516182851808206,
+        "D4:wrapper:t15": -0.030217779852180625,
+        "D4:wrapper:t16": -0.0060697828622424165,
+        "D4:wrapper:t17": 0.06657370401623516,
+        "D4:wrapper:t18": 0.06535784575151714,
+        "D4:wrapper:t19": 0.33586028468066487,
+        "D4:wrapper:t20": 0.0813048046537313,
+        "D4:wrapper:t21": 0.13775559448710667,
+        "D4:wrapper:t22": 0.008199367867303436,
+        "D4:wrapper:t23": -0.07564787893151126
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": [
+        "comparison",
+        "syntax"
+      ]
+    },
+    "F4/qwen_smol/answer/single/combined_minus_semantic": {
+      "effect": 0.07000025305279313,
+      "pvalue": 0.011649417529123544,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.5688763018065203,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.07000025305279313,
+        "median": 0.06943308448729407,
+        "std": 0.1230500423914667,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.022188416045801258,
+          0.11919859878047742
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": -0.053376734846570656,
+        "D4:wrapper:t01": 0.1954044793524773,
+        "D4:wrapper:t02": -0.07083776777460815,
+        "D4:wrapper:t03": -0.10722664633751075,
+        "D4:wrapper:t04": 0.2514417453639456,
+        "D4:wrapper:t05": 0.05093293189893999,
+        "D4:wrapper:t06": -0.0056957183431098485,
+        "D4:wrapper:t07": -0.05226808206286562,
+        "D4:wrapper:t08": 0.001584284401170713,
+        "D4:wrapper:t09": -0.1472307239359997,
+        "D4:wrapper:t10": -0.07256974845550916,
+        "D4:wrapper:t11": 0.07421067521091547,
+        "D4:wrapper:t12": 0.03295306193353637,
+        "D4:wrapper:t13": 0.23699255370503908,
+        "D4:wrapper:t14": 0.06465549376367266,
+        "D4:wrapper:t15": -0.036277988486598356,
+        "D4:wrapper:t16": 0.2777417415585407,
+        "D4:wrapper:t17": 0.1579684563246192,
+        "D4:wrapper:t18": 0.1065811889868589,
+        "D4:wrapper:t19": 0.22811324913129527,
+        "D4:wrapper:t20": 0.11138139585863843,
+        "D4:wrapper:t21": 0.09768718254015869,
+        "D4:wrapper:t22": 0.1716244258243152,
+        "D4:wrapper:t23": 0.1662166176556839
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": []
+    },
+    "F4/qwen_smol/span/single/combined_minus_semantic": {
+      "effect": 0.07188872469488018,
+      "pvalue": 0.000999950002499875,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.7823781680026202,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.07188872469488018,
+        "median": 0.06643965544156936,
+        "std": 0.09188488078394262,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.036528570269829065,
+          0.10770848936856056
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.00021845798472142075,
+        "D4:wrapper:t01": 0.07977171544634173,
+        "D4:wrapper:t02": -0.009407636718219111,
+        "D4:wrapper:t03": 0.17419358799184206,
+        "D4:wrapper:t04": 0.06493489134535213,
+        "D4:wrapper:t05": 0.050688451016555926,
+        "D4:wrapper:t06": 0.09300824716517686,
+        "D4:wrapper:t07": 0.055435412485730404,
+        "D4:wrapper:t08": -0.01958324733349737,
+        "D4:wrapper:t09": -0.013961635128485216,
+        "D4:wrapper:t10": 0.04258456419975827,
+        "D4:wrapper:t11": 0.2807336414855127,
+        "D4:wrapper:t12": 0.0899545780873136,
+        "D4:wrapper:t13": 0.04680520736697234,
+        "D4:wrapper:t14": 0.07006504549822262,
+        "D4:wrapper:t15": 0.15900370634462435,
+        "D4:wrapper:t16": 0.0679444195377866,
+        "D4:wrapper:t17": 0.0972911391867375,
+        "D4:wrapper:t18": -0.04133718868662854,
+        "D4:wrapper:t19": -0.1323753329189902,
+        "D4:wrapper:t20": 0.18356750219934276,
+        "D4:wrapper:t21": 0.22589833135138715,
+        "D4:wrapper:t22": 0.00780064421359688,
+        "D4:wrapper:t23": 0.15209489055596948
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": []
+    },
+    "F4/qwen_smol/answer/group/combined_minus_semantic": {
+      "effect": 0.05355553006441188,
+      "pvalue": 0.046047697615119246,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.41648222860273204,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.05355553006441188,
+        "median": 0.04868167518468689,
+        "std": 0.12859019277746098,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.0039529870529411764,
+          0.10604246326080312
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.09062261755553502,
+        "D4:wrapper:t01": 0.2156777077301098,
+        "D4:wrapper:t02": 0.04223602863076536,
+        "D4:wrapper:t03": -0.013513336116610819,
+        "D4:wrapper:t04": -0.024713922728222475,
+        "D4:wrapper:t05": 0.052500994466908424,
+        "D4:wrapper:t06": 0.0012250030813968499,
+        "D4:wrapper:t07": 0.4418815301090526,
+        "D4:wrapper:t08": 0.1401642295379954,
+        "D4:wrapper:t09": 0.04952057491409755,
+        "D4:wrapper:t10": 0.019021544694883027,
+        "D4:wrapper:t11": 0.09149720098558543,
+        "D4:wrapper:t12": 0.03697087407218734,
+        "D4:wrapper:t13": 0.14410491294158628,
+        "D4:wrapper:t14": -0.03708118958403568,
+        "D4:wrapper:t15": 0.10514017925180347,
+        "D4:wrapper:t16": 0.11864215963511963,
+        "D4:wrapper:t17": 0.04784277545527623,
+        "D4:wrapper:t18": -0.26608619160965147,
+        "D4:wrapper:t19": -0.17085373917404653,
+        "D4:wrapper:t20": 0.06903761104762342,
+        "D4:wrapper:t21": 0.02063867717314999,
+        "D4:wrapper:t22": 0.0362043299035712,
+        "D4:wrapper:t23": 0.07465214957180515
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": []
+    },
+    "F4/qwen_smol/span/group/combined_minus_semantic": {
+      "effect": 0.12692289588882388,
+      "pvalue": 0.002049897505124744,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.7409626255712214,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.12692289588882388,
+        "median": 0.15262672061969756,
+        "std": 0.17129459909125205,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.05836028751871432,
+          0.19008745513918554
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.2542448509919436,
+        "D4:wrapper:t01": 0.16778071558501967,
+        "D4:wrapper:t02": 0.34881512684567934,
+        "D4:wrapper:t03": 0.03709815121759976,
+        "D4:wrapper:t04": 0.17810613164695743,
+        "D4:wrapper:t05": 0.20310293417811073,
+        "D4:wrapper:t06": 0.3370342763186701,
+        "D4:wrapper:t07": -0.1832910182800137,
+        "D4:wrapper:t08": 0.2907498290651418,
+        "D4:wrapper:t09": 0.1374727256543755,
+        "D4:wrapper:t10": 0.043706928076260254,
+        "D4:wrapper:t11": -0.24107046490320438,
+        "D4:wrapper:t12": 0.1937009041059614,
+        "D4:wrapper:t13": 0.3133210600102718,
+        "D4:wrapper:t14": 0.032467460185282807,
+        "D4:wrapper:t15": -0.04018362307479533,
+        "D4:wrapper:t16": 0.253163041775618,
+        "D4:wrapper:t17": 0.11215935966930782,
+        "D4:wrapper:t18": -0.06924679754952466,
+        "D4:wrapper:t19": 0.22781680082896552,
+        "D4:wrapper:t20": -0.021057824591439733,
+        "D4:wrapper:t21": -0.035854868986118386,
+        "D4:wrapper:t22": 0.4269809270497984,
+        "D4:wrapper:t23": 0.07913287551190579
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": []
+    },
+    "F4/qwen_olmo/answer/single/combined_minus_semantic": {
+      "effect": 0.07694394479838178,
+      "pvalue": 0.004699765011749413,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.637116996529772,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.07694394479838178,
+        "median": 0.05244312949888876,
+        "std": 0.12076894074004858,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.0314063132691009,
+          0.12696295995875562
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.13481940458051322,
+        "D4:wrapper:t01": 0.04465676256127116,
+        "D4:wrapper:t02": 0.012719361001515495,
+        "D4:wrapper:t03": 0.24499398490053736,
+        "D4:wrapper:t04": -0.07386528860095276,
+        "D4:wrapper:t05": 0.09159783267135498,
+        "D4:wrapper:t06": 0.35510542304172754,
+        "D4:wrapper:t07": 0.1471145483548306,
+        "D4:wrapper:t08": 0.12893956755560454,
+        "D4:wrapper:t09": 0.017263691378517347,
+        "D4:wrapper:t10": 0.15470644711363046,
+        "D4:wrapper:t11": 0.060229496436506366,
+        "D4:wrapper:t12": 0.006115389267892561,
+        "D4:wrapper:t13": 0.037387148710443296,
+        "D4:wrapper:t14": 0.004242892520507871,
+        "D4:wrapper:t15": -0.05217077321396521,
+        "D4:wrapper:t16": 0.08160868865037077,
+        "D4:wrapper:t17": -0.1290066336047303,
+        "D4:wrapper:t18": -0.05172797268431345,
+        "D4:wrapper:t19": -0.04101560226775913,
+        "D4:wrapper:t20": 0.1514258485375319,
+        "D4:wrapper:t21": 0.2580176716855272,
+        "D4:wrapper:t22": 0.2641584928118941,
+        "D4:wrapper:t23": -0.0006617062472932533
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": []
+    },
+    "F4/qwen_olmo/span/single/combined_minus_semantic": {
+      "effect": 0.09108499991351304,
+      "pvalue": 0.0016499175041247937,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.7419175572575403,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.09108499991351304,
+        "median": 0.10445856728127789,
+        "std": 0.12276970537023549,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.04579835631828239,
+          0.14040502686121586
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": -0.047531752534257066,
+        "D4:wrapper:t01": 0.1041050476883288,
+        "D4:wrapper:t02": 0.16367286397852243,
+        "D4:wrapper:t03": 0.16237028254101646,
+        "D4:wrapper:t04": 0.14870100144489506,
+        "D4:wrapper:t05": -0.019731461692434643,
+        "D4:wrapper:t06": -0.05069020726531632,
+        "D4:wrapper:t07": 0.041539976760503444,
+        "D4:wrapper:t08": 0.3691373810122718,
+        "D4:wrapper:t09": 0.021731700938775175,
+        "D4:wrapper:t10": 0.006499412392891514,
+        "D4:wrapper:t11": 0.0023651954082874738,
+        "D4:wrapper:t12": 0.1786231068557767,
+        "D4:wrapper:t13": 0.204441280762759,
+        "D4:wrapper:t14": 0.04013521737663142,
+        "D4:wrapper:t15": 0.27304599265207263,
+        "D4:wrapper:t16": 0.16303419752461842,
+        "D4:wrapper:t17": -0.12243050970380533,
+        "D4:wrapper:t18": 0.11541653829022235,
+        "D4:wrapper:t19": 0.10481208687422697,
+        "D4:wrapper:t20": 0.2676654763907431,
+        "D4:wrapper:t21": 0.011016911844903925,
+        "D4:wrapper:t22": 0.14085606701637596,
+        "D4:wrapper:t23": -0.0927458086336963
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": []
+    },
+    "F4/qwen_olmo/answer/group/combined_minus_semantic": {
+      "effect": 0.035970676086139526,
+      "pvalue": 0.3141342932853357,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.2120726113795287,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.035970676086139526,
+        "median": 0.04914192916061828,
+        "std": 0.169614906197226,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          -0.030808959981084138,
+          0.10346817606460526
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.13217302129893177,
+        "D4:wrapper:t01": -0.09158081828856615,
+        "D4:wrapper:t02": 0.12324579991931728,
+        "D4:wrapper:t03": 0.04554232135972328,
+        "D4:wrapper:t04": 0.281441784954941,
+        "D4:wrapper:t05": 0.08003100124439538,
+        "D4:wrapper:t06": -0.02223663218851374,
+        "D4:wrapper:t07": -0.06694905048888958,
+        "D4:wrapper:t08": -0.019867101916057773,
+        "D4:wrapper:t09": 0.07070097533446637,
+        "D4:wrapper:t10": -0.11390520496831902,
+        "D4:wrapper:t11": 0.057628309097205815,
+        "D4:wrapper:t12": -0.20223361427165087,
+        "D4:wrapper:t13": 0.3592077618354531,
+        "D4:wrapper:t14": 0.05274153696151328,
+        "D4:wrapper:t15": -0.1346738664798769,
+        "D4:wrapper:t16": 0.1912083409110608,
+        "D4:wrapper:t17": 0.07331713190438036,
+        "D4:wrapper:t18": -0.05785322987959027,
+        "D4:wrapper:t19": -0.0736399644938675,
+        "D4:wrapper:t20": -0.34219055793425723,
+        "D4:wrapper:t21": 0.13506161572392578,
+        "D4:wrapper:t22": 0.40031794701799506,
+        "D4:wrapper:t23": -0.01419128058637164
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": []
+    },
+    "F4/qwen_olmo/span/group/combined_minus_semantic": {
+      "effect": -0.06326941533023685,
+      "pvalue": 0.009499525023748812,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": -0.5834272424608171,
+      "status": "OK",
+      "bootstrap": {
+        "mean": -0.06326941533023685,
+        "median": -0.06015906662910805,
+        "std": 0.10844439670553438,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          -0.10378902093531729,
+          -0.01825803851585859
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": -0.08547617261340021,
+        "D4:wrapper:t01": -0.21853495106053422,
+        "D4:wrapper:t02": -0.22415574881883837,
+        "D4:wrapper:t03": 0.06398396789520087,
+        "D4:wrapper:t04": -0.2233824409337949,
+        "D4:wrapper:t05": -0.04042888978650805,
+        "D4:wrapper:t06": 0.05887081681352749,
+        "D4:wrapper:t07": -0.021328505430224937,
+        "D4:wrapper:t08": 0.011175040791219924,
+        "D4:wrapper:t09": 0.265699573381108,
+        "D4:wrapper:t10": -0.051697204000931,
+        "D4:wrapper:t11": -0.17864859045588255,
+        "D4:wrapper:t12": -0.100232891654782,
+        "D4:wrapper:t13": -0.08035260619996659,
+        "D4:wrapper:t14": 0.02634135861041413,
+        "D4:wrapper:t15": -0.11466369333420212,
+        "D4:wrapper:t16": -0.05638572616294511,
+        "D4:wrapper:t17": -0.18238355520010313,
+        "D4:wrapper:t18": -0.06393240709527098,
+        "D4:wrapper:t19": -0.04443339429025889,
+        "D4:wrapper:t20": -0.003605586953896928,
+        "D4:wrapper:t21": -0.11198349444841178,
+        "D4:wrapper:t22": -0.09113666812762708,
+        "D4:wrapper:t23": -0.05177419884957582
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": []
+    },
+    "F4/smol_olmo/answer/single/combined_minus_semantic": {
+      "effect": 0.06292624851554511,
+      "pvalue": 0.013499325033748313,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.5538223041790195,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.06292624851554511,
+        "median": 0.07904131828422685,
+        "std": 0.11362173036498836,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.0186228327298605,
+          0.10619786759903944
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": -0.10727422536447662,
+        "D4:wrapper:t01": 0.02989850414122501,
+        "D4:wrapper:t02": 0.19789114398376023,
+        "D4:wrapper:t03": 0.0933248486301649,
+        "D4:wrapper:t04": -0.010927305566634446,
+        "D4:wrapper:t05": -0.02114160898700701,
+        "D4:wrapper:t06": -0.05343014164312024,
+        "D4:wrapper:t07": -0.0548363899516008,
+        "D4:wrapper:t08": 0.1685582131322946,
+        "D4:wrapper:t09": 0.0978186732161275,
+        "D4:wrapper:t10": -0.08979089942726935,
+        "D4:wrapper:t11": 0.2053029278342654,
+        "D4:wrapper:t12": 0.2332410067938647,
+        "D4:wrapper:t13": 0.08217368798979571,
+        "D4:wrapper:t14": 0.13367923686910524,
+        "D4:wrapper:t15": -0.1762681454938183,
+        "D4:wrapper:t16": 0.0006856522222477013,
+        "D4:wrapper:t17": 0.20124235062643306,
+        "D4:wrapper:t18": 0.0955237217124046,
+        "D4:wrapper:t19": 0.1329363113906904,
+        "D4:wrapper:t20": 0.07590894857865799,
+        "D4:wrapper:t21": 0.025862648339049107,
+        "D4:wrapper:t22": 0.019962651276850575,
+        "D4:wrapper:t23": 0.22988815407007254
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": []
+    },
+    "F4/smol_olmo/span/single/combined_minus_semantic": {
+      "effect": 0.10783331671480584,
+      "pvalue": 0.000199990000499975,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.7204512601484744,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.10783331671480584,
+        "median": 0.09140063023846078,
+        "std": 0.1496746867964156,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.05528441784722134,
+          0.1728222994691612
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": -0.018382101776072787,
+        "D4:wrapper:t01": -0.039830096805897455,
+        "D4:wrapper:t02": 0.22395032683028473,
+        "D4:wrapper:t03": 0.08579017535241909,
+        "D4:wrapper:t04": 0.1055917762415036,
+        "D4:wrapper:t05": 0.2186213924184174,
+        "D4:wrapper:t06": 0.08841379962584411,
+        "D4:wrapper:t07": 0.14771696505238296,
+        "D4:wrapper:t08": 0.007650646208603895,
+        "D4:wrapper:t09": 0.10135282079545603,
+        "D4:wrapper:t10": 0.6482246658122863,
+        "D4:wrapper:t11": 0.11336151561000046,
+        "D4:wrapper:t12": -0.0931804169424778,
+        "D4:wrapper:t13": 0.2948883707393338,
+        "D4:wrapper:t14": 0.03534040737183068,
+        "D4:wrapper:t15": 0.031431579218182105,
+        "D4:wrapper:t16": 0.16685650854037332,
+        "D4:wrapper:t17": 0.11123300681631304,
+        "D4:wrapper:t18": -0.017296113971513913,
+        "D4:wrapper:t19": 0.09263469755463725,
+        "D4:wrapper:t20": -0.0022807489798567226,
+        "D4:wrapper:t21": 0.21759496001373524,
+        "D4:wrapper:t22": -0.021851097492729503,
+        "D4:wrapper:t23": 0.0901665629222843
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": []
+    },
+    "F4/smol_olmo/answer/group/combined_minus_semantic": {
+      "effect": 0.1929616418970149,
+      "pvalue": 4.999750012499375e-05,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 1.4774969399021332,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.1929616418970149,
+        "median": 0.18470533132552514,
+        "std": 0.13060036652921686,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.14053777553557978,
+          0.24364094076078038
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": 0.11123022647273464,
+        "D4:wrapper:t01": -0.07328951549811723,
+        "D4:wrapper:t02": 0.018829844737076634,
+        "D4:wrapper:t03": 0.22716236331632006,
+        "D4:wrapper:t04": 0.17112022582992042,
+        "D4:wrapper:t05": 0.2839251651438176,
+        "D4:wrapper:t06": 0.08302039252314003,
+        "D4:wrapper:t07": 0.19829043682112987,
+        "D4:wrapper:t08": 0.15858467528591255,
+        "D4:wrapper:t09": 0.30665037807861595,
+        "D4:wrapper:t10": 0.15653168430704448,
+        "D4:wrapper:t11": 0.25812605699480246,
+        "D4:wrapper:t12": 0.09384716967215372,
+        "D4:wrapper:t13": 0.37206686002850636,
+        "D4:wrapper:t14": 0.08323180658555288,
+        "D4:wrapper:t15": 0.14770962999590886,
+        "D4:wrapper:t16": 0.061859810827917944,
+        "D4:wrapper:t17": 0.34602779425344316,
+        "D4:wrapper:t18": 0.017435070915073597,
+        "D4:wrapper:t19": 0.2012929986298451,
+        "D4:wrapper:t20": 0.2561690925048753,
+        "D4:wrapper:t21": 0.4159394758076194,
+        "D4:wrapper:t22": 0.38266992918639264,
+        "D4:wrapper:t23": 0.35264783310867126
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": []
+    },
+    "F4/smol_olmo/span/group/combined_minus_semantic": {
+      "effect": 0.1872893689339359,
+      "pvalue": 9.99950002499875e-05,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 0.9371441376874632,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.1872893689339359,
+        "median": 0.17711599682095414,
+        "std": 0.19985118766905927,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.11001904803844817,
+          0.2686587653837704
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 1,
+      "wrapper_effects": {
+        "D4:wrapper:t00": -0.2425144941860318,
+        "D4:wrapper:t01": 0.2870369287832026,
+        "D4:wrapper:t02": 0.11675546599325157,
+        "D4:wrapper:t03": 0.022439046660772864,
+        "D4:wrapper:t04": 0.02140119345616645,
+        "D4:wrapper:t05": 0.41402904321676737,
+        "D4:wrapper:t06": 0.2668488639174363,
+        "D4:wrapper:t07": -0.008028940113452848,
+        "D4:wrapper:t08": 0.04030178129562556,
+        "D4:wrapper:t09": 0.09873838565586834,
+        "D4:wrapper:t10": 0.37587491096737546,
+        "D4:wrapper:t11": 0.20435093115024128,
+        "D4:wrapper:t12": 0.5084959798505937,
+        "D4:wrapper:t13": 0.20036340966254212,
+        "D4:wrapper:t14": 0.05813367401520603,
+        "D4:wrapper:t15": 0.3271650911764554,
+        "D4:wrapper:t16": 0.5136655480515309,
+        "D4:wrapper:t17": 0.33280850163562287,
+        "D4:wrapper:t18": 0.23925664217075002,
+        "D4:wrapper:t19": 0.13817294618508374,
+        "D4:wrapper:t20": 0.5278429528828714,
+        "D4:wrapper:t21": -0.05035458301252471,
+        "D4:wrapper:t22": -0.05170700898025876,
+        "D4:wrapper:t23": 0.15386858397936617
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only",
+      "descriptive_pair": true,
+      "competence_passed_tasks": []
+    }
+  },
+  "correction": "PENDING_F6_GLOBAL_BH",
+  "expected_evaluations": 26,
+  "n_evaluations": 26,
+  "full_protocol_complete": true,
+  "cohort_artifacts": {
+    "independent_seeds/single/answer": {
+      "path": "causal_alignment/cohorts/independent_seeds/single/answer.json",
+      "sha256": "3f0f8a036aaec32fc08684a12a8d5a7d44003d1eb33db53917748057f29bd8e4",
+      "pair_names": [
+        "seed101_seed211",
+        "seed101_seed307",
+        "seed101_seed401",
+        "seed101_seed503",
+        "seed211_seed307",
+        "seed211_seed401",
+        "seed211_seed503",
+        "seed307_seed401",
+        "seed307_seed503",
+        "seed401_seed503"
+      ]
+    },
+    "independent_seeds/single/span": {
+      "path": "causal_alignment/cohorts/independent_seeds/single/span.json",
+      "sha256": "50bd98c9a7a503de83d50bb86bf30c81b5ed53da2c603dbdcd2cf2de7b393c74",
+      "pair_names": [
+        "seed101_seed211",
+        "seed101_seed307",
+        "seed101_seed401",
+        "seed101_seed503",
+        "seed211_seed307",
+        "seed211_seed401",
+        "seed211_seed503",
+        "seed307_seed401",
+        "seed307_seed503",
+        "seed401_seed503"
+      ]
+    },
+    "independent_seeds/group/answer": {
+      "path": "causal_alignment/cohorts/independent_seeds/group/answer.json",
+      "sha256": "4266c0aa8c429435cdd0e846ffa1dd07b206c563f5e1db32455caef5645fdd49",
+      "pair_names": [
+        "seed101_seed211",
+        "seed101_seed307",
+        "seed101_seed401",
+        "seed101_seed503",
+        "seed211_seed307",
+        "seed211_seed401",
+        "seed211_seed503",
+        "seed307_seed401",
+        "seed307_seed503",
+        "seed401_seed503"
+      ]
+    },
+    "independent_seeds/group/span": {
+      "path": "causal_alignment/cohorts/independent_seeds/group/span.json",
+      "sha256": "f158a6792ce605d1c3ce88da3b26e9b7987547b6f8fc104303d018eba02aa6e5",
+      "pair_names": [
+        "seed101_seed211",
+        "seed101_seed307",
+        "seed101_seed401",
+        "seed101_seed503",
+        "seed211_seed307",
+        "seed211_seed401",
+        "seed211_seed503",
+        "seed307_seed401",
+        "seed307_seed503",
+        "seed401_seed503"
+      ]
+    },
+    "cross_family/single/answer": {
+      "path": "causal_alignment/cohorts/cross_family/single/answer.json",
+      "sha256": "a657dd51577e06d162fb3bd22a970a75b03d51c079ee0ba3e7f30e43f35c145d",
+      "pair_names": [
+        "qwen_olmo",
+        "qwen_smol",
+        "smol_olmo"
+      ]
+    },
+    "cross_family/single/span": {
+      "path": "causal_alignment/cohorts/cross_family/single/span.json",
+      "sha256": "aba6beb0a1bbe223a517ca6053d346dc45d3a37855bd984d363d9f9515e876ec",
+      "pair_names": [
+        "qwen_olmo",
+        "qwen_smol",
+        "smol_olmo"
+      ]
+    },
+    "cross_family/group/answer": {
+      "path": "causal_alignment/cohorts/cross_family/group/answer.json",
+      "sha256": "ab3ab60220f00a886efe547529b90ba6904d850dc5a83b2cb430ef33097579e3",
+      "pair_names": [
+        "qwen_olmo",
+        "qwen_smol",
+        "smol_olmo"
+      ]
+    },
+    "cross_family/group/span": {
+      "path": "causal_alignment/cohorts/cross_family/group/span.json",
+      "sha256": "b2bb65a881a1e7a55c0e6e2404ad932d5a727ac239781d2a405da3b32e215fc1",
+      "pair_names": [
+        "qwen_olmo",
+        "qwen_smol",
+        "smol_olmo"
+      ]
+    }
+  },
+  "cohort_artifact_policy": "Complete cohorts use canonical paths; partial cohorts use explicitly named subsets/ paths. Earlier qwen_smol snapshots were preserved by recorded relocation.",
+  "inference_scope": "Fixed observed models and units; shared wrappers retained jointly."
+}
