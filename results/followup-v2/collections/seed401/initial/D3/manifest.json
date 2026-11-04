@@ -1,0 +1,129 @@
+{
+  "signature": "434fc5fc2bc24f0e2c8a5e8d66338a5f90af0cd307c8b823810dd2cd564ea1af",
+  "plan": {
+    "version": "followup-measurement-v2",
+    "model_info": {
+      "id": "seed401",
+      "family": "independent_tiny",
+      "seed": 401,
+      "checkpoint_kind": "initial",
+      "checkpoint": "results/followup-v2/training/seed_401/initial.pt",
+      "sha256": "c927aaa1b70757dacce58fadaebb9511c87c341aae1e4ec8c0c94c6871eccb0c",
+      "checkpoint_sha256": "c927aaa1b70757dacce58fadaebb9511c87c341aae1e4ec8c0c94c6871eccb0c",
+      "source_run": "results/followup-v2"
+    },
+    "records_sha256": "61153f3344a8d0a2f93f53f6d7278b14dc0d2ed649601427b3feec189ce56bca",
+    "selection": {
+      "1": [
+        436,
+        1322,
+        1413,
+        922,
+        47,
+        258,
+        1174,
+        547
+      ],
+      "2": [
+        871,
+        1472,
+        18,
+        602,
+        797,
+        1246,
+        884,
+        735
+      ],
+      "3": [
+        650,
+        102,
+        981,
+        852,
+        231,
+        882,
+        1407,
+        221
+      ],
+      "4": [
+        1428,
+        830,
+        143,
+        744,
+        248,
+        559,
+        81,
+        917
+      ]
+    },
+    "per_layer": 8,
+    "split": "D3",
+    "precision": "float32",
+    "boundary": "before answer divergence after common answer prefix",
+    "span": "mean over character-overlapping statement tokens"
+  },
+  "selection": {
+    "1": [
+      436,
+      1322,
+      1413,
+      922,
+      47,
+      258,
+      1174,
+      547
+    ],
+    "2": [
+      871,
+      1472,
+      18,
+      602,
+      797,
+      1246,
+      884,
+      735
+    ],
+    "3": [
+      650,
+      102,
+      981,
+      852,
+      231,
+      882,
+      1407,
+      221
+    ],
+    "4": [
+      1428,
+      830,
+      143,
+      744,
+      248,
+      559,
+      81,
+      917
+    ]
+  },
+  "n": 768,
+  "neurons": 32,
+  "competence": {
+    "arithmetic": {
+      "n": 192,
+      "accuracy": 0.5
+    },
+    "comparison": {
+      "n": 192,
+      "accuracy": 0.5
+    },
+    "negation": {
+      "n": 192,
+      "accuracy": 0.5
+    },
+    "syntax": {
+      "n": 192,
+      "accuracy": 0.5
+    }
+  },
+  "elapsed_seconds": 0.9357804619939998,
+  "device": "cuda",
+  "measurements_sha256": "c486f8bf2ce99d16ccfb7d34d1ac127ce6b46b240f833e95651473d13a1b1426"
+}

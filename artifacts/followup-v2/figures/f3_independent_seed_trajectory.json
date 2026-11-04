@@ -1,0 +1,64 @@
+{
+  "schema": "followup-figure-v1",
+  "title": "Independent-seed response correspondence across training",
+  "encoding": {
+    "id": "independent_seed_trajectory",
+    "kind": "line",
+    "title": "Independent-seed response correspondence across training",
+    "x": "checkpoint",
+    "y": "value",
+    "series": "position",
+    "xlabel": "Saved checkpoint",
+    "ylabel": "Activation minus repeated-random Pearson",
+    "xticks": [
+      0,
+      1,
+      2
+    ],
+    "xticklabels": [
+      "Initial",
+      "Middle",
+      "Final"
+    ],
+    "source": "results/followup-v2/alignment/summary.json",
+    "note": "The same final-D1 neurons and final-D2 maps are reused at all checkpoints. This is descriptive tracking, not checkpoint-specific feature discovery."
+  },
+  "sources": [
+    {
+      "path": "results/followup-v2/alignment/summary.json",
+      "sha256": "09794656fc83d64e9105f0b9128432ff84145822738d837f281134a159d2e97e"
+    }
+  ],
+  "rows": [
+    {
+      "checkpoint": 2,
+      "position": "answer",
+      "value": 0.15289480678458747
+    },
+    {
+      "checkpoint": 2,
+      "position": "span",
+      "value": 0.08602183452494509
+    },
+    {
+      "checkpoint": 0,
+      "position": "answer",
+      "value": 0.009260655500974707
+    },
+    {
+      "checkpoint": 0,
+      "position": "span",
+      "value": -0.0008855095698768236
+    },
+    {
+      "checkpoint": 1,
+      "position": "answer",
+      "value": 0.03254110608799548
+    },
+    {
+      "checkpoint": 1,
+      "position": "span",
+      "value": 0.015388875952749423
+    }
+  ]
+}

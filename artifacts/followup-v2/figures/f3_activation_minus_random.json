@@ -1,0 +1,84 @@
+{
+  "schema": "followup-figure-v1",
+  "title": "Joint-wrapper activation_minus_random",
+  "encoding": {
+    "id": "activation_minus_random",
+    "kind": "interval",
+    "title": "Joint-wrapper activation_minus_random",
+    "xlabel": "Pearson difference;95% shared-wrapper bootstrap CI",
+    "source": "results/followup-v2/alignment/summary.json",
+    "note": "All observed pairs remain together inside each resampled wrapper; these intervals are conditional on the fixed model collection, not unseen model seeds."
+  },
+  "sources": [
+    {
+      "path": "results/followup-v2/alignment/summary.json",
+      "sha256": "09794656fc83d64e9105f0b9128432ff84145822738d837f281134a159d2e97e"
+    }
+  ],
+  "rows": [
+    {
+      "label": "independent_seeds/answer/final",
+      "value": 0.15289480678458747,
+      "ci": [
+        0.14631757808076204,
+        0.15981733751630225
+      ]
+    },
+    {
+      "label": "independent_seeds/span/final",
+      "value": 0.08602183452494509,
+      "ci": [
+        0.07659942249509036,
+        0.0944534439407999
+      ]
+    },
+    {
+      "label": "independent_seeds/answer/initial",
+      "value": 0.009260655500974707,
+      "ci": [
+        0.0014374115631683644,
+        0.01625234844815479
+      ]
+    },
+    {
+      "label": "independent_seeds/span/initial",
+      "value": -0.0008855095698768236,
+      "ci": [
+        -0.007099461537047108,
+        0.004897063441798711
+      ]
+    },
+    {
+      "label": "independent_seeds/answer/middle",
+      "value": 0.03254110608799548,
+      "ci": [
+        0.027474894492475952,
+        0.03748686766400371
+      ]
+    },
+    {
+      "label": "independent_seeds/span/middle",
+      "value": 0.015388875952749423,
+      "ci": [
+        0.010527268644327977,
+        0.020729293631412554
+      ]
+    },
+    {
+      "label": "cross_family/answer/final",
+      "value": -0.004416499192703458,
+      "ci": [
+        -0.014806743341531934,
+        0.0055733118532305575
+      ]
+    },
+    {
+      "label": "cross_family/span/final",
+      "value": 0.032278751276888056,
+      "ci": [
+        0.021833021242521403,
+        0.042921459168790546
+      ]
+    }
+  ]
+}

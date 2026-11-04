@@ -1,0 +1,194 @@
+{
+  "tests": {
+    "activation_minus_random": {
+      "effect": 0.015388875952749423,
+      "pvalue": 4.999750012499375e-05,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 1.19338092889519,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.015388875952749423,
+        "median": 0.012038345549756194,
+        "std": 0.012895191786746718,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.010527268644327977,
+          0.020729293631412554
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 10,
+      "wrapper_effects": {
+        "D3:wrapper:t00": 0.010461058903086604,
+        "D3:wrapper:t01": 0.011955359622247804,
+        "D3:wrapper:t02": -0.003270977638181352,
+        "D3:wrapper:t03": 0.0068212453058783705,
+        "D3:wrapper:t04": 0.041965556972888673,
+        "D3:wrapper:t05": 0.02024963913445115,
+        "D3:wrapper:t06": 0.023708638468062815,
+        "D3:wrapper:t07": 0.02817039519941387,
+        "D3:wrapper:t08": -0.0027225339933140565,
+        "D3:wrapper:t09": 0.0035183842960630303,
+        "D3:wrapper:t10": 0.030902913306577906,
+        "D3:wrapper:t11": 0.035778299349340875,
+        "D3:wrapper:t12": 0.00725639521132367,
+        "D3:wrapper:t13": 0.025579534833528567,
+        "D3:wrapper:t14": 0.012220617523284308,
+        "D3:wrapper:t15": 0.025132433529125038,
+        "D3:wrapper:t16": 0.008630003680269664,
+        "D3:wrapper:t17": 0.00841881313514967,
+        "D3:wrapper:t18": 0.015151046370865506,
+        "D3:wrapper:t19": 0.03658317846556449,
+        "D3:wrapper:t20": 0.003547929277014524,
+        "D3:wrapper:t21": -0.00033592452441580866,
+        "D3:wrapper:t22": 0.00748968496049624,
+        "D3:wrapper:t23": 0.012121331477264585
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only"
+    },
+    "semantic_minus_activation": {
+      "effect": -0.009619566414204361,
+      "pvalue": 0.014699265036748163,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": -0.5409151212449106,
+      "status": "OK",
+      "bootstrap": {
+        "mean": -0.009619566414204361,
+        "median": -0.006628418418031621,
+        "std": 0.017783874098518504,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          -0.016683239703860493,
+          -0.0024686218826247947
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 10,
+      "wrapper_effects": {
+        "D3:wrapper:t00": -0.018732369535541322,
+        "D3:wrapper:t01": 0.007932320180752754,
+        "D3:wrapper:t02": 0.017937798568101376,
+        "D3:wrapper:t03": 0.0001968898097723354,
+        "D3:wrapper:t04": -0.03512768777072417,
+        "D3:wrapper:t05": -0.02011690559443939,
+        "D3:wrapper:t06": -0.0026262583615225855,
+        "D3:wrapper:t07": -0.0057507436581043,
+        "D3:wrapper:t08": 0.002862769922143881,
+        "D3:wrapper:t09": -0.013554562733641473,
+        "D3:wrapper:t10": -0.041116445737906446,
+        "D3:wrapper:t11": -0.02280123041607322,
+        "D3:wrapper:t12": -0.01379258668128161,
+        "D3:wrapper:t13": -0.001403244714121367,
+        "D3:wrapper:t14": -0.02680959770573337,
+        "D3:wrapper:t15": -0.03764007734720044,
+        "D3:wrapper:t16": 0.016443047314462316,
+        "D3:wrapper:t17": 0.021191525279154536,
+        "D3:wrapper:t18": -0.018299539419397326,
+        "D3:wrapper:t19": -0.034620120596122836,
+        "D3:wrapper:t20": -0.004300109394737648,
+        "D3:wrapper:t21": 0.0035361210920606956,
+        "D3:wrapper:t22": 0.0032275067371538547,
+        "D3:wrapper:t23": -0.007506093177958942
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only"
+    }
+  },
+  "correction": "PENDING_GLOBAL_FAMILY",
+  "pair_descriptives": {
+    "activation_minus_random": {
+      "seed101_seed211": {
+        "mean": 0.029132123934854693,
+        "n_wrappers": 24
+      },
+      "seed101_seed307": {
+        "mean": -0.008976752666499018,
+        "n_wrappers": 24
+      },
+      "seed101_seed401": {
+        "mean": 0.03539671804020499,
+        "n_wrappers": 24
+      },
+      "seed101_seed503": {
+        "mean": 0.01476752020161278,
+        "n_wrappers": 24
+      },
+      "seed211_seed307": {
+        "mean": 0.005538305255111342,
+        "n_wrappers": 24
+      },
+      "seed211_seed401": {
+        "mean": -0.010668039155411535,
+        "n_wrappers": 24
+      },
+      "seed211_seed503": {
+        "mean": 0.033641962247360276,
+        "n_wrappers": 24
+      },
+      "seed307_seed401": {
+        "mean": 0.029128384244676887,
+        "n_wrappers": 24
+      },
+      "seed307_seed503": {
+        "mean": 0.017686380470190357,
+        "n_wrappers": 24
+      },
+      "seed401_seed503": {
+        "mean": 0.008242156955393437,
+        "n_wrappers": 24
+      }
+    },
+    "semantic_minus_activation": {
+      "seed101_seed211": {
+        "mean": -0.04116888514060946,
+        "n_wrappers": 24
+      },
+      "seed101_seed307": {
+        "mean": 0.01589120251811276,
+        "n_wrappers": 24
+      },
+      "seed101_seed401": {
+        "mean": -0.004615548144083842,
+        "n_wrappers": 24
+      },
+      "seed101_seed503": {
+        "mean": 0.004283088024001039,
+        "n_wrappers": 24
+      },
+      "seed211_seed307": {
+        "mean": 0.014780068616307976,
+        "n_wrappers": 24
+      },
+      "seed211_seed401": {
+        "mean": 0.01753016857758359,
+        "n_wrappers": 24
+      },
+      "seed211_seed503": {
+        "mean": -0.1000001854161958,
+        "n_wrappers": 24
+      },
+      "seed307_seed401": {
+        "mean": -0.03360430920140737,
+        "n_wrappers": 24
+      },
+      "seed307_seed503": {
+        "mean": 0.011336732115327958,
+        "n_wrappers": 24
+      },
+      "seed401_seed503": {
+        "mean": 0.019372003908919518,
+        "n_wrappers": 24
+      }
+    }
+  },
+  "n_pairs": 10,
+  "resampling_unit": "shared wrapper; all pairs and concepts retained together",
+  "inference_scope": "Conditional on observed models; no independent-seed replication claim."
+}

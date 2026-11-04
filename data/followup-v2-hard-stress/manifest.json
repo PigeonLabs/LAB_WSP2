@@ -1,0 +1,42 @@
+{
+  "adjacent_mismatch_rows": 0,
+  "all_pairs_equal_character_multiset": true,
+  "all_pairs_equal_open_close_skeleton": true,
+  "excluded_from_primary_110_test_family": true,
+  "file_sha256": "ee19a2dbcbd6b18f69940666873aa73a4c7d6c1034da4fd96939033a3fdf8602",
+  "length_rows": {
+    "5": 192,
+    "6": 192,
+    "7": 192,
+    "8": 192
+  },
+  "limitations": [
+    "Post-hoc motivated by D3 local-cue weakness; fresh outcomes do not make it preregistered primary evidence.",
+    "Valid strings need suitable closing runs, so their structural distribution differs from the original syntax corpus.",
+    "Equal5..8pair length range prevents longer strings being the sole explanation; depth distribution can still differ.",
+    "Removing adjacent type mismatches does not remove every finite-state/local cue or prove recursive parsing.",
+    "Wrappers were already inspected in D3; only content/outcomes are new."
+  ],
+  "max_prompt_bytes": 108,
+  "n": 768,
+  "n_pairs": 384,
+  "n_wrappers": 24,
+  "original_manifest_sha256": "bbe384e2c2851f4ce9521b37d1a701a684d2cc4b1eccf8e02c31855ae62aabdc",
+  "original_string_overlap": 0,
+  "posthoc_motivation": true,
+  "protocol_phase": "FROZEN_BEFORE_ANY_HARD_STRESS_INFERENCE",
+  "rows_sha256": "3e26ab6647988fd7dca1cd77b40d92ad0c6075b3e86aa671edd33ee5dba20325",
+  "seed": 90210,
+  "split": "hard_stress",
+  "valid_depth_pairs": {
+    "2": 46,
+    "3": 119,
+    "4": 127,
+    "5": 64,
+    "6": 23,
+    "7": 4,
+    "8": 1
+  },
+  "version": "followup-v2-hard-stress-v1",
+  "wrapper_policy": "Reuse24 D3 wrappers; fresh content, not a new-wrapper OOD test"
+}

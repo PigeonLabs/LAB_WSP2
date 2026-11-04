@@ -1,6 +1,6 @@
 # F4 — Single/group causal effects and dose response
 
-갱신: 2026-11-04 12:19 KST. 실행 상태: **PENDING**. 가설 판정: **INCONCLUSIVE**.
+갱신: 2026-11-04 12:37 KST. 실행 상태: **PENDING**. 가설 판정: **INCONCLUSIVE**.
 
 판정 근거가 아직 보고되지 않았습니다.
 

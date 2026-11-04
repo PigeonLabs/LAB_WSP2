@@ -1,0 +1,110 @@
+{
+  "schema": "followup-figure-v1",
+  "title": "Posthoc D3 syntax accuracy by local-cue stratum",
+  "encoding": {
+    "id": "posthoc_syntax_local_cue",
+    "kind": "heatmap",
+    "title": "Posthoc D3 syntax accuracy by local-cue stratum",
+    "row": "model",
+    "column": "group",
+    "value": "value",
+    "vmin": 0,
+    "vmax": 1,
+    "percent": true,
+    "unit": "Pair-balanced accuracy",
+    "source": "results/followup-v2/exploratory/stress_D3.json",
+    "figsize": [
+      10,
+      6.5
+    ],
+    "note": "Exploratory cuts chosen after D3; both true/false pair members retained. N counts rows. Unequal content and small n=26 stratum confound differences; no causal cue-use claim or confirmatory test."
+  },
+  "sources": [
+    {
+      "path": "results/followup-v2/exploratory/stress_D3.json",
+      "sha256": "45ed6c2a66cf960f19547d5bc794318c7698dd3a955cf3cf4df3995c56150359"
+    }
+  ],
+  "rows": [
+    {
+      "model": "olmo",
+      "group": "Local mismatch present\n(n=166 rows)",
+      "value": 0.5120481927710844
+    },
+    {
+      "model": "olmo",
+      "group": "No local mismatch\n(n=26 rows)",
+      "value": 0.5
+    },
+    {
+      "model": "qwen",
+      "group": "Local mismatch present\n(n=166 rows)",
+      "value": 0.5481927710843374
+    },
+    {
+      "model": "qwen",
+      "group": "No local mismatch\n(n=26 rows)",
+      "value": 0.5
+    },
+    {
+      "model": "seed101",
+      "group": "Local mismatch present\n(n=166 rows)",
+      "value": 0.9879518072289156
+    },
+    {
+      "model": "seed101",
+      "group": "No local mismatch\n(n=26 rows)",
+      "value": 0.5384615384615384
+    },
+    {
+      "model": "seed211",
+      "group": "Local mismatch present\n(n=166 rows)",
+      "value": 0.9337349397590361
+    },
+    {
+      "model": "seed211",
+      "group": "No local mismatch\n(n=26 rows)",
+      "value": 0.5769230769230769
+    },
+    {
+      "model": "seed307",
+      "group": "Local mismatch present\n(n=166 rows)",
+      "value": 0.9759036144578314
+    },
+    {
+      "model": "seed307",
+      "group": "No local mismatch\n(n=26 rows)",
+      "value": 0.5
+    },
+    {
+      "model": "seed401",
+      "group": "Local mismatch present\n(n=166 rows)",
+      "value": 1.0
+    },
+    {
+      "model": "seed401",
+      "group": "No local mismatch\n(n=26 rows)",
+      "value": 0.6153846153846154
+    },
+    {
+      "model": "seed503",
+      "group": "Local mismatch present\n(n=166 rows)",
+      "value": 0.9939759036144579
+    },
+    {
+      "model": "seed503",
+      "group": "No local mismatch\n(n=26 rows)",
+      "value": 0.5
+    },
+    {
+      "model": "smol",
+      "group": "Local mismatch present\n(n=166 rows)",
+      "value": 0.5
+    },
+    {
+      "model": "smol",
+      "group": "No local mismatch\n(n=26 rows)",
+      "value": 0.5
+    }
+  ]
+}

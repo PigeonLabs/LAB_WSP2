@@ -216,7 +216,7 @@ def f3():
             'rows':[{'model':name+'/'+checkpoint,'task':task,'value':value} for (name,checkpoint,task),value in sorted(competence.items())],
             'row':'model','column':'task','value':'value','vmin':0,'vmax':1,'percent':True,'unit':'Accuracy;chance=50%',
             'source':sources,'note':'D3 was collected only after the registered D2 maps were frozen. Initial/middle/final are not independent model replications.'}]
-    p['rationale']=f"등록한 최종 모델 비교26개와 초기·중간 체크포인트 비교40개를 완료했다. 두 위치의 최종 모델쌍×과제 셀 중 {eligible_cells}개에서 양쪽 모델의 능력 조건을 충족했다. 전체 과제 결과와 능력 조건을 구분하며, 학습 전 대응과 반복 무작위 매칭을 함께 공개한다. 확인 검정의 전역 BH는 F6에서 적용한다."
+    p['rationale']=f"등록한 최종 모델 비교26개와 초기·중간 체크포인트 비교40개를 완료했다. 두 위치의 최종 모델쌍×과제 셀 중 {eligible_cells}개에서 양쪽 모델의 능력 조건을 충족했다. 전체 과제 결과와 능력 조건을 구분하며, 학습 전 대응과 반복 무작위 매칭을 함께 공개한다. 확인 검정의 전역 BH는 F6에서 적용한다. 이종 계열은 calibration으로 고정한 서로 다른 프롬프트 접두 맥락을 사용하므로 동일 전체 입력의 비교가 아니며, 낮은 과제 능력에서 기능 보존의 부재를 결론내릴 수 없다."
     p['competence_gate']={'rule':'Both models accuracy>=0.70 and Wilson95 lower>0.50 per task',
                           'passed_final_pair_position_task_cells':eligible_cells,'total_final_pair_position_task_cells':104,
                           'role':'Reporting strata only; no refitting or model selection using D3'}
@@ -237,7 +237,45 @@ def f3():
                      'Final-D1 candidate selection and final-D2 maps are reused across checkpoint trajectories.',
                      'Expanded semantic labels remain input-task/subtype truth-contrast proxies with UNKNOWN permitted.',
                      'One global confirmatory family is corrected in F6; interim p values are unadjusted.',
-                     'A positive response correlation does not establish equal causal roles.']
+                     'A positive response correlation does not establish equal causal roles.',
+                     'Cross-family prompts use calibration-selected formats: Qwen fourshot, Smol default, OLMo explicit. The target statement and row identity are shared, but prefix contexts differ; this is a calibrated-use comparison, not an identical-full-context test. Native character-span alignment does not remove the prefix confound.',
+                     'All three pretrained families fall below the0.70 calibration competence threshold. D3 competence must be judged separately; low-competence failures cannot establish absence of functional conservation.']
+    stress_path=RUN/'exploratory/stress_D3.json'
+    if stress_path.exists():
+        stress=read(stress_path)
+        if stress.get('status')!='COMPLETE_DESCRIPTIVE' or stress.get('missing_models'):
+            raise NotReady('F3 shortcut diagnostic is incomplete')
+        if not stress.get('cuts_selected_after_D3_observed') or stress.get('primary_results_changed'):
+            raise ValueError('Unexpected stress analysis scope')
+        stress_rows=[];tiny={'adjacent_mismatch_present':[],'no_adjacent_mismatch':[]};counts={}
+        for model,groups in stress['models'].items():
+            for group,r in groups['syntax/local_cue'].items():
+                label=('Local mismatch present' if group=='adjacent_mismatch_present' else 'No local mismatch')+f"\n(n={r['n_rows']} rows)"
+                stress_rows.append({'model':model,'group':label,'value':r['accuracy_pair_balanced']})
+                p['metrics'].append(metric('Posthoc syntax cue-stratum accuracy',r['accuracy_pair_balanced'],stress_path,
+                    model=model,method=group,task='syntax',split='D3 exploratory',n=r['n_rows'],n_clusters=r['n_wrappers'],unit='fraction'))
+                if model.startswith('seed'):tiny[group].append(r['accuracy_pair_balanced'])
+                counts.setdefault(group,r['n_rows'])
+                if counts[group]!=r['n_rows']:raise ValueError('Stress strata support differs across models')
+        present=tiny['adjacent_mismatch_present'];absent=tiny['no_adjacent_mismatch']
+        p['rationale']+=f" 사후 괄호 스트레스 분석에서 독립 학습 모델의 정확도는 인접 종류 불일치가 있는 pair 집합에서 {min(present):.1%}–{max(present):.1%}(n={counts['adjacent_mismatch_present']}), 없는 집합에서 {min(absent):.1%}–{max(absent):.1%}(n={counts['no_adjacent_mismatch']})였다. 작은 사후 부분집합과 내용 차이를 포함한 연관성이므로 인과적 shortcut 사용 증거는 아니지만, 전체 정확도 능력 gate만으로 재귀적·구조적 이해를 입증할 수 없음을 보여 준다. 수 비교·부정 과제의 측정과는 구분한다."
+        p['figures'].append({'id':'posthoc_syntax_local_cue','kind':'heatmap',
+            'title':'Posthoc D3 syntax accuracy by local-cue stratum','rows':stress_rows,
+            'row':'model','column':'group','value':'value','vmin':0,'vmax':1,'percent':True,
+            'unit':'Pair-balanced accuracy','source':rel(stress_path),'figsize':[10,6.5],
+            'note':'Exploratory cuts chosen after D3; both true/false pair members retained. N counts rows. Unequal content and small n=26 stratum confound differences; no causal cue-use claim or confirmatory test.'})
+        p['artifacts'] += [{'label':'Posthoc D3 shortcut stress measurements','path':rel(stress_path)},
+                           {'label':'Stress analysis definitions and complete tables','path':'reports/followup-v2/STRESS_ANALYSIS.md'}]
+        p['limitations'] += ['Overall syntax accuracy above the operational competence threshold does not prove recursive parsing or structural understanding. The posthoc no-adjacent-mismatch stratum is small and content-confounded; its gap is not a controlled causal effect.',
+                             'Syntax shortcut findings do not substitute for separate construct validation of comparison, negation, or arithmetic. Frozen primary mappings, thresholds and tests are unchanged.']
+    descriptive_path=path.parent/'competence_descriptive.json'
+    if descriptive_path.exists():
+        desc=read(descriptive_path)
+        for r in desc['rows']:
+            for key in ('activation','semantic','random','activation_minus_random','semantic_minus_activation'):
+                p['metrics'].append(metric('Competence-qualified descriptive '+key,r[key],descriptive_path,
+                  model_pair=r['cohort'],method=r['position'],task=r['task'],unit='Pearson or difference',n=r['eligible_pairs']))
+        p['artifacts'].append({'label':'Competence-qualified descriptive task strata','path':rel(descriptive_path)})
     return p
 
 
@@ -356,7 +394,7 @@ def f4():
              'x':'scale','y':'value','series':'model','xlabel':'Activation scale','ylabel':'Mean absolute margin effect',
              'source':sources,'show_in_readme':False,
              'note':'Descriptive mean over fixed units and examples; no uncertainty or model-population inference is attached. These dose modes never select the primary matching.'})
-    p['rationale']=f"등록한 모델쌍·단위 종류26개에서 D4의 zero/mean/patch 인과 효과를 비교했다. 모델쌍×단위종류×과제 셀104개 중 {eligible}개가 양쪽 모델의 과제 능력 기준을 충족했다. 단일 뉴런과 그룹을 분리하며 dose-response는 주 정렬과 별도의 기술 진단으로 보존한다. 전역 다중검정과 전체 판정은 F6에서 완료한다."
+    p['rationale']=f"등록한 모델쌍·단위 종류26개에서 D4의 zero/mean/patch 인과 효과를 비교했다. 모델쌍×단위종류×과제 셀104개 중 {eligible}개가 양쪽 모델의 과제 능력 기준을 충족했다. 단일 뉴런과 그룹을 분리하며 dose-response는 주 정렬과 별도의 기술 진단으로 보존한다. 전역 다중검정과 전체 판정은 F6에서 완료한다. 이종 계열은 같은 목표 문장에도 서로 다른 calibration 선택 접두 맥락을 사용한다. 위치 정렬은 이 맥락 차이를 제거하지 않으며, 낮은 D4 능력에서는 기능 보존의 부재를 판정할 수 없다."
     p['competence_gate']={'rule':'Both models accuracy>=0.70 and Wilson95 lower>0.50 on D4',
                           'passed_pair_kind_task_cells':eligible,'total_pair_kind_task_cells':104,
                           'role':'Reporting strata only; never refit or select mappings using D4'}
@@ -366,7 +404,9 @@ def f4():
                      'Groups contain fixed D1 candidates; the results do not imply full circuit recovery.',
                      'Zero/mean/patch can alter activation distributions; dose response is supplementary.',
                      'Exact-zero or constant effects are not evidence of causal agreement.',
-                     'No D4 outcome changes the frozen maps or D2-selected mixing weights.']
+                     'No D4 outcome changes the frozen maps or D2-selected mixing weights.',
+                     'Cross-family causal comparisons retain each calibration-selected prompt format: Qwen fourshot, Smol default, OLMo explicit. The same target statements have different prefix contexts. Character-span alignment cannot remove this context confound; conclusions concern calibrated-use conditions, not identical full inputs.',
+                     'Pretrained calibration competence is below0.70. D4 competence is evaluated independently; low competence cannot falsify conservation of a function not established in the tested model.']
     return p
 
 

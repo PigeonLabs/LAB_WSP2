@@ -35,7 +35,8 @@ def selection_for(name):
 def release(model):
     model.cpu();del model;torch.cuda.empty_cache()
 
-def collections(stage,ds,names=NAMES):
+def collections(stage,ds,names=None):
+    names=NAMES if names is None else names
     for name in names:
         checkpoints=['final'] if stage=='discover' or not name.startswith('seed') else ['final','initial','middle']
         for checkpoint in checkpoints:
@@ -89,14 +90,16 @@ def positive(ds):
     write_once(out/'summary.json',{'model_info':info,'n':len(rows),'candidates':len(a['layers']),'alignment':results,'intervention_checks':checks,'negative_checks':negatives,'passed':all(v['passed'] for v in checks.values()) and all(v['recovered_fraction']==1 for v in results.values()) and not any(v['equal_at_positive_control_tolerance'] for v in negatives.values()),'scope':'constructed within-model permutation symmetry; not independently learned conservation','random_replicates':100,'elapsed_seconds':time.monotonic()-started,'peak_allocated_bytes':torch.cuda.max_memory_allocated()})
     release(clone);release(model)
 
-def causal(stage,ds,names=NAMES):
+def causal(stage,ds,names=None):
+    names=NAMES if names is None else names
     split='D2' if stage=='causal-fit' else 'D4'
     for name in names:
         model,tok,info=model_load(name);start=time.monotonic();torch.cuda.reset_peak_memory_stats()
         out=RUN/'causal'/name/split
-        collect_causal(model,tok,prepared(ds,name,split),RUN/'collections'/name/'final/D1',out,info,pairs_per_task_wrapper=4,batch_size=16,max_seconds=7200)
+        batch_size=16 if name.startswith('seed') else 64
+        collect_causal(model,tok,prepared(ds,name,split),RUN/'collections'/name/'final/D1',out,info,pairs_per_task_wrapper=4,batch_size=batch_size,max_seconds=7200)
         p=RUN/'runtime'/f'{stage}_{name}.json'
-        if not p.exists():write_once(p,{'seconds':time.monotonic()-start,'peak_allocated_bytes':torch.cuda.max_memory_allocated(),'model_info':info})
+        if not p.exists():write_once(p,{'seconds':time.monotonic()-start,'peak_allocated_bytes':torch.cuda.max_memory_allocated(),'model_info':info,'inference_batch_size':batch_size})
         release(model)
 
 def main():

@@ -1,0 +1,9 @@
+{
+  "causal_batch_size": {
+    "independent_tiny": 16,
+    "public_pretrained": 64
+  },
+  "reason": "Hardware throughput setting chosen before public-model D2 causal measurements; identical data and intervention grid.",
+  "mode_scores": "Core zero/mean/patch; all8 conditions saved.",
+  "gpu_scheduling": "one active GPU experiment process; CPU fitting may run concurrently"
+}

@@ -2,14 +2,14 @@
 
 ## 후속 연구 — followup-v2
 
-갱신: **2026-11-04 12:19 KST**. 이 절은 새 단계별 측정 파일에서 생성되었습니다.
+갱신: **2026-11-04 12:37 KST**. 이 절은 새 단계별 측정 파일에서 생성되었습니다.
 
 | 단계 | 실험 | 실행 상태 | 가설 판정 |
 |---|---|---|---|
 | F0 | [새 benchmark와 기존 결과 보존](../../reports/followup-v2/F0_REPORT.md) | MEASURED | SUPPORTED |
 | F1 | [5개 독립 초기화 학습과 calibration 전용 형식 선택](../../reports/followup-v2/F1_REPORT.md) | MEASURED | INCONCLUSIVE |
 | F2 | [정확한 뉴런 순열의 양성 대조군](../../reports/followup-v2/F2_REPORT.md) | MEASURED | SUPPORTED |
-| F3 | [Independent and cross-family alignment](../../reports/followup-v2/F3_REPORT.md) | PENDING | INCONCLUSIVE |
+| F3 | [독립 시드·이종 계열의 두 위치 정렬과 학습 궤적](../../reports/followup-v2/F3_REPORT.md) | MEASURED | INCONCLUSIVE |
 | F4 | [Single/group causal effects and dose response](../../reports/followup-v2/F4_REPORT.md) | PENDING | INCONCLUSIVE |
 | F5 | [Transplantation and selective merging](../../reports/followup-v2/F5_REPORT.md) | PENDING | INCONCLUSIVE |
 | F6 | [Global statistics, replay and preservation audit](../../reports/followup-v2/F6_REPORT.md) | PENDING | INCONCLUSIVE |
@@ -69,4 +69,54 @@ Random baseline has 100 realizations; its SD is reported separately and is not l
 [그림 데이터](../../artifacts/followup-v2/figures/f2_permutation_vs_random.json)
 
 [F2 측정값·불확실성·원본](../../reports/followup-v2/F2_REPORT.md)
+
+### F3 — 독립 시드·이종 계열의 두 위치 정렬과 학습 궤적
+
+**MEASURED · INCONCLUSIVE**. 등록한 최종 모델 비교26개와 초기·중간 체크포인트 비교40개를 완료했다. 두 위치의 최종 모델쌍×과제 셀 중 52개에서 양쪽 모델의 능력 조건을 충족했다. 전체 과제 결과와 능력 조건을 구분하며, 학습 전 대응과 반복 무작위 매칭을 함께 공개한다. 확인 검정의 전역 BH는 F6에서 적용한다. 이종 계열은 calibration으로 고정한 서로 다른 프롬프트 접두 맥락을 사용하므로 동일 전체 입력의 비교가 아니며, 낮은 과제 능력에서 기능 보존의 부재를 결론내릴 수 없다. 사후 괄호 스트레스 분석에서 독립 학습 모델의 정확도는 인접 종류 불일치가 있는 pair 집합에서 93.4%–100.0%(n=166), 없는 집합에서 50.0%–61.5%(n=26)였다. 작은 사후 부분집합과 내용 차이를 포함한 연관성이므로 인과적 shortcut 사용 증거는 아니지만, 전체 정확도 능력 gate만으로 재귀적·구조적 이해를 입증할 수 없음을 보여 준다. 수 비교·부정 과제의 측정과는 구분한다.
+
+![D3 final-model alignment: answer position](../../artifacts/followup-v2/figures/f3_final_answer.svg)
+
+All task rows retained; competence-qualified strata are reported in the source. Random baseline averages100 frozen maps.
+
+[그림 데이터](../../artifacts/followup-v2/figures/f3_final_answer.json)
+
+![D3 final-model alignment: span position](../../artifacts/followup-v2/figures/f3_final_span.svg)
+
+All task rows retained; competence-qualified strata are reported in the source. Random baseline averages100 frozen maps.
+
+[그림 데이터](../../artifacts/followup-v2/figures/f3_final_span.json)
+
+![Joint-wrapper activation_minus_random](../../artifacts/followup-v2/figures/f3_activation_minus_random.svg)
+
+All observed pairs remain together inside each resampled wrapper; these intervals are conditional on the fixed model collection, not unseen model seeds.
+
+[그림 데이터](../../artifacts/followup-v2/figures/f3_activation_minus_random.json)
+
+![Joint-wrapper semantic_minus_activation](../../artifacts/followup-v2/figures/f3_semantic_minus_activation.svg)
+
+All observed pairs remain together inside each resampled wrapper; these intervals are conditional on the fixed model collection, not unseen model seeds.
+
+[그림 데이터](../../artifacts/followup-v2/figures/f3_semantic_minus_activation.json)
+
+![Independent-seed response correspondence across training](../../artifacts/followup-v2/figures/f3_independent_seed_trajectory.svg)
+
+The same final-D1 neurons and final-D2 maps are reused at all checkpoints. This is descriptive tracking, not checkpoint-specific feature discovery.
+
+[그림 데이터](../../artifacts/followup-v2/figures/f3_independent_seed_trajectory.json)
+
+![D3 task competence across models and checkpoints](../../artifacts/followup-v2/figures/f3_trajectory_competence.svg)
+
+D3 was collected only after the registered D2 maps were frozen. Initial/middle/final are not independent model replications.
+
+[그림 데이터](../../artifacts/followup-v2/figures/f3_trajectory_competence.json)
+
+![Posthoc D3 syntax accuracy by local-cue stratum](../../artifacts/followup-v2/figures/f3_posthoc_syntax_local_cue.svg)
+
+Exploratory cuts chosen after D3; both true/false pair members retained. N counts rows. Unequal content and small n=26 stratum confound differences; no causal cue-use claim or confirmatory test.
+
+[그림 데이터](../../artifacts/followup-v2/figures/f3_posthoc_syntax_local_cue.json)
+
+[F3 측정값·불확실성·원본](../../reports/followup-v2/F3_REPORT.md)
+
+[연구 해석 한계와 비판](../../reports/followup-v2/RESEARCH_CRITIQUE.md)
 

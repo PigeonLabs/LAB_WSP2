@@ -1,0 +1,25 @@
+{
+  "observed_at_kst": "2026-11-04T12:48:05.877900+09:00",
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-146-generic-x86_64-with-glibc2.39",
+  "packages": {
+    "torch": "2.15.0",
+    "transformers": "5.21.0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pandas": "3.1.0",
+    "pyarrow": "26.0.0",
+    "matplotlib": "3.11.2",
+    "pytest": "9.2.0",
+    "huggingface-hub": "2.3.0"
+  },
+  "cuda": "13.2",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 580.178.04, 97887 MiB",
+  "baseline_commit": "127db6cdfb75d13b6ce70b4514ef82ed2f044bc0",
+  "notes": [
+    "Captured during followup execution; package environment unchanged from training.",
+    "Project venv borrows installed packages through read-only pth; no global or driver changes.",
+    "Training BF16; scoring FP32; analysis FP64.",
+    "GPU retraining is not promised bit-identical across hardware/library versions."
+  ]
+}

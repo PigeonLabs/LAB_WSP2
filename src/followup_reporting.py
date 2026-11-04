@@ -269,6 +269,14 @@ def render_followup_reports(root=None,max_stage=None):
         for f in s['figures']:
             if f['show_in_readme']:section+=f"![{f['title']}]({f['path']})\n\n{f['note']}\n\n[그림 데이터]({f['receipt']})\n\n"
         section+=f"[{s['id']} 측정값·불확실성·원본](reports/followup-v2/{s['id']}_REPORT.md)\n\n"
+    critique=['# Followup-v2 research critique', '', '측정 완료 여부, 과제 능력, 대조군 회복, 가설 지지를 구분합니다. 아래 한계는 각 단계의 저장된 증거와 함께 읽어야 합니다.', '']
+    for s in snapshots:
+        if s['status'] in ('PENDING','PLANNED'):continue
+        critique += [f"## {s['id']} — {s['title']}", '', f"상태: {s['status']}; 판정: {s['verdict']}.", '']
+        critique += ['- '+item for item in s['payload'].get('limitations',[])]
+        critique += ['', f"[측정과 원본]({s['id']}_REPORT.md)", '']
+    (reports/'RESEARCH_CRITIQUE.md').write_text('\n'.join(critique)+'\n')
+    section+='[연구 해석 한계와 비판](reports/followup-v2/RESEARCH_CRITIQUE.md)\n\n'
     (reports/'README_SECTION.md').write_text(section)
     full=section.replace('](reports/','](../../reports/').replace('](artifacts/','](../../artifacts/')
     (reports/'FINAL_FOLLOWUP_REPORT.md').write_text('# Followup-v2 research report\n\n'+full)

@@ -1,0 +1,148 @@
+{
+  "status": "POST_HOC_EXPLORATORY",
+  "pair": [
+    "smol",
+    "olmo"
+  ],
+  "cohort": "cross_family",
+  "position": "answer",
+  "fit_split": "D2",
+  "evaluation_split": "D3",
+  "fitted_after_D3_observed": true,
+  "wrapper_scores": {
+    "old_four_dimensional": {
+      "D3:wrapper:t00": 0.010190337400490468,
+      "D3:wrapper:t01": -0.0016523721922803878,
+      "D3:wrapper:t02": 0.07177739500001741,
+      "D3:wrapper:t03": 0.04915284941648795,
+      "D3:wrapper:t04": 0.020034072617712437,
+      "D3:wrapper:t05": -0.03176325168769457,
+      "D3:wrapper:t06": 0.015086413512130763,
+      "D3:wrapper:t07": 0.013417498887713708,
+      "D3:wrapper:t08": 0.029406557401114298,
+      "D3:wrapper:t09": 0.003927456969034147,
+      "D3:wrapper:t10": 0.00937719741259684,
+      "D3:wrapper:t11": 0.013366851701007324,
+      "D3:wrapper:t12": 0.003191567132934418,
+      "D3:wrapper:t13": -0.051011881654686016,
+      "D3:wrapper:t14": 0.0690572802609194,
+      "D3:wrapper:t15": 0.04437026125674347,
+      "D3:wrapper:t16": 0.019629688068263686,
+      "D3:wrapper:t17": 0.012204840304291767,
+      "D3:wrapper:t18": -0.016580404124824033,
+      "D3:wrapper:t19": -0.052291171026945124,
+      "D3:wrapper:t20": -0.04228521269290213,
+      "D3:wrapper:t21": 0.06572866975982652,
+      "D3:wrapper:t22": 0.02010549814220868,
+      "D3:wrapper:t23": 0.016559565510446024
+    },
+    "expanded": {
+      "D3:wrapper:t00": -0.025924664992803118,
+      "D3:wrapper:t01": 0.05201653307438524,
+      "D3:wrapper:t02": 0.08521171883605182,
+      "D3:wrapper:t03": 0.06502066489087752,
+      "D3:wrapper:t04": -0.006498584316271737,
+      "D3:wrapper:t05": -0.03400709459346302,
+      "D3:wrapper:t06": 0.009760049967075893,
+      "D3:wrapper:t07": -0.0009299373778713198,
+      "D3:wrapper:t08": 0.05721240896858005,
+      "D3:wrapper:t09": -0.04454353790058332,
+      "D3:wrapper:t10": -0.0483893916751087,
+      "D3:wrapper:t11": -0.01179282249295158,
+      "D3:wrapper:t12": 0.017571011816652785,
+      "D3:wrapper:t13": -0.05911702760961754,
+      "D3:wrapper:t14": 0.06776800098856556,
+      "D3:wrapper:t15": 0.034336944602904984,
+      "D3:wrapper:t16": 0.015985822360711822,
+      "D3:wrapper:t17": -0.061928618910373115,
+      "D3:wrapper:t18": 0.022344698967291025,
+      "D3:wrapper:t19": 0.002522614142526757,
+      "D3:wrapper:t20": -0.027613820181599177,
+      "D3:wrapper:t21": 0.03613690246200821,
+      "D3:wrapper:t22": 0.00470070717715527,
+      "D3:wrapper:t23": 0.03160100916204058
+    },
+    "expanded_minus_old": {
+      "D3:wrapper:t00": -0.036115002393293585,
+      "D3:wrapper:t01": 0.05366890526666562,
+      "D3:wrapper:t02": 0.013434323836034406,
+      "D3:wrapper:t03": 0.01586781547438957,
+      "D3:wrapper:t04": -0.026532656933984173,
+      "D3:wrapper:t05": -0.002243842905768456,
+      "D3:wrapper:t06": -0.00532636354505487,
+      "D3:wrapper:t07": -0.014347436265585028,
+      "D3:wrapper:t08": 0.02780585156746575,
+      "D3:wrapper:t09": -0.048470994869617465,
+      "D3:wrapper:t10": -0.057766589087705544,
+      "D3:wrapper:t11": -0.025159674193958904,
+      "D3:wrapper:t12": 0.014379444683718367,
+      "D3:wrapper:t13": -0.008105145954931524,
+      "D3:wrapper:t14": -0.0012892792723538382,
+      "D3:wrapper:t15": -0.010033316653838484,
+      "D3:wrapper:t16": -0.003643865707551864,
+      "D3:wrapper:t17": -0.07413345921466488,
+      "D3:wrapper:t18": 0.038925103092115054,
+      "D3:wrapper:t19": 0.054813785169471885,
+      "D3:wrapper:t20": 0.01467139251130295,
+      "D3:wrapper:t21": -0.029591767297818317,
+      "D3:wrapper:t22": -0.015404790965053409,
+      "D3:wrapper:t23": 0.015041443651594558
+    }
+  },
+  "descriptive": {
+    "old_four_dimensional": 0.012124987807275294,
+    "expanded": 0.007560149473591037,
+    "expanded_minus_old": -0.004564838333684258
+  },
+  "by_task": {
+    "arithmetic": {
+      "old_mean": 0.02360460465278959,
+      "expanded_mean": -0.02152465560406162,
+      "expanded_minus_old": -0.04512926025685121,
+      "both_competence_passed": false
+    },
+    "comparison": {
+      "old_mean": -0.02224089909950448,
+      "expanded_mean": 0.018258332731078217,
+      "expanded_minus_old": 0.040499231830582696,
+      "both_competence_passed": false
+    },
+    "negation": {
+      "old_mean": -0.001100415326480889,
+      "expanded_mean": -0.001998837367454932,
+      "expanded_minus_old": -0.0008984220409740432,
+      "both_competence_passed": false
+    },
+    "syntax": {
+      "old_mean": 0.04823666100229695,
+      "expanded_mean": 0.035505758134802494,
+      "expanded_minus_old": -0.012730902867494454,
+      "both_competence_passed": false
+    }
+  },
+  "reused_baselines": {
+    "activation__flexible__hungarian": {
+      "mean": 0.01914230135751897,
+      "n_valid_wrappers": 24,
+      "n_wrappers": 24
+    },
+    "random__flexible": {
+      "mean": 0.0020451502674524035,
+      "n_valid_wrappers": 24,
+      "n_wrappers": 24
+    }
+  },
+  "source": {
+    "fit_sha256": "5ae7b7fdf8d595fd7ae4ec0f4f1cda848aafd8b5102b602212ed9ece0a8093ee",
+    "D3_a_sha256": "8c8cd087ea2e523cbf305b55a740aabff6e81c77bbbcf2b3490dc6dca3a2ffe6",
+    "D3_b_sha256": "3fd1772857af401de6e68f8b99504ddf539f625549d4e734dac248c33c8d7457",
+    "expanded_fit_sha256": "09ab8693f7b745cb3500628a4627e3c0fedfa8da05b8ea503f096e6159b28ecd",
+    "primary_eval_sha256": "9b83aa6860a6fda5a467899de2030265c6cd85137e0a8c74c4d0a7469d6f40e2"
+  },
+  "limitations": [
+    "Requested after D3 observations: exploratory only; not a new independent confirmation.",
+    "Controls data/candidates/metric for this proxy contrast only.",
+    "Cannot attribute the overall pilot-v1 to followup-v2 difference solely to the semantic proxy.",
+    "Existing repeated-random baseline reused; no new random realization selected."
+  ]
+}

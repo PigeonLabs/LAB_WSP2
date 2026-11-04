@@ -1,0 +1,5144 @@
+{
+  "id": "F3",
+  "title": "독립 시드·이종 계열의 두 위치 정렬과 학습 궤적",
+  "status": "MEASURED",
+  "question": "반복 무작위·학습 전 대조군을 통제한 독립 입력 대응이 존재하며 확장 의미 proxy가 개선하는가?",
+  "verdict": "INCONCLUSIVE",
+  "rationale": "등록한 최종 모델 비교26개와 초기·중간 체크포인트 비교40개를 완료했다. 두 위치의 최종 모델쌍×과제 셀 중 52개에서 양쪽 모델의 능력 조건을 충족했다. 전체 과제 결과와 능력 조건을 구분하며, 학습 전 대응과 반복 무작위 매칭을 함께 공개한다. 확인 검정의 전역 BH는 F6에서 적용한다. 이종 계열은 calibration으로 고정한 서로 다른 프롬프트 접두 맥락을 사용하므로 동일 전체 입력의 비교가 아니며, 낮은 과제 능력에서 기능 보존의 부재를 결론내릴 수 없다. 사후 괄호 스트레스 분석에서 독립 학습 모델의 정확도는 인접 종류 불일치가 있는 pair 집합에서 93.4%–100.0%(n=166), 없는 집합에서 50.0%–61.5%(n=26)였다. 작은 사후 부분집합과 내용 차이를 포함한 연관성이므로 인과적 shortcut 사용 증거는 아니지만, 전체 정확도 능력 gate만으로 재귀적·구조적 이해를 입증할 수 없음을 보여 준다. 수 비교·부정 과제의 측정과는 구분한다.",
+  "metrics": [
+    {
+      "name": "D3 response agreement",
+      "value": 0.14152046207471433,
+      "source": "results/followup-v2/alignment/seed101_seed211/answer/eval.json",
+      "model_pair": "seed101_seed211",
+      "method": "answer/Activation",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.1484999965958281,
+      "source": "results/followup-v2/alignment/seed101_seed211/answer/eval.json",
+      "model_pair": "seed101_seed211",
+      "method": "answer/Rank",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.16557111106310402,
+      "source": "results/followup-v2/alignment/seed101_seed211/answer/eval.json",
+      "model_pair": "seed101_seed211",
+      "method": "answer/Semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.13642955382609886,
+      "source": "results/followup-v2/alignment/seed101_seed211/answer/eval.json",
+      "model_pair": "seed101_seed211",
+      "method": "answer/Sign-semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.01162112209222125,
+      "source": "results/followup-v2/alignment/seed101_seed211/answer/eval.json",
+      "model_pair": "seed101_seed211",
+      "method": "answer/Random (100)",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.05987923669552863,
+      "source": "results/followup-v2/alignment/seed101_seed211/answer/eval.json",
+      "model_pair": "seed101_seed211",
+      "method": "answer/Shuffled labels",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.06784145798366752,
+      "source": "results/followup-v2/alignment/seed101_seed211/span/eval.json",
+      "model_pair": "seed101_seed211",
+      "method": "span/Activation",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.09398121638409501,
+      "source": "results/followup-v2/alignment/seed101_seed211/span/eval.json",
+      "model_pair": "seed101_seed211",
+      "method": "span/Rank",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.13403878507255415,
+      "source": "results/followup-v2/alignment/seed101_seed211/span/eval.json",
+      "model_pair": "seed101_seed211",
+      "method": "span/Semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.05767233957352295,
+      "source": "results/followup-v2/alignment/seed101_seed211/span/eval.json",
+      "model_pair": "seed101_seed211",
+      "method": "span/Sign-semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 7.067293928703783e-05,
+      "source": "results/followup-v2/alignment/seed101_seed211/span/eval.json",
+      "model_pair": "seed101_seed211",
+      "method": "span/Random (100)",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.05787413799869177,
+      "source": "results/followup-v2/alignment/seed101_seed211/span/eval.json",
+      "model_pair": "seed101_seed211",
+      "method": "span/Shuffled labels",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.130485038379339,
+      "source": "results/followup-v2/alignment/seed101_seed307/answer/eval.json",
+      "model_pair": "seed101_seed307",
+      "method": "answer/Activation",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.13674727427550462,
+      "source": "results/followup-v2/alignment/seed101_seed307/answer/eval.json",
+      "model_pair": "seed101_seed307",
+      "method": "answer/Rank",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.1436009289791249,
+      "source": "results/followup-v2/alignment/seed101_seed307/answer/eval.json",
+      "model_pair": "seed101_seed307",
+      "method": "answer/Semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.1060165564432763,
+      "source": "results/followup-v2/alignment/seed101_seed307/answer/eval.json",
+      "model_pair": "seed101_seed307",
+      "method": "answer/Sign-semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.008378579721069158,
+      "source": "results/followup-v2/alignment/seed101_seed307/answer/eval.json",
+      "model_pair": "seed101_seed307",
+      "method": "answer/Random (100)",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.08156001872407706,
+      "source": "results/followup-v2/alignment/seed101_seed307/answer/eval.json",
+      "model_pair": "seed101_seed307",
+      "method": "answer/Shuffled labels",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.09648529958900547,
+      "source": "results/followup-v2/alignment/seed101_seed307/span/eval.json",
+      "model_pair": "seed101_seed307",
+      "method": "span/Activation",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.1051766616766242,
+      "source": "results/followup-v2/alignment/seed101_seed307/span/eval.json",
+      "model_pair": "seed101_seed307",
+      "method": "span/Rank",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.04308093145609241,
+      "source": "results/followup-v2/alignment/seed101_seed307/span/eval.json",
+      "model_pair": "seed101_seed307",
+      "method": "span/Semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.010034839580761854,
+      "source": "results/followup-v2/alignment/seed101_seed307/span/eval.json",
+      "model_pair": "seed101_seed307",
+      "method": "span/Sign-semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.0016240230661853684,
+      "source": "results/followup-v2/alignment/seed101_seed307/span/eval.json",
+      "model_pair": "seed101_seed307",
+      "method": "span/Random (100)",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.018733270109948297,
+      "source": "results/followup-v2/alignment/seed101_seed307/span/eval.json",
+      "model_pair": "seed101_seed307",
+      "method": "span/Shuffled labels",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.15484794872281712,
+      "source": "results/followup-v2/alignment/seed101_seed401/answer/eval.json",
+      "model_pair": "seed101_seed401",
+      "method": "answer/Activation",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.1614890189148617,
+      "source": "results/followup-v2/alignment/seed101_seed401/answer/eval.json",
+      "model_pair": "seed101_seed401",
+      "method": "answer/Rank",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.15915496386102937,
+      "source": "results/followup-v2/alignment/seed101_seed401/answer/eval.json",
+      "model_pair": "seed101_seed401",
+      "method": "answer/Semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.1279604194814472,
+      "source": "results/followup-v2/alignment/seed101_seed401/answer/eval.json",
+      "model_pair": "seed101_seed401",
+      "method": "answer/Sign-semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.000739002293493591,
+      "source": "results/followup-v2/alignment/seed101_seed401/answer/eval.json",
+      "model_pair": "seed101_seed401",
+      "method": "answer/Random (100)",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.0919036085072568,
+      "source": "results/followup-v2/alignment/seed101_seed401/answer/eval.json",
+      "model_pair": "seed101_seed401",
+      "method": "answer/Shuffled labels",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.10476838884378259,
+      "source": "results/followup-v2/alignment/seed101_seed401/span/eval.json",
+      "model_pair": "seed101_seed401",
+      "method": "span/Activation",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.07797193764868747,
+      "source": "results/followup-v2/alignment/seed101_seed401/span/eval.json",
+      "model_pair": "seed101_seed401",
+      "method": "span/Rank",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.08088875418495704,
+      "source": "results/followup-v2/alignment/seed101_seed401/span/eval.json",
+      "model_pair": "seed101_seed401",
+      "method": "span/Semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.04716209949352492,
+      "source": "results/followup-v2/alignment/seed101_seed401/span/eval.json",
+      "model_pair": "seed101_seed401",
+      "method": "span/Sign-semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.0007608244680645717,
+      "source": "results/followup-v2/alignment/seed101_seed401/span/eval.json",
+      "model_pair": "seed101_seed401",
+      "method": "span/Random (100)",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.02581670629390537,
+      "source": "results/followup-v2/alignment/seed101_seed401/span/eval.json",
+      "model_pair": "seed101_seed401",
+      "method": "span/Shuffled labels",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.10030213062347465,
+      "source": "results/followup-v2/alignment/seed101_seed503/answer/eval.json",
+      "model_pair": "seed101_seed503",
+      "method": "answer/Activation",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.11391982456466658,
+      "source": "results/followup-v2/alignment/seed101_seed503/answer/eval.json",
+      "model_pair": "seed101_seed503",
+      "method": "answer/Rank",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.1047459809819722,
+      "source": "results/followup-v2/alignment/seed101_seed503/answer/eval.json",
+      "model_pair": "seed101_seed503",
+      "method": "answer/Semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.07015963727157443,
+      "source": "results/followup-v2/alignment/seed101_seed503/answer/eval.json",
+      "model_pair": "seed101_seed503",
+      "method": "answer/Sign-semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.018155072174599083,
+      "source": "results/followup-v2/alignment/seed101_seed503/answer/eval.json",
+      "model_pair": "seed101_seed503",
+      "method": "answer/Random (100)",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.07803241625724548,
+      "source": "results/followup-v2/alignment/seed101_seed503/answer/eval.json",
+      "model_pair": "seed101_seed503",
+      "method": "answer/Shuffled labels",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.08024440503535567,
+      "source": "results/followup-v2/alignment/seed101_seed503/span/eval.json",
+      "model_pair": "seed101_seed503",
+      "method": "span/Activation",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.10164899468341271,
+      "source": "results/followup-v2/alignment/seed101_seed503/span/eval.json",
+      "model_pair": "seed101_seed503",
+      "method": "span/Rank",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.08519637623142906,
+      "source": "results/followup-v2/alignment/seed101_seed503/span/eval.json",
+      "model_pair": "seed101_seed503",
+      "method": "span/Semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.02401881019152675,
+      "source": "results/followup-v2/alignment/seed101_seed503/span/eval.json",
+      "model_pair": "seed101_seed503",
+      "method": "span/Sign-semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.0026295253770414508,
+      "source": "results/followup-v2/alignment/seed101_seed503/span/eval.json",
+      "model_pair": "seed101_seed503",
+      "method": "span/Random (100)",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.015075321594147323,
+      "source": "results/followup-v2/alignment/seed101_seed503/span/eval.json",
+      "model_pair": "seed101_seed503",
+      "method": "span/Shuffled labels",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.1630895827136529,
+      "source": "results/followup-v2/alignment/seed211_seed307/answer/eval.json",
+      "model_pair": "seed211_seed307",
+      "method": "answer/Activation",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.14388761033334685,
+      "source": "results/followup-v2/alignment/seed211_seed307/answer/eval.json",
+      "model_pair": "seed211_seed307",
+      "method": "answer/Rank",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.14881486357298815,
+      "source": "results/followup-v2/alignment/seed211_seed307/answer/eval.json",
+      "model_pair": "seed211_seed307",
+      "method": "answer/Semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.1248396904418061,
+      "source": "results/followup-v2/alignment/seed211_seed307/answer/eval.json",
+      "model_pair": "seed211_seed307",
+      "method": "answer/Sign-semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.010318720258770344,
+      "source": "results/followup-v2/alignment/seed211_seed307/answer/eval.json",
+      "model_pair": "seed211_seed307",
+      "method": "answer/Random (100)",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.08646773233311884,
+      "source": "results/followup-v2/alignment/seed211_seed307/answer/eval.json",
+      "model_pair": "seed211_seed307",
+      "method": "answer/Shuffled labels",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.09609543994984467,
+      "source": "results/followup-v2/alignment/seed211_seed307/span/eval.json",
+      "model_pair": "seed211_seed307",
+      "method": "span/Activation",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.1042958604217077,
+      "source": "results/followup-v2/alignment/seed211_seed307/span/eval.json",
+      "model_pair": "seed211_seed307",
+      "method": "span/Rank",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.08184483089624323,
+      "source": "results/followup-v2/alignment/seed211_seed307/span/eval.json",
+      "model_pair": "seed211_seed307",
+      "method": "span/Semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.026632370750226536,
+      "source": "results/followup-v2/alignment/seed211_seed307/span/eval.json",
+      "model_pair": "seed211_seed307",
+      "method": "span/Sign-semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.0015470637931683125,
+      "source": "results/followup-v2/alignment/seed211_seed307/span/eval.json",
+      "model_pair": "seed211_seed307",
+      "method": "span/Random (100)",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.015245235202533977,
+      "source": "results/followup-v2/alignment/seed211_seed307/span/eval.json",
+      "model_pair": "seed211_seed307",
+      "method": "span/Shuffled labels",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.20208440396260027,
+      "source": "results/followup-v2/alignment/seed211_seed401/answer/eval.json",
+      "model_pair": "seed211_seed401",
+      "method": "answer/Activation",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.21352535795848793,
+      "source": "results/followup-v2/alignment/seed211_seed401/answer/eval.json",
+      "model_pair": "seed211_seed401",
+      "method": "answer/Rank",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.1926678402722427,
+      "source": "results/followup-v2/alignment/seed211_seed401/answer/eval.json",
+      "model_pair": "seed211_seed401",
+      "method": "answer/Semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.1834743018187337,
+      "source": "results/followup-v2/alignment/seed211_seed401/answer/eval.json",
+      "model_pair": "seed211_seed401",
+      "method": "answer/Sign-semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.0016002650200588272,
+      "source": "results/followup-v2/alignment/seed211_seed401/answer/eval.json",
+      "model_pair": "seed211_seed401",
+      "method": "answer/Random (100)",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.12674382432184678,
+      "source": "results/followup-v2/alignment/seed211_seed401/answer/eval.json",
+      "model_pair": "seed211_seed401",
+      "method": "answer/Shuffled labels",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.0652800236865528,
+      "source": "results/followup-v2/alignment/seed211_seed401/span/eval.json",
+      "model_pair": "seed211_seed401",
+      "method": "span/Activation",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.08384157588632969,
+      "source": "results/followup-v2/alignment/seed211_seed401/span/eval.json",
+      "model_pair": "seed211_seed401",
+      "method": "span/Rank",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.09330506341290386,
+      "source": "results/followup-v2/alignment/seed211_seed401/span/eval.json",
+      "model_pair": "seed211_seed401",
+      "method": "span/Semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.06508472440356418,
+      "source": "results/followup-v2/alignment/seed211_seed401/span/eval.json",
+      "model_pair": "seed211_seed401",
+      "method": "span/Sign-semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.0019129442287694075,
+      "source": "results/followup-v2/alignment/seed211_seed401/span/eval.json",
+      "model_pair": "seed211_seed401",
+      "method": "span/Random (100)",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.05418594674979965,
+      "source": "results/followup-v2/alignment/seed211_seed401/span/eval.json",
+      "model_pair": "seed211_seed401",
+      "method": "span/Shuffled labels",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.16829283519893787,
+      "source": "results/followup-v2/alignment/seed211_seed503/answer/eval.json",
+      "model_pair": "seed211_seed503",
+      "method": "answer/Activation",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.15470828675579648,
+      "source": "results/followup-v2/alignment/seed211_seed503/answer/eval.json",
+      "model_pair": "seed211_seed503",
+      "method": "answer/Rank",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.1574231926529455,
+      "source": "results/followup-v2/alignment/seed211_seed503/answer/eval.json",
+      "model_pair": "seed211_seed503",
+      "method": "answer/Semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.11199808866869182,
+      "source": "results/followup-v2/alignment/seed211_seed503/answer/eval.json",
+      "model_pair": "seed211_seed503",
+      "method": "answer/Sign-semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.02833264265946393,
+      "source": "results/followup-v2/alignment/seed211_seed503/answer/eval.json",
+      "model_pair": "seed211_seed503",
+      "method": "answer/Random (100)",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.12853155127769647,
+      "source": "results/followup-v2/alignment/seed211_seed503/answer/eval.json",
+      "model_pair": "seed211_seed503",
+      "method": "answer/Shuffled labels",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.05841783831569122,
+      "source": "results/followup-v2/alignment/seed211_seed503/span/eval.json",
+      "model_pair": "seed211_seed503",
+      "method": "span/Activation",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.044715165207312446,
+      "source": "results/followup-v2/alignment/seed211_seed503/span/eval.json",
+      "model_pair": "seed211_seed503",
+      "method": "span/Rank",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.09724075930915181,
+      "source": "results/followup-v2/alignment/seed211_seed503/span/eval.json",
+      "model_pair": "seed211_seed503",
+      "method": "span/Semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.11275709069616498,
+      "source": "results/followup-v2/alignment/seed211_seed503/span/eval.json",
+      "model_pair": "seed211_seed503",
+      "method": "span/Sign-semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.005632259827081598,
+      "source": "results/followup-v2/alignment/seed211_seed503/span/eval.json",
+      "model_pair": "seed211_seed503",
+      "method": "span/Random (100)",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.022801259256371293,
+      "source": "results/followup-v2/alignment/seed211_seed503/span/eval.json",
+      "model_pair": "seed211_seed503",
+      "method": "span/Shuffled labels",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.16803498404076103,
+      "source": "results/followup-v2/alignment/seed307_seed401/answer/eval.json",
+      "model_pair": "seed307_seed401",
+      "method": "answer/Activation",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.16043846309359375,
+      "source": "results/followup-v2/alignment/seed307_seed401/answer/eval.json",
+      "model_pair": "seed307_seed401",
+      "method": "answer/Rank",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.14051731562678468,
+      "source": "results/followup-v2/alignment/seed307_seed401/answer/eval.json",
+      "model_pair": "seed307_seed401",
+      "method": "answer/Semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.11625649818802157,
+      "source": "results/followup-v2/alignment/seed307_seed401/answer/eval.json",
+      "model_pair": "seed307_seed401",
+      "method": "answer/Sign-semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.0017746610451569724,
+      "source": "results/followup-v2/alignment/seed307_seed401/answer/eval.json",
+      "model_pair": "seed307_seed401",
+      "method": "answer/Random (100)",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.10660687762575032,
+      "source": "results/followup-v2/alignment/seed307_seed401/answer/eval.json",
+      "model_pair": "seed307_seed401",
+      "method": "answer/Shuffled labels",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.09274798279024261,
+      "source": "results/followup-v2/alignment/seed307_seed401/span/eval.json",
+      "model_pair": "seed307_seed401",
+      "method": "span/Activation",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.10325463901264338,
+      "source": "results/followup-v2/alignment/seed307_seed401/span/eval.json",
+      "model_pair": "seed307_seed401",
+      "method": "span/Rank",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.04652768892111256,
+      "source": "results/followup-v2/alignment/seed307_seed401/span/eval.json",
+      "model_pair": "seed307_seed401",
+      "method": "span/Semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.00892860407454049,
+      "source": "results/followup-v2/alignment/seed307_seed401/span/eval.json",
+      "model_pair": "seed307_seed401",
+      "method": "span/Sign-semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.00027810941518974534,
+      "source": "results/followup-v2/alignment/seed307_seed401/span/eval.json",
+      "model_pair": "seed307_seed401",
+      "method": "span/Random (100)",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.01287348391942863,
+      "source": "results/followup-v2/alignment/seed307_seed401/span/eval.json",
+      "model_pair": "seed307_seed401",
+      "method": "span/Shuffled labels",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.11376191602612314,
+      "source": "results/followup-v2/alignment/seed307_seed503/answer/eval.json",
+      "model_pair": "seed307_seed503",
+      "method": "answer/Activation",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.11619096403919582,
+      "source": "results/followup-v2/alignment/seed307_seed503/answer/eval.json",
+      "model_pair": "seed307_seed503",
+      "method": "answer/Rank",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.10909560538705008,
+      "source": "results/followup-v2/alignment/seed307_seed503/answer/eval.json",
+      "model_pair": "seed307_seed503",
+      "method": "answer/Semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.05951807182774704,
+      "source": "results/followup-v2/alignment/seed307_seed503/answer/eval.json",
+      "model_pair": "seed307_seed503",
+      "method": "answer/Sign-semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.011253113050189315,
+      "source": "results/followup-v2/alignment/seed307_seed503/answer/eval.json",
+      "model_pair": "seed307_seed503",
+      "method": "answer/Random (100)",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.10068502599965128,
+      "source": "results/followup-v2/alignment/seed307_seed503/answer/eval.json",
+      "model_pair": "seed307_seed503",
+      "method": "answer/Shuffled labels",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.08747270479976622,
+      "source": "results/followup-v2/alignment/seed307_seed503/span/eval.json",
+      "model_pair": "seed307_seed503",
+      "method": "span/Activation",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.08288487890219866,
+      "source": "results/followup-v2/alignment/seed307_seed503/span/eval.json",
+      "model_pair": "seed307_seed503",
+      "method": "span/Rank",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.04783701352330385,
+      "source": "results/followup-v2/alignment/seed307_seed503/span/eval.json",
+      "model_pair": "seed307_seed503",
+      "method": "span/Semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.009674487096004396,
+      "source": "results/followup-v2/alignment/seed307_seed503/span/eval.json",
+      "model_pair": "seed307_seed503",
+      "method": "span/Sign-semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.0034768831994470947,
+      "source": "results/followup-v2/alignment/seed307_seed503/span/eval.json",
+      "model_pair": "seed307_seed503",
+      "method": "span/Random (100)",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.017087668368712783,
+      "source": "results/followup-v2/alignment/seed307_seed503/span/eval.json",
+      "model_pair": "seed307_seed503",
+      "method": "span/Shuffled labels",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.14830039339810386,
+      "source": "results/followup-v2/alignment/seed401_seed503/answer/eval.json",
+      "model_pair": "seed401_seed503",
+      "method": "answer/Activation",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.134315304010608,
+      "source": "results/followup-v2/alignment/seed401_seed503/answer/eval.json",
+      "model_pair": "seed401_seed503",
+      "method": "answer/Rank",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.14871927248396283,
+      "source": "results/followup-v2/alignment/seed401_seed503/answer/eval.json",
+      "model_pair": "seed401_seed503",
+      "method": "answer/Semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.09747901166282062,
+      "source": "results/followup-v2/alignment/seed401_seed503/answer/eval.json",
+      "model_pair": "seed401_seed503",
+      "method": "answer/Sign-semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.0098925685745674,
+      "source": "results/followup-v2/alignment/seed401_seed503/answer/eval.json",
+      "model_pair": "seed401_seed503",
+      "method": "answer/Random (100)",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.09150603667245805,
+      "source": "results/followup-v2/alignment/seed401_seed503/answer/eval.json",
+      "model_pair": "seed401_seed503",
+      "method": "answer/Shuffled labels",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.11346904719836019,
+      "source": "results/followup-v2/alignment/seed401_seed503/span/eval.json",
+      "model_pair": "seed401_seed503",
+      "method": "span/Activation",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.1110644351129495,
+      "source": "results/followup-v2/alignment/seed401_seed503/span/eval.json",
+      "model_pair": "seed401_seed503",
+      "method": "span/Rank",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.09497420005191255,
+      "source": "results/followup-v2/alignment/seed401_seed503/span/eval.json",
+      "model_pair": "seed401_seed503",
+      "method": "span/Semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.028255293973256646,
+      "source": "results/followup-v2/alignment/seed401_seed503/span/eval.json",
+      "model_pair": "seed401_seed503",
+      "method": "span/Sign-semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.004999771999579814,
+      "source": "results/followup-v2/alignment/seed401_seed503/span/eval.json",
+      "model_pair": "seed401_seed503",
+      "method": "span/Random (100)",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.00822290426502452,
+      "source": "results/followup-v2/alignment/seed401_seed503/span/eval.json",
+      "model_pair": "seed401_seed503",
+      "method": "span/Shuffled labels",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.02085553291008894,
+      "source": "results/followup-v2/alignment/qwen_smol/answer/eval.json",
+      "model_pair": "qwen_smol",
+      "method": "answer/Activation",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.02637468566021271,
+      "source": "results/followup-v2/alignment/qwen_smol/answer/eval.json",
+      "model_pair": "qwen_smol",
+      "method": "answer/Rank",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.036457988575505945,
+      "source": "results/followup-v2/alignment/qwen_smol/answer/eval.json",
+      "model_pair": "qwen_smol",
+      "method": "answer/Semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.011078506635363255,
+      "source": "results/followup-v2/alignment/qwen_smol/answer/eval.json",
+      "model_pair": "qwen_smol",
+      "method": "answer/Sign-semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.0011973890450386832,
+      "source": "results/followup-v2/alignment/qwen_smol/answer/eval.json",
+      "model_pair": "qwen_smol",
+      "method": "answer/Random (100)",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.007812197508528453,
+      "source": "results/followup-v2/alignment/qwen_smol/answer/eval.json",
+      "model_pair": "qwen_smol",
+      "method": "answer/Shuffled labels",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.006433057609577471,
+      "source": "results/followup-v2/alignment/qwen_smol/span/eval.json",
+      "model_pair": "qwen_smol",
+      "method": "span/Activation",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.004798486770817959,
+      "source": "results/followup-v2/alignment/qwen_smol/span/eval.json",
+      "model_pair": "qwen_smol",
+      "method": "span/Rank",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.008881575154733609,
+      "source": "results/followup-v2/alignment/qwen_smol/span/eval.json",
+      "model_pair": "qwen_smol",
+      "method": "span/Semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.0025883445307526526,
+      "source": "results/followup-v2/alignment/qwen_smol/span/eval.json",
+      "model_pair": "qwen_smol",
+      "method": "span/Sign-semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.0008555263820943674,
+      "source": "results/followup-v2/alignment/qwen_smol/span/eval.json",
+      "model_pair": "qwen_smol",
+      "method": "span/Random (100)",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.00028299942429562547,
+      "source": "results/followup-v2/alignment/qwen_smol/span/eval.json",
+      "model_pair": "qwen_smol",
+      "method": "span/Shuffled labels",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.013765235794621288,
+      "source": "results/followup-v2/alignment/qwen_olmo/answer/eval.json",
+      "model_pair": "qwen_olmo",
+      "method": "answer/Activation",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.007443549270566019,
+      "source": "results/followup-v2/alignment/qwen_olmo/answer/eval.json",
+      "model_pair": "qwen_olmo",
+      "method": "answer/Rank",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.01728997304357807,
+      "source": "results/followup-v2/alignment/qwen_olmo/answer/eval.json",
+      "model_pair": "qwen_olmo",
+      "method": "answer/Semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.01870189785578372,
+      "source": "results/followup-v2/alignment/qwen_olmo/answer/eval.json",
+      "model_pair": "qwen_olmo",
+      "method": "answer/Sign-semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.0030767309914946066,
+      "source": "results/followup-v2/alignment/qwen_olmo/answer/eval.json",
+      "model_pair": "qwen_olmo",
+      "method": "answer/Random (100)",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.018283732741829723,
+      "source": "results/followup-v2/alignment/qwen_olmo/answer/eval.json",
+      "model_pair": "qwen_olmo",
+      "method": "answer/Shuffled labels",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.032404510659885005,
+      "source": "results/followup-v2/alignment/qwen_olmo/span/eval.json",
+      "model_pair": "qwen_olmo",
+      "method": "span/Activation",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.057588120183819834,
+      "source": "results/followup-v2/alignment/qwen_olmo/span/eval.json",
+      "model_pair": "qwen_olmo",
+      "method": "span/Rank",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.04523560417388644,
+      "source": "results/followup-v2/alignment/qwen_olmo/span/eval.json",
+      "model_pair": "qwen_olmo",
+      "method": "span/Semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.048545411331690734,
+      "source": "results/followup-v2/alignment/qwen_olmo/span/eval.json",
+      "model_pair": "qwen_olmo",
+      "method": "span/Sign-semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.004922844108532374,
+      "source": "results/followup-v2/alignment/qwen_olmo/span/eval.json",
+      "model_pair": "qwen_olmo",
+      "method": "span/Random (100)",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.01848996956901246,
+      "source": "results/followup-v2/alignment/qwen_olmo/span/eval.json",
+      "model_pair": "qwen_olmo",
+      "method": "span/Shuffled labels",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.01914230135751897,
+      "source": "results/followup-v2/alignment/smol_olmo/answer/eval.json",
+      "model_pair": "smol_olmo",
+      "method": "answer/Activation",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.00761608226752056,
+      "source": "results/followup-v2/alignment/smol_olmo/answer/eval.json",
+      "model_pair": "smol_olmo",
+      "method": "answer/Rank",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.007560149473591037,
+      "source": "results/followup-v2/alignment/smol_olmo/answer/eval.json",
+      "model_pair": "smol_olmo",
+      "method": "answer/Semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.010237052018918544,
+      "source": "results/followup-v2/alignment/smol_olmo/answer/eval.json",
+      "model_pair": "smol_olmo",
+      "method": "answer/Sign-semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.0020451502674524035,
+      "source": "results/followup-v2/alignment/smol_olmo/answer/eval.json",
+      "model_pair": "smol_olmo",
+      "method": "answer/Random (100)",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.001955180069282591,
+      "source": "results/followup-v2/alignment/smol_olmo/answer/eval.json",
+      "model_pair": "smol_olmo",
+      "method": "answer/Shuffled labels",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.05940203566834681,
+      "source": "results/followup-v2/alignment/smol_olmo/span/eval.json",
+      "model_pair": "smol_olmo",
+      "method": "span/Activation",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.03981191946182169,
+      "source": "results/followup-v2/alignment/smol_olmo/span/eval.json",
+      "model_pair": "smol_olmo",
+      "method": "span/Rank",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": 0.01616201377114446,
+      "source": "results/followup-v2/alignment/smol_olmo/span/eval.json",
+      "model_pair": "smol_olmo",
+      "method": "span/Semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.009226846369620257,
+      "source": "results/followup-v2/alignment/smol_olmo/span/eval.json",
+      "model_pair": "smol_olmo",
+      "method": "span/Sign-semantic",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.0043750203834816365,
+      "source": "results/followup-v2/alignment/smol_olmo/span/eval.json",
+      "model_pair": "smol_olmo",
+      "method": "span/Random (100)",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "D3 response agreement",
+      "value": -0.035224861900377956,
+      "source": "results/followup-v2/alignment/smol_olmo/span/eval.json",
+      "model_pair": "smol_olmo",
+      "method": "span/Shuffled labels",
+      "split": "D3",
+      "unit": "Pearson",
+      "n_clusters": 24
+    },
+    {
+      "name": "Joint-wrapper activation_minus_random",
+      "value": 0.15289480678458747,
+      "source": "results/followup-v2/alignment/summary.json",
+      "model_pair": "independent_seeds",
+      "method": "answer/final",
+      "unit": "Pearson difference",
+      "ci": [
+        0.14631757808076204,
+        0.15981733751630225
+      ],
+      "n_clusters": 24
+    },
+    {
+      "name": "Joint-wrapper semantic_minus_activation",
+      "value": -0.002040862025931972,
+      "source": "results/followup-v2/alignment/summary.json",
+      "model_pair": "independent_seeds",
+      "method": "answer/final",
+      "unit": "Pearson difference",
+      "ci": [
+        -0.007121026701476221,
+        0.002510310045064562
+      ],
+      "n_clusters": 24
+    },
+    {
+      "name": "Joint-wrapper activation_minus_random",
+      "value": 0.08602183452494509,
+      "source": "results/followup-v2/alignment/summary.json",
+      "model_pair": "independent_seeds",
+      "method": "span/final",
+      "unit": "Pearson difference",
+      "ci": [
+        0.07659942249509036,
+        0.0944534439407999
+      ],
+      "n_clusters": 24
+    },
+    {
+      "name": "Joint-wrapper semantic_minus_activation",
+      "value": -0.005788818513260842,
+      "source": "results/followup-v2/alignment/summary.json",
+      "model_pair": "independent_seeds",
+      "method": "span/final",
+      "unit": "Pearson difference",
+      "ci": [
+        -0.01775528650415686,
+        0.0075022337453051905
+      ],
+      "n_clusters": 24
+    },
+    {
+      "name": "Joint-wrapper activation_minus_random",
+      "value": 0.009260655500974707,
+      "source": "results/followup-v2/alignment/summary.json",
+      "model_pair": "independent_seeds",
+      "method": "answer/initial",
+      "unit": "Pearson difference",
+      "ci": [
+        0.0014374115631683644,
+        0.01625234844815479
+      ],
+      "n_clusters": 24
+    },
+    {
+      "name": "Joint-wrapper semantic_minus_activation",
+      "value": -0.010350406682823306,
+      "source": "results/followup-v2/alignment/summary.json",
+      "model_pair": "independent_seeds",
+      "method": "answer/initial",
+      "unit": "Pearson difference",
+      "ci": [
+        -0.02044195322051546,
+        -0.0002233612328505106
+      ],
+      "n_clusters": 24
+    },
+    {
+      "name": "Joint-wrapper activation_minus_random",
+      "value": -0.0008855095698768236,
+      "source": "results/followup-v2/alignment/summary.json",
+      "model_pair": "independent_seeds",
+      "method": "span/initial",
+      "unit": "Pearson difference",
+      "ci": [
+        -0.007099461537047108,
+        0.004897063441798711
+      ],
+      "n_clusters": 24
+    },
+    {
+      "name": "Joint-wrapper semantic_minus_activation",
+      "value": 0.005960567823268881,
+      "source": "results/followup-v2/alignment/summary.json",
+      "model_pair": "independent_seeds",
+      "method": "span/initial",
+      "unit": "Pearson difference",
+      "ci": [
+        0.00029887982497566585,
+        0.012054492664572317
+      ],
+      "n_clusters": 24
+    },
+    {
+      "name": "Joint-wrapper activation_minus_random",
+      "value": 0.03254110608799548,
+      "source": "results/followup-v2/alignment/summary.json",
+      "model_pair": "independent_seeds",
+      "method": "answer/middle",
+      "unit": "Pearson difference",
+      "ci": [
+        0.027474894492475952,
+        0.03748686766400371
+      ],
+      "n_clusters": 24
+    },
+    {
+      "name": "Joint-wrapper semantic_minus_activation",
+      "value": -0.005005458571201728,
+      "source": "results/followup-v2/alignment/summary.json",
+      "model_pair": "independent_seeds",
+      "method": "answer/middle",
+      "unit": "Pearson difference",
+      "ci": [
+        -0.010218896207532956,
+        0.0003529767220959461
+      ],
+      "n_clusters": 24
+    },
+    {
+      "name": "Joint-wrapper activation_minus_random",
+      "value": 0.015388875952749423,
+      "source": "results/followup-v2/alignment/summary.json",
+      "model_pair": "independent_seeds",
+      "method": "span/middle",
+      "unit": "Pearson difference",
+      "ci": [
+        0.010527268644327977,
+        0.020729293631412554
+      ],
+      "n_clusters": 24
+    },
+    {
+      "name": "Joint-wrapper semantic_minus_activation",
+      "value": -0.009619566414204361,
+      "source": "results/followup-v2/alignment/summary.json",
+      "model_pair": "independent_seeds",
+      "method": "span/middle",
+      "unit": "Pearson difference",
+      "ci": [
+        -0.016683239703860493,
+        -0.0024686218826247947
+      ],
+      "n_clusters": 24
+    },
+    {
+      "name": "Joint-wrapper activation_minus_random",
+      "value": -0.004416499192703458,
+      "source": "results/followup-v2/alignment/summary.json",
+      "model_pair": "cross_family",
+      "method": "answer/final",
+      "unit": "Pearson difference",
+      "ci": [
+        -0.014806743341531934,
+        0.0055733118532305575
+      ],
+      "n_clusters": 24
+    },
+    {
+      "name": "Joint-wrapper semantic_minus_activation",
+      "value": 0.0255955261466221,
+      "source": "results/followup-v2/alignment/summary.json",
+      "model_pair": "cross_family",
+      "method": "answer/final",
+      "unit": "Pearson difference",
+      "ci": [
+        0.013355262011605001,
+        0.037548809052602494
+      ],
+      "n_clusters": 24
+    },
+    {
+      "name": "Joint-wrapper activation_minus_random",
+      "value": 0.032278751276888056,
+      "source": "results/followup-v2/alignment/summary.json",
+      "model_pair": "cross_family",
+      "method": "span/final",
+      "unit": "Pearson difference",
+      "ci": [
+        0.021833021242521403,
+        0.042921459168790546
+      ],
+      "n_clusters": 24
+    },
+    {
+      "name": "Joint-wrapper semantic_minus_activation",
+      "value": -0.009320136946014922,
+      "source": "results/followup-v2/alignment/summary.json",
+      "model_pair": "cross_family",
+      "method": "span/final",
+      "unit": "Pearson difference",
+      "ci": [
+        -0.023179780957600836,
+        0.004802710670757892
+      ],
+      "n_clusters": 24
+    },
+    {
+      "name": "Posthoc syntax cue-stratum accuracy",
+      "value": 0.5120481927710844,
+      "source": "results/followup-v2/exploratory/stress_D3.json",
+      "model": "olmo",
+      "method": "adjacent_mismatch_present",
+      "task": "syntax",
+      "split": "D3 exploratory",
+      "n": 166,
+      "n_clusters": 24,
+      "unit": "fraction"
+    },
+    {
+      "name": "Posthoc syntax cue-stratum accuracy",
+      "value": 0.5,
+      "source": "results/followup-v2/exploratory/stress_D3.json",
+      "model": "olmo",
+      "method": "no_adjacent_mismatch",
+      "task": "syntax",
+      "split": "D3 exploratory",
+      "n": 26,
+      "n_clusters": 10,
+      "unit": "fraction"
+    },
+    {
+      "name": "Posthoc syntax cue-stratum accuracy",
+      "value": 0.5481927710843374,
+      "source": "results/followup-v2/exploratory/stress_D3.json",
+      "model": "qwen",
+      "method": "adjacent_mismatch_present",
+      "task": "syntax",
+      "split": "D3 exploratory",
+      "n": 166,
+      "n_clusters": 24,
+      "unit": "fraction"
+    },
+    {
+      "name": "Posthoc syntax cue-stratum accuracy",
+      "value": 0.5,
+      "source": "results/followup-v2/exploratory/stress_D3.json",
+      "model": "qwen",
+      "method": "no_adjacent_mismatch",
+      "task": "syntax",
+      "split": "D3 exploratory",
+      "n": 26,
+      "n_clusters": 10,
+      "unit": "fraction"
+    },
+    {
+      "name": "Posthoc syntax cue-stratum accuracy",
+      "value": 0.9879518072289156,
+      "source": "results/followup-v2/exploratory/stress_D3.json",
+      "model": "seed101",
+      "method": "adjacent_mismatch_present",
+      "task": "syntax",
+      "split": "D3 exploratory",
+      "n": 166,
+      "n_clusters": 24,
+      "unit": "fraction"
+    },
+    {
+      "name": "Posthoc syntax cue-stratum accuracy",
+      "value": 0.5384615384615384,
+      "source": "results/followup-v2/exploratory/stress_D3.json",
+      "model": "seed101",
+      "method": "no_adjacent_mismatch",
+      "task": "syntax",
+      "split": "D3 exploratory",
+      "n": 26,
+      "n_clusters": 10,
+      "unit": "fraction"
+    },
+    {
+      "name": "Posthoc syntax cue-stratum accuracy",
+      "value": 0.9337349397590361,
+      "source": "results/followup-v2/exploratory/stress_D3.json",
+      "model": "seed211",
+      "method": "adjacent_mismatch_present",
+      "task": "syntax",
+      "split": "D3 exploratory",
+      "n": 166,
+      "n_clusters": 24,
+      "unit": "fraction"
+    },
+    {
+      "name": "Posthoc syntax cue-stratum accuracy",
+      "value": 0.5769230769230769,
+      "source": "results/followup-v2/exploratory/stress_D3.json",
+      "model": "seed211",
+      "method": "no_adjacent_mismatch",
+      "task": "syntax",
+      "split": "D3 exploratory",
+      "n": 26,
+      "n_clusters": 10,
+      "unit": "fraction"
+    },
+    {
+      "name": "Posthoc syntax cue-stratum accuracy",
+      "value": 0.9759036144578314,
+      "source": "results/followup-v2/exploratory/stress_D3.json",
+      "model": "seed307",
+      "method": "adjacent_mismatch_present",
+      "task": "syntax",
+      "split": "D3 exploratory",
+      "n": 166,
+      "n_clusters": 24,
+      "unit": "fraction"
+    },
+    {
+      "name": "Posthoc syntax cue-stratum accuracy",
+      "value": 0.5,
+      "source": "results/followup-v2/exploratory/stress_D3.json",
+      "model": "seed307",
+      "method": "no_adjacent_mismatch",
+      "task": "syntax",
+      "split": "D3 exploratory",
+      "n": 26,
+      "n_clusters": 10,
+      "unit": "fraction"
+    },
+    {
+      "name": "Posthoc syntax cue-stratum accuracy",
+      "value": 1.0,
+      "source": "results/followup-v2/exploratory/stress_D3.json",
+      "model": "seed401",
+      "method": "adjacent_mismatch_present",
+      "task": "syntax",
+      "split": "D3 exploratory",
+      "n": 166,
+      "n_clusters": 24,
+      "unit": "fraction"
+    },
+    {
+      "name": "Posthoc syntax cue-stratum accuracy",
+      "value": 0.6153846153846154,
+      "source": "results/followup-v2/exploratory/stress_D3.json",
+      "model": "seed401",
+      "method": "no_adjacent_mismatch",
+      "task": "syntax",
+      "split": "D3 exploratory",
+      "n": 26,
+      "n_clusters": 10,
+      "unit": "fraction"
+    },
+    {
+      "name": "Posthoc syntax cue-stratum accuracy",
+      "value": 0.9939759036144579,
+      "source": "results/followup-v2/exploratory/stress_D3.json",
+      "model": "seed503",
+      "method": "adjacent_mismatch_present",
+      "task": "syntax",
+      "split": "D3 exploratory",
+      "n": 166,
+      "n_clusters": 24,
+      "unit": "fraction"
+    },
+    {
+      "name": "Posthoc syntax cue-stratum accuracy",
+      "value": 0.5,
+      "source": "results/followup-v2/exploratory/stress_D3.json",
+      "model": "seed503",
+      "method": "no_adjacent_mismatch",
+      "task": "syntax",
+      "split": "D3 exploratory",
+      "n": 26,
+      "n_clusters": 10,
+      "unit": "fraction"
+    },
+    {
+      "name": "Posthoc syntax cue-stratum accuracy",
+      "value": 0.5,
+      "source": "results/followup-v2/exploratory/stress_D3.json",
+      "model": "smol",
+      "method": "adjacent_mismatch_present",
+      "task": "syntax",
+      "split": "D3 exploratory",
+      "n": 166,
+      "n_clusters": 24,
+      "unit": "fraction"
+    },
+    {
+      "name": "Posthoc syntax cue-stratum accuracy",
+      "value": 0.5,
+      "source": "results/followup-v2/exploratory/stress_D3.json",
+      "model": "smol",
+      "method": "no_adjacent_mismatch",
+      "task": "syntax",
+      "split": "D3 exploratory",
+      "n": 26,
+      "n_clusters": 10,
+      "unit": "fraction"
+    },
+    {
+      "name": "Competence-qualified descriptive activation",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "answer",
+      "task": "arithmetic",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive semantic",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "answer",
+      "task": "arithmetic",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive random",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "answer",
+      "task": "arithmetic",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive activation_minus_random",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "answer",
+      "task": "arithmetic",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive semantic_minus_activation",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "answer",
+      "task": "arithmetic",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive activation",
+      "value": 0.21317581590801865,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "answer",
+      "task": "comparison",
+      "unit": "Pearson or difference",
+      "n": 10
+    },
+    {
+      "name": "Competence-qualified descriptive semantic",
+      "value": 0.2114510263946067,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "answer",
+      "task": "comparison",
+      "unit": "Pearson or difference",
+      "n": 10
+    },
+    {
+      "name": "Competence-qualified descriptive random",
+      "value": -0.004413813795875174,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "answer",
+      "task": "comparison",
+      "unit": "Pearson or difference",
+      "n": 10
+    },
+    {
+      "name": "Competence-qualified descriptive activation_minus_random",
+      "value": 0.21758962970389384,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "answer",
+      "task": "comparison",
+      "unit": "Pearson or difference",
+      "n": 10
+    },
+    {
+      "name": "Competence-qualified descriptive semantic_minus_activation",
+      "value": -0.0017247895134119562,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "answer",
+      "task": "comparison",
+      "unit": "Pearson or difference",
+      "n": 10
+    },
+    {
+      "name": "Competence-qualified descriptive activation",
+      "value": 0.08761793355692532,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "answer",
+      "task": "negation",
+      "unit": "Pearson or difference",
+      "n": 6
+    },
+    {
+      "name": "Competence-qualified descriptive semantic",
+      "value": 0.07287307142178633,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "answer",
+      "task": "negation",
+      "unit": "Pearson or difference",
+      "n": 6
+    },
+    {
+      "name": "Competence-qualified descriptive random",
+      "value": 0.0013500191801898564,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "answer",
+      "task": "negation",
+      "unit": "Pearson or difference",
+      "n": 6
+    },
+    {
+      "name": "Competence-qualified descriptive activation_minus_random",
+      "value": 0.08626791437673546,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "answer",
+      "task": "negation",
+      "unit": "Pearson or difference",
+      "n": 6
+    },
+    {
+      "name": "Competence-qualified descriptive semantic_minus_activation",
+      "value": -0.014744862135138995,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "answer",
+      "task": "negation",
+      "unit": "Pearson or difference",
+      "n": 6
+    },
+    {
+      "name": "Competence-qualified descriptive activation",
+      "value": 0.2719302468830603,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "answer",
+      "task": "syntax",
+      "unit": "Pearson or difference",
+      "n": 10
+    },
+    {
+      "name": "Competence-qualified descriptive semantic",
+      "value": 0.2786411700991106,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "answer",
+      "task": "syntax",
+      "unit": "Pearson or difference",
+      "n": 10
+    },
+    {
+      "name": "Competence-qualified descriptive random",
+      "value": -0.011912224557518438,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "answer",
+      "task": "syntax",
+      "unit": "Pearson or difference",
+      "n": 10
+    },
+    {
+      "name": "Competence-qualified descriptive activation_minus_random",
+      "value": 0.2838424714405787,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "answer",
+      "task": "syntax",
+      "unit": "Pearson or difference",
+      "n": 10
+    },
+    {
+      "name": "Competence-qualified descriptive semantic_minus_activation",
+      "value": 0.006710923216050324,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "answer",
+      "task": "syntax",
+      "unit": "Pearson or difference",
+      "n": 10
+    },
+    {
+      "name": "Competence-qualified descriptive activation",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "span",
+      "task": "arithmetic",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive semantic",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "span",
+      "task": "arithmetic",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive random",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "span",
+      "task": "arithmetic",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive activation_minus_random",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "span",
+      "task": "arithmetic",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive semantic_minus_activation",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "span",
+      "task": "arithmetic",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive activation",
+      "value": 0.17189105004320623,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "span",
+      "task": "comparison",
+      "unit": "Pearson or difference",
+      "n": 10
+    },
+    {
+      "name": "Competence-qualified descriptive semantic",
+      "value": 0.11643922669566782,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "span",
+      "task": "comparison",
+      "unit": "Pearson or difference",
+      "n": 10
+    },
+    {
+      "name": "Competence-qualified descriptive random",
+      "value": -0.00172331786194078,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "span",
+      "task": "comparison",
+      "unit": "Pearson or difference",
+      "n": 10
+    },
+    {
+      "name": "Competence-qualified descriptive activation_minus_random",
+      "value": 0.173614367905147,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "span",
+      "task": "comparison",
+      "unit": "Pearson or difference",
+      "n": 10
+    },
+    {
+      "name": "Competence-qualified descriptive semantic_minus_activation",
+      "value": -0.05545182334753841,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "span",
+      "task": "comparison",
+      "unit": "Pearson or difference",
+      "n": 10
+    },
+    {
+      "name": "Competence-qualified descriptive activation",
+      "value": 0.0027925907787858255,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "span",
+      "task": "negation",
+      "unit": "Pearson or difference",
+      "n": 6
+    },
+    {
+      "name": "Competence-qualified descriptive semantic",
+      "value": 0.04967993241347376,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "span",
+      "task": "negation",
+      "unit": "Pearson or difference",
+      "n": 6
+    },
+    {
+      "name": "Competence-qualified descriptive random",
+      "value": -0.003754244026804479,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "span",
+      "task": "negation",
+      "unit": "Pearson or difference",
+      "n": 6
+    },
+    {
+      "name": "Competence-qualified descriptive activation_minus_random",
+      "value": 0.006546834805590304,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "span",
+      "task": "negation",
+      "unit": "Pearson or difference",
+      "n": 6
+    },
+    {
+      "name": "Competence-qualified descriptive semantic_minus_activation",
+      "value": 0.04688734163468793,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "span",
+      "task": "negation",
+      "unit": "Pearson or difference",
+      "n": 6
+    },
+    {
+      "name": "Competence-qualified descriptive activation",
+      "value": 0.03902435975570268,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "span",
+      "task": "syntax",
+      "unit": "Pearson or difference",
+      "n": 10
+    },
+    {
+      "name": "Competence-qualified descriptive semantic",
+      "value": 0.11542898250365481,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "span",
+      "task": "syntax",
+      "unit": "Pearson or difference",
+      "n": 10
+    },
+    {
+      "name": "Competence-qualified descriptive random",
+      "value": 0.005514233504636446,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "span",
+      "task": "syntax",
+      "unit": "Pearson or difference",
+      "n": 10
+    },
+    {
+      "name": "Competence-qualified descriptive activation_minus_random",
+      "value": 0.03351012625106624,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "span",
+      "task": "syntax",
+      "unit": "Pearson or difference",
+      "n": 10
+    },
+    {
+      "name": "Competence-qualified descriptive semantic_minus_activation",
+      "value": 0.07640462274795212,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "independent_seeds",
+      "method": "span",
+      "task": "syntax",
+      "unit": "Pearson or difference",
+      "n": 10
+    },
+    {
+      "name": "Competence-qualified descriptive activation",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "answer",
+      "task": "arithmetic",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive semantic",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "answer",
+      "task": "arithmetic",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive random",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "answer",
+      "task": "arithmetic",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive activation_minus_random",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "answer",
+      "task": "arithmetic",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive semantic_minus_activation",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "answer",
+      "task": "arithmetic",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive activation",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "answer",
+      "task": "comparison",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive semantic",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "answer",
+      "task": "comparison",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive random",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "answer",
+      "task": "comparison",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive activation_minus_random",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "answer",
+      "task": "comparison",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive semantic_minus_activation",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "answer",
+      "task": "comparison",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive activation",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "answer",
+      "task": "negation",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive semantic",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "answer",
+      "task": "negation",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive random",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "answer",
+      "task": "negation",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive activation_minus_random",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "answer",
+      "task": "negation",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive semantic_minus_activation",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "answer",
+      "task": "negation",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive activation",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "answer",
+      "task": "syntax",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive semantic",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "answer",
+      "task": "syntax",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive random",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "answer",
+      "task": "syntax",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive activation_minus_random",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "answer",
+      "task": "syntax",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive semantic_minus_activation",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "answer",
+      "task": "syntax",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive activation",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "span",
+      "task": "arithmetic",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive semantic",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "span",
+      "task": "arithmetic",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive random",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "span",
+      "task": "arithmetic",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive activation_minus_random",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "span",
+      "task": "arithmetic",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive semantic_minus_activation",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "span",
+      "task": "arithmetic",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive activation",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "span",
+      "task": "comparison",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive semantic",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "span",
+      "task": "comparison",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive random",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "span",
+      "task": "comparison",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive activation_minus_random",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "span",
+      "task": "comparison",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive semantic_minus_activation",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "span",
+      "task": "comparison",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive activation",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "span",
+      "task": "negation",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive semantic",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "span",
+      "task": "negation",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive random",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "span",
+      "task": "negation",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive activation_minus_random",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "span",
+      "task": "negation",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive semantic_minus_activation",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "span",
+      "task": "negation",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive activation",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "span",
+      "task": "syntax",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive semantic",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "span",
+      "task": "syntax",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive random",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "span",
+      "task": "syntax",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive activation_minus_random",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "span",
+      "task": "syntax",
+      "unit": "Pearson or difference",
+      "n": 0
+    },
+    {
+      "name": "Competence-qualified descriptive semantic_minus_activation",
+      "value": null,
+      "source": "results/followup-v2/alignment/competence_descriptive.json",
+      "model_pair": "cross_family",
+      "method": "span",
+      "task": "syntax",
+      "unit": "Pearson or difference",
+      "n": 0
+    }
+  ],
+  "comparisons": [
+    {
+      "name": "F3/seed101_seed211/answer/activation_minus_random",
+      "estimate": 0.12989933998249306,
+      "ci": [
+        0.11743034411387514,
+        0.14186416089836867
+      ],
+      "pvalue": 4.999750012499375e-05,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed101_seed211/answer/semantic_minus_activation",
+      "estimate": 0.0240506489883897,
+      "ci": [
+        0.00881264435742393,
+        0.03922824346967702
+      ],
+      "pvalue": 0.00519974001299935,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed101_seed211/span/activation_minus_random",
+      "estimate": 0.06777078504438049,
+      "ci": [
+        0.05217890527131651,
+        0.08426592365404541
+      ],
+      "pvalue": 4.999750012499375e-05,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed101_seed211/span/semantic_minus_activation",
+      "estimate": 0.0661973270888866,
+      "ci": [
+        0.04441093344800111,
+        0.08762930528792107
+      ],
+      "pvalue": 4.999750012499375e-05,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed101_seed307/answer/activation_minus_random",
+      "estimate": 0.12210645865826986,
+      "ci": [
+        0.10538785879930863,
+        0.13984394236434455
+      ],
+      "pvalue": 4.999750012499375e-05,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed101_seed307/answer/semantic_minus_activation",
+      "estimate": 0.013115890599785901,
+      "ci": [
+        -0.006578064356890741,
+        0.032353554583945426
+      ],
+      "pvalue": 0.21063946802659866,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed101_seed307/span/activation_minus_random",
+      "estimate": 0.09810932265519083,
+      "ci": [
+        0.07564615951778648,
+        0.1189711214719806
+      ],
+      "pvalue": 4.999750012499375e-05,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed101_seed307/span/semantic_minus_activation",
+      "estimate": -0.05340436813291304,
+      "ci": [
+        -0.07656526843844878,
+        -0.02813891029800274
+      ],
+      "pvalue": 0.000599970001499925,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed101_seed401/answer/activation_minus_random",
+      "estimate": 0.1555869510163107,
+      "ci": [
+        0.14287505365802194,
+        0.16840690032781633
+      ],
+      "pvalue": 4.999750012499375e-05,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed101_seed401/answer/semantic_minus_activation",
+      "estimate": 0.004307015138212265,
+      "ci": [
+        -0.017920451312737996,
+        0.02568021919457681
+      ],
+      "pvalue": 0.7067146642667866,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed101_seed401/span/activation_minus_random",
+      "estimate": 0.10400756437571801,
+      "ci": [
+        0.0873034364379462,
+        0.11862372184444388
+      ],
+      "pvalue": 4.999750012499375e-05,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed101_seed401/span/semantic_minus_activation",
+      "estimate": -0.023879634658825543,
+      "ci": [
+        -0.04878090442411993,
+        0.0009968469798403584
+      ],
+      "pvalue": 0.0712464376781161,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed101_seed503/answer/activation_minus_random",
+      "estimate": 0.11845720279807374,
+      "ci": [
+        0.103604662419181,
+        0.13272431378447694
+      ],
+      "pvalue": 4.999750012499375e-05,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed101_seed503/answer/semantic_minus_activation",
+      "estimate": 0.004443850358497539,
+      "ci": [
+        -0.009757456734957053,
+        0.01907420202868088
+      ],
+      "pvalue": 0.5718714064296785,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed101_seed503/span/activation_minus_random",
+      "estimate": 0.08287393041239711,
+      "ci": [
+        0.05960557698193369,
+        0.10428894060087313
+      ],
+      "pvalue": 4.999750012499375e-05,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed101_seed503/span/semantic_minus_activation",
+      "estimate": 0.004951971196073397,
+      "ci": [
+        -0.025344963143366445,
+        0.03637348501953698
+      ],
+      "pvalue": 0.7557122143892805,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed211_seed307/answer/activation_minus_random",
+      "estimate": 0.15277086245488256,
+      "ci": [
+        0.13810457403859808,
+        0.16662158743645464
+      ],
+      "pvalue": 4.999750012499375e-05,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed211_seed307/answer/semantic_minus_activation",
+      "estimate": -0.014274719140664735,
+      "ci": [
+        -0.031959828164437126,
+        0.004938038603938637
+      ],
+      "pvalue": 0.14419279036048196,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed211_seed307/span/activation_minus_random",
+      "estimate": 0.09454837615667637,
+      "ci": [
+        0.07816265419930461,
+        0.11165278290651623
+      ],
+      "pvalue": 4.999750012499375e-05,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed211_seed307/span/semantic_minus_activation",
+      "estimate": -0.014250609053601461,
+      "ci": [
+        -0.03325541734927459,
+        0.0051020832272327165
+      ],
+      "pvalue": 0.1703914804259787,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed211_seed401/answer/activation_minus_random",
+      "estimate": 0.20048413894254144,
+      "ci": [
+        0.18674498645276386,
+        0.21300931214509064
+      ],
+      "pvalue": 4.999750012499375e-05,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed211_seed401/answer/semantic_minus_activation",
+      "estimate": -0.009416563690357541,
+      "ci": [
+        -0.028269795799978282,
+        0.01042291987864042
+      ],
+      "pvalue": 0.3591320433978301,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed211_seed401/span/activation_minus_random",
+      "estimate": 0.06336707945778339,
+      "ci": [
+        0.042288441970119175,
+        0.08322758047669904
+      ],
+      "pvalue": 4.999750012499375e-05,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed211_seed401/span/semantic_minus_activation",
+      "estimate": 0.028025039726351075,
+      "ci": [
+        0.00520981693799197,
+        0.052719294709289106
+      ],
+      "pvalue": 0.025498725063746813,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed211_seed503/answer/activation_minus_random",
+      "estimate": 0.1966254778584018,
+      "ci": [
+        0.17479574818510102,
+        0.21906320666813198
+      ],
+      "pvalue": 4.999750012499375e-05,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed211_seed503/answer/semantic_minus_activation",
+      "estimate": -0.010869642545992375,
+      "ci": [
+        -0.030523869998385886,
+        0.008179397824393607
+      ],
+      "pvalue": 0.29398530073496326,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed211_seed503/span/activation_minus_random",
+      "estimate": 0.06405009814277281,
+      "ci": [
+        0.05130897858147272,
+        0.07721801243430171
+      ],
+      "pvalue": 4.999750012499375e-05,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed211_seed503/span/semantic_minus_activation",
+      "estimate": 0.03882292099346058,
+      "ci": [
+        0.01428855716985132,
+        0.0634903906613954
+      ],
+      "pvalue": 0.004249787510624469,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed307_seed401/answer/activation_minus_random",
+      "estimate": 0.169809645085918,
+      "ci": [
+        0.15293175010300075,
+        0.18628885500269485
+      ],
+      "pvalue": 4.999750012499375e-05,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed307_seed401/answer/semantic_minus_activation",
+      "estimate": -0.027517668413976373,
+      "ci": [
+        -0.04471748457222939,
+        -0.010804540975012121
+      ],
+      "pvalue": 0.0038998050097495125,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed307_seed401/span/activation_minus_random",
+      "estimate": 0.09302609220543234,
+      "ci": [
+        0.07658026720293076,
+        0.10961845829854584
+      ],
+      "pvalue": 4.999750012499375e-05,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed307_seed401/span/semantic_minus_activation",
+      "estimate": -0.04622029386913005,
+      "ci": [
+        -0.07377640555812297,
+        -0.01865627623015351
+      ],
+      "pvalue": 0.004499775011249437,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed307_seed503/answer/activation_minus_random",
+      "estimate": 0.12501502907631246,
+      "ci": [
+        0.11215006373879241,
+        0.1381120493007348
+      ],
+      "pvalue": 4.999750012499375e-05,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed307_seed503/answer/semantic_minus_activation",
+      "estimate": -0.004666310639073073,
+      "ci": [
+        -0.02175911759481991,
+        0.011318451251897645
+      ],
+      "pvalue": 0.5959202039898005,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed307_seed503/span/activation_minus_random",
+      "estimate": 0.08399582160031911,
+      "ci": [
+        0.0678017867668865,
+        0.10076231583501069
+      ],
+      "pvalue": 4.999750012499375e-05,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed307_seed503/span/semantic_minus_activation",
+      "estimate": -0.039635691276462374,
+      "ci": [
+        -0.062287726261906304,
+        -0.018260346066302526
+      ],
+      "pvalue": 0.0019499025048747563,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed401_seed503/answer/activation_minus_random",
+      "estimate": 0.15819296197267127,
+      "ci": [
+        0.14428900534013114,
+        0.17150617964911366
+      ],
+      "pvalue": 4.999750012499375e-05,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed401_seed503/answer/semantic_minus_activation",
+      "estimate": 0.0004188790858589691,
+      "ci": [
+        -0.01350626702352741,
+        0.01398601409361833
+      ],
+      "pvalue": 0.9501024948752562,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed401_seed503/span/activation_minus_random",
+      "estimate": 0.1084692751987804,
+      "ci": [
+        0.09607645271251375,
+        0.12005365495477288
+      ],
+      "pvalue": 4.999750012499375e-05,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/seed401_seed503/span/semantic_minus_activation",
+      "estimate": -0.018494847146447623,
+      "ci": [
+        -0.041944059343476524,
+        0.0030195332764254646
+      ],
+      "pvalue": 0.13329333533323334,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/qwen_smol/answer/activation_minus_random",
+      "estimate": -0.019658143865050257,
+      "ci": [
+        -0.03561241593228968,
+        -0.0027528683047086276
+      ],
+      "pvalue": 0.025748712564371782,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/qwen_smol/answer/semantic_minus_activation",
+      "estimate": 0.0573135214855949,
+      "ci": [
+        0.03649401103675507,
+        0.07604162314209728
+      ],
+      "pvalue": 0.00014999250037498125,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/qwen_smol/span/activation_minus_random",
+      "estimate": 0.005577531227483103,
+      "ci": [
+        -0.007399069334586775,
+        0.018989691189142493
+      ],
+      "pvalue": 0.4327783610819459,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/qwen_smol/span/semantic_minus_activation",
+      "estimate": 0.0024485175451561397,
+      "ci": [
+        -0.02101391896961172,
+        0.02727827130246226
+      ],
+      "pvalue": 0.8521573921303934,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/qwen_olmo/answer/activation_minus_random",
+      "estimate": -0.010688504803126683,
+      "ci": [
+        -0.028932375663722563,
+        0.006713868485887476
+      ],
+      "pvalue": 0.2624868756562172,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/qwen_olmo/answer/semantic_minus_activation",
+      "estimate": 0.031055208838199354,
+      "ci": [
+        0.011287241472043241,
+        0.05332373354287598
+      ],
+      "pvalue": 0.006349682515874206,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/qwen_olmo/span/activation_minus_random",
+      "estimate": 0.027481666551352632,
+      "ci": [
+        0.009519901206724263,
+        0.04391459325292006
+      ],
+      "pvalue": 0.005499725013749313,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/qwen_olmo/span/semantic_minus_activation",
+      "estimate": 0.012831093514001432,
+      "ci": [
+        -0.003815346186378701,
+        0.02974048307883156
+      ],
+      "pvalue": 0.16204189790510473,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/smol_olmo/answer/activation_minus_random",
+      "estimate": 0.017097151090066567,
+      "ci": [
+        0.0005552569360296677,
+        0.032462263623063356
+      ],
+      "pvalue": 0.05139743012849358,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/smol_olmo/answer/semantic_minus_activation",
+      "estimate": -0.011582151883927931,
+      "ci": [
+        -0.031777028417901365,
+        0.010110753923298845
+      ],
+      "pvalue": 0.3095845207739613,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/smol_olmo/span/activation_minus_random",
+      "estimate": 0.06377705605182844,
+      "ci": [
+        0.042613153845243126,
+        0.08515351968447747
+      ],
+      "pvalue": 0.00024998750062496874,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "name": "F3/smol_olmo/span/semantic_minus_activation",
+      "estimate": -0.04324002189720235,
+      "ci": [
+        -0.06597197903216713,
+        -0.020837768809636913
+      ],
+      "pvalue": 0.0012499375031248437,
+      "qvalue": null,
+      "correction_scope": "Predeclared F3 family member; global BH pending F6",
+      "source": "results/followup-v2/alignment/summary.json"
+    }
+  ],
+  "figures": [
+    {
+      "id": "final_answer",
+      "kind": "heatmap",
+      "title": "D3 final-model alignment: answer position",
+      "rows": [
+        {
+          "model_pair": "seed101_seed211",
+          "method": "Activation",
+          "value": 0.14152046207471433
+        },
+        {
+          "model_pair": "seed101_seed211",
+          "method": "Rank",
+          "value": 0.1484999965958281
+        },
+        {
+          "model_pair": "seed101_seed211",
+          "method": "Semantic",
+          "value": 0.16557111106310402
+        },
+        {
+          "model_pair": "seed101_seed211",
+          "method": "Sign-semantic",
+          "value": 0.13642955382609886
+        },
+        {
+          "model_pair": "seed101_seed211",
+          "method": "Random (100)",
+          "value": 0.01162112209222125
+        },
+        {
+          "model_pair": "seed101_seed211",
+          "method": "Shuffled labels",
+          "value": -0.05987923669552863
+        },
+        {
+          "model_pair": "seed101_seed307",
+          "method": "Activation",
+          "value": 0.130485038379339
+        },
+        {
+          "model_pair": "seed101_seed307",
+          "method": "Rank",
+          "value": 0.13674727427550462
+        },
+        {
+          "model_pair": "seed101_seed307",
+          "method": "Semantic",
+          "value": 0.1436009289791249
+        },
+        {
+          "model_pair": "seed101_seed307",
+          "method": "Sign-semantic",
+          "value": 0.1060165564432763
+        },
+        {
+          "model_pair": "seed101_seed307",
+          "method": "Random (100)",
+          "value": 0.008378579721069158
+        },
+        {
+          "model_pair": "seed101_seed307",
+          "method": "Shuffled labels",
+          "value": -0.08156001872407706
+        },
+        {
+          "model_pair": "seed101_seed401",
+          "method": "Activation",
+          "value": 0.15484794872281712
+        },
+        {
+          "model_pair": "seed101_seed401",
+          "method": "Rank",
+          "value": 0.1614890189148617
+        },
+        {
+          "model_pair": "seed101_seed401",
+          "method": "Semantic",
+          "value": 0.15915496386102937
+        },
+        {
+          "model_pair": "seed101_seed401",
+          "method": "Sign-semantic",
+          "value": 0.1279604194814472
+        },
+        {
+          "model_pair": "seed101_seed401",
+          "method": "Random (100)",
+          "value": -0.000739002293493591
+        },
+        {
+          "model_pair": "seed101_seed401",
+          "method": "Shuffled labels",
+          "value": -0.0919036085072568
+        },
+        {
+          "model_pair": "seed101_seed503",
+          "method": "Activation",
+          "value": 0.10030213062347465
+        },
+        {
+          "model_pair": "seed101_seed503",
+          "method": "Rank",
+          "value": 0.11391982456466658
+        },
+        {
+          "model_pair": "seed101_seed503",
+          "method": "Semantic",
+          "value": 0.1047459809819722
+        },
+        {
+          "model_pair": "seed101_seed503",
+          "method": "Sign-semantic",
+          "value": 0.07015963727157443
+        },
+        {
+          "model_pair": "seed101_seed503",
+          "method": "Random (100)",
+          "value": -0.018155072174599083
+        },
+        {
+          "model_pair": "seed101_seed503",
+          "method": "Shuffled labels",
+          "value": -0.07803241625724548
+        },
+        {
+          "model_pair": "seed211_seed307",
+          "method": "Activation",
+          "value": 0.1630895827136529
+        },
+        {
+          "model_pair": "seed211_seed307",
+          "method": "Rank",
+          "value": 0.14388761033334685
+        },
+        {
+          "model_pair": "seed211_seed307",
+          "method": "Semantic",
+          "value": 0.14881486357298815
+        },
+        {
+          "model_pair": "seed211_seed307",
+          "method": "Sign-semantic",
+          "value": 0.1248396904418061
+        },
+        {
+          "model_pair": "seed211_seed307",
+          "method": "Random (100)",
+          "value": 0.010318720258770344
+        },
+        {
+          "model_pair": "seed211_seed307",
+          "method": "Shuffled labels",
+          "value": -0.08646773233311884
+        },
+        {
+          "model_pair": "seed211_seed401",
+          "method": "Activation",
+          "value": 0.20208440396260027
+        },
+        {
+          "model_pair": "seed211_seed401",
+          "method": "Rank",
+          "value": 0.21352535795848793
+        },
+        {
+          "model_pair": "seed211_seed401",
+          "method": "Semantic",
+          "value": 0.1926678402722427
+        },
+        {
+          "model_pair": "seed211_seed401",
+          "method": "Sign-semantic",
+          "value": 0.1834743018187337
+        },
+        {
+          "model_pair": "seed211_seed401",
+          "method": "Random (100)",
+          "value": 0.0016002650200588272
+        },
+        {
+          "model_pair": "seed211_seed401",
+          "method": "Shuffled labels",
+          "value": -0.12674382432184678
+        },
+        {
+          "model_pair": "seed211_seed503",
+          "method": "Activation",
+          "value": 0.16829283519893787
+        },
+        {
+          "model_pair": "seed211_seed503",
+          "method": "Rank",
+          "value": 0.15470828675579648
+        },
+        {
+          "model_pair": "seed211_seed503",
+          "method": "Semantic",
+          "value": 0.1574231926529455
+        },
+        {
+          "model_pair": "seed211_seed503",
+          "method": "Sign-semantic",
+          "value": 0.11199808866869182
+        },
+        {
+          "model_pair": "seed211_seed503",
+          "method": "Random (100)",
+          "value": -0.02833264265946393
+        },
+        {
+          "model_pair": "seed211_seed503",
+          "method": "Shuffled labels",
+          "value": -0.12853155127769647
+        },
+        {
+          "model_pair": "seed307_seed401",
+          "method": "Activation",
+          "value": 0.16803498404076103
+        },
+        {
+          "model_pair": "seed307_seed401",
+          "method": "Rank",
+          "value": 0.16043846309359375
+        },
+        {
+          "model_pair": "seed307_seed401",
+          "method": "Semantic",
+          "value": 0.14051731562678468
+        },
+        {
+          "model_pair": "seed307_seed401",
+          "method": "Sign-semantic",
+          "value": 0.11625649818802157
+        },
+        {
+          "model_pair": "seed307_seed401",
+          "method": "Random (100)",
+          "value": -0.0017746610451569724
+        },
+        {
+          "model_pair": "seed307_seed401",
+          "method": "Shuffled labels",
+          "value": -0.10660687762575032
+        },
+        {
+          "model_pair": "seed307_seed503",
+          "method": "Activation",
+          "value": 0.11376191602612314
+        },
+        {
+          "model_pair": "seed307_seed503",
+          "method": "Rank",
+          "value": 0.11619096403919582
+        },
+        {
+          "model_pair": "seed307_seed503",
+          "method": "Semantic",
+          "value": 0.10909560538705008
+        },
+        {
+          "model_pair": "seed307_seed503",
+          "method": "Sign-semantic",
+          "value": 0.05951807182774704
+        },
+        {
+          "model_pair": "seed307_seed503",
+          "method": "Random (100)",
+          "value": -0.011253113050189315
+        },
+        {
+          "model_pair": "seed307_seed503",
+          "method": "Shuffled labels",
+          "value": -0.10068502599965128
+        },
+        {
+          "model_pair": "seed401_seed503",
+          "method": "Activation",
+          "value": 0.14830039339810386
+        },
+        {
+          "model_pair": "seed401_seed503",
+          "method": "Rank",
+          "value": 0.134315304010608
+        },
+        {
+          "model_pair": "seed401_seed503",
+          "method": "Semantic",
+          "value": 0.14871927248396283
+        },
+        {
+          "model_pair": "seed401_seed503",
+          "method": "Sign-semantic",
+          "value": 0.09747901166282062
+        },
+        {
+          "model_pair": "seed401_seed503",
+          "method": "Random (100)",
+          "value": -0.0098925685745674
+        },
+        {
+          "model_pair": "seed401_seed503",
+          "method": "Shuffled labels",
+          "value": -0.09150603667245805
+        },
+        {
+          "model_pair": "qwen_smol",
+          "method": "Activation",
+          "value": -0.02085553291008894
+        },
+        {
+          "model_pair": "qwen_smol",
+          "method": "Rank",
+          "value": -0.02637468566021271
+        },
+        {
+          "model_pair": "qwen_smol",
+          "method": "Semantic",
+          "value": 0.036457988575505945
+        },
+        {
+          "model_pair": "qwen_smol",
+          "method": "Sign-semantic",
+          "value": 0.011078506635363255
+        },
+        {
+          "model_pair": "qwen_smol",
+          "method": "Random (100)",
+          "value": -0.0011973890450386832
+        },
+        {
+          "model_pair": "qwen_smol",
+          "method": "Shuffled labels",
+          "value": 0.007812197508528453
+        },
+        {
+          "model_pair": "qwen_olmo",
+          "method": "Activation",
+          "value": -0.013765235794621288
+        },
+        {
+          "model_pair": "qwen_olmo",
+          "method": "Rank",
+          "value": 0.007443549270566019
+        },
+        {
+          "model_pair": "qwen_olmo",
+          "method": "Semantic",
+          "value": 0.01728997304357807
+        },
+        {
+          "model_pair": "qwen_olmo",
+          "method": "Sign-semantic",
+          "value": 0.01870189785578372
+        },
+        {
+          "model_pair": "qwen_olmo",
+          "method": "Random (100)",
+          "value": -0.0030767309914946066
+        },
+        {
+          "model_pair": "qwen_olmo",
+          "method": "Shuffled labels",
+          "value": -0.018283732741829723
+        },
+        {
+          "model_pair": "smol_olmo",
+          "method": "Activation",
+          "value": 0.01914230135751897
+        },
+        {
+          "model_pair": "smol_olmo",
+          "method": "Rank",
+          "value": -0.00761608226752056
+        },
+        {
+          "model_pair": "smol_olmo",
+          "method": "Semantic",
+          "value": 0.007560149473591037
+        },
+        {
+          "model_pair": "smol_olmo",
+          "method": "Sign-semantic",
+          "value": 0.010237052018918544
+        },
+        {
+          "model_pair": "smol_olmo",
+          "method": "Random (100)",
+          "value": 0.0020451502674524035
+        },
+        {
+          "model_pair": "smol_olmo",
+          "method": "Shuffled labels",
+          "value": -0.001955180069282591
+        }
+      ],
+      "row": "model_pair",
+      "column": "method",
+      "value": "value",
+      "vmin": -1,
+      "vmax": 1,
+      "unit": "Within-task wrapper-equal Pearson",
+      "source": [
+        "results/followup-v2/alignment/summary.json",
+        "results/followup-v2/alignment/fit_manifest.json",
+        "results/followup-v2/alignment/seed101_seed211/answer/eval.json",
+        "results/followup-v2/alignment/seed101_seed211/span/eval.json",
+        "results/followup-v2/alignment/seed101_seed211/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed101_seed211/span/eval_initial.json",
+        "results/followup-v2/alignment/seed101_seed211/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed101_seed211/span/eval_middle.json",
+        "results/followup-v2/alignment/seed101_seed307/answer/eval.json",
+        "results/followup-v2/alignment/seed101_seed307/span/eval.json",
+        "results/followup-v2/alignment/seed101_seed307/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed101_seed307/span/eval_initial.json",
+        "results/followup-v2/alignment/seed101_seed307/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed101_seed307/span/eval_middle.json",
+        "results/followup-v2/alignment/seed101_seed401/answer/eval.json",
+        "results/followup-v2/alignment/seed101_seed401/span/eval.json",
+        "results/followup-v2/alignment/seed101_seed401/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed101_seed401/span/eval_initial.json",
+        "results/followup-v2/alignment/seed101_seed401/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed101_seed401/span/eval_middle.json",
+        "results/followup-v2/alignment/seed101_seed503/answer/eval.json",
+        "results/followup-v2/alignment/seed101_seed503/span/eval.json",
+        "results/followup-v2/alignment/seed101_seed503/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed101_seed503/span/eval_initial.json",
+        "results/followup-v2/alignment/seed101_seed503/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed101_seed503/span/eval_middle.json",
+        "results/followup-v2/alignment/seed211_seed307/answer/eval.json",
+        "results/followup-v2/alignment/seed211_seed307/span/eval.json",
+        "results/followup-v2/alignment/seed211_seed307/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed211_seed307/span/eval_initial.json",
+        "results/followup-v2/alignment/seed211_seed307/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed211_seed307/span/eval_middle.json",
+        "results/followup-v2/alignment/seed211_seed401/answer/eval.json",
+        "results/followup-v2/alignment/seed211_seed401/span/eval.json",
+        "results/followup-v2/alignment/seed211_seed401/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed211_seed401/span/eval_initial.json",
+        "results/followup-v2/alignment/seed211_seed401/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed211_seed401/span/eval_middle.json",
+        "results/followup-v2/alignment/seed211_seed503/answer/eval.json",
+        "results/followup-v2/alignment/seed211_seed503/span/eval.json",
+        "results/followup-v2/alignment/seed211_seed503/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed211_seed503/span/eval_initial.json",
+        "results/followup-v2/alignment/seed211_seed503/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed211_seed503/span/eval_middle.json",
+        "results/followup-v2/alignment/seed307_seed401/answer/eval.json",
+        "results/followup-v2/alignment/seed307_seed401/span/eval.json",
+        "results/followup-v2/alignment/seed307_seed401/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed307_seed401/span/eval_initial.json",
+        "results/followup-v2/alignment/seed307_seed401/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed307_seed401/span/eval_middle.json",
+        "results/followup-v2/alignment/seed307_seed503/answer/eval.json",
+        "results/followup-v2/alignment/seed307_seed503/span/eval.json",
+        "results/followup-v2/alignment/seed307_seed503/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed307_seed503/span/eval_initial.json",
+        "results/followup-v2/alignment/seed307_seed503/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed307_seed503/span/eval_middle.json",
+        "results/followup-v2/alignment/seed401_seed503/answer/eval.json",
+        "results/followup-v2/alignment/seed401_seed503/span/eval.json",
+        "results/followup-v2/alignment/seed401_seed503/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed401_seed503/span/eval_initial.json",
+        "results/followup-v2/alignment/seed401_seed503/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed401_seed503/span/eval_middle.json",
+        "results/followup-v2/alignment/qwen_smol/answer/eval.json",
+        "results/followup-v2/alignment/qwen_smol/span/eval.json",
+        "results/followup-v2/alignment/qwen_olmo/answer/eval.json",
+        "results/followup-v2/alignment/qwen_olmo/span/eval.json",
+        "results/followup-v2/alignment/smol_olmo/answer/eval.json",
+        "results/followup-v2/alignment/smol_olmo/span/eval.json"
+      ],
+      "figsize": [
+        12,
+        8.1
+      ],
+      "note": "All task rows retained; competence-qualified strata are reported in the source. Random baseline averages100 frozen maps."
+    },
+    {
+      "id": "final_span",
+      "kind": "heatmap",
+      "title": "D3 final-model alignment: span position",
+      "rows": [
+        {
+          "model_pair": "seed101_seed211",
+          "method": "Activation",
+          "value": 0.06784145798366752
+        },
+        {
+          "model_pair": "seed101_seed211",
+          "method": "Rank",
+          "value": 0.09398121638409501
+        },
+        {
+          "model_pair": "seed101_seed211",
+          "method": "Semantic",
+          "value": 0.13403878507255415
+        },
+        {
+          "model_pair": "seed101_seed211",
+          "method": "Sign-semantic",
+          "value": 0.05767233957352295
+        },
+        {
+          "model_pair": "seed101_seed211",
+          "method": "Random (100)",
+          "value": 7.067293928703783e-05
+        },
+        {
+          "model_pair": "seed101_seed211",
+          "method": "Shuffled labels",
+          "value": -0.05787413799869177
+        },
+        {
+          "model_pair": "seed101_seed307",
+          "method": "Activation",
+          "value": 0.09648529958900547
+        },
+        {
+          "model_pair": "seed101_seed307",
+          "method": "Rank",
+          "value": 0.1051766616766242
+        },
+        {
+          "model_pair": "seed101_seed307",
+          "method": "Semantic",
+          "value": 0.04308093145609241
+        },
+        {
+          "model_pair": "seed101_seed307",
+          "method": "Sign-semantic",
+          "value": 0.010034839580761854
+        },
+        {
+          "model_pair": "seed101_seed307",
+          "method": "Random (100)",
+          "value": -0.0016240230661853684
+        },
+        {
+          "model_pair": "seed101_seed307",
+          "method": "Shuffled labels",
+          "value": -0.018733270109948297
+        },
+        {
+          "model_pair": "seed101_seed401",
+          "method": "Activation",
+          "value": 0.10476838884378259
+        },
+        {
+          "model_pair": "seed101_seed401",
+          "method": "Rank",
+          "value": 0.07797193764868747
+        },
+        {
+          "model_pair": "seed101_seed401",
+          "method": "Semantic",
+          "value": 0.08088875418495704
+        },
+        {
+          "model_pair": "seed101_seed401",
+          "method": "Sign-semantic",
+          "value": 0.04716209949352492
+        },
+        {
+          "model_pair": "seed101_seed401",
+          "method": "Random (100)",
+          "value": 0.0007608244680645717
+        },
+        {
+          "model_pair": "seed101_seed401",
+          "method": "Shuffled labels",
+          "value": -0.02581670629390537
+        },
+        {
+          "model_pair": "seed101_seed503",
+          "method": "Activation",
+          "value": 0.08024440503535567
+        },
+        {
+          "model_pair": "seed101_seed503",
+          "method": "Rank",
+          "value": 0.10164899468341271
+        },
+        {
+          "model_pair": "seed101_seed503",
+          "method": "Semantic",
+          "value": 0.08519637623142906
+        },
+        {
+          "model_pair": "seed101_seed503",
+          "method": "Sign-semantic",
+          "value": 0.02401881019152675
+        },
+        {
+          "model_pair": "seed101_seed503",
+          "method": "Random (100)",
+          "value": -0.0026295253770414508
+        },
+        {
+          "model_pair": "seed101_seed503",
+          "method": "Shuffled labels",
+          "value": -0.015075321594147323
+        },
+        {
+          "model_pair": "seed211_seed307",
+          "method": "Activation",
+          "value": 0.09609543994984467
+        },
+        {
+          "model_pair": "seed211_seed307",
+          "method": "Rank",
+          "value": 0.1042958604217077
+        },
+        {
+          "model_pair": "seed211_seed307",
+          "method": "Semantic",
+          "value": 0.08184483089624323
+        },
+        {
+          "model_pair": "seed211_seed307",
+          "method": "Sign-semantic",
+          "value": 0.026632370750226536
+        },
+        {
+          "model_pair": "seed211_seed307",
+          "method": "Random (100)",
+          "value": 0.0015470637931683125
+        },
+        {
+          "model_pair": "seed211_seed307",
+          "method": "Shuffled labels",
+          "value": 0.015245235202533977
+        },
+        {
+          "model_pair": "seed211_seed401",
+          "method": "Activation",
+          "value": 0.0652800236865528
+        },
+        {
+          "model_pair": "seed211_seed401",
+          "method": "Rank",
+          "value": 0.08384157588632969
+        },
+        {
+          "model_pair": "seed211_seed401",
+          "method": "Semantic",
+          "value": 0.09330506341290386
+        },
+        {
+          "model_pair": "seed211_seed401",
+          "method": "Sign-semantic",
+          "value": 0.06508472440356418
+        },
+        {
+          "model_pair": "seed211_seed401",
+          "method": "Random (100)",
+          "value": 0.0019129442287694075
+        },
+        {
+          "model_pair": "seed211_seed401",
+          "method": "Shuffled labels",
+          "value": -0.05418594674979965
+        },
+        {
+          "model_pair": "seed211_seed503",
+          "method": "Activation",
+          "value": 0.05841783831569122
+        },
+        {
+          "model_pair": "seed211_seed503",
+          "method": "Rank",
+          "value": 0.044715165207312446
+        },
+        {
+          "model_pair": "seed211_seed503",
+          "method": "Semantic",
+          "value": 0.09724075930915181
+        },
+        {
+          "model_pair": "seed211_seed503",
+          "method": "Sign-semantic",
+          "value": 0.11275709069616498
+        },
+        {
+          "model_pair": "seed211_seed503",
+          "method": "Random (100)",
+          "value": -0.005632259827081598
+        },
+        {
+          "model_pair": "seed211_seed503",
+          "method": "Shuffled labels",
+          "value": -0.022801259256371293
+        },
+        {
+          "model_pair": "seed307_seed401",
+          "method": "Activation",
+          "value": 0.09274798279024261
+        },
+        {
+          "model_pair": "seed307_seed401",
+          "method": "Rank",
+          "value": 0.10325463901264338
+        },
+        {
+          "model_pair": "seed307_seed401",
+          "method": "Semantic",
+          "value": 0.04652768892111256
+        },
+        {
+          "model_pair": "seed307_seed401",
+          "method": "Sign-semantic",
+          "value": -0.00892860407454049
+        },
+        {
+          "model_pair": "seed307_seed401",
+          "method": "Random (100)",
+          "value": -0.00027810941518974534
+        },
+        {
+          "model_pair": "seed307_seed401",
+          "method": "Shuffled labels",
+          "value": -0.01287348391942863
+        },
+        {
+          "model_pair": "seed307_seed503",
+          "method": "Activation",
+          "value": 0.08747270479976622
+        },
+        {
+          "model_pair": "seed307_seed503",
+          "method": "Rank",
+          "value": 0.08288487890219866
+        },
+        {
+          "model_pair": "seed307_seed503",
+          "method": "Semantic",
+          "value": 0.04783701352330385
+        },
+        {
+          "model_pair": "seed307_seed503",
+          "method": "Sign-semantic",
+          "value": -0.009674487096004396
+        },
+        {
+          "model_pair": "seed307_seed503",
+          "method": "Random (100)",
+          "value": 0.0034768831994470947
+        },
+        {
+          "model_pair": "seed307_seed503",
+          "method": "Shuffled labels",
+          "value": -0.017087668368712783
+        },
+        {
+          "model_pair": "seed401_seed503",
+          "method": "Activation",
+          "value": 0.11346904719836019
+        },
+        {
+          "model_pair": "seed401_seed503",
+          "method": "Rank",
+          "value": 0.1110644351129495
+        },
+        {
+          "model_pair": "seed401_seed503",
+          "method": "Semantic",
+          "value": 0.09497420005191255
+        },
+        {
+          "model_pair": "seed401_seed503",
+          "method": "Sign-semantic",
+          "value": 0.028255293973256646
+        },
+        {
+          "model_pair": "seed401_seed503",
+          "method": "Random (100)",
+          "value": 0.004999771999579814
+        },
+        {
+          "model_pair": "seed401_seed503",
+          "method": "Shuffled labels",
+          "value": -0.00822290426502452
+        },
+        {
+          "model_pair": "qwen_smol",
+          "method": "Activation",
+          "value": 0.006433057609577471
+        },
+        {
+          "model_pair": "qwen_smol",
+          "method": "Rank",
+          "value": 0.004798486770817959
+        },
+        {
+          "model_pair": "qwen_smol",
+          "method": "Semantic",
+          "value": 0.008881575154733609
+        },
+        {
+          "model_pair": "qwen_smol",
+          "method": "Sign-semantic",
+          "value": 0.0025883445307526526
+        },
+        {
+          "model_pair": "qwen_smol",
+          "method": "Random (100)",
+          "value": 0.0008555263820943674
+        },
+        {
+          "model_pair": "qwen_smol",
+          "method": "Shuffled labels",
+          "value": -0.00028299942429562547
+        },
+        {
+          "model_pair": "qwen_olmo",
+          "method": "Activation",
+          "value": 0.032404510659885005
+        },
+        {
+          "model_pair": "qwen_olmo",
+          "method": "Rank",
+          "value": 0.057588120183819834
+        },
+        {
+          "model_pair": "qwen_olmo",
+          "method": "Semantic",
+          "value": 0.04523560417388644
+        },
+        {
+          "model_pair": "qwen_olmo",
+          "method": "Sign-semantic",
+          "value": 0.048545411331690734
+        },
+        {
+          "model_pair": "qwen_olmo",
+          "method": "Random (100)",
+          "value": 0.004922844108532374
+        },
+        {
+          "model_pair": "qwen_olmo",
+          "method": "Shuffled labels",
+          "value": 0.01848996956901246
+        },
+        {
+          "model_pair": "smol_olmo",
+          "method": "Activation",
+          "value": 0.05940203566834681
+        },
+        {
+          "model_pair": "smol_olmo",
+          "method": "Rank",
+          "value": 0.03981191946182169
+        },
+        {
+          "model_pair": "smol_olmo",
+          "method": "Semantic",
+          "value": 0.01616201377114446
+        },
+        {
+          "model_pair": "smol_olmo",
+          "method": "Sign-semantic",
+          "value": -0.009226846369620257
+        },
+        {
+          "model_pair": "smol_olmo",
+          "method": "Random (100)",
+          "value": -0.0043750203834816365
+        },
+        {
+          "model_pair": "smol_olmo",
+          "method": "Shuffled labels",
+          "value": -0.035224861900377956
+        }
+      ],
+      "row": "model_pair",
+      "column": "method",
+      "value": "value",
+      "vmin": -1,
+      "vmax": 1,
+      "unit": "Within-task wrapper-equal Pearson",
+      "source": [
+        "results/followup-v2/alignment/summary.json",
+        "results/followup-v2/alignment/fit_manifest.json",
+        "results/followup-v2/alignment/seed101_seed211/answer/eval.json",
+        "results/followup-v2/alignment/seed101_seed211/span/eval.json",
+        "results/followup-v2/alignment/seed101_seed211/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed101_seed211/span/eval_initial.json",
+        "results/followup-v2/alignment/seed101_seed211/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed101_seed211/span/eval_middle.json",
+        "results/followup-v2/alignment/seed101_seed307/answer/eval.json",
+        "results/followup-v2/alignment/seed101_seed307/span/eval.json",
+        "results/followup-v2/alignment/seed101_seed307/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed101_seed307/span/eval_initial.json",
+        "results/followup-v2/alignment/seed101_seed307/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed101_seed307/span/eval_middle.json",
+        "results/followup-v2/alignment/seed101_seed401/answer/eval.json",
+        "results/followup-v2/alignment/seed101_seed401/span/eval.json",
+        "results/followup-v2/alignment/seed101_seed401/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed101_seed401/span/eval_initial.json",
+        "results/followup-v2/alignment/seed101_seed401/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed101_seed401/span/eval_middle.json",
+        "results/followup-v2/alignment/seed101_seed503/answer/eval.json",
+        "results/followup-v2/alignment/seed101_seed503/span/eval.json",
+        "results/followup-v2/alignment/seed101_seed503/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed101_seed503/span/eval_initial.json",
+        "results/followup-v2/alignment/seed101_seed503/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed101_seed503/span/eval_middle.json",
+        "results/followup-v2/alignment/seed211_seed307/answer/eval.json",
+        "results/followup-v2/alignment/seed211_seed307/span/eval.json",
+        "results/followup-v2/alignment/seed211_seed307/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed211_seed307/span/eval_initial.json",
+        "results/followup-v2/alignment/seed211_seed307/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed211_seed307/span/eval_middle.json",
+        "results/followup-v2/alignment/seed211_seed401/answer/eval.json",
+        "results/followup-v2/alignment/seed211_seed401/span/eval.json",
+        "results/followup-v2/alignment/seed211_seed401/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed211_seed401/span/eval_initial.json",
+        "results/followup-v2/alignment/seed211_seed401/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed211_seed401/span/eval_middle.json",
+        "results/followup-v2/alignment/seed211_seed503/answer/eval.json",
+        "results/followup-v2/alignment/seed211_seed503/span/eval.json",
+        "results/followup-v2/alignment/seed211_seed503/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed211_seed503/span/eval_initial.json",
+        "results/followup-v2/alignment/seed211_seed503/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed211_seed503/span/eval_middle.json",
+        "results/followup-v2/alignment/seed307_seed401/answer/eval.json",
+        "results/followup-v2/alignment/seed307_seed401/span/eval.json",
+        "results/followup-v2/alignment/seed307_seed401/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed307_seed401/span/eval_initial.json",
+        "results/followup-v2/alignment/seed307_seed401/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed307_seed401/span/eval_middle.json",
+        "results/followup-v2/alignment/seed307_seed503/answer/eval.json",
+        "results/followup-v2/alignment/seed307_seed503/span/eval.json",
+        "results/followup-v2/alignment/seed307_seed503/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed307_seed503/span/eval_initial.json",
+        "results/followup-v2/alignment/seed307_seed503/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed307_seed503/span/eval_middle.json",
+        "results/followup-v2/alignment/seed401_seed503/answer/eval.json",
+        "results/followup-v2/alignment/seed401_seed503/span/eval.json",
+        "results/followup-v2/alignment/seed401_seed503/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed401_seed503/span/eval_initial.json",
+        "results/followup-v2/alignment/seed401_seed503/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed401_seed503/span/eval_middle.json",
+        "results/followup-v2/alignment/qwen_smol/answer/eval.json",
+        "results/followup-v2/alignment/qwen_smol/span/eval.json",
+        "results/followup-v2/alignment/qwen_olmo/answer/eval.json",
+        "results/followup-v2/alignment/qwen_olmo/span/eval.json",
+        "results/followup-v2/alignment/smol_olmo/answer/eval.json",
+        "results/followup-v2/alignment/smol_olmo/span/eval.json"
+      ],
+      "figsize": [
+        12,
+        8.1
+      ],
+      "note": "All task rows retained; competence-qualified strata are reported in the source. Random baseline averages100 frozen maps."
+    },
+    {
+      "id": "activation_minus_random",
+      "kind": "interval",
+      "title": "Joint-wrapper activation_minus_random",
+      "rows": [
+        {
+          "label": "independent_seeds/answer/final",
+          "value": 0.15289480678458747,
+          "ci": [
+            0.14631757808076204,
+            0.15981733751630225
+          ]
+        },
+        {
+          "label": "independent_seeds/span/final",
+          "value": 0.08602183452494509,
+          "ci": [
+            0.07659942249509036,
+            0.0944534439407999
+          ]
+        },
+        {
+          "label": "independent_seeds/answer/initial",
+          "value": 0.009260655500974707,
+          "ci": [
+            0.0014374115631683644,
+            0.01625234844815479
+          ]
+        },
+        {
+          "label": "independent_seeds/span/initial",
+          "value": -0.0008855095698768236,
+          "ci": [
+            -0.007099461537047108,
+            0.004897063441798711
+          ]
+        },
+        {
+          "label": "independent_seeds/answer/middle",
+          "value": 0.03254110608799548,
+          "ci": [
+            0.027474894492475952,
+            0.03748686766400371
+          ]
+        },
+        {
+          "label": "independent_seeds/span/middle",
+          "value": 0.015388875952749423,
+          "ci": [
+            0.010527268644327977,
+            0.020729293631412554
+          ]
+        },
+        {
+          "label": "cross_family/answer/final",
+          "value": -0.004416499192703458,
+          "ci": [
+            -0.014806743341531934,
+            0.0055733118532305575
+          ]
+        },
+        {
+          "label": "cross_family/span/final",
+          "value": 0.032278751276888056,
+          "ci": [
+            0.021833021242521403,
+            0.042921459168790546
+          ]
+        }
+      ],
+      "xlabel": "Pearson difference;95% shared-wrapper bootstrap CI",
+      "source": "results/followup-v2/alignment/summary.json",
+      "note": "All observed pairs remain together inside each resampled wrapper; these intervals are conditional on the fixed model collection, not unseen model seeds."
+    },
+    {
+      "id": "semantic_minus_activation",
+      "kind": "interval",
+      "title": "Joint-wrapper semantic_minus_activation",
+      "rows": [
+        {
+          "label": "independent_seeds/answer/final",
+          "value": -0.002040862025931972,
+          "ci": [
+            -0.007121026701476221,
+            0.002510310045064562
+          ]
+        },
+        {
+          "label": "independent_seeds/span/final",
+          "value": -0.005788818513260842,
+          "ci": [
+            -0.01775528650415686,
+            0.0075022337453051905
+          ]
+        },
+        {
+          "label": "independent_seeds/answer/initial",
+          "value": -0.010350406682823306,
+          "ci": [
+            -0.02044195322051546,
+            -0.0002233612328505106
+          ]
+        },
+        {
+          "label": "independent_seeds/span/initial",
+          "value": 0.005960567823268881,
+          "ci": [
+            0.00029887982497566585,
+            0.012054492664572317
+          ]
+        },
+        {
+          "label": "independent_seeds/answer/middle",
+          "value": -0.005005458571201728,
+          "ci": [
+            -0.010218896207532956,
+            0.0003529767220959461
+          ]
+        },
+        {
+          "label": "independent_seeds/span/middle",
+          "value": -0.009619566414204361,
+          "ci": [
+            -0.016683239703860493,
+            -0.0024686218826247947
+          ]
+        },
+        {
+          "label": "cross_family/answer/final",
+          "value": 0.0255955261466221,
+          "ci": [
+            0.013355262011605001,
+            0.037548809052602494
+          ]
+        },
+        {
+          "label": "cross_family/span/final",
+          "value": -0.009320136946014922,
+          "ci": [
+            -0.023179780957600836,
+            0.004802710670757892
+          ]
+        }
+      ],
+      "xlabel": "Pearson difference;95% shared-wrapper bootstrap CI",
+      "source": "results/followup-v2/alignment/summary.json",
+      "note": "All observed pairs remain together inside each resampled wrapper; these intervals are conditional on the fixed model collection, not unseen model seeds."
+    },
+    {
+      "id": "independent_seed_trajectory",
+      "kind": "line",
+      "title": "Independent-seed response correspondence across training",
+      "rows": [
+        {
+          "checkpoint": 2,
+          "position": "answer",
+          "value": 0.15289480678458747
+        },
+        {
+          "checkpoint": 2,
+          "position": "span",
+          "value": 0.08602183452494509
+        },
+        {
+          "checkpoint": 0,
+          "position": "answer",
+          "value": 0.009260655500974707
+        },
+        {
+          "checkpoint": 0,
+          "position": "span",
+          "value": -0.0008855095698768236
+        },
+        {
+          "checkpoint": 1,
+          "position": "answer",
+          "value": 0.03254110608799548
+        },
+        {
+          "checkpoint": 1,
+          "position": "span",
+          "value": 0.015388875952749423
+        }
+      ],
+      "x": "checkpoint",
+      "y": "value",
+      "series": "position",
+      "xlabel": "Saved checkpoint",
+      "ylabel": "Activation minus repeated-random Pearson",
+      "xticks": [
+        0,
+        1,
+        2
+      ],
+      "xticklabels": [
+        "Initial",
+        "Middle",
+        "Final"
+      ],
+      "source": "results/followup-v2/alignment/summary.json",
+      "note": "The same final-D1 neurons and final-D2 maps are reused at all checkpoints. This is descriptive tracking, not checkpoint-specific feature discovery."
+    },
+    {
+      "id": "trajectory_competence",
+      "kind": "heatmap",
+      "title": "D3 task competence across models and checkpoints",
+      "rows": [
+        {
+          "model": "olmo/final",
+          "task": "arithmetic",
+          "value": 0.5052083333333334
+        },
+        {
+          "model": "olmo/final",
+          "task": "comparison",
+          "value": 0.5052083333333334
+        },
+        {
+          "model": "olmo/final",
+          "task": "negation",
+          "value": 0.5052083333333334
+        },
+        {
+          "model": "olmo/final",
+          "task": "syntax",
+          "value": 0.5104166666666666
+        },
+        {
+          "model": "qwen/final",
+          "task": "arithmetic",
+          "value": 0.59375
+        },
+        {
+          "model": "qwen/final",
+          "task": "comparison",
+          "value": 0.6354166666666666
+        },
+        {
+          "model": "qwen/final",
+          "task": "negation",
+          "value": 0.4947916666666667
+        },
+        {
+          "model": "qwen/final",
+          "task": "syntax",
+          "value": 0.5416666666666666
+        },
+        {
+          "model": "seed101/final",
+          "task": "arithmetic",
+          "value": 0.5416666666666666
+        },
+        {
+          "model": "seed101/final",
+          "task": "comparison",
+          "value": 0.8958333333333334
+        },
+        {
+          "model": "seed101/final",
+          "task": "negation",
+          "value": 0.7239583333333334
+        },
+        {
+          "model": "seed101/final",
+          "task": "syntax",
+          "value": 0.9270833333333334
+        },
+        {
+          "model": "seed101/initial",
+          "task": "arithmetic",
+          "value": 0.5
+        },
+        {
+          "model": "seed101/initial",
+          "task": "comparison",
+          "value": 0.5
+        },
+        {
+          "model": "seed101/initial",
+          "task": "negation",
+          "value": 0.5
+        },
+        {
+          "model": "seed101/initial",
+          "task": "syntax",
+          "value": 0.5
+        },
+        {
+          "model": "seed101/middle",
+          "task": "arithmetic",
+          "value": 0.546875
+        },
+        {
+          "model": "seed101/middle",
+          "task": "comparison",
+          "value": 0.890625
+        },
+        {
+          "model": "seed101/middle",
+          "task": "negation",
+          "value": 0.7135416666666666
+        },
+        {
+          "model": "seed101/middle",
+          "task": "syntax",
+          "value": 0.78125
+        },
+        {
+          "model": "seed211/final",
+          "task": "arithmetic",
+          "value": 0.625
+        },
+        {
+          "model": "seed211/final",
+          "task": "comparison",
+          "value": 0.9114583333333334
+        },
+        {
+          "model": "seed211/final",
+          "task": "negation",
+          "value": 0.7864583333333334
+        },
+        {
+          "model": "seed211/final",
+          "task": "syntax",
+          "value": 0.8854166666666666
+        },
+        {
+          "model": "seed211/initial",
+          "task": "arithmetic",
+          "value": 0.5
+        },
+        {
+          "model": "seed211/initial",
+          "task": "comparison",
+          "value": 0.5
+        },
+        {
+          "model": "seed211/initial",
+          "task": "negation",
+          "value": 0.5
+        },
+        {
+          "model": "seed211/initial",
+          "task": "syntax",
+          "value": 0.5
+        },
+        {
+          "model": "seed211/middle",
+          "task": "arithmetic",
+          "value": 0.59375
+        },
+        {
+          "model": "seed211/middle",
+          "task": "comparison",
+          "value": 0.90625
+        },
+        {
+          "model": "seed211/middle",
+          "task": "negation",
+          "value": 0.5885416666666666
+        },
+        {
+          "model": "seed211/middle",
+          "task": "syntax",
+          "value": 0.9375
+        },
+        {
+          "model": "seed307/final",
+          "task": "arithmetic",
+          "value": 0.609375
+        },
+        {
+          "model": "seed307/final",
+          "task": "comparison",
+          "value": 0.9270833333333334
+        },
+        {
+          "model": "seed307/final",
+          "task": "negation",
+          "value": 0.7552083333333334
+        },
+        {
+          "model": "seed307/final",
+          "task": "syntax",
+          "value": 0.9114583333333334
+        },
+        {
+          "model": "seed307/initial",
+          "task": "arithmetic",
+          "value": 0.5
+        },
+        {
+          "model": "seed307/initial",
+          "task": "comparison",
+          "value": 0.5
+        },
+        {
+          "model": "seed307/initial",
+          "task": "negation",
+          "value": 0.5
+        },
+        {
+          "model": "seed307/initial",
+          "task": "syntax",
+          "value": 0.5
+        },
+        {
+          "model": "seed307/middle",
+          "task": "arithmetic",
+          "value": 0.5677083333333334
+        },
+        {
+          "model": "seed307/middle",
+          "task": "comparison",
+          "value": 0.875
+        },
+        {
+          "model": "seed307/middle",
+          "task": "negation",
+          "value": 0.7395833333333334
+        },
+        {
+          "model": "seed307/middle",
+          "task": "syntax",
+          "value": 0.84375
+        },
+        {
+          "model": "seed401/final",
+          "task": "arithmetic",
+          "value": 0.703125
+        },
+        {
+          "model": "seed401/final",
+          "task": "comparison",
+          "value": 0.921875
+        },
+        {
+          "model": "seed401/final",
+          "task": "negation",
+          "value": 0.828125
+        },
+        {
+          "model": "seed401/final",
+          "task": "syntax",
+          "value": 0.9479166666666666
+        },
+        {
+          "model": "seed401/initial",
+          "task": "arithmetic",
+          "value": 0.5
+        },
+        {
+          "model": "seed401/initial",
+          "task": "comparison",
+          "value": 0.5
+        },
+        {
+          "model": "seed401/initial",
+          "task": "negation",
+          "value": 0.5
+        },
+        {
+          "model": "seed401/initial",
+          "task": "syntax",
+          "value": 0.5
+        },
+        {
+          "model": "seed401/middle",
+          "task": "arithmetic",
+          "value": 0.5989583333333334
+        },
+        {
+          "model": "seed401/middle",
+          "task": "comparison",
+          "value": 0.9114583333333334
+        },
+        {
+          "model": "seed401/middle",
+          "task": "negation",
+          "value": 0.796875
+        },
+        {
+          "model": "seed401/middle",
+          "task": "syntax",
+          "value": 0.8854166666666666
+        },
+        {
+          "model": "seed503/final",
+          "task": "arithmetic",
+          "value": 0.53125
+        },
+        {
+          "model": "seed503/final",
+          "task": "comparison",
+          "value": 0.9375
+        },
+        {
+          "model": "seed503/final",
+          "task": "negation",
+          "value": 0.6927083333333334
+        },
+        {
+          "model": "seed503/final",
+          "task": "syntax",
+          "value": 0.9270833333333334
+        },
+        {
+          "model": "seed503/initial",
+          "task": "arithmetic",
+          "value": 0.5
+        },
+        {
+          "model": "seed503/initial",
+          "task": "comparison",
+          "value": 0.5
+        },
+        {
+          "model": "seed503/initial",
+          "task": "negation",
+          "value": 0.5
+        },
+        {
+          "model": "seed503/initial",
+          "task": "syntax",
+          "value": 0.5
+        },
+        {
+          "model": "seed503/middle",
+          "task": "arithmetic",
+          "value": 0.5885416666666666
+        },
+        {
+          "model": "seed503/middle",
+          "task": "comparison",
+          "value": 0.9114583333333334
+        },
+        {
+          "model": "seed503/middle",
+          "task": "negation",
+          "value": 0.7239583333333334
+        },
+        {
+          "model": "seed503/middle",
+          "task": "syntax",
+          "value": 0.9322916666666666
+        },
+        {
+          "model": "smol/final",
+          "task": "arithmetic",
+          "value": 0.5052083333333334
+        },
+        {
+          "model": "smol/final",
+          "task": "comparison",
+          "value": 0.4947916666666667
+        },
+        {
+          "model": "smol/final",
+          "task": "negation",
+          "value": 0.4895833333333333
+        },
+        {
+          "model": "smol/final",
+          "task": "syntax",
+          "value": 0.5
+        }
+      ],
+      "row": "model",
+      "column": "task",
+      "value": "value",
+      "vmin": 0,
+      "vmax": 1,
+      "percent": true,
+      "unit": "Accuracy;chance=50%",
+      "source": [
+        "results/followup-v2/alignment/summary.json",
+        "results/followup-v2/alignment/fit_manifest.json",
+        "results/followup-v2/alignment/seed101_seed211/answer/eval.json",
+        "results/followup-v2/alignment/seed101_seed211/span/eval.json",
+        "results/followup-v2/alignment/seed101_seed211/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed101_seed211/span/eval_initial.json",
+        "results/followup-v2/alignment/seed101_seed211/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed101_seed211/span/eval_middle.json",
+        "results/followup-v2/alignment/seed101_seed307/answer/eval.json",
+        "results/followup-v2/alignment/seed101_seed307/span/eval.json",
+        "results/followup-v2/alignment/seed101_seed307/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed101_seed307/span/eval_initial.json",
+        "results/followup-v2/alignment/seed101_seed307/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed101_seed307/span/eval_middle.json",
+        "results/followup-v2/alignment/seed101_seed401/answer/eval.json",
+        "results/followup-v2/alignment/seed101_seed401/span/eval.json",
+        "results/followup-v2/alignment/seed101_seed401/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed101_seed401/span/eval_initial.json",
+        "results/followup-v2/alignment/seed101_seed401/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed101_seed401/span/eval_middle.json",
+        "results/followup-v2/alignment/seed101_seed503/answer/eval.json",
+        "results/followup-v2/alignment/seed101_seed503/span/eval.json",
+        "results/followup-v2/alignment/seed101_seed503/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed101_seed503/span/eval_initial.json",
+        "results/followup-v2/alignment/seed101_seed503/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed101_seed503/span/eval_middle.json",
+        "results/followup-v2/alignment/seed211_seed307/answer/eval.json",
+        "results/followup-v2/alignment/seed211_seed307/span/eval.json",
+        "results/followup-v2/alignment/seed211_seed307/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed211_seed307/span/eval_initial.json",
+        "results/followup-v2/alignment/seed211_seed307/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed211_seed307/span/eval_middle.json",
+        "results/followup-v2/alignment/seed211_seed401/answer/eval.json",
+        "results/followup-v2/alignment/seed211_seed401/span/eval.json",
+        "results/followup-v2/alignment/seed211_seed401/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed211_seed401/span/eval_initial.json",
+        "results/followup-v2/alignment/seed211_seed401/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed211_seed401/span/eval_middle.json",
+        "results/followup-v2/alignment/seed211_seed503/answer/eval.json",
+        "results/followup-v2/alignment/seed211_seed503/span/eval.json",
+        "results/followup-v2/alignment/seed211_seed503/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed211_seed503/span/eval_initial.json",
+        "results/followup-v2/alignment/seed211_seed503/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed211_seed503/span/eval_middle.json",
+        "results/followup-v2/alignment/seed307_seed401/answer/eval.json",
+        "results/followup-v2/alignment/seed307_seed401/span/eval.json",
+        "results/followup-v2/alignment/seed307_seed401/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed307_seed401/span/eval_initial.json",
+        "results/followup-v2/alignment/seed307_seed401/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed307_seed401/span/eval_middle.json",
+        "results/followup-v2/alignment/seed307_seed503/answer/eval.json",
+        "results/followup-v2/alignment/seed307_seed503/span/eval.json",
+        "results/followup-v2/alignment/seed307_seed503/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed307_seed503/span/eval_initial.json",
+        "results/followup-v2/alignment/seed307_seed503/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed307_seed503/span/eval_middle.json",
+        "results/followup-v2/alignment/seed401_seed503/answer/eval.json",
+        "results/followup-v2/alignment/seed401_seed503/span/eval.json",
+        "results/followup-v2/alignment/seed401_seed503/answer/eval_initial.json",
+        "results/followup-v2/alignment/seed401_seed503/span/eval_initial.json",
+        "results/followup-v2/alignment/seed401_seed503/answer/eval_middle.json",
+        "results/followup-v2/alignment/seed401_seed503/span/eval_middle.json",
+        "results/followup-v2/alignment/qwen_smol/answer/eval.json",
+        "results/followup-v2/alignment/qwen_smol/span/eval.json",
+        "results/followup-v2/alignment/qwen_olmo/answer/eval.json",
+        "results/followup-v2/alignment/qwen_olmo/span/eval.json",
+        "results/followup-v2/alignment/smol_olmo/answer/eval.json",
+        "results/followup-v2/alignment/smol_olmo/span/eval.json"
+      ],
+      "note": "D3 was collected only after the registered D2 maps were frozen. Initial/middle/final are not independent model replications."
+    },
+    {
+      "id": "posthoc_syntax_local_cue",
+      "kind": "heatmap",
+      "title": "Posthoc D3 syntax accuracy by local-cue stratum",
+      "rows": [
+        {
+          "model": "olmo",
+          "group": "Local mismatch present\n(n=166 rows)",
+          "value": 0.5120481927710844
+        },
+        {
+          "model": "olmo",
+          "group": "No local mismatch\n(n=26 rows)",
+          "value": 0.5
+        },
+        {
+          "model": "qwen",
+          "group": "Local mismatch present\n(n=166 rows)",
+          "value": 0.5481927710843374
+        },
+        {
+          "model": "qwen",
+          "group": "No local mismatch\n(n=26 rows)",
+          "value": 0.5
+        },
+        {
+          "model": "seed101",
+          "group": "Local mismatch present\n(n=166 rows)",
+          "value": 0.9879518072289156
+        },
+        {
+          "model": "seed101",
+          "group": "No local mismatch\n(n=26 rows)",
+          "value": 0.5384615384615384
+        },
+        {
+          "model": "seed211",
+          "group": "Local mismatch present\n(n=166 rows)",
+          "value": 0.9337349397590361
+        },
+        {
+          "model": "seed211",
+          "group": "No local mismatch\n(n=26 rows)",
+          "value": 0.5769230769230769
+        },
+        {
+          "model": "seed307",
+          "group": "Local mismatch present\n(n=166 rows)",
+          "value": 0.9759036144578314
+        },
+        {
+          "model": "seed307",
+          "group": "No local mismatch\n(n=26 rows)",
+          "value": 0.5
+        },
+        {
+          "model": "seed401",
+          "group": "Local mismatch present\n(n=166 rows)",
+          "value": 1.0
+        },
+        {
+          "model": "seed401",
+          "group": "No local mismatch\n(n=26 rows)",
+          "value": 0.6153846153846154
+        },
+        {
+          "model": "seed503",
+          "group": "Local mismatch present\n(n=166 rows)",
+          "value": 0.9939759036144579
+        },
+        {
+          "model": "seed503",
+          "group": "No local mismatch\n(n=26 rows)",
+          "value": 0.5
+        },
+        {
+          "model": "smol",
+          "group": "Local mismatch present\n(n=166 rows)",
+          "value": 0.5
+        },
+        {
+          "model": "smol",
+          "group": "No local mismatch\n(n=26 rows)",
+          "value": 0.5
+        }
+      ],
+      "row": "model",
+      "column": "group",
+      "value": "value",
+      "vmin": 0,
+      "vmax": 1,
+      "percent": true,
+      "unit": "Pair-balanced accuracy",
+      "source": "results/followup-v2/exploratory/stress_D3.json",
+      "figsize": [
+        10,
+        6.5
+      ],
+      "note": "Exploratory cuts chosen after D3; both true/false pair members retained. N counts rows. Unequal content and small n=26 stratum confound differences; no causal cue-use claim or confirmatory test."
+    }
+  ],
+  "artifacts": [
+    {
+      "label": "Complete alignment summary",
+      "path": "results/followup-v2/alignment/summary.json"
+    },
+    {
+      "label": "D2 map-freeze manifest",
+      "path": "results/followup-v2/alignment/fit_manifest.json"
+    },
+    {
+      "label": "All mapping variants and coverage",
+      "path": "reports/followup-v2/F3_ALL_METHODS.md"
+    },
+    {
+      "label": "Posthoc D3 shortcut stress measurements",
+      "path": "results/followup-v2/exploratory/stress_D3.json"
+    },
+    {
+      "label": "Stress analysis definitions and complete tables",
+      "path": "reports/followup-v2/STRESS_ANALYSIS.md"
+    },
+    {
+      "label": "Competence-qualified descriptive task strata",
+      "path": "results/followup-v2/alignment/competence_descriptive.json"
+    }
+  ],
+  "limitations": [
+    "Five seeds produce ten dependent pairs, not ten independent replications.",
+    "Final-D1 candidate selection and final-D2 maps are reused across checkpoint trajectories.",
+    "Expanded semantic labels remain input-task/subtype truth-contrast proxies with UNKNOWN permitted.",
+    "One global confirmatory family is corrected in F6; interim p values are unadjusted.",
+    "A positive response correlation does not establish equal causal roles.",
+    "Cross-family prompts use calibration-selected formats: Qwen fourshot, Smol default, OLMo explicit. The target statement and row identity are shared, but prefix contexts differ; this is a calibrated-use comparison, not an identical-full-context test. Native character-span alignment does not remove the prefix confound.",
+    "All three pretrained families fall below the0.70 calibration competence threshold. D3 competence must be judged separately; low-competence failures cannot establish absence of functional conservation.",
+    "Overall syntax accuracy above the operational competence threshold does not prove recursive parsing or structural understanding. The posthoc no-adjacent-mismatch stratum is small and content-confounded; its gap is not a controlled causal effect.",
+    "Syntax shortcut findings do not substitute for separate construct validation of comparison, negation, or arithmetic. Frozen primary mappings, thresholds and tests are unchanged."
+  ],
+  "competence_gate": {
+    "rule": "Both models accuracy>=0.70 and Wilson95 lower>0.50 per task",
+    "passed_final_pair_position_task_cells": 52,
+    "total_final_pair_position_task_cells": 104,
+    "role": "Reporting strata only; no refitting or model selection using D3"
+  }
+}

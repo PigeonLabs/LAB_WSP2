@@ -1,5 +1,5 @@
 {
-  "generated_kst": "2026-11-04 12:19 KST",
+  "generated_kst": "2026-11-04 12:37 KST",
   "stages": [
     {
       "id": "F0",
@@ -200,10 +200,207 @@
     },
     {
       "id": "F3",
-      "status": "PENDING",
+      "status": "MEASURED",
       "verdict": "INCONCLUSIVE",
-      "sources": [],
-      "figures": []
+      "sources": [
+        {
+          "path": "results/followup-v2/stages/F3.json",
+          "sha256": "3fd83f39447b4d1a5293a29a9e5b1842ce1209018f1233d829d21882171d45a5"
+        },
+        {
+          "path": "results/followup-v2/alignment/seed101_seed211/answer/eval.json",
+          "sha256": "44cd1b18ae03519c6213ad2907e7de6735d998d6c58fe015d75f3db42416bcbc"
+        },
+        {
+          "path": "results/followup-v2/alignment/seed101_seed211/span/eval.json",
+          "sha256": "ebf15962a02d7f9154d5839c5ece4d3a3379082592007cdb400b46740eeaf176"
+        },
+        {
+          "path": "results/followup-v2/alignment/seed101_seed307/answer/eval.json",
+          "sha256": "f3f29e0224c958e348e8d6ab6dde9a00a31cf1b3944099f18be0f00f093eda9d"
+        },
+        {
+          "path": "results/followup-v2/alignment/seed101_seed307/span/eval.json",
+          "sha256": "87576ae5626e66079f4e32752359f053e233ad75c3f9af4752f7fb5702b632ed"
+        },
+        {
+          "path": "results/followup-v2/alignment/seed101_seed401/answer/eval.json",
+          "sha256": "957e51dd96f4596fabd7f219e7efa1f308b1be9cd01781211c0bf7eb452ff010"
+        },
+        {
+          "path": "results/followup-v2/alignment/seed101_seed401/span/eval.json",
+          "sha256": "89033b3de7bf21a169a172fe33c86dc0e4cff6628da7db44b03cb59259b5e59f"
+        },
+        {
+          "path": "results/followup-v2/alignment/seed101_seed503/answer/eval.json",
+          "sha256": "7468b843ba56745df87cbfe907de3f0dfe94a591fbfcc0eda554aea3738a63d4"
+        },
+        {
+          "path": "results/followup-v2/alignment/seed101_seed503/span/eval.json",
+          "sha256": "7a6adb78977fa8f5c17485c7c7036487517d28954b3145cb841c54d55c351187"
+        },
+        {
+          "path": "results/followup-v2/alignment/seed211_seed307/answer/eval.json",
+          "sha256": "1e008b7306dff5447bac568ea480cd594a1c181c054964d9295de2799bec05ab"
+        },
+        {
+          "path": "results/followup-v2/alignment/seed211_seed307/span/eval.json",
+          "sha256": "c4494164d9d46b19c1ab87126e020a9b09c2c05996d1ba4ad669912def55426c"
+        },
+        {
+          "path": "results/followup-v2/alignment/seed211_seed401/answer/eval.json",
+          "sha256": "bda7c4784237da08065f643db5bb0f051add9e0f942d8ee453f79d69beee0421"
+        },
+        {
+          "path": "results/followup-v2/alignment/seed211_seed401/span/eval.json",
+          "sha256": "d479eed0cdc1e37d2ba716b74ca332081d2e3488042cecb95bc89d6595ffe089"
+        },
+        {
+          "path": "results/followup-v2/alignment/seed211_seed503/answer/eval.json",
+          "sha256": "6550c5b8e0aab07c914f363d5d0ceb7131083abb15d9d0c83fbadacef5035c26"
+        },
+        {
+          "path": "results/followup-v2/alignment/seed211_seed503/span/eval.json",
+          "sha256": "7eecb243c9e0888c4f101d5e7f59e95150976343edaa4a06dfa9b325b81be53a"
+        },
+        {
+          "path": "results/followup-v2/alignment/seed307_seed401/answer/eval.json",
+          "sha256": "a4c4ddf8a79613998219798ad97c9da4fd47314ece215c0abad6c67ffc024de2"
+        },
+        {
+          "path": "results/followup-v2/alignment/seed307_seed401/span/eval.json",
+          "sha256": "f658148f0d59fc9532bfccc27b6f4b0c247c83e8ddc24dbfcc731cb234d173db"
+        },
+        {
+          "path": "results/followup-v2/alignment/seed307_seed503/answer/eval.json",
+          "sha256": "64903864a3f3d31219ffe123f81499b1993557c8215497484e363ebb8a4c28ba"
+        },
+        {
+          "path": "results/followup-v2/alignment/seed307_seed503/span/eval.json",
+          "sha256": "10fe043fa048bff2f8f34c0965b2751039ec456bb20eaa2a711f4a87cc856de3"
+        },
+        {
+          "path": "results/followup-v2/alignment/seed401_seed503/answer/eval.json",
+          "sha256": "7ccccde5858aec43b37b7cb8fc2175c94e7405ca9f6ea1aec94d41ca60c24464"
+        },
+        {
+          "path": "results/followup-v2/alignment/seed401_seed503/span/eval.json",
+          "sha256": "71530e80cbbcdce8a7be7625e4be3845dc7bd3a986b65105a7eb1623cdb73210"
+        },
+        {
+          "path": "results/followup-v2/alignment/qwen_smol/answer/eval.json",
+          "sha256": "55381087b1f861f64dc5069d557c8c5548404e91a35646fbd210b6b8274581c9"
+        },
+        {
+          "path": "results/followup-v2/alignment/qwen_smol/span/eval.json",
+          "sha256": "43433e66443e30acab3e7aae19ec1697356cd2fb98bd0a361c415e4b7498aeb1"
+        },
+        {
+          "path": "results/followup-v2/alignment/qwen_olmo/answer/eval.json",
+          "sha256": "add8d018329d01ef9da490de1883519d898355278eaf2c008e954bb92c852af5"
+        },
+        {
+          "path": "results/followup-v2/alignment/qwen_olmo/span/eval.json",
+          "sha256": "e1bd229ed9bc379f9f5b94806ee48f5c9684c498d0141d537f064f9cd8715e41"
+        },
+        {
+          "path": "results/followup-v2/alignment/smol_olmo/answer/eval.json",
+          "sha256": "9b83aa6860a6fda5a467899de2030265c6cd85137e0a8c74c4d0a7469d6f40e2"
+        },
+        {
+          "path": "results/followup-v2/alignment/smol_olmo/span/eval.json",
+          "sha256": "74ac871a7607f555f13c59b25be1b5f041cd66a65f8bc6d3dc60a2d12dbd2534"
+        },
+        {
+          "path": "results/followup-v2/alignment/summary.json",
+          "sha256": "09794656fc83d64e9105f0b9128432ff84145822738d837f281134a159d2e97e"
+        },
+        {
+          "path": "results/followup-v2/exploratory/stress_D3.json",
+          "sha256": "45ed6c2a66cf960f19547d5bc794318c7698dd3a955cf3cf4df3995c56150359"
+        },
+        {
+          "path": "results/followup-v2/alignment/competence_descriptive.json",
+          "sha256": "5f2500def240dbcb016059a8e07989e2da079fbaedc0ff85f69dd165c8d6d3ed"
+        },
+        {
+          "path": "results/followup-v2/alignment/fit_manifest.json",
+          "sha256": "0e7580eedaee3734ee409b749329120d169d18f6cfb7252a3c284b325f43e398"
+        },
+        {
+          "path": "reports/followup-v2/F3_ALL_METHODS.md",
+          "sha256": "913416fd1a407a930bb964d9a78ebe5cdede156b879d865dfda763a1164392fa"
+        },
+        {
+          "path": "reports/followup-v2/STRESS_ANALYSIS.md",
+          "sha256": "7e81a2f3d60fd4e26e26425a4b22e41e43aed9846f4020f244a2e32c2a75a8e9"
+        }
+      ],
+      "figures": [
+        {
+          "id": "f3_final_answer",
+          "title": "D3 final-model alignment: answer position",
+          "path": "artifacts/followup-v2/figures/f3_final_answer.svg",
+          "png": "artifacts/followup-v2/figures/f3_final_answer.png",
+          "receipt": "artifacts/followup-v2/figures/f3_final_answer.json",
+          "note": "All task rows retained; competence-qualified strata are reported in the source. Random baseline averages100 frozen maps.",
+          "show_in_readme": true
+        },
+        {
+          "id": "f3_final_span",
+          "title": "D3 final-model alignment: span position",
+          "path": "artifacts/followup-v2/figures/f3_final_span.svg",
+          "png": "artifacts/followup-v2/figures/f3_final_span.png",
+          "receipt": "artifacts/followup-v2/figures/f3_final_span.json",
+          "note": "All task rows retained; competence-qualified strata are reported in the source. Random baseline averages100 frozen maps.",
+          "show_in_readme": true
+        },
+        {
+          "id": "f3_activation_minus_random",
+          "title": "Joint-wrapper activation_minus_random",
+          "path": "artifacts/followup-v2/figures/f3_activation_minus_random.svg",
+          "png": "artifacts/followup-v2/figures/f3_activation_minus_random.png",
+          "receipt": "artifacts/followup-v2/figures/f3_activation_minus_random.json",
+          "note": "All observed pairs remain together inside each resampled wrapper; these intervals are conditional on the fixed model collection, not unseen model seeds.",
+          "show_in_readme": true
+        },
+        {
+          "id": "f3_semantic_minus_activation",
+          "title": "Joint-wrapper semantic_minus_activation",
+          "path": "artifacts/followup-v2/figures/f3_semantic_minus_activation.svg",
+          "png": "artifacts/followup-v2/figures/f3_semantic_minus_activation.png",
+          "receipt": "artifacts/followup-v2/figures/f3_semantic_minus_activation.json",
+          "note": "All observed pairs remain together inside each resampled wrapper; these intervals are conditional on the fixed model collection, not unseen model seeds.",
+          "show_in_readme": true
+        },
+        {
+          "id": "f3_independent_seed_trajectory",
+          "title": "Independent-seed response correspondence across training",
+          "path": "artifacts/followup-v2/figures/f3_independent_seed_trajectory.svg",
+          "png": "artifacts/followup-v2/figures/f3_independent_seed_trajectory.png",
+          "receipt": "artifacts/followup-v2/figures/f3_independent_seed_trajectory.json",
+          "note": "The same final-D1 neurons and final-D2 maps are reused at all checkpoints. This is descriptive tracking, not checkpoint-specific feature discovery.",
+          "show_in_readme": true
+        },
+        {
+          "id": "f3_trajectory_competence",
+          "title": "D3 task competence across models and checkpoints",
+          "path": "artifacts/followup-v2/figures/f3_trajectory_competence.svg",
+          "png": "artifacts/followup-v2/figures/f3_trajectory_competence.png",
+          "receipt": "artifacts/followup-v2/figures/f3_trajectory_competence.json",
+          "note": "D3 was collected only after the registered D2 maps were frozen. Initial/middle/final are not independent model replications.",
+          "show_in_readme": true
+        },
+        {
+          "id": "f3_posthoc_syntax_local_cue",
+          "title": "Posthoc D3 syntax accuracy by local-cue stratum",
+          "path": "artifacts/followup-v2/figures/f3_posthoc_syntax_local_cue.svg",
+          "png": "artifacts/followup-v2/figures/f3_posthoc_syntax_local_cue.png",
+          "receipt": "artifacts/followup-v2/figures/f3_posthoc_syntax_local_cue.json",
+          "note": "Exploratory cuts chosen after D3; both true/false pair members retained. N counts rows. Unequal content and small n=26 stratum confound differences; no causal cue-use claim or confirmatory test.",
+          "show_in_readme": true
+        }
+      ]
     },
     {
       "id": "F4",

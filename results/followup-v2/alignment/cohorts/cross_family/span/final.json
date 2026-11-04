@@ -1,0 +1,138 @@
+{
+  "tests": {
+    "activation_minus_random": {
+      "effect": 0.032278751276888056,
+      "pvalue": 4.999750012499375e-05,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": 1.184664500242411,
+      "status": "OK",
+      "bootstrap": {
+        "mean": 0.032278751276888056,
+        "median": 0.03346785169165288,
+        "std": 0.02724716683101675,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          0.021833021242521403,
+          0.042921459168790546
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 3,
+      "wrapper_effects": {
+        "D3:wrapper:t00": 0.0660596267492076,
+        "D3:wrapper:t01": 0.044864380716796,
+        "D3:wrapper:t02": 0.03102791356324144,
+        "D3:wrapper:t03": 0.04755031283949907,
+        "D3:wrapper:t04": 0.04376186511628575,
+        "D3:wrapper:t05": 0.016003006635609735,
+        "D3:wrapper:t06": 0.05689715076049109,
+        "D3:wrapper:t07": 0.03902352231672499,
+        "D3:wrapper:t08": 0.0011145520731023553,
+        "D3:wrapper:t09": 0.04968245077332784,
+        "D3:wrapper:t10": 0.030972914126395832,
+        "D3:wrapper:t11": 0.03126199859845923,
+        "D3:wrapper:t12": 0.030235466730670842,
+        "D3:wrapper:t13": 0.06878107234292857,
+        "D3:wrapper:t14": 0.04582661465668005,
+        "D3:wrapper:t15": -0.015631196356909908,
+        "D3:wrapper:t16": 0.005864784537324151,
+        "D3:wrapper:t17": 0.09542518423366075,
+        "D3:wrapper:t18": -0.01273928805496292,
+        "D3:wrapper:t19": 0.009548449098738242,
+        "D3:wrapper:t20": 0.0001770540014405427,
+        "D3:wrapper:t21": 0.04974779464546932,
+        "D3:wrapper:t22": 0.03567370478484652,
+        "D3:wrapper:t23": 0.003560695756286286
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only"
+    },
+    "semantic_minus_activation": {
+      "effect": -0.009320136946014922,
+      "pvalue": 0.21688915554222288,
+      "n_clusters": 24,
+      "method": "monte_carlo",
+      "standardized_effect": -0.26108579124447534,
+      "status": "OK",
+      "bootstrap": {
+        "mean": -0.009320136946014922,
+        "median": -0.01073041205611333,
+        "std": 0.03569760308130954,
+        "n_observations": 24,
+        "n_clusters": 24,
+        "estimand": "equal-cluster-weighted mean",
+        "confidence": 0.95,
+        "ci": [
+          -0.023179780957600836,
+          0.004802710670757892
+        ],
+        "status": "OK"
+      },
+      "n_pairs": 3,
+      "wrapper_effects": {
+        "D3:wrapper:t00": -0.04362582061236501,
+        "D3:wrapper:t01": -0.037489843461700534,
+        "D3:wrapper:t02": -0.010950527606855656,
+        "D3:wrapper:t03": -0.03763918369514703,
+        "D3:wrapper:t04": -0.02117223394321649,
+        "D3:wrapper:t05": 0.0037048991712701224,
+        "D3:wrapper:t06": 0.020855166824412585,
+        "D3:wrapper:t07": 0.011356705539180986,
+        "D3:wrapper:t08": 0.031087636097709963,
+        "D3:wrapper:t09": -0.04869942323902893,
+        "D3:wrapper:t10": -0.04227322864917471,
+        "D3:wrapper:t11": -0.01563533081282382,
+        "D3:wrapper:t12": 0.019214725330581637,
+        "D3:wrapper:t13": -0.05724500595961696,
+        "D3:wrapper:t14": 0.011853082510710372,
+        "D3:wrapper:t15": 0.08110808955864791,
+        "D3:wrapper:t16": -0.010510296505371003,
+        "D3:wrapper:t17": -0.07794016568876645,
+        "D3:wrapper:t18": 0.0023074605321981557,
+        "D3:wrapper:t19": -0.033360915564471155,
+        "D3:wrapper:t20": 0.028646895524417428,
+        "D3:wrapper:t21": -0.025944490737839273,
+        "D3:wrapper:t22": 0.03136327783911355,
+        "D3:wrapper:t23": -0.002694759156223849
+      },
+      "inference_scope": "fixed observed models; shared-wrapper uncertainty only"
+    }
+  },
+  "correction": "PENDING_GLOBAL_FAMILY",
+  "pair_descriptives": {
+    "activation_minus_random": {
+      "qwen_olmo": {
+        "mean": 0.027481666551352632,
+        "n_wrappers": 24
+      },
+      "qwen_smol": {
+        "mean": 0.005577531227483103,
+        "n_wrappers": 24
+      },
+      "smol_olmo": {
+        "mean": 0.06377705605182844,
+        "n_wrappers": 24
+      }
+    },
+    "semantic_minus_activation": {
+      "qwen_olmo": {
+        "mean": 0.012831093514001432,
+        "n_wrappers": 24
+      },
+      "qwen_smol": {
+        "mean": 0.0024485175451561397,
+        "n_wrappers": 24
+      },
+      "smol_olmo": {
+        "mean": -0.04324002189720235,
+        "n_wrappers": 24
+      }
+    }
+  },
+  "n_pairs": 3,
+  "resampling_unit": "shared wrapper; all pairs and concepts retained together",
+  "inference_scope": "Conditional on observed models; no independent-seed replication claim."
+}

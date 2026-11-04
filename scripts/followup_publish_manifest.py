@@ -9,14 +9,15 @@ for folder in ('src','scripts','tests','configs'):
     paths += list((ROOT/folder).glob('*followup*'))
 for folder in ('results/followup-v2','reports/followup-v2','artifacts/followup-v2/figures'):
     paths += [x for x in (ROOT/folder).rglob('*') if x.is_file() and 'chunks' not in x.parts and x.suffix in ('.py','.json','.jsonl','.md','.csv','.npz','.npy','.parquet','.svg','.png','.log')]
-data=ROOT/'data/followup-v2'
-if data.exists():
+for data_name in ('followup-v2','followup-v2-hard-stress'):
+ data=ROOT/'data'/data_name
+ if data.exists():
     paths += list(data.glob('*.json'))
     buf=io.BytesIO()
     with tarfile.open(fileobj=buf,mode='w') as tar:
         for f in sorted(data.glob('*.jsonl')):
             b=f.read_bytes();info=tarfile.TarInfo(str(f.relative_to(ROOT)));info.size=len(b);info.mtime=0;tar.addfile(info,io.BytesIO(b))
-    archive=ROOT/'data/followup-v2.tar.gz';archive.write_bytes(gzip.compress(buf.getvalue(),mtime=0));paths.append(archive)
+    archive=ROOT/'data'/f'{data_name}.tar.gz';archive.write_bytes(gzip.compress(buf.getvalue(),mtime=0));paths.append(archive)
 files=[]
 for f in sorted(set(paths)):
     if not f.is_file():continue
