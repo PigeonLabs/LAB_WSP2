@@ -1,0 +1,314 @@
+{
+  "status": "PASS",
+  "scope": "GGUF metadata and tensor shape audit; not forward correctness",
+  "tensor_count": 601,
+  "layers": 35,
+  "native_neurons": 337920,
+  "layer_widths": [
+    {
+      "layer": 0,
+      "native_neurons": 6144,
+      "residual_width": 1536,
+      "gguf_type": "14"
+    },
+    {
+      "layer": 1,
+      "native_neurons": 6144,
+      "residual_width": 1536,
+      "gguf_type": "14"
+    },
+    {
+      "layer": 2,
+      "native_neurons": 6144,
+      "residual_width": 1536,
+      "gguf_type": "14"
+    },
+    {
+      "layer": 3,
+      "native_neurons": 6144,
+      "residual_width": 1536,
+      "gguf_type": "14"
+    },
+    {
+      "layer": 4,
+      "native_neurons": 6144,
+      "residual_width": 1536,
+      "gguf_type": "12"
+    },
+    {
+      "layer": 5,
+      "native_neurons": 6144,
+      "residual_width": 1536,
+      "gguf_type": "12"
+    },
+    {
+      "layer": 6,
+      "native_neurons": 6144,
+      "residual_width": 1536,
+      "gguf_type": "14"
+    },
+    {
+      "layer": 7,
+      "native_neurons": 6144,
+      "residual_width": 1536,
+      "gguf_type": "12"
+    },
+    {
+      "layer": 8,
+      "native_neurons": 6144,
+      "residual_width": 1536,
+      "gguf_type": "12"
+    },
+    {
+      "layer": 9,
+      "native_neurons": 6144,
+      "residual_width": 1536,
+      "gguf_type": "14"
+    },
+    {
+      "layer": 10,
+      "native_neurons": 6144,
+      "residual_width": 1536,
+      "gguf_type": "12"
+    },
+    {
+      "layer": 11,
+      "native_neurons": 6144,
+      "residual_width": 1536,
+      "gguf_type": "12"
+    },
+    {
+      "layer": 12,
+      "native_neurons": 6144,
+      "residual_width": 1536,
+      "gguf_type": "14"
+    },
+    {
+      "layer": 13,
+      "native_neurons": 6144,
+      "residual_width": 1536,
+      "gguf_type": "12"
+    },
+    {
+      "layer": 14,
+      "native_neurons": 6144,
+      "residual_width": 1536,
+      "gguf_type": "12"
+    },
+    {
+      "layer": 15,
+      "native_neurons": 12288,
+      "residual_width": 1536,
+      "gguf_type": "14"
+    },
+    {
+      "layer": 16,
+      "native_neurons": 12288,
+      "residual_width": 1536,
+      "gguf_type": "12"
+    },
+    {
+      "layer": 17,
+      "native_neurons": 12288,
+      "residual_width": 1536,
+      "gguf_type": "12"
+    },
+    {
+      "layer": 18,
+      "native_neurons": 12288,
+      "residual_width": 1536,
+      "gguf_type": "14"
+    },
+    {
+      "layer": 19,
+      "native_neurons": 12288,
+      "residual_width": 1536,
+      "gguf_type": "12"
+    },
+    {
+      "layer": 20,
+      "native_neurons": 12288,
+      "residual_width": 1536,
+      "gguf_type": "12"
+    },
+    {
+      "layer": 21,
+      "native_neurons": 12288,
+      "residual_width": 1536,
+      "gguf_type": "14"
+    },
+    {
+      "layer": 22,
+      "native_neurons": 12288,
+      "residual_width": 1536,
+      "gguf_type": "12"
+    },
+    {
+      "layer": 23,
+      "native_neurons": 12288,
+      "residual_width": 1536,
+      "gguf_type": "12"
+    },
+    {
+      "layer": 24,
+      "native_neurons": 12288,
+      "residual_width": 1536,
+      "gguf_type": "14"
+    },
+    {
+      "layer": 25,
+      "native_neurons": 12288,
+      "residual_width": 1536,
+      "gguf_type": "12"
+    },
+    {
+      "layer": 26,
+      "native_neurons": 12288,
+      "residual_width": 1536,
+      "gguf_type": "12"
+    },
+    {
+      "layer": 27,
+      "native_neurons": 12288,
+      "residual_width": 1536,
+      "gguf_type": "14"
+    },
+    {
+      "layer": 28,
+      "native_neurons": 12288,
+      "residual_width": 1536,
+      "gguf_type": "12"
+    },
+    {
+      "layer": 29,
+      "native_neurons": 12288,
+      "residual_width": 1536,
+      "gguf_type": "12"
+    },
+    {
+      "layer": 30,
+      "native_neurons": 12288,
+      "residual_width": 1536,
+      "gguf_type": "14"
+    },
+    {
+      "layer": 31,
+      "native_neurons": 12288,
+      "residual_width": 1536,
+      "gguf_type": "14"
+    },
+    {
+      "layer": 32,
+      "native_neurons": 12288,
+      "residual_width": 1536,
+      "gguf_type": "14"
+    },
+    {
+      "layer": 33,
+      "native_neurons": 12288,
+      "residual_width": 1536,
+      "gguf_type": "14"
+    },
+    {
+      "layer": 34,
+      "native_neurons": 12288,
+      "residual_width": 1536,
+      "gguf_type": "14"
+    }
+  ],
+  "architecture_metadata": {
+    "gemma4.block_count": 35,
+    "gemma4.context_length": 131072,
+    "gemma4.embedding_length": 1536,
+    "gemma4.feed_forward_length": [
+      6144,
+      6144,
+      6144,
+      6144,
+      6144,
+      6144,
+      6144,
+      6144,
+      6144,
+      6144,
+      6144,
+      6144,
+      6144,
+      6144,
+      6144,
+      12288,
+      12288,
+      12288,
+      12288,
+      12288,
+      12288,
+      12288,
+      12288,
+      12288,
+      12288,
+      12288,
+      12288,
+      12288,
+      12288,
+      12288,
+      12288,
+      12288,
+      12288,
+      12288,
+      12288
+    ],
+    "gemma4.attention.head_count": 8,
+    "gemma4.attention.head_count_kv": 1,
+    "gemma4.rope.freq_base": 1000000.0,
+    "gemma4.rope.freq_base_swa": 10000.0,
+    "gemma4.attention.layer_norm_rms_epsilon": 9.999999974752427e-07,
+    "gemma4.attention.key_length": 512,
+    "gemma4.attention.value_length": 512,
+    "gemma4.final_logit_softcapping": 30.0,
+    "gemma4.attention.sliding_window": 512,
+    "gemma4.attention.shared_kv_layers": 20,
+    "gemma4.embedding_length_per_layer_input": 256,
+    "gemma4.attention.sliding_window_pattern": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "gemma4.attention.key_length_swa": 256,
+    "gemma4.attention.value_length_swa": 256,
+    "gemma4.rope.dimension_count": 512,
+    "gemma4.rope.dimension_count_swa": 256
+  },
+  "source_sha256": "740185b21d22ceb83a11c3aa62ad5842ef32c70f6096d756bbee85a1e4ec34b8"
+}
