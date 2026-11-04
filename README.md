@@ -1,3 +1,37 @@
+## 후속 연구 — followup-v2
+
+갱신: **2026-11-04 12:02 KST**. 이 절은 새 단계별 측정 파일에서 생성되었습니다.
+
+| 단계 | 실험 | 실행 상태 | 가설 판정 |
+|---|---|---|---|
+| F0 | [새 benchmark와 기존 결과 보존](reports/followup-v2/F0_REPORT.md) | MEASURED | SUPPORTED |
+| F1 | [Calibration and five-seed learning](reports/followup-v2/F1_REPORT.md) | PENDING | INCONCLUSIVE |
+| F2 | [Exact permutation positive control](reports/followup-v2/F2_REPORT.md) | PENDING | INCONCLUSIVE |
+| F3 | [Independent and cross-family alignment](reports/followup-v2/F3_REPORT.md) | PENDING | INCONCLUSIVE |
+| F4 | [Single/group causal effects and dose response](reports/followup-v2/F4_REPORT.md) | PENDING | INCONCLUSIVE |
+| F5 | [Transplantation and selective merging](reports/followup-v2/F5_REPORT.md) | PENDING | INCONCLUSIVE |
+| F6 | [Global statistics, replay and preservation audit](reports/followup-v2/F6_REPORT.md) | PENDING | INCONCLUSIVE |
+
+실행 완료와 가설 지지는 별개입니다. 모델이 해당 과제를 학습했는지 먼저 확인하며, 낮은 능력의 대응 실패를 보존 가설의 반증으로 바꾸지 않습니다. 새 데이터·프로토콜·후보·검정 범위를 기록하고 기존 pilot-v1 결과를 보존합니다. 군집·모델 seed·매칭 seed·다중검정 범위가 다른 수치를 임의로 합치지 않습니다. 인과 효과 일치도 이식이나 병합의 유효성을 자동으로 보장하지 않습니다.
+
+### F0 — 새 benchmark와 기존 결과 보존
+
+**MEASURED · SUPPORTED**. 20,224문항의 정답 oracle·분할 중복·짝별 단서 균형 검증을 통과했다. 이는 명시한 단서의 차단을 확인하며 모든 shortcut의 부재를 뜻하지 않는다. 기존 파일 261개의 SHA256을 보존했다.
+
+![Frozen followup data by split](artifacts/followup-v2/figures/f0_f0_dataset.svg)
+
+
+
+[그림 데이터](artifacts/followup-v2/figures/f0_f0_dataset.json)
+
+[F0 측정값·불확실성·원본](reports/followup-v2/F0_REPORT.md)
+
+
+
+---
+
+# Preserved pilot-v1 results
+
 # Native Neuron Conservation Pilot
 
 독립적으로 학습된 모델에서 원본 뉴런의 **활성 반응·의미 proxy·인과 역할**이 보존되는지를 검증합니다. [MASTER.md](MASTER.md)에 따른 연구이며, 결과는 각 단계의 실제 측정 파일에서 자동 생성됩니다.

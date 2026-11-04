@@ -1,0 +1,23 @@
+{
+  "version": "followup-v2",
+  "baseline_commit": "127db6cdfb75d13b6ce70b4514ef82ed2f044bc0",
+  "data": {"seeds": [2718, 3141, 5772], "train_size": 16384, "eval_size": 768, "wrappers_per_evaluation": 24},
+  "training": {
+    "model": {"vocab_size": 258, "dim": 512, "hidden_dim": 1536, "layers": 6, "heads": 8, "max_seq_len": 256},
+    "seeds": [101, 211, 307, 401, 503], "steps": 6000, "batch_size": 64,
+    "lr": 0.0003, "max_seconds_per_seed": 2400
+  },
+  "neurons_per_layer": 8,
+  "positions": ["answer", "span"],
+  "random_matching_replicates": 100,
+  "competence_gate": {"accuracy_at_least": 0.70, "wilson95_lower_above": 0.50, "both_models": true},
+  "causal": {"records_per_split": 768, "singles_per_layer": 2, "groups_per_layer": 1, "group_size": 4, "modes": ["zero", "mean", "patch", "scale_0", "scale_0.5", "scale_1", "scale_1.5", "scale_2"], "combined_weights": [0, 0.25, 0.5, 0.75, 1]},
+  "transplant": {"directed_pairs": [[101, 211], [211, 307], [307, 401], [401, 503], [503, 101]], "interpolation_weights": [0, 0.25, 0.5, 1], "selection_split": "D2", "test_split": "D4", "retention_tolerance": 0.02},
+  "inference_precision": "float32",
+  "max_gpu_hours_including_original_pilot": 8,
+  "additional_disk_gb_limit": 60,
+  "stage_order": ["F0", "F1", "F2", "F3", "F4", "F5", "F6"],
+  "confirmatory_family": "F3 activation-minus-repeated-random and semantic-minus-activation by pair/position; F4 combined-minus-semantic by pair/location/unit-kind; F5 selected-transplant-minus-target accuracy. One global BH family applied in F6; interim p/CI descriptive.",
+  "statistics": "Wrapper bootstrap preserves all shared models and seed pairs jointly. Pair results are descriptive, not 10 independent seed replicates. Report seed variability and repeated random distribution. Semantic labels are task proxies with UNKNOWN allowed.",
+  "frozen_before_new_evaluation": true
+}

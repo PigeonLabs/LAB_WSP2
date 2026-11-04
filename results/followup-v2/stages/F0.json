@@ -1,0 +1,115 @@
+{
+  "id": "F0",
+  "title": "새 benchmark와 기존 결과 보존",
+  "status": "MEASURED",
+  "question": "기존 단순 단서와 표본·보존 문제를 보완했는가?",
+  "verdict": "SUPPORTED",
+  "rationale": "20,224문항의 정답 oracle·분할 중복·짝별 단서 균형 검증을 통과했다. 이는 명시한 단서의 차단을 확인하며 모든 shortcut의 부재를 뜻하지 않는다. 기존 파일 261개의 SHA256을 보존했다.",
+  "metrics": [
+    {
+      "name": "Rows",
+      "model": "D1",
+      "value": 768,
+      "unit": "examples",
+      "n_clusters": 24,
+      "source": "data/followup-v2/manifest.json"
+    },
+    {
+      "name": "Rows",
+      "model": "D2",
+      "value": 768,
+      "unit": "examples",
+      "n_clusters": 24,
+      "source": "data/followup-v2/manifest.json"
+    },
+    {
+      "name": "Rows",
+      "model": "D3",
+      "value": 768,
+      "unit": "examples",
+      "n_clusters": 24,
+      "source": "data/followup-v2/manifest.json"
+    },
+    {
+      "name": "Rows",
+      "model": "D4",
+      "value": 768,
+      "unit": "examples",
+      "n_clusters": 24,
+      "source": "data/followup-v2/manifest.json"
+    },
+    {
+      "name": "Rows",
+      "model": "calibration",
+      "value": 768,
+      "unit": "examples",
+      "n_clusters": 24,
+      "source": "data/followup-v2/manifest.json"
+    },
+    {
+      "name": "Rows",
+      "model": "train",
+      "value": 16384,
+      "unit": "examples",
+      "n_clusters": 24,
+      "source": "data/followup-v2/manifest.json"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f0_dataset",
+      "title": "Frozen followup data by split",
+      "kind": "bar",
+      "rows": [
+        {
+          "label": "D1",
+          "value": 768
+        },
+        {
+          "label": "D2",
+          "value": 768
+        },
+        {
+          "label": "D3",
+          "value": 768
+        },
+        {
+          "label": "D4",
+          "value": 768
+        },
+        {
+          "label": "calibration",
+          "value": 768
+        },
+        {
+          "label": "train",
+          "value": 16384
+        }
+      ],
+      "source": "data/followup-v2/manifest.json",
+      "xlabel": "Examples (4 balanced tasks per split)"
+    }
+  ],
+  "artifacts": [
+    {
+      "label": "Frozen protocol",
+      "path": "reports/followup-v2/PROTOCOL.md"
+    },
+    {
+      "label": "Data audit",
+      "path": "data/followup-v2/manifest.json"
+    },
+    {
+      "label": "Preservation hashes",
+      "path": "results/followup-v2/preservation_before.json"
+    }
+  ],
+  "limitations": [
+    "Task grammars shared across splits despite distinct wrappers.",
+    "Logic AST family is finite; numeric arithmetic restricted to addition.",
+    "Invalid bracket arrangements can have local order cues; multiset balance does not establish recursive parsing.",
+    "Generation seeds do not substitute for model seeds.",
+    "24 prompt wrappers are manually authored and not random draws from all language."
+  ],
+  "next_action": "F1 five independent training runs and calibration-only prompt selection."
+}

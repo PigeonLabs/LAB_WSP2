@@ -1,0 +1,43 @@
+{
+  "schema": "followup-figure-v1",
+  "title": "Frozen followup data by split",
+  "encoding": {
+    "id": "f0_dataset",
+    "title": "Frozen followup data by split",
+    "kind": "bar",
+    "source": "data/followup-v2/manifest.json",
+    "xlabel": "Examples (4 balanced tasks per split)"
+  },
+  "sources": [
+    {
+      "path": "data/followup-v2/manifest.json",
+      "sha256": "bbe384e2c2851f4ce9521b37d1a701a684d2cc4b1eccf8e02c31855ae62aabdc"
+    }
+  ],
+  "rows": [
+    {
+      "label": "D1",
+      "value": 768
+    },
+    {
+      "label": "D2",
+      "value": 768
+    },
+    {
+      "label": "D3",
+      "value": 768
+    },
+    {
+      "label": "D4",
+      "value": 768
+    },
+    {
+      "label": "calibration",
+      "value": 768
+    },
+    {
+      "label": "train",
+      "value": 16384
+    }
+  ]
+}

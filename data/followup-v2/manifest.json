@@ -1,0 +1,137 @@
+{
+  "arithmetic_false_offsets": {
+    "max": 150,
+    "min": -146,
+    "unique": 139
+  },
+  "cross_split_leakage": false,
+  "file_sha256": {
+    "D1.jsonl": "c5a1505bb3aec2cc355dcd5d06b8268dfd36fca51f2f155b98687a9f965373fd",
+    "D2.jsonl": "693097ca186fd1ea49124a7bb8072a05a975f9ff8dd8267c5e3e7c5995fb06d5",
+    "D3.jsonl": "5a5d8d311df5367dcdf961a7f24e984a29809a1c9c917b25e40de17347ecff2a",
+    "D4.jsonl": "04a13c5fc04a048345f9822e07654970ac4d0e99e03981b48a75017c839f42a4",
+    "calibration.jsonl": "1cf5b3cca97f4bfe08d2f80eee2989b1b99efcd12833e29143a66b6ce32a02be",
+    "train.jsonl": "c8bbac0becc710627929703c86b42ea7b9298b0829ea4fdb655c28fffa798ebb"
+  },
+  "grouping": "24 shared wrappers, sampled jointly across concepts",
+  "limitations": [
+    "Task grammars shared across splits despite distinct wrappers.",
+    "Logic AST family is finite; numeric arithmetic restricted to addition.",
+    "Invalid bracket arrangements can have local order cues; multiset balance does not establish recursive parsing.",
+    "Generation seeds do not substitute for model seeds.",
+    "24 prompt wrappers are manually authored and not random draws from all language."
+  ],
+  "max_prompt_bytes": 122,
+  "shortcut_checks": {
+    "arithmetic_pair_parity_and_width_equal": true,
+    "comparison_operand_width_equal": true,
+    "logic_pair_true_count_equal": true,
+    "syntax_pair_character_multiset_equal": true,
+    "syntax_pair_open_close_skeleton_equal": true
+  },
+  "splits": {
+    "D1": {
+      "clusters": 24,
+      "concept_counts": {
+        "arithmetic": 192,
+        "comparison": 192,
+        "negation": 192,
+        "syntax": 192
+      },
+      "generation_seeds": {
+        "2718": 256,
+        "3141": 256,
+        "5772": 256
+      },
+      "max_prompt_bytes": 115,
+      "n": 768,
+      "sha256": "ab28bbe312777a88c97811b0944b7fe3d0c591ffbcb87eaa431b2ea1ff3d9604"
+    },
+    "D2": {
+      "clusters": 24,
+      "concept_counts": {
+        "arithmetic": 192,
+        "comparison": 192,
+        "negation": 192,
+        "syntax": 192
+      },
+      "generation_seeds": {
+        "2718": 256,
+        "3141": 256,
+        "5772": 256
+      },
+      "max_prompt_bytes": 118,
+      "n": 768,
+      "sha256": "19a7d92cbb1385fddb2a6b6e0ecf18794b42f1cd2144d165768f2c94e0fdc417"
+    },
+    "D3": {
+      "clusters": 24,
+      "concept_counts": {
+        "arithmetic": 192,
+        "comparison": 192,
+        "negation": 192,
+        "syntax": 192
+      },
+      "generation_seeds": {
+        "2718": 256,
+        "3141": 256,
+        "5772": 256
+      },
+      "max_prompt_bytes": 121,
+      "n": 768,
+      "sha256": "953d07ee2b673a8cfbc14ed8770c54cfc989b4772f2471dddb21f7122d9ec72b"
+    },
+    "D4": {
+      "clusters": 24,
+      "concept_counts": {
+        "arithmetic": 192,
+        "comparison": 192,
+        "negation": 192,
+        "syntax": 192
+      },
+      "generation_seeds": {
+        "2718": 256,
+        "3141": 256,
+        "5772": 256
+      },
+      "max_prompt_bytes": 122,
+      "n": 768,
+      "sha256": "d853f3792c0d42cda0343c6f5ad853f206ac96daf432aa2ffc32fb45281b384b"
+    },
+    "calibration": {
+      "clusters": 24,
+      "concept_counts": {
+        "arithmetic": 192,
+        "comparison": 192,
+        "negation": 192,
+        "syntax": 192
+      },
+      "generation_seeds": {
+        "2718": 256,
+        "3141": 256,
+        "5772": 256
+      },
+      "max_prompt_bytes": 117,
+      "n": 768,
+      "sha256": "eb7894ea56de8eb368537b4968b2b398735d41aeb06f0d213f79baabcfa23184"
+    },
+    "train": {
+      "clusters": 24,
+      "concept_counts": {
+        "arithmetic": 4096,
+        "comparison": 4096,
+        "negation": 4096,
+        "syntax": 4096
+      },
+      "generation_seeds": {
+        "2718": 5460,
+        "3141": 5462,
+        "5772": 5462
+      },
+      "max_prompt_bytes": 118,
+      "n": 16384,
+      "sha256": "369357eb45d8e17e051d669d6bf101be18dc850f7effa367f2918b109b52e72c"
+    }
+  },
+  "version": "followup-v2"
+}
