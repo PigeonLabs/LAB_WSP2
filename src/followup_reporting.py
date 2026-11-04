@@ -123,15 +123,21 @@ def _figure(root,out,plt,stage,spec,stage_path):
             if r.get(valuekey) is not None:grid[i,j]=float(r[valuekey])
         finite=grid[np.isfinite(grid)]
         if not len(finite):return None
-        fig,ax=plt.subplots(figsize=(max(7,.8*len(colnames)+3),max(3,.48*len(rownames)+1.8)),layout='constrained')
+        fig,ax=plt.subplots(figsize=tuple(spec.get('figsize',[max(7,.8*len(colnames)+3),max(3,.48*len(rownames)+1.8)])),layout='constrained')
         lo=spec.get('vmin',float(min(0,finite.min())));hi=spec.get('vmax',float(finite.max()))
         if hi==lo:hi=lo+1
-        cmap=plt.get_cmap('Blues').copy();cmap.set_bad('#ECEFF1')
-        im=ax.imshow(grid,cmap=cmap,vmin=lo,vmax=hi,aspect='auto');ax.set_xticks(range(len(colnames)),colnames,rotation=spec.get('rotation',0));ax.set_yticks(range(len(rownames)),rownames)
+        if lo < 0 < hi:
+            from matplotlib.colors import LinearSegmentedColormap, TwoSlopeNorm
+            cmap=LinearSegmentedColormap.from_list('signed_followup',['#B77328','#FAFAF9','#2869A6'])
+            norm=TwoSlopeNorm(vmin=lo,vcenter=0,vmax=hi)
+        else:
+            cmap=plt.get_cmap('Blues').copy();norm=None
+        cmap.set_bad('#ECEFF1')
+        im=ax.imshow(grid,cmap=cmap,norm=norm,vmin=lo if norm is None else None,vmax=hi if norm is None else None,aspect='auto');ax.set_xticks(range(len(colnames)),colnames,rotation=spec.get('rotation',0));ax.set_yticks(range(len(rownames)),rownames)
         for i in range(len(rownames)):
             for j in range(len(colnames)):
                 v=grid[i,j];text='N/A' if not np.isfinite(v) else f'{100*v:.1f}%' if spec.get('percent') else _value(v,3)
-                ax.text(j,i,text,ha='center',va='center',color='white' if np.isfinite(v) and (v-lo)/(hi-lo)>.65 else '#26323D',fontsize=10)
+                ax.text(j,i,text,ha='center',va='center',color='white' if np.isfinite(v) and ((abs(float(norm(v))-.5)>.32) if norm is not None else (v-lo)/(hi-lo)>.65) else '#26323D',fontsize=10)
         ax.set_xlabel(spec.get('xlabel',''));ax.set_ylabel(spec.get('ylabel',''));fig.colorbar(im,ax=ax,label=spec.get('unit',''),shrink=.85)
     elif kind in ('line','scatter'):
         xkey=spec.get('x','step');ykey=spec.get('y','value');serieskey=spec.get('series')

@@ -31,7 +31,7 @@ def metric(name,value,source,**kwargs):return dict(name=name,value=value,source=
 
 def comparison(name,result,source,scope):
     return {'name':name,'estimate':result.get('estimate',result.get('effect')),
-            'ci':result.get('ci',result.get('bootstrap',{}).get('ci')),
+            'ci':result.get('ci',(result.get('bootstrap') or {}).get('ci')),
             'pvalue':result.get('pvalue'),'qvalue':result.get('qvalue'),
             'correction_scope':scope,'source':rel(source)}
 
@@ -115,10 +115,18 @@ def f2():
     corr=[];recovery=[]
     for location,r in m['alignment'].items():
         for name,key in [('Permutation recovered fraction','recovered_fraction'),('Matched correlation','matched_correlation'),('Repeated random mean correlation','random_mean'),('Repeated random SD','random_sd'),('Maximum activation error','max_abs_product_difference')]:
-            p['metrics'].append(metric(name,r[key],path,method=location,n=m['n'],unit='fraction' if key=='recovered_fraction' else 'value'))
+            p['metrics'].append(metric(name,r[key],path,method=location,n=m['candidates'] if key=='recovered_fraction' else m['n'],unit='fraction of candidate neurons' if key=='recovered_fraction' else 'value'))
         corr += [{'label':f'{location}: recovered','value':r['matched_correlation']},
                  {'label':f'{location}: random mean','value':r['random_mean']}]
         recovery.append({'label':location,'value':r['recovered_fraction']})
+        check=m['intervention_checks'][location]
+        p['metrics'].append(metric('Baseline maximum logit discrepancy',check['baseline_max_abs_logit_difference'],path,method=location,unit='logit'))
+        for mode,intervention in check['interventions'].items():
+            p['metrics'].append(metric('Mapped intervention maximum effect discrepancy',intervention['effect_difference_max_abs'],path,method=location+'/'+mode,unit='logit'))
+        if location in m.get('negative_checks',{}):
+            negative=m['negative_checks'][location]
+            p['metrics'].append(metric('Wrong identity mapping maximum logit discrepancy',negative['wrong_identity_mapping_max_abs_logit_difference'],path,method=location,unit='logit'))
+
     p['figures']=[{'id':'permutation_recovery','kind':'bar','title':'Known-permutation correspondence recovery',
                  'rows':recovery,'xlabel':'Recovered fraction','xlim':[0,1.1],'source':rel(path)},
                  {'id':'permutation_vs_random','kind':'interval','title':'Known-permutation correlation and repeated random mean',
@@ -126,7 +134,9 @@ def f2():
                  'note':f"Random baseline has {m['random_replicates']} realizations; its SD is reported separately and is not labeled a confidence interval."}]
     p['artifacts']=[{'label':'Positive-control summary','path':rel(path)},
                     {'label':'Exact registered permutation','path':rel(path.parent/'mapping.json')}]
-    p['limitations']=[m['scope'],'A constructed within-model permutation is not independent seed evidence.',
+    p['limitations']=[m['scope'],f"Recovery fraction uses {m['candidates']} candidate neurons; correlations use {m['n']} input examples.",
+                     'Logit equality uses the stored absolute plus relative tolerance, not absolute tolerance alone.',
+                     'A constructed within-model permutation is not independent seed evidence.',
                      'Only the registered control and selected neuron/position coverage are tested.']
     return p
 
@@ -142,8 +152,9 @@ def f3():
            '반복 무작위·학습 전 대조군을 통제한 독립 입력 대응이 존재하며 확장 의미 proxy가 개선하는가?')
     methods={'activation__flexible__hungarian':'Activation','rank__flexible__hungarian':'Rank',
              'semantic__flexible__hungarian':'Semantic','sign_semantic__flexible__hungarian':'Sign-semantic',
-             'random__flexible':'Random mean (100)'}
+             'random__flexible':'Random (100)','label_shuffled__flexible__hungarian':'Shuffled labels'}
     heat={'answer':[],'span':[]};competence={};sources=[rel(path),rel(freeze_path)];eligible_cells=0
+    mapping_rows=[]
     for item in m['evaluations']:
         ep=RUN/item['path'];e=read(ep)
         if hashlib.sha256(ep.read_bytes()).hexdigest()!=item['sha256']:raise ValueError('F3 evaluation source hash mismatch')
@@ -156,6 +167,15 @@ def f3():
                 if key in competence and competence[key]!=value:raise ValueError('Duplicated competence evidence disagrees')
                 competence[key]=value
         if checkpoint=='final':
+            fitpath=ep.parent/'fit.json';fit=read(fitpath)
+            if hashlib.sha256(fitpath.read_bytes()).hexdigest()!=e['source']['fit_sha256']:
+                raise ValueError('F3 frozen mapping hash mismatch')
+            for method,values in e['descriptive'].items():
+                mapping=fit['mappings'].get(method,{})
+                mapping_rows.append({'pair':pair,'position':position,'method':method,
+                    'mean':values['mean'],'valid_wrappers':values['n_valid_wrappers'],
+                    'source_coverage':mapping.get('coverage'),'target_coverage':mapping.get('target_coverage'),
+                    'source':rel(ep),'fit':rel(fitpath)})
             eligible_cells+=len(item['competent_tasks'])
             for key,label in methods.items():
                 v=item['primary'][key]
@@ -169,7 +189,7 @@ def f3():
         family,position,checkpoint=cohort.split('/')
         for contrast,test in stats['tests'].items():
             if test.get('effect') is None:continue
-            row={'label':cohort,'value':test['effect'],'ci':test.get('bootstrap',{}).get('ci')}
+            row={'label':cohort,'value':test['effect'],'ci':(test.get('bootstrap') or {}).get('ci')}
             cohort_rows.setdefault(contrast,[]).append(row)
             p['metrics'].append(metric('Joint-wrapper '+contrast,test['effect'],path,
                      model_pair=family,method=position+'/'+checkpoint,unit='Pearson difference',
@@ -181,7 +201,7 @@ def f3():
         p['figures'].append({'id':'final_'+position,'kind':'heatmap',
              'title':f'D3 final-model alignment: {position} position','rows':rows,
              'row':'model_pair','column':'method','value':'value','vmin':-1,'vmax':1,
-             'unit':'Within-task wrapper-equal Pearson','source':sources,
+             'unit':'Within-task wrapper-equal Pearson','source':sources,'figsize':[12,8.1],
              'note':'All task rows retained; competence-qualified strata are reported in the source. Random baseline averages100 frozen maps.'})
     for contrast,rows in cohort_rows.items():
         p['figures'].append({'id':contrast,'kind':'interval','title':'Joint-wrapper '+contrast,
@@ -200,8 +220,19 @@ def f3():
     p['competence_gate']={'rule':'Both models accuracy>=0.70 and Wilson95 lower>0.50 per task',
                           'passed_final_pair_position_task_cells':eligible_cells,'total_final_pair_position_task_cells':104,
                           'role':'Reporting strata only; no refitting or model selection using D3'}
+    supplementary=ROOT/'reports/followup-v2/F3_ALL_METHODS.md'
+    lines=['# F3 — all frozen mapping variants', '',
+           'Descriptive D3 measurements on the fixed final-model collection. These rows cover flexible/layer-restricted matching and Hungarian/partial/one-to-many variants, including label shuffling. Missing scores and undefined coverage remain N/A. Partial mapping can raise correlation by retaining fewer neurons; compare coverage alongside agreement. Random-map coverage is not recomputed here.', '',
+           '| Pair | Position | Frozen method | D3 Pearson | Valid wrappers | Source coverage | Target coverage | Evidence |',
+           '|---|---|---|---:|---:|---:|---:|---|']
+    number=lambda value:'N/A' if value is None else f'{value:.4f}'
+    for row in mapping_rows:
+        lines.append(f"| {row['pair']} | {row['position']} | {row['method']} | {number(row['mean'])} | {row['valid_wrappers']} | {number(row['source_coverage'])} | {number(row['target_coverage'])} | [D3](../../{row['source']}) · [D2 map](../../{row['fit']}) |")
+    supplementary.parent.mkdir(parents=True,exist_ok=True)
+    supplementary.write_text('\n'.join(lines)+'\n')
     p['artifacts']=[{'label':'Complete alignment summary','path':rel(path)},
-                    {'label':'D2 map-freeze manifest','path':rel(freeze_path)}]
+                    {'label':'D2 map-freeze manifest','path':rel(freeze_path)},
+                    {'label':'All mapping variants and coverage','path':rel(supplementary)}]
     p['limitations']=['Five seeds produce ten dependent pairs, not ten independent replications.',
                      'Final-D1 candidate selection and final-D2 maps are reused across checkpoint trajectories.',
                      'Expanded semantic labels remain input-task/subtype truth-contrast proxies with UNKNOWN permitted.',
@@ -288,14 +319,14 @@ def f4():
     for cohort,stats in m['cohorts'].items():
         test=stats['tests']['combined_minus_semantic']
         if test.get('effect') is not None:
-            contrasts.append({'label':cohort,'value':test['effect'],'ci':test.get('bootstrap',{}).get('ci')})
+            contrasts.append({'label':cohort,'value':test['effect'],'ci':(test.get('bootstrap') or {}).get('ci')})
     p['figures']=[{'id':'combined_causal_agreement','kind':'heatmap','title':'D4 combined semantic-causal agreement',
                  'rows':combined,'row':'pair','column':'condition','value':'value','vmin':-1,'vmax':1,
-                 'unit':'Within-task wrapper-equal Pearson','source':sources,
+                 'unit':'Within-task wrapper-equal Pearson','source':sources,'figsize':[11,8.1],
                  'note':'Primary evaluation uses zero/mean/patch only. Dose modes are supplementary; no trivial scale=1 identity enters matching.'},
                 {'id':'semantic_causal_baseline','kind':'heatmap','title':'D4 semantic-only causal baseline',
                  'rows':semantic,'row':'pair','column':'condition','value':'value','vmin':-1,'vmax':1,
-                 'unit':'Within-task wrapper-equal Pearson','source':sources,'show_in_readme':False},
+                 'unit':'Within-task wrapper-equal Pearson','source':sources,'figsize':[11,8.1],'show_in_readme':False},
                 {'id':'combined_minus_semantic','kind':'interval','title':'D4 joint-wrapper combined minus semantic',
                  'rows':contrasts,'xlabel':'Causal Pearson difference;95% shared-wrapper CI','source':rel(path),
                  'note':'Observed pairs are retained jointly inside wrappers; global BH is deferred to F6.'},
@@ -306,7 +337,7 @@ def f4():
                  'note':'D4 competence is measured separately from D3. Low competence is retained as a control, not interpreted as evidence against an unlearned function.'},
                 {'id':'frozen_causal_weights','kind':'heatmap','title':'Causal weight selected on D2 validation wrappers',
                  'rows':weights,'row':'pair','column':'condition','value':'value','vmin':0,'vmax':1,
-                 'unit':'Causal mixing weight','source':sources,'show_in_readme':False}]
+                 'unit':'Causal mixing weight','source':sources,'figsize':[11,8.1],'show_in_readme':False}]
     dose_rows={}
     for (name,kind),d in sorted(dose.items()):
         a=np.asarray(d['mean_absolute_effect'],float)

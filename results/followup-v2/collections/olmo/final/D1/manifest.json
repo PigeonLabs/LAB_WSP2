@@ -1,0 +1,87 @@
+{
+  "signature": "7444483b27e92d6dde934455f4682a41aa2169a917ae93ba689af9d50945d8ef",
+  "plan": {
+    "version": "followup-measurement-v2",
+    "model_info": {
+      "id": "olmo",
+      "family": "public_pretrained",
+      "model_id": "allenai/OLMo-2-0425-1B",
+      "revision": "a1847dff35000b4271fa70afc5db10fd29fedbdf",
+      "license": "apache-2.0",
+      "model_type": "olmo2",
+      "cached_file_manifest_sha256": "4121aeecd90ddaa9e22eca9f60c95ee76b57c5de0ec5ec2cded9c5af829db73b"
+    },
+    "records_sha256": "e1269c37a64ee347c9c7b061b9130c1906b1c2d426766d806cf2e5202fc6df1a",
+    "selection": null,
+    "per_layer": 8,
+    "split": "D1",
+    "precision": "float32",
+    "boundary": "before answer divergence after common answer prefix",
+    "span": "mean over character-overlapping statement tokens"
+  },
+  "selection": {
+    "3": [
+      2177,
+      3118,
+      2410,
+      7927,
+      251,
+      1379,
+      6279,
+      2924
+    ],
+    "6": [
+      4653,
+      6137,
+      1482,
+      5917,
+      4258,
+      6654,
+      4718,
+      3920
+    ],
+    "9": [
+      990,
+      4097,
+      2592,
+      2607,
+      1234,
+      4711,
+      7503,
+      1180
+    ],
+    "12": [
+      5395,
+      6859,
+      8167,
+      5636,
+      1322,
+      2986,
+      435,
+      4891
+    ]
+  },
+  "n": 768,
+  "neurons": 32,
+  "competence": {
+    "arithmetic": {
+      "n": 192,
+      "accuracy": 0.5052083333333334
+    },
+    "comparison": {
+      "n": 192,
+      "accuracy": 0.5052083333333334
+    },
+    "negation": {
+      "n": 192,
+      "accuracy": 0.5052083333333334
+    },
+    "syntax": {
+      "n": 192,
+      "accuracy": 0.4739583333333333
+    }
+  },
+  "elapsed_seconds": 17.439148550998652,
+  "device": "cuda",
+  "measurements_sha256": "1b7f5c7d07ad79bad4be9cffd93325f7902f5440d01dba4e933ce7676c1f252b"
+}

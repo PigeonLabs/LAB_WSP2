@@ -1,0 +1,87 @@
+{
+  "signature": "adde0f0132749476a4237f2f1bb059ce0019cf0c1a6a0c45727b247ab20e8529",
+  "plan": {
+    "version": "followup-measurement-v2",
+    "model_info": {
+      "id": "qwen",
+      "family": "public_pretrained",
+      "model_id": "Qwen/Qwen3-0.6B-Base",
+      "revision": "da87bfb608c14b7cf20ba1ce41287e8de496c0cd",
+      "license": "apache-2.0",
+      "model_type": "qwen3",
+      "cached_file_manifest_sha256": "f7393c390776b582fa06a19522efe8ba9183873c66c63643b44ddc768242ca1e"
+    },
+    "records_sha256": "350f769e3d657a61f81efe4211ca80194ff08e0d06021ed0b9d881884053cb81",
+    "selection": null,
+    "per_layer": 8,
+    "split": "D1",
+    "precision": "float32",
+    "boundary": "before answer divergence after common answer prefix",
+    "span": "mean over character-overlapping statement tokens"
+  },
+  "selection": {
+    "5": [
+      370,
+      312,
+      2220,
+      1490,
+      94,
+      518,
+      2354,
+      1097
+    ],
+    "11": [
+      2260,
+      1130,
+      2246,
+      1090,
+      1596,
+      2495,
+      1768,
+      1470
+    ],
+    "16": [
+      2465,
+      804,
+      1620,
+      1560,
+      462,
+      1765,
+      2813,
+      441
+    ],
+    "22": [
+      1437,
+      3030,
+      289,
+      772,
+      496,
+      1121,
+      163,
+      1834
+    ]
+  },
+  "n": 768,
+  "neurons": 32,
+  "competence": {
+    "arithmetic": {
+      "n": 192,
+      "accuracy": 0.578125
+    },
+    "comparison": {
+      "n": 192,
+      "accuracy": 0.5833333333333334
+    },
+    "negation": {
+      "n": 192,
+      "accuracy": 0.5052083333333334
+    },
+    "syntax": {
+      "n": 192,
+      "accuracy": 0.5
+    }
+  },
+  "elapsed_seconds": 27.08407176201581,
+  "device": "cuda",
+  "measurements_sha256": "54aa885ef37e75048a04f828ee3ab858e194e52ff722b9feb476295e6ddb34eb"
+}

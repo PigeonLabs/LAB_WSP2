@@ -35,8 +35,8 @@ def selection_for(name):
 def release(model):
     model.cpu();del model;torch.cuda.empty_cache()
 
-def collections(stage,ds):
-    for name in NAMES:
+def collections(stage,ds,names=NAMES):
+    for name in names:
         checkpoints=['final'] if stage=='discover' or not name.startswith('seed') else ['final','initial','middle']
         for checkpoint in checkpoints:
             model,tok,info=model_load(name,checkpoint)
@@ -89,9 +89,9 @@ def positive(ds):
     write_once(out/'summary.json',{'model_info':info,'n':len(rows),'candidates':len(a['layers']),'alignment':results,'intervention_checks':checks,'negative_checks':negatives,'passed':all(v['passed'] for v in checks.values()) and all(v['recovered_fraction']==1 for v in results.values()) and not any(v['equal_at_positive_control_tolerance'] for v in negatives.values()),'scope':'constructed within-model permutation symmetry; not independently learned conservation','random_replicates':100,'elapsed_seconds':time.monotonic()-started,'peak_allocated_bytes':torch.cuda.max_memory_allocated()})
     release(clone);release(model)
 
-def causal(stage,ds):
+def causal(stage,ds,names=NAMES):
     split='D2' if stage=='causal-fit' else 'D4'
-    for name in NAMES:
+    for name in names:
         model,tok,info=model_load(name);start=time.monotonic();torch.cuda.reset_peak_memory_stats()
         out=RUN/'causal'/name/split
         collect_causal(model,tok,prepared(ds,name,split),RUN/'collections'/name/'final/D1',out,info,pairs_per_task_wrapper=4,batch_size=16,max_seconds=7200)
@@ -100,12 +100,12 @@ def causal(stage,ds):
         release(model)
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('stage',choices=['discover','heldout','positive','causal-fit','causal-test']);args=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('stage',choices=['discover','heldout','positive','causal-fit','causal-test']);p.add_argument('--models',nargs='+',choices=NAMES,default=NAMES);args=p.parse_args()
     torch.set_num_threads(8)
     if not torch.cuda.is_available():raise RuntimeError('GPU required; no silent CPU substitution')
     ds=load_dataset(ROOT/'data/followup-v2')
-    if args.stage in ('discover','heldout'):collections(args.stage,ds)
+    if args.stage in ('discover','heldout'):collections(args.stage,ds,args.models)
     elif args.stage=='positive':positive(ds)
-    else:causal(args.stage,ds)
+    else:causal(args.stage,ds,args.models)
 
 if __name__=='__main__':main()

@@ -1,0 +1,301 @@
+{
+  "id": "F2",
+  "title": "정확한 뉴런 순열의 양성 대조군",
+  "status": "MEASURED",
+  "question": "의도적으로 만든 기능 보존 순열과 개입을 회복하는가?",
+  "verdict": "SUPPORTED",
+  "rationale": "등록한 모델 내부 순열 대칭 대조군의 정렬·개입 검증을 통과했다. 이는 측정 파이프라인의 해당 회복 성질을 검사하며, 독립적으로 학습된 모델의 의미 보존을 입증하지 않는다.",
+  "metrics": [
+    {
+      "name": "Permutation recovered fraction",
+      "value": 1.0,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "answer",
+      "n": 32,
+      "unit": "fraction of candidate neurons"
+    },
+    {
+      "name": "Matched correlation",
+      "value": 0.999999999999627,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "answer",
+      "n": 768,
+      "unit": "value"
+    },
+    {
+      "name": "Repeated random mean correlation",
+      "value": 0.04768770053443159,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "answer",
+      "n": 768,
+      "unit": "value"
+    },
+    {
+      "name": "Repeated random SD",
+      "value": 0.04966144994388065,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "answer",
+      "n": 768,
+      "unit": "value"
+    },
+    {
+      "name": "Maximum activation error",
+      "value": 1.8775463104248047e-05,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "answer",
+      "n": 768,
+      "unit": "value"
+    },
+    {
+      "name": "Baseline maximum logit discrepancy",
+      "value": 5.626678466796875e-05,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "answer",
+      "unit": "logit"
+    },
+    {
+      "name": "Mapped intervention maximum effect discrepancy",
+      "value": 3.24249267578125e-05,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "answer/zero",
+      "unit": "logit"
+    },
+    {
+      "name": "Mapped intervention maximum effect discrepancy",
+      "value": 3.8623809814453125e-05,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "answer/mean",
+      "unit": "logit"
+    },
+    {
+      "name": "Mapped intervention maximum effect discrepancy",
+      "value": 2.4318695068359375e-05,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "answer/patch",
+      "unit": "logit"
+    },
+    {
+      "name": "Mapped intervention maximum effect discrepancy",
+      "value": 3.24249267578125e-05,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "answer/scale_0",
+      "unit": "logit"
+    },
+    {
+      "name": "Mapped intervention maximum effect discrepancy",
+      "value": 2.4318695068359375e-05,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "answer/scale_0.5",
+      "unit": "logit"
+    },
+    {
+      "name": "Mapped intervention maximum effect discrepancy",
+      "value": 0.0,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "answer/scale_1",
+      "unit": "logit"
+    },
+    {
+      "name": "Mapped intervention maximum effect discrepancy",
+      "value": 2.6226043701171875e-05,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "answer/scale_1.5",
+      "unit": "logit"
+    },
+    {
+      "name": "Mapped intervention maximum effect discrepancy",
+      "value": 2.1457672119140625e-05,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "answer/scale_2",
+      "unit": "logit"
+    },
+    {
+      "name": "Wrong identity mapping maximum logit discrepancy",
+      "value": 0.03141450881958008,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "answer",
+      "unit": "logit"
+    },
+    {
+      "name": "Permutation recovered fraction",
+      "value": 1.0,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "span",
+      "n": 32,
+      "unit": "fraction of candidate neurons"
+    },
+    {
+      "name": "Matched correlation",
+      "value": 0.9999999999999377,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "span",
+      "n": 768,
+      "unit": "value"
+    },
+    {
+      "name": "Repeated random mean correlation",
+      "value": 0.02981175308553604,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "span",
+      "n": 768,
+      "unit": "value"
+    },
+    {
+      "name": "Repeated random SD",
+      "value": 0.05369674995460445,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "span",
+      "n": 768,
+      "unit": "value"
+    },
+    {
+      "name": "Maximum activation error",
+      "value": 1.4780512587742045e-06,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "span",
+      "n": 768,
+      "unit": "value"
+    },
+    {
+      "name": "Baseline maximum logit discrepancy",
+      "value": 5.626678466796875e-05,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "span",
+      "unit": "logit"
+    },
+    {
+      "name": "Mapped intervention maximum effect discrepancy",
+      "value": 5.7220458984375e-05,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "span/zero",
+      "unit": "logit"
+    },
+    {
+      "name": "Mapped intervention maximum effect discrepancy",
+      "value": 4.5299530029296875e-05,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "span/mean",
+      "unit": "logit"
+    },
+    {
+      "name": "Mapped intervention maximum effect discrepancy",
+      "value": 4.863739013671875e-05,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "span/patch",
+      "unit": "logit"
+    },
+    {
+      "name": "Mapped intervention maximum effect discrepancy",
+      "value": 5.7220458984375e-05,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "span/scale_0",
+      "unit": "logit"
+    },
+    {
+      "name": "Mapped intervention maximum effect discrepancy",
+      "value": 3.24249267578125e-05,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "span/scale_0.5",
+      "unit": "logit"
+    },
+    {
+      "name": "Mapped intervention maximum effect discrepancy",
+      "value": 0.0,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "span/scale_1",
+      "unit": "logit"
+    },
+    {
+      "name": "Mapped intervention maximum effect discrepancy",
+      "value": 4.100799560546875e-05,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "span/scale_1.5",
+      "unit": "logit"
+    },
+    {
+      "name": "Mapped intervention maximum effect discrepancy",
+      "value": 4.9591064453125e-05,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "span/scale_2",
+      "unit": "logit"
+    },
+    {
+      "name": "Wrong identity mapping maximum logit discrepancy",
+      "value": 0.5799612998962402,
+      "source": "results/followup-v2/positive_control/summary.json",
+      "method": "span",
+      "unit": "logit"
+    }
+  ],
+  "comparisons": [],
+  "figures": [
+    {
+      "id": "permutation_recovery",
+      "kind": "bar",
+      "title": "Known-permutation correspondence recovery",
+      "rows": [
+        {
+          "label": "answer",
+          "value": 1.0
+        },
+        {
+          "label": "span",
+          "value": 1.0
+        }
+      ],
+      "xlabel": "Recovered fraction",
+      "xlim": [
+        0,
+        1.1
+      ],
+      "source": "results/followup-v2/positive_control/summary.json"
+    },
+    {
+      "id": "permutation_vs_random",
+      "kind": "interval",
+      "title": "Known-permutation correlation and repeated random mean",
+      "rows": [
+        {
+          "label": "answer: recovered",
+          "value": 0.999999999999627
+        },
+        {
+          "label": "answer: random mean",
+          "value": 0.04768770053443159
+        },
+        {
+          "label": "span: recovered",
+          "value": 0.9999999999999377
+        },
+        {
+          "label": "span: random mean",
+          "value": 0.02981175308553604
+        }
+      ],
+      "xlabel": "Activation correlation",
+      "xlim": [
+        -1.05,
+        1.1
+      ],
+      "source": "results/followup-v2/positive_control/summary.json",
+      "note": "Random baseline has 100 realizations; its SD is reported separately and is not labeled a confidence interval."
+    }
+  ],
+  "artifacts": [
+    {
+      "label": "Positive-control summary",
+      "path": "results/followup-v2/positive_control/summary.json"
+    },
+    {
+      "label": "Exact registered permutation",
+      "path": "results/followup-v2/positive_control/mapping.json"
+    }
+  ],
+  "limitations": [
+    "constructed within-model permutation symmetry; not independently learned conservation",
+    "Recovery fraction uses 32 candidate neurons; correlations use 768 input examples.",
+    "Logit equality uses the stored absolute plus relative tolerance, not absolute tolerance alone.",
+    "A constructed within-model permutation is not independent seed evidence.",
+    "Only the registered control and selected neuron/position coverage are tested."
+  ]
+}

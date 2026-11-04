@@ -1,5 +1,5 @@
 {
-  "generated_kst": "2026-11-04 12:14 KST",
+  "generated_kst": "2026-11-04 12:19 KST",
   "stages": [
     {
       "id": "F0",
@@ -161,10 +161,42 @@
     },
     {
       "id": "F2",
-      "status": "PENDING",
-      "verdict": "INCONCLUSIVE",
-      "sources": [],
-      "figures": []
+      "status": "MEASURED",
+      "verdict": "SUPPORTED",
+      "sources": [
+        {
+          "path": "results/followup-v2/stages/F2.json",
+          "sha256": "8f22a4ac255f2c3579f4dc663012404c445ac55883659ef4089bd5e34786fc4b"
+        },
+        {
+          "path": "results/followup-v2/positive_control/summary.json",
+          "sha256": "051c270bf9945762fa0a6c0a39ecb0da0441de35d1187797afb60d9942721d24"
+        },
+        {
+          "path": "results/followup-v2/positive_control/mapping.json",
+          "sha256": "ebaa6932e810f44c56e0befa8b0773f3190d773622139e751785ee07ae3f02d9"
+        }
+      ],
+      "figures": [
+        {
+          "id": "f2_permutation_recovery",
+          "title": "Known-permutation correspondence recovery",
+          "path": "artifacts/followup-v2/figures/f2_permutation_recovery.svg",
+          "png": "artifacts/followup-v2/figures/f2_permutation_recovery.png",
+          "receipt": "artifacts/followup-v2/figures/f2_permutation_recovery.json",
+          "note": "",
+          "show_in_readme": true
+        },
+        {
+          "id": "f2_permutation_vs_random",
+          "title": "Known-permutation correlation and repeated random mean",
+          "path": "artifacts/followup-v2/figures/f2_permutation_vs_random.svg",
+          "png": "artifacts/followup-v2/figures/f2_permutation_vs_random.png",
+          "receipt": "artifacts/followup-v2/figures/f2_permutation_vs_random.json",
+          "note": "Random baseline has 100 realizations; its SD is reported separately and is not labeled a confidence interval.",
+          "show_in_readme": true
+        }
+      ]
     },
     {
       "id": "F3",

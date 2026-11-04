@@ -1,12 +1,12 @@
 ## 후속 연구 — followup-v2
 
-갱신: **2026-11-04 12:14 KST**. 이 절은 새 단계별 측정 파일에서 생성되었습니다.
+갱신: **2026-11-04 12:19 KST**. 이 절은 새 단계별 측정 파일에서 생성되었습니다.
 
 | 단계 | 실험 | 실행 상태 | 가설 판정 |
 |---|---|---|---|
 | F0 | [새 benchmark와 기존 결과 보존](reports/followup-v2/F0_REPORT.md) | MEASURED | SUPPORTED |
 | F1 | [5개 독립 초기화 학습과 calibration 전용 형식 선택](reports/followup-v2/F1_REPORT.md) | MEASURED | INCONCLUSIVE |
-| F2 | [Exact permutation positive control](reports/followup-v2/F2_REPORT.md) | PENDING | INCONCLUSIVE |
+| F2 | [정확한 뉴런 순열의 양성 대조군](reports/followup-v2/F2_REPORT.md) | MEASURED | SUPPORTED |
 | F3 | [Independent and cross-family alignment](reports/followup-v2/F3_REPORT.md) | PENDING | INCONCLUSIVE |
 | F4 | [Single/group causal effects and dose response](reports/followup-v2/F4_REPORT.md) | PENDING | INCONCLUSIVE |
 | F5 | [Transplantation and selective merging](reports/followup-v2/F5_REPORT.md) | PENDING | INCONCLUSIVE |
@@ -49,4 +49,22 @@ Byte-tokenizer models use default only; unevaluated formats are N/A. One format 
 [그림 데이터](artifacts/followup-v2/figures/f1_calibration_variant_comparison.json)
 
 [F1 측정값·불확실성·원본](reports/followup-v2/F1_REPORT.md)
+
+### F2 — 정확한 뉴런 순열의 양성 대조군
+
+**MEASURED · SUPPORTED**. 등록한 모델 내부 순열 대칭 대조군의 정렬·개입 검증을 통과했다. 이는 측정 파이프라인의 해당 회복 성질을 검사하며, 독립적으로 학습된 모델의 의미 보존을 입증하지 않는다.
+
+![Known-permutation correspondence recovery](artifacts/followup-v2/figures/f2_permutation_recovery.svg)
+
+
+
+[그림 데이터](artifacts/followup-v2/figures/f2_permutation_recovery.json)
+
+![Known-permutation correlation and repeated random mean](artifacts/followup-v2/figures/f2_permutation_vs_random.svg)
+
+Random baseline has 100 realizations; its SD is reported separately and is not labeled a confidence interval.
+
+[그림 데이터](artifacts/followup-v2/figures/f2_permutation_vs_random.json)
+
+[F2 측정값·불확실성·원본](reports/followup-v2/F2_REPORT.md)
 

@@ -1,0 +1,163 @@
+{
+  "model_info": {
+    "id": "seed101",
+    "family": "independent_tiny",
+    "seed": 101,
+    "checkpoint_kind": "final",
+    "checkpoint": "results/followup-v2/training/seed_101/final.pt",
+    "sha256": "f80d57cdd58292a92bdfc68f3450d698f2c66594c33a3cf675cf264c868540da",
+    "checkpoint_sha256": "f80d57cdd58292a92bdfc68f3450d698f2c66594c33a3cf675cf264c868540da",
+    "source_run": "results/followup-v2"
+  },
+  "n": 768,
+  "candidates": 32,
+  "alignment": {
+    "answer": {
+      "recovered_fraction": 1.0,
+      "matched_correlation": 0.999999999999627,
+      "random_mean": 0.04768770053443159,
+      "random_sd": 0.04966144994388065,
+      "max_abs_product_difference": 1.8775463104248047e-05
+    },
+    "span": {
+      "recovered_fraction": 1.0,
+      "matched_correlation": 0.9999999999999377,
+      "random_mean": 0.02981175308553604,
+      "random_sd": 0.05369674995460445,
+      "max_abs_product_difference": 1.4780512587742045e-06
+    }
+  },
+  "intervention_checks": {
+    "answer": {
+      "baseline_max_abs_logit_difference": 5.626678466796875e-05,
+      "baseline_equal": true,
+      "atol": 5e-05,
+      "rtol": 0.0001,
+      "interpretation": "Constructed permutation symmetry positive control only",
+      "interventions": {
+        "zero": {
+          "equal": true,
+          "max_abs_logit_difference": 5.626678466796875e-05,
+          "source_max_abs_effect": 0.031204700469970703,
+          "effect_difference_max_abs": 3.24249267578125e-05
+        },
+        "mean": {
+          "equal": true,
+          "max_abs_logit_difference": 4.982948303222656e-05,
+          "source_max_abs_effect": 0.02570056915283203,
+          "effect_difference_max_abs": 3.8623809814453125e-05
+        },
+        "patch": {
+          "equal": true,
+          "max_abs_logit_difference": 5.14984130859375e-05,
+          "source_max_abs_effect": 0.033879756927490234,
+          "effect_difference_max_abs": 2.4318695068359375e-05
+        },
+        "scale_0": {
+          "equal": true,
+          "max_abs_logit_difference": 5.626678466796875e-05,
+          "source_max_abs_effect": 0.031204700469970703,
+          "effect_difference_max_abs": 3.24249267578125e-05
+        },
+        "scale_0.5": {
+          "equal": true,
+          "max_abs_logit_difference": 5.1975250244140625e-05,
+          "source_max_abs_effect": 0.015571117401123047,
+          "effect_difference_max_abs": 2.4318695068359375e-05
+        },
+        "scale_1": {
+          "equal": true,
+          "max_abs_logit_difference": 5.626678466796875e-05,
+          "source_max_abs_effect": 0.0,
+          "effect_difference_max_abs": 0.0
+        },
+        "scale_1.5": {
+          "equal": true,
+          "max_abs_logit_difference": 5.0067901611328125e-05,
+          "source_max_abs_effect": 0.015508174896240234,
+          "effect_difference_max_abs": 2.6226043701171875e-05
+        },
+        "scale_2": {
+          "equal": true,
+          "max_abs_logit_difference": 5.817413330078125e-05,
+          "source_max_abs_effect": 0.030953407287597656,
+          "effect_difference_max_abs": 2.1457672119140625e-05
+        }
+      },
+      "passed": true
+    },
+    "span": {
+      "baseline_max_abs_logit_difference": 5.626678466796875e-05,
+      "baseline_equal": true,
+      "atol": 5e-05,
+      "rtol": 0.0001,
+      "interpretation": "Constructed permutation symmetry positive control only",
+      "interventions": {
+        "zero": {
+          "equal": true,
+          "max_abs_logit_difference": 5.340576171875e-05,
+          "source_max_abs_effect": 0.5767760276794434,
+          "effect_difference_max_abs": 5.7220458984375e-05
+        },
+        "mean": {
+          "equal": true,
+          "max_abs_logit_difference": 5.626678466796875e-05,
+          "source_max_abs_effect": 0.588101863861084,
+          "effect_difference_max_abs": 4.5299530029296875e-05
+        },
+        "patch": {
+          "equal": true,
+          "max_abs_logit_difference": 4.9591064453125e-05,
+          "source_max_abs_effect": 0.5982027053833008,
+          "effect_difference_max_abs": 4.863739013671875e-05
+        },
+        "scale_0": {
+          "equal": true,
+          "max_abs_logit_difference": 5.340576171875e-05,
+          "source_max_abs_effect": 0.5767760276794434,
+          "effect_difference_max_abs": 5.7220458984375e-05
+        },
+        "scale_0.5": {
+          "equal": true,
+          "max_abs_logit_difference": 4.9591064453125e-05,
+          "source_max_abs_effect": 0.3321049213409424,
+          "effect_difference_max_abs": 3.24249267578125e-05
+        },
+        "scale_1": {
+          "equal": true,
+          "max_abs_logit_difference": 5.626678466796875e-05,
+          "source_max_abs_effect": 0.0,
+          "effect_difference_max_abs": 0.0
+        },
+        "scale_1.5": {
+          "equal": true,
+          "max_abs_logit_difference": 4.100799560546875e-05,
+          "source_max_abs_effect": 0.4352659583091736,
+          "effect_difference_max_abs": 4.100799560546875e-05
+        },
+        "scale_2": {
+          "equal": true,
+          "max_abs_logit_difference": 5.14984130859375e-05,
+          "source_max_abs_effect": 0.8986088037490845,
+          "effect_difference_max_abs": 4.9591064453125e-05
+        }
+      },
+      "passed": true
+    }
+  },
+  "negative_checks": {
+    "answer": {
+      "wrong_identity_mapping_max_abs_logit_difference": 0.03141450881958008,
+      "equal_at_positive_control_tolerance": false
+    },
+    "span": {
+      "wrong_identity_mapping_max_abs_logit_difference": 0.5799612998962402,
+      "equal_at_positive_control_tolerance": false
+    }
+  },
+  "passed": true,
+  "scope": "constructed within-model permutation symmetry; not independently learned conservation",
+  "random_replicates": 100,
+  "elapsed_seconds": 2.3120630319754127,
+  "peak_allocated_bytes": 342682112
+}

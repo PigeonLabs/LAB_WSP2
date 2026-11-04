@@ -1,0 +1,88 @@
+{
+  "signature": "0e42227f2a0edbe37af71f089523bdc55fa12e1cb4fbe6a839586688fd6bf0a5",
+  "plan": {
+    "version": "followup-measurement-v2",
+    "model_info": {
+      "id": "seed211",
+      "family": "independent_tiny",
+      "seed": 211,
+      "checkpoint_kind": "final",
+      "checkpoint": "results/followup-v2/training/seed_211/final.pt",
+      "sha256": "32997a9acdcd978a737e6f0ba2670ed2b64f060c3846ab05dbeae2705d4ade16",
+      "checkpoint_sha256": "32997a9acdcd978a737e6f0ba2670ed2b64f060c3846ab05dbeae2705d4ade16",
+      "source_run": "results/followup-v2"
+    },
+    "records_sha256": "a961c7207e47beb41849589f531d35b712eb9ba8f55ddab044875e58db71e377",
+    "selection": null,
+    "per_layer": 8,
+    "split": "D1",
+    "precision": "float32",
+    "boundary": "before answer divergence after common answer prefix",
+    "span": "mean over character-overlapping statement tokens"
+  },
+  "selection": {
+    "1": [
+      24,
+      249,
+      1051,
+      1108,
+      48,
+      260,
+      1176,
+      548
+    ],
+    "2": [
+      866,
+      225,
+      178,
+      1254,
+      797,
+      1246,
+      884,
+      735
+    ],
+    "3": [
+      539,
+      276,
+      524,
+      1301,
+      230,
+      882,
+      1407,
+      220
+    ],
+    "4": [
+      176,
+      841,
+      314,
+      1361,
+      248,
+      560,
+      81,
+      917
+    ]
+  },
+  "n": 768,
+  "neurons": 32,
+  "competence": {
+    "arithmetic": {
+      "n": 192,
+      "accuracy": 0.578125
+    },
+    "comparison": {
+      "n": 192,
+      "accuracy": 0.953125
+    },
+    "negation": {
+      "n": 192,
+      "accuracy": 0.6770833333333334
+    },
+    "syntax": {
+      "n": 192,
+      "accuracy": 0.890625
+    }
+  },
+  "elapsed_seconds": 1.4096288080036175,
+  "device": "cuda",
+  "measurements_sha256": "072fc7944093fa3757ff4e0f3537e27ea470551ab7e89080aab91826f93daf51"
+}
