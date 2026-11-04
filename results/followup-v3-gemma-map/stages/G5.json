@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "stage": "G5",
+  "status": "NOT_EVALUABLE",
+  "title": "Register steering with semantic retention",
+  "summary": "H4 말투 제어·의미 보존은 F-selected policy, 검증 parser, 독립 T generation 자산이 없어 평가하지 않았다.",
+  "scope": "미실행 단계의 의존성 및 적용 가능성 감사; 새로운 과학 효과를 측정하지 않음.",
+  "verdict": "H4 NOT_EVALUABLE",
+  "rationale": "E parser 반례 검증·동결, D 후보와 실제 F dose/policy 탐색, T의 5-arm generation 및 semantic/fluency 비열등성 검사가 필요하다.",
+  "sources": [
+    "reports/followup-v3-gemma-map/POST_READINESS_DEPENDENCIES.md",
+    "reports/followup-v3-gemma-map/DESIGN.md",
+    "results/followup-v3-gemma-map/readiness_summary.json",
+    "results/followup-v3-gemma-map/readiness_conditional_amendment.json",
+    "results/followup-v3-gemma-map/claim_status.json"
+  ],
+  "metrics": [],
+  "figures": [],
+  "limitations": [
+    "Qwen 능력 실패만을 G5 중단 이유로 쓰지 않는다.",
+    "F 탐색을 수행하지 않았으므로 zero fallback을 발동하지 않는다.",
+    "Prompt-only를 복제해 utility gain 0을 만든 것이 아니며 효과·CI는 미측정이다."
+  ],
+  "artifacts": []
+}

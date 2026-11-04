@@ -1,6 +1,6 @@
 ## Followup-v3 Gemma map — 실행 기록
 
-기존 pilot/v2 결과와 분리한 새 실행이다. 아래 상태는 단계별 실행 receipt를 따른다. **MEASURED는 해당 단계 산출물의 측정을 뜻하며 가설 지지를 뜻하지 않는다.** RUNNING/BLOCKED는 완료 결과가 아니며, 미측정 값은 0으로 채우지 않는다.
+기존 pilot/v2 결과와 분리한 새 실행이다. 아래 상태는 단계별 실행 receipt를 따른다. 각 단계의 문구는 그 receipt의 기록 시점을 나타내며, 뒤 단계에서 갱신된 판정은 해당 단계에 따로 기록한다. **MEASURED는 해당 단계 산출물의 측정을 뜻하며 가설 지지를 뜻하지 않는다.** RUNNING/BLOCKED는 완료 결과가 아니며, 미측정 값은 0으로 채우지 않는다.
 
 [설계](reports/followup-v3-gemma-map/DESIGN.md) · [설정](configs/followup_v3_gemma_map.json)
 
@@ -8,6 +8,11 @@
 |---|---|---|
 | G0 | MEASURED | Exact GGUF provenance and environment preflight |
 | G1 | MEASURED | Independent engine parity and readiness diagnostics |
+| G2 | BLOCKED | New-context functional profiles |
+| G3 | NOT_APPLICABLE | Conditional cross-model causal correspondence |
+| G4 | NOT_EVALUABLE | Native versus transcoder comparison |
+| G5 | NOT_EVALUABLE | Register steering with semantic retention |
+| G6 | MEASURED | Execution preservation and portable evidence audit |
 
 ### G0 · Exact GGUF provenance and environment preflight — MEASURED
 
@@ -138,3 +143,152 @@ Maximum across8 engineering fixtures and262144 vocabulary logits; frozen limit .
 - [results/followup-v3-gemma-map/engineering_extended_validation/summary.json](results/followup-v3-gemma-map/engineering_extended_validation/summary.json)
 - [reports/followup-v3-gemma-map/RUN_AMENDMENTS.md](reports/followup-v3-gemma-map/RUN_AMENDMENTS.md)
 - [results/followup-v3-gemma-map/engineering_extended_validation/independent_audit.json](results/followup-v3-gemma-map/engineering_extended_validation/independent_audit.json)
+
+### G2 · New-context functional profiles — BLOCKED
+
+공동 조건부 적격 축이 없고 독립 D/F 자료·후보 선택·설명 예측 검증이 준비되지 않아 새 기능 프로파일 측정을 수행하지 않았다.
+
+[단계 원본 receipt](results/followup-v3-gemma-map/stages/G2.json)
+
+**해석 범위:** 미실행 단계의 의존성 및 적용 가능성 감사; 새로운 과학 효과를 측정하지 않음.
+
+**과학 판정:** BLOCKED_DATA_GATE
+
+**판정 근거:** 승인된 discovery/fit 데이터와 source/template 계보 감사, D-only 후보 및 lexical controls, 독립 F 예측 검증이 필요하다.
+
+해석 제한:
+
+- E/R engineering 자료를 독립 D/F/T로 재명명하거나 복제하지 않는다.
+- UNKNOWN은 미검증 설명을 억지로 기능 라벨로 확정하지 않기 위한 상태다.
+
+원자료 및 산출물:
+
+- [reports/followup-v3-gemma-map/POST_READINESS_DEPENDENCIES.md](reports/followup-v3-gemma-map/POST_READINESS_DEPENDENCIES.md)
+- [reports/followup-v3-gemma-map/DESIGN.md](reports/followup-v3-gemma-map/DESIGN.md)
+- [results/followup-v3-gemma-map/readiness_summary.json](results/followup-v3-gemma-map/readiness_summary.json)
+- [results/followup-v3-gemma-map/readiness_conditional_amendment.json](results/followup-v3-gemma-map/readiness_conditional_amendment.json)
+- [results/followup-v3-gemma-map/claim_status.json](results/followup-v3-gemma-map/claim_status.json)
+
+### G3 · Conditional cross-model causal correspondence — NOT_APPLICABLE
+
+Gemma–Qwen의 공동 조건부 능력 적격 축은 0개다. H1/H2 인과 대응 효과는 측정하지 않았다.
+
+[단계 원본 receipt](results/followup-v3-gemma-map/stages/G3.json)
+
+**해석 범위:** 미실행 단계의 의존성 및 적용 가능성 감사; 새로운 과학 효과를 측정하지 않음.
+
+**과학 판정:** H1/H2 NOT_APPLICABLE
+
+**판정 근거:** 양측 능력 기준 미충족과 별개로 strict independent-template gate도 실패했다. D-selected panel·F-fit maps·독립 T도 없다.
+
+해석 제한:
+
+- 효과·CI·실측 p값은 없음. 기능 부재나 semantic mapping의 반증이 아니다.
+- 같은 R에서 prompt를 다시 조정해 사전 적격성 통과로 제시하지 않는다.
+
+원자료 및 산출물:
+
+- [reports/followup-v3-gemma-map/POST_READINESS_DEPENDENCIES.md](reports/followup-v3-gemma-map/POST_READINESS_DEPENDENCIES.md)
+- [reports/followup-v3-gemma-map/DESIGN.md](reports/followup-v3-gemma-map/DESIGN.md)
+- [results/followup-v3-gemma-map/readiness_summary.json](results/followup-v3-gemma-map/readiness_summary.json)
+- [results/followup-v3-gemma-map/readiness_conditional_amendment.json](results/followup-v3-gemma-map/readiness_conditional_amendment.json)
+- [results/followup-v3-gemma-map/claim_status.json](results/followup-v3-gemma-map/claim_status.json)
+
+### G4 · Native versus transcoder comparison — NOT_EVALUABLE
+
+H3 feature/native 비교는 자체 표현·데이터·fidelity 자산이 없어 평가하지 않았다.
+
+[단계 원본 receipt](results/followup-v3-gemma-map/stages/G4.json)
+
+**해석 범위:** 미실행 단계의 의존성 및 적용 가능성 감사; 새로운 과학 효과를 측정하지 않음.
+
+**과학 판정:** H3 NOT_EVALUABLE
+
+**판정 근거:** 검증 feature weights 또는 새 transcoder와 허가된 discovery corpus, D/F/T, fidelity 및 common-support gate가 필요하다.
+
+해석 제한:
+
+- Qwen 능력 실패가 Gemma 단일 모델 G4를 자동 금지하는 것은 아니다.
+- Native hook이나 정적 decoder lens를 trained transcoder로 대체하지 않는다.
+- Feature/native 효과·skill·CI는 미측정이다.
+
+원자료 및 산출물:
+
+- [reports/followup-v3-gemma-map/POST_READINESS_DEPENDENCIES.md](reports/followup-v3-gemma-map/POST_READINESS_DEPENDENCIES.md)
+- [reports/followup-v3-gemma-map/DESIGN.md](reports/followup-v3-gemma-map/DESIGN.md)
+- [results/followup-v3-gemma-map/readiness_summary.json](results/followup-v3-gemma-map/readiness_summary.json)
+- [results/followup-v3-gemma-map/readiness_conditional_amendment.json](results/followup-v3-gemma-map/readiness_conditional_amendment.json)
+- [results/followup-v3-gemma-map/claim_status.json](results/followup-v3-gemma-map/claim_status.json)
+
+### G5 · Register steering with semantic retention — NOT_EVALUABLE
+
+H4 말투 제어·의미 보존은 F-selected policy, 검증 parser, 독립 T generation 자산이 없어 평가하지 않았다.
+
+[단계 원본 receipt](results/followup-v3-gemma-map/stages/G5.json)
+
+**해석 범위:** 미실행 단계의 의존성 및 적용 가능성 감사; 새로운 과학 효과를 측정하지 않음.
+
+**과학 판정:** H4 NOT_EVALUABLE
+
+**판정 근거:** E parser 반례 검증·동결, D 후보와 실제 F dose/policy 탐색, T의 5-arm generation 및 semantic/fluency 비열등성 검사가 필요하다.
+
+해석 제한:
+
+- Qwen 능력 실패만을 G5 중단 이유로 쓰지 않는다.
+- F 탐색을 수행하지 않았으므로 zero fallback을 발동하지 않는다.
+- Prompt-only를 복제해 utility gain 0을 만든 것이 아니며 효과·CI는 미측정이다.
+
+원자료 및 산출물:
+
+- [reports/followup-v3-gemma-map/POST_READINESS_DEPENDENCIES.md](reports/followup-v3-gemma-map/POST_READINESS_DEPENDENCIES.md)
+- [reports/followup-v3-gemma-map/DESIGN.md](reports/followup-v3-gemma-map/DESIGN.md)
+- [results/followup-v3-gemma-map/readiness_summary.json](results/followup-v3-gemma-map/readiness_summary.json)
+- [results/followup-v3-gemma-map/readiness_conditional_amendment.json](results/followup-v3-gemma-map/readiness_conditional_amendment.json)
+- [results/followup-v3-gemma-map/claim_status.json](results/followup-v3-gemma-map/claim_status.json)
+
+### G6 · Execution preservation and portable evidence audit — MEASURED
+
+기존 파일 3,918개의 SHA256과 과거 README 원문 보존을 확인했다. 원시 자료 archive 6개·93항목을 재검산했고, G1 공개 파일 114개가 원격 blob과 일치했다. 독립 T/O는 개봉하지 않았다.
+
+[단계 원본 receipt](results/followup-v3-gemma-map/stages/G6.json)
+
+**해석 범위:** Operational audit only; no new model inference, hypothesis tests, or evidence of native-function conservation.
+
+**과학 판정:** EXECUTION_AUDIT_PASS; SCIENTIFIC_GATES_REMAIN_UNMET
+
+**판정 근거:** Readiness has no jointly capable model/task-language cells; strict renderer-generalization gate remains failed.
+
+| 측정 항목 | 값 | 단위/범위 | 원자료 |
+|---|---:|---|---|
+| Historical non-README files preserved | 3918 | files | [results/followup-v3-gemma-map/execution_audit.json](results/followup-v3-gemma-map/execution_audit.json) |
+| Archive members replayed | 93 | members | [results/followup-v3-gemma-map/execution_audit.json](results/followup-v3-gemma-map/execution_audit.json) |
+| Recorded model-stage wall time | 0.118314 | hours; not GPU-active time | [results/followup-v3-gemma-map/execution_audit.json](results/followup-v3-gemma-map/execution_audit.json) |
+
+**Primary claims — no confirmatory effects measured**
+
+| claim | status | effect / CI | measured p |
+| --- | --- | --- | --- |
+| H1 | NOT_APPLICABLE | not measured | not measured |
+| H2 | NOT_APPLICABLE | not measured | not measured |
+| H3 | NOT_EVALUABLE | not measured | not measured |
+| H4 | NOT_EVALUABLE | not measured | not measured |
+
+[results/followup-v3-gemma-map/claim_status.json](results/followup-v3-gemma-map/claim_status.json)
+
+해석 제한:
+
+- Operational evidence preservation and replay are distinct from scientific hypothesis support.
+- Runtime is instrumented model-stage wall time, not measured GPU-active hours or total project duration.
+- README/status/report artifacts may be updated after this audit; historical saved README remains required as exact suffix.
+
+원자료 및 산출물:
+
+- [results/followup-v3-gemma-map/execution_audit.json](results/followup-v3-gemma-map/execution_audit.json)
+- [results/followup-v3-gemma-map/run_f26cee1e3046/index.json](results/followup-v3-gemma-map/run_f26cee1e3046/index.json)
+- [results/followup-v3-gemma-map/readiness_replay_audit.json](results/followup-v3-gemma-map/readiness_replay_audit.json)
+- [results/followup-v3-gemma-map/claim_status.json](results/followup-v3-gemma-map/claim_status.json)
+- [results/followup-v3-gemma-map/publication_G1.json](results/followup-v3-gemma-map/publication_G1.json)
+- [results/followup-v3-gemma-map/remote_preservation_G1.json](results/followup-v3-gemma-map/remote_preservation_G1.json)
+- [reports/followup-v3-gemma-map/REPRODUCTION.md](reports/followup-v3-gemma-map/REPRODUCTION.md)
+- [reports/followup-v3-gemma-map/POST_READINESS_DEPENDENCIES.md](reports/followup-v3-gemma-map/POST_READINESS_DEPENDENCIES.md)
+- [results/followup-v3-gemma-map/raw_archives/manifest.json](results/followup-v3-gemma-map/raw_archives/manifest.json)

@@ -10,7 +10,7 @@ The pinned source data and both model continuation scores are published in `data
 
 ```bash
 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 .venv/bin/python -m pytest -q tests/test_gemma_v3_data.py tests/test_gemma_v3_statistics.py tests/test_gemma_v3_readiness.py tests/test_gemma_v3_readiness_analysis.py
-.venv/bin/python scripts/analyze_gemma_v3_readiness.py --help
+.venv/bin/python scripts/analyze_gemma_v3_readiness.py --replay-only
 .venv/bin/python scripts/compare_gemma_v3_readiness_reference.py
 MPLCONFIGDIR=artifacts/mplconfig .venv/bin/python scripts/build_gemma_v3_report.py --max-stage G6
 ```

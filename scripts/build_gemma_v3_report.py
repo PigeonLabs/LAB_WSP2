@@ -248,7 +248,7 @@ def render(root: Path, max_stage="G6"):
         for src in [*data.get("sources", []), *data.get("artifacts", [])]:
             source_path(root, src)
         loaded.append((stage, data, path))
-    lines = ["## Followup-v3 Gemma map — 실행 기록", "", "기존 pilot/v2 결과와 분리한 새 실행이다. 아래 상태는 단계별 실행 receipt를 따른다. **MEASURED는 해당 단계 산출물의 측정을 뜻하며 가설 지지를 뜻하지 않는다.** RUNNING/BLOCKED는 완료 결과가 아니며, 미측정 값은 0으로 채우지 않는다.", "", f"{link(f'reports/{PREFIX}/DESIGN.md', '설계')} · {link(f'configs/{PREFIX.replace("-", "_")}.json', '설정')}", "", "| 단계 | 상태 | 내용 |", "|---|---|---|"]
+    lines = ["## Followup-v3 Gemma map — 실행 기록", "", "기존 pilot/v2 결과와 분리한 새 실행이다. 아래 상태는 단계별 실행 receipt를 따른다. 각 단계의 문구는 그 receipt의 기록 시점을 나타내며, 뒤 단계에서 갱신된 판정은 해당 단계에 따로 기록한다. **MEASURED는 해당 단계 산출물의 측정을 뜻하며 가설 지지를 뜻하지 않는다.** RUNNING/BLOCKED는 완료 결과가 아니며, 미측정 값은 0으로 채우지 않는다.", "", f"{link(f'reports/{PREFIX}/DESIGN.md', '설계')} · {link(f'configs/{PREFIX.replace("-", "_")}.json', '설정')}", "", "| 단계 | 상태 | 내용 |", "|---|---|---|"]
     for stage, data, path in loaded:
         lines.append(f"| {stage} | {data.get('status', data.get('state')) if data else 'DESIGNED (실행 receipt 없음)'} | {escaped(data.get('title', '')) if data else '미측정'} |")
     for stage, data, path in loaded:

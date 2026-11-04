@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "stage": "G2",
+  "status": "BLOCKED",
+  "title": "New-context functional profiles",
+  "summary": "공동 조건부 적격 축이 없고 독립 D/F 자료·후보 선택·설명 예측 검증이 준비되지 않아 새 기능 프로파일 측정을 수행하지 않았다.",
+  "scope": "미실행 단계의 의존성 및 적용 가능성 감사; 새로운 과학 효과를 측정하지 않음.",
+  "verdict": "BLOCKED_DATA_GATE",
+  "rationale": "승인된 discovery/fit 데이터와 source/template 계보 감사, D-only 후보 및 lexical controls, 독립 F 예측 검증이 필요하다.",
+  "sources": [
+    "reports/followup-v3-gemma-map/POST_READINESS_DEPENDENCIES.md",
+    "reports/followup-v3-gemma-map/DESIGN.md",
+    "results/followup-v3-gemma-map/readiness_summary.json",
+    "results/followup-v3-gemma-map/readiness_conditional_amendment.json",
+    "results/followup-v3-gemma-map/claim_status.json"
+  ],
+  "metrics": [],
+  "figures": [],
+  "limitations": [
+    "E/R engineering 자료를 독립 D/F/T로 재명명하거나 복제하지 않는다.",
+    "UNKNOWN은 미검증 설명을 억지로 기능 라벨로 확정하지 않기 위한 상태다."
+  ],
+  "artifacts": []
+}

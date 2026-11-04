@@ -1,0 +1,237 @@
+{
+  "schema_version": 1,
+  "status": "CLAIM_STATUS_ACCOUNTING_ONLY",
+  "created_utc": "2026-11-04T07:36:02.609608+00:00",
+  "scope": "Frozen H1-H4 family; eligibility and dependency accounting, not completed scientific experiments.",
+  "scientific_experiments_measured": 0,
+  "scientific_experiments_complete": 0,
+  "frozen_family": {
+    "method": "Holm FWER",
+    "alpha": 0.05,
+    "size": 4,
+    "claim_names": [
+      "H1_semantic_minus_activation_causal_agreement",
+      "H2_combined_minus_activation_causal_agreement",
+      "H3_feature_minus_native_causal_prediction_skill",
+      "H4_joint_utility_and_semantic_fluency_retention"
+    ],
+    "source": "configs/followup_v3_gemma_map.json",
+    "blocked_placeholder_p": 1.0
+  },
+  "eligibility": {
+    "joint_conditional_capability_axes": 0,
+    "strict_template_generalization_gate": "FAIL_SHARED_RENDERERS",
+    "original_confirmatory_claims_evaluable": false,
+    "test_opened": false,
+    "ood_opened": false
+  },
+  "claims": [
+    {
+      "claim_id": "H1",
+      "frozen_claim_name": "H1_semantic_minus_activation_causal_agreement",
+      "scientific_status": "NOT_APPLICABLE",
+      "scientific_experiment_complete": false,
+      "measurement_status": "UNMEASURED",
+      "effect": null,
+      "ci95": null,
+      "measured_p": null,
+      "measured_adjusted_p": null,
+      "scientific_rejection": null,
+      "scientific_conclusion": "No empirical effect or hypothesis-test conclusion is available.",
+      "reason_codes": [
+        "NO_JOINT_CAPABILITY_ELIGIBLE_AXIS",
+        "STRICT_TEMPLATE_GATE_FAILED",
+        "D_F_T_ASSETS_UNAVAILABLE"
+      ],
+      "reason": "No Gemma/Qwen concept-language axis jointly meets even the conditional readiness threshold; the original independent-template gate also fails. No causal comparison was measured.",
+      "holm_bookkeeping": {
+        "input_p": 1.0,
+        "adjusted_p": 1.0,
+        "is_measured_p": false,
+        "placeholder_only": true,
+        "bookkeeping_reject": false,
+        "interpretation": "Retains the frozen four-claim family size only; not evidence of a null effect or a scientifically meaningful non-rejection."
+      },
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "claim_id": "H2",
+      "frozen_claim_name": "H2_combined_minus_activation_causal_agreement",
+      "scientific_status": "NOT_APPLICABLE",
+      "scientific_experiment_complete": false,
+      "measurement_status": "UNMEASURED",
+      "effect": null,
+      "ci95": null,
+      "measured_p": null,
+      "measured_adjusted_p": null,
+      "scientific_rejection": null,
+      "scientific_conclusion": "No empirical effect or hypothesis-test conclusion is available.",
+      "reason_codes": [
+        "NO_JOINT_CAPABILITY_ELIGIBLE_AXIS",
+        "STRICT_TEMPLATE_GATE_FAILED",
+        "D_F_T_ASSETS_UNAVAILABLE"
+      ],
+      "reason": "No jointly eligible capability axis for the frozen model pair; no frozen combined matching policy or independent held-out causal data. No causal comparison was measured.",
+      "holm_bookkeeping": {
+        "input_p": 1.0,
+        "adjusted_p": 1.0,
+        "is_measured_p": false,
+        "placeholder_only": true,
+        "bookkeeping_reject": false,
+        "interpretation": "Retains the frozen four-claim family size only; not evidence of a null effect or a scientifically meaningful non-rejection."
+      },
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "claim_id": "H3",
+      "frozen_claim_name": "H3_feature_minus_native_causal_prediction_skill",
+      "scientific_status": "NOT_EVALUABLE",
+      "scientific_experiment_complete": false,
+      "measurement_status": "UNMEASURED",
+      "effect": null,
+      "ci95": null,
+      "measured_p": null,
+      "measured_adjusted_p": null,
+      "scientific_rejection": null,
+      "scientific_conclusion": "No empirical effect or hypothesis-test conclusion is available.",
+      "reason_codes": [
+        "VERIFIED_TRANSCODER_WEIGHTS_UNAVAILABLE",
+        "NEW_TRANSCODER_DISCOVERY_CORPUS_UNAVAILABLE",
+        "D_F_FIDELITY_COMMON_SUPPORT_AND_T_ASSETS_UNAVAILABLE"
+      ],
+      "reason": "No verified original feature weights or newly trained, validated replacement transcoder; no approved discovery corpus, D panel, F fidelity/common-support fit, or T prediction data. Qwen failure alone is not the reason for this Gemma-only claim.",
+      "holm_bookkeeping": {
+        "input_p": 1.0,
+        "adjusted_p": 1.0,
+        "is_measured_p": false,
+        "placeholder_only": true,
+        "bookkeeping_reject": false,
+        "interpretation": "Retains the frozen four-claim family size only; not evidence of a null effect or a scientifically meaningful non-rejection."
+      },
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "claim_id": "H4",
+      "frozen_claim_name": "H4_joint_utility_and_semantic_fluency_retention",
+      "scientific_status": "NOT_EVALUABLE",
+      "scientific_experiment_complete": false,
+      "measurement_status": "UNMEASURED",
+      "effect": null,
+      "ci95": null,
+      "measured_p": null,
+      "measured_adjusted_p": null,
+      "scientific_rejection": null,
+      "scientific_conclusion": "No empirical effect or hypothesis-test conclusion is available.",
+      "reason_codes": [
+        "F_POLICY_SELECTION_UNAVAILABLE",
+        "GENERATION_REGISTER_AND_FACT_PARSER_VALIDATION_UNAVAILABLE",
+        "T_FIVE_ARM_GENERATION_UNAVAILABLE"
+      ],
+      "reason": "No F policy evaluation, validated generation register/fact parser, or T five-arm generation. The zero-intervention fallback requires actual unsuccessful F policy selection and cannot be invoked merely because F is absent. No joint-gain or preservation effect was measured.",
+      "holm_bookkeeping": {
+        "input_p": 1.0,
+        "adjusted_p": 1.0,
+        "is_measured_p": false,
+        "placeholder_only": true,
+        "bookkeeping_reject": false,
+        "interpretation": "Retains the frozen four-claim family size only; not evidence of a null effect or a scientifically meaningful non-rejection."
+      },
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "component_measurements": {
+        "joint_gain": null,
+        "semantic_retention_difference": null,
+        "fluency_retention_difference": null,
+        "gain_p": null,
+        "semantic_noninferiority_p": null,
+        "fluency_noninferiority_p": null,
+        "fallback_selected": false,
+        "fallback_reason": "No F policy-selection experiment was performed."
+      }
+    }
+  ],
+  "sources": [
+    {
+      "path": "configs/followup_v3_gemma_map.json",
+      "sha256": "6f738338dcb64cd623968c71d85c15c38ba8848ba9904b18ba1d64ce14948464"
+    },
+    {
+      "path": "reports/followup-v3-gemma-map/DESIGN.md",
+      "sha256": "67600c301d80e6bde94e0005303dca541cdf3f841f5fee2132bdab18f7835d6b"
+    },
+    {
+      "path": "reports/followup-v3-gemma-map/POST_READINESS_DEPENDENCIES.md",
+      "sha256": "76355deb1dc51874dce9133a942c6e019328b22f6b7b7f680052d48a833105e7"
+    },
+    {
+      "path": "results/followup-v3-gemma-map/readiness_summary.json",
+      "sha256": "71c5fcc5b490d83676ba31d16e8be2d739f2afd87fd4bba093847973bbc76a92"
+    },
+    {
+      "path": "results/followup-v3-gemma-map/readiness_conditional_amendment.json",
+      "sha256": "dac09dc28941af6a8382d4400dc31b55fb719f2a4218b40bd51ef1ca17cb1251"
+    },
+    {
+      "path": "data/followup-v3-gemma-map/readiness_manifest.json",
+      "sha256": "a670a63a3d609f9e487c7347accc80fd51db00e61e32c7f565d8e3033d00568b"
+    },
+    {
+      "path": "results/followup-v3-gemma-map/readiness_scores/gemma.json",
+      "sha256": "549dadf9076736f05c71cb1c39e1a31298e6384dbc8bfbfaa1b2c9aa6a7d99d4"
+    },
+    {
+      "path": "results/followup-v3-gemma-map/readiness_scores/qwen.json",
+      "sha256": "77b5a399925c07866a0ae836ef3f4e732e384d6a443cdd808331214debf974bc"
+    },
+    {
+      "path": "artifacts/followup-v3-gemma-map/reference_manifest.json",
+      "sha256": "db976e987e6f9dc3af4b570d3ac55c50779d649b03300b4736d43a0bfcc88b08"
+    }
+  ],
+  "reporting_rules": [
+    "Effect, confidence interval and measured p-values remain null for all unmeasured claims.",
+    "Do not render bookkeeping p=1 as a measured nonsignificant result.",
+    "Do not replace missing effects or intervals with zeros.",
+    "No rejection, acceptance, equivalence or null-effect claim follows from these statuses.",
+    "No G2-G5 scientific experiment is marked complete."
+  ]
+}

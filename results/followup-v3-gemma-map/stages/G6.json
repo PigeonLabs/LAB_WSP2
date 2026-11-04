@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "stage": "G6",
+  "status": "MEASURED",
+  "title": "Execution preservation and portable evidence audit",
+  "summary": "기존 파일 3,918개의 SHA256과 과거 README 원문 보존을 확인했다. 원시 자료 archive 6개·93항목을 재검산했고, G1 공개 파일 114개가 원격 blob과 일치했다. 독립 T/O는 개봉하지 않았다.",
+  "scope": "Operational audit only; no new model inference, hypothesis tests, or evidence of native-function conservation.",
+  "verdict": "EXECUTION_AUDIT_PASS; SCIENTIFIC_GATES_REMAIN_UNMET",
+  "rationale": "Readiness has no jointly capable model/task-language cells; strict renderer-generalization gate remains failed.",
+  "sources": [
+    "results/followup-v3-gemma-map/execution_audit.json",
+    "results/followup-v3-gemma-map/run_f26cee1e3046/index.json",
+    "results/followup-v3-gemma-map/readiness_replay_audit.json",
+    "results/followup-v3-gemma-map/claim_status.json",
+    "results/followup-v3-gemma-map/publication_G1.json",
+    "results/followup-v3-gemma-map/remote_preservation_G1.json",
+    "reports/followup-v3-gemma-map/REPRODUCTION.md"
+  ],
+  "source_sha256": {
+    "results/followup-v3-gemma-map/execution_audit.json": "c7d40a92d01e0133975b6715411adbb0160532771e86323d104b4928ac3dc7a8",
+    "results/followup-v3-gemma-map/run_f26cee1e3046/index.json": "2d63d623051d0a58652e8606ce160c53d22b191084c6e7a81e66acb5f73bf042"
+  },
+  "metrics": [
+    {
+      "name": "Historical non-README files preserved",
+      "value": 3918,
+      "unit": "files",
+      "source": "results/followup-v3-gemma-map/execution_audit.json"
+    },
+    {
+      "name": "Archive members replayed",
+      "value": 93,
+      "unit": "members",
+      "source": "results/followup-v3-gemma-map/execution_audit.json"
+    },
+    {
+      "name": "Recorded model-stage wall time",
+      "value": 0.11831429293417184,
+      "unit": "hours; not GPU-active time",
+      "source": "results/followup-v3-gemma-map/execution_audit.json"
+    }
+  ],
+  "figures": [],
+  "limitations": [
+    "Operational evidence preservation and replay are distinct from scientific hypothesis support.",
+    "Runtime is instrumented model-stage wall time, not measured GPU-active hours or total project duration.",
+    "README/status/report artifacts may be updated after this audit; historical saved README remains required as exact suffix."
+  ],
+  "artifacts": [
+    "results/followup-v3-gemma-map/execution_audit.json",
+    "results/followup-v3-gemma-map/run_f26cee1e3046/index.json",
+    "reports/followup-v3-gemma-map/POST_READINESS_DEPENDENCIES.md",
+    "reports/followup-v3-gemma-map/REPRODUCTION.md",
+    "results/followup-v3-gemma-map/raw_archives/manifest.json"
+  ],
+  "tables": [
+    {
+      "title": "Primary claims — no confirmatory effects measured",
+      "columns": [
+        {
+          "key": "claim",
+          "label": "claim"
+        },
+        {
+          "key": "status",
+          "label": "status"
+        },
+        {
+          "key": "effect / CI",
+          "label": "effect / CI"
+        },
+        {
+          "key": "measured p",
+          "label": "measured p"
+        }
+      ],
+      "rows": [
+        {
+          "claim": "H1",
+          "status": "NOT_APPLICABLE",
+          "effect / CI": "not measured",
+          "measured p": "not measured"
+        },
+        {
+          "claim": "H2",
+          "status": "NOT_APPLICABLE",
+          "effect / CI": "not measured",
+          "measured p": "not measured"
+        },
+        {
+          "claim": "H3",
+          "status": "NOT_EVALUABLE",
+          "effect / CI": "not measured",
+          "measured p": "not measured"
+        },
+        {
+          "claim": "H4",
+          "status": "NOT_EVALUABLE",
+          "effect / CI": "not measured",
+          "measured p": "not measured"
+        }
+      ],
+      "sources": [
+        "results/followup-v3-gemma-map/claim_status.json"
+      ]
+    }
+  ]
+}

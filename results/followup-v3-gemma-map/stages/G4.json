@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "stage": "G4",
+  "status": "NOT_EVALUABLE",
+  "title": "Native versus transcoder comparison",
+  "summary": "H3 feature/native 비교는 자체 표현·데이터·fidelity 자산이 없어 평가하지 않았다.",
+  "scope": "미실행 단계의 의존성 및 적용 가능성 감사; 새로운 과학 효과를 측정하지 않음.",
+  "verdict": "H3 NOT_EVALUABLE",
+  "rationale": "검증 feature weights 또는 새 transcoder와 허가된 discovery corpus, D/F/T, fidelity 및 common-support gate가 필요하다.",
+  "sources": [
+    "reports/followup-v3-gemma-map/POST_READINESS_DEPENDENCIES.md",
+    "reports/followup-v3-gemma-map/DESIGN.md",
+    "results/followup-v3-gemma-map/readiness_summary.json",
+    "results/followup-v3-gemma-map/readiness_conditional_amendment.json",
+    "results/followup-v3-gemma-map/claim_status.json"
+  ],
+  "metrics": [],
+  "figures": [],
+  "limitations": [
+    "Qwen 능력 실패가 Gemma 단일 모델 G4를 자동 금지하는 것은 아니다.",
+    "Native hook이나 정적 decoder lens를 trained transcoder로 대체하지 않는다.",
+    "Feature/native 효과·skill·CI는 미측정이다."
+  ],
+  "artifacts": []
+}
